@@ -1,0 +1,44 @@
+*** Begin Patch
+*** Update File: generate_weekly.py
+@@
+-def ad_card(ad, cfg, is_best=False, is_worst=False):
+-    """Universal card — works for both statics and videos (both use preview iframes)."""
++def ad_card(ad, cfg, is_best=False, is_worst=False, preview_height=750):
++    """Card for statics or videos with a format-specific preview height."""
+@@
+-    preview_html = (
+-        f'<div class="mpw"><iframe src="{preview}" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>'
++    preview_html = (
++        f'<div class="mpw" style="height:{preview_height}px"><iframe src="{preview}" scrolling="no" allow="autoplay" loading="lazy" style="height:{preview_height}px"></iframe></div>'
+         if preview
+-        else '<div class="mpw no-prev">—</div>'
++        else f'<div class="mpw no-prev" style="height:{preview_height}px">—</div>'
+@@
+-def build_tab(categories, cfg, min_purchases=2):
++def build_tab(categories, cfg, min_purchases=2, preview_height=750):
+@@
+-            cards += ad_card(ad, cfg, is_best, is_worst)
++            cards += ad_card(ad, cfg, is_best, is_worst, preview_height)
+@@
+-            cards += ad_card(best, cfg, True, False)
++            cards += ad_card(best, cfg, True, False, preview_height)
+@@
+-            cards += ad_card(worst, cfg, False, True)
++            cards += ad_card(worst, cfg, False, True, preview_height)
+@@
+-            cards += ad_card(ad, cfg, is_best, is_worst)
++            cards += ad_card(ad, cfg, is_best, is_worst, preview_height)
+@@
+-    s_overview, s_all = build_tab(s_cats, cfg, min_purchases=3)
+-    v_overview, v_all = build_tab(v_cats, cfg, min_purchases=2)
++    # Match the main dashboards: compact static previews, larger video previews.
++    s_overview, s_all = build_tab(s_cats, cfg, min_purchases=3, preview_height=680)
++    v_overview, v_all = build_tab(v_cats, cfg, min_purchases=2, preview_height=750)
+@@
+-.mpw{{background:#111;height:750px;overflow:hidden;display:flex;align-items:flex-start;justify-content:center;}}
+-.mpw iframe{{border:none;width:100%;height:750px;display:block;}}
+-.no-prev{{height:750px;display:flex;align-items:center;justify-content:center;color:#333;font-size:10px;}}
++.mpw{{background:#111;overflow:hidden;display:flex;align-items:flex-start;justify-content:center;}}
++.mpw iframe{{border:none;width:100%;display:block;overflow:hidden;}}
++.no-prev{{display:flex;align-items:center;justify-content:center;color:#333;font-size:10px;}}
+*** End Patch
