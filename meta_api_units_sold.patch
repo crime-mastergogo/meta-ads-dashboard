@@ -1,0 +1,28 @@
+*** Begin Patch
+*** Update File: meta_api.py
+@@
+-        "fields": "ad_id,ad_name,adset_name,spend,website_purchase_roas,omni_purchase_values,omni_purchase",
++        "fields": "ad_id,ad_name,adset_name,spend,website_purchase_roas,omni_purchase_values,omni_purchase,actions",
+@@
+-            # ── Purchases from omni_purchase ──
+-            purchases = 0
+-            for action in row.get("omni_purchase", []):
+-                purchases = int(float(action.get("value", 0)))
+-                break
++            # ── Purchases: read from Meta's actions array ──
++            # Meta returns action counts as [{action_type, value}].
++            # Prefer omni_purchase (all purchase sources) and fall back
++            # to purchase if omni_purchase is not present.
++            purchases = 0
++            actions = row.get("actions", [])
++            for action in actions:
++                if action.get("action_type") == "omni_purchase":
++                    purchases = int(float(action.get("value", 0)))
++                    break
++
++            if purchases == 0:
++                for action in actions:
++                    if action.get("action_type") == "purchase":
++                        purchases = int(float(action.get("value", 0)))
++                        break
+*** End Patch
