@@ -1,0 +1,6 @@
+*** Begin Patch
+*** Update File: config.yaml
+@@
+-pages_base_url: "https://crime-mastergogo.github.io/xyxx-meta-ads-dashboard"
++pages_base_url: "https://crime-mastergogo.github.io/meta-ads-dashboard"
+*** End Patch
