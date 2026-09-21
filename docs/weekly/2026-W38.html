@@ -1,0 +1,2214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>XYXX Weekly Report · 2026-W38</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}
+.cover{padding:40px 32px;border-bottom:1px solid #1e1e1e;}
+.cover-eye{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#555;margin-bottom:8px;}
+.cover-title{font-size:30px;font-weight:700;letter-spacing:-0.02em;margin-bottom:4px;}
+.cover-sub{font-size:12px;color:#555;margin-bottom:24px;}
+.cover-stats{display:flex;gap:28px;flex-wrap:wrap;padding-top:20px;border-top:1px solid #1e1e1e;}
+.cs-l{font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:#444;margin-bottom:3px;}
+.cs-v{font-size:20px;font-weight:600;font-variant-numeric:tabular-nums;}
+.nav-links{display:flex;gap:10px;margin-top:16px;}
+.nav-link{font-size:11px;color:#555;text-decoration:none;padding:4px 10px;border:1px solid #2a2a2a;border-radius:5px;}
+.nav-link:hover{color:#aaa;}
+.format-tabs{display:flex;padding:0 32px;border-bottom:1px solid #1e1e1e;background:#0f0f0f;}
+.ftab{padding:14px 22px;font-size:13px;font-weight:600;color:#555;cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;}
+.ftab:hover{color:#aaa;}
+.ftab.active{color:#e8e8e8;border-bottom-color:#3b82f6;}
+.tab-pane{display:none;}
+.tab-pane.active{display:block;}
+.inner-tabs{display:flex;padding:0 32px;border-bottom:1px solid #1e1e1e;}
+.itab{padding:10px 16px;font-size:11px;font-weight:500;color:#555;cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;}
+.itab:hover{color:#aaa;}
+.itab.active{color:#e8e8e8;border-bottom-color:#6366f1;}
+.inner-content{display:none;padding:24px 32px;}
+.inner-content.active{display:block;}
+.sec{margin-bottom:32px;}
+.sec-hdr{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:10px;padding-bottom:9px;border-bottom:1px solid #1e1e1e;}
+.sec-t{font-size:14px;font-weight:600;}
+.sec-s{font-size:11px;color:#555;font-family:"JetBrains Mono",monospace;}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}
+.mc{border-radius:10px;overflow:hidden;display:flex;flex-direction:column;position:relative;}
+.badge{position:absolute;top:7px;left:7px;z-index:10;padding:2px 6px;border-radius:3px;font-size:9px;font-weight:700;}
+.sbadge{background:rgba(34,197,94,0.9);color:#000;}
+.wbadge{background:rgba(239,68,68,0.9);color:#fff;}
+.mpw{background:#111;height:750px;overflow:hidden;display:flex;align-items:flex-start;justify-content:center;}
+.mpw iframe{border:none;width:100%;height:750px;display:block;}
+.no-prev{height:750px;display:flex;align-items:center;justify-content:center;color:#333;font-size:10px;}
+.mm{padding:9px 11px 11px;}
+.mn{font-size:11px;font-weight:600;color:#e0e0e0;line-height:1.3;margin-bottom:5px;}
+.mmet{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:3px;padding-top:6px;border-top:1px solid #1e1e1e;font-family:"JetBrains Mono",monospace;font-size:9.5px;color:#888;}
+.filter-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;}
+.filter-btn{padding:5px 12px;border-radius:16px;border:1px solid #2a2a2a;background:transparent;color:#666;font-size:11px;cursor:pointer;font-family:"Inter",sans-serif;transition:all 0.15s;}
+.filter-btn.active{background:#3b82f6;border-color:#3b82f6;color:#fff;}
+.footer{padding:18px 32px;border-top:1px solid #1a1a1a;font-size:10px;color:#333;font-family:"JetBrains Mono",monospace;}
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="cover-eye">XYXX Crew · Weekly Creative Report</div>
+  <div class="cover-title">2026-W38</div>
+  <div class="cover-sub">Last 7 days rolling · 1D Click Attribution · Updated 21 Sep 2026</div>
+  <div class="cover-stats">
+    <div><div class="cs-l">Statics Spend</div><div class="cs-v">₹53.0L</div></div>
+    <div><div class="cs-l">Videos Spend</div><div class="cs-v">₹36.6L</div></div>
+    <div><div class="cs-l">Total</div><div class="cs-v">₹89.5L</div></div>
+  </div>
+  <div class="nav-links">
+    <a class="nav-link" href="../index.html">📷 Statics Dashboard</a>
+    <a class="nav-link" href="../videos.html">📹 Videos Dashboard</a>
+    <a class="nav-link" href="index.html">📅 All Weekly Reports</a>
+  </div>
+</div>
+
+<div class="format-tabs">
+  <div class="ftab active" onclick="switchFormat(0)">📷 Statics</div>
+  <div class="ftab" onclick="switchFormat(1)">📹 Videos</div>
+</div>
+
+<!-- STATICS PANE -->
+<div class="tab-pane active" id="fmt0">
+  <div class="inner-tabs">
+    <div class="itab active" onclick="switchInner(0,0)">Overview</div>
+    <div class="itab" onclick="switchInner(0,1)">All Ads</div>
+  </div>
+  <div class="inner-content active" id="s-inner0"><div class="sec">
+          <div class="sec-hdr">
+            <div>
+              <div class="sec-t">🩲 5-at-999 Cotton UW</div>
+              <div class="sec-s">108 ads · ₹33.5L · 2.30x blended ROAS</div>
+            </div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLUZ-sVabmNqtvni4bgpsMnLIIYWpS7-93t8jVLh2vGvkkaveTVxY-2Qzc1oaWqZWrnBsjw1TrfFaJxU6Pj4EtBE9yBoSTNDQhNM6nP6OHP1rcnjXuKoYYUTM95dTtKKWdOcykUWnr5I22_iib6I501qDd-9X1Ou-PhsHtEKBoocFVHI_SNzTiKSyWXGbIIH4ZOvVp59oLE-jT2arJYsc80nIgwPp0GlP_iS1senE42caLChWYHhvpIPUvTr3dF8ArQvntAxGUcx-yQVGBc5EIMeUU8Wd3RSo3pkk4bYQgKJ0KqBks-ddS22HhzQcH6mQcffg--HBeZvIf2uV9UXyjeL4bArOUXrpYL43Zmln8XhPoDnoUR6PWT1W4IBQWutZlaIzzhBOqrsaUpid2I1rNtNaCoGXBExcZFqKQQ7cn-D3dZsH1w0bYOs8gusjFNrUw&t=AQKDZkqJnxlKjIigi8A" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Good-Luck-Finding-These-Later-Cotton-Underwear-5-at-</div>
+        <div class="mmet">
+          <span>₹5.5L</span>
+          <span style="color:#22c55e">2.68x</span>
+          <span>₹14.7L</span>
+          <span>1,452</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLwfY6ggLIwQ4rIcMeOBbZ8esXJ2Izbb18yhB1YBSY-iwVFFvOHS-ZueR_o5sOAGs_8vN2YW5BmaEKXWef7SClHDBhDT_7X7s3U3Mc6iq6XcnaqdqRc5U9zE7v-7hGgfddxYX5xkzSF9tNObX8mmcHd0kPksDJQvcz92HJv2kcjdIhRBxpHIVk_LlEHxj96E2g0J7RyQOogpnGP0hYk4umtDZr_vx9fEQEEUjctFaB_uKcU1V4EtEmCYCm3319_wil0SO2S1rnYNQ0apbCNuFRMKr4xM8nXZ-qwQpnAPVYutRb1paK76TvccbCbMNU4LeogfhljDooymAo_gQGkr_bAQhEcyVNmJKu4-tEWCF7Iza60FMdB_iRhvCMjSHGPjcARN-yhZqEB10NWgGyppMW0G_74B6SiiA-K-A0d3_JX9QKLbQLNrZZiP84APIeuD84&t=AQLjziaxLWVYwd8LSEk" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Everyones-Upgrading-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹4.7L</span>
+          <span style="color:#f59e0b">1.99x</span>
+          <span>₹9.3L</span>
+          <span>922</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKNvchUVguWaSQm2z6SiFFd8PHR4ekfFHjpLcpWIZeNmsApkb_PPS9xQqgk7J3Gr6RBWdIb9N2c-sMPaylhcbatbC8dzoxYnPyDowvh5O4wG_Z8tU9ECWXMnkUYE_nVueXCBAcxaSW84ZCND4LM5qDUks4bSsa__aw4_zd6wedp5fi-Zobgradqp0ua-AVmfM8z1VgnpkTuBLmCil7AG23WlTR3O_RS4kYltp0vQy4jWLfyr5Xafzqnk2lQDb5FKgWVx3-IKay935NmzpZODFTlty-pxIhGsUEewsJuePPUd9oQN0BNhCel6pDLoGSqkfC_e1z3hEEJeS8GDM2W5SkslBHVOUEEO7wArt7cBoTYJ_Wm0xfuiYiBSz_zEDwvxuCHgJuhAlRR_qaNRWUb2TOhE_IYBnqYwiwONyb60U5FfflAWrOiFgxFdPpL0_jGZgI&t=AQKRm-mKddyMdR6R40c" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Last-Chance-To-Stock-Up-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹2.9L</span>
+          <span style="color:#22c55e">2.60x</span>
+          <span>₹7.5L</span>
+          <span>736</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIhE7tcstHW9HYoG0yoptFo3xhSq0tMwHZnAGJNoA22lcA2wB1de2bWeT-CMF_pIME5RcEd_9wE-MRaqdc9ElH9yaFaINX55DiLFnIKdqdBD474tH0lykRNAbKF-SuUj1RKEdgptQCTaZaBpz1IODzuLXPA5TXZ8m7WFHbNJlctfzmPXRgd1Y0L7GAzjsUkPNIUu3PwITfy2T5Imvv7XgSw6gxjRrHVApVxQerHviddCQjU_mTuS9KHuzrofSbcHx9n5X4ULnxUbPTeJFuiKv128t_izNeIWihiJfjytuLW7goxqPmCsOiKH1yep-yjQuFVu36ST42pcpbApqGUfYMj0ULGDb0elKHPWYBwIFUXU_m7IJWgwH8GDInR8U5HDWzcPtKyxQZUNJJwyrGPNuoVwX2Ge301S3tsHs9BUYLG3B0r9mflkL9WLUmqzXk4OyQ&t=AQJziDOY9UJm4hs9dN4" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Lifes-Too-Short-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹1.5L</span>
+          <span style="color:#22c55e">2.85x</span>
+          <span>₹4.3L</span>
+          <span>439</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIqsiLOP-2rpBVNd2Rt-AOgOThSnr3cJyj1tK1ekKBbr6Nt-l_7oeTCV0G2PZiiVWLfaVBlHuqPPtDK9H1MIn6smJN6rolWCA1K04fUwY-ME2B0g_F11U0-PVfU_oW6SBm9XZjgJ0xhVC7XrqxMgUOPbZYpsYk-4GBn2GUqKIrHsOUaSYiwyTFfgxkyOHoc9wzhgPqIsDDALjfc9fG3xuQCnbxmfP9-goulBC3HeKcbf22DFzYDZgm0bhBDdsBGuyQQ-ldlpUyh7bJkiA5XhRh_OYZQo0vw1v1VWLQFAogSVqYuMKGXfPtCPbovNPKvzJ9o1E_7weyIkc1nJFUmBCGtahujU4XJKGJZxUQ__bcMNdNxJ-awV4BpwYQCzVIUDvOdmfgOFH3ShPJ7PMGtR2LcAGWfopNOxuyJJVh_MSwYiNB0g8NeTq3E9ltIZ0Ho7Oo&t=AQKht4VJU5JOvBQUOt8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Congrats-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹1.8L</span>
+          <span style="color:#ef4444">1.27x</span>
+          <span>₹2.3L</span>
+          <span>222</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec">
+          <div class="sec-hdr">
+            <div>
+              <div class="sec-t">🧴 Modal / Tactel UW</div>
+              <div class="sec-s">18 ads · ₹1.3L · 3.48x blended ROAS</div>
+            </div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJe7lj3VKE0gLag251KOuGW78NSjsdy0kk0oOYXPR-vBVwu444gkjI6Xr-wIaKlO3ru6UfLnf7vIRhEAJWrCfEF7Kotv6PiywFiBJtKPOcfzASAtwuF0vrjbCC1VF03T-QJTHt_-8ioYWrfTUKlAWXcoCiu5u2cwAfSJw9QSeKBO3DW_axyY1g0LtdC_LXA_-VI-8_M6uP-_8AxC_h6aJ2FpVNuLuZ5dPzHbpcDuxgjs8ygADvjcu5-YgILK78PJAPoHy0NGBMdXI4s-fxA2Sw96PQgUg2rC6-I4CCtFVUm84AHczTqFfuRqDDokDOvEp2QbKOifXEpsMhXDYm-v5qrejU0vN2d5Vkyd1Ta0V17dhIm5048kHlnBm0SUluvmRd7sOBTfZAvziymUrHl0yRm-ga7yE76AVLxVMJZX53ovx7VvUyn18hO0ipp0Bo9uzw&t=AQJohBNdirXEoHfJLnE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">3x-Softer-Modal-Underwear · </div>
+        <div class="mmet">
+          <span>₹68K</span>
+          <span style="color:#22c55e">3.26x</span>
+          <span>₹2.2L</span>
+          <span>226</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQL96Geju--776AS94OaepJv15eYWvtRQ0cZTqgNJw0dDV4hEhSBPwZxNSjh4Po-LPy3tAJ60hkq9P6fK3VpWiwjtprW94zZsvyWIvaO2TNL54kZQnqgr3BgC07lkMJOZIM63EXa8WTQ4ailTDdJch4DrNSSvOUFpn8XkE_KBT5Niq_124Uv1xh-C9XxPFzts75_ALh2KcgkGMLVRqULST3dUMlqRGcnMA6rwQ0ZzJxA2gwCd_G2VWg6yvLXy7aP56usshfBdGXlQ0kgszcMGYrJDV5HgOHSPAaglDJbKOyLXiEUllq9UH9Yne87HorrGd6Ai7Gqg8VcU-PGjg7g4tbHylo7603sBO0ekx0svcuhm5uJRLi4tjub5ckzr8eyOA-lhVyonCXjBaDQ8F65Tx6RM0DSJtFYdFjmhRdw5U-iGdqtveNT9f-E3rEalu00hu8&t=AQLgpVqtQIqbPidasXM" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Packed-With-Tactel-Underwear-TB2 · </div>
+        <div class="mmet">
+          <span>₹21K</span>
+          <span style="color:#22c55e">3.96x</span>
+          <span>₹81K</span>
+          <span>79</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKkKya4k2IQWVpj2MWZ7b9BxRy5kV9wlHBSBQg4DNTileBihZADdXoJKOXP7iE9MKoEEC0b1kLoblIcj9fRIfzht7m1pZnxiYU3P2lGwp5dXgNEf1E1gOt1CPbLQAO0N8HFCHDonK_5NAMbnNNdaCF7E_CPtKg2VczpPcDOS8rJ3-3xRfA16KhDqECoLyd4Bnhht_c1rxnlTpKYcunFwCZYaL-wYe4iLTAq8hD1qT0em_cKxwnSmbUDRG41GaW6pUA-Z_RfE5c5FYWBuzeWbql32IqQnS5OEiz0lq-UR-GGfcdWQTvrxdxuWmCV1meHfQXPOAHI4Kvul2Ks5Bp6_IQ_7F31qCxYRaBWmM2q9NmP-XYu3VOI5WHq_rRFn-m7jsjmjEhe1nE5hcrhd88eut75tTZc-DWiK9J1b41raOMGE1AsvI2uhx-CB10kDI9PsSQ&t=AQKRnUD2ofB-BIFo7rc" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Softest-Way-AI-Modal-Underwear-CM1 · </div>
+        <div class="mmet">
+          <span>₹8K</span>
+          <span style="color:#22c55e">3.25x</span>
+          <span>₹25K</span>
+          <span>26</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQI8_6Hx2-RfhtPkRk7U56fkJmJd1sWPidzomKC-A28weFH_lhnSZEjqn_7817hv1Mvssg2W-nWjE8daEEv7N0ODik9dltRMdLWFW1HVfxvNEnHYnC2kuJFSBypWRZ6AvT57N0kR02Xp1w-jtKW3hkt3pYjD9uFHt1_0FIjLY2gLWSCANjkmZm893j6tttXwZU6N8CaVzpqtoVFur0ox5eI9kRlGvPRcf1c8kqVa57WPmFGoFTk5VfFKUoxwz6G6gepOEdAG5qeubFtS72jftq_NtDqNz_pd51bqoi-GW2ppdsTXzBKJluufdtDlntYzLtBdTOZf0Y6rgIn5JGBOctafgmrYCnCNvAyFqvC7Nhea79-T-J9pDsFmNOwaIPVboqo0e5vmoNeHirV1PZhda1VnwqXwZfnfxQdPgXykJ01IaHP1OhnV2n0XAeYsAQ-7JAE&t=AQKDw5mwak4lSSDoaRk" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Lifes-Hard-Modal-Underwear-CM1 · </div>
+        <div class="mmet">
+          <span>₹2K</span>
+          <span style="color:#22c55e">8.08x</span>
+          <span>₹15K</span>
+          <span>7</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLonvz_DSPniRsMtjyryQ-WSKM1jHnbh31Z0C5vLCMwUfQmVOMT6WnIMxGxjazrpaW910eZvG7qBkDV6ypQoITomjHiO9sL-dBUB5IA3Hl0741iH2L1ddezgvfuWtuedzLljdYfNb0HV-0jX5FBhFU-TaG8wIQQTWfxPj36tYm6OVjNM5eTYsrPnGXBhb-lcVKf4tQxuhtmUClHnEj3sDxmq4bVtUa8s6YkQppAgnXvpFu-tBAiVGAGvSoyaKFRexZQm7tP0VVpbo0Xgs1aJODJ8kRJp4OKqZ7rE6UNcdR41iAS0GFWMTa294f-CTDI_e0q4gQzQPBL7c5lm4ckLvj4HnjaPpy9C4-8XhCeQiwlfyO7ERx8_o3D-EJmBm-qnJS1ID6Bx-xCXtRLh_1UHMbbz7wIEqa8ET2Sd91V63aNeMhVlvoEiyPH8Hrexnvf4ps&t=AQLPbbVCEP-t7jg3roo" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Elevated-Listing-Modal-Underwear-R7-Carousel-Interna</div>
+        <div class="mmet">
+          <span>₹5K</span>
+          <span style="color:#86efac">2.36x</span>
+          <span>₹12K</span>
+          <span>13</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec">
+          <div class="sec-hdr">
+            <div>
+              <div class="sec-t">🥊 Boxers</div>
+              <div class="sec-s">17 ads · ₹2.9L · 3.43x blended ROAS</div>
+            </div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLLKQ13JJH5GsfB3oOHWhAgXv_RDhlAJgTN9kKUg91EQV7-V697GNrbcw0Trdje2JyWeMWCamms0Q437ChV46u7UwLpatA1Wpp82Mvem_LrcmPjf5QJsgKDJ1wTnTggI0K4-KGNfxknXvYpFzazy8Kol769QcEi4HbOHKnnbevppZErPjRRqTfqIbX56nbs8IQsXCcrT5DS9W_QXxaIIkA30RlNZ0esInwgp0_2rhXQgqOcRwH71lP1FHwp8IfX433YsHDLnR_EWm_aEPzWE-V3dby-oCeZUct0_JWrAQOJSp5NdGMrvRRlorSAKk09O_gkYIT0jHG5Usvk0-UXkb6XyqZl5gdXVqR9HvsQjJPX_iUp6yeIXyDkkpSzRWVkq-p4MAwL5QMQMYpGoZJLBRluxMbHLTJO2Fid6k2lPX_g9g5ZWnlunnPcsMXxZpGdXPE&t=AQKoxDURw4FfjCW-dnk" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Boxer-Youll-AI-Boxer-Flat-50-Off · </div>
+        <div class="mmet">
+          <span>₹1.4L</span>
+          <span style="color:#22c55e">3.70x</span>
+          <span>₹5.2L</span>
+          <span>551</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLD3Op9erjY-NGl61_Msc4VvkLYjEfaXEjMDkAG_c1uu-NiaCoC2f28YffJhopW-DkUVwsCajr-Az_VMV7wz7zzO49Yn9Z4wlud9DpJeOoebbGjhqD7K0S7bD0FZblzChQqNU5a9EVp6h20-ULUv6w50thbY2NNljuFKSfFNeu1Iof_plhdTz6TyIOPtJIBlPX7mcLu2q_qQFpd0-BUxf8UgMFAVgTyu98DWeSTXlbC-IGcpQDQY9NP_wthjeFYPxp4H1zsD5IC_0zcBgeZUeiIFBX7H3OW38op3AvygAdcVD9lOCb-gVBUjYqi1w1NG3e0w8I8QHopwnjFjygsmrjnCwwfRdQa3sSOI293l1wmYBXHiNalzsp7alnO-e5zdKoUh702yj3QQ6PZYngp-utd4KhhnXqUrOE-8Ve1gyB7de2PO1zI9UJQtE9bC5JL_mQ&t=AQJ1S7dmRMmrfwYBQJQ" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Theyre-Flying-AI-Boxer-Flat-50-Off · </div>
+        <div class="mmet">
+          <span>₹26K</span>
+          <span style="color:#86efac">2.33x</span>
+          <span>₹61K</span>
+          <span>74</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQK37Br-Ol_4f6mgu_xRPkHNe91I9Geg8Rw2YGvNtrxXxdDRFmxiOrGn6sforoXS-9U6C7QfblUR5LzKvgHIkPB9rV31ty3YuHWzuI-43XjUns68QJyn7jxVZS2d0zQH_ErpRqcxvgLWQmcxfE90Dm_dyw8iVAtOSnVEcrZ44_-IObWoK_MoyL9_YveY7VHcvpAt11ZTvuUPiwhXuEFAJscZzJRyQu1rL7gJmMrBO-7k-j_MZlfzQqM-18o4doqjBZ4UiaYcl_wLFR-ca1JbrjBSHLiv26l0Lup6Vb7c6idlbPHrCVu4LayAPLq2ukvPrponlTdH2MPr6Esu7MfNB9KWJojC6juFW_9IrTNEVn-ms4qbg6KKsmzPw-rWyBYQj3BjzQ3sur_MyADvsXmutqoBEmYF6PP2v82xmm93vsj6UEHUB5A_dTQpvMCaonYxooQ&t=AQIyH2ucPqYDzSn2Gy8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Half-Price-AI-Boxer-Flat-50-Off-Weekend-Sale-Static-</div>
+        <div class="mmet">
+          <span>₹26K</span>
+          <span style="color:#22c55e">4.65x</span>
+          <span>₹1.2L</span>
+          <span>121</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJwY0MPIaibsmgP7BtLUHeVdQ-Oo9RJEa75D8Bp_WLrU45v5HHaGGRNrQlKUGm0diNybAQ-1QbTdGd4o7pq1HgvzcqO9g0D58il20TGRK9kidjdZlU6ErOfDOc4FitrRX39OI8aaiX5nI05aogN0s8TxkJMAYmcXDVgrnrhjSPE6u5lsejtrCsvWinckQHF0NMr6SuBzZ0ynPKuL0hKbfEVCSVcY7GIpY1pzrke4XpsOyIMQeDWa9X1RqmsIy9AMsurC5r2dCuiGtmE1M1pBU3tO36wuQXpZceIWK3BO0iz3ju3YXglENlRreIYgmvA5PQUo3DW-Q010tMbpqAboLNyUGzvuBotlgWS-S260G19OVBdpyY1c4uY3EUct7cbD2oUtZLQ-j5p65ZhpipTdNpflUOTuXlrltw_70LM6SZMSp1EGTShN8rNWFCD2IzaADM&t=AQJs_sy788PJw6q11b0" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Last-Chance-Stock-Up-AI-Boxer-Flat-50-Off-Weekend-Sa</div>
+        <div class="mmet">
+          <span>₹23K</span>
+          <span style="color:#86efac">2.13x</span>
+          <span>₹48K</span>
+          <span>39</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec">
+          <div class="sec-hdr">
+            <div>
+              <div class="sec-t">🦺 Shapewear & Vest</div>
+              <div class="sec-s">28 ads · ₹3.7L · 2.29x blended ROAS</div>
+            </div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKg1ZWPcC7N54LxxmpKSJc9K70Il1n_w5sYgsnav3QCiNPIQ2WATicxrlsQvZvr4DZwgeGzxJ3dBG3_NQSt-4Huksx7OvKA1K-0UC1Oj-F7H8n5M3dgCN2Lc-PjOhmcscpuQw_ZmqTRbu3YofiJM-tWV5MJNmQTE71X172Brxjvbli-Cf76nF7mHvOmmlcy0lhFcefN6qA9c-ovjF16OQL9klvX95wsqoRSprvyl9dbUe_peXaq-sXWyESNZhILTnyVt49TtWDzV3ACirncQ0VpWE8lKL-I5UI2o0Z-6t5T-4GGBXwcEavYLUjJEb9yFf7ORIyC5joQShqeXrAHzYuw_0YppmAPoY-pHAt1CQTrVUcxxzZZfUnYw0j9lB4BXH1SVnEdqoRNQEtODpTzRm2r_LbpiRCcKrGMmEmJoEUiHpPSGU0uSkAxPDjAuytDUfU&t=AQKZR_v_P1c3AZfP6F8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Perfectly-Invisible-Invisible-Vest-MB23 · </div>
+        <div class="mmet">
+          <span>₹82K</span>
+          <span style="color:#f59e0b">1.86x</span>
+          <span>₹1.5L</span>
+          <span>133</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJIqPFlAVvzXSqHu3eo0b_9N9cGeBnjkP9gly3J-YLRj338MP-0DypezPcpjBIVLNjandHrhcGtPYucw8cpbRimlzpZ5gV6i-hcLb-lv9pSosA60EPnTdEQlIDQUav9m0fBYCIpe974SzKmekVkWskl2HJkGhMQiU6Hl6LuX3sJBBoXsW81w6evjvvYEy41HVkTPDsvAXs5pvjmilqYCWaJY1NsaZe3PslzIbUvCyNqbqjFF2YgLQdK-JRmaUTwO0LkBL_BDBfCPnV2qoyEc2-bo2olS_oGzFqIijoMDEKscmsOLBP7eNsKt-n-HMN6g72ZBFr3QF1b8S4otgdRirhL8gVLPOa978-3laCSVFISvhWKrbBTUm5wAkNSOxoCXz51o-P7x9dLtU4ae_z_B1uJp2A8mKbfW3TBMVhLcpm4WmtzvDL1d8Olq60MBP8QXn4&t=AQKUVVOi1xnNdUBk9FA" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Pros-MB23-Invisible-Vest-Creative-Flatlay-Under-Ever</div>
+        <div class="mmet">
+          <span>₹71K</span>
+          <span style="color:#22c55e">2.63x</span>
+          <span>₹1.9L</span>
+          <span>126</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKKz921acPkelG2Dyqro_XLoGuObIMHa1hLXUpegi2aq4eJtDtLPiJBn5h1KBEFA294UDAuQagD8hTNnKTh7Kb2OJXYi47xT9QwOHY4ToR9iSNU0Dbtdi7rV4ojByTTpgnpXt6g3bmnJyal_-sF-hIO1ftBJwEjAmLwDwkq1-10GiXkrQv0k47zuY7udUQd3C1J_nxSRAQK76KGUHYOeJvuUhh5o1Vx0AxLVrgshP2kGMCQ6UyN_KfZqqCCb8_RDTnnHo6_rY3i7z7hU7BFT0NTAGRx7B9xfEb6Cfv9mDEc-EWex6s-5DNVOXWyi8Dm6k9DExANqzLjAUl-JzYWlx5XfGg_4iYF3OOm3ea8rRyI_H-HG9BTVMUsH_XFohm3pJAAeZWDU8tk1bhs5rBdyy9CLE2UGx5HvLv0EYi6hsBfA32jzhvKqsF9QAn0VDShwaU&t=AQKfdEp9J93Yf5G2XqA" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Every-GreaTShirt-Deserves-Invisible-Vest-MB23 · </div>
+        <div class="mmet">
+          <span>₹36K</span>
+          <span style="color:#f59e0b">1.90x</span>
+          <span>₹69K</span>
+          <span>50</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJiKr0DhvZ7vhY528uchrzI65sXUUon9Cjdj_Edbenz5eSMTxKMQRWhtdyUGQLo6QxazjtsMGDO68OGP1PkZO4LY7pdEklEWE89aTUvFbEUNYc0FM_5K1DiyZUmkBHhqvw4T9iNdWiqWY6oIsSI0EMs3-BwKtgrNiOa8hnKaQGryvfHaf3VKhPmszjGfIAwT778cguOjoVlkDGN2lIa7V9Vdahe8ILXxm_xsG8ZghD7FoWrflHQLQAX7XPbW6wUnvbxEDyRWzvrFY9l-yV5ZcKaohQ1gpuF--W9QMSYqm8c-_ad3Q7sFLvQKWtsGeXvs35s3kPA9neUgdcdQ-WpE1MSyweHDQIz-LOBc9tWyebI9l-F786YGffw7J9g6PyDZ8u3Ep_uMeAziRTnhwJU5A34OslovRfDYwr-SDuYAuGyRf1wfzbEN8eA10xivracKAk&t=AQLuPdIHDVnmd1oG2ls" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Well-Find-Out-Way-Invisible-Vest-MB23 · </div>
+        <div class="mmet">
+          <span>₹17K</span>
+          <span style="color:#22c55e">3.02x</span>
+          <span>₹52K</span>
+          <span>39</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLeg0BuMA6bF2Vn8YEWtUXAjCbhKO7VUjtqDpakLoBDLdaEot2dv9OrIpwQzgycX554PIhXQkyldIOI0J87ybqK9QSwfLYQ9anLZLBskyYYs12FhGLRhehnLlEWwbLrfchTm82ehrxw-W1tBdrptxZoufFzvt9ov4qae8ecNIZGGC_O1mLrrtbr6A2k3udtn3ng5S6NX8hV-srRpuqcZ0MPPCs-gLPLnMFAXSLe61rQR2zXo-u5UnI6xKycdTgs5olBdhn0W9wDnyu8YLhQ1wJZhagFX6q8kRCQk9-s82Yqw8UaaWc3PJiDZ3vybXOBmn-z5hBcQy4hDpSTpyMJzRzmLI9lAEqnICr1c6uUDFmMJZOafpdDYAOM1PhRAuoTeKgF3XxJZWlMcYuJvaCl6O3YqvyMD-icGZYC3BXOM78dtJ_lXvR091XMKKQj5o66h7I&t=AQKtcUC9VOg0ggSmGBo" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Difference-Is-Clear-Invisible-Vest-MB23 · </div>
+        <div class="mmet">
+          <span>₹14K</span>
+          <span style="color:#ef4444">1.25x</span>
+          <span>₹18K</span>
+          <span>16</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec">
+          <div class="sec-hdr">
+            <div>
+              <div class="sec-t">👔 T-Shirts</div>
+              <div class="sec-s">20 ads · ₹1.4L · 3.32x blended ROAS</div>
+            </div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKT0CG73KZyrCc5Z-_wNb9SZlO5yfTmUdBAcgtGJbHdL7WwEXh8F1TgZbiqB7jImaYftMzBj_pQSXafxZg1okjuiso6JvW0AtoHyjbzaouqqujJLoOw6kPPCObZgE9O3YkazioEvMKqq8V9huz_TsVvoPUCQcBH8gy6FVe6ptNXlPLdjJkPQWHEQW0KGUIVq6eN0CsZ6_ceV_5JP0uvwoVokzH8cFoqJKd-WSVUKSdsPt_rK2M_p5gPbQqW-uR-9MRonXsdF4AeqRXJZRF_mG7ynrKUeUK5f_XIbkkML0JDvD3Uucb7dIP2WkuqiuRCTPaVFwn6Cy4G-JgXZjaUiO64yUpT7XWEi97ScRaVUpQGW0IuKE8QPrdO_XpKJmkuWbEG_Y4hpv6jvUXyQEcAHjlrWmoGmf1m1xXlwf2TZU64Fx4bRt-2fbpxSxHbV4DNn3Q&t=AQJLQJG-Pfd4puvHrIE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Sweat-Dry-AI-Active-Raglan-Tshirt-AT01 · </div>
+        <div class="mmet">
+          <span>₹54K</span>
+          <span style="color:#22c55e">2.79x</span>
+          <span>₹1.5L</span>
+          <span>113</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIjnS21xypDgVsjcSEciL-PNdTLSzSTcJniBNp3EDZDqpfNnT1Sd3nc2zENAsEuTXnFBwgyxCHmCGGmzqeUO4dixHKWj6we-CTD2U9x03Emd9XmtGLr5w7S1Lm8_2x1Ak2ad8QFBs3AB0k62caqK8Ntq8RmInyDD3_wjyxFn4flJZoaZjDJffh8hzWpYpOSxFayqXNeae_gdt-XlCLs8ShXxddyyNJoSUB9bAu0evyet8dwJDENVX4tifyObbytMDWwrLFyjp6NHfCaCQyHHiWsAsk6QVBVbOTD_KLpBGqGV9WL-cvmQlmtlUJN2H6cpRomztBwBTapHMN5jmqaRZ6zPFnSzGH5jx2u034_JrpdiBK7ZUm5Ex0qNSjj_O2yw98jWCYSZjepzeafkXdnkhqSbKGe5-RqozjF3MogBTHTriDUy6iGRx2J5Opk_2S99S0&t=AQKrH97NfvW2WrSfiI4" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">One-Tee-Every-Move-AI-Active-Raglan-Tshirt-AT01 · </div>
+        <div class="mmet">
+          <span>₹19K</span>
+          <span style="color:#22c55e">3.29x</span>
+          <span>₹64K</span>
+          <span>46</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIKK9x5LefMudbrKhNrGVKH8ZOBpRJZVNu70BjKN-fOWDN1voguFykTyozBkXr319NB4wLg7rwwpZm81gF8J61nH2qd9MGCCVQE_LtqXfkSxhHACRzozcIQCycBFQfjtBz68xM-NiSVZv4ShKpTz-sx1WMY5vxT8D6Px4L2MI65mW474YHfrclEvDRA5kdLiAdHPXZD3KOTSEz-lE6ZzRHAAucqYuGFwJrawzKlesvL73WAdsujOfVp2WPilsiqnF_mzJhX9ky0x_PcOKlisvEcIU0VPbtQLM4zrzhJggo3DS8EpFU1afHJ2pFVSs8NHBIFhkDXp5pXbKZFRqEeN-_mQpmyZW8aDQUCfmxcrDVahSccyn1rB4uXGMMJ5KDFkawdTDFES57RVww1JPUxpL5AAkK7WTmBKeuo05b4gGD-ZmSbRGYofZnx0ohFmMysJuQ&t=AQI_bqUXvPoVyqhAn4E" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Running-Long-AI-Active-Raglan-Tshirt-AT01 · </div>
+        <div class="mmet">
+          <span>₹12K</span>
+          <span style="color:#22c55e">3.75x</span>
+          <span>₹43K</span>
+          <span>40</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJuZhejCSG0BhdOEmrhyuOuBr1B5nB6rjnnkGiH8kEF2CIGRB9MWlngob1ccoj5wJQi68qKtJMh7pZanQQGXYz6XubSUV_nqnuHDdKrGdwAoZucV-03QowSFbTCeCbo6jIJt7VxB_OVTxR3AMqLzb6tyVoRUUn_zjolMCyZPGeilPjX5Mga2g6lmg28JgdJ7e6N4zJ0-AGUkhCP5vbTBpQn6IKno6ostk9VW4CyJHnERbWv4oCrFC_Q-hapoj4OfLQi5c8O4ezjERMQtVmJEXXd4hISZICTwWvHLZZgsV3xw9mcpbQPZn6rQkvLl3NuI3gOJcMFoLW9Bz_GIZCwD8qmOyEcAn9LMm0kSmJFjSyTRiIsS90McWuPc53e9PCjyFuAoUgobIk6cfLL-1-onmSE5qEwH6Wr4hSJdnHAVUJPIhbe-RnKwzYUfQs5eRYeMrs&t=AQLhNrMrOq6rJYdvD5A" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Your-Style-AI-Pace-TShirt-CR15-3-at-1049 · </div>
+        <div class="mmet">
+          <span>₹4K</span>
+          <span style="color:#22c55e">7.64x</span>
+          <span>₹33K</span>
+          <span>30</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLFrEPHqHA8rP-__7_yHJdHRg0Gagxhyrc8TEHCNXxzZWaXlYL8fYcJ3d34I0CxhM9OWI2gte_1W_8kMrUexW0R2m2JZoZlwmAEBxC10LK5NH4OAKkg1w3VrIat5R_TtyI-601mMTq8GMfhHF1jN9NYuob0PsEwaRtX6_tStrNCA73EUQRAQIC9RZDMBvl5ONwvqJzUzXSwtn1qWihvdl6GeViLyR7VdwWdjfwh2fGCGCuiRt7SNAbtBIt4_YR_h6_S35t3rlN-hVyg_tMOA6tMR3mes3Rj65e1SBB4vd0M0nrIu4GY_Bc9384vAx6Q-VkIFMK8OAR3IOXpuVQdpQCCcn1pg5yytlIcd6O154mEPDWQvzorGiXC4fbKsoMFVSwFJ6910wpIX1kOZyI645pE8_3LsGis3dxgK2jhGNvnlKddznj7yhVdDU5FnqpRLTU&t=AQKgMlDHvE-CWYS4jG0" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">2-Degree-Cooler-Dark-AI-Active-Coolmax-Tshirt-AT02 ·</div>
+        <div class="mmet">
+          <span>₹4K</span>
+          <span style="color:#f59e0b">1.65x</span>
+          <span>₹6K</span>
+          <span>4</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec">
+          <div class="sec-hdr">
+            <div>
+              <div class="sec-t">👕 Polo</div>
+              <div class="sec-s">22 ads · ₹1.7L · 2.98x blended ROAS</div>
+            </div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLaE3GteShsO6NBpFdDWzbJ_GHKucK95Lgj1fQGngYCz-4brU8jFLj3Ip89i75aCpOqaq2XgVkVBW79Zf2CMPiEWZLukgOLovwNGQ04ks-aAystQ-xVxi-qJ7FPEdi-EVK_StM4R68XJ0q0vaQrQMj0SL9tUy13ugb1s2WWcHV2Lfe8O_65WNdfEhIitjpYmj7hYKH6HwoiiDEJvv35nra0ra3Im1J8N8K8eKLLMsClvRGlsnQoQTQEJNkiG2QGC1LZuiQmzl8EL_X6m0huA4Spw5PkydZAsB-djkP03JSDUfzEtLasOWxM5p1JFU83B3W7PwnMNfwkm7N3jZP3ERmohFmbmScdWmaZjcNz0rha20RvlBR0LhckXO-LR8ALzbgc0h-CYOZYRmUxZPg4lrJBLDwPNpnQ92chLaiK-m5m1DYfOMsja9tWMtD_HfR7P-Y&t=AQI8x52HtRkyVzdi75Y" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Fastest-Way-To-Look-Sharp-Nova-Polo-2-at-1049 · </div>
+        <div class="mmet">
+          <span>₹55K</span>
+          <span style="color:#22c55e">2.83x</span>
+          <span>₹1.5L</span>
+          <span>144</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIoubGmXJaQcOZI977oL17uf9dmBi8nwvMnpWNuouO13Ulr9H6A_0B24NH5LlyVcULlHl5N-RCJn1izSbg9qpMHAKzzBDu5KAkcyxDMD_Bq7jlWFS-bMGa-N3a9ql0BSq8bPGUyIwbQvyCaxKtoQBRyShPHkkJu_sUsoNEzcK8HMpuZnXkTTmLgSlhng5vKpQ92V9TqeIUVaE9JoEvbBgtaOjq_NDWmBlMloUq9aZJXSdM3VEll-16RaX9bIp7ikBPcSt8ydBApJ9xwilRxpoxaEMTWUt7CtOTbzc6kLTp3AzbByosdSZZ1HsLwGssTcVo7BQ63NytPwd_T3I9LoCfaG17OwgsF1aWuFHBOiL0CNk_HdBrL7s4jvtr67hQnShtTYZvlraRdN1EBt2jayok8_JKUpvXLqcdipcfWrQR92XuAN_yyvBexNuzipeuSDk8&t=AQK1qVx_H9dHMJRfetg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">They-Pass-Every-Vibe-Check-Nova-Polo-CR14-2-at-1049 </div>
+        <div class="mmet">
+          <span>₹28K</span>
+          <span style="color:#22c55e">2.75x</span>
+          <span>₹77K</span>
+          <span>66</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJoNj0lSAclzIcpDSO6lir9Tt3dz_W_Y6mSEE2rJBh5Xtda3VKB5wBiXO-t3tOJ4tfYiGM_fZqMdJ25qJeV14zpkm2xPtxyaBkBKCfIWeriALSSQFmKkKl2QEdrofplgc0ixVgEc9dsMN8d2uktTzglf4U_T8r2yI0Q_kfXaOMULIdd0OycDLrzgy5mr0xL669c5Fkb2oPucpfs9rC4P2yUqESARJqeI7dqwTLkVf-Tbr-wx2L1WygWX-aJbNMzsRYuhVgsg6zDui6UCuXwgIrOMHIDVfNi1w7svKdR0275UkcjiVSyEgsG-I2pAP2Hxd6OUrHOGFqWRCUmkznf3vc6LI3DZfpTbLkj4puvzpR0hJckVpa1j-PaBsTQg4BKrcqpHXh-oGj9LStT1-PuuEos1b9YPlCgJRFxZPvv-8bDya-XUvWQUYwg680g3njZ-8w&t=AQJjtcUL0WEfD37iHRQ" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">This-Is-Your-Polo-Moment-Nova-Polo-CR14-2-at-1049 · </div>
+        <div class="mmet">
+          <span>₹20K</span>
+          <span style="color:#22c55e">3.51x</span>
+          <span>₹70K</span>
+          <span>58</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJMRPjus2gdk7TGyBWFV5n16adjUS6iQKE78WwHr4KEN1wfiDCn1AY-xpAKN3kb93mSpw9aK61Lm4n8f_LjLwr9kA1_MeTQBZsTrPdmY4o178e2HdNbtsLjAmuRCfQiozBGJm-EQ6VHh3INiGnyjNnsTe6W-UIssOYgUY8EWHKSYo9zcnDl7pawfRNsn9Xkl3yLyaSbhF8w4erVgZBqlOvyuO56od1inmLqBNGaAbGt58VgD7aSbfX_dlJeOnZ9XQOEty2UlQzmsZUdRb-Cx0j4JwjHjpxVLdJtoGX3kuQRL9Xvlu82ylNXnPWjo3ScR04hz7SueTvtY_E6FR4ejgVXpwa0V7iKcjUSsIdq6Qh-Wqo6ELQcnrMAJb8T7k0VKFGn9MCO6VvfyFGPpt5hyskZhAsllmnbapZ1-wpxcGXB3IlDBvFUqulyl2AZTu4bRXI&t=AQKZzErttTUkqGvWzn8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Polo-Look-Like-After-100-Washes-Tipping-Polo · </div>
+        <div class="mmet">
+          <span>₹10K</span>
+          <span style="color:#22c55e">4.23x</span>
+          <span>₹42K</span>
+          <span>34</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKGjA8CpMixZLdfl6xO4vrAxT5EJGMhDqnKUo75emuCAKF6BCI7Xtz0KGSlJJAbdsF6UnQaueRfiFcuB0cZP7ysqYQyRo9-zFkkC0SI8WVB6W3esw5q65_dRpDm7XhdcGiI0aKkLKY6cL4HfJlfOK9uCsdpSowGgEHL8cCXRSlTvMOU1xCR98vOVObVFkkxIKvYsQq_PAkt8eOFs8WOfP0t1txcLNbovK2rFbJhaCywe2sL3BfYMWJDdEPoGxB4Pjjn-ZXDBPBda0JRVzWinoIns7yF2qiTDDmyyn8GG8YL4LkHYa3akF8vusdUY6HTFzLkqbMbSAshHQN3cdvE-9_CkZx_qyV-gKKbFMtfOdVHn_vFPoeHdHg5VE9PhDFl6LYrQkVJI56b7v2ST_6zbFQ3OiSHFKvc-HTYKqgENIJNPzFw3KZ86lwKXpt62EnTDzg&t=AQKsUOXUBuBlO70cXVs" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Cheat-Code-Nova-Polo-CR14-2-at-1049 · </div>
+        <div class="mmet">
+          <span>₹5K</span>
+          <span style="color:#ef4444">1.32x</span>
+          <span>₹6K</span>
+          <span>6</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec">
+          <div class="sec-hdr">
+            <div>
+              <div class="sec-t">😴 Pyjamas & Easy Pants</div>
+              <div class="sec-s">27 ads · ₹8.2L · 4.25x blended ROAS</div>
+            </div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIoMjTWTGKNliQBlPXIM1_DO0nycp-G07gLIBDm-Ai5UY-e6yQOQG218aQ_0T0z1nH4QktkHc5iGCk4-x1B6OCf0LzB0pnUqrSR3JJfiarCvxL8Oh-z5YpGD3-R39i0dB-91Iik--W8SUrEOZo_bFXfJ2Q6OMSndu4F4-yHq6v_aCP8_xz1YZcqyHgm1ONQKiBCbHW6FEWVA-99Xv0KyfZsy5rn-ZaKXmxqvKJFOLl2kCVXJ5XAvdyeIPM0165Pb2EMZcqpVT1p21w4HiyEHYgGwMWaTTjGo90Wo0j8ZF_1Rgh2zNPcQkG56qqMz05Kx3niWw8MXQ0T4wYHsRgALQn4PtVOWnxdv9qT2ftEVc_trGwr_Am1timjusRzbHnWPo-8__1HbkC9BWP1sYop9aG-3XpoInFLmjI4DiT2C8se5yX7-mlNoIIOrdHpFdrypaM&t=AQIuKGA9oWbphmc-wxM" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Generic-Flash-Sale-Flat-50-Off-Weekend-Sale-Static-C</div>
+        <div class="mmet">
+          <span>₹1.9L</span>
+          <span style="color:#22c55e">3.61x</span>
+          <span>₹6.9L</span>
+          <span>661</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLAL3tnhkVCejQhN3SEJzOOG1C_SGJYaNIGvfhGWokiUAcEi5GJCxn1jT9EN_cQJqCb6Cf614IAdhkB-itQDQncT4rLWVHq0HYxuyVIbR9ZdLzjZG9NiOBoD4QM_bpnj2TKQ_kdWOQ9OIcxSaI3-F89ZbWrZCAzkw1d0sAfjcF8ScDlqzLLfHe5cG6qzJUNADSl5dgOnRfykvsUXLnVRoPPsUXhU9sTCTbGK8DLWRmylqf8HuqD9GhRyArAmwJaDELufDhC88uvLpqeVYHG2klIOePpg-OUM-b1tGjOWQol4Gyb1jc0Jk_L1ikGBO6-LksXin1a36AJ1cjpMhr7FWOcxSmP4tR9PP1E7-R-J5QfnWqPV7P-F6acye-LdO4Fv6uF-VPiLMYRmb_yJpMzq9YXPvnek3-wdVtSkroNELUBPrL3zYdHbIbZBlxoPQm1uX4&t=AQJXFZ9wZvOUqqF7QKo" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">At-Half-Price-AI-Pyjama-Flat-50-Off-Weekend-Sale-Sta</div>
+        <div class="mmet">
+          <span>₹1.5L</span>
+          <span style="color:#22c55e">4.52x</span>
+          <span>₹6.8L</span>
+          <span>615</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLcW9_W8HnTLdolonbXa2uPu68H6yNMPfD3RwEXaxVtQG_r1ocF0YNybWxz2ZcSRFC9cKX0kPzuOgypxHW0sSVIdSg6kYiZoOko3f7cuznxsK6jxPZlmLN8wQ5_faJppXi4qR4OoD_7w-rwSxzikm5K6XbPOyDfarQZj9KcZaVEt82vwqSbkzipaxFrCzXV2cvxD1bjzjyCmu12fMGYuzH0Cf15Fv2l-t8GBojRE845Sr-stG1q3-d-TaivLbBxlYTluYTI1OG_VgQLYI1HnyValxZiRqofXalCmtLbfePaHXfQY5_GbXUVj-InItRRRu1YkMOYDgIDW5TZkS-SusnYdv-kf3-Xb2WtgKKWEWJS8Z_eYlxfpA7bkC2Vv1gGzTVYFGBodoqXru3nFHO68-X_TvsebbgnLELXOWXvkMMAUQYOcqgpRzVUEvNAxjOGmW4&t=AQLwHkN-cuz_ua4JqPU" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Generic-Flash-Sale-Flat-50-Off-Weekend-Sale · </div>
+        <div class="mmet">
+          <span>₹1.2L</span>
+          <span style="color:#22c55e">5.26x</span>
+          <span>₹6.2L</span>
+          <span>569</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKQyqx3aOI0XvSoCvsqzK6OLY6dCYXEVP2xUfGPRbMcbS-CHO27NzHOJT2_9uObMsHeBvu8ABS6dQe-kWoHZteZlUaTpUiLeilozVWWYxGL4BLa83EtCpC7gEGGu7VS1C4pM6cRecKowYT4Vtvqp-6_JYHw8fcL8LOVWaPuGaldEqKpdAL-_TCMimqr6F8ALwRRmXdPfDTtJxwpqbGrD1wtHp8iuepmnfcKmAXcGCwosWel5sDu-MeU8CXD6-pav7-sAdnV7P-kdwyHR8LKHjD0vzb6WMX5795LoWwvFvQ6NvL_xnMz_aMz4uBV58w5vL4CGJhg3sg1rdWdU3bbf2fb2ICZpQPXsS-xQgInSsC4jDbQadQWljrRqR333BRCntSIahxWuFGS8mOdG-wdbQVY-CjTbxRiTCVUaVmvdZVjaDxWuPcvBrkLX3YCpn1biC0&t=AQKdTw-vLMMWrGIH_NU" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Snooze-And-You-Loose-AI-Pyjama-Flat-50-Off-Weekend-S</div>
+        <div class="mmet">
+          <span>₹16K</span>
+          <span style="color:#22c55e">5.60x</span>
+          <span>₹88K</span>
+          <span>72</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIEjUnbfAnj5HffAKu9ztWgqISN3XsgQvZLdrCWAhCOhKv-XAfV85g3DZn19ZzoU-iBUkyosSCXJ9W_jrH_oem6P-0RxO58__K6JfKHNQKtizjkkmfrkaCTMOXpVwMigr4amXGGDmMXCVNt9b8EFRN5EemJt29TlhB-wbdF4MA9IRTmNFp8YlTBr0_mMjq-FhFkZG4_T8gAfAuoKtp-egfYXGd2fp2qRuHujEWuXaciwGowALbeiENfoMFZ1wT6rVY_I--TDNBn38VBM3eQQaz4W4G78-svE7qr2beH-_XNYRCKHPlM_qMxvsOWBPSwWguKvEYdHL7flRM5tkibDZmmHRarvFXOkF2Nt1Bp2veX00hO1SSdEdwzeESyFJxCJv2onWSJpVRUuUnwMYouKdVY_cDfhN9VQSYk4Qzr1H4YRFJeh4gDU4-w1wzVioP1JuA&t=AQLOUptyFjIHaqxfZtE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Feels-Like-Nothing-Chambray-Pyjama-CR46 · </div>
+        <div class="mmet">
+          <span>₹30K</span>
+          <span style="color:#22c55e">3.46x</span>
+          <span>₹1.0L</span>
+          <span>75</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec">
+          <div class="sec-hdr">
+            <div>
+              <div class="sec-t">👖 Bottomwear / Pants</div>
+              <div class="sec-s">9 ads · ₹17K · 4.98x blended ROAS</div>
+            </div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQL4rVcqC54RdKaWwo0KKUDYP5v1gPlqPMJP_pCP-BkA7I7u_7QG3xnLV05HkknxMsU5HRYFV7VUnDyh6QmBxkvy0fBpAQXg7I6atSUwbBaC1EGF8L2fx4XLQru_Q_jy-FDQ0bnu8N6xxcFAdj8XAw-fvtNf9UfMUw1ZC5nNysNKoWZmufpLgtkDGUqys_kC2SSun62VeUXcME0MtZmMh5TTGcv3O6Zp57BjD96mvrNra9olYWBgFudG2CeFIoLGuNpsO_pDP5HcVAhVAZR9EDGf2r9u1N7eewXU1ZsvYe907k6S3TAsCm9plWgHwv2LXRzR0hxSgMf5uP6U6MSKQD1edT98VkHZFNdZaAfAqO5xnpwUL4xJJmI0NpWax22k5GMbv-rU5XCR6sCjh32eETaDIAutYWq8YCb8242qCfj5laSIA1ej5a2HNzCNn-3GK2g&t=AQLiNmQk_Jd0C4YZLMw" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Zero-Pants-AI-Zero-Pants-MB20 · </div>
+        <div class="mmet">
+          <span>₹6K</span>
+          <span style="color:#22c55e">5.70x</span>
+          <span>₹34K</span>
+          <span>20</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIGicbX0bWmSSmLrb4kQFgnqVbusdWdSxF25jxiMRFHUvZKjXKkNEC-2KYZDT_OoC8_wAWWcmQFjcwR9fkLnG9GyC-ml0UgScPDO45nk8TPmK90U1zi7BOeUMqygU2EWewPfvRoAtOKpRHlknc48hig-ao421r0ZETaxeLb-fMvUq3tGHkCcvRIe0OibPq3F31RK2SOSwiZw0pMi7BlPfIuu-mMMSZ3NBxA2KTBGwP1j-6Depcg7-pqE5PDq6V8pmINCX_z3IBW2iJgBrqg7yWJjecKFeqifJIYewWvu1oyuG5EP0z4riZjOVHHFK69cQHbf69YsaN97Sl6niaRmZIihWt5Y3cpMK247PUTGkHzF4rxHJ9_S1aejNoRyl19s4OKNrTjoKa4QFQNbc_0qLQ3FxnXp1tUGv9eXUwqhSJ3yFqtEBAw7-4L9wg-XEOBap8&t=AQLUeUxHyUco3nProIs" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">8-AM-Deadline-8-PM-Dinner-Zero-Pants-MB20 · </div>
+        <div class="mmet">
+          <span>₹3K</span>
+          <span style="color:#86efac">2.37x</span>
+          <span>₹6K</span>
+          <span>6</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQI6TywaCZ4_qni4bARH1DOfMxtqsWFxf_cNAjpN5RYtJavGJm5C9Vrbdzgi5v6V45a7uE4jDcId2Rkj74ojYDiYeGyktPJwB1XHakbYP4eBQDcvveB1C3-_xWwAkaolQACOcl-Uauyio8lCDYZgN3-BD-vyHtwxW43oqQplv4Pd7qHoQjPuQULq_36OyOX-366E0mZ-D_HegeJa6DYm8YzS33y4ahSmuythvqWHp_trSC2zRSvmER5S8H-_WJCBtijXmsHsyBV1KMLtO6xjVqSKNPbdJlqInYEy05dLO4uz7eSGKLdm0SNPDLZrPdVeJxq3vGL7P54ag7bI5XFD7zlc_purvhrfnfKpj4DWIGaeFjnYxbL0hUC7W3d56LogxB1ubllh0Dd57mwr0R8gQGK7gcD80nFPNaYcqXk46yas_j6aClkN3bBAJ8cbsmoLq-4&t=AQJUMQuC6_yAgrSxZYE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Made-For-Men-Zero-Pants-MB20-Carousel</div>
+        <div class="mmet">
+          <span>₹2K</span>
+          <span style="color:#22c55e">3.13x</span>
+          <span>₹7K</span>
+          <span>5</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQI2hfjBUGk1PPQ6VLx86TqQkWCGeYDXxvZlqpbpvfKWAccWlsYn2_eFuBTtpP_7DTdis53-rwpBOrz_yXuWJMcvGK5_-_0iSskhIL6QOZcFFtCbkYWccMPoyTkpRMYh0KcjhtrlOmnIILa5GZQ_gRyWeNp7EhfPq5pO-VO25u6ZI6pSoHFDMcWAGTRS6A3LWeZpyn5XiG4QeOuAhvDLPw8SA3JjVea5QQ2dIYDOq_mb3X8pOav6dbgiwhQuJygV8DmgsJ4hyExlI1vzHlk0WJSDHcMtWhb0u0XAx9onCkk6Dx2m9GeFYLRapvYXCBJIVSYZssIm0_9jGsnwlxEdHmxSlwVMML0CQHtH_nNgyzQk1l9FlZA91pJQt9bIAOL75KxScDBL19fQALMHKvI-3SeVXKUwAmabQzV26gq154d9GRZrea2MgSnX2w8JD_1jg4w&t=AQJ8eo5STtCW25KY5Pg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">This-That-Zero-Pants-MB20 · </div>
+        <div class="mmet">
+          <span>₹716</span>
+          <span style="color:#22c55e">20.87x</span>
+          <span>₹15K</span>
+          <span>6</span>
+        </div>
+      </div>
+    </div></div>
+        </div></div>
+  <div class="inner-content" id="s-inner1"><div class="filter-bar"><button class="filter-btn active" onclick="filterCat(this,'all',this.closest('.tab-pane'))">All</button><button class="filter-btn" onclick="filterCat(this,'5-at-999 Cotton UW',this.closest('.tab-pane'))">5-at-999 Cotton UW</button><button class="filter-btn" onclick="filterCat(this,'Modal / Tactel UW',this.closest('.tab-pane'))">Modal / Tactel UW</button><button class="filter-btn" onclick="filterCat(this,'Boxers',this.closest('.tab-pane'))">Boxers</button><button class="filter-btn" onclick="filterCat(this,'Shapewear & Vest',this.closest('.tab-pane'))">Shapewear & Vest</button><button class="filter-btn" onclick="filterCat(this,'T-Shirts',this.closest('.tab-pane'))">T-Shirts</button><button class="filter-btn" onclick="filterCat(this,'Polo',this.closest('.tab-pane'))">Polo</button><button class="filter-btn" onclick="filterCat(this,'Pyjamas & Easy Pants',this.closest('.tab-pane'))">Pyjamas & Easy Pants</button><button class="filter-btn" onclick="filterCat(this,'Bottomwear / Pants',this.closest('.tab-pane'))">Bottomwear / Pants</button></div><div class="sec" data-cat="5-at-999 Cotton UW">
+          <div class="sec-hdr">
+            <div class="sec-t">🩲 5-at-999 Cotton UW</div>
+            <div class="sec-s">Top 10 by spend · ₹33.5L · 2.30x ROAS</div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLUZ-sVabmNqtvni4bgpsMnLIIYWpS7-93t8jVLh2vGvkkaveTVxY-2Qzc1oaWqZWrnBsjw1TrfFaJxU6Pj4EtBE9yBoSTNDQhNM6nP6OHP1rcnjXuKoYYUTM95dTtKKWdOcykUWnr5I22_iib6I501qDd-9X1Ou-PhsHtEKBoocFVHI_SNzTiKSyWXGbIIH4ZOvVp59oLE-jT2arJYsc80nIgwPp0GlP_iS1senE42caLChWYHhvpIPUvTr3dF8ArQvntAxGUcx-yQVGBc5EIMeUU8Wd3RSo3pkk4bYQgKJ0KqBks-ddS22HhzQcH6mQcffg--HBeZvIf2uV9UXyjeL4bArOUXrpYL43Zmln8XhPoDnoUR6PWT1W4IBQWutZlaIzzhBOqrsaUpid2I1rNtNaCoGXBExcZFqKQQ7cn-D3dZsH1w0bYOs8gusjFNrUw&t=AQKDZkqJnxlKjIigi8A" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Good-Luck-Finding-These-Later-Cotton-Underwear-5-at-</div>
+        <div class="mmet">
+          <span>₹5.5L</span>
+          <span style="color:#22c55e">2.68x</span>
+          <span>₹14.7L</span>
+          <span>1,452</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLwfY6ggLIwQ4rIcMeOBbZ8esXJ2Izbb18yhB1YBSY-iwVFFvOHS-ZueR_o5sOAGs_8vN2YW5BmaEKXWef7SClHDBhDT_7X7s3U3Mc6iq6XcnaqdqRc5U9zE7v-7hGgfddxYX5xkzSF9tNObX8mmcHd0kPksDJQvcz92HJv2kcjdIhRBxpHIVk_LlEHxj96E2g0J7RyQOogpnGP0hYk4umtDZr_vx9fEQEEUjctFaB_uKcU1V4EtEmCYCm3319_wil0SO2S1rnYNQ0apbCNuFRMKr4xM8nXZ-qwQpnAPVYutRb1paK76TvccbCbMNU4LeogfhljDooymAo_gQGkr_bAQhEcyVNmJKu4-tEWCF7Iza60FMdB_iRhvCMjSHGPjcARN-yhZqEB10NWgGyppMW0G_74B6SiiA-K-A0d3_JX9QKLbQLNrZZiP84APIeuD84&t=AQLjziaxLWVYwd8LSEk" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Everyones-Upgrading-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹4.7L</span>
+          <span style="color:#f59e0b">1.99x</span>
+          <span>₹9.3L</span>
+          <span>922</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKNvchUVguWaSQm2z6SiFFd8PHR4ekfFHjpLcpWIZeNmsApkb_PPS9xQqgk7J3Gr6RBWdIb9N2c-sMPaylhcbatbC8dzoxYnPyDowvh5O4wG_Z8tU9ECWXMnkUYE_nVueXCBAcxaSW84ZCND4LM5qDUks4bSsa__aw4_zd6wedp5fi-Zobgradqp0ua-AVmfM8z1VgnpkTuBLmCil7AG23WlTR3O_RS4kYltp0vQy4jWLfyr5Xafzqnk2lQDb5FKgWVx3-IKay935NmzpZODFTlty-pxIhGsUEewsJuePPUd9oQN0BNhCel6pDLoGSqkfC_e1z3hEEJeS8GDM2W5SkslBHVOUEEO7wArt7cBoTYJ_Wm0xfuiYiBSz_zEDwvxuCHgJuhAlRR_qaNRWUb2TOhE_IYBnqYwiwONyb60U5FfflAWrOiFgxFdPpL0_jGZgI&t=AQKRm-mKddyMdR6R40c" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Last-Chance-To-Stock-Up-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹2.9L</span>
+          <span style="color:#22c55e">2.60x</span>
+          <span>₹7.5L</span>
+          <span>736</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIVSFWs5TBNnUth0UrRTG4I3cO7cTnoAS4sD-qDx1fvm14wYuAtjsEG8jE2zYu6fKlJKWQfK8HrzL85Cn4dxvVloURry56JWGY-xRFl60hyl6L3uIWvLz-ULGRXUfwrn6g9Zy0hhzI7x90N0A_IhpIjvMq4k44JtYN7ZlJ-DrxCBj8ARbZUiIXWXkLkbXEkAHDlcFLoswouTuy1nT303XGmefCFQESIvGfFBQxwH5v5y6g5UXLdvSHird0a83QMOieGPf_cS8ZurSmy8ybezUmYZQeua_PmLuzTa6JdblD5uQNcv96DIdmpEDas2jv8ikitfc2yL-nYu1GkCK9fHS0Vz-AfQmuRy4wOV8rP7YOG5Om3WWQu7Zn9ysUP9IIfaVIHHGsimf1U9hXJm2kJGLp5gl3sQk9aEz_sNeaeaHyrG2pqoblUkH15ALQjeBjJ5TY&t=AQJ09MkKEyxS9ZEM2-4" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Grown-Up-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹2.6L</span>
+          <span style="color:#86efac">2.35x</span>
+          <span>₹6.2L</span>
+          <span>608</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIqsiLOP-2rpBVNd2Rt-AOgOThSnr3cJyj1tK1ekKBbr6Nt-l_7oeTCV0G2PZiiVWLfaVBlHuqPPtDK9H1MIn6smJN6rolWCA1K04fUwY-ME2B0g_F11U0-PVfU_oW6SBm9XZjgJ0xhVC7XrqxMgUOPbZYpsYk-4GBn2GUqKIrHsOUaSYiwyTFfgxkyOHoc9wzhgPqIsDDALjfc9fG3xuQCnbxmfP9-goulBC3HeKcbf22DFzYDZgm0bhBDdsBGuyQQ-ldlpUyh7bJkiA5XhRh_OYZQo0vw1v1VWLQFAogSVqYuMKGXfPtCPbovNPKvzJ9o1E_7weyIkc1nJFUmBCGtahujU4XJKGJZxUQ__bcMNdNxJ-awV4BpwYQCzVIUDvOdmfgOFH3ShPJ7PMGtR2LcAGWfopNOxuyJJVh_MSwYiNB0g8NeTq3E9ltIZ0Ho7Oo&t=AQKht4VJU5JOvBQUOt8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Congrats-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹1.8L</span>
+          <span style="color:#ef4444">1.27x</span>
+          <span>₹2.3L</span>
+          <span>222</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIhE7tcstHW9HYoG0yoptFo3xhSq0tMwHZnAGJNoA22lcA2wB1de2bWeT-CMF_pIME5RcEd_9wE-MRaqdc9ElH9yaFaINX55DiLFnIKdqdBD474tH0lykRNAbKF-SuUj1RKEdgptQCTaZaBpz1IODzuLXPA5TXZ8m7WFHbNJlctfzmPXRgd1Y0L7GAzjsUkPNIUu3PwITfy2T5Imvv7XgSw6gxjRrHVApVxQerHviddCQjU_mTuS9KHuzrofSbcHx9n5X4ULnxUbPTeJFuiKv128t_izNeIWihiJfjytuLW7goxqPmCsOiKH1yep-yjQuFVu36ST42pcpbApqGUfYMj0ULGDb0elKHPWYBwIFUXU_m7IJWgwH8GDInR8U5HDWzcPtKyxQZUNJJwyrGPNuoVwX2Ge301S3tsHs9BUYLG3B0r9mflkL9WLUmqzXk4OyQ&t=AQJziDOY9UJm4hs9dN4" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Lifes-Too-Short-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹1.5L</span>
+          <span style="color:#22c55e">2.85x</span>
+          <span>₹4.3L</span>
+          <span>439</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLEaeVJn--TTVvW_K6azIO5swn0hMvdeKt9048hjO4jfgk4lq2jq63ApS9EeKXvniyQQ1MhCFgnbnA61mbr7_E1ZRUL5DOaefxIPKbvgo-lj7NHqKkA5ckCWECaIs-Cx1BlRA7TB2Eyw5cCh-us2V7WBc0qCgsay-66Ofi-sy4Ki8tcL-sW5FrwGSTPImXI2lvWH4zOrmXAshEgm8MgKYUw2Cn-qAItAE0wdVmueblYLLQrot7E_KkpilqsBbHCl6u_AdMGhxU0xZy9eW8FnXZHqeBHnQG1GA6o64c3w6OG8tpwLWzl8KSQdO6CvdvPh_tavnvsC-C2lM1opSSvWhP3IPSj1rWEPWTcjZ8PCEahHDDeEBfasAW3h7GmNFhOJuToF-S7NQTddxtDLaR4owKWd_gSmZoPtHkqVxDwi5wRoSzJItJi5a5-D0id3SqQUJo&t=AQJ2KGqEatjwy8KysLs" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Start-The-Week-Right-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹1.4L</span>
+          <span style="color:#86efac">2.09x</span>
+          <span>₹2.8L</span>
+          <span>284</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQL1BIS5IPvrZCGTUCinw6ORB0KvbfhM2fn1xddjmswzYFt7xsc9PIIePf7dltUlFCYd_ncfMHTp9HiTSXvp7H_okEx58i3th4es2_sIqJOu_0rSoUQQYBymVLVz6WOr21dDFXY8ccggtN4M2ojjtqZWKoLnT6A8N-zSjsOD5tLtHIZu6iTFXDSOHb2UdRrsxZXW8XWJXnnfn985F368CZCu-ticLzTZwcsUHJpleoGrgyU9MfMRCoWm-6iktm-zk7Vvi6DBr8H7juwRZb6yTa-BaHPEn2rMPqWj_59AK7O2yqsfOt0_r44W_i7ATOV8-gtjkuWhCYYSJZsB6-IlPT-3eBYQoGkm-SBoaP6eRUL_VEToG49vCr57ePNaE8KOhvllvdo27flNYZyTUnKWj2w_FW4TSyMwlZBzOirWYPYndzESCSq9e1Xy_XNhToStP3Y&t=AQJ3TdUerWCXwqNXF3E" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Stock-Up-Like-A-Pro-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹1.2L</span>
+          <span style="color:#86efac">2.22x</span>
+          <span>₹2.6L</span>
+          <span>275</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJwuRGGWGem3W1WlWqPlG28vGwEfBgb-eWifPNgpulMOw0y3m93sBw55LqdECLTktyXrNoIXvGh5dl3UsVvIG-qYQLG9UzYDDeP_bBy4sDQP0E6hpC8rhJ4F1dow_0N3K25TBMxzHV-G78V2NbQH_rDt3BlxloWB37IMGd46nBhkzZIYD4M7jpWpkkDot15IjLm4OvbxX_Qrxzt8z_2knvWpGiXGh9Lo0qDg9I6mtOrayOu0xmaQUjY-vgdRxzhQc6cmKbxfmx_df46nnqzF-Y6Yyl7Y1LfFOna8GYc57V4qdg2QXidhyAeTRgyQ1zyg-3XW_cvOZc3nTRYnzwDlo_wr-HFJk84hA1JXICN-5ELb8QIQBbXOt6PjRmjap3lDVxgY8xSUdAoqNnwruD3F1gVDnLoIJ6dFE3J9x-qlqIOegFUvaupFSHAx-d6_kHqFps&t=AQI2LB3JTq_MXtBJYT0" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Dont-Let-This-One-AI-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹88K</span>
+          <span style="color:#22c55e">2.53x</span>
+          <span>₹2.2L</span>
+          <span>227</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIWtnPmN6V_LP4VzrdUAV_o5sf19a0hPkJqV8wh6rSgfTpZERrkY6sSScx_vxr-1DZcWim-bVd2tnmaLQCgqRUuMFAzHkArmrq7cj-hPYv1nPm_24IKbth09d6SBKs_xvb-coAXaETJzGfAd828yjGxWxpSKt2Na7rJhfFVoh5T_e3PwtfmvAIeB4FaOJHSNjuMTI3aFdgidoV3Fyy3UoekEIcG_4dl_6P7DGwZdyZs83t5LK94f_aRjVz_SwfW1aoX0Eggpv4nmBU_VZ6KIXm8qjuYoCb3gns5FsLXbswId8TKf5FOUEGSmGGy2UXhfZxLi_MEOg3zxjmXrYp8PdUndVwVUsYp-ylE-7VVp2ZZ9mL8YECO--3s_Axfjwu7bexzVSux-tyEjPQoXiQ1lHj6F10Ai9Cq-gnqoJgnpIAR3Jke52GneHURsQfY52M0ds0&t=AQJoexP7okxAjzYuiRY" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Last-Chance-AI-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹86K</span>
+          <span style="color:#86efac">2.08x</span>
+          <span>₹1.8L</span>
+          <span>171</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec" data-cat="Modal / Tactel UW">
+          <div class="sec-hdr">
+            <div class="sec-t">🧴 Modal / Tactel UW</div>
+            <div class="sec-s">Top 10 by spend · ₹1.3L · 3.48x ROAS</div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJe7lj3VKE0gLag251KOuGW78NSjsdy0kk0oOYXPR-vBVwu444gkjI6Xr-wIaKlO3ru6UfLnf7vIRhEAJWrCfEF7Kotv6PiywFiBJtKPOcfzASAtwuF0vrjbCC1VF03T-QJTHt_-8ioYWrfTUKlAWXcoCiu5u2cwAfSJw9QSeKBO3DW_axyY1g0LtdC_LXA_-VI-8_M6uP-_8AxC_h6aJ2FpVNuLuZ5dPzHbpcDuxgjs8ygADvjcu5-YgILK78PJAPoHy0NGBMdXI4s-fxA2Sw96PQgUg2rC6-I4CCtFVUm84AHczTqFfuRqDDokDOvEp2QbKOifXEpsMhXDYm-v5qrejU0vN2d5Vkyd1Ta0V17dhIm5048kHlnBm0SUluvmRd7sOBTfZAvziymUrHl0yRm-ga7yE76AVLxVMJZX53ovx7VvUyn18hO0ipp0Bo9uzw&t=AQJohBNdirXEoHfJLnE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">3x-Softer-Modal-Underwear · </div>
+        <div class="mmet">
+          <span>₹68K</span>
+          <span style="color:#22c55e">3.26x</span>
+          <span>₹2.2L</span>
+          <span>226</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQL96Geju--776AS94OaepJv15eYWvtRQ0cZTqgNJw0dDV4hEhSBPwZxNSjh4Po-LPy3tAJ60hkq9P6fK3VpWiwjtprW94zZsvyWIvaO2TNL54kZQnqgr3BgC07lkMJOZIM63EXa8WTQ4ailTDdJch4DrNSSvOUFpn8XkE_KBT5Niq_124Uv1xh-C9XxPFzts75_ALh2KcgkGMLVRqULST3dUMlqRGcnMA6rwQ0ZzJxA2gwCd_G2VWg6yvLXy7aP56usshfBdGXlQ0kgszcMGYrJDV5HgOHSPAaglDJbKOyLXiEUllq9UH9Yne87HorrGd6Ai7Gqg8VcU-PGjg7g4tbHylo7603sBO0ekx0svcuhm5uJRLi4tjub5ckzr8eyOA-lhVyonCXjBaDQ8F65Tx6RM0DSJtFYdFjmhRdw5U-iGdqtveNT9f-E3rEalu00hu8&t=AQLgpVqtQIqbPidasXM" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Packed-With-Tactel-Underwear-TB2 · </div>
+        <div class="mmet">
+          <span>₹21K</span>
+          <span style="color:#22c55e">3.96x</span>
+          <span>₹81K</span>
+          <span>79</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKkKya4k2IQWVpj2MWZ7b9BxRy5kV9wlHBSBQg4DNTileBihZADdXoJKOXP7iE9MKoEEC0b1kLoblIcj9fRIfzht7m1pZnxiYU3P2lGwp5dXgNEf1E1gOt1CPbLQAO0N8HFCHDonK_5NAMbnNNdaCF7E_CPtKg2VczpPcDOS8rJ3-3xRfA16KhDqECoLyd4Bnhht_c1rxnlTpKYcunFwCZYaL-wYe4iLTAq8hD1qT0em_cKxwnSmbUDRG41GaW6pUA-Z_RfE5c5FYWBuzeWbql32IqQnS5OEiz0lq-UR-GGfcdWQTvrxdxuWmCV1meHfQXPOAHI4Kvul2Ks5Bp6_IQ_7F31qCxYRaBWmM2q9NmP-XYu3VOI5WHq_rRFn-m7jsjmjEhe1nE5hcrhd88eut75tTZc-DWiK9J1b41raOMGE1AsvI2uhx-CB10kDI9PsSQ&t=AQKRnUD2ofB-BIFo7rc" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Softest-Way-AI-Modal-Underwear-CM1 · </div>
+        <div class="mmet">
+          <span>₹8K</span>
+          <span style="color:#22c55e">3.25x</span>
+          <span>₹25K</span>
+          <span>26</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQL-71SkfLo20caFuKG4Se1rMkNdyH25t-FdZQu9yzmmPzFn4nwuBL13QVxF7HH5x8s4iPLEJ3nBmDlHTE8et6yeSakeKdfSyldAp8HVJi29_eLgazLKHoEIiiaGDBVgm_zAW8_fFW4Av4Ru7QhpUAvlMYVFVOlW-gtDQUDQdChlgUQcYzNDBxVp-JjmwuwdQszqMd4jf81TnqUOF-EqEYENciy_899WWHKpV0MaobbX2SPkcG4cKLt35kIaa_JgHLS39IQ35S-16QfKtLkIoG9tKgjgNr_IW5FE1-yQIGX_TaTztnzglt0xRpVdXbyAO6xNSw21MRKmM8SAqI7zBPz3BB_NqlB4aNTqjhmtrUEul-YlRZzIcY6kzdovAV3M99x-o4krr6GPqkjvENu-vZ07sdpNlY6zl8HaZQv0RoSFxK9hSYCiSsttyuctwN0Owak&t=AQKEvmHrEpSOtGWJz0w" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Softness-Your-Old-Underwear-Never-Had-Modal-Underwea</div>
+        <div class="mmet">
+          <span>₹7K</span>
+          <span style="color:#22c55e">3.29x</span>
+          <span>₹22K</span>
+          <span>21</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLonvz_DSPniRsMtjyryQ-WSKM1jHnbh31Z0C5vLCMwUfQmVOMT6WnIMxGxjazrpaW910eZvG7qBkDV6ypQoITomjHiO9sL-dBUB5IA3Hl0741iH2L1ddezgvfuWtuedzLljdYfNb0HV-0jX5FBhFU-TaG8wIQQTWfxPj36tYm6OVjNM5eTYsrPnGXBhb-lcVKf4tQxuhtmUClHnEj3sDxmq4bVtUa8s6YkQppAgnXvpFu-tBAiVGAGvSoyaKFRexZQm7tP0VVpbo0Xgs1aJODJ8kRJp4OKqZ7rE6UNcdR41iAS0GFWMTa294f-CTDI_e0q4gQzQPBL7c5lm4ckLvj4HnjaPpy9C4-8XhCeQiwlfyO7ERx8_o3D-EJmBm-qnJS1ID6Bx-xCXtRLh_1UHMbbz7wIEqa8ET2Sd91V63aNeMhVlvoEiyPH8Hrexnvf4ps&t=AQLPbbVCEP-t7jg3roo" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Elevated-Listing-Modal-Underwear-R7-Carousel-Interna</div>
+        <div class="mmet">
+          <span>₹5K</span>
+          <span style="color:#86efac">2.36x</span>
+          <span>₹12K</span>
+          <span>13</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQImAEHjwiI1s-gpVrjF0xWa1QqcHwSSKU2wHQTLOO_zxq7xM5eIOVYkZQa5MG0ZPpNzDFUwq5RDItt7nSzSXJtCRNewWFzwWpOUTK7CQyb_-ArudSNON5KGwC6yje4hhIuh5EeOX3ST4yfhVGsE6uwFranNnRoPhgpGjybUytyRe8YczBnjOY0J9Q2Ee-AX0LpH1EKzAFkBqrNojFCx_uiuXphAZFiyn9IG9vvkO16zKvVJ9lR1hsIt0oGr1cubryIk7gmd_fzCCpOsd1SBRAhiNa2NIg4HvywxChp4u6ofNXfvcPkutUkcs7MXwJG8viFcGJJ1niKk_1EDi5ftG3dfWx48keLqqdKR6lYz1-AHFYuOfs--nL0u9C4H919O1bgte3IOVR6ZW5d8N2nPJ0arNL-g0RnyPiaut4RxTe1xaGFeeJKhcfTA_HhAHdkS5Do&t=AQJ6Akk8ayUBbF5vURM" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Pros-Undies-3-at-15-I-am-Soft-Modal-Static</div>
+        <div class="mmet">
+          <span>₹5K</span>
+          <span style="color:#22c55e">2.76x</span>
+          <span>₹13K</span>
+          <span>15</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLjLNpqJh8ZG-FBp09BXn3ZhJ9-JcnWurWZap2rbrQ535_YL-jEvfuZ81Ci3nTGC-CXOZ-E-gG9rijo5GQqv1sKn3DsavhxwZCy-tAEqfY_vo1IFT-Lc5nz3INFciS9qzGb7HWiFkfknmWMqwVmABkQz9S3krdGE93qmxwMMyd1N3RjJG6BLZJo2gOBXTm4MYtPLAr0IvNg4RuACei9XJ0vTIGIcOu21EeEBMNtetmsomQjz2VtlfeNwcTFnGGPH6jKXH3k-ZasYSTu-19ZUGA0tMLbg_r3CKdw5Hg92Sv4qaGlUJP532aWn5SUv_VHYvECc-AcP04YC76dF8yLhPtcCSDxw9cxxPvHVuI8gzV0uxJZuIb5nqb6nkN6OieOivoVg6whHrt7TFeVy82Djd_NJlSeZDI7jmx0z3ufoagPTjhSAHmbQrnQiEnjwflUgaU&t=AQJQlGLPI2KJU1VQVxk" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Softer-Choice-AI-Modal-Underwear-R8 · </div>
+        <div class="mmet">
+          <span>₹5K</span>
+          <span style="color:#22c55e">5.02x</span>
+          <span>₹24K</span>
+          <span>23</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJSG3uDh6d1lgDBFSJwBIVWu5t1bi4Al5ir9XusVXr3uyYqA3JTkkSy9EN5-JeKTjUY7JAwNJbH2d7RtfRCyVTMSzWXR-ZpfqycY1f1TvTrK9IrkOgDV9AaYDhb0JsxFdpnk6xHW1FMxnFUdMIKaaMOmH_UIQXlznswamdqY1Ep3zeXp2Ked11T2cRgWIAk8Z0HfpFyg2z2a9HsoA67Ja7vVJjmEgTGAMxICi1yCukOO-0fwRCM4HSpU1dJknjgUXGsXkRZjZbZysySy_UA4nJ4Z8B53jXX2tA6wsFgNE7gN7n5vgWYrihRntDpkKlkeVzzMUaqNPCUG_i5pwJM0HAdwTgEvjyLchLuCKRTCX7e2tCaGUS2Hxl4JLzetGTHdCrLWOcoG3rWO6MLbWbcCsOhhr6w57S3BWlCaCJ7mClDzZ2sieV3EemAZrhuwuvlZWs&t=AQImB9TMgwBqr96kxfs" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">These-Undies-Wont-Break-A-Sweat-Tactel-Underwear-TB3</div>
+        <div class="mmet">
+          <span>₹4K</span>
+          <span style="color:#22c55e">3.61x</span>
+          <span>₹13K</span>
+          <span>15</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQI7lb16ilPz7NzaoIOUdrgmjnszEpjEQDe2E8T6nClPtO4X8OhirZjlhf2ytM0cYAQ9-fU5LYklbnHWkuxboD77ptjAibfyKKV3kH6gBMSmyQF5hYqQ0E480qzd7yxbzdjeQN5iRQM3qr7nLuJbPOemIeWHppwjFG_LAleimj09RIb31B38aPVzDHkru97Gyl0VZXVDvtbgtplqjbZriFdF2osHj61NWjEJTvNCB9Dn22-klUSISzkquggg2tMWEOJ3eRuXLCl28sKQrrT16gRowg8vPEhXmX-JE1OdFkPp283xunffcbnxpeAljR-nZw8MD7Tknwp1zI69lBT5ppq519k0O4XgG9oAuEXRP-x9aOALONMEVZnzIvCyAXrDW1jbGeg3u_pLhNn6flJHYrfTLzB6m_9HTg8kiIFQSonqE6VSYje5LAWDrKhK1F1OmmA&t=AQIgoTbLDILfdsi4PO4" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">100p-Light-100p-Soft-Modal-Underwear-R8 · </div>
+        <div class="mmet">
+          <span>₹3K</span>
+          <span style="color:#22c55e">2.84x</span>
+          <span>₹8K</span>
+          <span>7</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQI8_6Hx2-RfhtPkRk7U56fkJmJd1sWPidzomKC-A28weFH_lhnSZEjqn_7817hv1Mvssg2W-nWjE8daEEv7N0ODik9dltRMdLWFW1HVfxvNEnHYnC2kuJFSBypWRZ6AvT57N0kR02Xp1w-jtKW3hkt3pYjD9uFHt1_0FIjLY2gLWSCANjkmZm893j6tttXwZU6N8CaVzpqtoVFur0ox5eI9kRlGvPRcf1c8kqVa57WPmFGoFTk5VfFKUoxwz6G6gepOEdAG5qeubFtS72jftq_NtDqNz_pd51bqoi-GW2ppdsTXzBKJluufdtDlntYzLtBdTOZf0Y6rgIn5JGBOctafgmrYCnCNvAyFqvC7Nhea79-T-J9pDsFmNOwaIPVboqo0e5vmoNeHirV1PZhda1VnwqXwZfnfxQdPgXykJ01IaHP1OhnV2n0XAeYsAQ-7JAE&t=AQKDw5mwak4lSSDoaRk" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Lifes-Hard-Modal-Underwear-CM1 · </div>
+        <div class="mmet">
+          <span>₹2K</span>
+          <span style="color:#22c55e">8.08x</span>
+          <span>₹15K</span>
+          <span>7</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec" data-cat="Boxers">
+          <div class="sec-hdr">
+            <div class="sec-t">🥊 Boxers</div>
+            <div class="sec-s">Top 10 by spend · ₹2.9L · 3.43x ROAS</div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLLKQ13JJH5GsfB3oOHWhAgXv_RDhlAJgTN9kKUg91EQV7-V697GNrbcw0Trdje2JyWeMWCamms0Q437ChV46u7UwLpatA1Wpp82Mvem_LrcmPjf5QJsgKDJ1wTnTggI0K4-KGNfxknXvYpFzazy8Kol769QcEi4HbOHKnnbevppZErPjRRqTfqIbX56nbs8IQsXCcrT5DS9W_QXxaIIkA30RlNZ0esInwgp0_2rhXQgqOcRwH71lP1FHwp8IfX433YsHDLnR_EWm_aEPzWE-V3dby-oCeZUct0_JWrAQOJSp5NdGMrvRRlorSAKk09O_gkYIT0jHG5Usvk0-UXkb6XyqZl5gdXVqR9HvsQjJPX_iUp6yeIXyDkkpSzRWVkq-p4MAwL5QMQMYpGoZJLBRluxMbHLTJO2Fid6k2lPX_g9g5ZWnlunnPcsMXxZpGdXPE&t=AQKoxDURw4FfjCW-dnk" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Boxer-Youll-AI-Boxer-Flat-50-Off · </div>
+        <div class="mmet">
+          <span>₹1.4L</span>
+          <span style="color:#22c55e">3.70x</span>
+          <span>₹5.2L</span>
+          <span>551</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLD3Op9erjY-NGl61_Msc4VvkLYjEfaXEjMDkAG_c1uu-NiaCoC2f28YffJhopW-DkUVwsCajr-Az_VMV7wz7zzO49Yn9Z4wlud9DpJeOoebbGjhqD7K0S7bD0FZblzChQqNU5a9EVp6h20-ULUv6w50thbY2NNljuFKSfFNeu1Iof_plhdTz6TyIOPtJIBlPX7mcLu2q_qQFpd0-BUxf8UgMFAVgTyu98DWeSTXlbC-IGcpQDQY9NP_wthjeFYPxp4H1zsD5IC_0zcBgeZUeiIFBX7H3OW38op3AvygAdcVD9lOCb-gVBUjYqi1w1NG3e0w8I8QHopwnjFjygsmrjnCwwfRdQa3sSOI293l1wmYBXHiNalzsp7alnO-e5zdKoUh702yj3QQ6PZYngp-utd4KhhnXqUrOE-8Ve1gyB7de2PO1zI9UJQtE9bC5JL_mQ&t=AQJ1S7dmRMmrfwYBQJQ" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Theyre-Flying-AI-Boxer-Flat-50-Off · </div>
+        <div class="mmet">
+          <span>₹26K</span>
+          <span style="color:#86efac">2.33x</span>
+          <span>₹61K</span>
+          <span>74</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQK37Br-Ol_4f6mgu_xRPkHNe91I9Geg8Rw2YGvNtrxXxdDRFmxiOrGn6sforoXS-9U6C7QfblUR5LzKvgHIkPB9rV31ty3YuHWzuI-43XjUns68QJyn7jxVZS2d0zQH_ErpRqcxvgLWQmcxfE90Dm_dyw8iVAtOSnVEcrZ44_-IObWoK_MoyL9_YveY7VHcvpAt11ZTvuUPiwhXuEFAJscZzJRyQu1rL7gJmMrBO-7k-j_MZlfzQqM-18o4doqjBZ4UiaYcl_wLFR-ca1JbrjBSHLiv26l0Lup6Vb7c6idlbPHrCVu4LayAPLq2ukvPrponlTdH2MPr6Esu7MfNB9KWJojC6juFW_9IrTNEVn-ms4qbg6KKsmzPw-rWyBYQj3BjzQ3sur_MyADvsXmutqoBEmYF6PP2v82xmm93vsj6UEHUB5A_dTQpvMCaonYxooQ&t=AQIyH2ucPqYDzSn2Gy8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Half-Price-AI-Boxer-Flat-50-Off-Weekend-Sale-Static-</div>
+        <div class="mmet">
+          <span>₹26K</span>
+          <span style="color:#22c55e">4.65x</span>
+          <span>₹1.2L</span>
+          <span>121</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIqDf4cEn_V6NlHQPVHsCZkYZzP1xVYnwaf-yIGaKJej4SFnlOKT2wG8h_sqDASzsaiI6HKcoR8htQ1uyaS8SEPErAJkR-RrSz9mt2Z4VB5QHxDLdylcMpCazNHkzcIS7cCWAdf2skGZcwXLE7lxntXhx1wha6E3dO-4BHo9pl0yDHCRskIhnF--IKZSaHbso92dRAWyID6gpiZnaLUlInAK99R5sactLedqsK2l2uEPCB3cTwP2IiuaHK49pBKbfCv_2qX_NITmnd3RKhuOehX8KXtK0ohHdEySVFXhcLYYyWFcMAWvkSDrUy2vtWPjAQbLCY69LcxjxpFZhzPKbu6FpQz-wopXlEYSIqjwz7BgNBvUdQ_to0JkoVFzJkSNHI6HnjTIWa5tSqnONb_UNeixmDIFWHcTVLpoxwwmMDOY3yuB81XhAU69DQOQgo5ePM&t=AQKAwuH5zgCxA6DmgJs" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Pros-TSQ-DPA-All-Boxers-Carousel</div>
+        <div class="mmet">
+          <span>₹23K</span>
+          <span style="color:#22c55e">3.57x</span>
+          <span>₹81K</span>
+          <span>83</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJwY0MPIaibsmgP7BtLUHeVdQ-Oo9RJEa75D8Bp_WLrU45v5HHaGGRNrQlKUGm0diNybAQ-1QbTdGd4o7pq1HgvzcqO9g0D58il20TGRK9kidjdZlU6ErOfDOc4FitrRX39OI8aaiX5nI05aogN0s8TxkJMAYmcXDVgrnrhjSPE6u5lsejtrCsvWinckQHF0NMr6SuBzZ0ynPKuL0hKbfEVCSVcY7GIpY1pzrke4XpsOyIMQeDWa9X1RqmsIy9AMsurC5r2dCuiGtmE1M1pBU3tO36wuQXpZceIWK3BO0iz3ju3YXglENlRreIYgmvA5PQUo3DW-Q010tMbpqAboLNyUGzvuBotlgWS-S260G19OVBdpyY1c4uY3EUct7cbD2oUtZLQ-j5p65ZhpipTdNpflUOTuXlrltw_70LM6SZMSp1EGTShN8rNWFCD2IzaADM&t=AQJs_sy788PJw6q11b0" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Last-Chance-Stock-Up-AI-Boxer-Flat-50-Off-Weekend-Sa</div>
+        <div class="mmet">
+          <span>₹23K</span>
+          <span style="color:#86efac">2.13x</span>
+          <span>₹48K</span>
+          <span>39</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ3xNTYJBuUZEE_Ue4CJ7qf9e-zcxT1qsrkZ0-cGJCWNB0CDlMb14w8lfLPBNhcnrlQ0tFlG2dsya5sTYaC3hjXRBSfTvgJAd2XtQmfN27oeuNHBkivS-nGX_hjmqloabaFcC35mxZ7bjvp3likUVZe42ISa_CArAl-D0QbBDY7BQ-3a_-96rdunYo2_0AwiVOSx7ay_ozA2vES-ycIVHtsYgQMrjUWM3SLHR7k7p5c1wR8qxP2HTY-PTUCwVBCiC8gIxLiMbs291bNQNwIw2bCk-vIuW7qajGg_4trEPEZZY4vDBFUvrqoYOu_tt9T3RhDIx48gw-TqknFqUIm6SX_5GwyuDKwgzbmgZHWxLxhG8zQ2og-rntFjGAdwAImJXDs9J6PXMfkXAfkVwYPhvrZjmFarb7krhSLIpQJkb-zl7Bp0BZmE1lEe5eXhLDVBHs&t=AQJtucxtMgffT4kZyVI" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Hurry-AI-Boxer-Flat-50-Off-Weekend-Sale-GIF-Creative</div>
+        <div class="mmet">
+          <span>₹17K</span>
+          <span style="color:#22c55e">2.59x</span>
+          <span>₹45K</span>
+          <span>47</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKuWIKdiUdvEK3pUSzT1yiZTOrES0O0pyn4c80ljWNACHYUnlyZL6PCBjBcLiADHT0afI51Occao5M3kzYw_HY1ON8KqFkacNVkFBqCUu8dGyOl0OYJN71cFP1tEylBi0-NfVsIm3yjgJPNQfaqlIPclwgJ-73iIFbZTGIlvdgJB9q-2-JpRBE8Vg3ljaNsegSYcJgaAE0IbJGz1JAe2GwQKY_qi5Chor14j4MlFSaXvCGFr06mx6TjnZIcIltjbL2hQME8rMYDLpInaCSHVQD2IB4BlJ__hv-hnzWTfG4IXB79L6wwoDFIcYiaqqu0v-juTr46BRXWJR3-ZMyDP_Hw_1bSsd-0A9ExEkxtuJTPhn2T7aH4uv3Y-IrLqEYgsSngsjIWS3ZA5KR9N5636ojqwJ8lL5SfoiZbaQZ3fdXeGTsJNi8AT6pA3Y4RaH1WOd8&t=AQIQJccnVvqE7w86GxA" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">This-Deal-Is-Too-AI-Boxer-Flat-40-Off · </div>
+        <div class="mmet">
+          <span>₹10K</span>
+          <span style="color:#22c55e">3.23x</span>
+          <span>₹32K</span>
+          <span>34</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQI_6pb5cXhWaytnHOytOxiYZDM62GwIXrjMw116jyvGADOUk4MhUEU0Uo0EbWbYxqGAJI657I99AyQbpsZSpSz_dqSjtRkXgWkvrsjjJJYR6LD5hpaS7NkLo0hiWuSVJ3VsG_deqTZZZIZVkhG_geJREZl62rsKXUeGYlz7FQYY38Ec6Nx_XLnrU4wNIwyKX_aHtwpDXrVdQYSYSnQ_tSgSvU_hCesRgPJIdTXWxn8bpUYKYA0ut74Q51sm494jB_wn9vCa83QklC9IYHYhgI64PeUGNbxurYmP97wAC4_0G_lDL-Ft-HmTXG3zVlvdd4AJPNR451noMVQdBnHB-quy3-e9Gg0DiBtLyH8de05HopEG4P8JrPIQHxMg0XGp2YuwRb2QBl48jhxe5sephErHTSFK8PYJ-KXJPQFIVKsxLwjgKwnvxUvc7ieqc5y3U-U&t=AQIAdQRNcLBWbbjEwI0" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Scrolling-Big-Mistake-AI-Boxer-Flat-40-Off · </div>
+        <div class="mmet">
+          <span>₹9K</span>
+          <span style="color:#22c55e">3.85x</span>
+          <span>₹37K</span>
+          <span>38</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJn5m769ERL2iWF33ImGlYKH44p0EZTW_Qhse2uG8A_iCk7hmCTe-nQ5j7uCA9am5QK0u6KdH-ufyyDVRrRDV8eyOW6yyukjrZYQp9GFTfFg649oQgeE11oQ3YeDcrMoou0YgCI8QtgHJArbr0kq4pYosELYKxTLXjvdY17mMdZjUqumd992pMSQvNJJnkfUZcMWa2sIUYanwxo7Kl1GSU5C-DBLYel1LTANBgVp0SPRIk3e3DByRrxx4N1M1nI3HB5bW3Xtn0_rjUHdc4UTg6vpkJPRVZbJT31BtHTRBFiCegnzrqc5IZ-zXNz5i2kA_geWno7odYxDLZ1exxJpTksHYsvZG6mtISgBXDgJuCIh7WULfr1F_BdE6GfTLYWhBcOijgWkBtzkBELJW42qqSF5a9rToZJAO5VSzw0vIIhkcvlWKXLAjJ_8u8XnX7d648&t=AQKRBINYbzL-biLrdbI" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Now-Thats-A-Good-Deal-Boxer-Flat-40-Off · </div>
+        <div class="mmet">
+          <span>₹7K</span>
+          <span style="color:#22c55e">2.60x</span>
+          <span>₹19K</span>
+          <span>20</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQK1Z_8iRE_0S2BUHepZrgUg7GUx6Wf7LKHzjwDq-mv1VzuzlcSQtiptJeMA5hQA77EWVgSSYw1FTrNsYJglLPk6VBO7rPS_NgQGgos0fMbZhuowe00w5chqTaPF8dfczDKpPhMAa8G6iHszF0aZXkLyxE-FB3FF5vgDrDbwki0Zfldoz2-8Vdjykrm8-13PCp567WtF9Urq91pZpPpH4oYRT-tf0msCXBJ0iFBOGZ3kqirLRX3wI2bTgXCYpI2sdG3bzM9W1wXz2dhneGdlmk0eeaCbAOQrV1DYTjRRsrS87zoUTnrdp8TDw_r1Qcx10HMtOkC4t6qBxImkkiyY1txy-cNlUnxqD9oMc6nf2criwCxedkdVNtt-O7NI5V53XkXjY71AMkQW3vNI02vhwLZN0rVSnl1anwFkflpZdy4zXal9eY4kNF752tQ4EI_-2Fg&t=AQIRnkbtoCZpEnWi8Bg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Comfort-Levels-AI-Boxer-Flat-40-Off · </div>
+        <div class="mmet">
+          <span>₹3K</span>
+          <span style="color:#22c55e">3.73x</span>
+          <span>₹13K</span>
+          <span>16</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec" data-cat="Shapewear & Vest">
+          <div class="sec-hdr">
+            <div class="sec-t">🦺 Shapewear & Vest</div>
+            <div class="sec-s">Top 10 by spend · ₹3.7L · 2.29x ROAS</div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKg1ZWPcC7N54LxxmpKSJc9K70Il1n_w5sYgsnav3QCiNPIQ2WATicxrlsQvZvr4DZwgeGzxJ3dBG3_NQSt-4Huksx7OvKA1K-0UC1Oj-F7H8n5M3dgCN2Lc-PjOhmcscpuQw_ZmqTRbu3YofiJM-tWV5MJNmQTE71X172Brxjvbli-Cf76nF7mHvOmmlcy0lhFcefN6qA9c-ovjF16OQL9klvX95wsqoRSprvyl9dbUe_peXaq-sXWyESNZhILTnyVt49TtWDzV3ACirncQ0VpWE8lKL-I5UI2o0Z-6t5T-4GGBXwcEavYLUjJEb9yFf7ORIyC5joQShqeXrAHzYuw_0YppmAPoY-pHAt1CQTrVUcxxzZZfUnYw0j9lB4BXH1SVnEdqoRNQEtODpTzRm2r_LbpiRCcKrGMmEmJoEUiHpPSGU0uSkAxPDjAuytDUfU&t=AQKZR_v_P1c3AZfP6F8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Perfectly-Invisible-Invisible-Vest-MB23 · </div>
+        <div class="mmet">
+          <span>₹82K</span>
+          <span style="color:#f59e0b">1.86x</span>
+          <span>₹1.5L</span>
+          <span>133</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJIqPFlAVvzXSqHu3eo0b_9N9cGeBnjkP9gly3J-YLRj338MP-0DypezPcpjBIVLNjandHrhcGtPYucw8cpbRimlzpZ5gV6i-hcLb-lv9pSosA60EPnTdEQlIDQUav9m0fBYCIpe974SzKmekVkWskl2HJkGhMQiU6Hl6LuX3sJBBoXsW81w6evjvvYEy41HVkTPDsvAXs5pvjmilqYCWaJY1NsaZe3PslzIbUvCyNqbqjFF2YgLQdK-JRmaUTwO0LkBL_BDBfCPnV2qoyEc2-bo2olS_oGzFqIijoMDEKscmsOLBP7eNsKt-n-HMN6g72ZBFr3QF1b8S4otgdRirhL8gVLPOa978-3laCSVFISvhWKrbBTUm5wAkNSOxoCXz51o-P7x9dLtU4ae_z_B1uJp2A8mKbfW3TBMVhLcpm4WmtzvDL1d8Olq60MBP8QXn4&t=AQKUVVOi1xnNdUBk9FA" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Pros-MB23-Invisible-Vest-Creative-Flatlay-Under-Ever</div>
+        <div class="mmet">
+          <span>₹71K</span>
+          <span style="color:#22c55e">2.63x</span>
+          <span>₹1.9L</span>
+          <span>126</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKKz921acPkelG2Dyqro_XLoGuObIMHa1hLXUpegi2aq4eJtDtLPiJBn5h1KBEFA294UDAuQagD8hTNnKTh7Kb2OJXYi47xT9QwOHY4ToR9iSNU0Dbtdi7rV4ojByTTpgnpXt6g3bmnJyal_-sF-hIO1ftBJwEjAmLwDwkq1-10GiXkrQv0k47zuY7udUQd3C1J_nxSRAQK76KGUHYOeJvuUhh5o1Vx0AxLVrgshP2kGMCQ6UyN_KfZqqCCb8_RDTnnHo6_rY3i7z7hU7BFT0NTAGRx7B9xfEb6Cfv9mDEc-EWex6s-5DNVOXWyi8Dm6k9DExANqzLjAUl-JzYWlx5XfGg_4iYF3OOm3ea8rRyI_H-HG9BTVMUsH_XFohm3pJAAeZWDU8tk1bhs5rBdyy9CLE2UGx5HvLv0EYi6hsBfA32jzhvKqsF9QAn0VDShwaU&t=AQKfdEp9J93Yf5G2XqA" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Every-GreaTShirt-Deserves-Invisible-Vest-MB23 · </div>
+        <div class="mmet">
+          <span>₹36K</span>
+          <span style="color:#f59e0b">1.90x</span>
+          <span>₹69K</span>
+          <span>50</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKu8JOzD9OXFqSFTdpLp3pBdkfmlEpUAFuOwfjHu7nIAQwuXzG3SxhUZsEVpK-ycNBAhFD1_bRugVbw6EsJYXAZfCXCSgQCT7kkf0rMCkVPawgm1bEqxmI1eNoKxfPMh0dbYCgEE4Ay3J9Cr8t4lFvmvRR-wLOBk9PeAFAOODaENT1fibjjlMBqaI4y66y57xH3qxVr9MgQKy5su1YNdXZhck7x-T9Cv1AgQRI1mve3S5aQFuq_AYX8UfAznSI6-l-IQnAmPXr8PURsUkgE8kaG7Nhn2uOrfkqp1ne9u1foDIyqJvJNm0eEr5r4d9NwXT_Z7qa0d8-5hpospgh5o2KzDD7Af7p10uZyVcP2wERPRDR9dz_2eljl9DEzWi-9RS-xLRyn2wzGyawWm9e9R7mijrKDqUds1yNHNAkLfeVnLCRBxVQVp3Niqu6JRhes0IU&t=AQI5M30Sh7Q_kx5ShFU" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Pros-MB23-Invisible-Vest-Creative-Flatlay-Invisible-</div>
+        <div class="mmet">
+          <span>₹27K</span>
+          <span style="color:#22c55e">2.70x</span>
+          <span>₹72K</span>
+          <span>55</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQINaHVGzoR2kLoiTtPSdqI7qB5JZ0FJEXlPvmkbjafjIvLpgOIk_N0QXaMALNWOam6xe4Mf9-sBWZ2k4GHg7Cx_1GeD5nS_3U28NaP7Lv7G-9CZuPPFmqXlM8WuEmkNCze8BzdV-Z7QDhf2KaqjsKiaG-LW4NeOLFyJltBd8WCIcHNJZjwsKbZ1vUyKHe6wfGF9zqt6c0PfiPk0TwRS-0je1KupjelGjHvN3ELsTESDEyjEM0qD_F0mQT0l8Q5SfKWILF2j1Ap2LKstcKwxWEGFY_B6HrthAw4RHnFkihcDWkWZY_HH-q6Ql_5B5fnRqfV1JRE2-G-xOpcIXygygzbqIUZ62wrPvPzYyebjRqJCMS9gpRkAYotMUf3DXOECEGrsIj3OvSGIlEtQkykZVPWjAhi33cacdkkqidjeekXtc_IyPMPAa-HIYTnZMmMV92w&t=AQKDi4Q7TgshXmD28k4" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Buy-Them-Before-Your-Size-Cotton-Vest-CR18-5-at-999 </div>
+        <div class="mmet">
+          <span>₹22K</span>
+          <span style="color:#22c55e">2.57x</span>
+          <span>₹56K</span>
+          <span>50</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJoaDNg6F_oRmcDxFnX0YeQcUVDKqBekpXG6dR95TrP1iUQ_ZZ0ItlBDzuvfPP7yPg7Ai8-uRA1ZErzVVJkqcwFoXcC0vswUIb1QdUChsd8qpTkcJJU4Nvhp01EZoP7uQ8VRp7uqPE1YypGWtXicWbGGKAgixHkCZrnODwkzCwm13MOSecWcXvXmgGlbtwafOaAr4O44YCGQYI0S2wcQu2A3sZomS3on7GNLewOWvNU6D0yGrLiRwDTiJGLk7Ys3RkCP94teS_uJqAEcj6evvmamymE73d8c4ys0xO5TxUog2wZSGUHJY4Blk_0nIeqEUrx48xSS960lrwdiz9M1oHQBg1hPZuY6Swmbbuw8rRfHzpQNPKEOSxIyP-X4Wbpy4-EWgUbG3nsTg1kmm1dIIgtgAjmDYjk1gqPi6Eter4lfYfBFYHYCpifyPI1qVLonjg&t=AQKGF4lBDMcTLzSVl5E" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Stock-Up-Like-You-Mean-It-Invisible-Vest-MB23-3-at-1</div>
+        <div class="mmet">
+          <span>₹20K</span>
+          <span style="color:#86efac">2.44x</span>
+          <span>₹48K</span>
+          <span>33</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKh697K22bnIgpOrMjhoGZKs8o_7GnFSaqVEL7uo3oo16YbC8FNMsNg7-6oApUZxhop8QiuofsxQgXG5rd2EyCfj-Rrt3TBIV9MhNGzUAJCbFY8QueniD0L4o6uu4oH5HYZlYY0XJYS3l0cWfUlfqZDjwQYYzmy0G6ztFt8K8YI-FT2I6OBDqEQwR9twASs8kW1CHXYCnb8Ii5QqbpURyJ-C8cOefHr4QNLJik3XkHPtv14Ju5wKvD_-Gns1iIdjw77MjLp0E96q0IxvTFP5ExEpA9hUOrmNkl8t7Odhgw-5UCwrTwQcUKKZbJ9u4gsUajzt10u7OkjyO-DaqsD08P2wAGRlJFkA-iONLfq65jW4SQPXpiVFR5-kKNIAszW7bCgV4CFMX8Za37O3ACWeH25EkQ-bVR-yEdfnSMDS7EPk57kuz2WkoSOn8BV7VGJq6I&t=AQKtH8Bt9GS8pnXxxzk" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Spot-The-Difference-Invisible-Vest-MB23 · </div>
+        <div class="mmet">
+          <span>₹18K</span>
+          <span style="color:#f59e0b">1.90x</span>
+          <span>₹35K</span>
+          <span>32</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJiKr0DhvZ7vhY528uchrzI65sXUUon9Cjdj_Edbenz5eSMTxKMQRWhtdyUGQLo6QxazjtsMGDO68OGP1PkZO4LY7pdEklEWE89aTUvFbEUNYc0FM_5K1DiyZUmkBHhqvw4T9iNdWiqWY6oIsSI0EMs3-BwKtgrNiOa8hnKaQGryvfHaf3VKhPmszjGfIAwT778cguOjoVlkDGN2lIa7V9Vdahe8ILXxm_xsG8ZghD7FoWrflHQLQAX7XPbW6wUnvbxEDyRWzvrFY9l-yV5ZcKaohQ1gpuF--W9QMSYqm8c-_ad3Q7sFLvQKWtsGeXvs35s3kPA9neUgdcdQ-WpE1MSyweHDQIz-LOBc9tWyebI9l-F786YGffw7J9g6PyDZ8u3Ep_uMeAziRTnhwJU5A34OslovRfDYwr-SDuYAuGyRf1wfzbEN8eA10xivracKAk&t=AQLuPdIHDVnmd1oG2ls" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Well-Find-Out-Way-Invisible-Vest-MB23 · </div>
+        <div class="mmet">
+          <span>₹17K</span>
+          <span style="color:#22c55e">3.02x</span>
+          <span>₹52K</span>
+          <span>39</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKbYWan2s64dpmOQ3gABe1oQo_bUA8x95pj-oHSicqY9t0skAo-my4SnMtuGUVBBupJ2GLYfZBDQR9Bf7ie-2MYkZM_Xs7TwTfoPWXk7xS7YO_IjP5E48ftwndn0t5DdNYVo3GR7I0L04dkvVMKD-A9SRfvjG-i347EcexIt2dweZGLb_yli-3VtNkQ-EuJSYrHOI99NeouKezlijS-uHEQhRoNhlR_0dxvnjgUOmlYiiVAJg93VmtX4xu6Xc4ks11svmt8VWj1SOW1cO5KGOaVVOIyfp34DIKQZMzdVvuQryD8PqVUzmGGIRGukbmm34zbxqPABDf2WmccrAmr8geV1jt4i_iK0nFVdndz6XFsXXumaJJAsskocCJzBaCrZ7Y_6pZigGYgM24YdAJ9mgDN-XW9cR18o55d3J19U0opKaZHfU2t24E0A5j5IXXe3O4&t=AQInoDldxTiiLHC_xCY" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">White-For-Good-Days-Invisible-Vest-MB23 · </div>
+        <div class="mmet">
+          <span>₹16K</span>
+          <span style="color:#86efac">2.22x</span>
+          <span>₹36K</span>
+          <span>27</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLeg0BuMA6bF2Vn8YEWtUXAjCbhKO7VUjtqDpakLoBDLdaEot2dv9OrIpwQzgycX554PIhXQkyldIOI0J87ybqK9QSwfLYQ9anLZLBskyYYs12FhGLRhehnLlEWwbLrfchTm82ehrxw-W1tBdrptxZoufFzvt9ov4qae8ecNIZGGC_O1mLrrtbr6A2k3udtn3ng5S6NX8hV-srRpuqcZ0MPPCs-gLPLnMFAXSLe61rQR2zXo-u5UnI6xKycdTgs5olBdhn0W9wDnyu8YLhQ1wJZhagFX6q8kRCQk9-s82Yqw8UaaWc3PJiDZ3vybXOBmn-z5hBcQy4hDpSTpyMJzRzmLI9lAEqnICr1c6uUDFmMJZOafpdDYAOM1PhRAuoTeKgF3XxJZWlMcYuJvaCl6O3YqvyMD-icGZYC3BXOM78dtJ_lXvR091XMKKQj5o66h7I&t=AQKtcUC9VOg0ggSmGBo" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Difference-Is-Clear-Invisible-Vest-MB23 · </div>
+        <div class="mmet">
+          <span>₹14K</span>
+          <span style="color:#ef4444">1.25x</span>
+          <span>₹18K</span>
+          <span>16</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec" data-cat="T-Shirts">
+          <div class="sec-hdr">
+            <div class="sec-t">👔 T-Shirts</div>
+            <div class="sec-s">Top 10 by spend · ₹1.4L · 3.32x ROAS</div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKT0CG73KZyrCc5Z-_wNb9SZlO5yfTmUdBAcgtGJbHdL7WwEXh8F1TgZbiqB7jImaYftMzBj_pQSXafxZg1okjuiso6JvW0AtoHyjbzaouqqujJLoOw6kPPCObZgE9O3YkazioEvMKqq8V9huz_TsVvoPUCQcBH8gy6FVe6ptNXlPLdjJkPQWHEQW0KGUIVq6eN0CsZ6_ceV_5JP0uvwoVokzH8cFoqJKd-WSVUKSdsPt_rK2M_p5gPbQqW-uR-9MRonXsdF4AeqRXJZRF_mG7ynrKUeUK5f_XIbkkML0JDvD3Uucb7dIP2WkuqiuRCTPaVFwn6Cy4G-JgXZjaUiO64yUpT7XWEi97ScRaVUpQGW0IuKE8QPrdO_XpKJmkuWbEG_Y4hpv6jvUXyQEcAHjlrWmoGmf1m1xXlwf2TZU64Fx4bRt-2fbpxSxHbV4DNn3Q&t=AQJLQJG-Pfd4puvHrIE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Sweat-Dry-AI-Active-Raglan-Tshirt-AT01 · </div>
+        <div class="mmet">
+          <span>₹54K</span>
+          <span style="color:#22c55e">2.79x</span>
+          <span>₹1.5L</span>
+          <span>113</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIjnS21xypDgVsjcSEciL-PNdTLSzSTcJniBNp3EDZDqpfNnT1Sd3nc2zENAsEuTXnFBwgyxCHmCGGmzqeUO4dixHKWj6we-CTD2U9x03Emd9XmtGLr5w7S1Lm8_2x1Ak2ad8QFBs3AB0k62caqK8Ntq8RmInyDD3_wjyxFn4flJZoaZjDJffh8hzWpYpOSxFayqXNeae_gdt-XlCLs8ShXxddyyNJoSUB9bAu0evyet8dwJDENVX4tifyObbytMDWwrLFyjp6NHfCaCQyHHiWsAsk6QVBVbOTD_KLpBGqGV9WL-cvmQlmtlUJN2H6cpRomztBwBTapHMN5jmqaRZ6zPFnSzGH5jx2u034_JrpdiBK7ZUm5Ex0qNSjj_O2yw98jWCYSZjepzeafkXdnkhqSbKGe5-RqozjF3MogBTHTriDUy6iGRx2J5Opk_2S99S0&t=AQKrH97NfvW2WrSfiI4" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">One-Tee-Every-Move-AI-Active-Raglan-Tshirt-AT01 · </div>
+        <div class="mmet">
+          <span>₹19K</span>
+          <span style="color:#22c55e">3.29x</span>
+          <span>₹64K</span>
+          <span>46</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIKK9x5LefMudbrKhNrGVKH8ZOBpRJZVNu70BjKN-fOWDN1voguFykTyozBkXr319NB4wLg7rwwpZm81gF8J61nH2qd9MGCCVQE_LtqXfkSxhHACRzozcIQCycBFQfjtBz68xM-NiSVZv4ShKpTz-sx1WMY5vxT8D6Px4L2MI65mW474YHfrclEvDRA5kdLiAdHPXZD3KOTSEz-lE6ZzRHAAucqYuGFwJrawzKlesvL73WAdsujOfVp2WPilsiqnF_mzJhX9ky0x_PcOKlisvEcIU0VPbtQLM4zrzhJggo3DS8EpFU1afHJ2pFVSs8NHBIFhkDXp5pXbKZFRqEeN-_mQpmyZW8aDQUCfmxcrDVahSccyn1rB4uXGMMJ5KDFkawdTDFES57RVww1JPUxpL5AAkK7WTmBKeuo05b4gGD-ZmSbRGYofZnx0ohFmMysJuQ&t=AQI_bqUXvPoVyqhAn4E" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Running-Long-AI-Active-Raglan-Tshirt-AT01 · </div>
+        <div class="mmet">
+          <span>₹12K</span>
+          <span style="color:#22c55e">3.75x</span>
+          <span>₹43K</span>
+          <span>40</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQITppLInCgwJh_6LxmPYi2chv2eAgMDn0MIASqf5Ja5obv-Tel9_mPz6zuM30mWzs1fGft5rPgrUc4X2Up6xcKjMqS_0ibknuwjf4zi3FG1KdEvUPPQscnG8QQSq2Bfk5amXhjqKLT4QaSNiqKTbzXaw_6iN5Lm_wWaJHXb73id31ia0y86WcAen29QG5sjV7zfjVjvsunMHD35MzZQv6gk0YC1kQYOunWg3LHP8F0ZeLDShrdvy2tAjPN88ZmnXzthUQlO2OmcZWyxHcWcd_TekxDRagJ0G8r71HbySC1hI5Lv5gMXInRSo5rHDnxvDwLtdtG632i9F-Nh0-BKaK5B_BWNuONQhfz-p9Cw5R6BQFEff9hEhpRhk3NaI4NiUWp-LD4_RZjp7-1bpZR4jPo_Nx7Rditm6nCuZRQ_o4COfIIDje2zPqUrciy0r0bQZxM&t=AQIf0cVCWoGX4KBX9B8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Dries-In-Minutes-AI-Active-Raglan-Tshirt-AT01 · </div>
+        <div class="mmet">
+          <span>₹11K</span>
+          <span style="color:#22c55e">4.47x</span>
+          <span>₹50K</span>
+          <span>40</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKykVSNIilcTmrf6jL_BOU04VKB-74AWxHgcQiops4FRGqfzzUnbxy2x157TpK4CEPtPPtnaPU-HBKmJ95iM3VKo-eS8mosZiZW0pS7WRgUYXl4tSNtGcU4vlgAGQ6ULpaj1hmC2jLMifktdpS-gH2wDiGIJmOVS0iyB-OMEy-KQIF-YSfKXrdbUPj_pZmg8Y53Oe79lSMaJLv9cvlSgqhztrFGm--3iETSBocFn1n4-XvjPwMjX0BZsWosQWaEhAlj1P5NwzbaG_N_9W4M3y31zEPMKmF7fAHBQwCqpWaLRWSxXJWeVPIBl_7wGtbCJeFUvSNtpzyDKj_0C3r1RMzLeaqp6UGTTe3JCntFCIdueoHy2rKwQnrMxUS_362SsVUlMHifbRlq3iFNtdOgudq72L2H8pLSnYQi-kN-Xe9z3BI9jdNyX3bQ5MsIsnajEaM&t=AQJW-7J1vxlao13PsPI" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Workout-Tank-AI-Active-Coolmax-Tank-Top-AT03 · </div>
+        <div class="mmet">
+          <span>₹9K</span>
+          <span style="color:#22c55e">2.72x</span>
+          <span>₹25K</span>
+          <span>16</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKbbnnsxGl_7sVjKxUTtRkEYE2Ka6Vl1DSi7q-x8yV2E_RdqtJA9kI0YijyX9sTy96X8t1JSrESwvLYovRoABCdpj5B7pcXKH1EOVqoo9AOzqFH2DEzp8s_imfaonHk1gJ7L0-Q975FG6tP-EIXhc-OFO6K18Jl5E8gyPNdX9YNPkGEgActZsxFg5iEiQ7osLNw5IYL2hcruj7uMdSQRWy2wX8xZyJmM8JJVNZyx1ia-VCUi7kJtG-4DC2axQlGShqEFofMTf6QKkCfRkKmUaROFU71dAxg6Ob1gUS71ULev1F5DUDdbP5CyZ3SVC2GB_UG-bqQ8MEa1-Xg4InoEK9nnoD_tC48vedgJ-X3aS2oraW6zgeJgQCCv6ZVD3jB6hqZuD_o7TxRxc-Cmo7rFh8ECRh57AEVtaoaZ0dcokFc3wzAXN2CxM6bGXHKqkAWHzs&t=AQLvCw82JNHu0JrIg70" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Only-Tees-That-AI-Active-Raglan-Tshirt-AT01 · </div>
+        <div class="mmet">
+          <span>₹8K</span>
+          <span style="color:#86efac">2.27x</span>
+          <span>₹17K</span>
+          <span>14</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJB8GuSe8uStOW5b8GcffNMig5AnwGCWCjb8hkxNEn1EwDFhu1p4oJLreR8OI9xU1VBUOfUl2K9kL2VLhxAKxyBDba5rvct69VJoMGieWeZLC4sNWZ6-9SjbuEQc1jIEvm6GH7kF94JYZouiXijUneePtA3LeUcWOqANlS53xBr_eslLQTo0qe1jPgLwdMazJA2M1XBSb91WIdplBk8nvPmZCMcXJl4a_UWWbWEEmB8MxjrnSOtJyp9iPJrP_wuaRAUGicIqBpM0zNh5XTLm-dtj4Fn57VH7474-gceG_TREbYUN_9tAHq0D5OOC9w895Bqc8pHLF_yOy3DP7KqnesEN-9RSOdX-yqTSufriX3b7u8tTzZuppLZ0mpE4T2onqRoXRJC058fI74ZFdqVJB2eMXaiCMCC32y54Hh4xlvLwKLQdH7ekHjpfD5_vZB_C3g&t=AQK-vF8IfkAJ4leZnL4" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Train-Hard-AI-Active-Raglan-Tshirt-AT01 · </div>
+        <div class="mmet">
+          <span>₹5K</span>
+          <span style="color:#22c55e">2.97x</span>
+          <span>₹15K</span>
+          <span>15</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLj8HUpDHDSaopbCHIoQpi0LNcgQi37y6XMevnVEMPmi6lMbiF0Xx9DuSKeT1rYEw-c0srKXQej5F5wz0p59FhDrjhGQcLscCVdWAsOSXEngWxgf-Q2pUs-scEgVSQmfibpj2t4nRAiE3ugjmtAQr4716Q7cKLpZ_76ecZNSQapJB2H76DJn8li6U4wlo_iQmbueFhtW3fN1gJOBcxxDJrcDDClbIAv99TFqbtdxQA4-EJs8ZRBL5dPlQ6_qd6esxyJm9etjaplLJ5i1T6QPy36bCTPkjTKi3FKqjFye3qq_Y3bhGbH3qAnBo-eBXKanRdyDs4Z2UTCU0ojsrw8XsD8CGqw_72m9qEr953oSUytnjYVyIBpR4EwtyrJpHQVBoUfL6xp4esM6By2ATxvJGIbpOW3jEO55phaCsHXFV8_dX59tvlumsTNAT34G7-uQ6U&t=AQLYCEQh7DrtEdZ07e8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">2-Degree-Cooler-Product-Romance-AI-Active-Coolmax-Ts</div>
+        <div class="mmet">
+          <span>₹4K</span>
+          <span style="color:#22c55e">4.93x</span>
+          <span>₹22K</span>
+          <span>16</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJuZhejCSG0BhdOEmrhyuOuBr1B5nB6rjnnkGiH8kEF2CIGRB9MWlngob1ccoj5wJQi68qKtJMh7pZanQQGXYz6XubSUV_nqnuHDdKrGdwAoZucV-03QowSFbTCeCbo6jIJt7VxB_OVTxR3AMqLzb6tyVoRUUn_zjolMCyZPGeilPjX5Mga2g6lmg28JgdJ7e6N4zJ0-AGUkhCP5vbTBpQn6IKno6ostk9VW4CyJHnERbWv4oCrFC_Q-hapoj4OfLQi5c8O4ezjERMQtVmJEXXd4hISZICTwWvHLZZgsV3xw9mcpbQPZn6rQkvLl3NuI3gOJcMFoLW9Bz_GIZCwD8qmOyEcAn9LMm0kSmJFjSyTRiIsS90McWuPc53e9PCjyFuAoUgobIk6cfLL-1-onmSE5qEwH6Wr4hSJdnHAVUJPIhbe-RnKwzYUfQs5eRYeMrs&t=AQLhNrMrOq6rJYdvD5A" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Your-Style-AI-Pace-TShirt-CR15-3-at-1049 · </div>
+        <div class="mmet">
+          <span>₹4K</span>
+          <span style="color:#22c55e">7.64x</span>
+          <span>₹33K</span>
+          <span>30</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLFrEPHqHA8rP-__7_yHJdHRg0Gagxhyrc8TEHCNXxzZWaXlYL8fYcJ3d34I0CxhM9OWI2gte_1W_8kMrUexW0R2m2JZoZlwmAEBxC10LK5NH4OAKkg1w3VrIat5R_TtyI-601mMTq8GMfhHF1jN9NYuob0PsEwaRtX6_tStrNCA73EUQRAQIC9RZDMBvl5ONwvqJzUzXSwtn1qWihvdl6GeViLyR7VdwWdjfwh2fGCGCuiRt7SNAbtBIt4_YR_h6_S35t3rlN-hVyg_tMOA6tMR3mes3Rj65e1SBB4vd0M0nrIu4GY_Bc9384vAx6Q-VkIFMK8OAR3IOXpuVQdpQCCcn1pg5yytlIcd6O154mEPDWQvzorGiXC4fbKsoMFVSwFJ6910wpIX1kOZyI645pE8_3LsGis3dxgK2jhGNvnlKddznj7yhVdDU5FnqpRLTU&t=AQKgMlDHvE-CWYS4jG0" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">2-Degree-Cooler-Dark-AI-Active-Coolmax-Tshirt-AT02 ·</div>
+        <div class="mmet">
+          <span>₹4K</span>
+          <span style="color:#f59e0b">1.65x</span>
+          <span>₹6K</span>
+          <span>4</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec" data-cat="Polo">
+          <div class="sec-hdr">
+            <div class="sec-t">👕 Polo</div>
+            <div class="sec-s">Top 10 by spend · ₹1.7L · 2.98x ROAS</div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLaE3GteShsO6NBpFdDWzbJ_GHKucK95Lgj1fQGngYCz-4brU8jFLj3Ip89i75aCpOqaq2XgVkVBW79Zf2CMPiEWZLukgOLovwNGQ04ks-aAystQ-xVxi-qJ7FPEdi-EVK_StM4R68XJ0q0vaQrQMj0SL9tUy13ugb1s2WWcHV2Lfe8O_65WNdfEhIitjpYmj7hYKH6HwoiiDEJvv35nra0ra3Im1J8N8K8eKLLMsClvRGlsnQoQTQEJNkiG2QGC1LZuiQmzl8EL_X6m0huA4Spw5PkydZAsB-djkP03JSDUfzEtLasOWxM5p1JFU83B3W7PwnMNfwkm7N3jZP3ERmohFmbmScdWmaZjcNz0rha20RvlBR0LhckXO-LR8ALzbgc0h-CYOZYRmUxZPg4lrJBLDwPNpnQ92chLaiK-m5m1DYfOMsja9tWMtD_HfR7P-Y&t=AQI8x52HtRkyVzdi75Y" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Fastest-Way-To-Look-Sharp-Nova-Polo-2-at-1049 · </div>
+        <div class="mmet">
+          <span>₹55K</span>
+          <span style="color:#22c55e">2.83x</span>
+          <span>₹1.5L</span>
+          <span>144</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIoubGmXJaQcOZI977oL17uf9dmBi8nwvMnpWNuouO13Ulr9H6A_0B24NH5LlyVcULlHl5N-RCJn1izSbg9qpMHAKzzBDu5KAkcyxDMD_Bq7jlWFS-bMGa-N3a9ql0BSq8bPGUyIwbQvyCaxKtoQBRyShPHkkJu_sUsoNEzcK8HMpuZnXkTTmLgSlhng5vKpQ92V9TqeIUVaE9JoEvbBgtaOjq_NDWmBlMloUq9aZJXSdM3VEll-16RaX9bIp7ikBPcSt8ydBApJ9xwilRxpoxaEMTWUt7CtOTbzc6kLTp3AzbByosdSZZ1HsLwGssTcVo7BQ63NytPwd_T3I9LoCfaG17OwgsF1aWuFHBOiL0CNk_HdBrL7s4jvtr67hQnShtTYZvlraRdN1EBt2jayok8_JKUpvXLqcdipcfWrQR92XuAN_yyvBexNuzipeuSDk8&t=AQK1qVx_H9dHMJRfetg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">They-Pass-Every-Vibe-Check-Nova-Polo-CR14-2-at-1049 </div>
+        <div class="mmet">
+          <span>₹28K</span>
+          <span style="color:#22c55e">2.75x</span>
+          <span>₹77K</span>
+          <span>66</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJoNj0lSAclzIcpDSO6lir9Tt3dz_W_Y6mSEE2rJBh5Xtda3VKB5wBiXO-t3tOJ4tfYiGM_fZqMdJ25qJeV14zpkm2xPtxyaBkBKCfIWeriALSSQFmKkKl2QEdrofplgc0ixVgEc9dsMN8d2uktTzglf4U_T8r2yI0Q_kfXaOMULIdd0OycDLrzgy5mr0xL669c5Fkb2oPucpfs9rC4P2yUqESARJqeI7dqwTLkVf-Tbr-wx2L1WygWX-aJbNMzsRYuhVgsg6zDui6UCuXwgIrOMHIDVfNi1w7svKdR0275UkcjiVSyEgsG-I2pAP2Hxd6OUrHOGFqWRCUmkznf3vc6LI3DZfpTbLkj4puvzpR0hJckVpa1j-PaBsTQg4BKrcqpHXh-oGj9LStT1-PuuEos1b9YPlCgJRFxZPvv-8bDya-XUvWQUYwg680g3njZ-8w&t=AQJjtcUL0WEfD37iHRQ" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">This-Is-Your-Polo-Moment-Nova-Polo-CR14-2-at-1049 · </div>
+        <div class="mmet">
+          <span>₹20K</span>
+          <span style="color:#22c55e">3.51x</span>
+          <span>₹70K</span>
+          <span>58</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJMRPjus2gdk7TGyBWFV5n16adjUS6iQKE78WwHr4KEN1wfiDCn1AY-xpAKN3kb93mSpw9aK61Lm4n8f_LjLwr9kA1_MeTQBZsTrPdmY4o178e2HdNbtsLjAmuRCfQiozBGJm-EQ6VHh3INiGnyjNnsTe6W-UIssOYgUY8EWHKSYo9zcnDl7pawfRNsn9Xkl3yLyaSbhF8w4erVgZBqlOvyuO56od1inmLqBNGaAbGt58VgD7aSbfX_dlJeOnZ9XQOEty2UlQzmsZUdRb-Cx0j4JwjHjpxVLdJtoGX3kuQRL9Xvlu82ylNXnPWjo3ScR04hz7SueTvtY_E6FR4ejgVXpwa0V7iKcjUSsIdq6Qh-Wqo6ELQcnrMAJb8T7k0VKFGn9MCO6VvfyFGPpt5hyskZhAsllmnbapZ1-wpxcGXB3IlDBvFUqulyl2AZTu4bRXI&t=AQKZzErttTUkqGvWzn8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Polo-Look-Like-After-100-Washes-Tipping-Polo · </div>
+        <div class="mmet">
+          <span>₹10K</span>
+          <span style="color:#22c55e">4.23x</span>
+          <span>₹42K</span>
+          <span>34</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJtsqTxbI-DBkaWxOCqRWG7_aa35X0F9a4ia9ywt5CZE3cP8CjBep9HjnrNShYP-MBk_6ldTHNtQnTifdOHETFl3TZpRB4laUPRHBYiY6Usut20sZPpKQWc0km9MfWTpDXOSTZv7oSniI7ZRy1Nb0d4XTmWc3j-_ev0SOk_fBYLcDR6A0SlND9BAsPG4lhM7ITFh8obi3J5B-bNxsS7C_KIHOV4uLSMVpd5uYYZYVuNroMw6xDsPzIdmJ7-40WnxEVtoUGeYHtuOVAFKvuwnw3AUJkUOuYEtBBH_7uJWc7roNZq2Btj2oaZQeOp6l-4QgFYtRBuHIBPlAlWuhds_2C1chJ-2wWYUsrlCfDx_3cZIGzK9vpocZbpYSulPhF-KH6058y2FAAX1adbNFduC7i2F5j1dT8aN22Taz85qWQoUfsBhp4zYJfHSTwGsg84GXo&t=AQJQ_HO_d7q3wJeYuh8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Price-Is-Too-Good-Nova-Polo-2-at-1049 · </div>
+        <div class="mmet">
+          <span>₹9K</span>
+          <span style="color:#22c55e">3.38x</span>
+          <span>₹30K</span>
+          <span>25</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLglcAJu9W3KTk7H2zjpqvHuR6CkXYpDEw0uVi0AqrXJO5prCCuLw-BiVczcqGOdaESTuEH8ulvdoXyJGg8Ms9IkCH7Q_IK-rOT7PePnsXOkelz2PKXjCqZ-v7qnIo_CP-TXZ0OaxAF9DUpq0TZGq42E3Js0YlCm8eOorzxJL4P-zXSz_82sUyqUm-gXWrU1teBawOF89VYtvgXj2YyGf2OS2oem_3gT9sa9k-jpp1e-4P7EzmlRIFExIaWjqkRRgwIcfs-HIPWGateJ9eNdkhApNH_LJOEmb8Ww6oGj_Ku76TTBQx2B9PEoYknyNc7_l2aI4Mor7Yax3t8rrK8oupCIILMwDzfhtCTgVbTIij8LmaXc7ptgOIq22rpocghsXy8IgsOEM7m1VyJscUA_--_8rgmoNXVVGd4wFiHCkD5DizbmcFTNlilnBLEB7IOFko&t=AQI2pjJavRdc0VtCVWc" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Youre-Just-In-Time-Nova-Polo-CR14-2-at-1049 · </div>
+        <div class="mmet">
+          <span>₹9K</span>
+          <span style="color:#86efac">2.21x</span>
+          <span>₹20K</span>
+          <span>18</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLMCYc80mW1CYfMD0dpYOeVlxxT5WjIXAvmashh30FxlI0gVhPlDsZLuP2Q-aWR9l-lAZi5HITelDsbSFDK1yr-jErWKE-8Gh3lji6J5nEGlP7JrN4UHSnC0jV8VGmByJodbBCEAZWDcp5aRQ_IxrE6VsFySKmJB99TiQcXIQxZGEBKifW7-EhBPHnQoSQldLWx1IGCkmMjohjPxt4PNQq023cBpr81ZHDEn8wdNKGiwDarFKFCI40XOKihpX7aLMRaqY821oTz7T15FWo_WaLhk2eEa3hieSGuyqe9LNoRdsTMR4lcVMOoGG-TxMey25rQXi0Tkam4wDX04vD2qhRim0ORzmWZKQVmc0akot7vARapnVZOWotqefJS33_6Tw1EPibZG4sCPNrVd932RYA3XO9EPCp9YmCOhYb-LIoSoXQMmmvyw-DyktINIxnqZPI&t=AQKFJkXk6ZLGOmHHw4Y" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">When-In-Doubt-Full-Sleeve-Polo-TShirt-MB28 · </div>
+        <div class="mmet">
+          <span>₹8K</span>
+          <span style="color:#f59e0b">1.62x</span>
+          <span>₹12K</span>
+          <span>15</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQK_HsF5HVtC2-S2au8kaBNaFYYfpCVZhcIoCSRFLP5c21KenTws3ZlnvEQMBy6FhwZcALpU_rtH7Q_0Ik6iKMomRcsYn0mMhyM7qjeGiiP6CojIY9N9bMuCDIDk29VySBdt2OpRQ88wdsZ9C8aY3U2wLqWshjFhMyeAdtkZChOKevmFwXvmnXLsdwcilg-XWlnnr8NyopBUdYRlXwRlcJ8ia1hOsOpIM7S2l1q5VnGZ9JAmgqv_GWG0yS1X_aduoH3e2SQwwIQEtvYAI2mR7N_w-R-y9IuqHilukzXh7oTiee4v4bQqPd4EXPkeqM-1rdscSmhmY7y8LV78laNILQ59DpHstEeBbBcUireqOtqXnyS0v_pGa8F0OtomK-bO_MMWimUVIeCS6sDIFtn_5jJu2TG-qoE9zM9SpFrais3oIfFjE2mm4Xbo1-hCKP9sY7o&t=AQKcV2j234TOpuoasMg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">You-Can-Do-Better-AI-Nova-Polo-CR14 · </div>
+        <div class="mmet">
+          <span>₹6K</span>
+          <span style="color:#22c55e">2.85x</span>
+          <span>₹17K</span>
+          <span>19</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKGjA8CpMixZLdfl6xO4vrAxT5EJGMhDqnKUo75emuCAKF6BCI7Xtz0KGSlJJAbdsF6UnQaueRfiFcuB0cZP7ysqYQyRo9-zFkkC0SI8WVB6W3esw5q65_dRpDm7XhdcGiI0aKkLKY6cL4HfJlfOK9uCsdpSowGgEHL8cCXRSlTvMOU1xCR98vOVObVFkkxIKvYsQq_PAkt8eOFs8WOfP0t1txcLNbovK2rFbJhaCywe2sL3BfYMWJDdEPoGxB4Pjjn-ZXDBPBda0JRVzWinoIns7yF2qiTDDmyyn8GG8YL4LkHYa3akF8vusdUY6HTFzLkqbMbSAshHQN3cdvE-9_CkZx_qyV-gKKbFMtfOdVHn_vFPoeHdHg5VE9PhDFl6LYrQkVJI56b7v2ST_6zbFQ3OiSHFKvc-HTYKqgENIJNPzFw3KZ86lwKXpt62EnTDzg&t=AQKsUOXUBuBlO70cXVs" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Cheat-Code-Nova-Polo-CR14-2-at-1049 · </div>
+        <div class="mmet">
+          <span>₹5K</span>
+          <span style="color:#ef4444">1.32x</span>
+          <span>₹6K</span>
+          <span>6</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIbK6RaYY92b_WuNK1zLaBIO54tsK1vRD4OPriPnx6ezYEbSsWarAD_062uA2ZZG7aBWQlFkPtNgw1nPSDQwBlC8K_-p59ExJtceqQDURw4clPJNsbM2A27QgWt7BGpF-Du6GiMIN66hGcdL0_r0XOdjQBPkY_ZdXWzW8CtSJrTFgRBIkJv3ni7nwYx1pKN32CEDxqgNGqo2MvnqLT74-ViHr27iqgVxZaVnB6ZlGRDX1E1lTutpvfJqlDf4ZLwQcSSO3DZuxxqK_-STvJ-_r12SUrlpRYYZRjD1LSb1qeJBwQrj2MUxaH-PJfq8FPtTMhmG9hoN0DbYqf_1pLUuoBOreo24gbqm46XQ3qOUEnUKM8fukWrO6MfN4__9OMDpYKXPg9CI5j3ue2d2St-qZ2-rm6FpRIbSBxT6VpKcdZ6cyTI47SHcz8pGs-5COpQi5c&t=AQJY7E6J8JslekDLNUo" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Two-Colours-AI-Nova-Polo-CR14-2-at-1049 · </div>
+        <div class="mmet">
+          <span>₹4K</span>
+          <span style="color:#22c55e">2.68x</span>
+          <span>₹11K</span>
+          <span>10</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec" data-cat="Pyjamas & Easy Pants">
+          <div class="sec-hdr">
+            <div class="sec-t">😴 Pyjamas & Easy Pants</div>
+            <div class="sec-s">Top 10 by spend · ₹8.2L · 4.25x ROAS</div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIoMjTWTGKNliQBlPXIM1_DO0nycp-G07gLIBDm-Ai5UY-e6yQOQG218aQ_0T0z1nH4QktkHc5iGCk4-x1B6OCf0LzB0pnUqrSR3JJfiarCvxL8Oh-z5YpGD3-R39i0dB-91Iik--W8SUrEOZo_bFXfJ2Q6OMSndu4F4-yHq6v_aCP8_xz1YZcqyHgm1ONQKiBCbHW6FEWVA-99Xv0KyfZsy5rn-ZaKXmxqvKJFOLl2kCVXJ5XAvdyeIPM0165Pb2EMZcqpVT1p21w4HiyEHYgGwMWaTTjGo90Wo0j8ZF_1Rgh2zNPcQkG56qqMz05Kx3niWw8MXQ0T4wYHsRgALQn4PtVOWnxdv9qT2ftEVc_trGwr_Am1timjusRzbHnWPo-8__1HbkC9BWP1sYop9aG-3XpoInFLmjI4DiT2C8se5yX7-mlNoIIOrdHpFdrypaM&t=AQIuKGA9oWbphmc-wxM" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Generic-Flash-Sale-Flat-50-Off-Weekend-Sale-Static-C</div>
+        <div class="mmet">
+          <span>₹1.9L</span>
+          <span style="color:#22c55e">3.61x</span>
+          <span>₹6.9L</span>
+          <span>661</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLAL3tnhkVCejQhN3SEJzOOG1C_SGJYaNIGvfhGWokiUAcEi5GJCxn1jT9EN_cQJqCb6Cf614IAdhkB-itQDQncT4rLWVHq0HYxuyVIbR9ZdLzjZG9NiOBoD4QM_bpnj2TKQ_kdWOQ9OIcxSaI3-F89ZbWrZCAzkw1d0sAfjcF8ScDlqzLLfHe5cG6qzJUNADSl5dgOnRfykvsUXLnVRoPPsUXhU9sTCTbGK8DLWRmylqf8HuqD9GhRyArAmwJaDELufDhC88uvLpqeVYHG2klIOePpg-OUM-b1tGjOWQol4Gyb1jc0Jk_L1ikGBO6-LksXin1a36AJ1cjpMhr7FWOcxSmP4tR9PP1E7-R-J5QfnWqPV7P-F6acye-LdO4Fv6uF-VPiLMYRmb_yJpMzq9YXPvnek3-wdVtSkroNELUBPrL3zYdHbIbZBlxoPQm1uX4&t=AQJXFZ9wZvOUqqF7QKo" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">At-Half-Price-AI-Pyjama-Flat-50-Off-Weekend-Sale-Sta</div>
+        <div class="mmet">
+          <span>₹1.5L</span>
+          <span style="color:#22c55e">4.52x</span>
+          <span>₹6.8L</span>
+          <span>615</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLcW9_W8HnTLdolonbXa2uPu68H6yNMPfD3RwEXaxVtQG_r1ocF0YNybWxz2ZcSRFC9cKX0kPzuOgypxHW0sSVIdSg6kYiZoOko3f7cuznxsK6jxPZlmLN8wQ5_faJppXi4qR4OoD_7w-rwSxzikm5K6XbPOyDfarQZj9KcZaVEt82vwqSbkzipaxFrCzXV2cvxD1bjzjyCmu12fMGYuzH0Cf15Fv2l-t8GBojRE845Sr-stG1q3-d-TaivLbBxlYTluYTI1OG_VgQLYI1HnyValxZiRqofXalCmtLbfePaHXfQY5_GbXUVj-InItRRRu1YkMOYDgIDW5TZkS-SusnYdv-kf3-Xb2WtgKKWEWJS8Z_eYlxfpA7bkC2Vv1gGzTVYFGBodoqXru3nFHO68-X_TvsebbgnLELXOWXvkMMAUQYOcqgpRzVUEvNAxjOGmW4&t=AQLwHkN-cuz_ua4JqPU" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Generic-Flash-Sale-Flat-50-Off-Weekend-Sale · </div>
+        <div class="mmet">
+          <span>₹1.2L</span>
+          <span style="color:#22c55e">5.26x</span>
+          <span>₹6.2L</span>
+          <span>569</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJn_pQsdvZRf7QLkwNR0oF5qDIvRcPP_qRBh0n9JMv60m2daoOezpQESvzjl0_rTwEhxAHEw9SjKZve-Q0gz0lQ1tV3hb5GCn-qCILYLGP6vgau55uMc3Nju3fxusgF0vavgc9jpRXwjTndxhQhruM2NN4UtLvMf5Ve2WSlWk9Zj5MfwDzaL84QHlbHU__bfULhnBp3C2HYz-Q2zn74K2lhp4rJThoUmh-YSfhUXfJ9toqxOtgxMq66i4xt-mid_cyutQ983RZ6KzThBSB8zxkOVkYTuPxmg7Cz-9HFFd9NmG5wXQq5_RDRiGknr7DisRqkCjuHFVaK_zCu_OT3Oea_mGvaImp9Y47H0pCOzqGR5JdBMw0nFsVuTdbZUvjIJijF_R306GIovRrcK5WJi-lpIiWWVK6MtQ6i1ml4GoTBU8UwLNQdwTkNIVkkzQoNI6M&t=AQI56ch9znUpNC82lAM" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Tick-Tock-AI-Pyjama-Flat-50-Off-Weekend-Sale-GIF-Pla</div>
+        <div class="mmet">
+          <span>₹84K</span>
+          <span style="color:#22c55e">3.99x</span>
+          <span>₹3.4L</span>
+          <span>292</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIKc9cfUHdnR_llYTU_x7PL1a5dZwAXRlMm7iHnGiRHMuJ2VoXvCIWGikIAj3Zil7gwqw1sdGTmVQKTX8sgH4it9eYdnvP8XL9ttawVE37h1TfLbOdpL8HpwqJc-ygSvyDhfGmZ5oou-WDOPRpNFWsxeUwVbW_9WAwBt3rGOVfBiwq1Qhkb4_jGYkmcqvhRlPmJFtmeP9Y3uhLIIL_6EEtYL2ddXWYuvFB3SbeQaHt8pl2ik1InKb2fGMyJqSsbmy9ClF-Rxvz_aO0lad2IhuFZ-gpY_olsd4X5iNlFKGfSE11FoBiTtU_6t1LJhsvLOBcNey_k0wjnwejz3_748KoNQ00-mddU6M68x_bK7ECpqwh28IIRqa5UMBRH7AQp52HfYwP_mjYtVLvcDHdw-GVP2ymDjTLhHaU0R4zXw_-9o71aC2-6wSFz6rDg93xoKFg&t=AQLM32AlgBYSwj7fkpY" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Dont-Sleep-AI-Pyjama-Flat-50-Off-Weekend-Sale-Static</div>
+        <div class="mmet">
+          <span>₹58K</span>
+          <span style="color:#22c55e">4.36x</span>
+          <span>₹2.5L</span>
+          <span>202</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJkrU12ClbmY2XbIkt2YTpu4lE2wS4UkVt0C-YrE9G-hVXeT3h85GNQYIaau_ZBK0cu9l7AHXaM3vdtrpMTZMEDSE8w23BquCj9t9geZQgXVuoKZRRK13tveowQDelSVVzSGK9x4ram2DMhAi-lgyTQIQkEDHLF4FBVHs3Rex4j2A6xmC3kwLQ4pPD-14_mFfxQBebka7g-brNTzm_jIZ6DmaWMUURm6iuIdjoYcKt-RjRy_zKdrcVawgt8BBXvtM7x7pN1fovA9Wz5enLXC1B4fph_2Vkc_uCTpOll4DMHzwt3CcjxG6XWLgcBlDPALu0sy4tVEiFly7fxdbKtvGnMvMhovpDYGBaMMMAVIEAo4IeE3s2glbmaJmLjDG9M23pZguLLwaJtq-tfhhfLXxnTthPqetXEkKAHpJXaCM3pvTz30_0NLD_gYwBb_m4ZzaQ&t=AQLRVIIReOljg78S_Z8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Generic-Flash-Sale-Flat-50-Off-Weekend-Sale-Static-P</div>
+        <div class="mmet">
+          <span>₹41K</span>
+          <span style="color:#22c55e">4.83x</span>
+          <span>₹2.0L</span>
+          <span>178</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIQLf3wFoSSnPGk0a088h0Z1rXsu8mmLFfiZlj8CuevhNhGcwdAcTg9Lk69OmrBULLoeMRemRI_bNf3acGEvXW8z-CSZS7f5Y1iqq6xXVzsxcrCQCr4Pfkfr7NWVKIzmIH-vQAKp2jbrhfYlGP_H74ystLSdk7aHYOMLytayqYz9pakB8iKyFeARUxQ2Vn40S7tCZ8KJ08a0NZ_cvOFDPxUY2DJl--gOQJ5nxxicbJdk0_5SDzV0ymW420AzyFRiOBoyFGpxqGQEzVtwAUYLuiBPeeGpbmtejBwYV0TTzjpSZwEFR0UpffSq5qzUg_Y1aDva3MR3xq5OMqBMJokb7rKSGAF01BZjul_SjL35bUmhdkDjTqsaFYtLpLwlGwXrrE0HiHei6YjwJZ0ObW1LzKrJaq4zPm3RYlEtqrD-zKX9cFcBjnK5SgDfCwWaaMeHKg&t=AQLjPZdoCa8YMakuN9E" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Deal-Of-The-Day-AI-Pyjama-Flat-50-Off-Weekend-Sale-S</div>
+        <div class="mmet">
+          <span>₹40K</span>
+          <span style="color:#22c55e">4.05x</span>
+          <span>₹1.6L</span>
+          <span>148</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQK2efQf0OThdqgezeHwFDjWHkjF0uTrgbiTmUUggOcxG42nEatiP_tpLTArxy_6ZZ-YUkAQ5f1D8SyLIT--K8a85LmEQ7hRDKo0ZUJtgc4o8Yr_uV7jRVUNPgKN0gRSb7rlMxbale_Tok-urDntbq92v3CASQXbb5NZ66iUpJz5XxR55f0G4rx3IyCu0nBB-Bafc_uqrFJS3NsOHFLV1DoqAAKo8jZeW5sFDq-bq-PnlIH8_kp54nyGsSKxyhnHf3cOF03YewQ-_lJ0dljBLBzmmXaxtzrHEy_eoC_0YjtZ3faS0IAC2ax-pkzOQG_rZol-SNMcdy4ncO7SPJeMv08sq5By9rZS5k4BFPy_9DaXZZaDUmPfJ0SjmEg4trir8CZRvMJeYpdrbe0Q2bY5R0zhEpjbIWyKVtYgC0yCNwtwlksO9r_DpolVBGg-l0plNso&t=AQKF6SNix7Dei_EVJ-o" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Lifes-Too-Short-Chambray-Pyjama-CR46 · </div>
+        <div class="mmet">
+          <span>₹35K</span>
+          <span style="color:#22c55e">4.44x</span>
+          <span>₹1.5L</span>
+          <span>134</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIEjUnbfAnj5HffAKu9ztWgqISN3XsgQvZLdrCWAhCOhKv-XAfV85g3DZn19ZzoU-iBUkyosSCXJ9W_jrH_oem6P-0RxO58__K6JfKHNQKtizjkkmfrkaCTMOXpVwMigr4amXGGDmMXCVNt9b8EFRN5EemJt29TlhB-wbdF4MA9IRTmNFp8YlTBr0_mMjq-FhFkZG4_T8gAfAuoKtp-egfYXGd2fp2qRuHujEWuXaciwGowALbeiENfoMFZ1wT6rVY_I--TDNBn38VBM3eQQaz4W4G78-svE7qr2beH-_XNYRCKHPlM_qMxvsOWBPSwWguKvEYdHL7flRM5tkibDZmmHRarvFXOkF2Nt1Bp2veX00hO1SSdEdwzeESyFJxCJv2onWSJpVRUuUnwMYouKdVY_cDfhN9VQSYk4Qzr1H4YRFJeh4gDU4-w1wzVioP1JuA&t=AQLOUptyFjIHaqxfZtE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Feels-Like-Nothing-Chambray-Pyjama-CR46 · </div>
+        <div class="mmet">
+          <span>₹30K</span>
+          <span style="color:#22c55e">3.46x</span>
+          <span>₹1.0L</span>
+          <span>75</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKQyqx3aOI0XvSoCvsqzK6OLY6dCYXEVP2xUfGPRbMcbS-CHO27NzHOJT2_9uObMsHeBvu8ABS6dQe-kWoHZteZlUaTpUiLeilozVWWYxGL4BLa83EtCpC7gEGGu7VS1C4pM6cRecKowYT4Vtvqp-6_JYHw8fcL8LOVWaPuGaldEqKpdAL-_TCMimqr6F8ALwRRmXdPfDTtJxwpqbGrD1wtHp8iuepmnfcKmAXcGCwosWel5sDu-MeU8CXD6-pav7-sAdnV7P-kdwyHR8LKHjD0vzb6WMX5795LoWwvFvQ6NvL_xnMz_aMz4uBV58w5vL4CGJhg3sg1rdWdU3bbf2fb2ICZpQPXsS-xQgInSsC4jDbQadQWljrRqR333BRCntSIahxWuFGS8mOdG-wdbQVY-CjTbxRiTCVUaVmvdZVjaDxWuPcvBrkLX3YCpn1biC0&t=AQKdTw-vLMMWrGIH_NU" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Snooze-And-You-Loose-AI-Pyjama-Flat-50-Off-Weekend-S</div>
+        <div class="mmet">
+          <span>₹16K</span>
+          <span style="color:#22c55e">5.60x</span>
+          <span>₹88K</span>
+          <span>72</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec" data-cat="Bottomwear / Pants">
+          <div class="sec-hdr">
+            <div class="sec-t">👖 Bottomwear / Pants</div>
+            <div class="sec-s">Top 9 by spend · ₹17K · 4.98x ROAS</div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQL4rVcqC54RdKaWwo0KKUDYP5v1gPlqPMJP_pCP-BkA7I7u_7QG3xnLV05HkknxMsU5HRYFV7VUnDyh6QmBxkvy0fBpAQXg7I6atSUwbBaC1EGF8L2fx4XLQru_Q_jy-FDQ0bnu8N6xxcFAdj8XAw-fvtNf9UfMUw1ZC5nNysNKoWZmufpLgtkDGUqys_kC2SSun62VeUXcME0MtZmMh5TTGcv3O6Zp57BjD96mvrNra9olYWBgFudG2CeFIoLGuNpsO_pDP5HcVAhVAZR9EDGf2r9u1N7eewXU1ZsvYe907k6S3TAsCm9plWgHwv2LXRzR0hxSgMf5uP6U6MSKQD1edT98VkHZFNdZaAfAqO5xnpwUL4xJJmI0NpWax22k5GMbv-rU5XCR6sCjh32eETaDIAutYWq8YCb8242qCfj5laSIA1ej5a2HNzCNn-3GK2g&t=AQLiNmQk_Jd0C4YZLMw" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Zero-Pants-AI-Zero-Pants-MB20 · </div>
+        <div class="mmet">
+          <span>₹6K</span>
+          <span style="color:#22c55e">5.70x</span>
+          <span>₹34K</span>
+          <span>20</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIGicbX0bWmSSmLrb4kQFgnqVbusdWdSxF25jxiMRFHUvZKjXKkNEC-2KYZDT_OoC8_wAWWcmQFjcwR9fkLnG9GyC-ml0UgScPDO45nk8TPmK90U1zi7BOeUMqygU2EWewPfvRoAtOKpRHlknc48hig-ao421r0ZETaxeLb-fMvUq3tGHkCcvRIe0OibPq3F31RK2SOSwiZw0pMi7BlPfIuu-mMMSZ3NBxA2KTBGwP1j-6Depcg7-pqE5PDq6V8pmINCX_z3IBW2iJgBrqg7yWJjecKFeqifJIYewWvu1oyuG5EP0z4riZjOVHHFK69cQHbf69YsaN97Sl6niaRmZIihWt5Y3cpMK247PUTGkHzF4rxHJ9_S1aejNoRyl19s4OKNrTjoKa4QFQNbc_0qLQ3FxnXp1tUGv9eXUwqhSJ3yFqtEBAw7-4L9wg-XEOBap8&t=AQLUeUxHyUco3nProIs" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">8-AM-Deadline-8-PM-Dinner-Zero-Pants-MB20 · </div>
+        <div class="mmet">
+          <span>₹3K</span>
+          <span style="color:#86efac">2.37x</span>
+          <span>₹6K</span>
+          <span>6</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQI6TywaCZ4_qni4bARH1DOfMxtqsWFxf_cNAjpN5RYtJavGJm5C9Vrbdzgi5v6V45a7uE4jDcId2Rkj74ojYDiYeGyktPJwB1XHakbYP4eBQDcvveB1C3-_xWwAkaolQACOcl-Uauyio8lCDYZgN3-BD-vyHtwxW43oqQplv4Pd7qHoQjPuQULq_36OyOX-366E0mZ-D_HegeJa6DYm8YzS33y4ahSmuythvqWHp_trSC2zRSvmER5S8H-_WJCBtijXmsHsyBV1KMLtO6xjVqSKNPbdJlqInYEy05dLO4uz7eSGKLdm0SNPDLZrPdVeJxq3vGL7P54ag7bI5XFD7zlc_purvhrfnfKpj4DWIGaeFjnYxbL0hUC7W3d56LogxB1ubllh0Dd57mwr0R8gQGK7gcD80nFPNaYcqXk46yas_j6aClkN3bBAJ8cbsmoLq-4&t=AQJUMQuC6_yAgrSxZYE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Made-For-Men-Zero-Pants-MB20-Carousel</div>
+        <div class="mmet">
+          <span>₹2K</span>
+          <span style="color:#22c55e">3.13x</span>
+          <span>₹7K</span>
+          <span>5</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJMmHBn5ZwqZBLyd2NvAbpKZoMWLKEFaEQpNTrXsCc40a_q7mDDF7Vg5vxxKnMIUz4x3il-hKKZome49UfwZo1p4xll7AxBhdAJ3fYoQHqEfTxJ62HwXKoSat4HEJoivWrPmBr9BzfLCnUif4tOGv5ZsoNEGnEzRRZP8gUsdsYRGoJFN1jFQ1PrANSn2DQwcswcVSv8Jmk19p_mLwO_0ud4BSMwXUJhIh3vgu_6bOtgBHSjD71YZIANVKRLxyHpn7CIFlMdIcXAg5Z1IlXVstGiO-eE0blE3yrNMNMpn0kTdRkHHyw4HW1f2acPZXtf56BWUwcJlVh3mNXGgR01N0znoo-uE1eLf9LAPhjZTuCYQ-X2slvi9R158x8OOwhDAtlRE9BA1K-EJM1HktzKlvRomRdDWcJPXC8JziUHEZZz88Y05li2saaf4NVnEO8CCd0&t=AQKgz141J7iSol9d_sc" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Wrinkles-Can-Stay-On-Paper-Zero-Pants-MB20 · </div>
+        <div class="mmet">
+          <span>₹2K</span>
+          <span style="color:#22c55e">5.79x</span>
+          <span>₹11K</span>
+          <span>7</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKuGszpS64g3X8EJJrnCq27jV8yNcW6suA67b22mkGqDT9bbFK4HurD5kZyi9Gqv7WUt9CU8DEHKbbpZW9hQbJeI-LdSGeE6b2zhoYQUxs4_ElJTxWDWRHMAtJ5Hq6oiXUmpxzHkwE2HX45t6OkbdSwYNflB3-WwAYxx-BCjEZovOVG5HwhCLxYDOD8oEuEdMWxsszl43tMZmi2lyopILHBv3YAa3k3A6aMfSLgA7VHLaD4K9jtUkYY08gUQEFX2IORtF-2sykGONGWkwloLt5CQcZmZoJS0Am2cGEYpmg6kRAx0tCodSzvXnQHbhK72Se1tC78n2tS2zSl9drONENnOApHQSD_wqHAvFdomDfptIHBoOVf-PPQFRg7uXxijNfBs9BbGJIlSUHsQ2L3ULjpZE8Rdab23Ppj6_r_2qfGuf_dFG3TRUrR7x6W6ho-L6E&t=AQIRHBSK6HEV86xNCtQ" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Never-Wrinkles-Never-Late-Zero-Pants-MB20 · </div>
+        <div class="mmet">
+          <span>₹1K</span>
+          <span style="color:#22c55e">3.31x</span>
+          <span>₹5K</span>
+          <span>5</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLAlxJc1ppE5XpoXCkZLNDxPFx9b98MdKrc114onQ3Bw5nNJY-ZAbng2mdgGgRXve61Ah2sAyuYUG_CJqTA2Tz3L2FstEWipJrRREKjPxnTjoPlf024tGMdQZp_rJCiyrrYo7xFIjk1O-1O2-zNMBMR4V_EMrhSP1gTTL0g4TjWLZVziozSYYFaEnixLUSy-j7hYGCn92EZmDeegsJbChu6LIT9uMGvMyTniM55pv-AkAX5v2CFVpAz86GK3of7z9Esrag79cBDtvCJ5v3hxRzqjlIIwlOiplqqbKofx7NPbRcaZw1s7I83sPL2a-StLQMWY0BJJU1V37kV7Y3BUNqDBQKcK9-vkyd-okLeAMZkHgj0OsRujub86qSVBbqAolZ5aITFvac239YNAP6OwpD-tlemS73LkMu2cW3tC-S_1I_UaJjQgI3cYxF43b4cYx4&t=AQKZ8uKDAOVzsC5tk4g" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Product-Review-Zero-Pants-AI-Zero-Pants-MB20 · </div>
+        <div class="mmet">
+          <span>₹773</span>
+          <span style="color:#22c55e">5.11x</span>
+          <span>₹4K</span>
+          <span>2</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQI2hfjBUGk1PPQ6VLx86TqQkWCGeYDXxvZlqpbpvfKWAccWlsYn2_eFuBTtpP_7DTdis53-rwpBOrz_yXuWJMcvGK5_-_0iSskhIL6QOZcFFtCbkYWccMPoyTkpRMYh0KcjhtrlOmnIILa5GZQ_gRyWeNp7EhfPq5pO-VO25u6ZI6pSoHFDMcWAGTRS6A3LWeZpyn5XiG4QeOuAhvDLPw8SA3JjVea5QQ2dIYDOq_mb3X8pOav6dbgiwhQuJygV8DmgsJ4hyExlI1vzHlk0WJSDHcMtWhb0u0XAx9onCkk6Dx2m9GeFYLRapvYXCBJIVSYZssIm0_9jGsnwlxEdHmxSlwVMML0CQHtH_nNgyzQk1l9FlZA91pJQt9bIAOL75KxScDBL19fQALMHKvI-3SeVXKUwAmabQzV26gq154d9GRZrea2MgSnX2w8JD_1jg4w&t=AQJ8eo5STtCW25KY5Pg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">This-That-Zero-Pants-MB20 · </div>
+        <div class="mmet">
+          <span>₹716</span>
+          <span style="color:#22c55e">20.87x</span>
+          <span>₹15K</span>
+          <span>6</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIcrxuMf4eZ9e2l-at1KFgjKD2wzgzhEp4pcA4Vhn8pzTv6CV4fS_F3cAqtnmWStrxnQ4d78ALY3jeHWiaOiBFeDWa9CccBzdebXBH5l76n9zNSpG9CM5gUd0JxSXWQ_K6Tuj1eMpxER_zGHAY3_hD2NdMD65k7HxY9kWEwrV_5vA3RQeB-8aRyMy4C6cKcCeM_JBHoyyP_b1PLgxAsimk5qnCoshFNK2BXA--L7HyVvybrkVsS-zO9KCZjvi-HUsg32ya0sJ1Ipr5OmC7CertRKKstW7uIq4rpJzmabiWbGaTcvXrltoG6bWHrZhExNQmBCMG0w-Pb_1CyLq_f_5-VAHe0y0Ut6QIHNMsmdNZKTCL4n3s63p7COHLC4-Jv4WTt21G15Qlj4O_QPnb1bcbG-KctyrvZuTX5o2V5RkZEuxL3qHbcPPc44GVx6kvMEpI&t=AQJEnRqvhjThYkaIgq0" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">No-Creases-Zero-Pants-MB20 · </div>
+        <div class="mmet">
+          <span>₹712</span>
+          <span style="color:#ef4444">1.47x</span>
+          <span>₹1K</span>
+          <span>1</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKYFNV4DP05HLaT3H02XO1imWd8VZ-hjpncdb77NJVTJ7kn6vTEJWc8GfvUYmrsLXgWUWhNO5OuL39tpw4byHwu9RNaiV2b5_9rvMF06HUBsJzq3Uz6XAIRnlfo1pC7lAasdgPAeo2KjB6t-QK7xABuxMF_pASsncbWBt-aGPOXzVXcsqp8J-k3f3kaEQk-SioWnjdczgzfWWLEOF2FssGPo2m0co82d9hp_mkyAgVMcmIAp5u4vPlH39hoTwJb1PN4crN1bv72gFF2-Ye1r123WinIBV7_f4vDryZ8Ww0SU2LXlDAuv81hTp6eaIBZAZ0Td9XKxVREMhcSE5k3vzK2t253Vo7qmaPJO-n4bzp9fa1AXhkgBag3J0KkqejFjFfo8pcgUwLqv9deHCF3qbA2iMaq4QNLVfNlcPmvq8uHnAL805q33zPxD111xXvin1s&t=AQKtzus9cDYn-WFHhCo" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">8-Am-Work-Mode-AI-Zero-Pants-MB20 · </div>
+        <div class="mmet">
+          <span>₹626</span>
+          <span style="color:#22c55e">2.75x</span>
+          <span>₹2K</span>
+          <span>3</span>
+        </div>
+      </div>
+    </div></div>
+        </div></div>
+</div>
+
+<!-- VIDEOS PANE -->
+<div class="tab-pane" id="fmt1">
+  <div class="inner-tabs">
+    <div class="itab active" onclick="switchInner(1,0)">Overview</div>
+    <div class="itab" onclick="switchInner(1,1)">All Videos</div>
+  </div>
+  <div class="inner-content active" id="v-inner0"><div class="sec">
+          <div class="sec-hdr">
+            <div>
+              <div class="sec-t">🎬 Innerwear (General)</div>
+              <div class="sec-s">77 ads · ₹5.7L · 3.32x blended ROAS</div>
+            </div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIt1hkBTdXWDyRlNBbTdTkylzWowixKElLO2Wuf3k8-Vfj97JitDMtoxqHmUNwZZ2sw763SBmfds2eqQ--rgGzP8VJVzipmfnm0VH4CL2zC7GpL3tqwcV9pBxsePPLzGNliH42xgSgNs4zvnK4qdVdjKpK_kkFZHNNXpzAxXCm2Uv4qXq8WDnL3wjxbGcn65Cwo5YzYUb_cu11qMB1SORf8u5AoQlh9myDWjH-nlsZk5zgjfVgpWEc6bivvS1rm_sFkeGutM8M_kAdveTYCEQuM_12CqNftf1l3i1ZNBwFnoyU85-2eYrS1Oo2cNkupkE67sF_YygBkOH1Ljbz8qvmWpkfWBra97IC1DjCCrgtaPMaEkbektTsC8nOXJWOSaZJ3ZJVfg7ua8QsClsoItfw0eZqqKiwrr2WsxAj9yHoUj-4slbYYJJP8a18iPKccOd0&t=AQIz-shSTJ-Ffxe3aB8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Shiva-Nipples-Popping-Out-Invisible-Vest-MB23 · Clos</div>
+        <div class="mmet">
+          <span>₹1.0L</span>
+          <span style="color:#22c55e">2.61x</span>
+          <span>₹2.7L</span>
+          <span>223</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIG6xobmIKvbTy6DXV_iwqlcCHwRcJzQtkfj_3fboTlDQpbl_5xkVq3GGqMwkkILcEK8MWQ09l8wyXgK4DVfbKm4PD6TXYCx5D9adGd4_GPyT7iduSAzywRDuxrMXq4nuqFUbSPuC5fiEDc0RkxA4BAdhEN8pAA9Am1418m32uuCko7ihp_FfqmW66IxYjyLJsGDonnrBH0Y9B1GlP0WBNZxanjhrsRwncZjQbb_6Enl9EvK3qmOHYIsRuz0MxbT3hHnogglArFT60Kb99wuMAA6wQLuq5WYcv7sVAIvnN6xF56Oa1bW_CsuoFsrnn-kb8m0YYlONDo-OnCpQRLkuhHKKSwPraoZzQDN1jZD2UA9JjE8FAyD9xfKi4zXpbFOXSl0o7vO6K5gT1h8lVKKwL_MqdTnjCy7Giqwr3kR2ZncdTwHu6ZR7VzlJ2xWnX7XX0&t=AQJweKOi5pL1o70Zn0Y" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Mittal-Sab-Invisible-Vest-MB23 · Direct</div>
+        <div class="mmet">
+          <span>₹61K</span>
+          <span style="color:#22c55e">2.78x</span>
+          <span>₹1.7L</span>
+          <span>120</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJNqwFhDvn3xTa20Pl2fuYA3F9LLHRZgMnWyTrK23tvkEs42vop7RCdQetdt2dd-fNCTqcIZReFwNrbnIUyO12UrznxDENa2QNT07LRgwiAWyhAEEPEPT74xyNi3cm0Lvd5uTG3OSM6QLio1RvURkNGBue9USJ8NW5_O5q2UQfolAe4KdbM8btYI9aVQePnHiZrcQ0f49q3P8FYZ682BCicCzTqSCXGQLJJxqMlZNx-33-T7lXU5NBf2_eUAnktLBd_QYOVoM9JY4wMo2_PlUEBWJkF1202TmMpL9OtPnYklTHyS3aOebQBpd8b5ZUKNQJQlkmUM9tiAL7q2Ti5K6v4rySFVCf37Fk2-FoJr4KmM5znVs8Rpm05k97cFfmphOXge_2O_WYWaDYI8bbfC9-meSeuk21yqP6iOeeNtEK2HBlCHXth3PNptaNqycLHC2s&t=AQIcnXbTdN1yqFA8OL8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Paras-Invisible-Vest-MB23 · Dark-Post-V3-Direct</div>
+        <div class="mmet">
+          <span>₹41K</span>
+          <span style="color:#22c55e">2.87x</span>
+          <span>₹1.2L</span>
+          <span>82</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKETQOXxLl-sKd8oNhfYK0UGbS773xME8bsK1BelWub51BLjFubsaEb7QhrdihpDXlbQARXdfuRaOVWWbAavJlbVKugYtQfjV5dWNFvjO3AqMHWHrOJfuJNYx7_nSJfzks6mZzlBIvqvfvu76GL83uh_iBPPvAIp_H8y9PpgHwUL0IeFJE9KbfLxsklEV1e-pKKHvbVvCuSKc8xr8wrRTfyESsKNQCYK6KRlZuN7Wkb8zeI1Io8nM7fa4PAZW4X8zCxb0bcaFkd1kCISEQVuVsiyNUKLkdIsmQdhiCocRwtsovo2gv59g56EoHXA3ZONy3fQVotFQLXRncnyXU1oxMks0mnRQD6_3f09Pi9kjqzeG0F_9FmZsm2mEGeeabXBLPUm3fOSpFz-0trY-eEcqCLEU1AleXRcPOluQnjUF1cHZJqSIXxVgd-r0bq0P59yd0&t=AQI8CvdFeifqwcbmRI4" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Harshita-Bajaj-Bamboo-Vest-MB31 · Direct</div>
+        <div class="mmet">
+          <span>₹21K</span>
+          <span style="color:#22c55e">5.74x</span>
+          <span>₹1.2L</span>
+          <span>120</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKNZ-L1CFp0lxIfiBBfuiNtGNtbAuxnSyacdUW3xn26jqKRtiwzjIi0l5z_7hMdVJMfkOckKei14taVlYCORKtBdHL3fBE9wP6_cQNMumgK09wlkdK92c4sM3qepnPWRtXRPhdpQ_OtT4uhLiQzhs6trgE31FSyj5_bgT4NXd6wkc67HtGAP4ea5C653p90xXEkvMURkSAVynekV_-UqhqC5tF2XYON2YCKqx3XVuvial5EqAzTpS08SpggWONFnYVuqSlyC2BxD1-_VYc8yvXIqbRnP93-GjGv0vo_HPYDX7d80ScteJEukHsCTxr9LJkcyaUEVv_S6Ap32cnnevspEAahsRViXws4OeMHa2LQzVxCW0mqt-Dx1wPGuB2CiECiB6PW1fI2B0VbtMjGN0m14uKfWMvX-iaq0SVctX2o81EUwUMmCtefVJtu0dOQoB4&t=AQIamzYqV-Y0ChAL7kE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Sahil-Invisible-Vest-MB23 · Direct</div>
+        <div class="mmet">
+          <span>₹19K</span>
+          <span style="color:#f59e0b">1.54x</span>
+          <span>₹30K</span>
+          <span>31</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec">
+          <div class="sec-hdr">
+            <div>
+              <div class="sec-t">🩲 5-at-999 Cotton UW</div>
+              <div class="sec-s">128 ads · ₹23.9L · 2.75x blended ROAS</div>
+            </div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ3yP7fQ-Fi0__Smuk1Z_4R6VPk4GxZEO4uii1hvaCELw5hISa49haCYAJGjGohy1oMdt2Tl2-BXIBpmWUytdnoSUVMbcLO2gdBji0LTWMA8t7HsaTgJW8-fI4OYTLOF0qE6WYQVBn9qgORgHBhKWHVfrZU6_UZjGwA6Zh1YnLqqNV2xU27pUgIvOquF3uaKQl88nHQYA17OlDkbrgq4pc-X0DvaXcWqkxw6jBf7lxpb0dPDE4Vq83rKcrqF4mEsTgBDBMKHHzlkwp3gk_C3u72dOoTfMxDsMEvR1VY_LG8mQN-0sNmxiD_k3CsY3DM0MEQPzW4jWBgwip0U6_mN-zJAJknArn4rScxCsq-mr3xAE6Fayg_WVonRmQc4TUKDzMIDUqmNWfyKYsTCW-zWedc8St4Nyw4xN_fQCU8sCzjF_XskhHkPdq3xkSQ8LLkaGc&t=AQJZU88PIgT0Je76kcg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Ayush-Jangta-Uniqlo-Cotton-Underwear-5-at-999 · Dire</div>
+        <div class="mmet">
+          <span>₹7.7L</span>
+          <span style="color:#86efac">2.40x</span>
+          <span>₹18.5L</span>
+          <span>1,776</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJbtgz8eKFIrR8H8iD9tRgvTwqtAj5qnVoxQs1ycXf-Qj7DUCdDkRWPcyghVEdaUseAXPB0Pu70aXUt1LBIxcN_JzLkMTP9_6dutUncdQy9HnFOEIUYbIMUT3k9t6G05FOrI1SEW1d0Avb2EVvbKLuKG_-HGlnJcpTDATlqEPb4NNPZhvMUkhMvxQbHese5VgOhmOHTiNM4b54KEjgtL2vhgdCVzLE9cBno-uZQmFkZ-ElxA2ZtqsPJB_PC_9lD1X420ZB0y2VAZtir86glQET0DZ4d6r3ZiPtqN1x9bEzSHwhup1QSKdeiy7A44aJ_8nYcENK7HSXYR78EdzKbM9lmjTnVkhQnHBUwVmI09-03sdU7CcAMsc36O0gOtW588J4yeoHUD6rg5Rl8ezjyGnErCeFLEhUAiGOoeP3Qkk6V6ho5uflkURDwWt5__8b7uBQ&t=AQII1AYjHStvSNzP56k" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Samay-Cotton-Underwear-5-at-999 · Direct</div>
+        <div class="mmet">
+          <span>₹1.5L</span>
+          <span style="color:#86efac">2.38x</span>
+          <span>₹3.6L</span>
+          <span>349</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJGOxvtzyar6tm5M2AdMs2Obe6W6Q1hDF0dFz_3EpI3ntiaD4yvK_s40MAbg8d7lcqNEf4YLN-aLdtpBawa90k9YPC4U7mAcNCpPM1a5HXm_wxl7vIhs3DcWdV4fBuKLXdXMHV9rmrCDgJC4aahnLJI_K8mUBYz28bjlydHZR4r7t-y-t6qQFz-0W1fNMU_Q-Me7VF6E7MDtErikyZ6hm3DTY_Xdgmg8YOl4DFZ0JLlC7Mjh_Upc78Yd8RHu9ReuSW7n0h9ahmRg2ahjGhZmZL0ZyH3Dh0ldvnYqu7mk5XoilT5yHY3TJNyY6AHn2arkYcjtjzx8d4RZCw33gXy3rJ9MH4pHcrjec6x_3SyIZUQXNMGP1dX1N9bBxFMl1yIKwdx_ZEEuffqR7lS8PZxNopv9zotQ8wAE0Emcbd9JUwW43VjQ7nsqqui3jINISoG0Wc&t=AQLUYItwFgF_eTSx4Mk" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Sujal-Regional-Gujarati-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹1.1L</span>
+          <span style="color:#22c55e">2.94x</span>
+          <span>₹3.3L</span>
+          <span>327</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLXiku-sickVY-wPjvdM3sUoghnkGeNrxH29CmYcHHBYYCFLOB4-LLhSpGQ1vHeHzjlpDw3MRejqGwqmcDgPoaN3xsMphDOiFWeU2eUB8tRAeMmZez3vkCqK_vxaZSc9obqIprVsV3Q5JXcKMfDlhpQY5nXHttibgKuN7TSbRSW6aSuaLGMM3Ih4x9FNQxAqNb8eb_SbsQDVaWN4gXFY3UxpLrkI028CvNgZgcqSOYDzhT5tp38Zhggv73mo44vo9UAh7nEv_oJbEjBvz4J_SwGVwyAqZLKiJKqSVXrW_zpu_R4aTa3jUlZ_uKF_JM6U1TDrSKc5QT8ZeTDsKsoCtkDMl75hz5JbgHB9r2sLH_7ZfRlL6BvWbN4Vih2lCkHGBzG9oEuGz9ker6BdpZWJ4UAIVUXQbZwzkAFSQKpqceQkgG8eLyzw2RgL0ncwurRvLg&t=AQJw4KjHjFL2esyaoHE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Chandrashekhar-Cotton-Underwear-5-at-999 · Direct</div>
+        <div class="mmet">
+          <span>₹42K</span>
+          <span style="color:#22c55e">3.70x</span>
+          <span>₹1.6L</span>
+          <span>162</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQK5L2R0nD4XcbkkmGoUOMFQr1RzednWRIdGEcnlNXbNoJAlHBat0CDSOCKZasqyvZdaqNSQm0Mq78CTLHGFMoxx99ZKRVRLad8SblZqy9meNDlqbA_MSpF0HPrQE27iMZBbPEvA6IS3EzkdxrW6FwL4yQHeZkHwnav0XuHP3hHo4qg2BcryzOKpfuZkHAKldoYl4-YuJY1AzhrtLD5Ythgq04YWXhARqyU5iOq717g9PFW2Jglf4f2tWhmfpfXHFiOcc1-VQEugUSBHGSMyUHgQikg-eq4panrkVakHdQ_CGYteqp7FYl9L6sbklMpfeyb9jogwvEY28Iju2OSjk7nuYXMXaOYWYDNscPcUTrbrq8U71dd7rLBszb-S6tfTPHNK-wgiyvljg6nKRayxsw_Z3CtoE0EmFwE2nB-IFeZErsgVyi1cwhVcDzDM8aNq7Y4&t=AQKzyEOr0uKGUd7a4hI" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Noel-Vaz-Cotton-Underwear-5-at-999 · V2-DIY</div>
+        <div class="mmet">
+          <span>₹63K</span>
+          <span style="color:#86efac">2.04x</span>
+          <span>₹1.3L</span>
+          <span>128</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec">
+          <div class="sec-hdr">
+            <div>
+              <div class="sec-t">👔 Outerwear</div>
+              <div class="sec-s">125 ads · ₹6.9L · 4.02x blended ROAS</div>
+            </div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLJgjN5ZNGplZ6ahfKZYjqeQUC8RbR6i_RXNkMyhqbvf9dN3M2HqHkrOq87kIfKT0WgBU13n3zpWihCevQXMnwcXWaAJ7dHXuRyyXS7EeEp0H8bENaZcvNH7id2QZ9A7Z8RRpEidTx4B-mOI0yQP4IboJvdl6RvTd64fNQxxHzuFCsD14NxNVQ8f1MlmGrWqep6IxSxa0JJsQgJSslPNWP1kzApkcWLo5d5rW9BsBlmfOYnxMYRilnWHAAPFQ6nr7eePq0Hqk_WIqiSbKKri54EFc7gDGC3ncyISEJkwMT4UnrpheqxwaF0nV8LchHEOeaCInb7uaFp99pkr0zrU0ryjYkauKeZVwGypuC7Sw_MKVCs-ZDLGorG-v4r3JypFYV_OWHzH1UUdoyB0S3vH-W4uXvXH-TFax0aG5udglJ9X5ADKVTLtehejAcncj0bPf0&t=AQLYYqi01Fmq365nJiQ" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Karan-Dhotre-Active-Raglan-Tshirt-AT01 · Direct</div>
+        <div class="mmet">
+          <span>₹87K</span>
+          <span style="color:#22c55e">3.56x</span>
+          <span>₹3.1L</span>
+          <span>224</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQK1Xq41JSk0aXmUMbmWbOLkS3wndbSM1n4Hoaf1mq7PbJ67dWuUFp3oElSTfcM0q-m0QNvcaDm-aZGJBptvTEXgHnhhP1NBIWiVBz4mJMSC4zNd7l1sl4RFBGJZ9RDhnLTpmgvdj8mJYi0DZF-Wl9WilV0-Plp43vXkC1Mix3OBbptnATtPNZxacITN26T4s5TWvn3QHYzymCwucH7ZtslRl7KVMQ5bpE03SifdtYCMX_oUvT5-qc6AZuO5ZWeTOs_2R9ioA0aZcsK8JfkrwsDCkClGrxK3y4qqFI0geB20R5QOqDBcTdd75iLSqKgEljxwXia3Dpr7tonxUhW7GpB-WYtlJyHaJP0U7NPWLW_Auzhz2aPv5LskEwPGTSqu_lfMMsc_txs2spLoPubOj33ChtAFCHJXuZGEaQUVykyGus4VPksTrXWJxtK5Sp3PBlA&t=AQJD60u3OfZe5pf6WJg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Heth-K-Chambray-Pyjama-CR46 · Dark-Post-DIY</div>
+        <div class="mmet">
+          <span>₹59K</span>
+          <span style="color:#22c55e">3.51x</span>
+          <span>₹2.1L</span>
+          <span>165</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKEhHC4xxP8rbqzG6WVr8y4Aquck8A8kdJ3rQWXeO9VnqKFOC389dgaIyiuxsbZ3rcwmeo_AUF-v6i-XenO7x7HfSU9nITCyLlkfJQSlAOBvioUrKEWkGIBgpH8gVYYFcrNELBOamlnb6f_gHKAuyJwLnRjTioqE9lo7MZHZ920DGGIvrdUOPnIkb6wp20PmKI-QNkrL9tOC2PBJXr85rDZs-BwgR2-yC3oYztyfzFraTiyQimfg_seavQ7r6cibsMLrZRqYHAuAXsoelfvbEsLKlHNow1-e-tQaV-ZfOJWV6D3iXIi0TsTtrj9S8ehqQrqGc7VTgwvirOEAyl--E9ruX3bGk-Z9vGWSeF0TVpLzvrpZIgvD2mcDxf4kPB8pDyBIUsObqkX-5vyH_G4SquDvZ2W6m-AwYVaPRTRbzr7rChxuZEcYc1L6zYMticHxsQ&t=AQJ9imCK7ViySghtahg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Dev-Chambray-Pyjama-CR46 · Direct</div>
+        <div class="mmet">
+          <span>₹38K</span>
+          <span style="color:#22c55e">3.60x</span>
+          <span>₹1.4L</span>
+          <span>109</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJQh9pqzHpqjIEYPa6nSkJP8LOlRMZIj4041E563TsScd28S_Kxo2skJW7BPrM7pwIF59l7xFxcoXb1OdaNDjuyNvuJ3VbcnzcEuXuJL2EHyvWEcCbDNB97S48FCURzYKhSUeuhH6eAkgfDSsr8WMS3wY82fWCfXjHQ7k0DgMmqI97EN7IXQIm6NYLvQ07gORsdu9uzF2ONf2jXfYOwRKUBLSTDqpkPlKkgJ7qULSlr3EqgYIyELFNxQxpIg8BEqzltxtpZPNbSp4qh88sn_nbjOFQ6rWspKFop2bzqGl8CrZy25LbYf9enjqjljCoEFsi3W2uKqq6bpbkG7gXUT3TzeQDvCUZPEOJElypfZFwd5STUKos_-1ZE3E4iGWDKCLzWZK5HyTIPlqgBhAMhZnxJsilz8k-0NNvCKaOfahxC9BbZ5fH762m0azYqGqtGZPE&t=AQLonL_JO_8mbcDWdiQ" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Vishal-Sharma-Easy-Pants-CR44 · Direct</div>
+        <div class="mmet">
+          <span>₹25K</span>
+          <span style="color:#22c55e">5.30x</span>
+          <span>₹1.3L</span>
+          <span>110</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLRhiuc0HCAP_orG2QqpoajuakKtMBBTzmCc-epekjbInPwRvKhcRJUDOZjGDODqpa_wErvM3G4PknbqzvJZoe-1yNJNuOiCnDALzzkqSR5K2MIvph65qASXJP5-qTdRvNa1aZm5GegGK31GW_hv0i_M13Dhoi3zzYaTz2pEtBGxR7Np5pSdX-f5aAcfyn8bdZ-69GyIkAbU_3iH2Yfyn8K3WfIjfNQ55sMvyDwDcDR37SKGKzh6ncgXM_k150tpCnJSWidLXgDG5f_Skca2ZK6puCH3b50vIc3ELRzyZ20cXevD_Biqu0xU2A5fmM3I9aL68tQDIFqa4V-aF_urJEo1BtbqZm8j8wxkadCyyKxiDqQ1LSOOsyDX1JXfQfs3wVF7onwRBBtgrh3BuQr48S_knRds-f3B3PvL_UmB4iGZ5Ny2Fx9cNTWYTZLXZj6-n8&t=AQIYI87DZ4qjX7KptGo" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Utkarsh--Uppal-Easy-Pants-CR44 · Direct</div>
+        <div class="mmet">
+          <span>₹32K</span>
+          <span style="color:#22c55e">2.83x</span>
+          <span>₹91K</span>
+          <span>77</span>
+        </div>
+      </div>
+    </div></div>
+        </div></div>
+  <div class="inner-content" id="v-inner1"><div class="filter-bar"><button class="filter-btn active" onclick="filterCat(this,'all',this.closest('.tab-pane'))">All</button><button class="filter-btn" onclick="filterCat(this,'Innerwear (General)',this.closest('.tab-pane'))">Innerwear (General)</button><button class="filter-btn" onclick="filterCat(this,'5-at-999 Cotton UW',this.closest('.tab-pane'))">5-at-999 Cotton UW</button><button class="filter-btn" onclick="filterCat(this,'Outerwear',this.closest('.tab-pane'))">Outerwear</button></div><div class="sec" data-cat="Innerwear (General)">
+          <div class="sec-hdr">
+            <div class="sec-t">🎬 Innerwear (General)</div>
+            <div class="sec-s">Top 10 by spend · ₹5.7L · 3.32x ROAS</div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIt1hkBTdXWDyRlNBbTdTkylzWowixKElLO2Wuf3k8-Vfj97JitDMtoxqHmUNwZZ2sw763SBmfds2eqQ--rgGzP8VJVzipmfnm0VH4CL2zC7GpL3tqwcV9pBxsePPLzGNliH42xgSgNs4zvnK4qdVdjKpK_kkFZHNNXpzAxXCm2Uv4qXq8WDnL3wjxbGcn65Cwo5YzYUb_cu11qMB1SORf8u5AoQlh9myDWjH-nlsZk5zgjfVgpWEc6bivvS1rm_sFkeGutM8M_kAdveTYCEQuM_12CqNftf1l3i1ZNBwFnoyU85-2eYrS1Oo2cNkupkE67sF_YygBkOH1Ljbz8qvmWpkfWBra97IC1DjCCrgtaPMaEkbektTsC8nOXJWOSaZJ3ZJVfg7ua8QsClsoItfw0eZqqKiwrr2WsxAj9yHoUj-4slbYYJJP8a18iPKccOd0&t=AQIz-shSTJ-Ffxe3aB8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Shiva-Nipples-Popping-Out-Invisible-Vest-MB23 · Clos</div>
+        <div class="mmet">
+          <span>₹1.0L</span>
+          <span style="color:#22c55e">2.61x</span>
+          <span>₹2.7L</span>
+          <span>223</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIG6xobmIKvbTy6DXV_iwqlcCHwRcJzQtkfj_3fboTlDQpbl_5xkVq3GGqMwkkILcEK8MWQ09l8wyXgK4DVfbKm4PD6TXYCx5D9adGd4_GPyT7iduSAzywRDuxrMXq4nuqFUbSPuC5fiEDc0RkxA4BAdhEN8pAA9Am1418m32uuCko7ihp_FfqmW66IxYjyLJsGDonnrBH0Y9B1GlP0WBNZxanjhrsRwncZjQbb_6Enl9EvK3qmOHYIsRuz0MxbT3hHnogglArFT60Kb99wuMAA6wQLuq5WYcv7sVAIvnN6xF56Oa1bW_CsuoFsrnn-kb8m0YYlONDo-OnCpQRLkuhHKKSwPraoZzQDN1jZD2UA9JjE8FAyD9xfKi4zXpbFOXSl0o7vO6K5gT1h8lVKKwL_MqdTnjCy7Giqwr3kR2ZncdTwHu6ZR7VzlJ2xWnX7XX0&t=AQJweKOi5pL1o70Zn0Y" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Mittal-Sab-Invisible-Vest-MB23 · Direct</div>
+        <div class="mmet">
+          <span>₹61K</span>
+          <span style="color:#22c55e">2.78x</span>
+          <span>₹1.7L</span>
+          <span>120</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJNqwFhDvn3xTa20Pl2fuYA3F9LLHRZgMnWyTrK23tvkEs42vop7RCdQetdt2dd-fNCTqcIZReFwNrbnIUyO12UrznxDENa2QNT07LRgwiAWyhAEEPEPT74xyNi3cm0Lvd5uTG3OSM6QLio1RvURkNGBue9USJ8NW5_O5q2UQfolAe4KdbM8btYI9aVQePnHiZrcQ0f49q3P8FYZ682BCicCzTqSCXGQLJJxqMlZNx-33-T7lXU5NBf2_eUAnktLBd_QYOVoM9JY4wMo2_PlUEBWJkF1202TmMpL9OtPnYklTHyS3aOebQBpd8b5ZUKNQJQlkmUM9tiAL7q2Ti5K6v4rySFVCf37Fk2-FoJr4KmM5znVs8Rpm05k97cFfmphOXge_2O_WYWaDYI8bbfC9-meSeuk21yqP6iOeeNtEK2HBlCHXth3PNptaNqycLHC2s&t=AQIcnXbTdN1yqFA8OL8" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Paras-Invisible-Vest-MB23 · Dark-Post-V3-Direct</div>
+        <div class="mmet">
+          <span>₹41K</span>
+          <span style="color:#22c55e">2.87x</span>
+          <span>₹1.2L</span>
+          <span>82</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLRRT2gZMrOSkPsGCOTWr10-6AIeDmJdac9dmIREpfKRQWI2EY5POkCnylt2rfBIIAH7RDOCO4FjZcTTPP1DemmJocKsUfPcdaMeDO9bs0rtlDOF4_WPg2j4HSsiBHqVPxFFYYcBxMu-g2FsH6KYBXt86_MJTFlYrJYdwvB4NufYeKihBTT32R0LcuKBCsd8-Dgfo_n3k_53p0L5HC_Jt2m5XJYSUnZpQrmc5uu5SQ7g5YwO9oSGZXhsd63Ks7kRylFdRZJK0f0QaQMZwkZg5Ppr_JeLs2fImECtzkRcqe4E3h4TdFU3rHsJYCu2EHP-M_ZQHUYJP4nt-NMXuprWWZ091jTtl4zJI7dm7DRLlBO8c98ifONnIcMmiXQ4UqiMPlOdHTvdvL2t2nhvE-GFgu4wD0QWfdAvPd8H1N86bPvzDidN1H6g8kPDGh08RYvPOU&t=AQIR62PgJEZmx9Hr31k" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Parth-Supreme-Luxury-Modal-Underwear-R8 · CoreSmart</div>
+        <div class="mmet">
+          <span>₹31K</span>
+          <span style="color:#22c55e">4.30x</span>
+          <span>₹1.3L</span>
+          <span>130</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJyRmJYNiYfVr1diNHTpfsDCkRP0ON8cjbPCFvnYhNKsfsKTaMiKLz99HDCgwfhtvB_meomNUFt4w4vjiOg-zcUpBrN_oSghLkm0OFTGm2Eh9zCq5EWu2CEf5PuQ73TPcNTuTYNqeHA_G_2vWj2OUgSfhfEs0lLVXsQlBVGc7wcxyo2O5s5Tm97HTv1hX8nSw56xz0jKNlpVJcjk90SPtJnUEV4rHqGWrrrpeTK3IbZAId_KdbLTwxzO15Q2QcmfWJcilG6sqYol5ExCWRLuRNKOfQKfsfR-6dF5fbGPxNoN6jgF0C2jsThV4SuinlMffekZ9u-JGm37s-7iOdv6Qhr7lBxmZxP6GENnAjg2tTwKbEW9yQPO1TDCgNIylVN4wKyuwLTuHdzhW1-G3Pt70XRAwIaoiF0NTtUhB8xoviFhIlDxPhMc70W0U6HWFVYtA0&t=AQLf8W6qYNhGdvhH9Hs" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Chandrashekar-Bamboo-Vest-MB31 · Direct</div>
+        <div class="mmet">
+          <span>₹28K</span>
+          <span style="color:#22c55e">3.53x</span>
+          <span>₹99K</span>
+          <span>83</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLzXpSUj4zzXRcgqQqvnLhCRatowBZx2uFdcFPsU5vNNBM5ifO-0J6dEUUcWMxkVH8GeJPhByX-CZFRvMpSM-ZukMNFEiwXpvfpe4Rp648qMgcTKTYgmV4WK47IT-qb32lyDRolGanKb6Nmv42PZk7gB7gEsmjr1uMBK8W3UlqjJEYvjaLH-vo1Ysu9MFkVuIVdT6wZ2WrFLLly3hZlxOW7Wd-58n3ETj_iiN_A_YRT2xmEkTMGJjQOXWLvmTpcQgVjBcOsYkHD_CHWnhNg2koY83Psp7camKwkZcITo6_BAEb0GYkdoqB6lU0TLA4ex6u-vzYJqyL6V5mwxmSP1DuIEYs0taxB0qZnuro42-iADym8OxxNJPxeE31wUHKjeQNQCXEardpHSi6gViecCwQ720oEExExeHOnTyl_S78W27qAWEkWCP5hWrfJyGrqmks&t=AQIddgQ4x_RBHaUhHEY" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Sarthak-Mahajan-Supreme-Luxary-Modal-Underwear · Dir</div>
+        <div class="mmet">
+          <span>₹27K</span>
+          <span style="color:#22c55e">3.67x</span>
+          <span>₹1.0L</span>
+          <span>96</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQL3ZDN5RGGIYA7efRjp07uVh1dDmQYPhDTMtUy6DzYjGqJA2QIFBs_oPBGe4WTAitmRy1fr8JYBvFMNYXZ8XY-sZZQktLhnD9SH1jGowknH0EJt3ZyBbWjRO4bVpVUzDsN0-POPxWOrtuoWxSTaFKZ2ntYV9GPsHuYsP_3HnEn9YvpqBTp8JP3MU4NG9pQ1PrSUNLM4v06ex6PsGioXxypdvgP9xPfAmzfg_vZ3M88UjDiVX640c6k6pkqF382e-inKpuF20f69XHGV5DtMytUTBSRzzk_EUnIzUp3SYALW1fwnKnoxYLtLukAkKkYkMmr7ywwpzOLLbNxQrmgkPiXkpI7aFAKPbHLTlH8gciU5coYGFI_ygjxDiVJNKAauF0vAC7sDz_ipv5venDXMZxysia1i49MskDGE5FFdRZcHFLKhgRkZIOP729NAr-IOs34&t=AQK4ZvesUj8-tzbR3fQ" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Visible-Vests-Are-Now-Over-Invisible-Vest-MB23 · PLV</div>
+        <div class="mmet">
+          <span>₹24K</span>
+          <span style="color:#22c55e">4.06x</span>
+          <span>₹97K</span>
+          <span>65</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKETQOXxLl-sKd8oNhfYK0UGbS773xME8bsK1BelWub51BLjFubsaEb7QhrdihpDXlbQARXdfuRaOVWWbAavJlbVKugYtQfjV5dWNFvjO3AqMHWHrOJfuJNYx7_nSJfzks6mZzlBIvqvfvu76GL83uh_iBPPvAIp_H8y9PpgHwUL0IeFJE9KbfLxsklEV1e-pKKHvbVvCuSKc8xr8wrRTfyESsKNQCYK6KRlZuN7Wkb8zeI1Io8nM7fa4PAZW4X8zCxb0bcaFkd1kCISEQVuVsiyNUKLkdIsmQdhiCocRwtsovo2gv59g56EoHXA3ZONy3fQVotFQLXRncnyXU1oxMks0mnRQD6_3f09Pi9kjqzeG0F_9FmZsm2mEGeeabXBLPUm3fOSpFz-0trY-eEcqCLEU1AleXRcPOluQnjUF1cHZJqSIXxVgd-r0bq0P59yd0&t=AQI8CvdFeifqwcbmRI4" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Harshita-Bajaj-Bamboo-Vest-MB31 · Direct</div>
+        <div class="mmet">
+          <span>₹21K</span>
+          <span style="color:#22c55e">5.74x</span>
+          <span>₹1.2L</span>
+          <span>120</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKNZ-L1CFp0lxIfiBBfuiNtGNtbAuxnSyacdUW3xn26jqKRtiwzjIi0l5z_7hMdVJMfkOckKei14taVlYCORKtBdHL3fBE9wP6_cQNMumgK09wlkdK92c4sM3qepnPWRtXRPhdpQ_OtT4uhLiQzhs6trgE31FSyj5_bgT4NXd6wkc67HtGAP4ea5C653p90xXEkvMURkSAVynekV_-UqhqC5tF2XYON2YCKqx3XVuvial5EqAzTpS08SpggWONFnYVuqSlyC2BxD1-_VYc8yvXIqbRnP93-GjGv0vo_HPYDX7d80ScteJEukHsCTxr9LJkcyaUEVv_S6Ap32cnnevspEAahsRViXws4OeMHa2LQzVxCW0mqt-Dx1wPGuB2CiECiB6PW1fI2B0VbtMjGN0m14uKfWMvX-iaq0SVctX2o81EUwUMmCtefVJtu0dOQoB4&t=AQIamzYqV-Y0ChAL7kE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Sahil-Invisible-Vest-MB23 · Direct</div>
+        <div class="mmet">
+          <span>₹19K</span>
+          <span style="color:#f59e0b">1.54x</span>
+          <span>₹30K</span>
+          <span>31</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKxP0H7jDpUk75Y1dV-h75EksfB4WQguShjfBxDOTNYrT17PQe5xll-Mz89K6VvfnZLLDMNdgOYHz7s64bPlKID0RHjO5PKiH50uSAPA0gU5qZ0-urUr7Cxp31BDuP4BY40xSJ4qQdQfkkF7jh4XuZhYKJwG4wm5DnhBQxU45oS4vrX-Fg2DkDAp8jokJk195Qf4Wc1_-yBwWSJXkF5kbnXVNQdtGhUxeUqM8P40bXDSmQ47V7h8oiiV8LAhfyv48skdyd0K8ahWDQPVseO3lQgBUpU1GXjaKFQVXNzT3yMEq51cQ4CFNCuQDvbuQJHDSw5Hl8F-0A_k1u3Xu07i53T0WYzJnMla64MeLHXeT4TbtaQgg7TH_hheep_a6ByUGQwdW5xKnrBN66j9EfanncsXMjNhMW9I8XAAMVVh0_4lO8_MPbuQoSc-kQpSBO-KPQ&t=AQI1RKh8h2rx_MZmdiI" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Ayush-Jangta-Uniqlo-Creator-Modal-Underwear · Direct</div>
+        <div class="mmet">
+          <span>₹18K</span>
+          <span style="color:#22c55e">3.36x</span>
+          <span>₹61K</span>
+          <span>61</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec" data-cat="5-at-999 Cotton UW">
+          <div class="sec-hdr">
+            <div class="sec-t">🩲 5-at-999 Cotton UW</div>
+            <div class="sec-s">Top 10 by spend · ₹23.9L · 2.75x ROAS</div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ3yP7fQ-Fi0__Smuk1Z_4R6VPk4GxZEO4uii1hvaCELw5hISa49haCYAJGjGohy1oMdt2Tl2-BXIBpmWUytdnoSUVMbcLO2gdBji0LTWMA8t7HsaTgJW8-fI4OYTLOF0qE6WYQVBn9qgORgHBhKWHVfrZU6_UZjGwA6Zh1YnLqqNV2xU27pUgIvOquF3uaKQl88nHQYA17OlDkbrgq4pc-X0DvaXcWqkxw6jBf7lxpb0dPDE4Vq83rKcrqF4mEsTgBDBMKHHzlkwp3gk_C3u72dOoTfMxDsMEvR1VY_LG8mQN-0sNmxiD_k3CsY3DM0MEQPzW4jWBgwip0U6_mN-zJAJknArn4rScxCsq-mr3xAE6Fayg_WVonRmQc4TUKDzMIDUqmNWfyKYsTCW-zWedc8St4Nyw4xN_fQCU8sCzjF_XskhHkPdq3xkSQ8LLkaGc&t=AQJZU88PIgT0Je76kcg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Ayush-Jangta-Uniqlo-Cotton-Underwear-5-at-999 · Dire</div>
+        <div class="mmet">
+          <span>₹7.7L</span>
+          <span style="color:#86efac">2.40x</span>
+          <span>₹18.5L</span>
+          <span>1,776</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJbtgz8eKFIrR8H8iD9tRgvTwqtAj5qnVoxQs1ycXf-Qj7DUCdDkRWPcyghVEdaUseAXPB0Pu70aXUt1LBIxcN_JzLkMTP9_6dutUncdQy9HnFOEIUYbIMUT3k9t6G05FOrI1SEW1d0Avb2EVvbKLuKG_-HGlnJcpTDATlqEPb4NNPZhvMUkhMvxQbHese5VgOhmOHTiNM4b54KEjgtL2vhgdCVzLE9cBno-uZQmFkZ-ElxA2ZtqsPJB_PC_9lD1X420ZB0y2VAZtir86glQET0DZ4d6r3ZiPtqN1x9bEzSHwhup1QSKdeiy7A44aJ_8nYcENK7HSXYR78EdzKbM9lmjTnVkhQnHBUwVmI09-03sdU7CcAMsc36O0gOtW588J4yeoHUD6rg5Rl8ezjyGnErCeFLEhUAiGOoeP3Qkk6V6ho5uflkURDwWt5__8b7uBQ&t=AQII1AYjHStvSNzP56k" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Samay-Cotton-Underwear-5-at-999 · Direct</div>
+        <div class="mmet">
+          <span>₹1.5L</span>
+          <span style="color:#86efac">2.38x</span>
+          <span>₹3.6L</span>
+          <span>349</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJGOxvtzyar6tm5M2AdMs2Obe6W6Q1hDF0dFz_3EpI3ntiaD4yvK_s40MAbg8d7lcqNEf4YLN-aLdtpBawa90k9YPC4U7mAcNCpPM1a5HXm_wxl7vIhs3DcWdV4fBuKLXdXMHV9rmrCDgJC4aahnLJI_K8mUBYz28bjlydHZR4r7t-y-t6qQFz-0W1fNMU_Q-Me7VF6E7MDtErikyZ6hm3DTY_Xdgmg8YOl4DFZ0JLlC7Mjh_Upc78Yd8RHu9ReuSW7n0h9ahmRg2ahjGhZmZL0ZyH3Dh0ldvnYqu7mk5XoilT5yHY3TJNyY6AHn2arkYcjtjzx8d4RZCw33gXy3rJ9MH4pHcrjec6x_3SyIZUQXNMGP1dX1N9bBxFMl1yIKwdx_ZEEuffqR7lS8PZxNopv9zotQ8wAE0Emcbd9JUwW43VjQ7nsqqui3jINISoG0Wc&t=AQLUYItwFgF_eTSx4Mk" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Sujal-Regional-Gujarati-Cotton-Underwear-5-at-999 · </div>
+        <div class="mmet">
+          <span>₹1.1L</span>
+          <span style="color:#22c55e">2.94x</span>
+          <span>₹3.3L</span>
+          <span>327</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKBb7s6F_ZsGN5TABGdi5zE9iM5jLwnUV24A0yWYYld3Bl4malgdzqta2mRWmFS8DpgLVV2Jm3p7kPqDrUMasIZFMB5PrTPBedGGlR1opSw6k7AGagnqzG3BJypLt4KlRM3Xe1NvEW_lHOnN3y5q-NM3rT6_M3YKBVc5IGm1--81VO10o849DNUK92tmJgNE7uQcEmr8i3ERL5yEPTEoZql_2_QMl7PUlvI94CzzExg42XuPslfqZdll7vdquJbMhf8SvZkJ4JDWxpJGvvchPbfSW5zlKEV1Ba2dvZ5RLEGPucSmxC6wPemwWzlBB-Ew6RO1BhjZtWkAQGxT1hMOWJvYWnGkkXpo22bnDZPjsyefCpkIo5Cz6o2lQGnfSxbmgfhR5AKZGFMXm9wB7I6Cd8vNp0aWJkaDA9imA_Sv1gXrSZbKk3x5wYqCsuN0i47TTs&t=AQLJbh22-lMuZ9aqUK0" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Rohan-Cotton-Underwear-5-at-999 · Hypedin</div>
+        <div class="mmet">
+          <span>₹88K</span>
+          <span style="color:#22c55e">3.09x</span>
+          <span>₹2.7L</span>
+          <span>285</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQK_YBx0mRIgoP4mkPYvYkIidb9A57xWk4i7VKTcw8FxC52KMouVYdBR1TA0l9LekAJ6oGd4b7vLldi8F9nJe_oTqWEuzXK7oxaNrZkQMlC-XBnAgqZDs1JjoU_V4TWZICWHXlD3QQw5nEDyCHTFZRuYzNlbcbbg76w1auYlhgkixBlaGuVdVYOcgIg8lQmVnEQ6H5VOMdunX4YdVPX7IsgUtr6nCF9MNGa5saz4VvukFfSnw0nbDY7oRzMjG2GQVjJ4Hrl_k8BwQ_I-1rXYpGIk4Gbzxb2naD_3L148YhMnYN5TJBaTXNjxdzNMz1wr5W4hsVB4gDFYlJUy1I-VSDQUgqWwWEd4aQrTde_VWGNafafaX8zZpTqROmoS7v3yM4H1jpAKSUyMYlys7oghKRAKsN_gxs6xNnrn3rL9C_WFwKQ6NVOgI1pyKvangxwcPYE&t=AQIDFbzbqD2QLVukTBU" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Vansh-Mehra-Cotton-Underwear-5-at-999 · Barter</div>
+        <div class="mmet">
+          <span>₹88K</span>
+          <span style="color:#22c55e">3.02x</span>
+          <span>₹2.6L</span>
+          <span>259</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ6a6v3xXXjGLWPG6CNshg-TUMXW6eQHl4kayWOJ5uWuMkq-zXpGDracZDNSaqHCALB2XGdXc21hcE-Zmd64NfoDt8uiaiLnzgDfUee2xJ-X9T2GGM_O4J1ezclSpLMboGICgTgt4aS8mahRGfl5Nm69GbCjQW4YWnnHGaBS8J6UBxCJ7-CbZWmdo92ZjbmMjnnp_tY_pwTWlxoJMxYxuCHNv39gD5qBEK4hyPeo5exEIL6awrhQL333rhVhJxjUhgjEbOiQYC0--IdImuNg9F-0cdgqmYHOmgMO4sPaNqly1XJwPZxOCKHPD0JOKTiP7KCmh9nbWCVtTdzzz01Lvpg2oKqHAmh91XsdePwDPlRAybnm1Yap6xvr8A4KPVKeqAWTQcDSHs0fZNDo5qv3IN4A-sHH8OkDvZWeZCnCYTjiig25F_vOVzqoK5RhI0u_Uc&t=AQJIuINw7QyjA-R4sME" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Mandar-Dichwalkar-Cotton-Underwear-5-at-999 · Direct</div>
+        <div class="mmet">
+          <span>₹77K</span>
+          <span style="color:#86efac">2.13x</span>
+          <span>₹1.6L</span>
+          <span>159</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKVQ6jG3cYIURstSAcLLdHJ2pKlMqv7isX-3pE-uJt_wm2aoDUCiTBeJYyPJmCAJis_gjHl0-CAhJf-d9jLj03HAUU-dyEbEGHCyFIXzuiKWGuUMAggrCQZZX2X7ClJSuws0Af98IpIqvPjDhJz1HC-MKGPPS7R1B7BYeaYKxBvUN2KvPTw1a5G5oyXhnywAYdPtCdn4wl4chghN6t52_2D4FVOaFAwZS3z-b-XX6pyOj7mZLYDTZxxyeqRFN7ndeVFg-lAQG71E1FzgdX6Y-uGpwKEMI1On-TWD9No4REcYF0I0bbiiKCMGZD9-p7KOuX-ux5MqAtAJvhAWWEHBUjQyp2hApcP8OCks8O3bJlq6PyMIwn3QIrUZmc8lXpyZt-iVBC2JbXrOY8R3xhKGHtUGtdSDWCzcDoZfhNcBOI7Hqho_zGY5njQD0CuFawaYd4&t=AQKPyp7v_NRGSCuBE-Q" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Verun-Cotton-Underwear-5-at-999 · Dark-Post-V1-Fable</div>
+        <div class="mmet">
+          <span>₹69K</span>
+          <span style="color:#86efac">2.32x</span>
+          <span>₹1.6L</span>
+          <span>156</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQK5L2R0nD4XcbkkmGoUOMFQr1RzednWRIdGEcnlNXbNoJAlHBat0CDSOCKZasqyvZdaqNSQm0Mq78CTLHGFMoxx99ZKRVRLad8SblZqy9meNDlqbA_MSpF0HPrQE27iMZBbPEvA6IS3EzkdxrW6FwL4yQHeZkHwnav0XuHP3hHo4qg2BcryzOKpfuZkHAKldoYl4-YuJY1AzhrtLD5Ythgq04YWXhARqyU5iOq717g9PFW2Jglf4f2tWhmfpfXHFiOcc1-VQEugUSBHGSMyUHgQikg-eq4panrkVakHdQ_CGYteqp7FYl9L6sbklMpfeyb9jogwvEY28Iju2OSjk7nuYXMXaOYWYDNscPcUTrbrq8U71dd7rLBszb-S6tfTPHNK-wgiyvljg6nKRayxsw_Z3CtoE0EmFwE2nB-IFeZErsgVyi1cwhVcDzDM8aNq7Y4&t=AQKzyEOr0uKGUd7a4hI" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Noel-Vaz-Cotton-Underwear-5-at-999 · V2-DIY</div>
+        <div class="mmet">
+          <span>₹63K</span>
+          <span style="color:#86efac">2.04x</span>
+          <span>₹1.3L</span>
+          <span>128</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQIsvi-NSxmlKGFnsT2Idz9SQcujIFu2Z3qls1DhP4EJbwDn2NgkDq1Nnj9HefyJPEgQRbMiga6g3-ZYJDHJClQuYJxHF5JHRYeZ90duruoadnfAK0E2otXqOilCnpAUksKw0514LzL8JXMhZ2S2y5Kin11M-HDyk8PvA0OnZPyWwlTyvMHxU5BRubVUvp2Pu6BtZYjfyx0VU6-xbNsqmn1qtxvjbNZnDavg0AWLO3J3S05VT03Kz-gVZVDTO32klLZyXOkSNZ5Yg9_1SHOutYAMAVbtIdZfYaB5WfaExDhwA7-yXIkvaNlg_SSE2t-JFAH2JttyOs9BlrsCz6Fh-ps8x6MjM7MOmsGI1tWkVjCGENNeqjIb8rO7xNqupO3Hhv6YnwbatBrwxxV068fLXWDoARLfdYhJsvmAz7xgodfu6io87wddWGMpB8xDQn4INXk&t=AQKKf2Fn7ZrLi_8p7Bc" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Yash-Acharya-Cotton-Underwear-5-at-999 · Sociopuff</div>
+        <div class="mmet">
+          <span>₹55K</span>
+          <span style="color:#22c55e">3.55x</span>
+          <span>₹1.9L</span>
+          <span>199</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLXiku-sickVY-wPjvdM3sUoghnkGeNrxH29CmYcHHBYYCFLOB4-LLhSpGQ1vHeHzjlpDw3MRejqGwqmcDgPoaN3xsMphDOiFWeU2eUB8tRAeMmZez3vkCqK_vxaZSc9obqIprVsV3Q5JXcKMfDlhpQY5nXHttibgKuN7TSbRSW6aSuaLGMM3Ih4x9FNQxAqNb8eb_SbsQDVaWN4gXFY3UxpLrkI028CvNgZgcqSOYDzhT5tp38Zhggv73mo44vo9UAh7nEv_oJbEjBvz4J_SwGVwyAqZLKiJKqSVXrW_zpu_R4aTa3jUlZ_uKF_JM6U1TDrSKc5QT8ZeTDsKsoCtkDMl75hz5JbgHB9r2sLH_7ZfRlL6BvWbN4Vih2lCkHGBzG9oEuGz9ker6BdpZWJ4UAIVUXQbZwzkAFSQKpqceQkgG8eLyzw2RgL0ncwurRvLg&t=AQJw4KjHjFL2esyaoHE" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Chandrashekhar-Cotton-Underwear-5-at-999 · Direct</div>
+        <div class="mmet">
+          <span>₹42K</span>
+          <span style="color:#22c55e">3.70x</span>
+          <span>₹1.6L</span>
+          <span>162</span>
+        </div>
+      </div>
+    </div></div>
+        </div><div class="sec" data-cat="Outerwear">
+          <div class="sec-hdr">
+            <div class="sec-t">👔 Outerwear</div>
+            <div class="sec-s">Top 10 by spend · ₹6.9L · 4.02x ROAS</div>
+          </div>
+          <div class="cgrid"><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLJgjN5ZNGplZ6ahfKZYjqeQUC8RbR6i_RXNkMyhqbvf9dN3M2HqHkrOq87kIfKT0WgBU13n3zpWihCevQXMnwcXWaAJ7dHXuRyyXS7EeEp0H8bENaZcvNH7id2QZ9A7Z8RRpEidTx4B-mOI0yQP4IboJvdl6RvTd64fNQxxHzuFCsD14NxNVQ8f1MlmGrWqep6IxSxa0JJsQgJSslPNWP1kzApkcWLo5d5rW9BsBlmfOYnxMYRilnWHAAPFQ6nr7eePq0Hqk_WIqiSbKKri54EFc7gDGC3ncyISEJkwMT4UnrpheqxwaF0nV8LchHEOeaCInb7uaFp99pkr0zrU0ryjYkauKeZVwGypuC7Sw_MKVCs-ZDLGorG-v4r3JypFYV_OWHzH1UUdoyB0S3vH-W4uXvXH-TFax0aG5udglJ9X5ADKVTLtehejAcncj0bPf0&t=AQLYYqi01Fmq365nJiQ" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Karan-Dhotre-Active-Raglan-Tshirt-AT01 · Direct</div>
+        <div class="mmet">
+          <span>₹87K</span>
+          <span style="color:#22c55e">3.56x</span>
+          <span>₹3.1L</span>
+          <span>224</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQK1Xq41JSk0aXmUMbmWbOLkS3wndbSM1n4Hoaf1mq7PbJ67dWuUFp3oElSTfcM0q-m0QNvcaDm-aZGJBptvTEXgHnhhP1NBIWiVBz4mJMSC4zNd7l1sl4RFBGJZ9RDhnLTpmgvdj8mJYi0DZF-Wl9WilV0-Plp43vXkC1Mix3OBbptnATtPNZxacITN26T4s5TWvn3QHYzymCwucH7ZtslRl7KVMQ5bpE03SifdtYCMX_oUvT5-qc6AZuO5ZWeTOs_2R9ioA0aZcsK8JfkrwsDCkClGrxK3y4qqFI0geB20R5QOqDBcTdd75iLSqKgEljxwXia3Dpr7tonxUhW7GpB-WYtlJyHaJP0U7NPWLW_Auzhz2aPv5LskEwPGTSqu_lfMMsc_txs2spLoPubOj33ChtAFCHJXuZGEaQUVykyGus4VPksTrXWJxtK5Sp3PBlA&t=AQJD60u3OfZe5pf6WJg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Heth-K-Chambray-Pyjama-CR46 · Dark-Post-DIY</div>
+        <div class="mmet">
+          <span>₹59K</span>
+          <span style="color:#22c55e">3.51x</span>
+          <span>₹2.1L</span>
+          <span>165</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKEhHC4xxP8rbqzG6WVr8y4Aquck8A8kdJ3rQWXeO9VnqKFOC389dgaIyiuxsbZ3rcwmeo_AUF-v6i-XenO7x7HfSU9nITCyLlkfJQSlAOBvioUrKEWkGIBgpH8gVYYFcrNELBOamlnb6f_gHKAuyJwLnRjTioqE9lo7MZHZ920DGGIvrdUOPnIkb6wp20PmKI-QNkrL9tOC2PBJXr85rDZs-BwgR2-yC3oYztyfzFraTiyQimfg_seavQ7r6cibsMLrZRqYHAuAXsoelfvbEsLKlHNow1-e-tQaV-ZfOJWV6D3iXIi0TsTtrj9S8ehqQrqGc7VTgwvirOEAyl--E9ruX3bGk-Z9vGWSeF0TVpLzvrpZIgvD2mcDxf4kPB8pDyBIUsObqkX-5vyH_G4SquDvZ2W6m-AwYVaPRTRbzr7rChxuZEcYc1L6zYMticHxsQ&t=AQJ9imCK7ViySghtahg" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Dev-Chambray-Pyjama-CR46 · Direct</div>
+        <div class="mmet">
+          <span>₹38K</span>
+          <span style="color:#22c55e">3.60x</span>
+          <span>₹1.4L</span>
+          <span>109</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKiFOctwMl93c4wo9Z8aKT75a8x3wXs517gbXzt6vrAVyXesQ6Q2iwuChu8qo4vSC9xfKW7ZOMJfVjcriSWJNyiU7TfDlu5RDCfdS8Ve3ceieO75DXjCBr5FVQ4IswsRzk4JrVWqQaYKJDo6nkwXe_bp-xEPSQ4Rh-lx8Dew3G27pLTTGpyjRyUCKP5oWadNPuszJF1WIR9AEBar1SampePg111XrdR6TL9RQneAOk4phYlAzmfj0jbxdmwNDPjI5wFJ7LhmIv5LomtyNdwe9-MH9bKMWzR7geKCUjhS2egPGwEXXxGfjewCywpP3sql5OsotVSYecdTw_-oQPqMz_u89mp6T4L2FGXYmP7Q9hQRU9U8zLt2dQja0UPnXrikNAjALZKfk1oL_4q2x1ixzy0H4CmQfuE-Q2D8r56L3l9RhaF9rarjQcssyik3dJX6WI&t=AQKNEGyCK6P2w6NpWRM" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Vansh-Soho-Pants-Zero-Pants-MB20 · V1-Creative-Cult</div>
+        <div class="mmet">
+          <span>₹35K</span>
+          <span style="color:#22c55e">4.89x</span>
+          <span>₹1.7L</span>
+          <span>109</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;">
+      <div class="badge wbadge">⚠ Lowest</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQLRhiuc0HCAP_orG2QqpoajuakKtMBBTzmCc-epekjbInPwRvKhcRJUDOZjGDODqpa_wErvM3G4PknbqzvJZoe-1yNJNuOiCnDALzzkqSR5K2MIvph65qASXJP5-qTdRvNa1aZm5GegGK31GW_hv0i_M13Dhoi3zzYaTz2pEtBGxR7Np5pSdX-f5aAcfyn8bdZ-69GyIkAbU_3iH2Yfyn8K3WfIjfNQ55sMvyDwDcDR37SKGKzh6ncgXM_k150tpCnJSWidLXgDG5f_Skca2ZK6puCH3b50vIc3ELRzyZ20cXevD_Biqu0xU2A5fmM3I9aL68tQDIFqa4V-aF_urJEo1BtbqZm8j8wxkadCyyKxiDqQ1LSOOsyDX1JXfQfs3wVF7onwRBBtgrh3BuQr48S_knRds-f3B3PvL_UmB4iGZ5Ny2Fx9cNTWYTZLXZj6-n8&t=AQIYI87DZ4qjX7KptGo" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Utkarsh--Uppal-Easy-Pants-CR44 · Direct</div>
+        <div class="mmet">
+          <span>₹32K</span>
+          <span style="color:#22c55e">2.83x</span>
+          <span>₹91K</span>
+          <span>77</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJU2Fsa0kY90YhHy7UV1jaaG-t1BwscabiRPDD0eE9pmcnvURc6mlQKuX9CL_0pH_8rFOpINhVI0kkynBqHOf-Lh35Z4g-xTPprS_CHYJ8ULfVq9JHkYZ0o03MMjXploBc75MfFamU7X0pFhsrWwmGmuyOXzEBzcq9zdwkLFvPv_GtZy15sPLvUIR9s4EcRCTTOyyL2NA7hCJpu3suUwF-wPgjUbIOIaAI4WEPjOIa3yz5dMiIc-rkMSTY2D0iK8MknSyTOc9YXkhPnASDPBujjJe8XYi-Lq1ZoBMH0JZd2Hrs-a8j6KM0X1E9ueWwwlnQ7XKmGWukl4sqPLLB9Vk-Z91PZG9gXUbkkrCaQUgb3HTL9_0w7uivHx5fDBvxWDSUioqebWNP7kQZMOELifKRHax15hESfPiqfW8l-_TSPVwRB-dCVZNL2ZEXmMLCh73I&t=AQIS5zTavdh8BBZISmU" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Simrat-Whatanerd-Chambray-Pyjama-CR46 · Direct</div>
+        <div class="mmet">
+          <span>₹30K</span>
+          <span style="color:#22c55e">3.14x</span>
+          <span>₹95K</span>
+          <span>78</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQItXnHIK5kbVorv1mz1kkee6jsXv9uhhujhWC4_yW7ywVllnso6XFFs2lYwlBRbhv41DTaCuggNfACprhxWUZ5xzv4KWKj_pxPPJVI3MCWhC19LZvrMaSE5SybbBDnGyV7ox2WmUWpdqSjn60L8_aPgyCrbu-9q1sf1LYa6h3a8PtSGMkKaxY-4rICi9-F7CTsyvcs6bHyDkc52C0u-zJcVI8hkv06JJHVKaYeJcivGeQtrD_GeoLhtzFPI_hYdbFXULIBB2LEamcb7aLe2VSZs-Gcx_pz0UzNx_cbzootLZBM7gOa27kRhoqdgzIyeQGB7ric7YaDPbdUMTMYpliHTxkz7c-3DMOvRCaLqlL5F4YTW1bxJaxZpu-TW_kRbAfe-0lGHCe6AnmjA3fi_ndLW3RMVx7K8X1M_Sj1Lgpv0fu07ht1MEDyFBLGvWsuDWxM&t=AQJXBrxA-QP5Qtw4H60" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Super-Combed-Cotton-Polo-AI-VO-Nova-Polo-CR14-2-at-1</div>
+        <div class="mmet">
+          <span>₹27K</span>
+          <span style="color:#22c55e">3.16x</span>
+          <span>₹86K</span>
+          <span>80</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">
+      <div class="badge sbadge">★ Best ROAS</div>
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJQh9pqzHpqjIEYPa6nSkJP8LOlRMZIj4041E563TsScd28S_Kxo2skJW7BPrM7pwIF59l7xFxcoXb1OdaNDjuyNvuJ3VbcnzcEuXuJL2EHyvWEcCbDNB97S48FCURzYKhSUeuhH6eAkgfDSsr8WMS3wY82fWCfXjHQ7k0DgMmqI97EN7IXQIm6NYLvQ07gORsdu9uzF2ONf2jXfYOwRKUBLSTDqpkPlKkgJ7qULSlr3EqgYIyELFNxQxpIg8BEqzltxtpZPNbSp4qh88sn_nbjOFQ6rWspKFop2bzqGl8CrZy25LbYf9enjqjljCoEFsi3W2uKqq6bpbkG7gXUT3TzeQDvCUZPEOJElypfZFwd5STUKos_-1ZE3E4iGWDKCLzWZK5HyTIPlqgBhAMhZnxJsilz8k-0NNvCKaOfahxC9BbZ5fH762m0azYqGqtGZPE&t=AQLonL_JO_8mbcDWdiQ" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Vishal-Sharma-Easy-Pants-CR44 · Direct</div>
+        <div class="mmet">
+          <span>₹25K</span>
+          <span style="color:#22c55e">5.30x</span>
+          <span>₹1.3L</span>
+          <span>110</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQJXK-0t18A_QO1eAkfpEbO1tUUlisVXsnV_cYTdbg6RvpOLo2gu0B0p6_MtgH5_ULAfcFWxOqojjfrsKsZcP9uaN224aZncxpozaKEWPWri2h60tnUEhThg9obUV4wMdjjUnugfohv-qN4nr8py7FlvIIFO7uABIC3e1XK90k-MllMmJP0ejj4cFRYOvCcNWn8_xNowquWWkpk81WAhh_XgHaXlFr5f-3TtfES9MSuJckZvFbcIu11w-rXSEK5k5HFMtNkof_ibH7nbiHMQnwKRj82mvLz31uXDO0gvWJSFvgIrbk5flZO4P2QOz-XwuKZgT2iRTRGTgEyOKnCzy2_N1NLw8XOXG1Y1MDrkFnK2ldxB6Tl5r7vuZEv2vnhfkwsji2117GXViMUE_-S00vy7GyB5Bfd6Ykikd1l4B5NAB1LIH9CLJgFSoeyfGtUYukA&t=AQIfzPC3FQxkkGwSSEA" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">Yash-Prakash-Easy-Pants-CR44 · Direct</div>
+        <div class="mmet">
+          <span>₹23K</span>
+          <span style="color:#22c55e">5.10x</span>
+          <span>₹1.2L</span>
+          <span>89</span>
+        </div>
+      </div>
+    </div><div class="mc" style="border:1px solid #252525;background:#161616;">
+      
+      <div class="mpw"><iframe src="https://business.facebook.com/ads/api/preview_iframe.php?d=AQKEiXDo6HqdLq7Dpcz1x0Cf1tOwTTUXtVMKwUosdJmdt4IV5CTX2RGfCYKpxUm-XzaomNNXdWRC8lsHd2_9huu8ncyo6_z93zaJIMOpx3TziOceXUjXVzccvLNHKXUz61gG_p_5zfwnGzLu8rSCe0JBOqTQJEglf3fhvix3O27CkJEsnWqreThCGM14TQbpm5U6M8xmmRa7jnpJoZ_oDBxyXj9Frhv3yTK0MTCP-ZCfdCM5SDSqUKZ9KXQcPqecJENF79a-g28Bf_LDdMhMYk6ANgNA3xgm6l5fcOqITsIqRxS4yaZbJodXFF6Z8YO8gXBZJzsSWjhAj8JVO6ikuHsc-Zg71ltC6jrwHvCFSuAYBr37V2uWRE7gE77YlMPKvseb2KoWZYuVkUOzZaZbJzB_T3UbZ0xovj1imOqQfza70b1ChdvWo2UFK6AhzQq_NWc&t=AQKQuWGolxeDm1XDHF0" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>
+      <div class="mm">
+        <div class="mn">The-Pyjamas-youll-Live-In-Checkmate-Pyjamas-R13-Star</div>
+        <div class="mmet">
+          <span>₹21K</span>
+          <span style="color:#22c55e">4.73x</span>
+          <span>₹1.0L</span>
+          <span>78</span>
+        </div>
+      </div>
+    </div></div>
+        </div></div>
+</div>
+
+<div class="footer">XYXX Crew · 2026-W38 · Auto-generated by GitHub Actions · 1D Click</div>
+<script>
+function switchFormat(i){
+  document.querySelectorAll(".ftab").forEach((t,j)=>t.classList.toggle("active",i===j));
+  document.querySelectorAll(".tab-pane").forEach((t,j)=>t.classList.toggle("active",i===j));
+}
+function switchInner(fmt,i){
+  var prefix=fmt===0?"s":"v";
+  var pane=document.getElementById("fmt"+fmt);
+  pane.querySelectorAll(".itab").forEach((t,j)=>t.classList.toggle("active",i===j));
+  pane.querySelectorAll(".inner-content").forEach((t,j)=>t.classList.toggle("active",i===j));
+}
+function filterCat(btn,cat,pane){
+  pane.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+  pane.querySelectorAll(".sec[data-cat]").forEach(s=>{
+    s.style.display=(cat==="all"||s.dataset.cat===cat)?"block":"none";
+  });
+}
+</script>
+</body></html>
