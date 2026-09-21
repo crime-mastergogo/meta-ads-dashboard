@@ -1,0 +1,45 @@
+*** Begin Patch
+*** Update File: config.yaml
+@@
+-pages_base_url: "https://crime-mastergogo.github.io/xyxx-meta-ads-dashboard"
++pages_base_url: "https://crime-mastergogo.github.io/meta-ads-dashboard"
+*** Update File: generate_weekly.py
+@@
+-from datetime import datetime
++from datetime import datetime, timedelta
+@@
+-def ad_card(ad, cfg, is_best=False, is_worst=False):
+-    """Universal card — works for both statics and videos (both use preview iframes)."""
++def ad_card(ad, cfg, is_best=False, is_worst=False, preview_height=750):
++    """Weekly card with a format-specific preview height and no iframe scrollbar."""
+@@
+-    preview_html = (
+-        f'<div class="mpw"><iframe src="{preview}" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>'
++    preview_html = (
++        f'<div class="mpw" style="height:{preview_height}px">'
++        f'<iframe src="{preview}" scrolling="no" allow="autoplay" loading="lazy" '
++        f'style="height:{preview_height}px;overflow:hidden"></iframe></div>'
+         if preview
+-        else '<div class="mpw no-prev">—</div>'
++        else f'<div class="mpw no-prev" style="height:{preview_height}px">—</div>'
+@@
+-def build_tab(categories, cfg, min_purchases=2):
++def build_tab(categories, cfg, min_purchases=2, preview_height=750):
+@@
+-            cards += ad_card(ad, cfg, is_best, is_worst)
++            cards += ad_card(ad, cfg, is_best, is_worst, preview_height)
+@@
+-            cards += ad_card(best, cfg, True, False)
++            cards += ad_card(best, cfg, True, False, preview_height)
+@@
+-            cards += ad_card(worst, cfg, False, True)
++            cards += ad_card(worst, cfg, False, True, preview_height)
+@@
+-            cards += ad_card(ad, cfg, is_best, is_worst)
++            cards += ad_card(ad, cfg, is_best, is_worst, preview_height)
+@@
+-    s_overview, s_all = build_tab(s_cats, cfg, min_purchases=3)
+-    v_overview, v_all = build_tab(v_cats, cfg, min_purchases=2)
++    s_overview, s_all = build_tab(s_cats, cfg, min_purchases=3, preview_height=680)
++    v_overview, v_all = build_tab(v_cats, cfg, min_purchases=2, preview_height=750)
+*** End Patch

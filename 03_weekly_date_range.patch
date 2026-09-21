@@ -1,0 +1,6 @@
+*** Begin Patch
+*** Update File: generate_weekly.py
+@@
+-Last 7 days rolling · 1D Click Attribution · Updated {generated}
++Period {period_label} · 1D Click Attribution · Updated {generated}
+*** End Patch
