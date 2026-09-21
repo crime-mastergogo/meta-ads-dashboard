@@ -1,188 +1,188 @@
 {
-  "generated_at": "2026-09-21T08:14:39.540025",
+  "generated_at": "2026-09-21T09:16:21.002775",
   "lookback_days": 7,
   "categories": {
     "5-at-999 Cotton UW": {
       "emoji": "\ud83e\ude72",
       "total_ads": 108,
-      "total_spend": 3347998.049999999,
-      "blended_roas": 2.304492142700024,
+      "total_spend": 3348028.579999998,
+      "blended_roas": 2.304471104604491,
       "top_ads": [
         {
           "ad_name": "August2026-Good-Luck-Finding-These-Later-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-11.08.2026",
           "ad_id": "120248790863740298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
-          "spend": 548251.36,
+          "spend": 548259.5,
           "roas": 2.6805,
-          "conv_value": 1469594.35,
+          "conv_value": 1469594.24,
           "purchases": 1452,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJM40jMpT3Aur3QO6YranqyDDf19abgAvvk_oUAXZOXQEIxkFdwwT500NU0CJE-069EwQ3II9qH2se12FaPgtwa1BUqK3PgfuzraP3x1QpT169_bhPi0lAhQ1Ojsno89KpN4gSFqOHCnsgrCeMlobNVJChRElwads9bAWKctwySLD23MNlw5cL7TqrX4t_qE-fmmEiPDbpxOFNePW8Fatiy4moMCwnzd7Lq0zPsxZpXnG1oHfW6-cwxrSJ9NHEsLeG0_pDiGEa3jp-tnXQr3M9gomPbBbwXHIs2hQJHzu5OVopt4SA2qj1bQlrhVf4VtM3zTaqU0D0kLt8BuRb9jrg5OiOMZ1REeVoZIhA-8ErTMBDeMz4NuzsQeFgifZlkUtJiI5QD32l8-_qFECqqC8yFVEym-LFY9QAQNymrNC_nGIMyjMWwVwHaUIt_yermMJo&t=AQKxIcICf1oCJXIgv0Y"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJAEc0y2_JtoNkLfS76Y-JyfH4mzO3pn2ZT3x-qNVc-qSreXQxeQM_fsNLe2ztetDt-lRyN_qmsHwWZJ2ej5iiMUPB3Ml0eAduxVFRKIJQg2J2zO_O-4FMdpZZDoSH-OrdWHgGvZiAEvrtj_M7TK-FzIfByDujPmBE4G5DUTuInfJ8IqqyGbR6SZlxBuGQyEAhehfCYMJrfSxFIwP-LVUxs1CWSiSl0qKxfpkFvLRhKwvh-5asortHFR44NbcLngyAjER15JK4MqCHLDCRSffJRNutDvK4f6NXNSi5AuACzdw0jE9rYFiu3LV-g1yeNtXEKT4iND1Hz9uPDBSNr4zHfcVsf984gBzuQvpFrw72BN8JCGAGydb1dGW7lU8J2JdY6-nQO_c0t8VANOFNp66pb5hglHduHVO2dP1lDXkQ9shtseJxA7j5p-FP4WFpGAgY&t=AQJ-ZAEFpBjA1Nc7oWc"
         },
         {
           "ad_name": "June2026-Everyones-Upgrading-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-24.06.2026",
           "ad_id": "120247069550770298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
-          "spend": 466873.24,
+          "spend": 466873.74,
           "roas": 1.9943,
-          "conv_value": 931082.97,
+          "conv_value": 931083.03,
           "purchases": 922,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLm2RBPmR4J9D3MWuNRkMWEOzgKVf9mRFmAEADP8KJ4giFHRuzdog8WSf2XuOHTnnEiZHinegr3cXIBU8GquBO-okVVwKO4sJcpDA7EQ9G1er02lFBMytHQjCWaDxX5JJp88veF_PMZZKJRcP2XpkCryzNEAcS-A5tZwebh5viGDDWzHDhPfUmggY7SIKcQUZJiLcPiLBu5QQGW8IdloAL6gnZYDfRVr2iAt0b4cw4i7lR3CrwUG2pVRC9WGvDK9ZQzs6FygDThjrtFifm8w1qyooO6xFA5WQQ6AgUvpQrLmQzX0ztL7gjfl4RdSu3IgNQwCynwLu3S2uUAlHpcB8p9Ah3bKx5bs6WRY2fAnIReoz37fFh8BncpIa5my3oqCyaKY6aYIpM3iMm6PE905fAKz5klFlGZCtlXF-F3JSDy9Z_s1jLtdS7176piHmp6Tzc&t=AQIDgqXIFBY-20wmt5M"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI8CCjhn-EQUEyqQiyx5rn3QnqVj5dJTapO44dxySBEmyZvfOjtqsqUHXRbeV1BoR0wa1wR8EOLqoCt2__6GXLG4YFm-D6SICwyNup9Z2SZbfR1rEazH_ro_Zy5OWsQfOYt8QPCKu3j72ugyEyvZExh74AvK-pQg3FdPi5LcKvDAFwYHRsh1rzkBoeVXGwkhxuEorULQylFd9bFA6xLrVC1_1F-CSb15rlGMu-OD0DXT6m7ROeIcwdfN6l-G8HrG-nmQ_6lvUtOn41Qkwj48zSuvgETFnA7JypmuNJyOF3Sa_Bq4T6cxxLpTfe-0IdpnypUcNqt5Yg6QuPqGjrxN0N-kbGuh9Mgro8hDcQE-D6OdNeAxSg24kIt4bQ4JffEfx__k_b-2F2xt72uB2FHnVtV_XQyUnxs73niKHb_jnHsoItnHWBQ-GFUYVyga-UPwT0&t=AQLd2a_pT_EVqHeFxag"
         },
         {
           "ad_name": "July2026-Last-Chance-To-Stock-Up-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-13.07.2026",
           "ad_id": "120248006448500298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
-          "spend": 289373.97,
-          "roas": 2.5956,
-          "conv_value": 751089.24,
+          "spend": 289375.84,
+          "roas": 2.5955,
+          "conv_value": 751089.17,
           "purchases": 736,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI_p582WacpsY8ZEiR9PSwI8EYNsrTdEtP5UfTBiQJ9sYiZt-i_ZspoMdAtXENClouNideZPqZu5UTaQQedY_0CQBNbXmFuHuZz4Xxrw98b_YuNZNpf4Q3qJwUzvacG1QBe6WoGw4mvFZ68MKVJkVjudyWGe89vIbBfKffI3ycjsRgRd2DoP7XAQeHhnXQikSN3t1CsAN3gf7Vs0nd3i6mmFAgp-2JAU_F19Ox7Tz98vW1YeeGGFDjYWsv-6JJdDuufwRIE_jfwyjErR9Yzu75eMTtjyBBiEwqo6bGIusWlv3kJAJ_X2fR-6I7L9KOnj8VhNi2_GQdlYJ_HeF8RoqVsJQ8C9LNNZ0oIxCKRDJtYp-NJ5tZDSdKXAHR7R_C6Nes8Mri9oFKzHgOZ62h-MERj9mQf4FjvqiLVeir86TmqLqaYOxBGiFjI9iisoVefuco&t=AQKj2iO1OK1dYtNWNxY"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLpcY7lyvMd6KsZ5NDvRmRBAW7yt-3gKTe-UiNsAbTzZzyMQMoQqb3oN9-f4hf7FNaVeAEk3p3hHRPUCTptbLcPqdIp83wepKP835xUFKviaGHLuj7Z9IbjzMxA-ryJ_48F_7gYVtAsBS4_1IcewwFaqVu0JCcqklqOTRa5M8AvGefzdiQKq1eSHUSe5griGyUk5TC-7QMCfYHE_eR2eXXJ1X1zsZkuz3Jim8y2226QQ3Qi2v8Ud9PE4MKIfYwMCOk1AsA-DoBTRbiU5KSaGW9caxNnt2wo94QcVEvpoDQF-D_dL56VprUaPJ7nUU57WlbhayX5cBszwkm645TD0NEtzfcmcFbJ-feMARdgVjeZYMhsVR91hsM-GSe2PVTUUdoX4x2nHHt5qwLHzTEbXeYGFoDXKV6Gzbgeu_aS1L_LzYT65UlrzivbhsQJnOvkG4I&t=AQJz9ABpOMNrXlogFSk"
         },
         {
           "ad_name": "June2026-The-Grown-Up-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-17.06.2026",
           "ad_id": "120246556492060298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
-          "spend": 262865.31,
+          "spend": 262865.78,
           "roas": 2.3499,
-          "conv_value": 617716.39,
+          "conv_value": 617716.45,
           "purchases": 608,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ8nfneBDrp11E-eSGNlzVUjQvBWea-FMh5TC9Hnu5fwaFWcXs9_m_rNukZe9u0Ctcn7gL8WnISfEgUV1HNZRrTspJ3saLlQiN4RVFUxCdISFvHF_l-sfit2gwUWB10840kWOTaD5H9mkAYjpfttM8vfc32zU8U7MCHNRkO_dUxaqZIxN_1h5JYQBOMKbxgTjhhKQIryM2ZMMn1d34A-r945Da3WkUgTwRgsOGHu3-AovmErs_eSPIGZeujF86Hcw-aaHeoB5YnmSNTnqtxL-4pzpAMWvmoWhKyWOAnseJyvMsQ6gNelgeGkJyl-vT6cowsRvrKbKvZcfM5vRl2OEAVow2uyLwj1B2xh6zGoz4GBzxFcCJs3NnnLW5MubqhT7QqZfVUxhHxV7mw6W7nzWQn5va4h4EjztLhl1Aci6bIgnEOHZZoUCubNhN71aVfZz8&t=AQLvhtdop6CI5oz5cUA"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKaItIR0ftU1aCyyMGowzSOjf5EfKU3-0dhaIF4lMFqdUskKPjKeI4HMypZXeu7UUuSK5ic6PUxr0u6K47IYwrOcRTPx3efkVmXt2Ziu3StKkEYrZrcw5zdc-x_EldwsD__lpp20-q0mTWOZieNIdUwkgJ55NTrBpA0TEGx_dru5yqpkYxtkrXQ64dCiyt8E8cU-SU5DQlGbKIKyVwNZzBIguuSio1uMmxy_tOwQvJ7oRZ1LXtiu3-LDvwWEu51lZxxsOC4yJiTuqL_5Xjnd-JONYVuoAc8miUu63dX-VZymLOxlRaKkdgomFBXS211gM2ZK47X2fSmEf0l-VrNWoMsALlGeKYwkui1xGJSYhGbeslHa4LeRw2y8pXPtUkPVA5I_nfsdq1HW9ZxU0jODhxjERUlVVzxk_JfheNnIH6xEmRbppnInbJ7RhmldiJEaH0&t=AQIdz9OCFcAw8GLoH9k"
         },
         {
           "ad_name": "July2026-Congrats-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-20.07.2026",
           "ad_id": "120248190292800298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
-          "spend": 181909.76,
+          "spend": 181909.81,
           "roas": 1.2694,
-          "conv_value": 230913.16,
+          "conv_value": 230913.22,
           "purchases": 222,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKKsDrAD_2NcuakD-tXt-T6kTzJgiKIH9ovq-Z-e_3kt4QdUBIklL0MF8FWS5wF1Oq0yo60UWgclUjwSCYfVDmw5--UbVQNKyHnIoS8q4z1OLIBXPAXl33Sijq13zxRXNbfVD3LHcSaDAIRujWTE9eMVC1E-BObn19t7guA4_BnZkQd9UtC2i6uXmqxeRGXpQeWdD0oDzJ7EorLNQfcnXxAYHuIGeJcHUjbE_o7fOdoyZT861phJJGM-dHdWEWPOZnIUltMIMyVwllbJxHRJrKsJ_vhgPMGyXfcRWJtRY2Lm3tDZzYRRpe1Fb8RB__5J0RZHvifklc7zt0v6YtTBI0CbBiiJHPEJMUUaW8Q6FX8y16mAdYuLS7LnOFe15H8chZQNVkA6337uvz1-iEatWBOmpQO3zt6skvMZxqGxsH-B9eDIv6l0q0VajAaOeEOoqA&t=AQLeI6IJtvpCqqvwRmM"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKfqxffvMcGZE4-ZJg2S0-lxo6Y6QcQoy0UTBp8ioLd_Tq6iBHIavk6oqZ0gklzLUEDpguPMeez9J5_GDbu4KVqYw5hPgAQDPfdFVp6es0HBR3VT1TGUaJqKG0Y7rlMR2tJWz4eYEHezFlXxg7jGRC9MBuW-XCxW9DCbVz4cJCGF_DMJzTN6dl7TMh1PER-aSECyUHa7MgASJMFWss1TyYxxbJVNYDf64wMfkeer7er-q77Xj5-iZDUO1crgqt7mlSYuRpTmj4cF9IfG0vMvd54XWP48_H0uUTd0IFvO3HoB1dyE3y6a4Oz45WERaKoykEAK5PFPoQXnEp7vUov9oklvJ7TXQvq4px4x_BrGWKGrqyuU-Yxw2vvuWpkWtMfr8X9_mnekRyH6ryv2DtahB4CGw5mEbZdCW6_9Wdn_iYq-bDsI7O_YkMQlvECWqaKEcc&t=AQLUjWpfVlIPQVyVulw"
         },
         {
           "ad_name": "June2026-Lifes-Too-Short-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-17.06.2026",
           "ad_id": "120246556273120298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
-          "spend": 150529.53,
+          "spend": 150530.66,
           "roas": 2.8501,
-          "conv_value": 429021.05,
+          "conv_value": 429021.11,
           "purchases": 439,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJOLKx6qK4wUNAckV2YCxRv1aGzrodIzoOYdbfsXHs6S5kXCAnKVknuQyCD6xj76HGch57ikPcZaAOM3DIXP4GBc_fRhQqUvbE_KJaTNUOut-XE45zre4HtzJdEmElGQR4DthpoiZuc9searaFZmVV6cXr_nV30HC2r17AenkMLdAlqJxie4B0F7P51R-FZxS-zY4qmVfHYofjHiWAx5cJU-_KNFW9LZgfB_jd_f7XFSvh647JsvCy-Cb0YQvjRHu0X7E_v50WeOuSnfyT6zr5tMcTy5by_qY0RoGr2GL9GoWReIQKZZdBCGHiTKFcZV3v-GrMKjNv16kL-gF5MlAt1X4CbONbwUgoarm2vgw2JsSGHEpg17nOKa7dKoJ-LCYPTH2ohUTZ9Y1BknpLr8wBTs6Pb8UcCqTM7-CZl0WepARP5eCt4oqMhMSZUdx38xrM&t=AQLmcCeaU7o25a465IA"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLEpp9p6mxelqhyZHHbf6qcVpYo36Az__U0wwRgwN7drYEo96Q7G3NyyfrhVHHxhhzAaztpkCW_YLQYIpeVbrGtDXzDlp0pgCVXmHig0YMoaDrjNc8kUtQjrvvGDh9K2xB8u10xaI7nK8LjTzi438iFpzaj1gkXBM5FYl6W8icbLZnrrt3f28tiz_7GOZOwSDs91ND5F_RJY_36_6cTWwcf6oTJnzAz1W33gMVvb0yZ0g4TMbGhWE3n12B2OBEBndpRmqUccnKNo3V8RcguATUu1Cz9i4AL1t6VTXZ29pRPaBR-kWUiBS1WhtXRtkZTyPY4qrDSMKuFAeXqpHGfgGtGCP3CAxKsyjTxN25qb9MDdIpEp6SI-A1IcwQzCh4ohl5OYpbgk8s21pEKjujHg1k-zQ2uEEg0rCaFg08LtqMoNVE7scIcXALrFM40QOPd7V4&t=AQKvkTylVx7LAtTuNPU"
         },
         {
           "ad_name": "July2026-Start-The-Week-Right-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-07.07.2026",
           "ad_id": "120247740860780298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
-          "spend": 135685.59,
+          "spend": 135688.27,
           "roas": 2.0918,
-          "conv_value": 283832.54,
+          "conv_value": 283832.45,
           "purchases": 284,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL4GFz2KxOrq4pYeIfOLwgkeQQAY4anWOOzSxXvYM8dQBOZtNFqP61igADSrle6C5QQgR9g3Mjt23ktoO0AO2Uw1McGsbGC5zJYVRETedZnEJxImNuJoMYxx6Du8OmQY3MIvo7KzcaksmXuE5fwkNmqKLVsjBf3iRvUIioVMyJOSG2UXaK5LyjPTPRQWuwp0wCy1fEnWc5LbHvAt7K-G_zFW-fKk83b51JfIRxsGvm7SEvdZsQjyp3con5MmYFR50k52Ibhm9jYyVO4VBjIYOAj_C1icnrALcMaKbvsbgx0UYG3hEhiIwMnmNoI_ylrZaUe9F6SUIZdcqylebC5ODqziK4dOou045rsZyyAeaILCkUy087YeNCqMJ9krjf0Csi3n16Cb9wdWeg8_ROdST1maO_fV5rsUBA7Fv3VljnG03Ie9KQsSGfSRLTnAyKlCII&t=AQLw0YzY_uNYVYAQFok"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI_fybzdXVGinsITIgJKX_35vLOPlwwRJSaFOTMeLBEqlUY9K_HeeUExBM6ACI25v1FtxISWIDw_rcrwJjoA06-H3dEeODLHLSZ37j-StBrGpFEdYkQHmaSC-pX43fJUgczCeY3Z5cVkGVfE71FD11aoNxvhM8o98hjBuKG73Wmd_8cQ5eQIAoJT3F_yYBWXZJueSYYPqW3vNlaPzZhpBo0sUuMczAR8kZdogdlY_7EFGAKbQQFPEdDjdEWZkuGzrrNWEiuu5z0coEgYiOakswK8ynAfHpeu-4fuJJlbLkY4lostr0t9TobnybO6ic3pEExMYxn5q7YFeeOjBufOhgzk1N5XE94_asDqqXG9bGi_N5MwEwPF6mIDgpaNYXzPNKBt6Hm5c05zpryu76NU2DD_znXv8Rk8okTUoFUeh4KX754J29XrLovFVIdGA6aFGY&t=AQJwlXoEuMXO5IDXx6Q"
         },
         {
           "ad_name": "August2026-Stock-Up-Like-A-Pro-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-03.08.2026",
           "ad_id": "120248557597160298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
-          "spend": 116249.65,
+          "spend": 116250.27,
           "roas": 2.2194,
-          "conv_value": 258008.54,
+          "conv_value": 258008.52,
           "purchases": 275,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ0AzIi7p77KqAueVC9Gwg4BSxTQPgodjdCn17NJV3lKu61ULsthL2Nnl5X3uh2S_uWBiuVGXkKon8udPORRIRwveTEm6Sm89uqRB6NFqj1XkwXYwjuZVi0oFnGBkz_t0X4r-illgN9IDAZxf9cJZvbLFu5NFUUFk4Sb9CFcehPcO6R1tlpK-pEEQBVdx9bD5AwlGkhki7k_UC6QyKTx30vtAPotVyO8uljI_zE_KOziglzv2IzNBYH7e9ZFN-pcoE6AFE8OLfN5f0uj7T1hJliLR2ylMU-1E4orvU7le3TZoNplZdBPfk85kNVB5AZpp92uBUUkZtUp9vJrFHxEIln5cfXN7U7-kkVnkJGj4vAtakXG_tgRPTIqJVWllmG_KtBL6UKed-hTJzcE4spE1dxTOgUCJKn0ExyKMjxWupB0kggoYiSbLvu-wnFqRP8MJA&t=AQJ7QNP9E7meDio8j70"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJrL5GlWMz3dRh6Mtk92Val5OCKZOdHnXJx9q0aU1CGhmcSUA-K_KxU-YRktCkGQcPw1h_ak0MVu3ElhkQpVzv_NciqzTnAzrQTlmSnSpON-6acI18RmVuJRjuwuo3wvKP2kp7JEbebisb3724LujdiDqLkw1ZjFdvau2fSb44M49Lrf5fVL4iP02c_3bhGMei6FOylefOncSAvEn_NgOH8kcV4qTIzBMgZb1JffvCt_LZJWuk3pC5pTg3O5g6wOx-mc5nd7miJ0On11vIyK6Jl5x8y6pt1vKhqoRCThf9emnh-UHTnKDfH5-UwZDnIVyVBkhDLE1jZQtnpt1t4BzCR3K1-mbww07AaULyimh9f_E7R6-0IhlFp-ad3Emcws-Sf7h2eRLP97ikiFHWPm-EBjTFwiycHvdS3L1Blwt0iMhI1BYLiRWDOO09_4ABiENg&t=AQKuhBvrPC6wIn8ukwk"
         },
         {
           "ad_name": "September2026-Dont-Let-This-One-AI-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-02.09.2026",
           "ad_id": "120249263345730298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
-          "spend": 88466.76,
+          "spend": 88467.21,
           "roas": 2.5292,
-          "conv_value": 223754.02,
+          "conv_value": 223754.01,
           "purchases": 227,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLj3SkzJ6sxDvF5lLebLUChCi9ibte-dwjtpqHaosNzDyKLM2QlIPX4i8Kn-SiuFSkn--kfqWRGcCMFdRQEmb4a_TWjFuRM8USKw8y0wT77BvBzXTY3mD__inVqwMmVVUO2dYUpcYKewE2VwmV8jXfmra8ou-kSZovgbBgUQ1W13Tst6j0Y2hdCxzeGqAVXdDF3WFkCZIzEAYwiBtTFIo9SkkmxA-tD_RJz0FRg3RJ1VIHsSjVDCqfhhPxW7Qn6uFT4stFOGN-3xIKAi9U0cXizplh112fhAxn_fF0Z34HHSKguRzIyS8Rjd3VObxQuyLqmuxYzyVtZtovo6J7mt07G5Bi5GPRBeX1evo-0-UM3Lb2Xvqt9JaFAOR-xqOfMaenomKfcV3f5gmYUhlXg8gTB3YlNSRivBjroYHqfeH-ThXpCNnIpUcYl8756hbtp7_8&t=AQKeLqib4YMEu1a7YQo"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLoVcdhHXcHFASo4LKNykcKqYXfuC2aayj6oAkn64a3H_iAbzjFi05S3uAF8JTmBWe6dXfdpfl6I-xWWQrqKrRhC92ZzDObDxgUkY165h6LqEUwHI6KWaX2LKphGJl_et0tTr7Y-zBsLVmDj-SyGF4ksn0AWmwTsUt76qe_YRsXiivWkAS7ZwMjq-y2brplHNqOc2QyZv53CBJBHscxcdYL7_aRudv6MJKWeWkLicQ25gXDVNVxxxEsRmcuIuEUXXfCrHbl3S_ukeSEJ-kow0-UFWD-otMjkuip5PmVj7pwdBj4dacQ09Xp4Y0Zcxpviih4_Pv8A5hu_GPgTi0QMp7ipO4-jtXrOddRhL3SuWmZnQjqV0UAaR8fNjYcATFCDLfwDIq5D6lJmC6KkzfoS5r96rk2YMU7MtUOmkKK6mVN7Ooyl1mUPqhhxY0YFby_YM0&t=AQI6krGzLcdbiSZXeyA"
         },
         {
           "ad_name": "September2026-Last-Chance-AI-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-18.09.2026",
           "ad_id": "120249533311620298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
-          "spend": 86266.05,
+          "spend": 86267.55,
           "roas": 2.0757,
           "conv_value": 179064.17,
           "purchases": 171,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLSs1HlshXEzUYVANL3fTR4ROjXRn2OfIjTJGjOcbUCTxmGoPCSbd1ILcTbmbCnJVoMcyEb7HO7We7ph_VA1t79TAPTtKtmnVctFh4qGtxWsVkzhSvnNOwfrsT7_tZhMu9frhHd7HKC_MS4s-DuhDMqnSIcUTubClQgeLDjpITD18jPDY5S1L9gy8ahk2tqKa6rEsr3F_1TGgEcY7aH3tnblQnS-gYLvQKgi3eOI3O-UY3qp0YWGhuvYpbiEBgvzWO1iQMLMIrS_DG_Pl6TZ0Va_wHB25JrVGrTr2UoWH8bgaejJHfUoxk1Q1O3glIp1a8W4NtjVyOBayh4nwey9BwVPex7p0Gr_PqfYYcwGpW7DUTtoNsWVxrt22DIUwUGvJVfE4CeOK9Gw4z7zLcmFaIP_0Tg9t7F0V532-liknJgtycg8oDexYzgvYiJm3844jc&t=AQILr4QhuOIHD5TC0e8"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKRrJxxuT09OI-s_K6KVsauByOnpPCdMPStQ4w5Fgv5OtoSqNRZu9bLC7BXAUaYlUiHq8vMcu89weXDTPr7JOgUOY6oJWcaW1YIz9fLopRre_sanNSGKQ6gdJ8F84XggxR-HjgSJJ9wtvUBkEWIsos9Ex_ic-QNb5VfO4HpF6b25hdaPcOb7SVSorPAfU_lE1csyfGayXI-r1cVIMSlzVLZ93phV3baDRwExxPW4mTDiyoKNL_oHPskht6C1vDhBAfsbosEVvFJzQ4rPS5Zu6I3CUbcq5Tog8LB_eLsGd61QeoWOjVj99YdDKqbQsWyD5jE4dLeg68wctAsxVb5gU1dnIyV0Z50LUht1-KAhibg3NBp7UqOiSMBU_tR85av_Bl3cInnj4QKC58dIu-9myW2cfL8x2Gx_REU9-lq2upYpxnySAWMJBFeoFwFL5FAhq8&t=AQK6dyf2OiiUyMd5_ms"
         }
       ]
     },
     "Modal / Tactel UW": {
       "emoji": "\ud83e\uddf4",
       "total_ads": 18,
-      "total_spend": 133426.51,
-      "blended_roas": 3.478800202448524,
+      "total_spend": 133431.25999999998,
+      "blended_roas": 3.4786762112566434,
       "top_ads": [
         {
           "ad_name": "August2026-3x-Softer-Modal-Underwear-Static-Creative-Flatlay-Internal-05.08.2026",
           "ad_id": "120248634933740298",
           "adset_name": "Pros-Innerwear-Buy-3-at-15p-Off-TSQ-Broad-Statics-09.03.2026",
-          "spend": 67778.4,
-          "roas": 3.2607,
-          "conv_value": 221002.45,
+          "spend": 67781.16,
+          "roas": 3.2605,
+          "conv_value": 221002.44,
           "purchases": 226,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLilSgwU76HcnFUTKTyKXAo1BM8wJzoEHNDbk3BYQN2QZdfcZ-t_No0rTnv-9Wpsuffq6hj4-j0Uf5AL40k89ssysO1vcBCg9qH5m0dnWZT6JXOJEX26JMXmmQJfUM_dcTCHcHGfOckRepqhBMvjoDJgMgHNkLMjZwLFUa2D0lkk3zb20K27G1Y2ZYhg2aI9Io9z-r2oqkqgSaMy7fnVF6y6CaulPQbGg-2WpMU3CEpPTPjxnhzjk7RmNObtiUqp2aJzoG3W9uqgi1NOe1Wm4mjmFI1Z3xTw5R1-7ZTr9cmjAKgudLof1-tmX5n2p32t3rje0XMHIQYu8hQTP6m2teYFuIWA7jDn6S4xpAPtSgKM2qdzThE57zhlYknGVT-fdvfTCK6UV19SyeDdwR-wgRLFPUT4TIwLCKUvQ6vLsajtJZjw08rN0L1MekRAhYS2DI&t=AQJcBWKyqVkEarLazVw"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI6wqBtrkMNiZBqJuTzfcIZwI0k1akKg8DFm3AQ4dztcFHTFg6qHdBQZHMAjkI7lrQGEnz5eQRbf0VC5isQfvbGejcFOB2jO_Kcwv3rIWDpLe-sWD4gnllQdR98MKhUGNQFxop0dkR238tcLYP386lK7Mj7J2cAvhZ6P9KDBXnTYhNsI78kOYoN3lXUiEElXKFmF14DBO-m3BILrJfRJNATsjpvlFPrT4iMbcKekDclaiy1iFsaECgJsFYRzPU4-qIabC2s0qEQb41-5NLJQ8O4WZTCJO-8UmL74oYhHoo6BxWohLeQ79p3Jsx-kB_iqyVGvSKCdcFKXwzdXhBxzJxw7xM_k2rdXH6abkiN745dZBMBFAOjCoDFyxAPI9sr_15gsUENVY1BJiZVhssqHdjhoSfqunOOR4AuBzLw5cM3eekS6ESF9YAj4rbuGQ6gw5w&t=AQIlQpVhITxBhR-CWjE"
         },
         {
           "ad_name": "August2026-Packed-With-Tactel-Underwear-TB2-Static-Creative-Flatlay-Internal-10.08.2026",
           "ad_id": "120249404256450298",
           "adset_name": "Pros-Innerwear-Tactel-UW-TSQ-Broad-Statics-10.09.2026",
-          "spend": 20541.96,
-          "roas": 3.9548,
-          "conv_value": 81239.61,
+          "spend": 20542.55,
+          "roas": 3.9547,
+          "conv_value": 81239.6,
           "purchases": 79,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJX2btBMSOhjmOpt7jvZboT2G6_H-7zN8coJTCWwbAA869TOc5Zd7X72MhyuxJ-fTTXK1nU0WuLNp0bBz7CV69wjzGqU4XjXXhIYNvh4e_RUtTTV04KuFswYn1LAKLmPgwqCx0C7CDzZCahE_3E5ZORwxbSZ9nnuHrmfQdToOCL5d8PwgnFrVfaNyI7ZJUeIKPCHYaNBLjZQJF5WHST8tejg-GCpIC1Ad-K9qEBFsyLkRrlI6rjNqaDp7-QFJvaWNQbx4E1ZMu7AwkC5AY4l_CWvkz3ty6Tcfe93LcXTkxvep_LT-Mh9fFZO7yatfkXSMKf2AH-88WeYdYSyVFIs298CGvZSMOVBABvmqzajWVlyfvta8t_T-HaSoQ-mlwrvCuExwG-zc5AIBdxkHBwBcT_BghEE4Z_9TCsV3goXp60Nqci-omtIMZOJqW_NM8zbsE&t=AQKBD21zCsdZAucHqy8"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLRMw5JbmroW5kUcxMla76zeFSjQKTO9OccBMQgB1FWaruEN5m457Br9KNCCSdtd2-8MrhDjuuZUltOGcjSvekJLlNAS0mNRb0aFWlmInBQDqci2SEjqsZbpIPiOsAye1sAc6SCKrGevVUgmkpC-qvzafnspLO-V8UZ12YPiVSvPB6KZxpkUWp82GxYbi13KSd6eqj_nYHCxzf7KZqBlhktBOI-rq96xjzPJAszDmHN2BvkoSIu-kwRq6dznIsh9c7bsjg_oyL4qO16h7JfkHw9aLVwlSXyd6J80jutcsQX4U3kDl-JcQNnTgfQHdjfE4sV8ZxzJ4Op6MY4tYeWrB3_52wOxAPJIEMDtgA1qtV8b9E27fsUPqCwE9MqpZ4KOuOPARqvdLl9X5HCAasb558AKby11NSWTKdmC7k8RbUARqTU6ZP0k6-bs4Z9uqQaxno&t=AQJFP974wSF_2Kdlabk"
         },
         {
           "ad_name": "August2026-Softest-Way-AI-Modal-Underwear-CM1-Static-Creative-Flatlay-Internal-24.08.2026",
           "ad_id": "120249099511260298",
           "adset_name": "Pros-Innerwear-Buy-3-at-15p-Off-TSQ-Broad-Statics-09.03.2026",
-          "spend": 7683.63,
-          "roas": 3.2413,
+          "spend": 7684.14,
+          "roas": 3.2411,
           "conv_value": 24904.7,
           "purchases": 26,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJrjsmRYVzWEVewzFGeszGqZyJWgpv8G2_SB4Qn3LlAFinUlPaEtvtOXWMcftP542Xzf4rwFAsdC_sDOT6jy92elZg-yEuAxjnyXGiv9QrUaJm_WaRSdmi_zOg-t4dnEL87JQAR1asKEGiAtwJMe7zksaEcEy2CPPj8Exaf3PYvdv6GeSboDm4_x6Hyu5y_d9g-TweAyyCx8npaZvzZ5YJZB7Ud9z1nVOoObWRb2rXC-xpE5NtvSowvW6IPnbhKppOd9S_gM1ifS3OGrw56Zo8ANXDhjhUg9PtAJi-F-q-u7h3qdksCr1kL3SiRG6-YzMC8gKp2R7tO3x1kQKDq3sWOJW21MpjSZPfVNSaS_rTDECdorWF7d7kYeHyZWh0VljLK8iLo9tZJ-ciDO0zEpOiSuyhkFSRpuNQio5oxXl5KvrC4Dit92k3IvCNki7CKFZk&t=AQKoTMXzbfywd8CPQ5k"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLWZBYkfUAvQIYK30q1wFRQucNhnS-H0HnFruIub3-vGwlU7AkJ85fbXEIb-h7a9NrMsWGXb4ScRVMbtqvx6rQBAJ24-BDAsecnl2y0_F2kDI-DUlm6B_3mwpcUF1wU5b6BLZbHfR1E_6mxOgn6JGpQbs3alDAguXOeC-h8B6bZR6AQBOohDaEcsmy4MKKWKcKphgeqqnAC7BCt60PP2P_yS7y5Tuaod4YHk80VRKpY7oi0ndKeIeWUcTSgYtvblNEo8IT4o783JaCDEO9l_edeDPTAf2vqi0mA6ADOZF0DPEFL4xjRY0Q9pXiQ04GAiR4TrI21qBqkEnCBWv44-nIXDL4U3Gw0HvD3mSZV3nQrbWV9Xzln_iS0O1t9HNAcGST7wJkQCd-d1jjCf66-eEm51PchZ7hZb0WcvewdkcMtrCu7udVQIEcjFpeYiyVCCzo&t=AQLwBMQpcgLLdO2x0iE"
         },
         {
           "ad_name": "Apr2026-Softness-Your-Old-Underwear-Never-Had-Modal-Underwear-Static-Product-Romance-Internal-27.04.2026",
           "ad_id": "120243120883010298",
           "adset_name": "Pros-Innerwear-Buy-3-at-15p-Off-TSQ-Broad-Statics-09.03.2026",
-          "spend": 6770.16,
-          "roas": 3.2898,
+          "spend": 6770.68,
+          "roas": 3.2896,
           "conv_value": 22272.61,
           "purchases": 21,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIVr3FP6lKuhVR5xNoGYpvX_MYHiCP283LtVdr6Yvj9XtyRRecyir0YbuKVcgtrl3upkxdVZ2hF8dAEEjPqL7AcBMXXXVvZ38zzq26yINI-NxpT07mR6ya2UKQSZjx513KEe3abb-RhvsMEpkMhfaGzK_8Ds313YYO5xjSCS2gx12m9YFjG0QbrL6ke15rkjN8wAs5l7IXTyTEeE_hDcRKfePEildSMKiWmJKgSDkVzMB9iJrmV7RS4vDleLXSlQuOpuY16_ZP-Ytossa2-gcX40hVKRC4lDhDY9aglcb1OorrEx2PWYfcpbffujlQvn5IZo_67WZ_CdbRKM4vMuZfCZ3228WLt6wCMRiSlKUCx8Abe3r5q81jrg8BZ3jtJFnxK6wzeEyASL-laPMZYzNS7Tic2it22UxhsInewvnyMALnK2IYxCdGYkRl8p1alwXM&t=AQL4AME1EealtvhwRSo"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIQlEOiUoA_190PMHYnTF4vEm6vdBuXuqLSI89Mg-i5qfUDYjiBz8PZrhP4k9OVPn_vd6ySSc_MsLOCtANAp2uqIJpLsAGTuiOARlMKLzegUO135QPHXRS-TgPn76N9Vbi1KPzlE9h02vPfvU-2vkImcqF_vD4vgfFrmYgJ494cfOO9-4oecdFrQAIFnJxq7xFahcjm1iVggtwLGz12V4y5Hx_1Rampg2wIa78Kf394OHja-YbH1Qkqzux21sdD8A1aM9pUSNvhTOCeO1W8-djCVxFasqLG7YMf7AUnO2Ffo55PCm9jTWEafRDMUu7qytHGaFpN60O56P0Ma19lKyOQhR2y38eKYh90LCkrugHGcBEbWSvKLA7bV7_gjB92ReCLRHROGfWt0H1IR05LcVv_dRTOWk7SqmuEqxnV8ULWs39tUoX3WyCFl07SupBzSBU&t=AQJqO8wtjwudUZvxKDg"
         },
         {
           "ad_name": "June2026-Elevated-Listing-Modal-Underwear-R7-Carousel-Internal-15.06.2026",
@@ -194,7 +194,7 @@
           "purchases": 13,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLvV72S1u1qobSBP5TT0p95p8gqwn3DsNuvf-xDHnZNhviTFKJk7D3k91aYv3M1Jm5URjJxFoFZXN4qBBkGQFXggJbjNCmGSXH8hOaJES3ee1oHZ1T4EcgHXmee86UT5-x0Wi2DxSdLWOMxgu3VtVg4Hb8ClOafOdLbpRjz4CW7AeRJVxLapiO7N0gminV5rrlF497VIeBHud7mlblZHOlSdZfIijQoPwojmRF7ZysqRqPChctoas8vW-15eH1JlghcsNnDDsIT2xQo46W_xB1UZPDo2piSiuFoGI7PQq8aZun-bSz3MxL1Df8mIeTPq7Kga65Mwk1q99usju-ElWsq5wsY9I-1rp9ki0Z-HcDHc3YuzS50DJprevmvOVL35mp_2yHKW7aMj9PAga6ZbC94CZZxUVwpL9Aeh6-UbANKA0wSK23NNeJeEK8iFx6C-GE&t=AQJAuhKVB7NmsT_uXC0"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKJNCQoEQiwYtrtTU1MITJ_gYnoB8btFliOCBNeRaUc-reZY01hTulWogcDZ_1GUv4cOJ7RPrPmMTuu1sWX4M4MdT6Q2qn3GgVaV0HVAvSqLThZf9jQTZXx-aKQ5kJfjrnhZZrpOckJxJGDIy4qWg_a-huAoUlsoJQWwb724wWnzZ3Od6oN6MiyAWOR-yucR8Aj-x5Pr4hRSiXnei2Ygz3g3_uTpN8HuuR-MAjuTI6HHHkrwrxfxRnC2SLh6XRsBZ5y358YzdsJGwbBzTbIwrI5Ia2De4Lr_7dOPLIVowJ85AQ4Sl0Fz6qdjxkoSBUnznVhKUh6WE3TMANu3TOhQ4dfqBMHZTkysPMdqGNYI7xxXBotZxublxzzAyjf1PEVGFgBW2cU8Co5wzm9dJwZrmtiGD1JNcyi8ajKjvBwOKpg98IpPxTxJSaswa1W8rtxM40&t=AQK2Yt3DK40rKw66c-M"
         },
         {
           "ad_name": "Pros-Undies-3-at-15-I-am-Soft-Modal-Static-20.03.2026",
@@ -206,31 +206,31 @@
           "purchases": 15,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLUqK84egG_916guaVxY1mn5fOU1fqoKsHhwRFyZ_NOuyWuYR_-StNgv23uB4Y3KAV8L6AD_UTMIBoLkZ3Vgk0tND98c3pt19A_9G5bWwG17q2FYwne_hf4fgXvmZyuGO4iNw1TrorQNElMk5_7ETKHshcn3ULVgiudHxMJ76R2BJ5bdw7rdqSwDAFi8w2lP4_cOj7HJMvEmdoIt2dU9KnUZ0kqO7Xft8SD-QunnyzQfbR4uw7ZlnkvhtpHb4SnkLCjuCkcUkZx0mUGPxao9Qf5dBhCHnBj2h8PoppBWTIOQLaUN-p2nGsfzD4npG42mCKOvJy2wnmlxqvIdRqSLAqy4Xj7C23day__66xoH1RWpc-SHbHw0camaKptuwhgcJ_0OwQOweWbKBgAeDTZNQLyApQoB-dXvJwjfQOkeFTovsunf8UcoJBHv8Szs301yYM&t=AQLJ1TeL6J26-8pgvVQ"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJlf7rxeJSuRcO_O3Z0coMlgU01j6rvQwCdCx1EU9psXGbQ0ynMlpuAi3pYnJd1o0iChmHcyqhaHd75t9kjnLQ5EL0CLAOFt4k7ED5ydtJt3YLBRLIdkxrP6O2-lhlGIG4JVljTpP2IulwRAsAxuC5KRiuJbUg4Y_y3JTuJFZd9WxUh6Rmv1N1wBqQTKH-iiij1k5owj75rpXOV3aLxP5r70RJhEOxfxaGY1FzWAX88B3YfJopnhMVQP2FAuNjvapOdzBApBV5duh5HzqKEJT1EX8LSH5Cl_BeT5eYM-uJqNL3mqzYiSsFzqsQOejtiOJ5eePOb9CqN2HbY-bXY_9KHriZJXcdMjSKyJYJ1_AzGgMlqOeZiw0QH0nObd1XySxSvSYEImjBXbO3oNtw3v_RckdGgq7WF3q8b9cjGb4BKmJa19vvEJhifxZRibsHqwVI&t=AQIKRJcvr9MixAnjMTo"
         },
         {
           "ad_name": "September2026-The-Softer-Choice-AI-Modal-Underwear-R8-Static-Creative-Flatlay-Internal-02.09.2026",
           "ad_id": "120249265007890298",
           "adset_name": "Pros-Innerwear-Buy-3-at-15p-Off-TSQ-Broad-Statics-09.03.2026",
-          "spend": 4753.93,
-          "roas": 5.0204,
+          "spend": 4754.26,
+          "roas": 5.02,
           "conv_value": 23866.46,
           "purchases": 23,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKCo55A3TjNcwZF5izcAn-eigJPE1gdBeaa9s6o-H7c_dmyBevo8PuR-HK19GAozbwvpAYikXG0ZD9hIOxu_LoohPqq9LRe0CA1qCIVKXxiedOkTvx-SeERHBRDkuLZKq9VlGIyVFc7xkHC4m-_RnNR1S4St7uRxbegJt2JgwWkcSok_csQUw6jghePY-3fnLj1_ZpZOgatL74P5jD9nGtFWDnj-JE1tdHVxUUMXNHV_0A3Fak5AfnJAL6w3xSR5ET3Wn6-E3Xa2IAxUarUO5xAWaqOBgQ_eV5O8KyDGLTJGxAVdYs1qQv4S7_NXu7Wus8aLdG_QYUkUpIidQBjQYgwqnFme27ozmwxkygFzW1vMkjbZKZ6YGmJ7UZ7w2a5-RY8mwCM_eN3B6LQ3XFLzTq1XYPFNaUPoCDGSzZ74ZOueMA9m_x3IlAhQCA8UPMv2oA&t=AQJONlTshqAQiwXx_SQ"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLStP2wFrImCD_3PaLx7p6dtoG2_cqILDtqa06m_TYRpgQP5Mhos7TgtI7cX7Vglfd5XhtU43yM78gq-M7qVoO7pba-kTBdqR3O2fKBye8zXcPk30EgmOuhX2nlcyZJ4K8UKL4MBx55eS-ETT5pFlpQwh5hJsg2FZeJjmZxZP-EnWfpreMho-hqzX0iGTgA1qPqTj8D5tLQsnVZBJSBTAJNAYwgbwNOs4fCFprb-qaYSDuiUsch5vH15kFf2a2LfBICajD5Zvp5lP9hlhqvTuCOxwvUkiL9pl6Cmv9A-M8k0B_8bWAmrBL2okCcYM9TJzssvax6kA0PS5iIqhZ-0Ir0ImHKDt7SzSiX4ljiEk3D-YKbKVFcRQJXF6wr7cD__wEK2-Bsf93AMF3tK0sn5SO4-TDiouEuQyEi3I-CnWLr6_o7WE__wl_Tty1JLJui5N8&t=AQKUSh6qI6sgNcksvNw"
         },
         {
           "ad_name": "August2026-These-Undies-Wont-Break-A-Sweat-Tactel-Underwear-TB3-Static-Creative-Flatlay-Internal-05.08.2026",
           "ad_id": "120249404256440298",
           "adset_name": "Pros-Innerwear-Tactel-UW-TSQ-Broad-Statics-10.09.2026",
-          "spend": 3533.24,
+          "spend": 3533.25,
           "roas": 3.6093,
           "conv_value": 12752.58,
           "purchases": 15,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQInvacgAh3kiDeLuoglfYv-MIsNOzrPebFpYdNd-ys-5n1LkA7df83lFXpyx5IycBEhmJrbQ41ewlJ9qHXcKK5u0xgKrzln_BOtyfUJNJgJZA2wpdvaaq3H9zu6PxYFOG0wlU0Susmm9hW2kRfk2JZzdThJ4H8NhoiLjVJVsGwMFuo8qYO09OSUDNK-wQAGLSCDZgygauxWAb1XRYnaR8t3lOmXIxn2N47nbmFc3_fzP6GrSE4r0bJoj1nuLTAtbE6fx1dR_YYdg8etBr42izl3XZQLoHCJCqIrkVZ7eTq9C8HIhAevPJ1fg3vgtI4YNd-MSW1SVWvWbPB2vG33t_i6LPQT-bODY_VTSXBxvCmA3gvuiLKSwPfOCxgUaUJS7EcjXBn39jRYfq_VotLmYEAqUdCzPeUinpLNYM61ngxJCPUhf2olKHxE3NTv3eqYs1E&t=AQJOjeIlYp6CeWhRa4I"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJJDeTcEoC6azbsfQ6YXB7QP6Ntqi2mGg72F9OIvd0Rm3NVNjeoUGywbNRgASIXAj7LbREMGI_JXrAqF-WMlbcYfITZKi_40tdy4B5Xy77XKDzMX5eu0LRWcRGrtPFcFR-IOvaHb7ih8nz0a8abiUzq6wga1MnEWANFWTWy5SITiV49GlMN7GjKbG7HFipFHDRf2WhoSkyAQIiGc1gSb4TQfdTgWaZ1T1n5-bJur_mW9PvjYmYLj-Z9KjBVsp6Xm_XW3tnLkm-tWc8UPfacJTGLEBrMFnxm1_W6TMZyqg5t78BwqZWbcgB7jtVUgvm6cIzfNYfPfA93cAyt4VRbpo8UtVwrU-ua4rm-y2AbpkW-hVz3FR70eOgs5sF3cu8-Sx-RxxJuwodH2jrctpHwfAlGtt2kSpmox7bOvvrjWShRuB4lWL8ChcAlvDtACq-LHb4&t=AQIa-oUFI1TEXj16p_c"
         },
         {
           "ad_name": "August2026-100p-Light-100p-Soft-Modal-Underwear-R8-Static-Creative-Flatlay-Internal-11.08.2026",
@@ -242,7 +242,7 @@
           "purchases": 7,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIUcFYX5SmoNpTqDPoe-H0gYHU8oS-OqJP76byo28F3oYpoLYoXfY27aB5pXu58PHMy203sBgyACnss3YYecxc9XT63u58jWDjqxu3bgNmjbBr0KkAuuZUo8bxP9dORP9JeuKS7KpKteEJbt3HlwtsBYgaD_VgsZmmcCa58wLvE05rCPvrK-cCkJohWvh22WAk9F2keQpl3Vb-TZA90VUhmiXOH6BUFzcx5bQYcav2YmjbWy30o0XGA8eLXxQXvbrQLQ-AGg3QLjOT3tP86xFFscULFlVHv4cGCOhgNVPPBLtsuY4ZR4GIJu-95PXhbU56s9QI11e1GH6pk33fetzz3Cod-PdWAhDoQe2h7Zl1ApoyIPGmlzkQD7pfoM9NUwvOKMzvm0m6ME7R_yQoN__Td3hJxAJ3L5Q-XbpqlMkbuLBfvfz-Q26-zyatqfP9eh9U&t=AQIwwrAaf4iCnAriWjc"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJS_1Bqt_UHr6cWmVsmmzfzZbT14_d7Vyf8K2azxpPhnVeJjLTeC8zadu2BU_vbl721NjUE8Kkk80_M1vqH6y95OQAm709mQ7z1FtpZQ08cH-CTHkKOkfYwdR1Q1r8FAAJCYOn5e1sAiLDbuR1uMBXdoEipecgHbWUI3nZIkJUfxaB1vXCJUEhmMTRIY12ghVRnOwi5B1tmam2tq3gW0GzfKIC3APmTNLiT7sFGoi2rlab3lZCSHXZwi20rtD5_mMt9EgN95YnIXsOSV1R4pztk8egxGAUqtNA4drnBHoPWcvusHKgs_Pc7dmes5r_2CQXxmAkTB0-Hugx7YCAX94443iVLxtsQ_9UtxRzFPOoRireHJffRoKvRzTN8sTk4PotylQL-jDrYNgHtaHSSAVNT1ZhbWOJQ7H1QyLMhpMlRZ9BrJeHi8nY8DVQussivh2o&t=AQIlLPI1yue79wez-xQ"
         },
         {
           "ad_name": "July2026-Lifes-Hard-Modal-Underwear-CM1-Static-Creative-Flatlay-Internal-23.07.2026",
@@ -254,27 +254,27 @@
           "purchases": 7,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQK7v8SNnBvmOZTwPxKTaRaO1EOpj1ZSpDqOC70VbPg8M26BXpP3Wr0kZFT7smQ68NlnyUBAoiIbt_IFiYxsJuX44mjq2T3iGocbAiW_qEGAURC9pTnLLsO94mtm8Fs_5BabFJ3F8r7x5QSIUTsFRjj6k2Bf5R-Mnwy1rDg-dUHKp2e_egxDpdr4_Yl8UqKcYNmdRhus-0HfUUA5v2YrK3Zh2Ang74xAFz-JAnTNKV4KMn5iw3AP5O24yo8xQEl5YCCQioqQGssq5x81HOQ3cmEXA0iYouGokzN5gYy3BsOSyQhf2Mk5qitGEFQourAB7U8b0u44_GK8tcpPyOYtjE3YWN6Sk0AHlnsAmpMAwA4Xhq58TjigGMaXhB2wI9x8bhtQuUSsIoTlCA5YQr9AirIveZLhEd_q85fsACXXh6IUGZn0ls-levSOMVg4ak6Z3_Q&t=AQL4XVM0_5nvTt66_7Q"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJa0eEkIiEy7D-7UqcJfUkQYb6WAyssdxqHwpQeWKa_Hly6Gl6Oma7IZXPrP3JqqQSE_mxU23Y2D4wJuGpogST7P29DmdI1PbJNF6-heuqmrcq2wLVOx8YLp_CuvSIsj8s6RpPRM4dJCd71ytBg444ae6Nx50scxbADDmkXrZ_kqhxckX4qeUpgMtSyGDNvrBQ1yrHd8vs9brxXaz3xCxTq7hqEjopHfld7ifLUklxSF_n-qKcatL2fRDgvTQGfX-4lSqq8Bntqxsoh36sHzxgz3TPvIN-c4wPqTfHEbg6dwUKksY0MbfVB5Q1640W8oeO_hjoLFoxVHOCxYbZdnskPipjUU1oiJtexFAQ6-IyN0Yilg4vRNge6ha2wWrg5wGrhaPSxEOxaGn2DD_RQSl3weVHS-d9zgwfJVOtFlr87N0jzMiAMKdveuLDxmzx5ADI&t=AQIrZ3vAzFCugOjYZV8"
         }
       ]
     },
     "Boxers": {
       "emoji": "\ud83e\udd4a",
       "total_ads": 17,
-      "total_spend": 294120.29,
-      "blended_roas": 3.4253840154992363,
+      "total_spend": 294123.56999999995,
+      "blended_roas": 3.4253459523832106,
       "top_ads": [
         {
           "ad_name": "September2026-The-Boxer-Youll-AI-Boxer-Flat-50-Off-Static-Creative-Flatlay-Internal-10.09.2026",
           "ad_id": "120249545469340298",
           "adset_name": "Pros-TSQ-Sale-Flat-50-Boxer-19.09.2026",
-          "spend": 139629.3,
-          "roas": 3.6999,
-          "conv_value": 516609.7,
+          "spend": 139631.65,
+          "roas": 3.6998,
+          "conv_value": 516609.73,
           "purchases": 551,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI5XLCjayJNrjuWdM-6KOGYWVNzKuUQGGXhNVyR0F6IcuR1JBVh2Nh775VodFwzUicBwK683Q2r30lKshY20MUD5loy9661BjoFMSPkcYMPko9ynX0v1tzPr4Mo_6F9MRngnlcppiKZPb2PjPu7E88HK3-RF322kCI4_yPVDkTD3PW5GB38q3q1mNp_Kz1EHKI5Bs7pcOUmXYhHqU2Dk-upX_r4h2aD5IKBGPfd3ZVHA8oj-sC4nHy49obag3004t3HOVr9m2wfIHkv7-AOUr8Og5hr0r22UDA87ULeMFML7IjJAHO-F6KTcTPlRkufhy9VTiN3BagXEqXhkRlukn3tyI7C5XEpmAs5t1FRwODR7nQdqQ61VbaThVziTPRw3-Izuw9HIjh3L-LiHJHfx4gqwc9-SHQbXBUj9CWqygdWps8E_EJbkP1UTEfqHpRRlHM&t=AQLPsnv7bbIJH0ivhRI"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLV4pANw0BR3YkYCz2X45hXW2I92FOjqhpQrHtM6AM-5prYwZUpR1wWq7XOf9W1U0oiImnPtEdmuGo8S4sZ_fzZr8_vIVKdrNOMlh-6s-JdvWRUmNJzky-QAhfGwvMgrC0cWRwSjhq762P7s4FWoF-15sQxCI0uWQMQkz3JozdhxKcCbUzGaivBm0iXIH3JoaE9NbFaCE0eNrVx1Wowt-BOpN4-FYidcrVA2Cnhtc-ku4zuYz8q-61Ik8WEhLwVJPmazBxHKV8QrgygD4DW2LC2A2amXZfMBoAOUydcJ2fvi4tWmIYOGM4LXa1p1JGs-OMFqL3MVw-uv28nYp_xfuJUz2HNQvljsmGqACiXKb6hu8LuNPmVo7fGskio8EvhupvIw3e2zad4vBWayTaAp3TaxUcPxkcgOUPWD2Hyzyaxq7ihsdqIKy7qpqQk_j8eFSg&t=AQImGE5HSUst2-Tj_Xo"
         },
         {
           "ad_name": "September2026-Theyre-Flying-AI-Boxer-Flat-50-Off-Static-Creative-Flatlay-Internal-10.09.2026",
@@ -286,7 +286,7 @@
           "purchases": 74,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKhE3o0U-XN0vrzFJDKYibvrEMQVjXrKrfv5VuD3juOxdwDXvHALgWsL4x2HiVPOw_Jq5qnTn8fWTEojziFDIV1dmstiguz-ccKs0dqOmAGKxzxrkTEo-A1j0_ArAqiYBNkTbdwoP2JIoA_6oOCVuPE8bNjBfyODO-P6hgrX7SDP49IZhXIbo_YJ3rVGSPHRZmsktRNQwc04ZXPOmInWgThcGP2mDev7OsNquVx88g6Jgj_uqGexBG9Bhlwy5QHG0wsNCrXuF4rB_w5MCQD1bondw76ubyWVKpBMIRM5l_cbOJnWmP6P5yaiWiAw2HJSL0XBwNBZnU-tD_eSEpSwvIQvBWU2sFupHls81DzJucM3RfOCtMDBpoORSSdfxoTT9YI_jaG0S-cTWxn_I2xiAMCl63cj8SOZ_R1f_YvZ6kLrSpXqwBEMiTle1NnFUrw51A&t=AQI4UyH2Rgu52WFqSAA"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJHC97mIweQTZmCWFJb8ph6dOK-qeh4DRfpUZqRdTWmlhSl7NycKGfYAmxx4pme1WJNaS3gAdeINfqRXVjoPlxa-4Zh_PzjP1MR1VyiAhyGgKmxX5d8gSvGPqWKeywMYiv4fKPB71280QMd4UmAn56w_TsPffrIUY_jrQ7_RoG5dRt2Dl8kvl8imButntuxrbKRx8b9G_PrYBxNkFAj8sz5gyJDt2IeMnBi0SQAsIF4mV1il8rad3_aCGTzhU5qHVp791YSJH8Mana8PJTa58Sws16ZAqsYaTepFev_duTw6Dbx6lp2dWzRUnBcWGxRooG6-JXPsTkVT1Cz97_6P4cCt8u7RxfMKVIQvxIUoHwacVQHO4kmXKwIQBWxOoyOnAHD374Gu_CLSCiS-9FAkuICcY3RVDBRgMpql9lYVj0APen8-Xuq84UNFv4XCR2gytg&t=AQKJIjQRIbYB10SGp9c"
         },
         {
           "ad_name": "September2026-Half-Price-AI-Boxer-Flat-50-Off-Weekend-Sale-Static-Plain-Text-Only-V2-Internal-18.09.2026",
@@ -298,19 +298,19 @@
           "purchases": 121,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIdU1TxwKD-TCIbsB0GupMz74buFHWa4L-RgLL7209HsRk5j2XzNB4cBOtIcbfTkPu0jeJOpik4o6mahJBPaY3wyw2DowUpn5_IlFkEPgwfCRtcj-l6_SrZzBE9lol4Zg0slwTKOW3HYX9K723Gx9wJiUOXJDscGOBNnNzbtK6uuZ7MHRk6y5yXU4gx83pjSnJNtDhGqR6O4PAYG8HnygWvoegGe1rJhYkyqjYwmdDXI_vNC2FrrVZ-EwsM2-Z-5Npu6_8NrHoDkuPbch7kWcKihzGGjGT0Mj72JoFqlCdohaHX3tUeArKXjKne4Leer3G_DlchBVuapkv4CygramyN9r1XHT3DTXcgyPO1UjZXPUZxuu_cON39UBZlwAzDOAWzwsvyc25Tq-CZzNPqN3zLI6-H3VYGzxBFxvIUWUZPKPcbE2Q13fcHBCU30FGUD-0&t=AQI2EgqwCn9yFEoAG_U"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIH1wVtDUDrF2RL5oxxW4GKTpi132UnFi2ZXsAyMQKPWv9AzXKz26JjRcpPqbfgbbdooQRHElyj8IJNsz-Z_ZoEaMW8UCdrH26-bhCRNDDvMA4s07vTS58z1tM70hz5mGQmJb33x9hj1JPxZ-40rtS0ECpreC0w-_tXezKBGH5GTCfOvUAzn4KKtyKwvhAJEei1eqKe1NY_wmlbA5LzIN7HYk3A5gW1IF8CVgNhf92D167JGdBpPELUXP8svQ7cJXzFXvh71AU31VdMArzg8K83nbIdz7T1gXRIi2TIKPLdRmXOBaZhCzwUjjc0hkl4qLwDBU-NSSamPNK4eMitBgqJGIAfnmio-RxjXT4ajI2NMrORPHowuXQvlVyz37NNmYgTCpA79YOm3dtM_gxPpSDEjPwxrTHq78wfwTTq3NtVV-kP3EGyyY5T908xkMlWgSQ&t=AQLXQ0jaW3V0P7N8UuY"
         },
         {
           "ad_name": "Pros-TSQ-DPA-All-Boxers-Carousel-10.03.2026",
           "ad_id": "120240473991280298",
           "adset_name": "Pros-TSQ-DPA-All-Boxers-10.03.2026",
-          "spend": 22684.59,
-          "roas": 3.5687,
-          "conv_value": 80954.72,
+          "spend": 22685.52,
+          "roas": 3.5686,
+          "conv_value": 80954.73,
           "purchases": 83,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL0Av749uTcV_pzHeh0Zb3l-_xRBj9V7lM0w4N-VEgaKRz3R79c8xWlu4f5YIdLDjN9qGQ6XghAgKMd-cFNGVbUrjBY0C0IcQgPvGosmvqp0HmdAApXYqhIeEPlJaY343H9aj7Vo9lgYiXU5B-PaWxQxdbLZxRKs_5RCC2eQt2GwbhRzWFjfpZmFNc7rqG_ffxT90cJqIEhLpic4zaqcFfMVf9wKH0IIP3T5bxFGOYBj7skj1V2iKS6S5Ek13KnPNRnxC1HpakeS5T3zxRdSFafTGJkEQFTnsjPObbb2Gzgh462dXGFAvHSjW7g2tHIt5kCjFoLczNwm6DM2HbG00orWHW1VPqUcIXpcbPMTGhqvu2wWPb76d2IgF2r_V_pvp4c94L70bzB8n4i1KettTwk-zgpHJsbYqtZJ6FQvW2PKdFa0ThA0tc52ZT9f4sM6ig&t=AQIteXBABF38vT5QZFM"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJY-4mkJm2WkYuBFtmGsJIIDi1Q1xASjPz_1fFnf8GbfIpECR-JQZEapFhjtzpgKFBmpYFgo0b7zTnIQVMLm3jD7m2Pdu7ZErdKLICFm-rBb6JU2CeWhlFMFMjnTAj8456wmiT_HjG9EJZSsTFel5piU9mKn2iagzFDYu77vUen6nXxVyMMsG9KFpkeYIhh1m99w-p2L_wO8wIlIILN8oUetdJ2Z-KUQIOt6Dma0w4nlNYyHh0LPGcK92J31ywfBMKxuf4SC-qyiV1OBtNvqmtcZL3Cddqk0M6qy4e8KsnDuZTATxzl3E-IZLI_MGKnsbD9dtSYyfa8iY09LvxEeiDF-E6V-_CYPcLTuouuNM5LI840Wf-dPGpEVdjbP2P4fxXaleQhO338SE4bIRPIX6j4HkiZw0E_-xglzUQ1uVvrjl-YGP-ai3Ul0Pt8s_rfOAU&t=AQJo-mwoXxMTxE-F3Sc"
         },
         {
           "ad_name": "September2026-Last-Chance-Stock-Up-AI-Boxer-Flat-50-Off-Weekend-Sale-Static-Plain-Text-Only-Internal-18.09.2026",
@@ -322,7 +322,7 @@
           "purchases": 39,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKY1LXxF3xP_9I0myKWJb8gJPOzUyMLd5DEnYZPjK8YEnMRxcYtxpzl75Hg3m8QPqhGKhhhbgkfY3FjvcIipYTnWBXlc5HlzsGdffga1PTuHbuuxdvKWFpzf5j-dUoHZvmWaul9lQ93HfNINyXq6z_j_dHCMvRQtZFhiIi1Txv75yeubW8x9OCDwCpp2YiH2E_tdX54d4ngNkCjFQRdpqdP-cJvZJ1rCFM453MzruzAEpixMqM20p-0bEF0Ys0HLfK_-X9lZ80v8bVZ5kwTz-pjnE2TuY90GclDmA8GGWt-OSoGksg4sjX8z3-9lmE0yg0koFf_3DiUSW7B7uLbG3QxZy0MD0nWg9wt7ojiGJgl21DjKkHZiGUumWcfYepSL5QK-p1yKX1gWBoxfrWam4iGrujoI4XKNo53QJrt6Tt0eOt0ujsStJ5iL7jA6r-lZyY&t=AQK7dEammodWo3r2akc"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKDvKmEp-LVtj2-2oukwO1m4DEFWGNNOi1-RN305B_9NA_GpekLfyl2H9e5zSORpDfrJAfgRW5j-6A4PdAXws3DV7sE4MzodjcK82AufuhnfziDbJd3dK6-cy2J76B0weSRm5I6-6C15I4W_JMidA-bpQte0IFKllaE9zNagXBSmpTSifmVfxvU3WI3GAC-SzOoAJ18Iu7De9l5MfCUWySfm_2PQJg5vzJVixe8jeWDFwHoquN2lDbwS7n60keOjyw3Gw9OMdHCsYuVTfhfkagon31BxSIuHPJ6HL_nfKB3pgUmigMY_0LliX0LsqZhocVbirTeHjiE8ufpz7b2daJq72d4dgFg2yxvUEz59rVUq5OtVSAuWB0wbmPk9p-8jKOGpZPE7iWelMtMyN4aQiu0_lS5Jwev5n325vNKsgdF9rY6GPrOYGzVWLmkhdpt8YU&t=AQKz5FQgvuBqDi__T3M"
         },
         {
           "ad_name": "September2026-Hurry-AI-Boxer-Flat-50-Off-Weekend-Sale-GIF-Creative-Flatlay-V1-Internal-18.09.2026",
@@ -334,7 +334,7 @@
           "purchases": 47,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQK2ZKlBI6XOGqbjaNpzLEYVc0l0i6xmot-gEanG4MpUCn6eraCC75kb2nIkTIK1WQd8E7WvXKcBIoahmKYxG8lzt4GyuAQ4umRTF_BWBZH-QCgCXwRwg5k8DwJuUxvVeZYadZRnX5dsNdHvPJOySPXbBDYYCcfXzg68VOxIDzz63-EOgDqcFkCdP2IsXtnNCy3vBaHerJ4od_kkB_67q5pi1TotV_wtlXscIUC9EyQyxCHlWyX_0VRq6icZbMUKhbkYV9ydVATCrUmysH24N3pmfYbK75yPDplQ3OvH9vLowXxRQNeqcofwonam7bxjWsD-gkX8LyEiHpsm6mGpZ-_cvGcTUMYooCVKwB7jcQMXZbIiVOP01mC7URTREx_SXUEwqNuoBTZwHskWuTDwVmCghDPJUF5LW9jgyOWutdW7a4OOQt6yId1ItgVt-99NZLM&t=AQIVTrHzDqIBI2ULESs"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKXVnRsjYlB8850UgW2rkr51NnXshadWiOJvKM1WhVS_xL986qBgD2q7FlOr_Mv3busqxj5JjcCFQe06rh9dcEc1fLeurNLwC4dG8FYyym0uBLFrc--L22wEj7_TgSl64LgyAOf8kq0GTH05VmwidbbqyGdOhG1sfZx-bOnzgmLQHCEE_IkDMlPwYmukcaud7-zrkVKx-XykllYWWvKao-UrtOJWuoGocc0cttwaiZtI2HGcNPkxsPd7LVgQu9Q--zywnFHh4CsGMszDFZ7SG1dY3-1hzOMfdL_UtO9vs5XtEgHblvlNmhmxZwFCE43Yxd_txTfAPTdDmZ6cZN3lqdTP1fkMdkZ8hRjGgwB5szy7RSZkkrFepAGCLW9wVsxgdb7P2-O1_LiHtKb7NukTr68IIHNVwm9CqjpAfK52LN2lmOif0R4kbY9eJzPr03XiY0&t=AQJr-dReLLlP7yt6IG0"
         },
         {
           "ad_name": "September2026-This-Deal-Is-Too-AI-Boxer-Flat-40-Off-Static-Creative-Flatlay-Internal-03.09.2026",
@@ -346,7 +346,7 @@
           "purchases": 34,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKG4G4vD3SrJTfz1E_xb_DGC4xhFBciglnAafQYNtQ_Ns65bgB4CchpXeERsIuAXBz8pNC635BWdaW3VIrg1bfKWRvU0iRn-uYkgoHVwM1erKHr8gwEeKlSidJOO_7HX6QIVMz8PBt48a8QKBxRYkcFXymkCTBATOZBAe_j7kmisJTQd3fRvMq3hAiZPtICiuNi4dgti9jqmRrIoaotcu2xXjdsXNFw_2bEc6MZ0sElK9vIVhN2OY3cEe32GXx4j_GLnY8ISqFZKt3Zkx1NpAQZ5ir1g45rdxb23k-7JwXGXaoTg-m1JdIK8TmzHNlHVISjOSXHwD049z9KQHeIqS2vtXRo9YA6vMI9di2ynXRGmbXuqpY5DEPKCIFOL_qCFMm7SLZrj2bMZhY5oKzUmulsAr4hBJYorrSVNV_7Q9Ml_A10VvsJ0K1IdZEXOJNSGq0&t=AQJiK300KSDv4_7Id58"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJJAPuTJpa-Zz-pw4C8WENC_3n1zqx-Dr7vMfYTE_jLoEXR0awb_-0i88TXuoU2whMfWLsBi16_LpdemsYzNfU4LEZLKYQmEBW1F4RbewT-fGGFsabXxCMI_YQtIXhp2NEjU2MJ1Nyoghg3lsFoeq8MohaDrINp-rGQYubffmXLaUSgiC2iJaRTryL7qbYRUoSWQUcIKf71GOsRW21CGyNbkXK9AbGoCcaK55z5c5DPuIug1okiXzoHvb8gTWi8J7at4aiEE7BVy_0Cv86ro2ADCKCMGU2eGN3CZ4YEHI1Wc57q9hTqpXlu4if4EhTUiCHHd29AmvGGwFpx-y7HbKX6Mb8PzhWl7fRvU53-CcNEacEal1uRKCzS27wCL7gpsIcCVHBuM2qz-OoUduJss1d7GQWqC2skGdb_VHLX3tAyZbeiB3xxKlJ0sr04Bp-BH9c&t=AQKOOW4OgatB5bvRcZ4"
         },
         {
           "ad_name": "September2026-Scrolling-Big-Mistake-AI-Boxer-Flat-40-Off-Static-Creative-Flatlay-Internal-01.09.2026",
@@ -358,7 +358,7 @@
           "purchases": 38,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKA4qhdTB-m9aw0wg10_e9Bu4szWtKXDeCL21WjeoZ5bZXrd7DKavbHjw5dTurrh8PykwG-1oZFtG0FnJM5ULEiNA60_VT3UtZhEsOaYSw24a5fkEEf00SlkXeR62cP0qBCj0RSynfGfXHGzd-gxEd7NFSQDAYGARIZ9NLWwu0_INac3swmLWnsuselAn25wMl0s9j1v31lTD9E-mMAUAQMkzK3sJLS2lhSM9NLHLSTm3YvVIX2ezAaXPMtwJ1KjfoYKs9tD3M1KPIemLdl1lVDpoRkOSLch2Okdee30ZUOSfQcyLylroys_5T0tvxu9bJhYxjq-F_RqR1_JBDbfQ6CDlZgH5KF4PTzKaSRJ2WFJgkUPZ3sHC5Ocblu7hR0DS6JKkQHQsUbbBl2xrOzopFrLQxuQltbocRY2HyDFz1PBxiOMRRWpFTKfJYy_qdgErQ&t=AQJlLsYW4BGPzwFRHEc"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJHuVP8Jbt4zNqrrE1H1dVhJnMN81hT4H2bVFufihB9Yn7-0H9wJ-G8alUCUWXO6jf5Nkq2xJVkA5Yzhr-hxFeE9fIv2aLPBreC53zywdZp0nBJthQUZqt6zclcdXtiVegOwgT0ZLUFoJCVwk9ozxTLg5zLR5tSer6ds98QQwOqGFsefa5PepiicTYZZbQeL9xl7a9W0XelsHEUDxle2nLQGGc4TL4_5mp5JJg47cIAUt9cBix1qnw4IboSVBda_Jvj3L61tCD-dwq7vxBdeIqZT2rratltsQz--tp2gp-JcCDILJWCkx7_i0LNZm-V2JV0yDgq4UghRSAmTurlnVScWwF0Ql3xQWC7v6-OG1vvJQ_0CWLaYLXY24O4xQezBFNiw-CiWme-nKS1FnyehGVcuv0zRuq5I7tji2_x6dsLJWQR02HyTKpq4n-wyUpQoAQ&t=AQL1C64J3uZ2sHI1zjI"
         },
         {
           "ad_name": "September2026-Now-Thats-A-Good-Deal-Boxer-Flat-40-Off-Static-Creative-Flatlay-Internal-01.09.2026",
@@ -370,7 +370,7 @@
           "purchases": 20,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIvSik6rx6k64afunCeqrR4F0ufh7AocM533NLRL6X4nkGIZaUspoHbTqIAcPZSy3AMeOb6bX--uLWvGMUWmAj_SoVwylz2FlwvuVW28YoyUhA8O9-OxVBztiiw3qgMk4mGufMxQ1v3xXI8G4W248VwSermAZMX4G2Z26e72qUEd2539xieiH-HkPFRk_Mdn6mu4AjYD3URJ6_UCBEvaxB9MQnIRHMnd6I-cxQHS92yTFxa7j_vfJa89NUDT1gQQeaOtG4-KbEKWPx--vhurUg_L4_PMbbF2a04ZyvVtBjUUCdahAqUTFefoBG7D2nVUh6E_IV8aoBBjEQgyJh1lz_kW8l5eS1yegoKi21GwBlkORluOjSrKlaA8OOwJbNvWMS97bF6bQct5q84WKlwN1RhonSvv1wwPJi1NjnQHWAKQufV4agVQiMwlhfghnfhJR4&t=AQIiry7krn5W7PYrg2w"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKzlOzOpKr026jE_L9NAVgigAUDUCnc-fQ6ZqZvoWRIM26qDRcMUFwu0CIE9E5TBoC7GQF8OxiF_Gm-QtDeOC89-deZraTEd5uES_0qtlyOeRGxFDo48KGD-f6hCu-xWjM8pk8m49LgwYyi96yjTyQl4JvBC_2vVvpR8peR_ME_-yV6vazpJXkET9za1I5_cK8ZU_xjEmoRPUo35KU1jdDGErOSYea0l5d-PzKH4T7zDlsUqzTrtXD82oce9UlHgPmiyGKRKQcYPthvZhKajEZlDa_HEEFuvykFlDZi24ce_R3yRQFu3cL78Eg8sA-gfXxPYwtrpOCTORgOThqaaiHqtsZbYg5mLLjy-1v0Bfqkahq8gX70AqjpNmDxZlrIrtnYS474Pc9Uc3Flm_pqWdmHqElagNOCQEyns7GeDEjXvsmY-98QXmn-65fN71k8shg&t=AQKrm6q6SRQeY71gloQ"
         },
         {
           "ad_name": "September2026-Comfort-Levels-AI-Boxer-Flat-40-Off-Static-Creative-Flatlay-Internal-03.09.2026",
@@ -382,15 +382,15 @@
           "purchases": 16,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLtxNbDwr1cDtMzhYER7o8qEK8SVNjufNg14Jeuci7kKYIaH5aT-MJD8LqNfsYDlMYab55bT7kc8XOGPTyteawlaS3arqSU08ClAUjNp1xLLAdXgUeCsLx-DnKwbQRaWdlpXXkgBh2R7w5eENyryLCxwtFXVdBiiHWBuLKmhrLp3QrfiPI1xXRn5bAuyU7jG8Ba8Eyizzakv73PbpxvXWCPYRxUNMRKAcl6EfdOS7G5mhwCgkS3DL3eLayWqGI5_DoDZpUeR3hU8t8R5q2beHgZRTibJg3JzXTFKKltaGZ-8tGQ-fg1zN5Kdbb-3Zu0OjYBjbE5NSsd4PJciDm-35CD2nIOTNoQCjK_aZA01-KUSLR1i1iAP3sTI4Ha33c4b0t_-iWg_wKgUxGgQFs_GcYEH6scUzJYtjNLpXEhZxugK3M4vYCYOSG48PKZQ0d1Mpc&t=AQJCmfe0hGJG-oqoU1Y"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJteKr_KeSPG0kehYxkKMkBchbB8zKflFQk7o_ELClwa9EHDTaLfr12tuevUokIe-BNBigo3OluFHnO5I88lgMh1pGuWQFqFYtxdySgGLoVgXhPQKxuU1Cz4V7Jk2V9rATNZWH-XnbzE4KxDhVe02eWAPeFhbWrhoSRRrSrhZ4Eli9ZZcj7-hvvzC9hoblkRNDE0QQTN8LMMLPsmZiEThsYsXJrHBK1LCI81Q3XwHsWMkIdMdO4_ryVpTPh9NDq-IVogIp72rfWjnTfiAVa8tAaBWt7p5Gh5e1ZBSBjy-UhWIG6GB834roXJzt9M3JGvnL5xR10qS8Dmb5d90T4LJAJxE198lKlHM5wA2XGDm4MfFUTj1Yr9DVYzW6Liyule0mzjFns_s7pwZpa9MK4Zj8tmOTTFo8yG8YyU4P8Nmav6l7LDrHP-vLroe6kqNyOnt8&t=AQIn5ecTtjI1aWopV8o"
         }
       ]
     },
     "Shapewear & Vest": {
       "emoji": "\ud83e\uddba",
       "total_ads": 28,
-      "total_spend": 370584.61,
-      "blended_roas": 2.291831223104489,
+      "total_spend": 370587.07000000007,
+      "blended_roas": 2.2918160906153573,
       "top_ads": [
         {
           "ad_name": "June2026-Perfectly-Invisible-Invisible-Vest-MB23-Static-Product-Romance-Internal-10.06.2026",
@@ -402,7 +402,7 @@
           "purchases": 133,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ1KyeaKlzqy2haaldXCroswqblDdBDYWQ_OrVrR5w9USX_EjZqjjM9HIWjWgZWv_V2rruvkdo8MAzbpBG_Qzeb506IsEC0a-TVudoIEFwIyovGNN-v1nGSwtgTy_wNpVFaO8JX-uv-oUUmtlQUCYA2QQ9IApQ0efiST1sEbP7jCr8ne7gJ3ucLn2hsjwh_-JXkXx3RD7mYfNX5luFp-qEGrnOp1NhRZT-u4BBF0cNZpiZDsh3WAN-u84IlcU48PIS60xyKMcquC6h9R5oHpFDmt0KbOadsoF5FCV3yFYlny01lEVeu4y2EkkEeWiZDCsvwjemEt4iEDSUVE3eqzdO0vAm0JONB86nOHyFk3XodwHJOE_3TvcMw7Nmw1VhJZITnOMBEnVRQTF7qTJ-P56OGruOosBdujBSk0HZuLnmIYMZ7lTJF9YFqCmRGaY1cwSE&t=AQLx3cGeSB0_zXLkqrI"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ2av49oOzpU8iEk-hf4crb2SmYQeEkN-FX0A2QRKoZL4Yc9urq1x3402VScXa-xyuLHJEDDmiJMCAV3LBS2UKb8KpyIfsO39CplF2WIlahLuURiiaRau1WZ4whhW6HGGGmzA4Lze4rGTiekCKVki5xE8YZp_3X613B8kD1AB8TpyaAhfaQ3COZJQ3pQZRzvKBDB0fUGwwU3z9yUYpg7Z_DqOxr-tM4nrve1zRZX9GXi3Q8qTnki48Y9wDh25NAIrQVufVO2ZbufxH8U9WlAz-OVxs26OpxnF8u15abrogTisS8_YSMKeYnN49gv8pcTVNYf79mPUoEWJmPR_dO6J_EQTyLbqeQIPMtX0hCbScDy7OhV55GmV8wL0jdYtUrU_8tIDtrEXgmvOlghDGHfCInqoIG_wFktJggt-8b5UhvQO1bNddp0eaZOiSgRm0C7Co&t=AQJYgIkffHerN3u41pc"
         },
         {
           "ad_name": "Pros-MB23-Invisible-Vest-Creative-Flatlay-Under-Everything-Static-18.03.2026",
@@ -414,43 +414,43 @@
           "purchases": 126,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI_xOBge3EkkbNek2U0XO_Jg3eRax0ptW1fAlFDPtUAxXV3pNwQmMvew7gm5Y3d7GN-dEDHgnQ6wBpAENOM_sbt7A0mgWfN-iOvr7C9I1vjv2g-8h0CiyB2FZ6epEh7KO5_P2o4t-nfPPABrXNX5KdB-cHnhTdJD4gmTMkchTaw0JC120aKHayU86EtDisStlWtfVZfA1CnwhCPpisHnRxc6RMVpwE4p7wjFFaTKTcjZC_AdgDixf01wvLgQwW-u9gkzZh95mvrJ8AyvT1wyHAYkji3iKLzlGMKCEaB3xv6HgXfFBooZ66siyFUFKu8Hb18h_9nvUFy7mauhSFOSNsvWNXI_q_veiaU4aI8_QKFULrKEBoNGbp9X4MVopGRfXD2JmqV9cRVmbYRX0NKAVso0KyPkHC8JtGkaMvYYmJMIZTAkH1Rw-DW7-uiBILy9xE&t=AQKKDpI7_Yk618VZOE8"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQK7wZylpJ053myaV8lq1X2isKWMAs3Nr8jyCN3r4sSELRuUxTQYjDzFU6TIMhLcxJ5nBKLeY000whbJTGEfLIJL-qlC5gnwYqD_xKcR1yz1chQIW7Bqq1Fgbb7sHR7B5aVq7k0fqBwWX40aSrmx0KiWuoy67pCdQWiBSTWR8FaPybavek0zdjrIAj6VaK8pWUSqnBOQIt7i7-nXNorslYnPgMOGG4hUd6OJWr1dzJuv6xmNUOr6OUSG6HnHk98_f91P9WHFvlc_xs0fhN9m3xhCUT00ktHXmOA3c7LQc1r7Ci2kaWdtu56T8ux3uXKVvfP-srOaqkcBjU_zsh0KWUoi5YsbSX5Dwk8FjoRlLVsIj_X8d5jC8WK41pYs0-6LztF6x3osTEcyHvM9ovEDGB9r5ivI8E568z5IsddLfsjZAYYbXl7GgbCv2vM3U2zJtM4&t=AQJaWkhGxgXE6npI4ZE"
         },
         {
           "ad_name": "June2026-Every-GreaTShirt-Deserves-Invisible-Vest-MB23-Static-Creative-Flatlay-Internal-20.06.2026",
           "ad_id": "120246726413020298",
           "adset_name": "Pros-Innerwear-MB23-Invisble-Vest-TSQ-Broad-Statics-09.03.2026",
-          "spend": 36437.17,
+          "spend": 36437.25,
           "roas": 1.9029,
-          "conv_value": 69335.99,
+          "conv_value": 69336.0,
           "purchases": 50,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJaxOGrrJHUwDlyZcagenIK-U0zho8GuhWwUBoKm4yNiC-rVy7Z1v3GFTbJDWvOJkfOsoQC0vmzTLNv1mzRr-xAkTa8mE_kfMnE8UPm82p8h02s8Un-L0oSymjGwl2y2Vo82EG2fmjFhGvTg-W_oosfP1oy3QLYS1G1ZzCICAR1GsE8pD2DbGIHmyhn9UsZRLT0p06M_EAhZRqQ6q1o28PfO-4rwNYHQqZxzSQbqb_VCsNTN-gEe5eKD7TjaWpDMkelIRrnH9zrkqNHms7Yj-fUYdE75avQ3b_XTUYdII3L5R89gL-icSIa34Qqqt8TiB2-OMtcExBuB5Fjag_FFrZU8_Yz8iTNhakcmqpeZIW9pym7ZtZtrt3iTAjen-cEBd0-MnpJjPs_nQxQYfMpfFF8aF8xuG-AfNeQakB_nsKLZ9O2W7TYa8FoR-LfMw5wvFg&t=AQKmqVJEXNPTnKkJbRk"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJQMtwp_UfenSQJcB4OnRntaOmKO9XhwyGQAyX4Zc4wka7-MzeRQ1qzCoi6cax1UXMUqbeS8jjvtPbUJnZ-IiL7uaTfUbXb_GKWq1OgjACEXKwChDUYA5NSNBZ_-W5a6f0V5AhgFyGaDTGXkke9nwUugOEX5k_AmEeMD3v5clR8V7RVCRdXRsdHuUe8KOTN4ScnVhOao4blw918sWzUP8rMO2OlYWksmeGbN_y3c13UCcc-SjK7pJvYTaxN0EiKATbN2d9JSNGkDW1qmlwIuSPTJAC6ZFLlrE00vp96vrMgkttCEgabkGPoxyWHSlPen9XNdqBO5yoZO2xzIdRLst-46axq3bjrh-RTkjSfnULK0bCkS0hJZGvuDmEsYbXwo9Df4l8ofhY0YFkDj5HSGxkqqFzkWLT_v--WS4G8ecT4CI4tH9rB6XZuVstvYQ-ZJIc&t=AQIa14ym_fQ8aCs7l8c"
         },
         {
           "ad_name": "Pros-MB23-Invisible-Vest-Creative-Flatlay-Invisible-Mode-Static-18.03.2026",
           "ad_id": "120240811312060298",
           "adset_name": "Pros-Innerwear-MB23-Invisble-Vest-TSQ-Broad-Statics-09.03.2026",
-          "spend": 26844.07,
-          "roas": 2.6969,
-          "conv_value": 72394.78,
+          "spend": 26844.53,
+          "roas": 2.6968,
+          "conv_value": 72394.79,
           "purchases": 55,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQK47NmcRI1mpBHP-1MvmJbr9KRgb8_QhaCbA-9TOv1yChmw57s8E-ajuGLpglkTh5EwQzu_A36Xwimr6YckbqgeiiwR6qNDd74H1LkGOFFTzE67Ktjau5TDLczt0q2PmgAZq80expJfzFy9wp8OwS6Pxwt9kH36k8Jka4gYXHYiPQgHf043upJZULiPyLF1c67ttvtrgfhR52qlO4yYo4x6aDxhOzXybHAQOvSR1Ywuxyep24zx6HMxn7LdI8t3klP61hJNUfihX1zPKN2vT2GidEL2_Qgdp4kGSNbLLsUKT17GQplpMOifh8XtzHC-2Lnb7c6fQHIwD8OYbGoVcriDwDofZdj7UYA5yXX9LGtep9b1T2DfH8mmZhAexjd2j7VNvhp-bOlxMLhfgyMJWsEulcLu8c48_Qyip16-CuJwG-lrDkvcKAXaRcB6Zbg_xU0&t=AQJ44GyLltzodgIbGfk"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJocv2gD4HcurB__w79kGWRGKslMy35F9tYcq3wI0MEITThoAHcFY-hvdBx05MxBjrbm91b6kkBcSIwdXregB7CjzYQorcK40jOYJ8UseXeUcL4n8xdme_f6MbWvmUdS8F7DgidsRo3rn9H7ttWHaRUXXyXxV6aTQ1mhU-FerZVGqRpGF_YjNIfVziPbX1A_YvOnvFiMet7pFvO91pHUwZaePsR8-5ekRTwdAdz43ICdQ66PhwVMv8lNIkmSZ98YQx_negFk4eZ-UtPwv0Re_WP7-HusnXLCyCHU9zaO522EmSzS4Xkz3WigOqAMBnQ1CyQA927es8AGaGq05pANolBxAIKN0S3rURMcPrr8XAB6DkfPZFKcsIeyhsGvidnCpUXC4mrNEJGx-7uvCzSKHoT-XePEXFEsr32KNrNdfIQ8LFAX1B9oa3PIvWjK0uzc0k&t=AQKKyhSQBEsggb_y5G0"
         },
         {
           "ad_name": "August2026-Buy-Them-Before-Your-Size-Cotton-Vest-CR18-5-at-999-Static-Creative-Flatlay-Internal-05.08.2026",
           "ad_id": "120248634544870298",
           "adset_name": "Pros-Innerwear-Vest-TSQ-Broad-Statics-21.04.2026",
-          "spend": 21826.27,
+          "spend": 21826.3,
           "roas": 2.5728,
-          "conv_value": 56155.39,
+          "conv_value": 56155.4,
           "purchases": 50,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIbOY3HW3EGm4ZaMBwKdl_6Em4rBjTtK6Cg8owSYea8bPeQmaG8I0GVCxIdjpehMPO99UMMf6VQ6XpbfD9jzTbXXrM5yqMXKRDD7b9QfHAXdtni5vWaCAFxMJZYZL3NRb2zZrELXJgtkPk8NVbHUZne4N34-Dk6cXldQzqlOSbswsT2R5izrlcky0hZ2-Y07aj_c5sXCM4SOdOl7r-_GTN7UY9rAlptRugt12Ftd-KDbZ36E2SdzDGIyK_jyU2vR48xo3qwJEr3CiO6AzYRtLBinKxQrUmUQA4LYeU5WTk8KT4zF2MwBvJ5NOBIwcGHv32w9RxgizOodZLqmyP2WtROxbfw327rgwdev4EyyUbChp96Hh7v8OAtR24Ic6_f6n3SsvdFRXdk-sa0H2R7KT34YQhScOYq0dI1fdZbPHeKoWpSwYp1M7h2_sVD7XnQdQ4&t=AQIz5OJa20RY2-ji6aw"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLTrYEdvCXkgQWzJ0HXkE2Y11DKBYsjKJ42aOS7VtrzxPp9vnn5nTGRkPBfljz8etBTem0BnpAfL4ZuntGMaZNlV8KbuurjTBeklwQtV6zkWgwepaKmfVKd_NumzbDDQz-dnwXzJ7XvpIkr64-2HbI8_b95eY6MSmFuTXLQsJi_jeX6EyHrBMrT-PLr8vQP_TD_8WQsLwOojdKPbvNW07gZrmn_F7-OcQjNjOUhX6eZmwmLWBKPgOjsofUMcG4-rI4DnqYMHosmdq1QedwbsSu2Al48eDkPnSyUjYgfAtDzAQVFhkLD3jlJcxZcJFGxZLzrP_4GZ8AgwOb5iuIKWy0zYHeSpZe5_s9pNrOkLv2FfMvtQWl8oWq4TWyJBJpkY-SSTC6dL5z1m_g8FpKuBQSMPvj4qsBMHsPFRGiUzLOFrr6hypCM9zgsE6gZu34rP4w&t=AQLzDIXJTXZ1cCj8aj8"
         },
         {
           "ad_name": "July2026-Stock-Up-Like-You-Mean-It-Invisible-Vest-MB23-3-at-10p-off-Static-Creative-Flatlay-Internal-10.07.2026",
@@ -462,7 +462,7 @@
           "purchases": 33,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLYbgzY_09K36ViQT3qf7as7hju5SXj3s4HO0o0r1p7aBCfZ4pZQL2QOZqsE58wNz2CSwSdDpBoPh51xFLPtzWNgFbHMBKuBJidquXPLstNipl5Pn6ijqI63lC4dRExX59rT-8sp4rFHQH1GYJjnYec8xyzZWCXWSS0RzWzP3pUu0S04yghvfVGbuSoPL0oQQSotrlUjXTSBHKj80LTjZOFUdo-suFtbkl3fGkQZX2h4rc3kBMel7-mw3y07tfkND7iyebxEf0ZBU9k0sUEbjqwk7etcqGey8mOazKO4fbpG8G_OOY5BG-uvKegbZCnLx-aq4TNY5X7eNkUg02P-bVsqJr5CPsErgtYBCXFB1AcqQRVkTBw5LF-oUYk0rcw4O5SlckV5JCCHulfR2YW-3TwaozgGcRIoYqFMbx252h5rOljHzonKtU5gFiqC7ebEJk&t=AQI7HEI814sTJGTkk6o"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKmVGH0IDFg221v-6GTN44ucUyflEAUmBY0lLrNCfHdBpghbdAhbM-Dc-ijYNh4vJBMXWwuHWP8escYlEKBGgUHaa58r33c9P0h8DXQRYBWfc_SUXEhwZr3SDa6G9mPW47L_elx-n7m8DWP4A6Ji4JeQOVfV46cZaiFYZIKXOnhvNuI0m2SgGCt-KAqeF8d0gxjjDDrX1POfzHLUIO56_JKsjB2AM_hOuaGozxil4rTi4bW3OrLtUfdbMEsiGka-iWwz1u7Orn5uKMT76_cJ7-dYdj0Zl1A1YUb-qouFtp2Vw4ScJU-5KsjWJUCeQSWIFH-pfbvia5YwvQ9ySIlA6r6kF8fx0traGlfSfG-Hk9vWT2X1p2VSsRIDRXSRnIwWmQsUJlHXy5gG6sWmhm8C5jcfW2hTnDzfhXEw7Qkd7tmJwWxC6t9dA9R0uUCPYbtPvc&t=AQI-LJGPSmsD7GdC6jU"
         },
         {
           "ad_name": "August2026-Spot-The-Difference-Invisible-Vest-MB23-Static-Creative-Flatlay-Internal-06.08.2026",
@@ -474,7 +474,7 @@
           "purchases": 32,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKck19YOd7jvYeT5OsaLZw_RgM1P9Av2m3RvbMcrUgGn-TktQ6cRKaovtR03IUmfJ-mz_MWOGcbXAmtpyN3cJHh_YxybXugZ2CBf263W8mPaDWM7TpIPBFadj4a07iR7oZNLquisuANpv2F12Nd09z3i8qzOw3Sdl6m1IYv5e7P3ut4B99rM7j-xGuiF8xvM0b3B9bOiyJcghqXpB17OVDR5yvkjZvn3HxFl-9g7Z49CgV6LOl9Xrsxb1fLIvt7Y0Fd3r8jmJWiOhg0F6EpO4yxPd38T8sK3tJKlm7q7DnuHu6u4zlDCD6tevl0OcI00D5fxkv7jGwdOl33031AcN5qJYNM0WvQ2hxOPAVFDJ-MFYM3xy3vPOE_Z9aa01HrfGkPw657DXWK8L6nGMWIBQK-QOu2ONXIDcdo0Khatd9TI3tYkFZQHxa0Ck3xjiCoiQc&t=AQIic6phLvVZC20ty2Q"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ0nmcFLeyYxGi1yxusvhAyU-LY9isgU3AvVJXZYaS9sgjy6FHf4ExY3zAScOUNfLqDvoUAkUvH_wRPts_e_GpyKgj7xoG41vgDxbWA-WQ7AzvHMb_--arYh6ZduknZdAAWuFfM9RlbwPmxAflpGrhV5Wxf9C2OxLHUdAaICBg0vdAkjx-9DaDqxJMC4K9M8tlGv6f5hq4XQOO0rptCeHmYt-RJmsEtARuizIzrYdazsFSCrTLCHL61_MbiswpTKBMXNXHT1Pt6JTZBEXGpMwlBdceTDKDJG5iMJBjP2HN7-KZ4ptqm2Smz0xOEgdfwJPSZETSfTn0sB3e8CUaEDR2WX2ZO2IE4KLPDn2xaf5QCzuhP_0vOTEZut2uhETs0nyDI2FeFKvI5B0nOaw8aLUhtu39VgH8DqFAA46U1nnWxxf0rW4y8HH1HPdgJBeczTVQ&t=AQId3lTSiwgnKX9fQJg"
         },
         {
           "ad_name": "June2026-Well-Find-Out-Way-Invisible-Vest-MB23-Static-Creative-Flatlay-Internal-12.06.2026",
@@ -486,7 +486,7 @@
           "purchases": 39,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ_s6m6FCp7sYHhVhXPqGxeyHaiNQChaVivbf9O8H5yzN8kn70bFHuO2RL361zQsUBInQLO8hHEl-Ik6ZnEvXw8LcUn2ypIKyEsmJpLzuP3GrkUJrDmzxaS-9yRe9k3sdT0TCHf1m8IKGelUe1HF7HfOrbBrj-OyyWJ0nMVjwbYB1SK8Cm2x9KGRYQUdDjo9rtouafRM5BfDdrRtfwuoYPxfz8_4WHoM3XCvfOfT7U2Rl4qwRDXNCv--2k2uCaNDs2ROVRkijHL9zFHoFqI_Dm43p-l2J_NiX_rbGSVFNaZ7nvnQqyDyT_DEn0NtSsXNOcI41bN9Ys9MMwZ8qKEhGyU2Xgk6cMavZHHC92jghId3dPdO151OqyWIF5gt1_BeJch9VT__zs5K0_0tII_LUYsAubMgO7-ls5gi8Eu36EwUMY5yEGK4PV0xQGnLymLqYA&t=AQI4_-ELNhX8QD1uMWI"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKWKJp325zLbr18zVb7GbjlI7bHUI1bOfvWo3YRs3mrDw00hB0Wd45Tx_yXb7qCTdou_akHN30tYdH8ALcbeukcQGcJCjShfeCfDfH2OxWEu-mO54tB-FqdniQsLKV_DNcYLW_sZvK2f8XOB4rxbkCPvHgIy8gKMqVxnu5cXf0an6yYGXOIFBKjLXEc_S8Oto2lgKyPSx8K9tZ0MipA2dQ8zjt8f9U6PbWsrCGrJmtK5nKhnaGbYTGLJZBAqTg5vcU34pMV0IF5o2ghqHv6V0xQw0l5sGNnAnlM0645bLM1kKwXPo_JB7oAJnVG17k5rj59u1CFS4WSyE6urxRDNDfJwD5-PJpbFgsC_hDy_pGx2F8c8vzah9EASgXWo-oEK_3zghOhMRn_SHN9n6eY7HJ8tSPOUUVdCipqkCiq-kwCV000ekpI_-kT6vgysTrlqOE&t=AQJM79xSfGz1FsrBUos"
         },
         {
           "ad_name": "August2026-White-For-Good-Days-Invisible-Vest-MB23-Static-Creative-Flatlay-Internal-20.08.2026",
@@ -498,7 +498,7 @@
           "purchases": 27,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLY-or9SEhtEOAPm7xFbwn1BVhKmFHWdcrCNKCvSyRSUfLDtJtUHE9A-qY6n9tGwasO3HbhYAlN-fIgnT9Zl0vUIon7ymh_FacexhWMuMeCff1PjpYXyXfahRuntm0PMCslmGIoI14FNLBM_R_2zpaTZbwOLfI-9Wqw3kkf7KxKvZJK0K5Npsrqn9XNA8LjF_IqxEpAOj2Eezfsr3HkWU0ph1CAvRgEap_Srbe5z9BN4ZdLOEN7P4pfVmMVmAhTVNTz7lP76M-Vdnqg9op1YjNWrnvPsVS_ub6BCpTTdENI5l3tklFv40SV2bsG4gT4kMoJgR3kpGKDkkJPxVJ257FpyXpZp02cu6e3DuLbQK_X8MSZB4YnAiD29A5I7Jcn4dH5aIk-lU3IzgEaD60NXJl4l00tGgInu1lbnxhsotbZ5SuQAF31vY20U3wlRJMqJyk&t=AQLJ_cIrNML46qkQtAw"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJvqRbAM74cFXC4L_fde6WLj_gmj7g2KDDCCh5uQAt6C8pBXSsZ4Etp6okn03-un0xeT3OntJl0Qsa51Gh38lRi93NQNOREwWy2SNUSDRvDDGKcxQIZgJbqDIpiWWf_m5JOjRnTxpt0wCd3dUwxGOBH_k3riqlGGsqRDDNCxX0Q579c4Q3ti3RSNxtEuYMlYnqhcZqf0G3o26EpChNPmn2RtzAMMMx-stDXSfhjSurZ9kT4B3puTjdLB5ZFEbag7ZCSYDvm0whXlAxCsN7ONZ1zN1EN0uOC98oyrAFgZaAOdrBZZFIXXeAJFzw3bpGYlW0zkkpxzT-_8eT-Yp2iVlC5zY9nnawbQhMjRkfJVy-N9GCpv1rMPle2PgX6HOK3tT88IaVIlgB8FKKdUQc-5UfQH0HB0o86hrjVuPh5-pE1dWUqgUE4lNonc4OW4OPj2Cw&t=AQJUaXctBLJxHbnRw6E"
         },
         {
           "ad_name": "June2026-The-Difference-Is-Clear-Invisible-Vest-MB23-Static-Model-Internal-26.06.2026",
@@ -510,39 +510,39 @@
           "purchases": 16,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIINt3t6Ez6tD63yP7hMFlycIphR3EX9sd6betWDBhP4r9sQLyi5wFh0BqDvomtIe4BAWb29b22zinbYB90Tz5nuiJx55WT-w_sx15G36WP2Fx3sp57Rx7pLjhgFsEFZv3kW03KmePna1qpLs1JaOkz5urwdXPjooX73u4bUHojp3Q4pyvaUzVaMwKMK-dN8s7uu0kJEMgxSTrOJ5U3ZeCTkfcvU9mUJT0DDpwkXbAE9MwIMz8TX20FP5vstM2SjeIiRX-bl4EMTbUpJAIaMv5g2dNhcEDnkTVLLyOkYPZ7P6ACyhqxzv6exPD6WvqzvYRGQns2kgPQSBz7nExBMlpZB-PWxTaBcmscMBty5Itm4QfvAfQEsv5FpDkkj1yTfAFr2VIMnetyF3GrOMeqr2aOzqaoZ01i4xsbOuDZUYjU6Fg41TW4sVbjIbxuNtkdNiA&t=AQLg-LB1Eyy5OvGZTLE"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJidwa_p3ELuooQs4_0WTqOANxOmOxhyuEBco6cU6R5XY8pWvKnW9aQ2X6sWjQl_nXVK8Qk0v4C-VyoFhaLdKcwhCjr-pzGQ1PHsjF4nYgnVL1P7uVZ-GYPJVJfK-bkuihyh8CYRl2gzwz9V_xJG2LuE1bCtkeqGRuoxxM4J_-2kIrqQ_I9lZZqpLOFk2hbk3rZKYxmlN_U9MMU6f3e2wLXjhLuhB3iiPU6uNYRyoekPsXPcyFMwyCgO6lKzW1sbsUT_XmYOcFBNS4zrajqGmAo2PQpFFrIgS_2g7jO4YwFfZi7GRnBXcXNCTJ2spzz2ycKbrme46Ydg74R0-TijLV_RqJm11uYEfSN0G-oLmPgu0-sfA-NXAzqnD1eddcGUtegprRVCJD0B8efR0YiVp-Jj8JtZDvveajLEUcFHS5a3l4lA8V3Too5Mecyu8PGaho&t=AQITXs9CAi-F_LBPj1A"
         }
       ]
     },
     "T-Shirts": {
       "emoji": "\ud83d\udc54",
       "total_ads": 20,
-      "total_spend": 144419.35,
-      "blended_roas": 3.321446814433107,
+      "total_spend": 144420.96,
+      "blended_roas": 3.3214099255398937,
       "top_ads": [
         {
           "ad_name": "September2026-Sweat-Dry-AI-Active-Raglan-Tshirt-AT01-Static-Model-Internal-01.09.2026",
           "ad_id": "120249379556680298",
           "adset_name": "Pros-Outerwear-Active-Tshirt-TSQ-Broad-Statics-08.09.2026",
-          "spend": 54278.05,
-          "roas": 2.7922,
-          "conv_value": 151553.05,
+          "spend": 54278.6,
+          "roas": 2.7921,
+          "conv_value": 151553.07,
           "purchases": 113,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKDlCDeNvoUnhzUEIKdPu5lSiKmVrtUBzXWLzQJJN0L96yLGQ-QNDYCYzvBrkYfo7gmiLXX93QnNOT19S3CAMBGQqN66cmWbAlFrDaHO6xLQCSpcgVJiE-_s4P7hURuXV7oOY15MDuzfDZDFXAa2KfH53RkPlHlV7c81Y27dsjedL9prZ2-9Zc0Q4MD7o3qfbeQIU80_f5Hs7P3r7AG4RpVSL33oAmXETPP9rm2LkZ69TWQBN51xpLHFKZ0p6VqfiNl7zD8ndnyCe9xsSRBMAldK6AG4bm93VQDtrbY4tYgMJgFdMaxkJYyS70Z_GdvaLrgma6BJSerNY0MLzZL2XXOUlx39ohdg6AH0F_FcQgsBMi9xUAEz7ingHtLGTBPWXhiV1OlHOzgyLpKrwNkBpN6NcaBica4WXw6dHm2JS2F6nV7xLE4YSdCeefdPPVJqyg&t=AQKCX58t1l8dATTHbIo"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL5q0tadBHfuVjtTuG_KVlCxH6cedOxw13DgsNhF42DpMUTy4dy2vRN-Gyp64QHGOcZewhc956XZZjoPNPypfHgKYAyR_-VAKiW_yDBnyo7sBOrb0b9UB7BbBiuYshCbgItcvYmYc6OPw3K0mkYZxdxKYybz5WZMXgu4AXdPJMrBst8yOXxJSuau6wK-6xTpazTmXuhXIRPrIU5xXcYR7uAqCzSe_AmiKoxgm9gVqZob6TkPB9e17RivGoCOZJUOni6rSKJcrAyzHDmAsscIKrLHLrpc_t5d2pWS1PgXAJ3LNfJp1t_8jazo5zRDp1neA48Juv7vfxJL6nFKM73Ix_ot__eRNGHVtcWU7vvjZnbgO_1Fw3kUxb159AmPBjfSiEbvKoxGabXaIA2Rq0prdhh5fdb2keevRtRdGD5gptFve7NPw_n2rvm7uUzM1HkWxA&t=AQK8tBsE1-_DmyylFLs"
         },
         {
           "ad_name": "September2026-One-Tee-Every-Move-AI-Active-Raglan-Tshirt-AT01-Static-Model-Internal-12.09.2026",
           "ad_id": "120249447074510298",
           "adset_name": "Pros-Outerwear-Active-Tshirt-TSQ-Broad-Statics-08.09.2026",
-          "spend": 19443.73,
+          "spend": 19443.82,
           "roas": 3.2866,
           "conv_value": 63903.67,
           "purchases": 46,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLMfYntmlWHdfXkguE_tkB98oV8ckZY9T7nQwTK5Y92V8ybcdhjWaIXtklyMNwD8pqRhBxPVXbYvBO4bNAIfQ-ZvOpr9SIZwI6b0BvXmkWcl7SfBflV_muQW7trBCi_YrxUWRz8EsJYiVRHmsuWJSSlLJho4wBIMo6Qa47eIDEPbr8ccN6LKyDiHkPL47Yt1sqXwr-pkrRr2KKP9GQaTqlKerP0srqNULQvmgYXu1-SyRNe_Lv5Jf8CCT1VWYYjBVpSJRjbr8cU6nv7acyp1xMfkEzoDtRWE13917YWcfD6AFUQs-HRadJ9Un7ozEfFHSampatU67FmrQzG44JtJ3otdgOViPr6j72W_DS8XSzfPxTmIe5oh_PKhrkaElcqU3MX1k2bd0ntvAmVDqz-b4CRCB8vU2HNvrARrdDQO87_YkOhKi-zr2YcDPjFCaLGD3o&t=AQJCtsDVeabHKZFsd8E"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJIe3WdzVVtUWjXDNGQj-8HFhbo5jdgc37b2QSmTzzknR-QSNSkozQXb77p5ETkTEsD6N6scRcwUphnhvaSANOGwjm-KUNUrPf7EaZfRsRzosgo0N0GO7mA0GK0YqC6YQu5mT6IM0Dzp3Ux9KdgzdAEkZMeVbFWakzReB0o9ROyoJ05-9fgee9Et4qpXlnJBXKSbfUxTNrcyqcMXllRjRUKurE_peWqbT3KKLQyytgmXeOWSU1nsy5fiqiU1JHtZSUdhwJmOAYEYaW97DHVdCvS3NEC7UuE0HkinvCjgIaRCTYOjwV5ZEuLcZYvj-nfT4JMhIBzCFCiSFm5mNoONqyMVZ1tiEPtXr5UgnR1HST0by8RiGJ0Q1VGbc6Z3BU_oLi66Zr5UxEh7-o5dUjueYiaG3t-mSg7NnpRG8WC-yeZNUq_sRHhROvOCIcrLz6W84g&t=AQIaYK1aSdnOrEq12QE"
         },
         {
           "ad_name": "September2026-Running-Long-AI-Active-Raglan-Tshirt-AT01-Static-Model-Internal-08.09.2026",
@@ -554,7 +554,7 @@
           "purchases": 41,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJcqNZh4bkvU6znmRlGRbE09HzEyR_XeoJI0Udr9DGNQufLw50-TuEhbrrSIxE8ufPBBI9YB0uM1pmMWeO4hf3onbyLsocd1txYbzBPJj3wm5z-z4fQNptKMNykbO--n5nH9iG8wNgH5s7fLvZ8YoBHnSYgnQefcbbE5r1rqX0DMnwaFLUOQEI07Ag4mMdB6rxU3Cx1zIWJgJHGC4HtIzhwVWJOhzSVLKPj7634xL8xev4sRxEZDJF7dRRPZCwZWup-4vdWoowQHYVeuQwkOcvYicl0NLG8QmdRbBi7L1vs24o_sFNRD4J1fazZVLVrMI9-3I0n0P7AYOieAFLEjbrFoyYHKzu0jhrZVe3Oejz-yuaphxRBvDmEzbcT2D65plFOni9T0Vfs6xsFfo8hY-dRzO1SNPpyjfl-3UtEWUtIh-MeWb8ddiW6xTE6rmtWPTc&t=AQK6ME5pGCuXd388FdU"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIh-qDMEOgDeU8ypXbzaapdQ8ssgoJQV4v-uMk2eK6DruOOkw2tMW-4djuzBKVOhRGFvJ6D0ppWaG02sWIsvtt6fr2VpmB6YREc02wiL7JgQgizhzAJIKI6NLkNdh5nP5iAhyodhCtrTZsXDpOik9CkHmfPJkoroq9QUbDqAeIfRiLdkXq1YGNWqWXa_NqQA3vP6WfwTmUqtfgq59KFs19AOB2lkvqkmgoPjcUQEcylM_XYRXAFrhqYHuZZA5qLwVogWNtqa_56lC3c2ukU4DAhqxs6rJC6J4QhRKeMPCd8yKGlrOIX6waM3YUVx478eE5YTxMPvqyeuOaroqG6vsS2YBlU_t-gEi9AU4__3J5svDV9aKOVaXfwbrMHGC3KkxY73tcSqanlEZ8ybwlEI2gkQd6FrqpdVC_RKwWAzLIT5YnTvxGQ1MJVK74hv_4ajmY&t=AQIOitpi67NfNJiQZgs"
         },
         {
           "ad_name": "September2026-Dries-In-Minutes-AI-Active-Raglan-Tshirt-AT01-Static-Model-Internal-08.09.2026",
@@ -566,7 +566,7 @@
           "purchases": 40,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKF4fCdziC0cOEbY7DMK-wrn6HUhsWyAJ6jk1171NS2lFu4HULwFRr7tHh9ed92Fo6pdLS0ldIsil1It-A3GO94O0xwEneb2AwAc8aMu0oG5knxX6FJcZaKXtEySdBsSvccPeK4W6Ivm0RlVaGe1YoMueM6ydOIXQyCqgwAd88rVMdGwuEzBiqW_4qazTVm7hLGz8oVzXqHcPHYGX5YHKBiIP_ofud3Txkimshj2pi1HtbeqWYerpRJmw7tee3Xx5vkwwByl5x8hKaCDjkg0PYIay6RpV55TrzQJF9l-U_pcncGQeLNYAB4HUMQwNPrgAS7I5VQXS1QlJy6YknH1hMlY-dtFCbxQqtYR3t3ayngxYHECW6_whZAy3BSWg8V4eo9L03U7XuGk0n5rb3BLNdX-DEYHhutqLZEJe6BZfhYXzjPVsAYjyU01Go0XT54h7E&t=AQKa3E47_F2AJgU_6cQ"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL7R0uFq7EPhvHRxaKhgigNMPb4Uqhv6RvJh_DohSytD8ahvIIWqQ25ZOh7ykqR2KjDixvpyT93dobZ7AECtTI7uibfIgLmN0_B4xx2yHbEhx7meQkWedw0cv_NRqA23vJhYkfAGnxJawkDbg3r5NIYPMwaUKNGkfomAY0Y5fUELZjpo3PQcNAPsWFZxVoFWBdMXQa8ZwsDeoqwa8YDQdYOu9gCA6utXb3gOqpMG8L2zLK17Bc_IidRA0FK275VIAcTu_eMFnPGUxcS1JwB9mzgRmC4EGF9a1k3vu9HEjAoCdXL8KOyFZDHXF-agfKkLOjU5fX_Bs_KsXQc2l-q1NwMnbp8djs1sSiWFMRT2T5rwF2St0488tRLqcVRa9lyII6XofmbbqJS4wu4MDlfDQ6tZ9KmRn6QtoKhSHfRAziwwyPtFCzhjq7mfesYdNwJgMM&t=AQLaENPseXM4iY1W5FA"
         },
         {
           "ad_name": "September2026-The-Workout-Tank-AI-Active-Coolmax-Tank-Top-AT03-Static-Model-Internal-12.09.2026",
@@ -578,7 +578,7 @@
           "purchases": 16,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI1U3zIEToGrXzkO0_9W8pAADZ8J3OJtNbK0dyVchYuStEEFhR7N7EIbh1NE3qDo-sdkK2EmqwxKo11NsxQq4pPs_s0Kf812g2pWbCigbh5TJAuLg2mmSPSQET4QWMk8kxODhxkc5QhIN_2i-uz2I_mGpu0OAb_OL7h75xbokFVqolMl-25ZMGvKDSQNQYpOR_61S6sOdc5Jmk6oNWRlL-oAqehGYyCXfbUWoS6pfzFZrx3ps3SlhLJUDEb4t3ejD4EHtVGvYMKE1w-N7vzcL4LHe5EsUO3YC2BJg6XAfAu9eQf4Othc6BwdiECCWuR_UEHfuhYo7BFzbA4Qo0b6EYN6M2rV9mNf5kjSTaMN0SmxXSY1gWwDUlHWq7vPkMZdlPYRhUaLpD0J0qkT5tz6ENbB-H97Z6tYDvxks0DZ2Ui1NU_hSz-Pb4uZFPok_fNbSo&t=AQLhyLiTiqbAQ1ycPI8"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJmNrzrLVeu4LElikBoTC8yQZ0tv_nLl_BWFylrxww1ih4ZMQIXrfrdU0L_OUYnoe2zex1euFm7UWN6Z7norsiLhAGsVpPh0V9uJQYJ4UWWRNA0cbHTejcPvfRyJwYD_tcxQQGcMVxgQWkxlbR-Vaz7kLgF00gZpMSDxt8FvbD_4GaAupl5eMxrB5KNO-ukBg0BwivH4hgUuWnZIcEeE8j1UugSFmRh0HbD3ri5kq7m1gWVOqbFxVBiACrfoQGShrJ1XLotpdEFZWDYA7mYNaNg7De42X5OxJxeUaMU4F1Zq7MWzoeKh3sMkT7eQKD6Pt6bMzoaKG8HNSuHfFVK9MqIOJWrJ32s_N0CPSEFI_l1wGvWVjvC-zQ7Xs-FRNLUmO8-QyQxY5dKz8kAo2WyboJtCX9MzQmFH938l7TAxBZGpXiuLuWgR9Kl_1aIa9aFpSA&t=AQICxXAzDiJlWsGbWvY"
         },
         {
           "ad_name": "September2026-Only-Tees-That-AI-Active-Raglan-Tshirt-AT01-Static-Model-Internal-01.09.2026",
@@ -590,7 +590,7 @@
           "purchases": 14,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQK1MJUaaeecZ8kumRzIs2GPlI2EncEedNQJYCLdDkglu1hFvKfmuJmRczfln5ihJyYgfMltE9lTDNsqSfAw6qgEvxLS_pswhCWsfMxG0gdIiX4aEMpMVpK85pIoqmPPsK1CuzsErN1t_Y5DR200LHjnl89qMuQNbbrfV-CqhsAltQseuayNzXAvHbB2O1fW0NUeqMDTU3FMQwH4NU0xLGlqXRVr2Cgs-gJIeJwLDa9CiNKUUu7rNd07hGQ3USNZjzs7pxkQ0SFRpZQXytlQiocbgO35NIpoFH-OqOTg-6_-HURbrsxQ2OS0rR1265sjUOjYSCAoPm-8VxueB1TlXJ8eJLnf5MiWfvyUYmzG7whdD_e_lxJD20ND_LfMWmemZdtzfQX2r15ewl3wZoI4dK8C_khH3HlldI4KU6icLozLDArf5EdGMSV5Uxs6f00Vlr0&t=AQLCBDPP8M0xex48QoQ"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIB5lOXdOWfZm--hYR3-ChzhmPuNB_GvIlSgbKA89O5sY7NkQNyQh6g4EAYrvqTq7Td5jh2t1majpSm-cLpv4qcjxYGSCfwWrg4vWing1VD9umZl37jF1cm1ev-022cHRkY2Yw7xyJFDLv-lBYb1nJmATj2y3hsszm93OTHj4g-ddtb6mDqxQXgCjnf-cvmNf5zxFgydLf1W2WtlGGn7PjHghiyf_a4XnuFdd3AhQf2FBc3-jV0T0UR8UFECu-Fj0YzZPpnPPGP1_QvL9PS7_CzHkqxwB0PfIPsO2hSr7R-T17_c9FzuXZvxzpg8XihhT6dUX20dj-aYdH7zoKuAMnhkrpZZFDzMsA9q7fOnWmZ0psJMTnF95Z4iO7qyOp553vzFKNv8ocnmzGQ57IrngrMIuiFLQ4Wp2XYxSAmE01mdri47GCcZYwWZbcCNOQiK1E&t=AQIJeo47KEAZCq0T4io"
         },
         {
           "ad_name": "September2026-Train-Hard-AI-Active-Raglan-Tshirt-AT01-Static-Model-Internal-08.09.2026",
@@ -602,7 +602,7 @@
           "purchases": 15,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLDdnKODJ7YLzDRxkYCkRKzhQmeKbRZdAHIYaDFNNsCumY7dYno6lX0sRWwatXAODhy-8ue27Kt0CCzQAZCY9fLfL3Lz2D1gevoN9fU1Zz9i7Sz6Ck8c1MjVjVYsAdKzr_DLc8PA7STHrLIr59230UB-FezyYo1Fn6LBfb8jIPtZzJRK4i4jPHanjMOpc3dCy5csXDxXxnCNOAyXkO5-ZL-NH-zG8BbGCJI_BHq4Ia0g0eMvn5qIHl7H-0B6P8vbRbokfysfbPSJQRRgooSPIEBB7tkZjaqYNfw6fdca0cBMcKsIq7IGMH2hL1oxhN9CaNntK4AlbAVeCR3TF2GjmZ1jQQbeOMRbX5cJ_aRKEz-DGwNnMBh1KsFHF2yZt-kAJiF4dIJpquDr_5T9t5SpEkH07mJSPqeOO99wBEOj1kMxJ6S4iMWse-95fr-5ZeY8Gk&t=AQIDg0yvdXpikHJ_r_o"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI6C_tWxTR_jo7Mkjsda_tUEnvhd2rSezQKK6inYI7m70WrsSgSajpWkSIgdnW1im3NhcGKEoTD8kF_qL-0gu-UKW718Ntcz7WyxIfbfM3T_WZS22xmQOW15INX5quK9OtpxagIB677G-BwruVkk8XlKx1VgVIMmNqHFVs1Uvh_7YhxAw6LHY3FnNirzZHrLFF8bxH5jUc40bIvSeGzc3u0jcg8CcK6daJPPYx6PQNIgKSO09vdk02vQVj1wcUPBtmHThqEHm0qP-V5TrnpIZ1ciKGQH78t1_ijUwg8om-cd6vsbcwDucR7GWXkjX30rABtuiAwUaoVBBr_ZCqF4sbmxRuNaeFrNDuOSuU_okcsAP9_0CAYpcCSmlGJi8Bhh_dec4prKI0LQEKd4TBszu7z8cOb3L1zK25oGFdDnwX6NMzyIsFAnnGJ84UMLEMToB8&t=AQJi1DxlfxUt3MyoDCM"
         },
         {
           "ad_name": "September2026-2-Degree-Cooler-Product-Romance-AI-Active-Coolmax-Tshirt-AT02-Static-Model-Internal-16.09.2026",
@@ -614,123 +614,123 @@
           "purchases": 16,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKDAsQ0m9C7Ari-EEjMreXQwOoRfAxNR4nkTWCsvHOzDrE-kZvBt-KhBREve4Facz35wV-a_ov80-yFsmogKrpKMIkvPRNBs9ZGjb3HSqtImmSqbz1NcOWp5NoozeL5k3PyXJMmrNYNI7YSwKQEzw4thV9tf668SSd6AlPwatst-abBByTwtcJTcAETmguBXr_c1JwB5yMz0k48Zv4bXgMrZLFQvUpslQeFNj6ZUISe8ItlRyiJMBAE4yNE1U3kcD-qSF5K5Csg7QnD5X1mMXHvRPlNgwNsoqx25nrRHJ3XUAOaU0b1i2zYXnGDDDJCVcatIDkjNacle1cR5rAGVqnjPj6vqXTreOVKXjY0nzjbzS7VrY7l1-hd4KCxvVV_io3lvFUXUNcEEFzRWVOHHgm8F6n96XRD-2JcMzS3Q3XMIa4-pyvt5cYx3bTUVywk3Ik&t=AQJ4jYfauFHqJy7OIpA"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJr-9OwCOwz16hR065ruCAWhjilssbtSQZRwGqzxWzvNXtFN1-92iA5W7apT0eBy6Lj0HD2PAjbz4YMbL4eT86Vyta7EQSxKPQrgvAg3xzh2C4KzWfy2c3KvuSpYvv7nEhyvJY86Kjrq_QUSwO3KXVJtFTq_XF9Dq-wQ48BCmHtpXA5J9T3jSkNS8Dv4qT-DlM-JxQnf5sNcwJchX60EDg_ySXKemWTAwRFXRX5q9N75TkGi32GgmKq_2UMfXykRgZSH9yRLmIdC_Bojbk5gSJhOhsoYZrz4n45DsVCLIH19k5EmIdm2nOor05i7lNwoefGN2iZdGYR4r9kugp8wh8AnABIqPcucfHWylRHhYrsJvQFKUyeQNB6i617argi7pQjrG2jGzu3OMNL4FDUTMT93hluBl5Z5T4f6kOKYUJhbALyoG1flM9eCrm6MBPaOmw&t=AQLMRu_nVGneXK4HZuA"
         },
         {
           "ad_name": "September2026-Your-Style-AI-Pace-TShirt-CR15-3-at-1049-Static-Creative-Flatlay-Internal-10.09.2026",
           "ad_id": "120249410729870298",
           "adset_name": "Pros-Outerwear-Tshirt-TSQ-Broad-Statics-09.03.2026",
-          "spend": 4279.74,
-          "roas": 7.6394,
+          "spend": 4280.25,
+          "roas": 7.6385,
           "conv_value": 32694.85,
           "purchases": 30,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLlzB1b7ie4ek9BG6-g94H2mxNtoveuNmXXWwQwZ6ckMmoRKqoeGEtsr77WBuBV-UeeMELxWi9ZyHeYpnUvxIOFbNVxId2H4AeDEKpht95sDiPY-Fx49Vq3D5BWJQ_60VjNco1M7pZiDLpwuC4g7pqSXEkmRtEpw_xl6S5i1zQhiWy2l659r5GKB9kC7GCkdjWCi5Pk13XYapcpt4SxVfIG_dDBwcrtK6g5Cg0Xn0QdspE-zkArP6rZ1Z1dtjpH65ehP6nXTXjFf25ByC2BwecRNJ6NMTevwMNpvNChp4UomNoTyzIJ_J8gE_-u55hv_1m5A2whpe4YtnlRDYm2EEiPmgdW6DJ6AX6lG-yqGcI64HklZQZ0P56JVb_XjrtACoxSA2_e_WY8QzpWNv9r01F6Fq5L9aEDHX55TxVMy2fJf9WnigsSUvhCucpOhUBjM0E&t=AQIO_--KREF3guQWwQE"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKhCCm2bckdznzYjqlJMB1iTdPTNeJrSTUcJYP1_5sghRQi6qpTL8fifUIq20jHgilc_QPSJBIQbJjl_fthQLjIW6lfqKv9ZXMcOcdlTI_wDPmuCCBeYWcWaXUZS6fNKxl7DwGqDiFJDxPFZFWpFoker-1APd5l1d4nZu4DXstntb9ijfVnAG41QGLlQ3gkI-GWW_rLNiPUsc-8uOO_4SWVI1AJDROXuiliaj4tLO2z_mocBPtfBuvg1rxwV6tJ7PiZ1xwE1TT8S3Ve7mMNb13gyynJnQQUl0EzIQ_5vgGvMyjZdyN6DFXdqoaSZ3hMskhzbpfWkinpA6_ZDEQLCUpBpT3vfQwUjKXfDV5YgLZeRzcCBJYFmKzPLz7NWKbd8avgoakzkNeZpxXymK8BcuRlyH_rkXlBIRo4r5Y3xboPRW2mrvjKDvmUaFPe_bu8lzk&t=AQImWR8bi6QmgYykzko"
         },
         {
           "ad_name": "September2026-2-Degree-Cooler-Dark-AI-Active-Coolmax-Tshirt-AT02-Static-Model-Internal-16.09.2026",
           "ad_id": "120249501149560298",
           "adset_name": "Pros-Outerwear-Active-Tshirt-TSQ-Broad-Statics-08.09.2026",
-          "spend": 3757.03,
-          "roas": 1.6507,
+          "spend": 3757.49,
+          "roas": 1.6505,
           "conv_value": 6201.91,
           "purchases": 4,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKxB5QwPskCJA4n8QQzQT5Gjak46TroKOP3QzXYyEpZMdf5JEvKfDDT4AW0iNodY7hbDKZVZhEj3D6GY-Aky9bJNsFOrNbxAmPEJqficds0IrQxFb1hD-6GdfS7NSrVJig1uGbaQaPEdrVzrqpLdjNqRWGeMl4rWeNW1ToH3A_XbJF0UGGGS3_ER_G9hTDqjLDEeElaERPBD3q3N2R-ldPvxTNRG5CpfJfw1GH2GCOwnT8nJSxmVGN6tUN4IcqFH5GnJIlMRRYiWFKguNCT5BAUF5HiwXp5DViSDc5Te66bEByIDcuTA1C2WorKnOQGlCf5mBcIy61gSNP7dzII09V5xDbZOH2HBPJKtQ9aN28FSaO3nLnO7IKglLdt5FsEZZsKgfaRUuzAUSSq0JWpGfQY2TzBlfUsC1bglx9SkIVXkWCPT_X5aH6Tbh-OLXJp_kQ&t=AQLCbJ3pMPmknzcRmZE"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL6f0V0EHlopi1WkIajlP-3jpf_9TNFq2XIpHyMs2s136GeU1jzPhD7MTV7Fgy_QBGnpBJRPCkvIHkT2OQ_LSaoInB2VnT4U3qRugLlB3XW2rk_u1exRAa_de9MHoP0VbXRSMVR5ILdw8ygJ42rFVo4AupCCHWPKRdA_JfLSBunsnWO54w4PHSzIlO2o4D_7bTzKiG1AC0_Mfs_KsUsCO8p20tiViNaEFkXfo27Jj8G813uVpCJ_a8XNy22MqIwVS7-z9c_LN0OpAHnaO7soG6SJNaJSGVcbTlSLURUX5h_8vkcLDaXQ1lnwPxZFtaDHfKQ-O6yQYiknamZd-n7rooD4gnKfW5wo6fI1SN237v79_Rmzupf6rR-W_t0kHmS4vXW6xzizq_RDFuCS2UX5i8rwa8FmqrAUbTrPPLaJ7bZLZG6zerUW7QWolAL17hATqs&t=AQIWvzf5P_tPlKFow1A"
         }
       ]
     },
     "Polo": {
       "emoji": "\ud83d\udc55",
       "total_ads": 22,
-      "total_spend": 170240.56999999998,
-      "blended_roas": 2.982675281221157,
+      "total_spend": 170250.28,
+      "blended_roas": 2.9825048158511103,
       "top_ads": [
         {
           "ad_name": "June2026-The-Fastest-Way-To-Look-Sharp-Nova-Polo-2-at-1049-Static-Creative-Flatlay-Internal-23.06.2026",
           "ad_id": "120246997829470298",
           "adset_name": "Pros-Outerwear-Polo-TSQ-Broad-Statics-09.03.2026",
-          "spend": 54667.37,
-          "roas": 2.8265,
-          "conv_value": 154514.7,
+          "spend": 54668.77,
+          "roas": 2.8264,
+          "conv_value": 154514.66,
           "purchases": 144,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKkXU7J0zjkPDPqzLkXJ0dPbAmeHFKx1Keg8upr97wFVzTJ4h-OfTV5AjC1Fl36HU5KuiHOv6zAPMr36D8Xera5b_YJKSei6BTgvXVuWDHa2ASMmB-XKuTgHtUFzYTUmHrMPJSQZKdVRpHPI_bHEm8BPy-vxScvjj8nPwsCgjxL4CkHIYYOD7GXoB5I9JOYSdwGElXyiHN5i9YwM1sxbOs0xwQ957Y9VfTRqyDIou8k-xdAVQzs-bLTCrfmfA_tqiX17kOGdbk4HKsrlB_3l2WrteWjNf72kC2AcgQ_m766T238sihN53FhRvXVJEtAOFc-7rvtC2xeqqkfaPwNT4AYLqq7ZE4zEAlPZ0JaHHfqopfFWKsTqMb8IpsFYcZqsk1CR2uiBQ6LC6Sx5EqXTthlrpFjZNX6tl8QdF_xgbODnaE_6YjjesaERQqOJh-amnM&t=AQIs_70RLQE7cgbguMc"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLIv8Rl7Y9GkcKQbsQOAtf5QAaeQrYtmFC-m0UHiLnD48P8NuWDDntxYi-dQqNyVA6Z37iNoJyoVIAnaGEX5Hx48xjYsxN7yRD58uo7emYG9kD-b8IxNmDYRy1-xza_nNY9bMtu9AZYd2bafrH0U5E71KQ48D8eRuA7REIA5ZED7ClLD0MQYEQSOv_cyFfP7CEZrVJAA034cYA0AN1_UajQZgclKUHVf3LIhICQoWJbRJ3C4_z850EKoj68RC86V4ILMlgq3EeTJSJtZIxZMW0N5jQwmHRIZ-cox2uvfWhOjmiYeiBmSn0mm95zgfruK0bX2E6HBRiplkiHkd9sKZMlvmZI3zIZaNlsuUoHgySUTLPZKDDPWf6uZ8mNqoQ2iV6dUY2cbkcRUZdtyH4wVxR4dkqxtDL156vyUVTCP6_-d5YZky3Sko8QrvdVJ3_GuEg&t=AQKGhemuBu5XcIgfQ8c"
         },
         {
           "ad_name": "August2026-They-Pass-Every-Vibe-Check-Nova-Polo-CR14-2-at-1049-Static-Creative-Flatlay-Internal-12.08.2026",
           "ad_id": "120248821178600298",
           "adset_name": "Pros-Outerwear-Polo-TSQ-Broad-Statics-09.03.2026",
-          "spend": 27961.99,
+          "spend": 27962.21,
           "roas": 2.7488,
-          "conv_value": 76862.65,
+          "conv_value": 76862.63,
           "purchases": 66,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIrB4FgVd3zMVGe6gZCgdNJ46qmBXFkK-jtyS4Mu_zXARrR9y887d1CkEzs_hwXD3y0W2cLDxkas0lNlzPYywH1cZu6igXnHqywqnKfoDzjiTnEPOAXYeh2SfHOQ7Vmlob0lFDBbTAHuHI3DiY3f9f0qb-LWQJwf86ttrRH0vmFNi1hO-mNWvnQmrM7fxx8bUw4yYyPM3HpTaPXQLWJpRTK2a0fMhOWEivpuDXBnQoKzI-MveXao0ZDdMysMBKDHb9tUVdZiajKfrdkhpC_ieibMyJmdVesAd2RBLeWvlCuPaDcE18qvrx5pQGbZm2OxYY_thzvMI40_m0OpCprTT-WrtmlYlEuLNGLMmi5kK65WG315pT-k-uGLgHh3VeJB0UERND9KfzTTebHWtcVMNQh4hroShk-gGVFH-O_FksNgsHWz5Rb52wFbJstEAoXwI4&t=AQKda2Org2an-1FAvL0"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIi7-pFLf8MBd5owFm_CPgdj5Seet1lbuZHQPl0jCxR6ZQgVs4mC-4Y_9zrfHw1T_Eg44dfh2ESU_P199aWoOQzTQqYQnQqFhHla7r5SC2cYtrGm-ARqeQYRQx4s-j9wkCKN2MiMs9REOyqX8OomDwftUoL6JAKpMcn914s7ogLNnAVYXqa5aUL3TPy9W7FJADSuH7VnAWZ1QDZatCAiZaHiyq-bSTiBBxf81xCp8RV7FMGdGYo9-s4vWLd4DQuGJgwPmWlJyUUgHYgx-rryw6Nn4Hhkm_Llra4krUY62uar7xlr5zyyLqR8F4O0Sn0Vye5f04YdZ1VLjptQGd9Fj84F3n2tlnCI1dx3QEHvOB5AvGW2cEryw0mhvP7ftp1cXep67KNK1kPbG5PoQ-97WArY0Cvba3hFy-EEQUTW_Bq5o-jhMhbLOgmq0_v3SIM8ek&t=AQKtN702rh7KHIIzyY8"
         },
         {
           "ad_name": "July2026-This-Is-Your-Polo-Moment-Nova-Polo-CR14-2-at-1049-Static-Creative-Flatlay-Internal-23.07.2026",
           "ad_id": "120248282241780298",
           "adset_name": "Pros-Outerwear-Polo-TSQ-Broad-Statics-09.03.2026",
-          "spend": 19958.73,
-          "roas": 3.505,
+          "spend": 19959.8,
+          "roas": 3.5048,
           "conv_value": 69954.75,
           "purchases": 58,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJycE44X99v5Pp2RegopyvFREHS4Nxu0sB7zAsmfJN581rsP5qNHnWA6dbfWluO68HuMufqSmgGA6hsavGQTAz7d8Yw41_BXof4fmMcwQqVgpI6vhC168CnmRntqUt7A3rPxmPfYUnGDl7qv5Gzb7mflIuSXoqGKAAyzhMiAzwhhpwkCvCGALgRqtppkto-uFNNJYMGjP29O2Lskhs_slM5qXvh9qM5xf2wmc-EbjqxgCHs_Zr9eqPUvrV7DMj78JfGla18bW9v5Iwgi2MmGkEmUJLQ4vcuHCfHfsjlX8R0n1g7x5-0isZFFr1sYDtqrYX9qFs0ZioMC8kUj4LDLbobjTH3m6AKeqzK7hRhRfVSqcSY6b8ihhuSQmLtR_qINU63aH_HT5GKj8nHQxcvyVbXERjtnMPY-FwQptzmokYPU4rO1R2tIPgphAmzimqN5KY&t=AQKHDz_D2tDkZmaIclo"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLAH_hv0FLYaFsiYSRezX1T62dsrZjVVV1Jl8Ess8ukab3lkA49QwDTobNUhQdGBRSIsX5TvQBl4yFuATPYpUW1bJ993tZ9VNoWYO5wQvToUyRIuSpjSfj22lzMzdh2RkDIqTW8jGvoy-W_7M7ewjUY5SebkWfmpNO952ZcQgn0abLha8BC9ojATImZfPhZ-sIpygI4wQw4PH7XpEcqW991KZnDRDSC1u7_D-tPWK9TG7N95Sf7G8CohX6ngT-nnoUVhRt6qcAwX6MPrqDkO_BMaBS3M3Baf7VbMCrkZa8vtwHgOZGmF6GGsyGOT0sj15m72a25vJAS86t8qaoF3MXc-8AHaUYRx6t50lIyjZNyftNKOkYOScx-ASEltrEnnXv_7sZAwfeIgxKyy7negfPLWUiJcavxGdbRm3Sth_g6__gJ8v5N-DLFP1cgCKMAS7k&t=AQLgE34bqh4yseRP1kM"
         },
         {
           "ad_name": "May2026-Polo-Look-Like-After-100-Washes-Tipping-Polo-Static-Creative-Flatlay-Internal-06.05.2026",
           "ad_id": "120243720782340298",
           "adset_name": "Pros-Outerwear-Polo-TSQ-Broad-Statics-09.03.2026",
-          "spend": 10026.69,
+          "spend": 10026.7,
           "roas": 4.229,
           "conv_value": 42402.9,
           "purchases": 34,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIlT7wsNOm8hVqRvA-f-K-_-Q7jGZk6dacKE0Sl4LzC2eZ8jvTtY2jpQO58aihIEc4-xDcwY3a3B_ZgNAmd9PDZgr0dst5qYUyHVuq-NlB-shAxwl6McsccXgQHhHJHic6joepfVGZ4fQnNpCLjoizBJjh23uCRXwoQE32v4T-FuO9CIjs4Vv-Nu1_h2-WN9N06UvTOtmgC5RSIug5AYklkPDvJDJ3oajeu7YopS3Logkde4kv9zSgBD1ti9_hA1gcpGG7GdMN6TfTCZ2jJQS_iFf5XHJ_hdc3T0DGQ67ofgtBR_-8mO9cXRneYXP269QAgs3TFwU3DHUo1Fzu_qeOl2WhabUmASDamg1P720QTyf2XN8caSH7ZSVweJkIHrcLpfxJjD08Q78_wtcImQU7QgHVNyOzWhdjinRIdFRp3O5wTI3lmn8zjrN2TSRNKoig&t=AQKftU3B8c4_IiKTYcA"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLP3HJMXoA0EmwkD290CXjo1C82cA6Lin-YdVYbD6GawkMCUiYYFx1OIz8tXtGL2r1VN5QaXWsfsH7NCvkThvWik45gX82LvAEq8yQMVWGA-gWJRl8cM6xwRgyc8tWQqjrO3Y81D46cepX2_pSFpGNCoJifby7_3OuwRN8zvOTuROjBq2-EQLYui0I05syzqmpAOkd4N6tvUw5ABThDlt7Wzt-ERR-JuXHJ60Ii-6Sb9swm0oF84ricoZDSCRnmzTVb1sTnT4wcKPdxNF6EgBeSrWcR4RhrDhYT-RCEyFlSM92IzxV_sDgUmRRjBxctDqXvi6ev7Z2wTUeu94gsgSAtlygTMbHuCupWoK6w05f0ckMTqmCSMvPlztRUZ74gxogxWDrm_CiITmz5lJQhWn_OLVdgl25nIK-z-_mDv3U9w00mbU8XLS2qz2zE6obMIfg&t=AQKb3M5Uu-WvcLTV6Xo"
         },
         {
           "ad_name": "July2026-The-Price-Is-Too-Good-Nova-Polo-2-at-1049-Static-Creative-Flatlay-Internal-15.07.2026",
           "ad_id": "120248074054890298",
           "adset_name": "Pros-Outerwear-Polo-TSQ-Broad-Statics-09.03.2026",
-          "spend": 9012.32,
-          "roas": 3.3771,
+          "spend": 9012.66,
+          "roas": 3.377,
           "conv_value": 30435.89,
           "purchases": 25,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJqmzPr9l9BGFd1SVrkd_rtBswxDG8kfNDasT7iJDAg-7S8p1oUvoW_RX3BHQ00Up2I4PObvoGOfVFNDpRzrbvxPcVmMIFTFLXCdXfXQEsvU4wwdgPEtDzTHZqchEoW-kaVuT-EaxFGHqidD-LdgWZQK1T94krcuI2MwfDBELMGELu977Z9uzCVjtVX7vitOCAf142Kvcf_PgOPN43ZpIWJ693BK17U6qy_Gw6NKDclvCIhMxVSfMdhgwwSzTegG0K-4Rrdk1IKQLJeiFOvblzlnpRu6PJMMiO6EOZpDE70VNewJ5eL5pgppyeOaR6BR7JEaOQowVapKbYQkOhcwQYN-lc4nWyxoYpIYg6NXOUlEHgUJH9s7vSpAV4wqglaF_TKQEE-zGZG-MKRgxylTArxQe_snk9El-KBZFZLHj0eh-13m-suqJWnk5_V6Lp-EqM&t=AQI5NJraj57MCPVbw_w"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIZo-w5SGwEmE34Omm7K6rvX1OcBA8Y0tCqSFr3QXu5xfB5GbqsX8foRFieFWKIWtua9DRHyaVGiMzOkB0cdXCIjvez84y7yzI55RHP2LgaMCGFJ3DYQOqWuODu4w-kgYDN30v4hAVL1cx_MOwNh4BShLKUpSOgl1MGIostv0AOwl9LrrkJihd-X3yceZirF5VgP1IaOYJ25pZIrV_zgZqidpaFvi0X0JGzOTVBQqzFfnoRljLjvqgPUFB4Hf1aDnM3TXGKDKPFoTBrgc3uvu-fDXD55UY_RvDLaDZHtI7gxe7mVLdsyDXP4X1EXSeE6_lUbqzr3bz78lQDoxlkw7lUXInl2OcEaPebHkUJ4k99IP9ETAM3qyldROL0hSrx-RBPMlcZ2Olnwf29eqDswJthgdrfjU6TZW6H707dxIZoePl8G76-p5HXR4s0jxdr_wY&t=AQIjOPGq2yZxOP8fspM"
         },
         {
           "ad_name": "July2026-Youre-Just-In-Time-Nova-Polo-CR14-2-at-1049-Static-Creative-Flatlay-Internal-17.07.2026",
           "ad_id": "120248131235920298",
           "adset_name": "Pros-Outerwear-Polo-TSQ-Broad-Statics-09.03.2026",
-          "spend": 8978.33,
-          "roas": 2.2132,
+          "spend": 8980.88,
+          "roas": 2.2126,
           "conv_value": 19871.23,
           "purchases": 18,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIzXu96WF9FvSuFVmC-JkyxtzolgQaBtXIzIbMF5YFb3FSh7MRNBjdQ26XuievPsIu1srkVC6Ojmm9wWuBUpGnrkyecKqYpSjnedvVgzzCCh02QdGBRntmIarseavELrwArK9XQNbi69yk24qZq8PQ93_jHdMUQYdmWcUWrYcPYI_KrAOWBe_jjShrnELBh7egEvFbABrpjfjMZ4U0Lt21kmsA7sQEQGGvRBCDJg_i5N0jGwa3WPQVnkaJ6FwrZcYBSrtpHreQ0GTqFjPCs7IME79y5qkwPa2B8ATSG5iMUsvsKcT2VPmCh83pm_o8KKZ9ZFMHPSPJgOrRwhtGXNseC_iVP_f6yu7Th_1X6Y_p4UvKrkw055idGT0V7deFipomn0FDr2Zn8BounmDAlVM975GORpkR9C25JWd-1bA2KknYjsKvLU-ne6ac2Yn1BOww&t=AQJzA8wIwalcgYLdU9g"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJNldcqZnGUQk-ZibxJFSGGOvrjisY1CBdWeE2A1NN_jJq6XT3KAM-qabVMrxKa2ZvBTKsX2iHTbyFR1Ew4oFoJjWWg4PktOGmpo4XUTs8OpAk1jY81eIQLOmJl5nEnUSPuVJM7n1OSoGkm5-UkuKwRFTLy3eWlCrW8T38OF3pwCIV7-RMGFxMVg_51oxlEMk1LYFF44RMfqTJLwXevK3iHiWQWx1gkr35lZpIpoi3VwhH1e74tUfTzFM6vMuc-Z3YQETOh1vZqJoErwq-l-_OaLUXWm3hM6QCmnaaatITeAJUDIRBuFW4E9ZhxFiZhwoyTZaw0IZAM-rSwT-FoYlDDRJhSR7OVyiBYU-Jv82hq6n-0f05O3n7rQgCnDH-rbUl7MOX445MKQt4cG0TdK-AdnzfJmIqw4bIw5RcUcxAirCi6ZltfMpFlWMeUFA86_rU&t=AQLOmux9ieptxbKvHYs"
         },
         {
           "ad_name": "August2026-When-In-Doubt-Full-Sleeve-Polo-TShirt-MB28-Static-Product-Romance-Internal-20.08.2026",
           "ad_id": "120249029192320298",
           "adset_name": "Pros-Outerwear-Polo-TSQ-Broad-Statics-09.03.2026",
-          "spend": 7608.98,
-          "roas": 1.622,
+          "spend": 7609.38,
+          "roas": 1.6219,
           "conv_value": 12341.61,
           "purchases": 15,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJzIaVmu4x5sy4TND_0AmllxO8pGzH_M-HiC-JrXT0tpE9LwzEZmafQ05RXtsFWcdPpUfMurhWLW0fU10cBzIZ-lWLuFGHVis9bk16NMrXdZlwYU9e_WU7EJIG15dZ1fvgr6WF_jaRzjmSThjhXxiUwU1-NzdutqWe3i2a5VZWPxExXLC5iE7bS3lUn2M7LBrbiGauLGSP0cx4MW5QAVIp6sALqO_5VtOGP7kEunm1A-DLQ_TWVUdP--5OZpDZvuy2cihOP9gUQevd8ev-B4bZHwJGC7GpupBcAL1LClF0BAeZaKDnWVqobCMudRTco_vmWOVolEhGcpS7yPcsZTBG4lkdkQGALeyXpsg2kh8JDopn5zTmywhi3wPFiEcYgzHj5QlqrVxmN5vz-rHG7MXGgxWPrR0_1-Z8WdwJk2bc1K76PaWgKF7rrkIWLWv4NXjg&t=AQLe0R5b8pFd5yPrm3Q"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL4HUAnNl4b2lh1usEpkC9YEyeW_S1wTWIYuG6_yeJTJ3BMy0eg2jFJiTxgIll-3O043ivb3OntJoIwHF3A6wy5H4TiwE08VqHTWAUJWrEFMbJg4qItn-a68ioU6CqgKUjyH5Pzuy8Jv9TvPgUHEsm2fOeeWbFT66qoa_x9DqjpvLnNWx3MVjAiGrNwOY7o6CCHX77Q0d1ohVZl74Ykhg07oOqYpWPsnjNwczg0-BNfVdQiZgQAObSxPYbmCwj_8u2Khx6jhuVi_sDsJcpMsyLIefT-yYd1vO02gETQ9TjThwi8LMaZdC9GIk_JodJvdA9uDG7t8CjPpnw8d2qNpQKVNRA5Ma8L41zdZTyYDo7fPBMdrJa-u9utPZXqK1JyhqrjdqHU_CrFiCSDNE7Jhc-iOhcyXnRo2jwXxlibEs6YRS4M5HJuhPSuWuK6faKZ8MI&t=AQLyQXntuCX7UCG-Tyc"
         },
         {
           "ad_name": "August2026-You-Can-Do-Better-AI-Nova-Polo-CR14-Static-Creative-Flatlay-Internal-26.08.2026",
@@ -742,7 +742,7 @@
           "purchases": 19,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKlhoCNJGcvcpyBeggyBtp8PrAawhiEo3Ly0Qqdhb7HDfNJU9kwfHms_7YA_DmIFxVcPgeBX83KbnRVKj_7pthqG5IKoUXo-cYs2F4WQRTEu9beQGdKDBEx7mhKjFnZOVox5EzkhNBxtlQ8k6bjMoPLNcajBEOgwJ_X67s-wR2g-9nS2ucV5CMNj3BuM_Oe7PHtPldvdaCb360lkTmqRjKBvhR03x4kapQlztY34RnlBoz9A04QYQVG9NWNfcuBIvpLSj3t_tmdjCcH6aG_g2mTOJf1lmAeXVeN_nk70TcFBZCDB0MA60eqfQbAep1EdSyc3djCKb3T9hLqidB5keplYkm2UB10s7JjVFW2pL7XMvsSexTubcvpWFzc8o9GUyoAKf6M7MNHMK3YC4ftYIeXIlDui2X8LSU3-Mf-o4py0X1gLiopLxUZgiRi5HtT1UU&t=AQLk_W8x1Z8b2UnwEhk"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLtnHiNs22wm_k_AX_nPA30NY0Em5FeOSBTSM3L6kBh1zQraxib7PebteKJ-8ylYWUaabkna0kpjMPbBE2Z78F2SmhfkwkOOIIsto521uYqTNic-X23mFQus4kRP2d1Pn-u4agyygYdihl1zQfBPrBxOfVXmDgP1Qf8gfSIbkutzeWLdy5VfyGIXYwvzOkdqkT_g6BpnYnsTrCUPH3HHyrNQBdi2SOQlLUN_NuiBpgF5PNQvbw4NcHfIkwcGVaJoWHW6rP3AqiYudbCSfhPya6kWNipmIwoYNiwik-x_WTqRfm46HqtdPlm_N5zfy5sjB64E8aApjXf_1gtVK0sZjRcBVeVdX9WN8W1nZ3tlEWKRnkT0reTLH3Ka1B-ycOY7RsDrCqbInWiHiGzoA8kTJXLzzXlSE10ihknn57gh1CmOxwXVC4HT_tSil9O_IR9EIs&t=AQKjsj8gnSbbPQiW4w4"
         },
         {
           "ad_name": "August2026-The-Cheat-Code-Nova-Polo-CR14-2-at-1049-Static-Creative-Flatlay-Internal-19.08.2026",
@@ -754,7 +754,7 @@
           "purchases": 6,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJCKvnDOc0_c86d0BOV06PTCS06lrMdLtEvVbTPXduF_uQfKIFpYbiGkAYR3E9MvGffa-Lkxy4143R3uRY9cc74D8nddK8zOiVd6rb_qTWxncpyUuXmuAm1mV3brDq4Yvshf1q-wGyjufHp99cY6t7mPAwR36KYF3Uzb9T-OMMdGAOPGvZtIR3R0-rmXMTmInYCXgfv8F8PY0c6JmXi3sPqnr_afEs6XmMqIMyg_HYek2qlVU1IGWCPwIgmfba2nvT3fIUtCjH8M8bbEj200x7AtuPZ-AcPZC-VgfFJKKOXnjLy7fBXEiilVlhq26Z8z1rgAeHhx1FZkZr81xSb144hkWwQEQy0UTmVrGokxBoS71tlPjdrd62FtVaqUPbv8kxxNX6M781xlalpwFK8yL4zyn4XNvFMeWAa0gkWxKqYi3JXTEg7_aS__C2jOD_whf0&t=AQJU3azdfv8nXeEdzyU"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLyhy9cigUFw4CumPb3ws37qmsuHTj10obLSbt8AfuZCdxKVndYvRZBCl4bUqYB-kk-CfyNPUcJi6qZwniDnV7-_jYzUKI--D90qCpOCBcSGVjF6mwgoObr7-JHzAH_TGemPx6UI8sPMJfM3Z2Zas3UZELdiXSrFCjaa4U5rBEFciKK7s15pHhkVOkWq3LEIUPI24WDJMonw-0Ulo-kYW6gkcyzYQp4HWqqAKmvOnw1cvVQWyIDWjmVHA7hAq4EMHIYdkf-QAPV4rA_SCzCuak6EQDFRNbB82s2Ibc9Im4FOw9OO38j2K67o9wtYa0UdcWgDhIvbsniBR0O4PwB1zVaa8EDwCF73qomTW7NbelVbj0eUwZ9QBcly3nhQhcnM9f2KnddBp6I2foQNEoumxkY2RLk6rmwMiWk82WtYX571CRGxs7PVSHgC-yB64Ae9Xs&t=AQJWKCVX0fONadzzj9s"
         },
         {
           "ad_name": "August2026-Two-Colours-AI-Nova-Polo-CR14-2-at-1049-Static-Creative-Flatlay-Internal-25.08.2026",
@@ -766,15 +766,15 @@
           "purchases": 10,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIvVYLZJY9AwiDkMMW0aEWlm1HKUhYy7s1T7ySdVF3oWfqA2s5TwFIOi0vdwbxXfLtUYLvTd7ZvknY9YiEt5Lvaj834iEhQqY44mjsdlIkhmYeFv_R7wh-K--TMQEPtYc9afejLF_4sZpf8y4XjNWYKmtLMD_0dIISV7zP2obdRNpcmHv_mFmINuUVIgN9BnMWmvi3pI2hFFEtgwl2B5nMjVwe5_fejnvFYSODd9TS84FNZu9tcEIB-n1rYqcbuOPrCBsfiXnYp8vaxjc9wEt7IuT5JXzhIZXywwEXIKJORMsJBa2l_KrwvKKZ_lHxv43CunBF9OZcgdHWNPWuOGNg1WWDc98iw1Hp6ff9Q-n7HyKb6mgnhKtJkLgv2CW1bPurI4VDJX7R38IAui8H4aWQfSmh6bNjAOh_sX0_PCzkhLEy6E1dFAmbfxm1gUW_iNB8&t=AQJcPhv_6Rv0H-Xx3YQ"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLyEUlqvzNhP2Q37e86-EPuhNEqopnnrFjECwjNeKhEZ6XvHQ809CYQSDZr3lwYkhn5eyaI6bqaDhgoo7iposn40XlFchRgyy5WQrYsXuua00dFQ96Y9gjf2G1_7i6mNmtQVELhJNTe-nP8aRI_H6i1y-3GYVWbP9K-9wWLC3AKdFMPtTlfpFXt6AEpGRUbsC5b30Qm0Q1n8Wsn47j9E2u6V8qD9Bh30gaJrEsWlWB2nP4x3rey0RAmcswy6uKGP0RTKXAqYFcRnR565yAnvBe5l8wAvLdqLIn93TCP-lOhwAba9xPYEqUku8NMYu60UMUTxu1i888sz2CcV1uFXJ-u1b9DYqbVNT9LUChhtzHM7mE4YyZm0xv3ANKb-LU6-lRcpzNwWv6GY6oXF0dESkhEtfsYj82YQPU8J3uBtmsq2FfYq6Y8g0raU3mf6bM7jwM&t=AQIOZ-kOYxgGLl4iVn8"
         }
       ]
     },
     "Pyjamas & Easy Pants": {
       "emoji": "\ud83d\ude34",
       "total_ads": 27,
-      "total_spend": 818922.5399999999,
-      "blended_roas": 4.248984794092981,
+      "total_spend": 818924.1799999999,
+      "blended_roas": 4.248976272748474,
       "top_ads": [
         {
           "ad_name": "September2026-Generic-Flash-Sale-Flat-50-Off-Weekend-Sale-Static-Creative-Flatlay-V2-Internal-19.09.2026",
@@ -786,7 +786,7 @@
           "purchases": 661,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQILlSPCpve-BUC9tjvImZ202--SeXMHDIBznH-Iz3MTHHoG6Lc1iU9ah5QTbubnfbzdotj-ViYMivznh7Xz1ZMmEC6KYHww07bslEl5lae2Kfxc3sVUwyY-m3uPifap_gnKzcjl5zb4pFDVeWvJMPY7gqTn7uijkTvztzgjOizRiMAExaW7kSmjHZb7yhpVOsq01PgRhvzolqsv8UqQUlK2rk3CaM-k8mlqNqkcWG-k7r8G0_028W0sUt-lRp3SyfinEFAkl0YnJZbB4F8GVOYcdYy73y29-PAoiH4tkS-EEwBDRo_EO922SAMD2t9fZmYRrvvswE4JNQi-OmWHnqK13J6gkxyzUxWaEZwFuYJjxntiblB38Em7hcFKhP9dR-7InQ2-0EPshB5wiMx3Bdb0c1p9EheKhsYffEWDPHBar00pcnOu6LJA1_vqVcoIlxY&t=AQKyx7S-V-9erQCR6BU"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJhtca5B3_u755nWKvQJf6awDqK-Lyq6DaHzTbGIla35nRQlrr8qxT-dzyiCBLro0qfl_PXMobaF8t1qAm6Y9HrLhkrVF1INTRgkbsa2N1DS58svk5WvcPT3I04DS7MeS6j3c7IMlkDyU5qVIveu-wYtslJS9kbYKXYQXpOHD5dvBWdGhslusLplYfPZp5k4JuvzSSYulshDssMzuC07nIb-35cdm8dIXbdIVNsWU5aTcMyY1jxowRxvf2h1MemShvsdyQo8jnbWQdiRnFw0c0YcGMbW9zkiNVKDj2wTIn8ccn-HUrAiDjeKCH8Zf3I7naKLsKhcUlgJU5Btv7fEBo7qhRls83IoFyQh4tlsC0H7_a804DSBJj3Ak0STQadUMJ2prKe016V3vgjG87dPf80pCMGfY7ZSzxcCs5DrxIXD4P5_SkNmP8YW6HdrwXzmNU&t=AQJzYPZEFzBHE-YO1HM"
         },
         {
           "ad_name": "September2026-At-Half-Price-AI-Pyjama-Flat-50-Off-Weekend-Sale-Static-Plain-Text-Only-Internal-18.09.2026",
@@ -798,7 +798,7 @@
           "purchases": 615,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ9I1Fh09N3UruM-51iudrw8u3VrLx_Y0ihmAm0DirfW4d8iwOHNvV3V4WiaKDyd1eLtoVC22zLYTlGcOiYLmTzcHWD5jZ9WeIs7nKESxIkOt9Ek1MxjCPxoELYtj1-ez_VgozKqgIl_gns7lJBkn7cMQK80v-c3SkFleiC_LQYdsZIIqvbqX_U8HZQGMFo_73Guqg4tjS123aO1uaT0jG5HLtd1_RXiMc58HfDaNDFFBjvUT11SPpRz9ZEZIi4bYE74EkvL3mwg-69CeYYirAXGJDwZsbzUB_lnA1tPgtQcv4vRtGGznpr2EAnr7VAcgr-PAviON-lTaLUQfPe-BTdeY5dKJ1hV2ENWXn-KS69v2oGZI8RbibWfLapwOp7f6OMuRKroau-A_F0vgRIJ_r_5Zs-sU33LoIajj5g3Hh2kSYsoyi8boGj21tR5TsoXJs&t=AQI8lLQwNuwa06A9ZLY"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIWAMqig0cDhAVmIxKuOB9UzxL-IcW-20qW4I5Prvglym2yLAFl35kNsY99wohzV4QWrqOI1CniKNKTBgYtpdh2i53TL7DLBbmCnCyS3cJT4o0Ut7zD-xqEWESjQI24ArFwTqjPBlbbXtzKlC3peXI-QDKFS2zKlu7LEq1QWfomAhVionu6K5r0MOAmSl-ClmtYs_076mgqopJFWXRuW-DY50AEMTz_28BZlyjhs4JOtwBGMvZtZ5qGyqZ1ve-GFZaqHCk_Edv6_ARu4RwdWRPSO6lKJIygJh3V3fR7lesUm5BG7q0iq4w06ddUYh65oSChyuZuQ03XyopywewrwB37o7uoMN42e1IKzMzuxel3oEMs1ZMRiEOnaCFKNcqSbpyBD46DQVSKVcBiQolEYj-e3r7VIyNhpcEduDnGDIgxbsH_Fa7NBKHxbD2Vu0wV18Y&t=AQI-tsrOPTbRjQQGn0c"
         },
         {
           "ad_name": "September2026-Generic-Flash-Sale-Flat-50-Off-Weekend-Sale-Static-Creative-Flatlay-Internal-19.09.2026",
@@ -810,7 +810,7 @@
           "purchases": 569,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI905ZaPkiMwYoWnQtIx_ekbheUa-TXWW6UKhJZQJ3fjXBdyJAqXnWp0ZttT2g1AZHo1SeMIbKv1IhABdUTnzpFa60Drq8j0-EtcAVsFwXCf1pty-08ylUOjko9bdGKYCOuTxT6iF2Q0I6QN0MoWdFWJ0mNulDGsvyG3mc8wiOZPcubo2lU2kfNLWYi8g_HWM0RTA2bEoeK8ZkwFixjdkItrO2wBoxkjrIx4fs5TmNdu9SgeXy15RytpKOfHpLFYptmYTsWy9ZSfIMm689VKL-Iddde1LzWnkS6u7-4qXiMUr9fU3M57IUX-kltuI8fnMADRZklGA2mR3prERqqsFclr2asidGo2qLqESNBDeykwEoUbd0Oy_HX8lknYmCtmmv3zUk-sVZBV6cFU0CT8kCLcduelFygEdw1cpSCfvtyb8JTYZocsZxbTGWw-nxNUXA&t=AQL0ST4f4uo6cO8pomk"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIPuVJ1SnBb3ypw_YA2hQghGKA6uAv--Abhi_efdIN5Bw8S9Tbrqy1HeTjqG_L1iNR4WEPPYeVlbTPR0fYG2wTj3UuVxsdjqxbCvEd9r-jA6njDUOitMqFP-ao-3DmIn8SczV-gHnu0lh1eeNQDkDWl8GCx_IspSEmxuFnk1eyue8SMPrc66Ykrxr5OLDCHJlcVPlWhXTVSiYwq6PZQEB0JnHTmJCk__Itf0QHLRwuuZnf-qcKsB18KiBkjrlwiYOtb4kDN9d_Ia7Yia00DELVFuFXhfW7CCYgsetXTOFBzAh3xL_z86HXelUHJFZD37-KTAU8YnpSXcGouTh_bkVRqAHhsAOsHzBDYNadcfJ-rhp0GRpmDIKuZfzdHjNu4BvJuRuXIwiHvp6Zd0V_kZ107dmJcExL9wgaXhJngc_gzovBdXe2pflgf8_VrEgmuMfo&t=AQK1TPzFFFGffxMBzEk"
         },
         {
           "ad_name": "September2026-Tick-Tock-AI-Pyjama-Flat-50-Off-Weekend-Sale-GIF-Plain-Text-Only-V1-Internal-18.09.2026",
@@ -822,7 +822,7 @@
           "purchases": 292,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJzpqEt5iPnkT2PYZbpd8St-w543In4iklCdabv43uMLq9Ql2a02fZjV4MsqOqIc5opDl-wA1xpfZbfBYA9W-YuG_sRPkBug09-0Ybov4TDV58RKMBuZV-QWvTMxkf5JC8a5bJqqhUHiNFNor34jpgU_bn3oMtyV3udNhevPMbr4qnjRujuQB4Tt6XRAoQq0Rybor9MVb8JSw1uyHj_t_hesfoEkbtBtqBmH60rtE1Ka2nnqOiFP1WNU3Lg8styrJqrRDYV2RHhmqgj0VepaFimxTEWsOjByq1WuayT_OGGZV2XokXKLlOjU59JRnGv-tANdoYv780jMtrchEHW97ji0yF4KRmXC80EJbRuOBaQFuvCcl3zUA8ml7mAQBmNBqgZ7hFAS1jLtuzznV8icYIseJIOmOhMhUXWPqcZztZ4J5PPY2bcboKO2nH-56Tso4Q&t=AQKBa4_vAGLoe5b1zi4"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJp24UJDbcGra4ugFdB31Pm61UIledfaZvTcizT5RK9s7az0BpoWFuXVBrBGhZ9zOvCenSuX3zDsNffOAoyNWTTzX7xnbuzVHx-KfCiBAGChpOYpnlrEfOqGV_Xlv-A43LLTUYGIDfqTyTOQ2ewiOgW2SUUKsSDtsdGjoXtDuKWFZqF09drcm0ixBjDc9ZZa-6zZu3APGo71fVrcrn7qJznRHmNxk1vgqpyyQiuAmspKD940loSY5sXj6QowNj4cixyiNxnsNAzo-FRy-SOugc4AechvzYAtDJL5TlNBk59luGTFuesFXm_uhjFwE_cCzeSYFyUINovrVuZbiuuacDMzXOqVyakY8esoFGrlSks5y45sG6gXxDew7haCr0OJwAkWuV8Zuux6vpfObtTWODlTzzdlUByhs8J5VWuR4vbVirLaaG1DvtuH6AUTprNtrI&t=AQKC8Urk3wWcAEM1Lmo"
         },
         {
           "ad_name": "September2026-Dont-Sleep-AI-Pyjama-Flat-50-Off-Weekend-Sale-Static-Plain-Text-Only-Internal-18.09.2026",
@@ -834,7 +834,7 @@
           "purchases": 202,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJfhKagId5HLIWSKAF9hw1waMCJ3HmyteeHkq4Zh-xHyta1McE3br7-_LLETTuu4GguJhlqcwBSsniS9Jl_gsKrhTm1ZU9xkFcoiuByN3xKtIwQiHPF3JiFPWHD4iPJ4_Dsj5BXqCipWInm_ljgy0QFyooH_yTgkyd6ch85b720f76HwZvSNYYOvSF6RcazuI5kGFON-Xn77uioQo9eapRMZ-XWHEB5wdiJkxGmWb4QcOcodCkECGrQtbTWOI73oDs1FGuwMATL7EXbL5XSpg_hhWbxYiVgolsGVpz5Pp0iJWUQ-bxoC9ftzPWQRHJ9r7OCFeZ2AXM9aAC40056QA22zSxDhRpcG91qVk43xX2Lkwiw1EimqcPx9wdNEYtnrJ9OuegbYFywX0ECeqWWq7H6odnTspmNqbVCUB4b2yZfJ0JcAodKNicbV5F8o-lFcd0&t=AQI0aOIYg4gUpGzjsWc"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIBqjhfKEI6Cji02nyEow8RjCMlG0o_tglGc0OwzCZXagLEF4hk6v2YCAIbYZtUdry4okZVhYlHo2cU0iYua58uXR3V4dEx2lPTWzg8Bla53MY86WFjTJi0LMMX3wjD54L_8D4c7uC9x8LgoC43Cmy2is862qmwIl7yoMYY9MBh2bSVDUEmggbBYTRYHSjqvrEMWX6iESzFHvi3XTuXrIk_AAz-J5313_k4VbGQeqFEh617syDHwv7izqsnZC5dxZC0-VQKb2XSGjrmQ6gSb8bSOPWslFAWEEpl4RlRahWXPDspYnKxK81bAQWYPUgT0PWDUgn1jcwD48CbAAnyl_q1YHVga2tMQhq7wcxTUQMPDuOy0yMWLEDiUIZJMR8L1WN1J_HBVAc_BWBRKYIZ78cJrprtmi273tAO-IbPO8cKncBA3NzkpX2cheGA5aU1ibg&t=AQLJHos70sEIpYfryPg"
         },
         {
           "ad_name": "September2026-Generic-Flash-Sale-Flat-50-Off-Weekend-Sale-Static-Plain-Text-Only-V1-Internal-19.09.2026",
@@ -846,7 +846,7 @@
           "purchases": 178,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLpcA41euMsRJYynxfTgwLhNqKvZPIx3_7iDd9QsbgGkt4EspH-Zq3KUxjBe0Rid7cIfPUamfd9LzsF-8m_1XZlA1S85UvD_RcCl7bIAN9XRK9cxj4jbUcJLD3bf3brHsKq_P_mr3MuS3tdVfkxBZ3PLh3npPn-cbgbSMo5wQqzAy-H2v0Xx9tEUGX7F644YaranARadtlMZJivLcvHhuzBymnSTQrjg1Wv5dIIYF1EDcScnk-t_lO11MdP3Z1YGYVwTXKLHS7x5057zSR4ftIE-gr-Zf8JSb-O9GKeWZFZ0kVxCa4ScN6TnUNvAJYrUBAhb3hE1E4afqzyQ-cml1Cj9VeA1xyyCHCwC6b4BMIdZE1Mq7ZQCp37XZXiqkxKTHpgBGkle0Sl8bIIp8IOMynk775Z_PXbg03sir7GDomzP6My9TnD68xu-gWVmVC5TNI&t=AQKIXpXyiDm3GbvVPsQ"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL-iAkU_o2Wb04_CIJGCfSnDBmoou2Hxjze1Qc2BpO7kex_aMz_FwQT0YesG47VZAoR3pUcySBp0zgzjAVJXO8l6BVYGwysLHkOKwhmO1oH-5ex0aF8YmAeUgewmGgeL2XVptuML126d5SQxggvglXykAwIkMZI7fEKiPJb5F5kT70ZdtGzeMj0ZDDRT3obUqSXTcUMS2sPD_bzi4LmIleMvxgYvbTo86psX_OimkHmcrobNa_p75K2MeET54bL8KR4SysnFwPuRLmH2orxnwASVrJnrNiRMFnk_EMkN6IbC5Dlj8wBVxupbo7PTpfL5_fA852EqEa60miY7GHIuBpmir4Z1Bf_owHL2gJFTfde_B3jD-w-I0RMXzInAIZoPb4VRdxysU_RgifBdw20kyfLAnhRM20Qs9hAqHRsZNWyzYdXzGIyYFO8Lc-PwYEBgwk&t=AQKmKWxqZxXYF7sueXQ"
         },
         {
           "ad_name": "September2026-Deal-Of-The-Day-AI-Pyjama-Flat-50-Off-Weekend-Sale-Static-Model-V2-Internal-18.09.2026",
@@ -858,31 +858,31 @@
           "purchases": 148,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKuzipRx1-DflWa4uP_EGaZ72nMfQsRzT-LadO9uiBvihM3H3JxScFo5j1sP2FSfoqKx37SM3nP4IpM_2x1dZCVVLkr-xZ1TJbdHrkeP-aDYT-eyS0F3LSG8_J4sWLyW0TTay_M7CR8VRzf4fL_cEU1XCw2E1Q9zr1h6nIPDw4ufi202kWTFs9WxFGyz_GbCk5M__kW1S4AFOFN1dEGgpsfzTjk_7FQyBXYQ4jZ8DwFyC8N1iT-53K81ZgxGFNkBTIjXtaZ0FW6MtMWBpvFP7b0snqEi2eX_Tvo3C6W8uNyBSwRXQFs5XJTnFv2BaBGWV6FasZQJGvnxz3RqDhddAAXr9VDFvk35cOQ-W4LEtPUH7br0dZVD6edDdXxS8xN9GwL0TH-gB3Yyj4JOsHwpIE0im-UcTUK9U7fW0w_7rfhq73zjrmunr3ViLFViqgcEz4&t=AQL_y1G9aUqt8HjO8Fg"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI3jNUqH2hMgLvApUJvgQUrtg2KpSIeOaKeQvUYrKpEl41tC9FNSd8IZiqK6_HTPFJfK-VXOISdB1_w5Vx31r7AFN3MNetrypuVioCuZk7i-VVlEl3EkJAsxmXTkfVi9cO9K6CZK2Uz6ceSTYTkEpb5DeaskgEhvLmokht-i8Kle3wxvoDL6Rngzn552LGWXhttrL2rAJsylk8i9E5LbP3RRLdM4I592De2YDikFtJ__3pyMtg5mrLNucHYsaoznZ0tLtKGFbBdGeXX87p6Y7l3O4py2l5OAo5TYBv90494ffzfe3i44IzqsqHH2TON6_s15wS_JRyzWvBQJqhj0_gRivNlth-VFTSxQ1wS7EnBqrqpVRAXeBH4Q6xDqjqRbxbVyPIITsW7KnjyEc8WqY8O64iIRK6re1y9huMX2HLFKOnLjUr-zuvATiSU1iLMIn8&t=AQJ3Y7LbqYfutWonDNU"
         },
         {
           "ad_name": "August2026-Lifes-Too-Short-Chambray-Pyjama-CR46-Static-Creative-Flatlay-Internal-05.08.2026",
           "ad_id": "120248633981410298",
           "adset_name": "Pros-Outerwear-Pyjama-TSQ-Broad-Statics-09.03.2026",
-          "spend": 34812.98,
-          "roas": 4.4351,
-          "conv_value": 154399.05,
+          "spend": 34813.56,
+          "roas": 4.435,
+          "conv_value": 154399.04,
           "purchases": 134,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI99oMquU2WMsAhM6WyDOoMmEJq1Sc1hotZ5tk1f3YOpIzyH6w1SUrt6hps0F0dRUYNd17zg9skTpLQNuivd6YXo9bp3PHR3L9zIffqNkIDAkaFkGnu9RzpRWsCFMtWCUQaWQDIqu13gPZVtx3LddvXuQ0o6DtTmiuSqXbp23_AOJkDEJZmtKYtxxlxRefS4dr6SDL1PVdeupfqhf9Gv9Ntf9lXKmQ2j2ncGLWr3c4V_wdN-IqkAnwRulq6OziO9f-UlVtlmuiOHJPJVV-Xw32BwFjRIGUKbJjy4LHuevXmkYATCi0gbYEzJ6ry8xuW3eLIj92s3v328HZU_-GPwgp6pvhH_XWr8fhgHpjtXoXeO470T4mqBd9vWFuCBUrXa4qHfH_O9_HIh2z3HsOrWHr83Ls2HJH3WFUX3yw4cnp0X_DUAdwMhi1UYZwBm-UJuak&t=AQIfDSA6JF5RygI4LO0"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKupBz3bf9Nb3MLZkgJ8kd5DsqLw8QDpXkX2wfsiS0ENdvcvMdcuelZ8PHAwxFn7Onbj3yY8f0TpXchj-6paprQQ6gP4Z5WVXP9pqM5cMgbEPJtcjIv6rzetimKMzN3wzKullKBKWOT2NOUAA_ZZgxNRCeEmVXC1T9Wk1q4Dw-SqCJwtcr6TUxI1OVK52UXK5ZbWh06FeFYsmP4_xMO3uHzyAN0QqIjDvW40NvEomrPztx9P_2iqAHa9I6iC2XpYXPF2VAK54C_SyEyf74oW-DhYTAX5XA0vpb0iWkFqq006l4UvkljtlC1pXNUq3CFG7syT0fyGvC9ZbaZwaab-iqqiRzZ3L8upFuMShboXalKwLbEHCS51VMA0aShp8vC21beBFg0KVZCpottpck4NbjvRGm0nxjT9C-53f7-6HkEsUNZSZ5qyg8khryFSCsKDVY&t=AQIu9OH57026RaSVPx8"
         },
         {
           "ad_name": "Apr2026-Feels-Like-Nothing-Chambray-Pyjama-CR46-Static-Creative-Flatlay-Internal-24.04.2026",
           "ad_id": "120242920540270298",
           "adset_name": "Pros-Outerwear-Pyjama-TSQ-Broad-Statics-09.03.2026",
-          "spend": 29787.71,
+          "spend": 29787.72,
           "roas": 3.4638,
           "conv_value": 103178.98,
           "purchases": 75,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIB3TAWTy-PwM8yWd9EJn29wKtYMrQjKlcLs4JMsEfBeDrXXDz1IH6cwiThHyP09XaT_aNAzUeG8e_nhMbKnNfoBC70O55L8pkaklvv8uW0LZj4l7qmny5CTUb1rCg3xCpv474ymTUXrleTvv1DiMBpK1Znrf1jKZYfzZWuvr1VI-BYhPSaZyOpO1cC9ALkJBzYrF9J6SuaeU98JKn2ST8kmosB5YOwZaaA8AlruTeK7y_OWEKBMGP18wkTJybRnNfrjXnvwDs00Vux7LTMDXhheKSSVxJbPW_OTFEwkED_xsnE53HI5nkxz-C9nheaz0t6PcNSKlvnZECTW_HsdIVFFsqkzS-wLQpQ7pVHCNy9iODZ6VPHYT8Y0szXSuDxASAJVW7S3wL2SU2oMtzy0oQ8HpekVHTIgutQvF4KPavrkdt8nxdpaYR2rwgK9391T1Q&t=AQKMW4TMsV-8wWhNb_U"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJRFx_aYj3sAxPCmZZ9oO3lcmLWz58sGNbnwMSYaIXo8EhWWoS76N29HkJHhHtm0ZSLMcj28cJuy-jWkfNj4t6XG5zBOYqrH6qast-gJsP9ih4d3fB3aFO72kTpafIBZr12BxGsbptm3wIVJyeVCMmN8Vbdp8D0IQbIyyBshFCxDWSeYO83CrelF9FKwbvyNLcdcVyoWnP5hqDAgRVpLgCEivYAJCyUF22yQFnFJo-_IjJYmrRuQMGdI6-euyPWUHzoUOA6A6cq0o4Rqq8tM1aEccunLM7nBsPIntfuy2cDdQ_S_oaczLJouaO915S8s4p2ZUMOs55bWAKB1OAMxypsGOVtyobEWcPU6rYMz6syNphVVtQgMx2XGBVHHcL57Ff53XO2fQdhRhd0AkFR_MM7YZuoXO8o_U8OBSoZLvM1rN98_IuLmYYPV8187zdrb5k&t=AQJr9qo8LCR9QXoQ3Y0"
         },
         {
           "ad_name": "September2026-Snooze-And-You-Loose-AI-Pyjama-Flat-50-Off-Weekend-Sale-Static-Creative-Flatlay-Internal-18.09.2026",
@@ -894,27 +894,27 @@
           "purchases": 72,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLWZ0By-SoyNi5xaR4x3k-EfyYeHdvQRDt1dHihk_bIasqZtHoDIEdV_HkHGHCBVdxptaMr-dwATT_A6V6BRyVuQUFjpMDZrt4EIx4deRoljKvAM4jITJOKBvToYaMEr2qgZdIwlW1FhJVdGTlqxeq6PwZ6oMTGY5GtJ_WkD_Vnvayp03nLT9BXZyE0TCWCVhrbmS3n_5VuVn7vkJS57BUvGCyj4w88Ch4aonuxlvTebISuYWuC1bcvSvN2uhXElVZMh6G5kQPtUAyfwA2vKuHehWveLqNSlAtlT3ttnQKTiv47s-lQccWQBPJM9E-gx4AVKFaFU-42OHXY3UsAq1SQc6B3zPxvDYe3mt8DuSBd0Pbt1mcZT1d_AEvSgv0JoijCOfsSUt5Z3IQp-Q8EAlc5ppoEZjNN0IOdWl6ShZqkv4JD02Bf1SSRRFVm0hzuH0o&t=AQKMAhBRccG22e3I4fY"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKLLI7duCgIIHkmCMsPsUy60ale2wixLwi8g4QxqjU6e1w9yC6nhZwrLmcFxjkx0KzXHcbHjOM1rMp0O6uOeUzTRIokxk8ljCht3Xtxy4iPOTAS3QvzQF1P9m7SDOKjrcT10hAgS0rpOGi9Cuc4x6MWBek95xaSP4G4K0tSlX8fDRx0b31TgGdiDfG1tz-xkXVuI_RfMgNnKrjrfj2kPXsfZGZZtS-qVU_uZi3UVe8_Pf-MT0UqtixCUGYdfi7hR3_WHvwn-9XU0ciMDGqrM1T8hbwbLVUzU8IEISfUWt3dk2WRYxDUGiqC-txqFTNg8rRkX1g3pOAvs0CFqmpNpvU_pHLcUJhk25bFTC44F2bmQA3kfm082zbvD1L7FACmP0KWgDpLQjfXUnGU8-C_q9tmVecEF6ozp4k9yFMdDqeTkfKAPt6PS-_vhwNlgP7KNWA&t=AQI4IoxKFmSfpAQKRgM"
         }
       ]
     },
     "Bottomwear / Pants": {
       "emoji": "\ud83d\udc56",
       "total_ads": 9,
-      "total_spend": 17102.280000000002,
-      "blended_roas": 4.98116683857357,
+      "total_spend": 17102.370000000003,
+      "blended_roas": 4.981140625539033,
       "top_ads": [
         {
           "ad_name": "September2026-Zero-Pants-AI-Zero-Pants-MB20-Static-Model-Internal-11.09.2026",
           "ad_id": "120249430432830298",
           "adset_name": "Pros-Outerwear-Zero-Pants-TSQ-Broad-Statics-13.06.2026",
-          "spend": 6007.12,
-          "roas": 5.6987,
+          "spend": 6007.21,
+          "roas": 5.6986,
           "conv_value": 34232.77,
           "purchases": 20,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJEoC_P-2n0Jf6nXIWzF3Tk5Vk69dbKZhXRiC2Kfixchpaue14uKgYeuBddzOVM2_gBJ0slM8JADh8udUqNsKGEG14l8oRqMWctXCLY3n2457-E7dDbDd4bVBB6dCwsEAtZQ0XO5klDoojeKIqHHcHPrb3jOca9fM-BtshtfQhdQ3G4ZDAYkmmbvd48hOgGaAsQSPqVLslaRWc5T0ngNE35cabXVCvRlx-ILmXP2SDRcOcEXxClfZphGq0Lz2pTxSwMQcexAdtHJf-MOZEZhDrP9uW6H30i3Ofr4l9i5Uy9_6DuPL9KeWb32ZukcnXRlyPWkOTTxIbq2SUYfFxyWyHfyHMObxuMPsDvQBYov8EERq3U4JRQCeZUk_Rs3lyUADjuG8BJEIc7HiWAUt0Toc0j2H4h0FfY7F4MQQmDJLMWfnkLBsBSceXDD3c6LWZEVtM&t=AQJo4HNZtTSYDyZmqUA"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLeiIqmwY6OtjE5HU1dXM4HzQsdN-2627PUKY3c4YJ0vLhLpGK1kiAz5mvB3wgZvTtC7_wAoRY6JPC9QMVdU1Ya1HsL-NKYLcfA6h-Nt9kbYvUywroj3C1X-NlVxtIBuLp7KFgtTfkVEfwzO3Tr8FAyRjo7xK9sLg2gZ97YvoQ_yDwKiavYEYldBnuhyogxHnG18N-MAbtRB9XfikzgUj_eHqYsQHA0KKRlf4Ng-oSu5ihMXxCkDy_qLwH7mniW8zHtal8yunm_QF140RXNYU9ixyTRu6zHMfTG7CKmDlKd3t6lsEWczJCSmrcUhoqoq8ooplpY2ZaL7fFYuKq_453WFn3kZ-HgtaSQHS37RRGso0C3suUoadt9HBKZM-sltSRRal0eeYNyJfqKAb2Q8BxFpiWCnbUyC0uAgxgnv5zUIxPqkAqAu3uvfAr6Aj9uhVw&t=AQIm9aUCRHmqX0GoQhM"
         },
         {
           "ad_name": "June2026-8-AM-Deadline-8-PM-Dinner-Zero-Pants-MB20-Static-Creative-Flatlay-Internal-08.06.2026",
@@ -926,7 +926,7 @@
           "purchases": 6,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL02lh7w3bwdbzzGVtHLs6QB-G5cxX3xB3DwEDALOPGGkq8ADENNDHbDxRhFAaRK-YhgiT0b2-42eSobPQcqVUcKNXT-GbT408KT_ijVW7G6aB0rg4rsQQLs7IpT3dbg30LbT3hfo0bicOnF-ArjjuWzaSH4rAmBqNCPooqGZvZxC5zVwdIgIqAUA4HHOVkxCycC-BwA1Br4RQbuaE_4WFzxIftgu-XGHFDXExcmCBvGG8m5JAIrkpESjtQivkHu35cuANPXEuEKHicfpd_7-rJo-fgOIdKAZznajj6qvpRjDUgNyMto0Wv4WuMNELdCWiMs0et5VJaj-ua8VqHdK-7BxNbsxiqQyQDq6ecoEQ3S9bcHCmW2rIxep6w_V_TTzoHorEM-GA2baZwW8I4Q4LmE4A_DYYJaO4NkRXDRUOI8ULCQhrTxVLnVXajNFogyUc&t=AQIG2ZcaW-KdPp6U3dU"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQK4MY60wfo7mNjdgjxWsiRjfuv2hEfvuGT6OOfgierErxyEldRD7-DsRDIoTrSD-btdI8atZFZ0Qw_0wwKBs3LD8fokRkmAm74J2NKWd0kFDq987cRlOHWOzWVZ3KpNfe44E-H95KyYSRgeQ7SFITVQNQQu-XGorxWtVuSpuLUtzaB2l8CQtBx1uEQHRRp6K3n-0leko0NyuxmXcuVNEtgfYwgWzMA6jsqEDnjUPYVg1W4QeZRrS9j4Pz6IT6CJUM2sQRqnO2lbEQ6qtCe5iz_oWLEcxocM9uvE9bz9_nDCMvu6_08bGAnoyX98s5D6rgE3y1kY_DSwJBTVSKpoYIN2mveuF8qKWvrWPtxAgX_qALJmOYJ3ta0oTjThAQxevmaezR_NPphE-vSAvupsn8o0pdyJxsjIAodKbL6s0ZZLK8jDw-blEBszvRG2hwpy8d0&t=AQJ71TPBe1IaGm3ry8g"
         },
         {
           "ad_name": "June2026-Made-For-Men-Zero-Pants-MB20-Carousel-29.06.2026",
@@ -938,7 +938,7 @@
           "purchases": 5,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLLZxDfo9DxJjfG0K10lW-JHa_-lZwFXE_O6W1ehQGAglTvmYEBixQzQrtv9HReQqE4b0amo0bprMMlYrZ97Xub875x5G6-QJPy27MqHJ57qKeqrfilHHWySpt6SBEjg-t3iSTger57L6lzB6DqP1o8Qa5sZEY_YCR9RjPJUE3lhRYCgKcRpK77C9OaA2dsJPDc60jTaWQsaSkDMpeGfQi-yyP7ZYJkyG8Hf0TqjBsMIsN5dfP0C2e6tlVjL2Bb_4lz1rfC3G99yIHNUdqjh9ZZEAfsFMKvaEX6UELtGevXORb5meXMNe5gJcaC0vB45a0tBmLJyynT_1zxu059D83maMIZzIzSx95oAJ7F8QYdS34dFCNBVMnKS2GeOhHCq7IF0RHF2JI1laSNDnowEGz17zuqt4P4wGxx-sK6MYstOqwASLCOokygnWeo6-W0Sl8&t=AQJNOuzUSe2Rgk3T3Ms"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLWzzWJpeJFWFth5BN9SGx7F2iliT-OPT9jKJX64IAxFfRe4dN-s9k0JXRrbpxYD9Kosh6VxFapJeJRI2S5WLr414F53kCpv2px98IBmz5mFRyS2pDiiG0k5INEo200Lkyn8UJ1m5X9MR0N3qNhWNgfHKdbkGTM-0sexNy1sEXGwE_jdaJe7RvfDBsPgG8hFCRZ5J4fdGV2DlUCBz3a7ckQt2gqTXzx7PX-Sx09Y0bk6cs050khVjYDpVr-wqQ14-QnGvfYPJ6p0-_wi50ygtE5ogIQdLb1OnTxCSlJjhEBxI_-yCt5zQVCY0ZcEuMXcMlwmC1NLVSsKBfZfbH7OoPAf4QjtpwKyUWxN9G1XtdtEwp-RaIz9MEQhvpdSb9gvrcpqBMLIh2akHviHT-Tr3uowtwveJwEXzwiZQPs8PMdWZroTSqA0mZS7xvoEh3q8Y4&t=AQKsNLv-aQM90MPC2yM"
         },
         {
           "ad_name": "June2026-Wrinkles-Can-Stay-On-Paper-Zero-Pants-MB20-Static-Product-Romance-Internal-08.06.2026",
@@ -950,7 +950,7 @@
           "purchases": 7,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIpPyYP5SsHiBjCm7h9JpO922awbdchXOIULf6myMbXvV3XIU4CJIWVtYZZJUwfzGKwCSbyi67IcxIGm-z0ADP86kAnnIbaSvFs29ZX51wR3jBWhjVMd-j9SyT9em-KoE638nIPArZ-Wkx5VVka1ygzwT3e91qakcbteNljuAuxXZuc6NcutCj2iWZBraP9SAVHJCw1BRKsmEqcvoVG3_E84G7D_BaLpaZWAKTZGyhUkq4d1CDTsZNfwFwi_x36Ot4NCMY8Gz6CjuWC9jFzigwexsVbanO21yxzeQOqaiKQP2GH8S0RO5w3G-QSmOR0lpdBSnRCtBqBOOgyvYsbG-m97VUFEG_Am0UyKFrjQhgvCdv7WCjbjlMRPnp5wk4uIO8c_TmPzsrADS9dATgkroJJ7TALgGq2PUGJty3A9_mX5T_zCfSJ2jiBDfMBaV5L8Vw&t=AQLJTJwW2924dx5JL0o"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIlsGBoWwwNtL6Yj6I29QoP6st-xkkTV_8wsMBcHbJG_hxXwByTCLHkfOyhvXV66CRYjYFhMaDdsr8F263mwlVgFOF1pr1LxQ4_wbp9UBJZjPD65PIq7HmRfnbB9_erAwj56a9BoHMTMgpYaXJiIsARUEK22CdNuA0R7Cab0ZZDWZuJjN55l5TYsLIZIaJIXywOdLcZlbcgpzi0fZXI3vWLSsRN5j6PiN0cmuqdMKuIsTjzBTFtP1oTqSb4eRc3tn1ZQvn4pcVOLTaGnHYBIaLj64ZpOlLMCPDixuxdSG2Sq8Tz0vX3ufifLN4RcAWnAML3_w1Z3ok_1WNiN29Gh7SOCP24Ky8iN3dRCjBE-HGFlR6BjxAdlRYL56DpaKDEYgTz1CqKm1AwounOIsVafxE0MMCyV68EyC1bkFsd83a4FRhi0NhbmFw1biOYsrayUdA&t=AQIauy0anzVJCOG5vA8"
         },
         {
           "ad_name": "June2026-Never-Wrinkles-Never-Late-Zero-Pants-MB20-Static-Creative-Flatlay-Internal-13.06.2026",
@@ -962,7 +962,7 @@
           "purchases": 5,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLtTidIJgq0Ih84b1WzC7Zgf6cfVjv85xYIPpMUqf7hwWEkgR4h361_NW8fQKm_74EnFA8XYKyyKro4VSyJ0GuEtPPsRDIK03sW9-jb96kdNOznec99sQ07Wq2vZnEVHkFDdF_qBdBAshpWhogWRgsV0BSFOvpUbS3CPeq7gDaiAIq5d5w4f9TzHpeLNjPzhQGZCRk6HzYknGApN1lqLGo0h5hBcyR8amP_F5cNLVipVCuQ-ezR58THO4cnqejGW6OYlmCglKiPpqYxfE2COmwIPSzho39kW4JRECANf-Z0F-wMoF7gQUZQyBnk8_If_tIMTnYQAyBAz9cRd4XnnIqk_fHCb30ipwIb0EQNyouEZBxw-calnPImcvHT7hnawiYeiKa7kfzHCXIdhuH-MnXFl6RC9HkQS9N23g5VoolvNLECq6A_L_sEommgWVRYaIk&t=AQIlrkXTEcI0s__j81M"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKi-GtprnnwrnPclq-UI0CWeHo1475oT92lQSzXuaVh2eVzsjePfmttYYCcPiAnLCdweE61HPx43k4yRvqtKTxCYpYecfLt3mu7dL_EICHcjezLdXx7VvwpiA0xEHWnMLNQq6dUbRodV5-ZnrgY-vo9Qsu-eXDfb_AwaUT9dnpVTDAL4dODCrXenf4moSnivMXM8tAlq5NgNmyqcI8pHBicgnZ646e_8i3giVGldgWbyVO4OrJjbfWoVCEjC1Tm0GNaJk6CwHbJOWpJ-PJGewozKTt3ikKamUqnRyf0JNYOrHPgYB25nn4eAtkQdsQagNBbZhv438a_gJpbQ5k4rJi92RbJKv7JoqJKnNI_qgZoBuEFsmDppgg7Np1qAzLO-hluLKC4CbO_EJ2fap6zJ6RGDtxApDVW8OHWgopSCqF93_HpleV_AUt1jzIxQeifSCs&t=AQLUBBQP2QTiPvT8Wm4"
         },
         {
           "ad_name": "September2026-Product-Review-Zero-Pants-AI-Zero-Pants-MB20-Static-Creative-Flatlay-Internal-11.09.2026",
@@ -974,7 +974,7 @@
           "purchases": 2,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIugAxMIDvlB7PeEadwYlMEKyHP4upM_8-Ih2krMXvlL3T1RivqdqyRr0sqW61BrtUYRzkM8n3WVFKvbe3eseE_WwD18rSKyC4w7eEAAPcU3DQAJXBxJWEuCAfLkLCj6tDk9v2r9s-4fUxOltASG-5pbj13xSQ_pLfiOLm7N0J4-8ewKyQXwt0VAoV3h-ZwtIm8OZLwLoGzMfUtqhjry8ncHPmGsRzKQ7iqrOzKYOWNggIG0P9Rn3Q1JEdq9o2fGCGo7HxpiNFxgnkciiKzCyaxkwNGuvFYDRQ8bPbJ8yKOePR6bnLaTQV9njX8tlHauEgGy2HG9HSyOqN5YSdUfAzIeSUiDiDwUhLqQadodFjXmaJuq79y6l3YrHMePSiRU7tF82Do7Mo8iLhORT0skITcIWiijnldThGi6oOQ2qJcw-Y_YxrkS2-vH385BLvdSjs&t=AQJzYiIgnmfb8fBF7jQ"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIJnMhozUzD9cXues695hKTMqVSWOgrOiFjT-ZdmUuJb-ZWuYbgUcYp4qhwdEg-AbOPwrP_C0O37VcWxqQHlr0E7mCYI3DBgGTTk518o-c_DskFzYgqaoMrW8HYJN_fULfP3lGH0TYa9g2RlCrHl98knSosAT4ZsadgnKjwa5gBw4JcR0s_Eet4fyY9NLs7e0pbxty5EmwGGWOrLomCZhVtnt4yLei5Hrkx9h2ZOVe1om_O-wlNGsA57U_Jmbv_iBLW_nDLdFTlea_JMpeSouh8FZCFZjRmvLMCTgfVYP3oV-bj7GDKNQCt9hTNfrkSpUu9nMoFcqDBSk3C4-5Rt8CPzyEMaBTWvp_dWDz9T4wrMuVAyiQrtG92aJ5WBogccRKIZGqRjO1K2_-79lfVRcNezoozEnYA17eK7Pl54D00esvdX-C3t0mJb9C14HVCyAo&t=AQLXCSJcWK546xkL_gA"
         },
         {
           "ad_name": "July2026-This-That-Zero-Pants-MB20-Static-Creative-Flatlay-Internal-22.07.2026",
@@ -986,7 +986,7 @@
           "purchases": 6,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQITrmopqmyASQqVa4yH3iiwhWdc3QzvAGeqY7vqRxq9PsJliUN5OZ4v6z1z8tAbSo8pO_yxOWfMvfaHTnp7R2FPm6jUPoyH9znDXGK4bqlHMM2H1jrOtUAwVfKqQTSC8n6jnY1EjHiK6Th1wBFO6AHiGY4kad0-viyxgwgDCA7vaYiegr10C-pV0hkv9tfnLQWdfxZEeutoggEsfy5nv2mmEcy6IBYdIQMDI_HWMqlqfitng6dg0wi6wt19YgkuRtNzv1NUxl9Jbi9MyBT0m0KJwnPg7OosOZUpIld4ymwj3BUkLPuSSloZxn6ml6FSm7yvxd89cldc_N_EAoWrMwFIwK1Ti9Vbp70QLw9mrQbFbDDIcYhXFzFEEyZOFbz7NuV545dkhe4NuXLplyOabKTgGulX1Pjuz3Gn_PrUn6hWj7vcJBkaIu8iNKbDQUcMWWg&t=AQKW-N5gWivJa7EYkm8"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLb0uJB3K9jz-RYLoBB5H_ekxvbkr45sW-V8Z5ls9N_A1I7VBsUu5W7H1UDHYo5U9Lv4oNcREtAx5iIgsAzzJ1cCEtZTC0BDODWmmvfg19gr3hKqBbOjhWRojf9Qxg-2_t1vUAYSea2bEhnFzn_lT3hCuSbmKedqYrxruLernRZ8ztzXUXKGt1LucEZ_a0YQKElbzG71EKyI8whDLXr_dP6ZxLnvPRilPrFJbdZI072x7sSqKfXnz0ihHZ2wyVI9weAtsGK-3QUmQO_Tgkamf4ECx7GS4oZ3EvmSs5b8iyahSq_ZgJpv3vjvSoZkfqzec66TYztxs6LJtzvnOSxzkLouW2ppfCavnc_1Cle8ctF-Wg3SkUEPIZqjpF6veXxozx6W9TZUZEDU_xwgj_GuZ8amGf2YqheWJtvFsVB_uKvL8mynLTsWD_Q9WP19tWMfX0&t=AQKm4QXh5SPBzyR2BtI"
         },
         {
           "ad_name": "August2026-No-Creases-Zero-Pants-MB20-Static-Model-Internal-13.08.2026",
@@ -998,7 +998,7 @@
           "purchases": 1,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLh_BxvNtcQijoK3K2SB8g8tzzOU8lq_eokgm5bOlwK529XaEr0C-qkTGcyHaBDc30RjBlkHG4jL247v3X5i9MLZGd_bEfu2olhjv2UCb5W5quEWvPiQPxgg2WQ527n9SYXDW3kwsnf1LtroBh8gTSEfUt5kU27NHVqrG7J1loglZVXlCxBp4xaqMzEYlIbVkOrErMBBNMXjWfHbt8abssoV4sD1ZB6i2vtKzmI98gJ-cPtuYXxfV0905Bgwolfo5wPrxZX_-tb7-9NAs3V8SuEQZLtOEkGbkXnGb3d3auLGp8AacYfbnx6jnWtYD475zkkTK0CAxyWgsW0Aj-IUdexRhQ8xCBKBfHHK7n1dAR6_khR8eRCIuKLuprTOn5NoWltSjZ4c5UTajeVJJUXz-x9uBk1H7wrBMXe6nWyziEKLnpDrX428PigMRWuS1zq66E&t=AQJW7oo2a6cgQ1quSOY"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJOSU8QrfCBI4mt09Wv4-rKXEUn3qejGl68rwU3j73BJP_Q23VSWRVBJtN6v3YhoP0DFXlilFuxtAX5-tAMKPtxFOrmEiD-nuE6shyj8FGV-aP_-isCNSFRtpPmE03V4r5DSOxiN2LYZ06m9p2p1lZXGJzfdIkbFxMA0SGcgoxjtj1YwS4PsEslNdHjgp-S0UZIJUkUDI4GvqTTPYZjHErHk-oBeLKSrLzNITTICSe446NiLncsIDX3gpD2OglTcZeqDSm0nt_VIQfX9roYckdwp6x5K45QOaRdXVJgKCsqxo-a0KgHlLsVFxSwv9ktSifoCOmxItzUxgsX5wCvrcCH2iuqxZhAjHK1PNyyCSumiFd6tYCeaWTWvGIIxVxS2TitWqJE7q6wNuZISdZUBTmn0BTefCMbnsTf2s-BH_begBvznZrGunU7DPI-2iT-dxw&t=AQIxGMpO05m_7-2qg50"
         },
         {
           "ad_name": "September2026-8-Am-Work-Mode-AI-Zero-Pants-MB20-Static-Creative-Flatlay-Internal-11.09.2026",
@@ -1010,7 +1010,7 @@
           "purchases": 3,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKqtEDQAmB1mLYEzPtJFwIunYxu5SJxjEK4cbJFrG1lBePTxXhcXtlb0NapqXYfPIDbUTZ-MiRi0zGGXO833PDQFjrYQRZNX9QHiyCel8hsP7Wnn_-ZMqcDTZidPspZor8-E0ogCNaWYVD-g1SdE3ZLttF_1LZCfIx-GutHI3l7HF8vtFL3fY6icyqyIkgDVhAFvnvautZ-C4Y8vAjeOzqxoAnRRL6ilnkAeuClnJ-rUkmnNRc6ywFhUllO3KdYkqu9bg_I7Aw1sAq4ZPgJHMrCZifAcfWJ5JGd6eha7Q5Fc3EOMdTbUcL0s0QorCA-uAQXpaAupPeRZz0gaAv0xxQoL27vPSyLvAKtEmQMTWowBLgJxWiqvkPDeGJDOySQXEDoz7CuWTp51RByyjGOKLIXlLNjzMWdGRW9dhPBdVweJKYKtBdMwGZEdX9FW6_0tu4&t=AQIuTcCA2eEVRY32bZI"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJQNuhGSlSZKLlkOGrjOEuWVwVaFjvzc2rYt-dSqowMAYgKSNhtzx6dOXpeeGwUuuwjTeDagqMQ23hAg6Rz_fTnVNLymJpG0BdXNngYD3d2tJa8oYL9yRb9ctOSL1G4bRBct6K5McsRgDZ1O1ROEdqlCf25KtR6KgPZaM24Vn30pI2a4HWwtWT63bHEEGqgYW8UBcoB2_yoGZmZbYFOq5SwZtJB8hkUUVRUrIF_jAuu_kGvXDF3unexa56G6PlhiK8okzuR3M-6dlggZz1DLuxa10iuh-3a_d4a9Lvu8Ex0uLq05a4laDFb_BHMOyDhQ7gA7WvgqBoYRix6Nyj33JNnfjtYLVEEktjuopcFHmJ-MC01bfC0OH_B97FszsJ8rLet1ZK2TwRpkSJCKFbx_DZKR7mIPewHptxtHRGkTIuK70FCLcJfGY5ESmM84-XTtjA&t=AQKRhRA7bJ0-2koRMSA"
         }
       ]
     }

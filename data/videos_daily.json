@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-09-21T08:16:25.352217",
+  "generated_at": "2026-09-21T09:18:24.045722",
   "lookback_days": 7,
   "categories": {
     "Innerwear (General)": {
       "emoji": "\ud83c\udfac",
       "total_ads": 77,
-      "total_spend": 574984.8300000001,
-      "blended_roas": 3.3183092326105363,
-      "best_roas": 5.7369,
+      "total_spend": 574988.18,
+      "blended_roas": 3.3182898646716525,
+      "best_roas": 5.7368,
       "top_ads": [
         {
           "ad_name": "July2026-Shiva-Nipples-Popping-Out-Invisible-Vest-MB23-Video-UGC-PA-Closer-06.07.2026",
           "ad_id": "120247729455120298",
           "adset_name": "Pros-Innerwear-MB23-Invisble-Vest-TSQ-Broad-Videos-09.03.2026",
-          "spend": 104583.32,
-          "roas": 2.6121,
-          "conv_value": 273177.01,
+          "spend": 104584.13,
+          "roas": 2.612,
+          "conv_value": 273177.02,
           "purchases": 223,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLTVBODxWf4wJCWQ6riXrCkTcecZ41Dd87SUayUVx_WQRLlNXBcSI70Nwriw-BpCT84TKCe-vPxuQMhMgUrLDnSVyQYSLf4oHlWogRW2bjT0D_yi3OvV3NAf38lun7POkFGtHlwR5kIQOJXPdUnUCJktwMYxVv1kki5aUbTxsQenGYWGvF2Lh3HcIOaFcHsh9t64ZpSooeU2MfhkDLuwVdwvbWis45xJahC_3i7KTOoHeWtVjpJoFt8pOrOIWLz3Hbt7dHp1OqTsnMUV-SQuzRJ1r-TTaP8KcpazpZ0cAb6MLpxZV7GptndOM2Mvxe7LYPJz8vjrMclrs6gBud6qNm-wKm_JyshmtaxG1GJyz4DKfpxMmoW5Eoir_E1M_o4paFqQmv2H7QEckZMKQ00vV_GBSB82SMx885mn1rX7kWwn_i-DrgbHOyhJvBQHnw8CFs&t=AQJB3UI0JuNRCSBs35k"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKCszxG9aq5M_ldxShLGZp5hZQeUcDvQtdO1LHmhmbqN5VgiOrxnb7ZpM4qL_217hIuZmwy3PUyXvHsUusUJNVDIAJFwaK6qYsAQR3YkY5QUrdPZivN4eLCplPJdOJLYoXNvqLw7unqPDJ60G9EdfJypJ_ypvew6PDoYOTqN9iEnabyJvIqtwOVZX4B0yUCuqX-81BRIS3JMMN1ukLxFC3kYV7tNR2NjDAFwitfka7c0wBKj-RdxpPQsCSbjm0Ygk_i4mGXcn7pIBmOOnErDMzIGrMiTZnBK6ASwJ_Ow1vAo39hOu-hbtAae1GfyFSLN-sOHqFJOUfFzS1PsTkn3IwygScKEHtLEtkwwI8qNde3b0341aZlizd00FcOjlS0LZPh-6ng-GZzeRZFBhDqZKBq0Jhh8U9OvfnnEf0cLQr-foWINuXM_1DtHTYd45Mp93U&t=AQLi7wqcH7C6-LWuPzQ"
         },
         {
           "ad_name": "July2026-Mittal-Sab-Invisible-Vest-MB23-Video-UGC-PA-Direct-24.07.2026",
@@ -31,19 +31,19 @@
           "purchases": 120,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLr-0UheGvZoIidUzjRRJx0jJPhBDGOZ22r_mkC6IZxA4rXQ5CSXQwBj-86TbzYsE-7cSQRMk2UC9QuR9fZU9djmuZU6qQt8p_EmPhtvMSGHHV-5KxquxBwDLVtq5oalHIUiW6I2CZukbrj2ExjmwijHQCKU4DWZwqEBpv1hIPQlct0xCM_tp3xjQLYP3BNQxm-ZqgbugV5nYoDJ-Vzno7moIGFZvvNGS4-YH7XmoITXQwcD9YCIymk2QoAG4I6aEX6Yf3jxh_3brEAKiKoV6Z6026NehZWhea350yrD7zYUi4Ih_AXcj4a5gD3jjjsxuDfWw8jsA0QqXxO4VUhBXr-Lq-vmgZuJkUYRZkLGwhLKCdcfN1z3Wqb7fGRQ2Ik-3L9-gW6uv1YzTLU5vLOVws0kZfIaP-KJ-Jj-IYS6d_NiB6kQDvXlxwaDBwfEd55ydI&t=AQIPOp6__p_RMtivPd0"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI7Lt0qjgJ5_cl8Wx9-OM3Z-3cnlFq1M-jMO6kIc5nF597_LsMEWVdjCeUc2jzFJvk87MKYVoNbRVFTzJafX5MOtyENd8GsI3RcLvld9XChZnG9djU8PdDlnL9DYRJWsD8pP1M7DzS2xS7U-csPQszS61PpC1pxbPEOGhEF0ZAl1QtLsno2OhhVZ9jeJ8sW441ULe5vpsol5W1e2_-d8AU9HGURBOgQFwLrl7OrbSk6vKnXtcw43WqDJUtor1G6K6i713I2GzAYI0jq-D7_yIAwMJLQgA7rVUJ4C9kwJvDM8QHbSaUYbnmQux7sDHjb2jImOLwmVN1FY0Oz07HIQeaDyACUny7YD93XXYNbuCF5eVHd3E29Mcfi538DafG8Ix84GBeAQZWrrdgc5ON7mYw2g5srWebgjuTGlHXaFJYqo4LFp7bi3nsWElHxcx84H18&t=AQJplKeGWG5dtIrGlj4"
         },
         {
           "ad_name": "August2026-Paras-Invisible-Vest-MB23-Video-UGC-Dark-Post-V3-Direct-14.08.2026",
           "ad_id": "120248889937580298",
           "adset_name": "Pros-Innerwear-MB23-Invisble-Vest-TSQ-Broad-Videos-09.03.2026",
-          "spend": 41273.75,
+          "spend": 41273.8,
           "roas": 2.8711,
-          "conv_value": 118501.01,
+          "conv_value": 118500.99,
           "purchases": 82,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIa3bCD8kT2TDtn7i-ZqBX0V36_nJlM-dB0h03ETbb6kGu-2HgH3dur9KYyAejU3Ht7EQRpiTaD4MXkiQ3wFsDpV12giuuPLHSVd71_6PiXvazR4xpAKwPKLhHn3STNGci9wZVBYt7lU9nx2tMFY2R6N8OFAOMgeio_LfMQgroXa4Pbihr167pEpulqTdHVTi4Qre5sP2wp-YXi52tavfs0zsPhf17DPH3In1ZKxZsg6tggVz2GqjFcNKPRE2toQe5nu4xJhk3lpgt6suZIqSlWYT8PtQMOOubo-HvPX4lmBWoxVxUqPRTCH16zAlDZg4DKkZCeSf2vbEw5HoYuqOQdIYLo_9R9YqNP9Pc_dDHW08AcgV81pk4RLRbITxq22U_J5HUZr7fV2bmnXMTATqAf0ONjb_50_HUVclSUf92Ma5g8fW4OTQ7W8ykGFMa7j-U&t=AQLwsyXGNkWm4O1QeV4"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKySUHVNNLoGIg_pMPtvf3DmyqJpEEnt7yR_Oa6SxglCE8XAnyGb1EUfILveODhh4sqxJs2_VJ1NAhUgbkV9OTGASJvvBY_6ZsaPjs488eeQXqSzOtFeLcbNAQa2E9195LU7qXAKnPQVfcjQks8kA92dMXrVSrl3CTNr7zJx8MMwHEkdBQgurNVuKY1kqQuzXWR8_MTQto_C4Ao8xqNvB-Z6_1wd_N4eWcjpziHjRjnYg-LgOflD5A6pGrS7kf4DqPHBrYo2S1PwzUNjONctXr6H9HHezQBO2V5NzPtjnQ7RuiRMgRh3Zr7QOlM-JAK9QegSvGkFA5_I0fn1GOrnkeA-wmjlC_W_ufvLP8HqA2o1YaJZQEUxcdao2k_iGs3RUIdmYMxt8KQGTQiuGDi1Tc-9Abskla0TNBcsCmbdizcltNU0LwRvJZDx0VVS2JM7U0&t=AQIR71AZdSWCojgX_g8"
         },
         {
           "ad_name": "August2026-Parth-Supreme-Luxury-Modal-Underwear-R8-Video-UGC-PA-CoreSmart-17.08.2026",
@@ -55,7 +55,7 @@
           "purchases": 130,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJKQOLKZqPy8XOLgNB-QNYMtwFqZI0LdNw05-BoSdtJi_UW8aa6KppdGCd6JJJWlDbU3Q_gIOoxlSAPUyqcWqqltZkS6u9ddQANkIKr7dXo7enUPaMHj08SXGxTazep-zA9P5V1hKP00MFHxc9dDdRIHR6AksZVqKG8VNoWZFbq0h_zRozbC3wTeQLtqIoqfLpmrcNu7DRICCx_AUlacAGQ8tan3M3RaT5y3rkGHAUUjM0Cl8D0yKUUXnb0DhxNXvxboiWDVvVJzgwzF1sdzyjcAIv9DD2D2UuNkUpnshmgRUF-jEsXWeyOcJZwc5m3tOfeGX_L-U917kYyeMiIiV1deURVQUenQLr5VB68uBwlGNWjRJuZdFWj7ubYHcdb8y8QHZ00zSlbAJA1GnpVP8Z7F5A3FwcHDUTaHDLsIpZJVemJdeB-zqkwlqp-qltLnEE&t=AQJots7xcl31KpcTpGM"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJC0BmtkbfBecQO0B8TXFbKK5c6pH3rajzqM70StM39O47Ea0eo9pWiuF8GlmgHda0xxzwDy16WMfnVR9QniUewo7WW5mUuIA18czASRui0vls2_l0EtGlIYeHMGhBbrWvHPTDb9D83Ik806w_kYtSzXIJ1KdmIw9cCCEZ73QcWP5s_dk9kQ4juAJU3vQ71ZcEhJJHUPvFSyDVkMz8tHrRnXBuEONbjUOX2NWlQCQ557F243urgC_D4u88YUY_EWo0Z3eL23uVHOOldEXzk_4R4-RkfKp6E3ojHVG_quHhKUAatVpUee80YdHR7sp55zCqHV9QNRCGptg0mSMUFOOspIPRmwOL_vcqlTQkFcXLagnIVLvD4n7nGqIlTsH9kqxh2k8cUwfZDiVkak0SSrUSJudQ3YEwAA1akfAWP-Ogn9uHnXzTdR6p0zm0jbYtB5CY&t=AQILdtBsVPrAseoG9u8"
         },
         {
           "ad_name": "August2026-Chandrashekar-Bamboo-Vest-MB31-Video-UGC-PA-Direct-27.08.2026",
@@ -67,7 +67,7 @@
           "purchases": 83,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJZHH2H3BaMtGt4tZNhP5FuGUNheZM0h9jWA5p7_64ts1ztZVQpMegvwxBQCYxGWWiWDtZKVNX64nW7eDvTx3kQThiVRFqlqc296g5ZkJCO0ernaVriX4gSwE2MViuFSW-2HZbkM2AlDa3VFGQaar8cuipk7C9LjZN8l2FbLmN66J4kGJ9Gr5q_d2v6a6Q-WFoYFN9nxjwcBO7pOnnBCFx6cdJD_Pay4yRSy9lAfuVCT_94ld6Vxywzu7bBYNEny_5grH4cqp6hn4KAEWdmj0X4VUZ-dSnzPQpIiljFEYqW8kFsMePvlP72UD5ieoevgtMBJlgZFiUxtPx3N--aME3ai1woslvlSrjUcjRPc2S_A1LgVBeENKC4muPH-hWKduDaQsvG3dDb6XdQR6bSvUl7nFEMTGhxC8bv0YOgGioF4fD6yea3EmzRXqbv08ouCyE&t=AQIoNtNtVhFPD-djIo4"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL5Kn8K2bn-SwQZaMHaPCKlEEkfUDkPSBP5nJICWFsJG3DNY4y9JPkJiI5-TGNTTJxoVvC1oF2S4hih7v7hEs4Ac-o68t2QrnwBP9nq8rTERSZrMYhl5uU5rdI7znDOqQque1U5cx1drd0n4aCLbn0Q1TOwnziuiT3lF_BqC7cI9ce8QRaYQoo40wSWd6zi1MenR-kA1BmRY1mNKvgCjLN7U9V-CHOWX6OrMoYNGGJBAV7yWSQu98goOlhEGrgCzkoArIyizZ0inCV1vdHRRoZtYK8VG-MtWwDae50rrkvW_gzT0ELhzhvz3_DktmfOm4flH-NZz8kyLq3gF-C69m_JT5X70Oac3zrV8rfl6dkCNw6D98dQcBNejLdaUHWAXdbT2KJ8V1N2sp5TA08ZDVwWOppf8jOrh6AzeBZnJEQjL5flnRp8CZIbuuTc7z-_4eE&t=AQK9aFZvNcReTCzl2HM"
         },
         {
           "ad_name": "September2026-Sarthak-Mahajan-Supreme-Luxary-Modal-Underwear-Video-UGC-PA-Direct-03.09.2026",
@@ -79,112 +79,112 @@
           "purchases": 96,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIgbfxejTCIWvrcjY_Q4u3uMC8zmFd94wTexJ9uo0sjCpiwr5jqpZPD_H5xUJp89tR7d_P8zKZPCfDaKz_E_N--Fb-nmihbYUL7vTQTZ16E_OITYLKijWOo9TF1Lo5d5KQxZOkYwSCdyHNTsFmprs9-7zqv4_C-wG-Os6nd16yKX4XXSgzATfKAG9_7gwR-zzC1hInmiTy6tbTluMscuPma5IU7BBPdZHzyBBA3augjBN8PUqxBmb7VOFtrTz0WOFqYYUeSLecfHL9fR8LfASQefPD4xpZbmXlLD1PxAu7JENNiKzoTGbZ8Aha-zRoc2GyiY0WfTNQ4sdUsa8mGuenHxR0Meqw6sMvatDbfW3W6LBzh9fW_nkN6US7Bct0QBxismZbly_YIK3kHpoaT_XcOWjRw5aDCEH6ubtLZ9TscYBwJf1o2BcP2QrZftXVt7ec&t=AQKS5clHPWsqPaQJ_rc"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKb-SYCtbnkcguXNUq9Fayi1kRsL2joCUXcgjRfvTHbOZnB28HnYl683VG4LUo7sDsfcov6pEkkZkZX40VEWyxuT1QFummPjhcCkQPoElg6usMeN0G_rw7rUBmy9CCjGZevwjwcw15QpK_zhs-aqeebth38f9EncQ8PrqxoY1L7JSSSo3zrnQtiFWh-r7ranXQz6GaCgeK0AGDxH9hvxuxKAtFb8ZDNyAmfYgQFQ7ZWhNz4Tjh4xOWpc7RBd44JUxX0m4GOiImQ7b8NLPH0B4qPm4TydrUax0LitGp-YSkWWZGI-popOfCxwhfxS-qJbyWuPsAW31K0jHbAmdciDeacTRnLdkYVAEq9ucrTgp7rlbddTxEfdQn2UatFMMZ0W5NgqGZ6sVOqYb10S5Zw8sjV7Kp8vz8ze-Paii82JtKXXxXQ3wzclu2i9tbRbItz1Hw&t=AQK4P-9bdSRYjZxq2So"
         },
         {
           "ad_name": "June2026-Visible-Vests-Are-Now-Over-Invisible-Vest-MB23-Video-PLV-Cinqa-26.06.2026",
           "ad_id": "120247223649380298",
           "adset_name": "Pros-Innerwear-MB23-Invisble-Vest-TSQ-Broad-Videos-09.03.2026",
-          "spend": 23797.17,
+          "spend": 23797.29,
           "roas": 4.0571,
           "conv_value": 96548.27,
           "purchases": 65,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLKub6ooFoMzC46-IORJDs14B_-mJS6yyIW2mqTX0EyWN5Lot-iwDgeL8f_8UNUPZjsdc3lLJOju_nHVO7Ep2WWRAGdO8tk6ezn7CU6-Fnz6N263vJiOPFvOoO5fAW0PlVlXus5M2LypciZHbkpFb6gwQZ01kjZNrUIsIVdPbi49uOjeZOsq7Tej7PC2Tu0NnTiuntmsRYtyTrortAaKtofh_8uwgXPuvAkw-DHugcypNM30FEtxngMn7Nqj6ZGipBzSLC35ga2kI8Di2wlN98iMahGh6CGDp5C5KFwbdOH9cBb9IWTNblQ1J684AmHsz0i50k0qe_QVSwv_p6xDPH-TrnsynarC1jmprXOkxCDQx8Drqc4aVgROQKgbMkJZVKxe7_4p3IpS8qEc3o12xgHS6nNMwIkL5CfyjyXBLBBHrl8_Ctf-JBN_RtMeYUt5h4&t=AQLd1EHSTcb6pZm2VDk"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKm-O8UyIubtgrcRlhY6JdqAiSx441o7C_1rSYkHCgZg0qmSuhs5733V8z33N3o9XgvK64qBuRf5A6gUWFEolcXaEckZNAOtNvE5IGoBslYmhe58mSqPOHsfFDxenLSZNL6lfy76lw-igwBiBfivmZjY8TTI5fu0j__Q-NwB-9rwApwF1kp6UCH_Ac6AHtSO_aUn_CLYLeYqg6IjHTxVFps4dGMMtOj6nQVH0KKKAeCQz7MqBb2ORgBSc5EOZj7jVgBcpBIxbEpGbtxQp9uz7aiAe3wgxFMo3ZwDe2_lVEnkpJeZslpMk2jAyQ9zMS7dEuPkiiOf-fTYBb-ys5gn0fKc8X4eYGThFh3LqT3EIVCN9TVUSNnjxKjhPyxdaMQsNVJaHYR2AJQws0CF8_gftFFEKc2zV2UR6DDrkN4S6W7lbie1gCA_CY5qgk0XT2LbbA&t=AQK6s-6K9otiW8ssLDY"
         },
         {
           "ad_name": "September2026-Harshita-Bajaj-Bamboo-Vest-MB31-Video-UGC-PA-Direct-02.09.2026",
           "ad_id": "120249264674300298",
           "adset_name": "Pros-Innerwear-Bamboo-Vest-TSQ-Broad-Videos-25.08.2026",
-          "spend": 20635.49,
-          "roas": 5.7369,
-          "conv_value": 118383.54,
+          "spend": 20635.91,
+          "roas": 5.7368,
+          "conv_value": 118383.53,
           "purchases": 120,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKw87-SHA8VWZ7vm6HbLXB9UbKMDdLom4NlfLPkjvHwydJ31W3yaFTNymlM9FcfOycKjDWXLOtEV0aUjyxNLodCyIxT7xparaX7kEOsVXiaxjqAe60ZAazIuMSiV2Q2w4Y8fWHuQy-1Ra_TRDY4ve1hteb6ryZke_s0ybtnaWz89Kg3SKQMbKLK24ZQJpQAc60vYSuaztQscibDu_N3llPP5z7X-Bqxd_U80_cnPNfrSqqezA4K9b5AbBYwugoLRnbdIJ84DabFw2K7JWgeJYEYAVGWfoZgg5Fr_F-kSrm5pKbO7V-Jy91l_PZNpVm1ZJEP8Fe-fFgDVvLIPR5sirEsuUw-rqYotySr9L93JyzEzlEq6lGwkpVe4onV2stFiS9nHJNkOc3AZdAxtT0vV0NLo1hxdU8NaXdHRYK5qcULzWJWLVbg8faE2v2-R9sxMXc&t=AQLv25vhubppv5L6oJ4"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJB1woa4hZpGKANq9Za9rX88qFw_u53vtFPtqi3Z8per6xTU3dVVxcSr7Z-VyMBHuBLsVC2CM7flDvtpI9RQaeOrWu_qtKIXSHX_3q5KUGEGA4-9sHUnYnzb58gt3j04v8Suh1-GjRV2xHF8t2IoOr8rMLOdocwUjtL23bu8ZNpK4E7QzVhthZipdcGLugsHqC-Lr3ryUih3vgbTkSrPZax23dovdVL3hiNRs1Kges2HhNbC4hEliVPyINSVrghFgxySQXTaO6wUAyeyEIMFebgKsgzpb_8xNTH2ykXfHSiZjL_RYUkijYBEjATpCLuUaZV8YBbJf9CYdjqWJCDYRm16guRqcagHPqwLrfrgiS7_Wv8kzDyAPYPO92b2eylqBJGaX3N6--jGrfO9n9vSoW-ybjnQ_-lmZZPtpMctJry8AfXzXDhcAIEc2qXXAkF1ho&t=AQLK5e9PSGaE4T3xmgA"
         },
         {
           "ad_name": "August2026-Sahil-Invisible-Vest-MB23-Video-UGC-PA-Direct-05.08.2026",
           "ad_id": "120248634364190298",
           "adset_name": "Pros-Innerwear-MB23-Invisble-Vest-TSQ-Broad-Videos-09.03.2026",
-          "spend": 19480.93,
-          "roas": 1.5356,
-          "conv_value": 29914.78,
+          "spend": 19481.85,
+          "roas": 1.5355,
+          "conv_value": 29914.79,
           "purchases": 31,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ_z_CXBC0Q0kuKNW8DPDi7wIhpnQ3bW66UKmqdX89bgwY8yzn9YNXhAegDej9vR-q5nKqnP0ZDjkfz2gLpuotOlmD7pF-FdPnImen3JiOQuw4Kqmx5T2rnMcESUx0F2KhL09rS1FJFmx0AdoelDT0qEtpDWCzgSOdvteiLGkq6o6O4bmv1ZJIo1IkXk0Ul8i7mhHhv4-lBhcfGEJwYuZPeoeAoV7eC6B2362Lihrxc73-bEDTPr5vOg0M5LtmFA6TA5nXWzIsfjiKA8yOqonLWXYE5ZvFOvU5T0dwFCNYHdDeBzPIn9v0w0-AulSFtT4CmgzeqlmEM0KwDBYW9zij2YXLV-JcF2iZE0_UchVaLTAjZtyRI4a3LJ2LYDEEFkZu-0gZ-H7KHOv8by_adNHEDz_OfZkhBVfpjvd4d1WXlSZYNVxIF6Lj8j0ioCsHAZsQ&t=AQLJPIXQaoCf1MRrDuo"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLYLL7zxmeH4E45wbRf-50F5IJBsG8HN4xBF1B_YbebNyRzMAiqt_M6C7vvp6B-k30lMJdIgH-gR8okNch0XRrN322ZMw_0J0Se9tM3qAyMGAmYsA50KL7yfo2xlZelORRYehislm8j4M8W0qx8gHREApH_J9AtR91gD06NOedSDRThuROYk7ffa10L203ewfGmCfdAO-kdGxblSYp1G4Fsu3lpMv0q2bk-BnWZo8VQN8PcW9I2obkz_NdJWHE8mnToVBaWhQVTNzYppgKW98EFIy4gBNo5imiMk88znnfzl1lXcsVjtTboq1rvSGsUz-XOcI1UdVRNBnHgi8e96_89cc6nLXiBp7e1SfUDynK2iwKgzbLoTedV3DqEZ0-N9WOnWn6_CWsKgHsZXjGX5SHNDK8nSOzPkhb8V0ufRTZMSpvwPSfFAWahPxl5nxzaQk0&t=AQIia_2KczgVb9QBQk8"
         },
         {
           "ad_name": "September2026-Ayush-Jangta-Uniqlo-Creator-Modal-Underwear-Video-UGC-PA-Direct-16.09.2026",
           "ad_id": "120249497202330298",
           "adset_name": "Pros-Innerwear-Buy-3-at-15p-Off-TSQ-Broad-Videos-09.03.2026",
-          "spend": 18129.0,
-          "roas": 3.3548,
+          "spend": 18129.01,
+          "roas": 3.3547,
           "conv_value": 60818.28,
           "purchases": 61,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQI_pOfvtbnh7MeP00FRzuH1GSuBCd7i2lFAeW_INEt1Jpgc_R8eRe6ard51Iy4FVpVYrmbA6Mo8XJvUNGOwCmJOy0XPw3gF8ezjyqwTmBpE3HKGO5H1CgRm0mA78yvelIGVRZfD1oAeM4Ail9FEfLxGW53Yqj-_oVNl_3I0HH4Nomp7D4N5Gde_3_KFmvUJu8v8B7SWJ-AsaK1k-7_tFUtUBu4KIhmCzGB6L7lqB9pUKgkPqPUjTCgorhNQPfKB6o4B4bRSD6lT2jQ4D8xylv1ZtykcDqzHNp8lFKb4Taxp1TzzB9XAHM0IHuKUOUNAjNvj87ezgQG5jURCjCRUduMqaEL8ew-1x0TkCwpr1LQujbQYr0AYi4KNBdYWdlFrGKUSQhiuB2LYBfSPa4Id8xjB-y57HhZ7tEp_CkB08BRIFapT2yOxFniPvakbUV61mto&t=AQKvzH1nWnwK3ZTPfWc"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKUhi_uI7MGg_9DVlP3GJxH78sc8ZLSjuHmOzIb-aIeJRW9Zhl7lR5LpHNKHrEs33Y-o-hcuA9fIb0s_IJAfd2jUl2vWls0GATn09O6CmBsvSeegCEJrQTb9bNZy9faFKIg8cos2N3iRJaYsMWh2NNSS4prb8OyBs-PF1uvdh-tw5kCs3Pm29qRlv4L7NyCnpkBH7lb4hL-UKFdFElDST_pqsXZq-a4YA9hIPXQiJ4gKmXCP1ynqUGdFyBd3tv2CHqbptoMPi9b0A69Grja3YavoT1E6ipMe6bn8E3Fjsmh55tlQj-tuOy7T5VQxPyuuZiBUzKIuDy9aRBE3H97cbJwQSecRDRc6e0yG0can60TYTi2cQkEDjyIEetcMXpNBWdzdNzuLiEtALnBy6nykmFw6pFlTNcoK1eXtd6CF9QzawANrQZksmRwitoXxOxlYSs&t=AQJQ2Iagwxg2xWUfVUI"
         }
       ]
     },
     "5-at-999 Cotton UW": {
       "emoji": "\ud83e\ude72",
       "total_ads": 128,
-      "total_spend": 2392127.2700000005,
-      "blended_roas": 2.752786777937613,
+      "total_spend": 2392145.5000000005,
+      "blended_roas": 2.7527658497361465,
       "best_roas": 3.6994,
       "top_ads": [
         {
           "ad_name": "September2026-Ayush-Jangta-Uniqlo-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-11.09.2026",
           "ad_id": "120249426353010298",
           "adset_name": "Pros-Cost-Cap-Innerwear-Buy-5-at-999-TSQ-Videos-30.06.2026",
-          "spend": 768568.82,
-          "roas": 2.4034,
-          "conv_value": 1847143.03,
+          "spend": 768575.68,
+          "roas": 2.4033,
+          "conv_value": 1847143.2,
           "purchases": 1776,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLRTCGCdhfrLAxheJ479xurrAukhZljfX6mWuie8ri0ud_wLlNzLd7P7CrMZMHFh1ASTxDJxqJlViaVpIYWkavxhbueic0TTX203BLFwE5s8M6hMmFNKo6LucawkXZcrdEqn2Xtvyk7hKrgeIoTJWO1-oIL9zpMsTydc8N2uSbNj5DhuGLaFjD0aybIGQ-MJQ5ckFwGaijD8L2rv7LD61d8Nhhr_We5V-xoNn7X9OU_jw33VlhrgFun4NLwU7csOR5LOWEN06jmw6t_6goplz8JuOzMW7KKzHIIa28fjsRv5VL5I6WnH7x9IEg5mHHHYky69gqIoyhkYBIAIYt455cfvPJ0v7dA8ELWUXfUuNb0aljikpbYzs_9BfY54L6D_Ggw07vaWnrhkpw0OoOAbeJR1ZbJK5hM-NkQdzFFkAQVQZcEZlaKmposCBdFWvB7aDg&t=AQI4aMeG5nw7qYAIaEU"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKVWx8FvJFHpP3TUyM1tj_XNNmYpAVf0tVb5ysB7dCvhAy3nit313iqj2AuLAIvebgBbakW1yDJewswm1juDj5p1ESwQqrL18qXaMgMnX48fyQCcOPmsNPjQJi17_ZYW4O0Zpe6hskd8pb_6As-rOOtIu-sPz9uv3FIpbl5oHT0xQ6f6EnArPnSfGGHiqlGxA9IPXPP5wluAF27yuIG0x26qu0xsJ8HkURL7SLxycfvCQUS-VzzzdbN1n-9yL22rGfe35l9sYL59JN3XR0HlHifypLKYoH1HjfjxuqoeipHFLIsWxSKHf29t_gjhQ4UP7xGUjoicLqrCVdk_fThpHc0yUnnhqLDfPoLIrk7YgHQBsRU9OLbXm_P4RyXJBrHZdZkV9V2wlAatNU2y8zAW-As_hPl98C7MGUGeGPMbtZRIVFlHYo13zX0y1cPVNz2yBw&t=AQK7bjkFcb77NarHaz0"
         },
         {
           "ad_name": "September2026-Samay-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-17.09.2026",
           "ad_id": "120249510578860298",
           "adset_name": "Pros-Cost-Cap-Innerwear-Buy-5-at-999-TSQ-Videos-30.06.2026",
-          "spend": 151915.54,
+          "spend": 151915.65,
           "roas": 2.3792,
-          "conv_value": 361435.42,
+          "conv_value": 361435.4,
           "purchases": 349,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKcJUDvSDeOsfWlOhROtW_Dck2KCOY5Ne1X2TTVfH5D3ryAmOhdgpnTimUFHKvTn9wlcHXaNAquy6PnzxCHSCWSvjdXpY27489IThtPaabHrbULEANnwA7M-tHPAoOPdeZKpEpdBH5YjTL8u4f_ShRrj6aXlj_NvXBljesvAhntkqoKAndVEecnNxewFgcyPivilPmWIfN1r8p9y34N-X3gLqqh3HeSRhMLF9o-qOSFwI4v6r8naVTa0Whjoz-Ul65vBfzKQIJbVO0VmCCQp-tb9GEW1jCB9JSFy9SR05B1oI6rQgSYLbhwI_O6wVee8CJ_0LCfiAcRS1vFyw58d4NCtpQKqctw2DQ8u5WmQLQ2KlNtiynPCdELsUvJkby2OqzyM_WKXVAhGR-ePMAi9KCjW5b9QYDAHfa2k_PGOOMgQWrZaQbOCPV8juIEEQ6xiYk&t=AQK7tjC9ZlFvlqNkHfc"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLlYyqxL6hcVxrXtwhJIm2X_JEdOnXqUlGN50vWjLeD6zfsD7pJYeSoREZ9--OWLmkat8GVag-9NTd93RaOCCd0Dxvjy-dSbX9Btm4CI16qN3X3D4NmprlYiPmKH-jSVeR3JnzcPgTnVHagrwBPFNunpx5Vp2NU1_-H2g36WrERFRSdu1HNqxaXoa-yY0ENuTrUNFkK7Aca-cK1OtnOs1C9qxbEsAlftDYlUL5ZMhpbDP-wx9hxQGCEwfXqCghbOdbKfqZqKrIgNinrfhksjYL6lK_n4G7B5zwBOB8tkPho0f2VJMABxUqVpKTPL8AUczEXC7_wxpdsQCAupLwXZW90DJ7kq4fthDdrBQCoVwcQR8CjeYvAt7m4sBC4gK-OLx4Svn-fQpDvWI-7giU4e2Brx7W0zQysjS280YnwMsVCfN4iIJdbDnxv1_mpbvTHTI4&t=AQJqU5MyrK8PohRW7Vo"
         },
         {
           "ad_name": "September2026-Sujal-Regional-Gujarati-Cotton-Underwear-5-at-999-Video-UGC-PA-Creative-Cult-01.09.2026",
           "ad_id": "120249245633790298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Videos-09.03.2026 - Copy",
-          "spend": 111386.79,
+          "spend": 111386.97,
           "roas": 2.9394,
-          "conv_value": 327406.65,
+          "conv_value": 327406.63,
           "purchases": 327,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKqXIgyPhKaynQ4u_gB5Csr_HVZm4isntKUF7yxWumvZmtuFGVEkgEv90PIm6NonACGTqepVC9qlvNlgwAS60A-f_IkgdrlDm9gd_LsSIDr5qoRkr4WpxEuKbx9NsmDRh59P32ueT_X9AuBjiDa_z8EajpsJ0GQzj9PD5xUyQNbmJv3Ojk1lQT0jQzdb5CzA3_r5oMcqNOi1tl4qzObc3N-V7s4xS-L8dbnhZav2bcROy5gTxnkpPlfP4nv9bb1LlA4ZHE4CN-J8KyFwcSKgnSrE3H2j1YqlSUSlcjPXK8Q8D8L4-Qf8qqzmoox6e2pe-FrGfJLuGp3xMXlvD2OzeOxfDtLyRoQQSe6hId3HkV9KAn9RCIvwFhsTfvzkUGFBwnbgJSqxFfVT7ygdItSrzfYDZpodgpFJ9x9X_ErpKCzEsdCPgRHRoCDF_AT2_lGQEY&t=AQJCRybEUxOfX6LCua4"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL2vbQGfLYPYBKyOs1hj4F2YfWGxQWcZRN3OxrvP1SBI93G1MTxtbaf_V6tLOkMvURqPOjNd9RUHkjlP2HMtVFCctw527FAp1zRrb25KcoKOvfzJ0brd4RHdm0dNSBgG7ADq8yrr3iXFQiZIRk3CqUuGGYxcBIRONSBmiVCssL0ydBVEvkpVa52E0j5XY8lHXeO_oTs5QG6KlzOtAnBs6tp92MCo8ItZcEV7CwOQDZGESrJiwzfv6gWNmdV3RHuWeskj2ahQoFXKK1vDyb0I8y9RDNtXXJ3_PVSpvJaJx2d4T0PJXpZVgHG50DUesW8R3VsH8k398WiRcnJdj0uSptSM9zhxOYg1tBcbT4_5Q_ccVS842EL02bdWX5-TS7Dv3UbgG34aZXxkEybK4clUx0vp8jo8UUk5FdaArfkoOK0JICpA5cx190CcTnyZYXmsaQ&t=AQKvxadq6U9Hr7Rk0qc"
         },
         {
           "ad_name": "August2026-Rohan-Cotton-Underwear-5-at-999-Video-UGC-PA-Hypedin-13.08.2026",
           "ad_id": "120248893641350298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Videos-09.03.2026 - Copy",
-          "spend": 87918.61,
+          "spend": 87918.62,
           "roas": 3.0929,
-          "conv_value": 271922.2,
+          "conv_value": 271922.18,
           "purchases": 285,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL2S3Gjo_8Fh50r47KqOuwewxZws2Wg3ZIBdwNVXdSkUsxitSTAuH90Z7IK1in6GKjPRSaipNHtN6t4Ku4RDI_6LgV4nV-Yoi7Zw_DxydaLrk1LcTLGvKb_SQ_NdjSi1cYqWS-MuvxISsZzGKexf8LUscDYuCCELZQDh0rs1kKA_Kmo57_bRdA1frEty1YQ6dDSNO0LNciCPKTKWGcETN6u_gaa_2ZO7qc76L2-UwpeBbEvGj_T6D7cFDJstC6qqQ1Yt5agSgPARiYF_9FZdG9YpvfB7DA8KEZtiQdHKC6VVMocnmRX_Bd0QRrateZnPCnVAVfqrVULVt4UK3LDJqVubYtDmkDSNmTka0zDdIpUd_7y2YXlLvFgCLhDsq51-wbjmY27JEOU10h91D8StytPNaH30KsZ081-yRAFLw3ws3ZTglM1RcFs3ERq7GhbqS4&t=AQLHLULiNmrjJFXxMG0"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIgbqUSqISjyd-ogXlvfJ5ramS3H29nio_3cnkkG8aOanjgdOa6Q2Sq_OckG0AseUsdPW_xAsaMgtoVqvPkF_hLo_XnFbyS6UYLCUtoxNVUjcZuG1IKE_ghNW4nMLXhSleRutUB5Ss0TIFgvobU4xe9alYX6SG5VSr_JlHBxGEiU_I_zAhNUq3KceBP_p4v-o1rM4meoNZyLfMYf-VcYprSRbQaUpMESa4Bo__WUB1Lboo1JGMoWB4LQ65hTbJ6s5KYGXqfYnELo3-tMmX2oG9EfiEO418Y1Sw-JpAjxUev1Rq3sdfO_vzu1AfR3ke61bAYQXjQlPIJkGWyoKV6edoiMM2R3gcYeRwC2054aoFt2rIK_iqe-CeVL65Tra4oZIjBRqIDHtAQl54kElA1JxKq6mhm2yo7ni1fZ6l0vCFDDc6735xJ62Nx-594zJXHZpY&t=AQIK9bpR3bpIt_etpDw"
         },
         {
           "ad_name": "July2026-Vansh-Mehra-Cotton-Underwear-5-at-999-Video-UGC-PA-Barter-14.07.2026",
@@ -196,31 +196,31 @@
           "purchases": 259,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJqrbrDySJKT_eFBTxfBP3SHQnBAM87EG9df6ST13FJjClB7kT01sJc0mNbABGr2fx7gfOYmP1pmg3FwZRYH--sqf-hYs1UtbHCGt4RYFn9ScPqyG-Lefj6ugGDwLId2a3ha--0OPAN6mPNjJt9KUabduzE3sqOhe94MXjrTqUUFT-BsYdk72rJ0zUt2w0KIN9bZ2SYsGkyTpI2s7BMtG1tjyuUmNgxzE6UexObNmOL_-RDiTLLjxg-EZ683Ft8xaeQ_CbuN_vlT8Zg9dhc5nEGBoDr7ugDfFh2TQQSY1Rl-6xVTmpCDvVrUoHy3AbAD9UKuC3ui1MuhRkDe2gQ5CNQp3R32-DHQgpBk9OG1M_0tuhlrcp-qVreJnwa8tmS6TO04kO4FHSST202gYyhSggIRVgLC795uFuVkJ2tQyVHRJ1nqlZFvfeM7423AWb6qDg&t=AQLgHySQCPZbUMMiXLE"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIdcKHLmC7E4qwX42ln_oJUOW1m1dzirnHd6UgQ33OxPri08FCQnY87yZz-5wgtYcpSYXlKH2P4qs1m4cECuTXM6yuJ2PXlkZgLoSe0Km7ebdNKsL6wF4Wll2YtFwO2JjQuqrroH-pCinBJl1E55EW8Vk_EoKydIrUsXn9gz1zXcg8s0RCZwar9fKTtQPEwSVbePu3R5Ov1SeFD8MU-FUmcGWx0vO_SnqPKkkGYwQScYWTzjoSmasZXSValJ3hNxPdqkdU_m98UrKDLBi8fvE-Kw4YS8pujSDdOvjF7P50whV73BodE0agmDlm5G6GLCWUKYQH4zobeV9V1pOCvrjHfVVbkzQzW7po72TjbsCD4lK7LLTluGzt4pVnFN6hKg1h7gnCzn7VUc3tPXrJhznztIHCINGw6FXfE9JE3lwKK_GB0awpYiRNT5MEi0Llp6e0&t=AQJgIqaluRrnWRbhgz8"
         },
         {
           "ad_name": "August2026-Mandar-Dichwalkar-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-10.08.2026",
           "ad_id": "120249181265880298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Videos-09.03.2026 - Copy",
-          "spend": 77207.07,
+          "spend": 77207.17,
           "roas": 2.1282,
-          "conv_value": 164315.54,
+          "conv_value": 164315.57,
           "purchases": 159,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKFZujnLN5Es-P00SWVqUs6h5glEzIS0z8N0nxhBubhfIHSh8msJQPDagb7rgCsvA7xtL73gZ7wx7fVSXJ8u7U1CoL2b3HVTkoCplU35TNvbfFWrZxChhkSI6-fHfUa07bdx0geyrQid63sNugiQQi03-eIxx8hiAjUXtXAovB0kKHMpWPaPXcckwv0h8D7qHsJu2KTOi5kfamga-fdAiwz-TA87kjnBkyB2xN8xWeduk7L7S5Q4ZejGMBjtqaI5el2Q8Thi9cgXsbrV5YihH7Ajke_tPCmBKk_--9vryV26Q9sZR5z4KquFl9yt9niIijO233K_z8z3WCiei5Cy2rPBQ2A3SYwNzUeko4r1ghg-XFcdYkTedC7E2voaUhuBRmOHeq07d2TTVE7v7-2advPP5eUWf__kuSFYB5F1mi4U4kNoqyFJr1eC8KMgjjanCU&t=AQLCkWSGtYEpDezwlLw"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKtZAxLexNGL0CKflN_lVkC5WHhYWqPxAbXsWG06PKVSOQjnrHtp1wWfRk59CSjaUyj5syhv4qW0lAHXF_GlwMyzFCZW1WswHJsIB_Kfne9oCvo259VLhmqzr3lwo0Srec7KneN8hfC4YDgSHQIGSTxddGm0qF6PoL-BEt69t2stTQYdKdGrn0L1y2z1k08GoBi4_ZYbulPn2DA5G8kvk67zYJGA9Q5XA3L6LE-9KOP-Y9qwUbiTRDnwux0TLhaUW3fE7k_MmHLnERNoPnOzZ1fEEI5cxJCWu5Q0CQmV33o5Zd289TaD3HaGZfdx5EvuA29mjESGAGIP1jZq5VfQwm94HTcF-VdtYbwk1GcQhO9dh27G3UBWsZkmOSfHzn1TiG8k8LNcLH00DAErQBCxH0YObsJwg2pwxTG7WGQAf2NzMSjk1GTGmiqpWOdKaYa4Ko&t=AQIeypyWnjnt_zunfbc"
         },
         {
           "ad_name": "Apr2026-Verun-Cotton-Underwear-5-at-999-Video-UGC-Dark-Post-V1-Fables-24.04.2026",
           "ad_id": "120246497568840298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Videos-09.03.2026 - Copy",
-          "spend": 68734.01,
+          "spend": 68736.21,
           "roas": 2.315,
-          "conv_value": 159122.05,
+          "conv_value": 159122.03,
           "purchases": 156,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLDDQ0skXfgV15yiVQ2W17rXP_BTmGlbc19eQdccwNYOdJYpRxm9yeOJN0705PmsTG_09XQ6hFwG1fIP_qn1ozjyPCSCk8G3lhU4AxDlDGpPzDgNdDro4c9WH096aNNPOHAeYgffak7yV6moWPTip6k0-lkm6Kg4OBvt3_tkHoQJE-22K3TvmW93gdNgf5dZXw38Nu6_BSgLYeGg9qSwjPkZW7gDurA_hBJgy32OU0feSO78t7JbkiHchydts6GgFSDx7_OaEzdEcghg62L2uRcL4U-Kr5cfz8ZNI5WZGiN1ha57cm5Ruf72C0gsbPPRS5BmJ9Wy_PwSQExIzNoY5Wxd058T3xc0MZEe61SzaNaZxK2Etd6QbncoigXNdAzJWpzshnTP9EKlAdpsfkrM_9lLxLng93ncdUYnrEAOjx3o_q7YVBwx8Q1Vg76gPU6S8M&t=AQKFMqN7t8q0TGp9o6E"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLvIb6s1nW1SZj8IQ2aYBSEdClgZPw1wVZL2yF2UDb4e3ppDqqNL4AN6aGmvHMoYYwXGqfmuZVPW2ztg0ksC1p6S8JvBEoBpf88Us3agoKig5LSu4z2ydbwSx4ESL4D4hzgnrHe8-Ig337G77DXO76i4oz34L6qNI-uNY4aaQkKyzFMYbOSW0iZgx_hVF2vBspzf_RcvjITEtjqVmENNG-flgK3igi3dG8pQgCrfR1KXVqHcKSXipumkUnRKVpm886HvT-pUJB99cYQWAbX-R1ML8w89j_iPt4aDvvDgDIHYF24k9QObgxPJyEbbbMH-himieDnb8AA6ySNFzOUSKuxM7iESfxNir7oPb-wqjvSxqy88uM0rmFzG_3_VzXXTqyhdArstU5baXADNdq7pAA0iE5MQ7qmERNOmd_w0hvF42TakvbnwAUxWU3qUXIqQ4E&t=AQK_eybbU2-BkTKxUXs"
         },
         {
           "ad_name": "July2026-Noel-Vaz-Cotton-Underwear-5-at-999-Video-UGC-PA-V2-DIY-14.07.2026",
@@ -232,88 +232,88 @@
           "purchases": 128,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLJ8WuZHsAk9LOFAleb_dm12VqlmXncwmg6XhGP2VXLV-Ji8XRBQBQqhaaOf46lXfaorHKt8KOK6C6MOENzm31tXMwH5odJ1FDlbdtggTWOoic6Ugt0-VBkOv92swmrZnXzO1SZLoqTTuELpTKcwchucX5mPHAL961FHfDFkPo14prqVJYsRZ1RAJWtFioqwxZVxQMWujqC9YBZvisOUpYXIJIsjsNA8_6XArohjY9wgb5eHHSxAz-Q6nlEgDIMnWL_Q6rpHKvwb8CS86wax6rYSdFo5a_8ej7FJYHa2hfoB6Ny6X3pqiAVTS0znie-LuL07CHkD6hbDlkvLNp3M7uylDo4tKxbLTtFg1uq5t5FVikvpinnpb6Iz7lSapF3V_ojyEBr6rKO4YQdxMJJ1FarAqtL9DaUbpiSbfVuC8fiYHY49bNcdSgaVwtBf0nvmSI&t=AQIysvFzF8mGyzGqAfE"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLP_C_kspzKmpi4otGfOv_DXDt8-W_Gp0tBH7qK4vGEm0Qo8G3QJzfn3XeurhvPV-2k1UVet25w8yZ1AQHOP66UDeFO7LOunyUsUGCi9CgpPgAUOweaqLvrul5JzQjP1Ar02YcQglP1ZkvtiJXMig6UEqFmQjJzLvqoQwmmVV-3CftTmd-ZpSawvCtDljfMI4Ojy4rpWLkj7_6HABleoQ7g353CBP3v9ujT9AFLUsq2oDXoabidG_Xk6e9tGKwZcFe41TqxaJOVTRXlnmZJ2tP2-h7-M1l4pj5O4vYsuvuf7wX8Qgfq66mnkPahTZhQ89TCD2mY76mrqjdEEGkIAzfPyaKZ8KLuK0MB-cAwY9akr8w7jYKCfglCr1WAka1Sf_OUU-_c1J7dDUX8wNVETBI1KjRYAQGBBg7AubWTS9wGxUxbPP1dUhlSF-Y5pamalhI&t=AQJzcFvW9R6NfhlcT18"
         },
         {
           "ad_name": "July2026-Yash-Acharya-Cotton-Underwear-5-at-999-Video-UGC-PA-Sociopuff-10.07.2026",
           "ad_id": "120247935163450298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Videos-09.03.2026 - Copy",
-          "spend": 54552.06,
+          "spend": 54552.08,
           "roas": 3.5525,
           "conv_value": 193795.32,
           "purchases": 199,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLOG8Z6oCC1tk4wL9HnOjgxcreYHGssq4E7gjlVh7eoVqZPEVhU6SJB83mtc9tMNq3oxI2hIX_qn5VY4tSh5BZqSPe4vJSYxciCkdfU_5lXZ9K8azb0bxE8wa0_yPlTlP_ylEVXu6mYRHE263nae_RNmF9h_UzFP594OKnGpEHhSviUr3FAkq6tO9JQaqUexoY7XTAmmrfIw5VgpVjJeQJxcgmHCDFLoIKg82FnmljUUq33G1oOJ2W6hMz3fM6WTfmB6gm6RDRvpoQVzBZKDbHgkSrELWAb4CEsBnU7_yi4cQiXC98XHdNEs9Zpq0kYTA4984JVZ-1j1f3Yd_uIf-5l_vYAOa9uN3y3mew9fJX_TQ0tX2dEIXX2V-mUVx-vsfw4p--FpvVUqQLyHibcegAjyibSNifTF2HG45hVMRTQn8B3U7KXxE2YTHZ823LVAlI&t=AQJR50UqFiLmyBEKXhU"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLPthUNFSM0kvPPWXazt1wQiMw65gsnkjHncfRl2ZDoatbRq2jSI2yASi9u7sqdFCbqq0QY5_lK78Zu5X6tuUEyf67RUsqxkhbPSdvWud8smgBbyZgJK2n5OKaQ91UtKYFvouLmWUAUXR7qeOF6STUbL7_4D9iQLMDD5dbLw27cJgCPZCm-mgdxPRcSc_spkbIe1DCjGMJglq4FKLhPqzW-qSDxgEcySvpFNC6zRmu16MMZ3X7D3D4366SLotYNkWplNO_Ryr_tDnyxlyJpReI9QCPii5oRnhYjUTWVUYqP6KMMGhfojNnwasHL2lab-OUMOENEK-5Dj1LOdLOfH1KGdCrRfK4e8G672LdLkqX5vOiZCS-HkhAg1Ef8YAxM6lvbMcqcFCPgnfBw7FGtLxrF2lQDqVjgn2RL703y1EEunZjId1n6ADis9_-ipLxR6uA&t=AQI9B7ez5OWztHwmFK8"
         },
         {
           "ad_name": "May2026-Chandrashekhar-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-18.05.2026",
           "ad_id": "120246497569390298",
           "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Videos-09.03.2026 - Copy",
-          "spend": 42207.1,
+          "spend": 42207.16,
           "roas": 3.6994,
-          "conv_value": 156139.47,
+          "conv_value": 156139.46,
           "purchases": 162,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLhQFl6oR0Xdjbb847As1CTNMTADmQ_cn9ukLYUopicfsRmuntoSU9RwsRctNAJiZGAZy-RzSV6MzeP0-ZyBHLfXOL4-ZWvmlHvzg3xeVIjUQMHcOyma6UkKYUY9bKHByDfmf1S2dotd_xIu4XpVYNYpu9t01UEiwDK3QmMHY3Fh0IFBTCK2xdRVo5vZVcI_yQzlgfrWUiq3bISTkryF8CSlFAbLCSmo7gwD4ZYgGzPlsM6x12zIaEvYwfu2Do15oQa9efCzuvmzHi1sTb0jk5u7vrQA7Sudljj9tZPKZaJACbftnsFXizCMnKJMnCmo88kxtO--IjsDeWw_DmnR9MdtCWntKcEFzO4x6SW658_1ZodWvwIi1adbV9Xp8QmFbUYyJIYLXQGk4IxdPApnKqITJgyWpHlcad75EDchDbOQLAc9rXMVJecTh5DLPFzLDo&t=AQIwmDLt47HruV76VyU"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIGqau3Kn59njl5KVpJL-J6tMETlnk26bWHEie3A3vCh2pbTzG-I7s5Ngsta_2ydKhCv0czwz5rM5YSniZd1h6W2gSZz3D5g0qw3XNgJqWe3oF8aXFSWTUI99pSJHOLTSH_MwUq2r9fXB-sYBQuGl4Car7cHuxKFeAZA3BebAa4GChYvednXC4Zdw62VmVcG22wqwELvG1WTi9e52eA2VHul533mSdNtfqazIL0XqjQpIFySAlJceg_W1pgQ2IVieCyTto8S7TUnEBaQkWv-BrhzPDvwmLBLttnM5tLJY6BntKR_pQLBio0Q2q846m39va8nEKLiYBRFS_PTa7R8y7iRHR3YAuWjje6fiMKt4QAJ8mCa-msYYGIHc6YnTcLhD7ynkJsWcfDh3eQG2mphGfsfLk9uKs4SL9xKGBqo-9ROSBnxTglMhJv8SeFHO98fDY&t=AQJo12IX_zrvBb42NRI"
         }
       ]
     },
     "Outerwear": {
       "emoji": "\ud83d\udc54",
       "total_ads": 125,
-      "total_spend": 688480.11,
-      "blended_roas": 4.020270345936357,
+      "total_spend": 688485.0099999999,
+      "blended_roas": 4.020241646219721,
       "best_roas": 5.298,
       "top_ads": [
         {
           "ad_name": "September2026-Karan-Dhotre-Active-Raglan-Tshirt-AT01-Video-UGC-PA-Direct-16.09.2026",
           "ad_id": "120249496608450298",
           "adset_name": "Pros-Outerwear-Active-TSQ-Broad-Videos-14.09.2026",
-          "spend": 87153.55,
+          "spend": 87153.69,
           "roas": 3.5581,
-          "conv_value": 310104.1,
+          "conv_value": 310104.07,
           "purchases": 224,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKZ1skISOgYAW62qMs5W20jOh_yR3PxDFjm-AI6EQEsEpQ5XuKArHS3-Cu0dZdy3xs2X5QJU4LwupR-Cvysx7GNYPzud69gBttQZ5HfHwJpD73FLJVrhTS3hOO5M9DNozRC5ZNjrTQs4V7AWy4JgBlLTzA0wFX_5kBkDQPuQu3Yqxc00RfZKtpCtdNyeY2yT1q7-YjnFvPd7V_PaGpMurJ3Z63vjlzb7VYmLvM3W84bItKjjRFKcyF2BOIpQtEWcglLV63PmECM5YZZE4ARhuNUK-L7gA0WeYekUOsIBX9kXK2BGCpjK-Z6V_TMf2zFxq36BOsn43pihUehJzuBiV-0TnFqn9pnRDdcXAOs8m8cxUDv3mrw6Qsapjf-pclx4u85s5PMLS6BeKG1Us7XUcYVqLi1-rBoIE57vNMsI6fXbER671XLhrmVc2OU7bmGr10&t=AQIFb7M7IHNfH2sVHRQ"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIIfQPppWTItm-IIaovPaLllxo0qexjbfy7iNrjzyv9qCg1qzz3T1WJndCDhbpVsF3kiNBq_AnKn1SsfZDsVcyrdWRs_LPqf1aEd99HqHXufbEgJCwYQXGegmaoCa6sEBh2RTGhTq6WVcO2fqDWwsWTzSYH-cIO3n60IBeAkYUQ3IhIsHS62vOI-D5XJolx-IDwAoMBi3oxC4bzea0o0Nz1Ss7kfz7H-6K-lCPziBPugkDC907FUZQiwnUvrbE2t-u07oESSYdl6R72syVm_jBYfweAxlU0Wrek4UNadvO4_pF9RPYKrpU2hZY-M1bq84BDJCpDNRT_VwryeP40B7m10_Osa0bFlG3-uuroPVlE2KDy8YxrtKMkwnF2G_UNVilnGC5adbO71YT2FpopjG8Jrcwuu-tS2poaqGSY9RSOGB6ve3n1u5dD70dh5dnBaKI&t=AQI4Eefa99KyJYOgotM"
         },
         {
           "ad_name": "June2026-Heth-K-Chambray-Pyjama-CR46-Video-UGC-Dark-Post-DIY-29.06.2026",
           "ad_id": "120247439968700298",
           "adset_name": "Pros-Outerwear-All-Pyjama-TSQ-Broad-Videos-08.05.2026",
-          "spend": 59417.82,
-          "roas": 3.5087,
-          "conv_value": 208477.7,
+          "spend": 59418.35,
+          "roas": 3.5086,
+          "conv_value": 208477.72,
           "purchases": 165,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKxManpMEXWvZ7H4pGZTjEVPqrHOxGgvsAyZKrc2C6yupir-MUZytpfjDQA3TKFRDAjtlJ9y8ESd2ZTpcPc7f_O9GoJtFEaRSPs4dzaczhU7m5OjIvIph5NVkKDYAikZIsDZHQDwHbKXoHufFPsN0jOUHpzWIJuMAucHQjYg2sd38vQoj6bToBDmq57vJHIssD6pI3yBw_A3o9yvFnfDXCEYAAXUqzSEqDDnlbCpRi7J8eJ4Ui5yk29Rk2FNVkrXW1DXsf0HdcHUTaHIeqblGCI5yPT7TAlts6x6JXlE5iy464yfZLpEQ47tjrjJXUFaC7NpLKgSS4C7Vn212wQdUfScBMp7z4o_CI3mdQ0xV6tD-xVom0VJzQulSWRDKP3efNWzTEFHWOlikKG1Z8vshqXwlY6jXxUsgJq42f24kXb_B2p6R3eMxJ8W9J36aY2gA0&t=AQIGzdhTwzEhBqPawh8"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJh3pR19cor3LACyj5NQnErNOdd-XNGWsczYfzWzz_xgNKE19PtB_0q2Er4MzmFgQvk7cqJe0kV-tkP_8Msw1Z9DOMhCqyyCj6v2GU0JDhv0kZPbTpo0ambVs91znYQh289kv2oTAX5dnKq_Qzaf1NVW7zYATZ6NBJ7WUZCKNQOAExyYc7SX-TxStWoGjD0zmci7KwHvALGGoTfKBjvCv5Z2KBT5Z3-wJ6ecitvN8UYRlKyp7Q-9z1-m3hAFUuUYMzPpGs_Fu020q7OZUCsQ1hc6ujfghH1Z1uVUaYKBbHN2SNtm6QtqGqERm5SyBjag6xYRfOljncDynEwY_DM2OthTYfxbNHetFAKYYxVHtbTV2QBfOghQZYa71Ldv1PpuzBgi-hRn8YJEymyOhj808idJciiWCHAqqAdvgxz9RDw8D4oxkOOA2PlfclsUwUZjKI&t=AQKR4w5v4yYdg5EpbNY"
         },
         {
           "ad_name": "May2026-Dev-Chambray-Pyjama-CR46-Video-UGC-PA-Direct-06.05.2026",
           "ad_id": "120243834047510298",
           "adset_name": "Pros-Outerwear-All-Pyjama-TSQ-Broad-Videos-08.05.2026",
-          "spend": 38166.11,
+          "spend": 38166.2,
           "roas": 3.6037,
           "conv_value": 137539.54,
           "purchases": 109,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKltRkhRDMmmyTphh7nZiId8Qij3sMTH-vxyD8dyVpbzKq_t86-9WnGF3BWknqFXwamya3PFPlTAOnuIGD6DPfwsp4LlLOCzuCXxVnRXKJlViJD_oFTGmhUANUM39XjX6G-zPkzUX0JHlkerRUTkAnrcn6Zem2DuPVTfB1RdOD5AtCtdTic1XcPGGzyM3cYKraYOHOtqZVeIhfBUOk_ea9-7gxyArB-3Y1N6a-2FcDpNRzUlLdDkZ9x1B9A_cyw96I1Q2hkMSxOVM_ux5c6fcjZEfZk0ki3aNHeZfLFDrT5S4V6oxRjAsNY-xRxvENSZaw5PfhtfeibuHU4DwDfZtJ_onyaeBLjnLITvMkFrOzk8mis5nRlTyhXV0BKM1aORIxQ-gA5oi1SMntcXKNwUQ-LOHr6nl1ItvgjAlxbyZWe2_25AFZCSXPNA63t_4Qmq8U&t=AQIJmqfawXKOcbRTP0k"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIoU1b4oVp7iEF6aCU0-OPcJ6vP1xeVecq6K1EHOYLw5CAAZN2Ti_nqaUzACezqXaUx6Qotv0zk7W-wpmGuU9CqasRZzcx3kXCsicyO6FNtrOdTPH_1yW_0Zuw9wQVDa_o6pVvjph9hIo0DpVl3gbtfW4euWsEwR2jQTIaWqBSMdMde9Qsbw9zOqjyxJgzPdUxZzF_ekyQxGOWCm74D_x3Sv5zlRUcg5VqQ891y4-mT2z4nEjwi3JIiEp2WSBqu-wNP1x1tG3oXnwPTnBadsqzNEd05GXu0WppFEYjxeEADd61w_HUDrfXPvyE2ySfnWIrSXszNDc9t8Dduhp2HVZ4zxV5-Oi4qMbwchrFLUPNWFLSQsiuIb3MHVAlpmzdZEepjz3IuP-7IMIKbQAyenobzWPohHokpWUMUedG6QOBsWKdH4IRsB-fCLZ5MiFK7ggc&t=AQInmUSDIWlvz7j4Pmw"
         },
         {
           "ad_name": "September2026-Vansh-Soho-Pants-Zero-Pants-MB20-Video-UGC-PA-V1-Creative-Cult-04.09.2026",
           "ad_id": "120249323133360298",
           "adset_name": "Pros-Outerwear-Zero-Pants-MB20-MB21-TSQ-Broad-Videos-08.05.2026",
-          "spend": 34590.07,
+          "spend": 34590.15,
           "roas": 4.885,
-          "conv_value": 168973.74,
+          "conv_value": 168973.71,
           "purchases": 109,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKA_k_JQtVld-pj-kEJ0rlGTTSQARojTZyEGdULGypQvXvkEOb8U3S3BL0U8RYuUUcy2UR7Rh_uo88kdZqAbWHI08wIISAuNWnDc2NkmKj1-uOmMC1saSm0MiAY0hL4-yXQSHQGAPanDFdCkmnzOwBj_OmpVPJvaJq7jki1gF7pX7V7L9b4NE3Siop4f6pNvV0w6TS-1siiKH3wIupZsJR2qcFFFI4i0O18UmoYQi_2Ai7SsaQky9ADDl1JzEIiWF2k5BuSEIZwXJNMGRJKCf5l9nsfTO0zg_56yi7C4TElX5uZooj4tu_8nSdKw_oqqy7scafXjgXXBCgVGeJmvnRXpHLVoEFbXDUQ-rxGxVoLg9JfvG9cJLspFfvcN2ZtcXeWVQ63KWYDfhtnBiup9ErWKNumXnS-tBZdBKQSi7pRUd14KDKwoZc1DCDDzZAfm1g&t=AQJ8qS2eqLvS-6_ugk0"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIcB2kZz4ru4Ub7H2lB7NuTKOCd6IPEZEaMNK_kEka3H4z2nz2d3B1dZbkmF44g0g_nNbFccxV771Kna9jg0fEAaHpJ7SZRNzW-V1lwsPS6jvwBMTbUgeYEtZaEtLBhpizMDwr-pBlZSkoYBmcr5uWlRWS1Fnixg9hNoDmI9j1fA5vqP-C8iHy4D0LHQArlfdDnDWTng0rJSu2ipAQ-htvvagWl5ie2jrXGmQRSlhNC9DPuJRsDoZSIyX2GsENOZ0FF8Z209QrVeqVYaADC3MuTCAI1F1E5tcp93YU7ek1yODERBveZGOSPELBGZ69vya_o5VLLzUlJFH9Fpg7CI_RAIbNFsbF0esDfadjneSMfMqDT23R_oiOLr1rPxunxT7kz4kErVMcTbAe9i9ugfKANxnpH3m6Os6f3zzklOJi9fY8WCxiso6sLvioj6k5wJTI&t=AQLiFzhJL-VL9-LbF8I"
         },
         {
           "ad_name": "August2026-Utkarsh--Uppal-Easy-Pants-CR44-Video-UGC-PA-Direct-13.08.2026",
@@ -325,7 +325,7 @@
           "purchases": 77,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLiU_AhBeZtlBzQV7-UCMPvrgc1WezsnVYWE35gtgomuDV1a6J9RbI01rP4veG29hSwhFcehzOqmQ-iDm-Hi-erEDQO62rF1xAgQgFRf4JRHusywTdyHK2sGTZQwwceOjxh8UyyW4Df0t7MjfqVCus79RNgfx6PRbM3txIJouXoCaEL1096Z3u4_LSOKrYiyvl31AzyMNalkayN6N_fA0FdaG956wzI3JB0zo81HP1JW5is0mAnsPZ17v2ySgeVmpd1eFQcSX_MdakR4LCTEVK-Gd7Ir_awGcK3zhyfXzDMkWtiasYThY6GCqd5hiOg-vKGWb9ejvhcvkFqWA7AYfaKJ8J9lkgo_f50bkMJcAmeFqjGI9HVnUsF5yTtN74_Y-5FPks7Ms1EkBnFsSDAJMrnPCvTvAwo_NqVWa5Bc1EGJOmVfcxfToW5bbl8rW2Eu3o&t=AQJgL7nJ5eczwIPTwQ8"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKVLBOdS9SAvBghsfKyngH0GclHgMecCzKxUFyTREMCy3KVMT_KyyVasCpdKKBHmii5Xh4eFvEIBeS6Xm2CYAotXmp8iTPzUo5Ek88037m5nGZNtenpK6E_ROtj7nhOF5p6lqesNKYFkTvKDm2-iaZQSBXbm1eMowaeT2DjDq87AmpLCOLv6AOK4ITA0owNlhHEiNfdi-HRwi8llh6jH8Se5ZJV702PV_UETk53YZKMy5cMbuZfNSvPB61XBP2cE-hHwmtRb4EiuwwCdAKEvRNGz9gPeY47nd-TACGuTjK6Nu1qk-f4-yyBZ3rQCz9d4jWl8wIQvvItDMHBYZi8_1A4v_P76ZBsPaDb5PjvUWrGBvQOTEm_oqIb6DKYHzcEsAVRDJTe8AzbaZUemm1DC7PorY9jScQXRrISvlF-J5trU16kgj6_7JiifgJE9hNeRzQ&t=AQJbJ49gfW5k5W9TBCM"
         },
         {
           "ad_name": "May2026-Simrat-Whatanerd-Chambray-Pyjama-CR46-Video-UGC-PA-Direct-05.05.2026",
@@ -337,19 +337,19 @@
           "purchases": 78,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIYhGqFAyTN2QOuNLngLnKeVYHNMPb2JV9jnnnfYAlogBdq9KnpETRg6BV7YPnc7-HanhlVd6yM6xfSzH5U5p6gXTJzhqgVwG1rqEmKau5KlNLhhF_XZ0SEIvRp8YWCqOZzzbZqLeveJneVOtm_HigxMi4Nj57gJi3wIGd10mmhgeSsCZ_e-p6QQzoJmPvA9cRM4XsqOq2puuIqFKEdTOjLmQ5GOWfHgpwB6x1BpGJk353BeqdJ-QX8M2iQDPYK-35tk2-MtyGQd0jDckl2yKz-hEQgu4JLMiwJLgfgnBUWGwMBLTWByxvRdYxxDthhScV9kp3nAOw5SAL-pyQq7Iex9Nw4IsdRUxkOcLQqayCUZPChy344t6qQ0EkBq2EQSc0kbX2KMxdVFA9iEJpM_mIFLyCdYb8vPcguSGUQDII3jNMpRebOY8uYqWT0SYmsbSI&t=AQJxPGsM7150wfV066s"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ9xSKBnoQvio628uBGxANJkJgHx_Y1T6uq-WpaSen7hMdKspire00-muhGNH3g21DM2pZ0skf4UTTYPfiq-ngtFQ7p1ECXcAg9sT2WwX4STDjXxDoSdzaTIbxtr7l4UFQxmOv39xSS6gHaevXczZrW7Yg95WaWf5NSKeDIQ5zQASh0lHnF8v_foqCVfKiNBnVl4cTyifQmw8WM7WHJSJZM2cHXaRFgWWp3LwAlFJCEi2gau8t9Sl6nyOy5KQjT8-ZX-aBdk0TZmnBEKu4B5Wx3_Umnyk4AuVa8wn-QAnVCcU5gaNtUA_aJ5hLL2RirUWvkHZcvYvPczFTaSzCBwX6rWueVppFUbEDZ9-Apkjtte9D7ROjjz_n1DURqdad_jE4bXdz-jty595POzii3cvG4tSAPbgH7uXAXAW9MPNVtUrXK7nqTEUk1eehfysXrkHU&t=AQJKKuAOPnOQOkXQfR8"
         },
         {
           "ad_name": "August2026-Super-Combed-Cotton-Polo-AI-VO-Nova-Polo-CR14-2-at-1049-Video-AI-PLV-Raasa-21.08.2026",
           "ad_id": "120249054926770298",
           "adset_name": "Pros-Outerwear-Polo-Tshirts-TSQ-Broad-Videos-24.07.2026",
-          "spend": 27258.49,
-          "roas": 3.157,
-          "conv_value": 86054.62,
+          "spend": 27261.13,
+          "roas": 3.1567,
+          "conv_value": 86054.61,
           "purchases": 80,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJUgi5Gr9KKz8lBjQ7VWZPRvA0FPioKXNnLyNZVH7SuSAvIcI0Gf4LBse2Vcncew23zvwfKSYeBgwisII8cdA131ApsSX28xaCKyj4EyulR7C5Wf_Gr50JFmeqwGD4YYNtmziSBxoL61tchKbqpMywXPxvyIBXzcY7qjPzt9Dsv-ywlvUuPHMu-4lXMsV8Ot13UhI6qS5fJ1Ojtd-0YVmowyMdOrXq7unO7kJr9aU35KgeMohkI1qQaKDa6QDXgq7WovL-AN57slouKspTuHuPjN8uDGZdHF1vSBAAetyjyrH3a8Nf49Ysnvv5aTwNFNnFgKGbmmlcUf0Sefyg5JtbKlxHybksH_qMdUaOK_JHmQJ4-08NW_XYrwIivH1V6I4iMyvq1qis00g_nusZ5cSYA9RQqfLXeit-SggCaeZ4Pcu1RM0n0kZUtMqOKBRCRsBo&t=AQIk6N2btlOSeuUQrj4"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLQw8Aamx_Rrp6rp39LeMI3Z-35pJ-O_L2wonMZW6Meq1XYj9q_hlXxgP7gijqrGu7EWRGk5zrL2DRqOMy7Zi4ADw2t-_czNbU5IdUc6pHO1vxw7kczKQvwne4OI4rdG5BYvuN6QWPJR6HAnHvNGjXcGSP6fXuKQoJbV6FUsr6xLcSSZiw9Kat9kF-0525OrfuJY5121vWtgjkuOuCYaerRhEHoHNH1b1K3DIC_z8__W_a7MQnytpGLYWNJ6V-Ru0QAvVT0unPlUqqbAVbCYOIoGfSGv51FXu_WHSF0Ius3NTG1xqOhLc9xizj4AXYhut_3jDSTWCVUu1sP8zTYVQICoQwx4a4KsK8k9RBm13iGb_53HHExT6UPunuh6c55j0_AoJGUAJYvWFxQe4cmkHS7mg97QORto78SnvUK7yiJWq6YRfnh-TCX8CyBO3MrtXg&t=AQJ6iaBILJt7SfYBVrg"
         },
         {
           "ad_name": "August2026-Vishal-Sharma-Easy-Pants-CR44-Video-UGC-PA-Direct-01.08.2026",
@@ -361,7 +361,7 @@
           "purchases": 110,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLgPtQ3zWHbA-HCYR-DWyCk8coIWiekI6W3U52eMmkQqWCIJGmwBE7Qog1XzMe2CA-o1-eVN-trLPH2IgROSH0p9ZDTIrloCFNLhHKYjJAx9MkrZbnZPd7hMzgQvRIXv1kdFvGfzFK1sPe6iFJanYtn6dafqba2NO3Ij7CrWEttGxmG5TyR0AYX3XumBUXfkGLf8ioCD3jCh97lgQ0aKVrYh8IwMEZ74LlvJPCxqb729qEALLLOHEPs2Zd-jMy6l3z4SpKaih5PbQLppN9_o4Fw-OzJUSpMNyj2GuSkAsH1HF8s4p5TIX9MNXh8Z_r9R3XrjljuV9iIO22ZXdzUnau8OViE2BTg0Kmsh_9ZeHeBpGlLTCncZRSxhHGSjytReWsUxpy1bChwKAExGv22LULa4BztLM4FaVkeir-U_ZhTr3UUWqF9bNQGiV8aRf_qwgA&t=AQIrBaE6dUeAYdHChZ8"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKEVDdMuo8gUyRlwQ3NZt8X8tMrr4VmbAGybqwOa09OQzrwKx47fHr-CG2PIPpgvI-7RlOYGdBvRfmY6Z3-NBr0_otDmGJF0jQc-yzSJgbV7NnfEhF4ZyS-hCYfefiSSVQlicNR3PlyeW9KM97hhdGXnd1ZdaEFwBwFTRJAU5XIXdqR5fD6ETpzEoQQ8ZuRcg8Bq6dS34u64jqO0PwPWnPiVz4in7Zzi6FDyDFSWMVngQabXYBIowAXKK1Mga8FoZIJfvsapg5Dqxc2IOD_wF135wuLj0KrYlmzIyUg9_2MgZ7gsUkDaMztQPg9q89jbiYOFeWx5QFfCn85i5j4vam9o60WvuoR2964elTRoDAsDZGvBv3q2mrDZWx2TDngnF7Klff-KmB2Baa2qPgfSXV0l9dhKi3W6MZhCkQ_RUkewco3Zwv6RDfMNmuZPyJkFOY&t=AQIGMvnmAP-sR-R5TV0"
         },
         {
           "ad_name": "July2026-Yash-Prakash-Easy-Pants-CR44-Video-UGC-PA-Direct-23.07.2026",
@@ -373,19 +373,19 @@
           "purchases": 89,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKS7l7K50SweDTAWWabGqYZTmy_MZm2xqCoGCRQWijk-6FcnqkNGg2s-U7hgzjUu6g1RpXOHiOPO-qEvTF9Jrbhg1sVkh21vWF7i9NJkMRistDwy3LpFwOPbhZANhwGX6mjbDECNEzdCs6Mbhcxb7V2eEUqOMGLID27PffLMSdYQ6KGs1f-NgfHD2k55POs1cyp__-PWblNLHAXPvfeEHSqIqjONWXZ35xAUwQzx3xH72UlzcC70NtAd2sA3oFTF81k2q1nNyDDtEySA7YgL8E6BCpCK01rABd5LXglGjqVsx9KbznDKKcuftHGZZoQqB23lm-exwA6Nf9yXv4E3RjYhLJpMsLvMxjm0GY9lEhYrAabZOLfrDTSgdD7snLkD4hJyAEWaDO0zP3a75bMpLT5FT0gJjMydGV-bf35VRS8qj0JewRiUfoOHTYtXL6Womg&t=AQIOwW99gWxO1M-6HxU"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLdvbW3qkDQ5WbNPalXI2V0hVzuWqGlSSWqLyqE5PoK03ttJHAyS_NhsnYZ6raUnCJcKK6up5Xg2eh8XPI1UrSIdgdiMszV9sREbgiEVtbfWd8dICkygbdE3KkWXgy0-PpfhrHPMLJCit335xVDBqBLfyapQ9b8SCNLA9d_bVsjMKJF87jEtnxnRCLvVFRLKBDdTHmLw1KCz9bpX4sJSQyYYdF17Ylh5ljlwz9pzOi898cEyDWD0yUoBqR0eybBucQayaGZ23vKwJmzHqF5CV5dmxX8aoslE1f-HmDznRlolLUnCV-J69XY5-MYH3796ut4OUW-Fl-_KwnQdb0p_URzq6ZcMUzdG2gQqb0RmletLB4fW_9jWi-etdh3s2tHSXJTTYyLGi8LcDiha_fgUT_rDzmN104BrvPYY2Oi6zeYoIiuIEICZD6exxGNuGe57oY&t=AQIqSZeQjY97ycQZpGA"
         },
         {
           "ad_name": "July2026-The-Pyjamas-youll-Live-In-Checkmate-Pyjamas-R13-Starting-699-Video-PLV-Studio_11-24.07.2026",
           "ad_id": "120248314967490298",
           "adset_name": "Pros-Outerwear-All-Pyjama-TSQ-Broad-Videos-08.05.2026",
-          "spend": 21386.71,
-          "roas": 4.726,
-          "conv_value": 101073.29,
+          "spend": 21387.55,
+          "roas": 4.7258,
+          "conv_value": 101073.28,
           "purchases": 78,
           "date_since": "2026-09-14",
           "date_until": "2026-09-20",
-          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ7SUqv5lYvu66zhwfhvDyrhe7bp9YBPrDVg_EyNBQLcAATZqPp1DUB4P2jnBgpJuoS3ys1vTWL0p6N3-gDfd84cyg27W5GO8tOyKTSZmD0yg7Kei1Js9x9U6BfyVsHFRf5hQyIfYW2ol7emHwFScCYTQQQc6xEFIZeK6ajhYkOSc2pFWPltilbHRRo7ZwLaIJSdNOvaBy-08IldGH47-wKtLgqwi1-g0EG4sNcTsqZRbBHbGimBUGesv5fXLrNncqhcRMu6q0dEiH3X4g0dpbCHJZ3HIzs_nDwe4dwtEM8gGI9MNaFgvj6U_IWTnoHtagTk7w5-4gFHhqkhyb7l7bqhgmhjH-KGvUsE8C4NaMjuHKuEVdiWSYEBFDeiKu79PRVPn9AoZgrlgQogFva0joiYpLMVWKH6EtkGv3L1EYcybYMl2Z30-djpQbzdpy9Rws&t=AQKz3vBOUC1FA27xJu0"
+          "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIeVKKFDeRqigfvLqlmmI7HlO26HgaesrT4vZ1yKSN2y_DTltJrcfIUPqDUVlGbE6NuKXwL1eYPAf30P-CXYK0GrDnhgS_yYnRAQXYyBKBMBtENuSitoXsmd6xtEMZhEchuFmHwBeJfxSycS2HDe8dKbuvPt-czeZDgii9CG017umtkcJUkaHPpIMRbmfSdWoaf0BKgneXEpwRCq_vUJ209RmuFz893c1QoZ48F-qS3QMjOu5T1VAr0nN5Tl5ad0I1w8mSZ0FookeonjQ__ACkXRRSp-TaDGRZInu1QnSBQjCrDke1wJq6zCXennq7V82F2bKxLkHpFXvNDRncqPbPdPfsAQhAwlo4a-LRaF7-G3TA27uphXGyb4YD38L1-GfpWWHSEq0lgZP67TSFzq3gpIpbNpOjA8-wAhgVQytYMxGg2-52B5P9rm9RnBeXDINU&t=AQKMnOIuparlMSbL9Yo"
         }
       ]
     }
