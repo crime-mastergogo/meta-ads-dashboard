@@ -1,0 +1,60 @@
+meta:
+  ad_account_id: "act_1857340177852371"
+  api_version: "v19.0"
+
+attribution:
+  window: "1D_CLICK"
+
+daily_lookback_days: 7
+top_n_per_category: 10
+min_spend: 500
+
+statics_categories:
+  "5-at-999 Cotton UW":
+    adset_contains: ["Buy-5-at-999", "Undies-Buy-5"]
+    emoji: "🩲"
+  "Shapewear & Vest":
+    adset_contains: ["Shapewear", "SW01", "Vest", "Invisible", "MB23", "Bamboo"]
+    emoji: "🦺"
+  "Modal / Tactel UW":
+    adset_contains: ["Modal", "Tactel", "Buy-3-at-15"]
+    emoji: "🧴"
+  "Pyjamas & Easy Pants":
+    adset_contains: ["Pyjama", "CR46", "Easy-Pants", "Checkmate"]
+    emoji: "😴"
+  "Polo":
+    adset_contains: ["Polo"]
+    emoji: "👕"
+  "T-Shirts":
+    adset_contains: ["TShirt", "T-Shirt", "Tee", "Stripe", "Supima", "Pace"]
+    emoji: "👔"
+  "Boxers":
+    adset_contains: ["Boxer"]
+    emoji: "🥊"
+  "Bottomwear / Pants":
+    adset_contains: ["Zero-Pants", "MB20", "MB21", "Bottomwear", "Cargo", "Ripstop"]
+    emoji: "👖"
+
+videos_categories:
+  "5-at-999 Cotton UW":
+    adset_contains: ["Buy-5-at-999"]
+    emoji: "🩲"
+  "Innerwear (General)":
+    adset_contains: ["Innerwear"]
+    emoji: "🎬"
+  "Outerwear":
+    adset_contains: ["Outerwear"]
+    emoji: "👔"
+
+roas_thresholds:
+  good: 2.5
+  ok: 2.0
+  warn: 1.5
+
+slack:
+  channel: "#performance-reports"
+  daily_min_spend: 10000
+  weekly_min_spend: 100000
+  monthly_min_spend: 1000000
+
+pages_base_url: "https://crime-mastergogo.github.io/meta-ads-dashboard"
