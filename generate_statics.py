@@ -349,6 +349,88 @@ def _daily_section(ads, categories_cfg, min_spend, label, qualification_spend):
     }
 
 
+
+def _send_slack_fallback(data, cfg, error_message):
+    """Send a clearly labelled fallback Slack update using existing 7-day data."""
+    webhook = os.environ.get("SLACK_WEBHOOK_URL", "")
+    if not webhook:
+        print("[Daily Slack] No webhook configured, skipping fallback.")
+        return
+
+    pages_base = cfg.get("pages_base_url", "")
+    categories = data.get("categories", {})
+    lookback = data.get("lookback_days", 7)
+    generated = data.get("generated_at", "")[:10] or datetime.utcnow().date().isoformat()
+
+    total_spend = sum(c.get("total_spend", 0) for c in categories.values())
+    total_cv = sum(
+        sum(a.get("conv_value", 0) for a in c.get("top_ads", []))
+        for c in categories.values()
+    )
+    blended_roas = total_cv / total_spend if total_spend > 0 else 0
+
+    all_ads = [a for c in categories.values() for a in c.get("top_ads", [])]
+    best = max(all_ads, key=lambda x: x.get("roas", 0)) if all_ads else None
+    top_spend = max(all_ads, key=lambda x: x.get("spend", 0)) if all_ads else None
+
+    best_line = (
+        f"{short_name(best['ad_name'])[:42]} — {best['roas']:.2f}x ROAS"
+        if best else "N/A"
+    )
+    top_line = (
+        f"{short_name(top_spend['ad_name'])[:42]} — {fmt(top_spend['spend'])} · "
+        f"{top_spend.get('roas', 0):.2f}x ROAS"
+        if top_spend else "N/A"
+    )
+
+    cat_lines = []
+    for cat, cat_data in list(categories.items())[:5]:
+        emoji = cat_data.get("emoji", "")
+        cat_lines.append(
+            f"{emoji} {cat[:22]} · {fmt(cat_data.get('total_spend', 0))} · "
+            f"{cat_data.get('blended_roas', 0):.2f}x"
+        )
+    cat_text = "\n".join(cat_lines) or "N/A"
+
+    payload = {
+        "text": f"📅 XYXX Daily Update · {generated} · 7-day fallback",
+        "blocks": [
+            {"type": "header", "text": {
+                "type": "plain_text",
+                "text": f"📅 XYXX Daily Update · {generated}"
+            }},
+            {"type": "section", "text": {"type": "mrkdwn", "text":
+                f"⚠️ *Daily Meta pull was rate-limited.* Showing the existing *last {lookback} days* dashboard data instead. Yesterday-only metrics will resume automatically on the next successful run."
+            }},
+            {"type": "section", "fields": [
+                {"type": "mrkdwn", "text": f"*Statics Spend (last {lookback}d)*\n{fmt(total_spend)}"},
+                {"type": "mrkdwn", "text": f"*Blended ROAS*\n{blended_roas:.2f}x"},
+            ]},
+            {"type": "section", "fields": [
+                {"type": "mrkdwn", "text": f"*🏆 Best ROAS*\n{best_line}"},
+                {"type": "mrkdwn", "text": f"*💸 Top Spender*\n{top_line}"},
+            ]},
+            {"type": "section", "text": {"type": "mrkdwn", "text": f"*By Category:*\n{cat_text}"}},
+            {"type": "section", "text": {"type": "mrkdwn", "text":
+                "🎥 *Videos — unavailable in fallback because the additional Meta pull was rate-limited.*"
+            }},
+            {"type": "actions", "elements": [
+                {"type": "button", "text": {"type": "plain_text", "text": "Statics Dashboard →"},
+                 "url": f"{pages_base}/index.html"},
+                {"type": "button", "text": {"type": "plain_text", "text": "Videos Dashboard →"},
+                 "url": f"{pages_base}/videos.html"},
+            ]},
+        ],
+    }
+
+    try:
+        import requests as _req
+        r = _req.post(webhook, json=payload, timeout=10)
+        r.raise_for_status()
+        print(f"[Daily Slack] Fallback sent for {generated} (last {lookback}d)")
+    except Exception as e:
+        print(f"[Daily Slack] Fallback failed: {e}")
+
 def send_daily_slack(data, cfg):
     """Send one combined Slack update using yesterday-only Meta data."""
     webhook = os.environ.get("SLACK_WEBHOOK_URL", "")
@@ -369,7 +451,11 @@ def send_daily_slack(data, cfg):
         daily_ads = fetch_ad_insights(lookback_days=1)
         daily_ads = consolidate_by_creative(daily_ads)
     except Exception as e:
+        # Meta can temporarily rate-limit the additional yesterday-only pull.
+        # Do not lose the Slack notification in that case: fall back to the
+        # already-successful 7-day dashboard data and label it clearly.
         print(f"[Daily Slack] Daily Meta pull failed: {e}")
+        _send_slack_fallback(data, cfg, str(e))
         return
 
     # Split yesterday's data into statics and videos, while keeping the existing
