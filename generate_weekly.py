@@ -12,7 +12,7 @@ import os
 import re
 import yaml
 import requests
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 
 BASE_DIR = os.path.dirname(__file__)
 CONFIG_PATH = os.path.join(BASE_DIR, "config.yaml")
@@ -52,16 +52,18 @@ def short_name(n):
     return n[:52]
 
 
-def ad_card(ad, cfg, is_best=False, is_worst=False):
-    """Universal card — works for both statics and videos (both use preview iframes)."""
+def ad_card(ad, cfg, is_best=False, is_worst=False, preview_height=750):
+    """Weekly card with a format-specific, fixed-height Meta preview."""
     sn = short_name(ad["ad_name"])
     roas_col = rc(ad["roas"], cfg)
     preview = ad.get("preview_url", "")
 
     preview_html = (
-        f'<div class="mpw"><iframe src="{preview}" scrolling="yes" allow="autoplay" loading="lazy"></iframe></div>'
+        f'<div class="mpw" style="height:{preview_height}px">'
+        f'<iframe src="{preview}" scrolling="no" allow="autoplay" loading="lazy" '
+        f'style="height:{preview_height}px;overflow:hidden"></iframe></div>'
         if preview
-        else '<div class="mpw no-prev">—</div>'
+        else f'<div class="mpw no-prev" style="height:{preview_height}px">—</div>'
     )
 
     badge = ""
@@ -88,7 +90,7 @@ def ad_card(ad, cfg, is_best=False, is_worst=False):
     </div>'''
 
 
-def build_tab(categories, cfg, min_purchases=2):
+def build_tab(categories, cfg, min_purchases=2, preview_height=750):
     """Build overview + all-ads sections for one format (statics or videos)."""
     # Overview: top 3 + best ROAS + worst per category
     overview = ""
@@ -106,13 +108,13 @@ def build_tab(categories, cfg, min_purchases=2):
         for ad in top_ads[:3]:
             is_best  = best  and ad["ad_name"] == best["ad_name"]
             is_worst = worst and ad["ad_name"] == worst["ad_name"] and not is_best
-            cards += ad_card(ad, cfg, is_best, is_worst)
+            cards += ad_card(ad, cfg, is_best, is_worst, preview_height)
             shown.add(ad["ad_name"])
         if best and best["ad_name"] not in shown:
-            cards += ad_card(best, cfg, True, False)
+            cards += ad_card(best, cfg, True, False, preview_height)
             shown.add(best["ad_name"])
         if worst and worst["ad_name"] not in shown:
-            cards += ad_card(worst, cfg, False, True)
+            cards += ad_card(worst, cfg, False, True, preview_height)
 
         blended = cat_data.get("blended_roas", 0)
         overview += f'''<div class="sec">
@@ -142,7 +144,7 @@ def build_tab(categories, cfg, min_purchases=2):
         for ad in top_ads:
             is_best  = best  and ad["ad_name"] == best["ad_name"]
             is_worst = worst and ad["ad_name"] == worst["ad_name"] and not is_best
-            cards += ad_card(ad, cfg, is_best, is_worst)
+            cards += ad_card(ad, cfg, is_best, is_worst, preview_height)
         safe_cat = cat.replace('"', '&quot;')
         all_ads_html += f'''<div class="sec" data-cat="{safe_cat}">
           <div class="sec-hdr">
@@ -172,11 +174,25 @@ def build():
     v_cats = (videos_data  or {}).get("categories", {})
     lookback = (statics_data or {}).get("lookback_days", 7)
 
+    # Show the previous complete reporting window, based on the data timestamp.
+    generated_value = (
+        (statics_data or {}).get("generated_at")
+        or (videos_data or {}).get("generated_at")
+        or datetime.utcnow().isoformat()
+    )
+    try:
+        data_date = datetime.fromisoformat(str(generated_value).replace("Z", "+00:00")).date()
+    except ValueError:
+        data_date = datetime.utcnow().date()
+    period_end = data_date - timedelta(days=1)
+    period_start = period_end - timedelta(days=max(int(lookback), 1) - 1)
+    period_label = f"{period_start.strftime('%d %b %Y')} – {period_end.strftime('%d %b %Y')}"
+
     total_s = sum(c["total_spend"] for c in s_cats.values())
     total_v = sum(c["total_spend"] for c in v_cats.values())
 
-    s_overview, s_all = build_tab(s_cats, cfg, min_purchases=3)
-    v_overview, v_all = build_tab(v_cats, cfg, min_purchases=2)
+    s_overview, s_all = build_tab(s_cats, cfg, min_purchases=3, preview_height=680)
+    v_overview, v_all = build_tab(v_cats, cfg, min_purchases=2, preview_height=750)
 
     # Best performers for Slack
     all_s_ads = [a for c in s_cats.values() for a in c.get("top_ads",[])]
@@ -221,14 +237,16 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
 .sec-hdr{{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:10px;padding-bottom:9px;border-bottom:1px solid #1e1e1e;}}
 .sec-t{{font-size:14px;font-weight:600;}}
 .sec-s{{font-size:11px;color:#555;font-family:"JetBrains Mono",monospace;}}
-.cgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}}
+.cgrid{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}}
+@media (max-width:1100px){{.cgrid{{grid-template-columns:repeat(2,minmax(0,1fr));}}}}
+@media (max-width:700px){{.cgrid{{grid-template-columns:1fr;}}}}
 .mc{{border-radius:10px;overflow:hidden;display:flex;flex-direction:column;position:relative;}}
 .badge{{position:absolute;top:7px;left:7px;z-index:10;padding:2px 6px;border-radius:3px;font-size:9px;font-weight:700;}}
 .sbadge{{background:rgba(34,197,94,0.9);color:#000;}}
 .wbadge{{background:rgba(239,68,68,0.9);color:#fff;}}
-.mpw{{background:#111;height:750px;overflow:hidden;display:flex;align-items:flex-start;justify-content:center;}}
-.mpw iframe{{border:none;width:100%;height:750px;display:block;}}
-.no-prev{{height:750px;display:flex;align-items:center;justify-content:center;color:#333;font-size:10px;}}
+.mpw{{background:#111;overflow:hidden;display:flex;align-items:flex-start;justify-content:center;}}
+.mpw iframe{{border:none;width:100%;display:block;overflow:hidden;}}
+.no-prev{{display:flex;align-items:center;justify-content:center;color:#333;font-size:10px;}}
 .mm{{padding:9px 11px 11px;}}
 .mn{{font-size:11px;font-weight:600;color:#e0e0e0;line-height:1.3;margin-bottom:5px;}}
 .mmet{{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:3px;padding-top:6px;border-top:1px solid #1e1e1e;font-family:"JetBrains Mono",monospace;font-size:9.5px;color:#888;}}
@@ -242,7 +260,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
 <div class="cover">
   <div class="cover-eye">XYXX Crew · Weekly Creative Report</div>
   <div class="cover-title">{week_str}</div>
-  <div class="cover-sub">Last {lookback} days rolling · 1D Click Attribution · Updated {date_str}</div>
+  <div class="cover-sub">Period {period_label} · 1D Click Attribution · Updated {date_str}</div>
   <div class="cover-stats">
     <div><div class="cs-l">Statics Spend</div><div class="cs-v">{fmt(total_s)}</div></div>
     <div><div class="cs-l">Videos Spend</div><div class="cs-v">{fmt(total_v)}</div></div>
@@ -311,8 +329,11 @@ function filterCat(btn,cat,pane){{
     build_weekly_index(cfg)
 
     report_url = f"{pages_base}/weekly/{week_str}.html"
-    send_slack(cfg, week_str, total_s, total_v, best_static, best_video,
-               top_static_spend, report_url)
+    if os.environ.get("SKIP_WEEKLY_SLACK", "").lower() not in {"1", "true", "yes"}:
+        send_slack(cfg, week_str, total_s, total_v, best_static, best_video,
+                   top_static_spend, report_url)
+    else:
+        print("[Weekly] Slack notification skipped (SKIP_WEEKLY_SLACK enabled).")
     return report_path
 
 

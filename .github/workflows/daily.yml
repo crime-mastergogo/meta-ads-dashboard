@@ -38,12 +38,15 @@ jobs:
           META_ACCOUNT_ID: ${{ secrets.META_ACCOUNT_ID }}
         run: python main_videos.py
 
-      - name: Generate statics dashboard
+      - name: Refresh current weekly report previews
         env:
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
-          META_ACCOUNT_ID: ${{ secrets.META_ACCOUNT_ID }}
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SKIP_WEEKLY_SLACK: "1"
+        run: python generate_weekly.py
+
+      - name: Generate statics dashboard
         run: python generate_statics.py
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
       - name: Generate videos dashboard
         run: python generate_videos.py
