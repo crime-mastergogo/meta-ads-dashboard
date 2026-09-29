@@ -9,6 +9,11 @@ on:
 permissions:
   contents: write
 
+# Prevent Daily and Weekly workflows from publishing at the same time.
+concurrency:
+  group: dashboard-publish
+  cancel-in-progress: false
+
 jobs:
   weekly-report:
     runs-on: ubuntu-latest
@@ -53,4 +58,5 @@ jobs:
           git config user.email "actions@github.com"
           git add data/ docs/
           git diff --staged --quiet || git commit -m "Weekly report: $(date -u +%Y-W%W)"
+          git pull --rebase origin main
           git push
