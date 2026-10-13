@@ -58,7 +58,6 @@ jobs:
           git config user.email "actions@github.com"
           git add docs/weekly/
           git diff --staged --quiet || git commit -m "Weekly report: $(date -u +%Y-W%W)"
-<<<<<<< HEAD
           git push origin main
 
       # Notify Slack only after the push succeeds. This mode does not rewrite HTML.
@@ -67,7 +66,3 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SEND_WEEKLY_SLACK_ONLY: "1"
         run: python generate_weekly.py
-=======
-          git pull --rebase origin main
-          git push
->>>>>>> db44c0251636bf855e7c612c2130e89c522a6547
