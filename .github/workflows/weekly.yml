@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 
-# Prevent Daily and Weekly workflows from publishing at the same time.
+# Share the publishing lock with the Daily dashboard workflow.
 concurrency:
   group: dashboard-publish
   cancel-in-progress: false
@@ -29,6 +29,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # Update the checkout before generating files, not after.
+      - name: Sync with latest main
+        run: git pull --rebase origin main
+
       - name: Pull statics data from Meta API
         env:
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
@@ -41,22 +45,24 @@ jobs:
           META_ACCOUNT_ID: ${{ secrets.META_ACCOUNT_ID }}
         run: python main_videos.py
 
-      - name: Generate statics dashboard
-        run: python generate_statics.py
-
-      - name: Generate videos dashboard
-        run: python generate_videos.py
-
-      - name: Generate weekly report + send Slack
+      - name: Generate weekly report without sending Slack yet
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SKIP_WEEKLY_SLACK: "1"
         run: python generate_weekly.py
 
-      - name: Commit and push
+      # Only the weekly report files are committed here. Daily owns the shared
+      # dashboard JSON and top-level dashboard HTML files.
+      - name: Commit and publish weekly report
         run: |
           git config user.name "xyxx-ads-bot"
           git config user.email "actions@github.com"
-          git add data/ docs/
+          git add docs/weekly/
           git diff --staged --quiet || git commit -m "Weekly report: $(date -u +%Y-W%W)"
-          git pull --rebase -X theirs origin main
-          git push
+          git push origin main
+
+      # Notify Slack only after the push succeeds. This mode does not rewrite HTML.
+      - name: Send weekly Slack notification after publication
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SEND_WEEKLY_SLACK_ONLY: "1"
+        run: python generate_weekly.py
