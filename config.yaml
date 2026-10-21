@@ -10,6 +10,13 @@ top_n_per_category: 10
 min_spend: 500
 
 statics_categories:
+  # Winter ad sets (added Oct 2026). Keep this FIRST: categorise_ads() uses the first
+  # matching bucket, so winter-specific names must win over generic product keywords
+  # (e.g. a "Thermal-Vest" ad set should land here, not in "Shapewear & Vest").
+  "Winterwear":
+    adset_contains: ["Winter", "Jacket", "Hoodie", "Sweatshirt", "Fleece", "Puffer",
+                     "Thermal", "Sweatpants", "Trackpants", "MB18"]
+    emoji: "🧥"
   "5-at-999 Cotton UW":
     adset_contains: ["Buy-5-at-999", "Undies-Buy-5"]
     emoji: "🩲"
@@ -36,6 +43,13 @@ statics_categories:
     emoji: "👖"
 
 videos_categories:
+  # Winter ad sets (added Oct 2026). Keep this FIRST: categorise_ads() uses the first
+  # matching bucket, so winter-specific names must win over generic product keywords
+  # (e.g. a "Thermal-Vest" ad set should land here, not in "Shapewear & Vest").
+  "Winterwear":
+    adset_contains: ["Winter", "Jacket", "Hoodie", "Sweatshirt", "Fleece", "Puffer",
+                     "Thermal", "Sweatpants", "Trackpants", "MB18"]
+    emoji: "🧥"
   "5-at-999 Cotton UW":
     adset_contains: ["Buy-5-at-999"]
     emoji: "🩲"
