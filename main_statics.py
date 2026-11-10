@@ -11,7 +11,7 @@ import os
 import yaml
 from datetime import datetime
 from meta_api import fetch_ad_insights, fetch_previews_bulk, categorise_ads, consolidate_by_creative
-from taxonomy import summarise_unmapped
+from taxonomy import summarise_unmapped, category_orders, drop_ignored
 
 BASE_DIR = os.path.dirname(__file__)
 CONFIG_PATH = os.path.join(BASE_DIR, "config.yaml")
@@ -56,15 +56,22 @@ def run():
     # Categorise
     by_cat = categorise_ads(statics, categories)
 
+    # Categories flagged `ignore: true` in config.yaml are dropped on purpose (e.g. shorts).
+    by_cat, ignored = drop_ignored(by_cat, categories)
+    if ignored:
+        print(f"[Statics] Ignored {len(ignored)} ads (Rs {sum(a['spend'] for a in ignored):,.0f}) per config ignore rules")
+
     # Ads that match no category used to vanish silently. Keep a summary so the
     # dashboard can show them, and log them so a missing keyword is obvious.
     unmapped = summarise_unmapped(by_cat.get("Other", []))
     if unmapped["total_ads"]:
         print(f"[Statics] WARNING {unmapped['total_ads']} ads (Rs {unmapped['total_spend']:,.0f}) matched no category: "
               + ", ".join(s["name"] for s in unmapped["ad_sets"][:5]))
-    order_of = {name: i for i, name in enumerate(categories)}
+    order_of = category_orders(categories, cfg.get("group_order"))
     group_emoji_of = {c["group"]: c["group_emoji"] for c in categories.values()
                       if c.get("group") and c.get("group_emoji")}
+    group_summary_of = {c["group"]: True for c in categories.values()
+                        if c.get("group") and c.get("group_summary")}
 
     # Top N per category by spend
     top_ads = {}
@@ -96,6 +103,8 @@ def run():
             "group_emoji": group_emoji_of.get(categories.get(cat, {}).get("group", ""), ""),
             "order": order_of.get(cat, 10 ** 6),
             "total_ads": len(all_cat_ads),
+            "total_purchases": int(sum(a.get("purchases", 0) for a in all_cat_ads)),
+            "group_summary": group_summary_of.get(categories.get(cat, {}).get("group", ""), False),
             "total_spend": sum(a["spend"] for a in all_cat_ads),
             "blended_roas": (
                 sum(a["conv_value"] for a in all_cat_ads) /

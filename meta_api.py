@@ -160,17 +160,43 @@ def fetch_previews_bulk(ad_ids, delay=0.3):
 
 
 def categorise_ads(ads, categories):
+    """
+    Assign every ad to a category from config.yaml. First match wins inside each step:
+
+      1. ad SET name vs `adset_contains`          (normal categories, config order)
+      2. AD (creative) name vs `ad_contains`      (normal categories, config order)
+         -> splits generic ad sets such as "Pros-Outerwear-Bottomwear" by creative name
+      3. categories marked `fallback: true` or `ignore: true` (adset_contains / ad_contains)
+      4. nothing matched -> "Other" (the dashboards show it as an unmapped warning)
+
+    A config with only `adset_contains` behaves exactly as before.
+    """
+    def hit(keywords, text):
+        return any(kw.lower() in text for kw in (keywords or []))
+
+    primary  = [(n, c) for n, c in categories.items() if not c.get("fallback") and not c.get("ignore")]
+    fallback = [(n, c) for n, c in categories.items() if c.get("fallback") or c.get("ignore")]
+
     by_cat = defaultdict(list)
     for ad in ads:
-        adset   = ad["adset_name"].lower()
-        matched = False
-        for cat_name, cfg in categories.items():
-            if any(kw.lower() in adset for kw in cfg["adset_contains"]):
-                by_cat[cat_name].append(ad)
-                matched = True
+        adset = ad["adset_name"].lower()
+        name  = (ad.get("ad_name") or "").lower()
+        target = None
+        for n, c in primary:                                   # 1. ad set name
+            if hit(c.get("adset_contains"), adset):
+                target = n
                 break
-        if not matched:
-            by_cat["Other"].append(ad)
+        if target is None:
+            for n, c in primary:                               # 2. creative name
+                if hit(c.get("ad_contains"), name):
+                    target = n
+                    break
+        if target is None:
+            for n, c in fallback:                              # 3. fallback / ignore
+                if hit(c.get("adset_contains"), adset) or hit(c.get("ad_contains"), name):
+                    target = n
+                    break
+        by_cat[target or "Other"].append(ad)
     return dict(by_cat)
 
 

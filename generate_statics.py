@@ -8,7 +8,7 @@ import os
 import yaml
 from datetime import datetime
 
-from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner
+from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner, drop_ignored
 
 BASE_DIR = os.path.dirname(__file__)
 INPUT_PATH = os.path.join(BASE_DIR, "data", "statics_daily.json")
@@ -316,6 +316,7 @@ def _daily_section(ads, categories_cfg, min_spend, label, qualification_spend):
     from meta_api import categorise_ads
     filtered = [a for a in ads if a.get("spend", 0) >= min_spend]
     by_cat = categorise_ads(filtered, categories_cfg)
+    by_cat, _ignored = drop_ignored(by_cat, categories_cfg)
 
     total_spend = sum(a.get("spend", 0) for a in filtered)
     total_cv = sum(a.get("conv_value", 0) for a in filtered)

@@ -8,8 +8,36 @@ keys, and every helper here then behaves like the old flat layout (insertion ord
 no group headers, per-category Slack lines).
 """
 from collections import defaultdict
+from html import escape
 
 LEGACY_ORDER = 10 ** 6
+
+
+def category_orders(categories_cfg, group_order=None):
+    """
+    {category: display order}. Groups follow `group_order` from config (groups not listed go
+    last, in config order); inside a group, categories keep their config order. This lets
+    matching priority (config order) differ from display order (e.g. Winter is matched first
+    but shown after Innerwear).
+    """
+    rank = {g: i for i, g in enumerate(group_order or [])}
+    for c in categories_cfg.values():
+        g = c.get("group")
+        if g and g not in rank:
+            rank[g] = len(rank)
+    return {name: rank.get(c.get("group"), len(rank)) * 1000 + i
+            for i, (name, c) in enumerate(categories_cfg.items())}
+
+
+def drop_ignored(by_cat, categories_cfg):
+    """Remove categories marked `ignore: true`. Returns (by_cat_without_ignored, ignored_ads)."""
+    ignored, kept = [], {}
+    for cat, ads in by_cat.items():
+        if categories_cfg.get(cat, {}).get("ignore"):
+            ignored.extend(ads)
+        else:
+            kept[cat] = ads
+    return kept, ignored
 
 
 def fmt_inr(v):
@@ -28,20 +56,35 @@ def ordered_categories(categories):
 
 
 def group_rollup(categories):
-    """{group: {spend, ads, roas, cats, emoji}} in display order. Ungrouped categories are skipped."""
+    """
+    {group: {spend, ads, roas, units, cats, emoji, summary, children}} in display order.
+    Ungrouped categories are skipped.
+
+    Spend is counted ONCE: every ad lives in exactly one category, and a group is only the sum
+    of its categories (it never holds ads of its own), so parent and children never double-count.
+    """
     out = {}
-    for _cat, c in ordered_categories(categories).items():
+    for cat, c in ordered_categories(categories).items():
         g = c.get("group")
         if not g:
             continue
-        r = out.setdefault(g, {"spend": 0.0, "cv": 0.0, "ads": 0, "cats": 0, "emoji": c.get("emoji", "")})
+        r = out.setdefault(g, {"spend": 0.0, "cv": 0.0, "ads": 0, "units": 0, "has_units": False,
+                               "cats": 0, "emoji": c.get("emoji", ""), "summary": False, "children": []})
         if c.get("group_emoji"):
             r["emoji"] = c["group_emoji"]
+        if c.get("group_summary"):
+            r["summary"] = True
         spend = c.get("total_spend", 0) or 0
+        roas = c.get("blended_roas", 0) or 0
+        units = c.get("total_purchases")          # absent in data written before units were saved
         r["spend"] += spend
-        r["cv"] += spend * (c.get("blended_roas", 0) or 0)
+        r["cv"] += spend * roas
         r["ads"] += c.get("total_ads", 0) or 0
         r["cats"] += 1
+        if units is not None:
+            r["units"] += units
+            r["has_units"] = True
+        r["children"].append({"name": cat, "spend": spend, "roas": roas, "units": units})
     for r in out.values():
         r["roas"] = r["cv"] / r["spend"] if r["spend"] else 0
     return out
@@ -71,14 +114,24 @@ class GroupHeaders:
         self._seen.add(g)
         r = self._roll[g]
         n = r["cats"]
+        units = f' · {r["units"]:,} units sold' if r["has_units"] else ""
+        summary = ""
+        if r["summary"]:      # overview groups (e.g. Winter): one line listing every child, biggest first
+            parts = " &nbsp;&middot;&nbsp; ".join(
+                f'{escape(ch["name"])} <b style="color:#bbb;">{fmt_inr(ch["spend"])}</b> '
+                f'<span style="color:#666;">({ch["roas"]:.1f}x'
+                + (f' · {ch["units"]:,} units' if ch["units"] is not None else "") + ')</span>'
+                for ch in sorted(r["children"], key=lambda x: -x["spend"])
+            )
+            summary = f'<div style="font-size:11px;color:#8a8a8a;margin-top:8px;line-height:1.9;">By category &middot; {parts}</div>'
         return (
             '<div class="sec grp-hdr" data-cat="__group__" '
             'style="margin:34px 0 16px;padding:12px 16px;border-left:3px solid #3b82f6;'
             'background:#121212;border-radius:0 8px 8px 0;">'
             f'<div style="font-size:15px;font-weight:700;color:#e8e8e8;letter-spacing:.2px;">{r["emoji"]} {g}</div>'
             '<div style="font-size:11px;color:#777;margin-top:4px;font-variant-numeric:tabular-nums;">'
-            f'{n} categor{"y" if n == 1 else "ies"} · {r["ads"]} ads · {fmt_inr(r["spend"])} · {r["roas"]:.2f}x blended ROAS'
-            '</div></div>'
+            f'{n} categor{"y" if n == 1 else "ies"} · {r["ads"]} ads · {fmt_inr(r["spend"])} · {r["roas"]:.2f}x blended ROAS{units}'
+            f'</div>{summary}</div>'
         )
 
 
@@ -105,6 +158,8 @@ def slack_group_lines_from_ads(by_cat, categories_cfg, limit=5):
         if cat == "Other":
             continue
         cfg = categories_cfg.get(cat, {})
+        if cfg.get("ignore"):
+            continue
         g = cfg.get("group")
         if not g:
             return None
