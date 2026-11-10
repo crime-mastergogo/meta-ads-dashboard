@@ -13,6 +13,7 @@ import re
 import yaml
 import requests
 from datetime import datetime, date
+from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner
 
 BASE_DIR = os.path.dirname(__file__)
 CONFIG_PATH = os.path.join(BASE_DIR, "config.yaml")
@@ -90,6 +91,8 @@ def ad_card(ad, cfg, is_best=False, is_worst=False):
 
 def build_tab(categories, cfg, min_purchases=2):
     """Build overview + all-ads sections for one format (statics or videos)."""
+    categories = ordered_categories(categories)
+    gh_overview, gh_all = GroupHeaders(categories), GroupHeaders(categories)
     # Overview: top 3 + best ROAS + worst per category
     overview = ""
     for cat, cat_data in categories.items():
@@ -115,6 +118,7 @@ def build_tab(categories, cfg, min_purchases=2):
             cards += ad_card(worst, cfg, False, True)
 
         blended = cat_data.get("blended_roas", 0)
+        overview += gh_overview.before(cat_data)
         overview += f'''<div class="sec">
           <div class="sec-hdr">
             <div>
@@ -144,6 +148,7 @@ def build_tab(categories, cfg, min_purchases=2):
             is_worst = worst and ad["ad_name"] == worst["ad_name"] and not is_best
             cards += ad_card(ad, cfg, is_best, is_worst)
         safe_cat = cat.replace('"', '&quot;')
+        all_ads_html += gh_all.before(cat_data)
         all_ads_html += f'''<div class="sec" data-cat="{safe_cat}">
           <div class="sec-hdr">
             <div class="sec-t">{cat_data.get("emoji","")} {cat}</div>

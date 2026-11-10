@@ -15,6 +15,7 @@ import re
 import yaml
 import requests
 from datetime import datetime, date, timedelta
+from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner
 
 BASE_DIR     = os.path.dirname(__file__)
 CONFIG_PATH  = os.path.join(BASE_DIR, "config.yaml")
@@ -99,6 +100,8 @@ def ad_card(ad, cfg, is_best=False, is_worst_roas=False, is_bottom=False):
 
 def build_format_tab(categories, cfg, format_label):
     """Build HTML for one format tab (statics or videos)."""
+    categories = ordered_categories(categories)
+    gh = GroupHeaders(categories)
     sections_html = ""
     min_purch = 3 if format_label == "Statics" else 2
 
@@ -146,6 +149,7 @@ def build_format_tab(categories, cfg, format_label):
             </div>
             <div class="cgrid">{bottom_cards}</div>'''
 
+        sections_html += gh.before(cat_data)
         sections_html += f'''<div class="sec">
           <div class="sec-hdr">
             <div>

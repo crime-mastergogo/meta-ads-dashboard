@@ -8,6 +8,8 @@ import os
 import yaml
 from datetime import datetime
 
+from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner
+
 BASE_DIR = os.path.dirname(__file__)
 INPUT_PATH = os.path.join(BASE_DIR, "data", "statics_daily.json")
 OUTPUT_PATH = os.path.join(BASE_DIR, "docs", "index.html")
@@ -71,14 +73,15 @@ def ad_card(ad, cfg, show_preview=True):
 def build(data, cfg):
     generated = data.get("generated_at", "")[:10]
     lookback = data.get("lookback_days", 7)
-    categories = data.get("categories", {})
+    categories = ordered_categories(data.get("categories", {}))
+    gh_overview, gh_all = GroupHeaders(categories), GroupHeaders(categories)
 
     # Summary stats
     total_spend = sum(c["total_spend"] for c in categories.values())
     total_ads = sum(c["total_ads"] for c in categories.values())
 
     # Tab 1: Category overview (top 3 + best ROAS + worst per category)
-    tab1 = ""
+    tab1 = unmapped_banner(data.get("unmapped"))
     for cat, cat_data in categories.items():
         emoji = cat_data.get("emoji", "")
         top_ads = cat_data.get("top_ads", [])
@@ -122,6 +125,7 @@ def build(data, cfg):
             prefix = "<div class='mc'>"
             cards_html += f'<div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;"><div class="badge wbadge">⚠ Lowest</div>{card[len(prefix):]}'
 
+        tab1 += gh_overview.before(cat_data)
         tab1 += f'''<div class="sec">
           <div class="sec-hdr">
             <div>
@@ -145,6 +149,7 @@ def build(data, cfg):
             continue
         cards_html = "".join(ad_card(a, cfg, True) for a in top_ads)
         safe_cat = cat.replace('"', '&quot;')
+        tab2 += gh_all.before(cat_data)
         tab2 += f'''<div class="sec" data-cat="{safe_cat}">
           <div class="sec-hdr">
             <div class="sec-t">{cat_data.get("emoji","")} {cat}</div>
@@ -330,15 +335,22 @@ def _daily_section(ads, categories_cfg, min_spend, label, qualification_spend):
         if top_spend else "N/A"
     )
 
-    cat_lines = []
-    for cat, cat_data in list(by_cat.items())[:5]:
-        if cat == "Other":
-            continue
-        emoji = categories_cfg.get(cat, {}).get("emoji", "")
-        cat_spend = sum(a.get("spend", 0) for a in cat_data)
-        cat_cv = sum(a.get("conv_value", 0) for a in cat_data)
-        cat_roas = cat_cv / cat_spend if cat_spend > 0 else 0
-        cat_lines.append(f"{emoji} {cat[:22]} · {fmt(cat_spend)} · {cat_roas:.2f}x")
+    # Big-picture view: one line per GROUP (top 5 by spend). Falls back to the old
+    # per-category lines if the config has no groups.
+    cat_lines = slack_group_lines_from_ads(by_cat, categories_cfg)
+    if cat_lines is None:
+        cat_lines = []
+        for cat, cat_data in list(by_cat.items())[:5]:
+            if cat == "Other":
+                continue
+            emoji = categories_cfg.get(cat, {}).get("emoji", "")
+            cat_spend = sum(a.get("spend", 0) for a in cat_data)
+            cat_cv = sum(a.get("conv_value", 0) for a in cat_data)
+            cat_roas = cat_cv / cat_spend if cat_spend > 0 else 0
+            cat_lines.append(f"{emoji} {cat[:22]} · {fmt(cat_spend)} · {cat_roas:.2f}x")
+    _unmapped = sum(a.get("spend", 0) for a in by_cat.get("Other", []))
+    if _unmapped > 0:
+        cat_lines.append(f"⚠ Unmapped · {fmt(_unmapped)}")
 
     return {
         "total_spend": total_spend,
@@ -399,15 +411,20 @@ def _send_period_slack(data, cfg):
             if top else "N/A"
         )
 
-        cat_lines = []
-        for cat, cat_data in list(categories.items())[:5]:
-            if cat == "Other":
-                continue
-            emoji = cat_data.get("emoji", "")
-            cat_lines.append(
-                f"{emoji} {cat[:22]} · {fmt(cat_data.get('total_spend', 0))} · "
-                f"{cat_data.get('blended_roas', 0):.2f}x"
-            )
+        cat_lines = slack_group_lines(categories)
+        if cat_lines is None:   # data written before groups existed
+            cat_lines = []
+            for cat, cat_data in list(categories.items())[:5]:
+                if cat == "Other":
+                    continue
+                emoji = cat_data.get("emoji", "")
+                cat_lines.append(
+                    f"{emoji} {cat[:22]} · {fmt(cat_data.get('total_spend', 0))} · "
+                    f"{cat_data.get('blended_roas', 0):.2f}x"
+                )
+        _um = (period_data.get("unmapped") or {}).get("total_spend", 0)
+        if _um > 0:
+            cat_lines.append(f"⚠ Unmapped · {fmt(_um)}")
 
         return {
             "total_spend": total_spend,

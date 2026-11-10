@@ -9,56 +9,121 @@ daily_lookback_days: 7
 top_n_per_category: 10
 min_spend: 500
 
-statics_categories:
-  # Winter ad sets (added Oct 2026). Keep this FIRST: categorise_ads() uses the first
-  # matching bucket, so winter-specific names must win over generic product keywords
-  # (e.g. a "Thermal-Vest" ad set should land here, not in "Shapewear & Vest").
-  "Winterwear":
-    adset_contains: ["Winter", "Jacket", "Hoodie", "Sweatshirt", "Fleece", "Puffer",
-                     "Thermal", "Sweatpants", "Trackpants", "MB18"]
-    emoji: "🧥"
-  "5-at-999 Cotton UW":
+# ─────────────────────────────────────────────────────────────────────────────
+# CATEGORY TAXONOMY  (one list, shared by Statics and Videos via the YAML anchor)
+#
+#   group:        the big-picture bucket shown as a header on the dashboards and as
+#                 one line in Slack. Categories with the same group sit together.
+#   group_emoji:  put on the FIRST category of a group; used for the group header.
+#   adset_contains: case-insensitive substrings matched against the AD SET name.
+#
+# RULES
+#   1. FIRST MATCH WINS, top to bottom. Specific buckets must sit ABOVE generic ones
+#      (Polos & Active Tees above Tees; Hoodies & Sweatshirts above Shirts, because
+#      "Sweatshirt" and "Tshirt" both contain "shirt").
+#   2. Display order on the dashboard = the order below.
+#   3. Anything matching NO keyword is not silently dropped any more: it shows up in
+#      the yellow "unmapped" warning on the dashboard, with its spend.
+#   4. Avoid apostrophes in names (they are used inside inline JS in the HTML).
+# ─────────────────────────────────────────────────────────────────────────────
+statics_categories: &taxonomy
+
+  # ── 5@999 ────────────────────────────────────────────────────────────────
+  "5@999 Cotton UW":
+    group: "5@999 Cotton UW"
+    group_emoji: "🏷️"
     adset_contains: ["Buy-5-at-999", "Undies-Buy-5"]
     emoji: "🩲"
+
+  # ── Innerwear ────────────────────────────────────────────────────────────
+  "Thermals":
+    group: "Innerwear"
+    group_emoji: "🩲"
+    adset_contains: ["Thermal"]
+    emoji: "🌡️"
   "Shapewear & Vest":
+    group: "Innerwear"
     adset_contains: ["Shapewear", "SW01", "Vest", "Invisible", "MB23", "Bamboo"]
     emoji: "🦺"
   "Modal / Tactel UW":
+    group: "Innerwear"
     adset_contains: ["Modal", "Tactel", "Buy-3-at-15"]
     emoji: "🧴"
-  "Pyjamas & Easy Pants":
-    adset_contains: ["Pyjama", "CR46", "Easy-Pants", "Checkmate"]
-    emoji: "😴"
-  "Polo":
-    adset_contains: ["Polo"]
-    emoji: "👕"
-  "T-Shirts":
-    adset_contains: ["TShirt", "T-Shirt", "Tee", "Stripe", "Supima", "Pace"]
-    emoji: "👔"
   "Boxers":
+    group: "Innerwear"
     adset_contains: ["Boxer"]
     emoji: "🥊"
-  "Bottomwear / Pants":
-    adset_contains: ["Zero-Pants", "MB20", "MB21", "Bottomwear", "Cargo", "Ripstop"]
-    emoji: "👖"
-
-videos_categories:
-  # Winter ad sets (added Oct 2026). Keep this FIRST: categorise_ads() uses the first
-  # matching bucket, so winter-specific names must win over generic product keywords
-  # (e.g. a "Thermal-Vest" ad set should land here, not in "Shapewear & Vest").
-  "Winterwear":
-    adset_contains: ["Winter", "Jacket", "Hoodie", "Sweatshirt", "Fleece", "Puffer",
-                     "Thermal", "Sweatpants", "Trackpants", "MB18"]
-    emoji: "🧥"
-  "5-at-999 Cotton UW":
-    adset_contains: ["Buy-5-at-999"]
-    emoji: "🩲"
-  "Innerwear (General)":
+  "Innerwear (General)":          # catch-all for anything else with "Innerwear" in the name
+    group: "Innerwear"
     adset_contains: ["Innerwear"]
     emoji: "🎬"
-  "Outerwear":
+
+  # ── Outerwear · Topwear ──────────────────────────────────────────────────
+  "Jackets":
+    group: "Outerwear · Topwear"
+    group_emoji: "👕"
+    adset_contains: ["Jacket", "Puffer", "Bomber", "Windcheater"]
+    emoji: "🧥"
+  "Hoodies & Sweatshirts":
+    group: "Outerwear · Topwear"
+    adset_contains: ["Hoodie", "Sweatshirt", "Sweater", "Pullover"]
+    emoji: "🧶"
+  "Polos":
+    group: "Outerwear · Topwear"
+    adset_contains: ["Polo", "Rugby"]
+    emoji: "👕"
+  "Active Tees":                  # must sit above "Tees"
+    group: "Outerwear · Topwear"
+    adset_contains: ["Outerwear-Active", "Active-T"]
+    emoji: "🏃"
+  "Tees":
+    group: "Outerwear · Topwear"
+    adset_contains: ["TShirt", "T-Shirt", "Tee", "Henley", "Round-Neck", "Crew-Neck", "Stripe", "Supima", "Pace"]
+    emoji: "🎽"
+  "Shirts":                       # must sit BELOW Tees / Hoodies & Sweatshirts / Polos
+    group: "Outerwear · Topwear"
+    adset_contains: ["Shirt"]
+    emoji: "👔"
+  "Other Topwear":
+    group: "Outerwear · Topwear"
+    adset_contains: ["Topwear"]
+    emoji: "👕"
+
+  # ── Outerwear · Bottomwear ───────────────────────────────────────────────
+  "Sweatpants & Joggers":
+    group: "Outerwear · Bottomwear"
+    group_emoji: "👖"
+    adset_contains: ["Sweatpant", "Trackpant", "Track-Pant", "Jogger", "MB18"]
+    emoji: "🧘"
+  "Pyjamas & Easy Pants":
+    group: "Outerwear · Bottomwear"
+    adset_contains: ["Pyjama", "CR46", "Easy-Pants", "Checkmate"]
+    emoji: "😴"
+  "Pants & Cargos":
+    group: "Outerwear · Bottomwear"
+    adset_contains: ["Zero-Pants", "MB20", "MB21", "Cargo", "Ripstop", "Formal", "Chino", "Trouser"]
+    emoji: "👖"
+  "Shorts":
+    group: "Outerwear · Bottomwear"
+    adset_contains: ["Shorts"]
+    emoji: "🩳"
+  "Other Bottomwear":
+    group: "Outerwear · Bottomwear"
+    adset_contains: ["Bottomwear", "Pants"]
+    emoji: "👖"
+
+  # ── Outerwear · Mixed (multi-product ad sets that can't be split) ────────
+  "Winter / Multi-product":       # e.g. Winter-Master, DPA-All-Winterwear
+    group: "Outerwear · Mixed"
+    group_emoji: "❄️"
+    adset_contains: ["Winter"]
+    emoji: "❄️"
+  "Outerwear (Other)":            # catch-all for anything else with "Outerwear" in the name
+    group: "Outerwear · Mixed"
     adset_contains: ["Outerwear"]
     emoji: "👔"
+
+videos_categories: *taxonomy
 
 roas_thresholds:
   good: 2.5

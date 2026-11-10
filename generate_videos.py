@@ -13,6 +13,7 @@ import json
 import os
 import yaml
 import re
+from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner
 
 BASE_DIR = os.path.dirname(__file__)
 INPUT_PATH = os.path.join(BASE_DIR, "data", "videos_daily.json")
@@ -86,13 +87,14 @@ def video_card(ad, cfg, is_best=False, is_worst=False):
 def build(data, cfg):
     generated = data.get("generated_at", "")[:10]
     lookback = data.get("lookback_days", 7)
-    categories = data.get("categories", {})
+    categories = ordered_categories(data.get("categories", {}))
+    gh_overview, gh_all = GroupHeaders(categories), GroupHeaders(categories)
 
     total_spend = sum(c["total_spend"] for c in categories.values())
     total_ads = sum(c["total_ads"] for c in categories.values())
 
     # Tab 1: Overview — top 3 + best + worst per category
-    tab1 = ""
+    tab1 = unmapped_banner(data.get("unmapped"))
     for cat, cat_data in categories.items():
         emoji = cat_data.get("emoji", "")
         top_ads = cat_data.get("top_ads", [])
@@ -117,6 +119,7 @@ def build(data, cfg):
         if worst and worst["ad_name"] not in shown:
             cards += video_card(worst, cfg, is_best=False, is_worst=True)
 
+        tab1 += gh_overview.before(cat_data)
         tab1 += f'''<div class="sec">
           <div class="sec-hdr">
             <div>
@@ -147,6 +150,7 @@ def build(data, cfg):
             is_worst = worst and ad["ad_name"] == worst["ad_name"] and not is_best
             cards += video_card(ad, cfg, is_best, is_worst)
         safe_cat = cat.replace('"', '&quot;')
+        tab2 += gh_all.before(cat_data)
         tab2 += f'''<div class="sec" data-cat="{safe_cat}">
           <div class="sec-hdr">
             <div class="sec-t">{cat_data.get("emoji","")} {cat}</div>

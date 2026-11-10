@@ -13,6 +13,7 @@ import os
 import yaml
 from datetime import datetime
 from meta_api import fetch_ad_insights, fetch_previews_bulk, categorise_ads, consolidate_by_creative
+from taxonomy import summarise_unmapped
 
 BASE_DIR = os.path.dirname(__file__)
 CONFIG_PATH = os.path.join(BASE_DIR, "config.yaml")
@@ -62,6 +63,16 @@ def run():
 
     by_cat = categorise_ads(videos, categories)
 
+    # Ads that match no category used to vanish silently. Keep a summary so the
+    # dashboard can show them, and log them so a missing keyword is obvious.
+    unmapped = summarise_unmapped(by_cat.get("Other", []))
+    if unmapped["total_ads"]:
+        print(f"[Videos] WARNING {unmapped['total_ads']} ads (Rs {unmapped['total_spend']:,.0f}) matched no category: "
+              + ", ".join(s["name"] for s in unmapped["ad_sets"][:5]))
+    order_of = {name: i for i, name in enumerate(categories)}
+    group_emoji_of = {c["group"]: c["group_emoji"] for c in categories.values()
+                      if c.get("group") and c.get("group_emoji")}
+
     # Top N per category by SPEND (same as statics)
     top_ads = {}
     all_top_ids = []
@@ -92,6 +103,9 @@ def run():
         best_roas = max(qualified, key=lambda x: x["roas"])["roas"] if qualified else 0
         summary[cat] = {
             "emoji": emoji,
+            "group": categories.get(cat, {}).get("group", ""),
+            "group_emoji": group_emoji_of.get(categories.get(cat, {}).get("group", ""), ""),
+            "order": order_of.get(cat, 10 ** 6),
             "total_ads": len(all_cat_ads),
             "total_spend": total_spend,
             "blended_roas": blended_roas,
@@ -103,6 +117,7 @@ def run():
         "generated_at": datetime.utcnow().isoformat(),
         "lookback_days": lookback,
         "categories": summary,
+        "unmapped": unmapped,
     }
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
