@@ -13,7 +13,7 @@ import json
 import os
 import yaml
 import re
-from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner
+from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner, floor_note, overview_groups, overview_tab_html, group_rollup
 
 BASE_DIR = os.path.dirname(__file__)
 INPUT_PATH = os.path.join(BASE_DIR, "data", "videos_daily.json")
@@ -94,7 +94,7 @@ def build(data, cfg):
     total_ads = sum(c["total_ads"] for c in categories.values())
 
     # Tab 1: Overview — top 3 + best + worst per category
-    tab1 = unmapped_banner(data.get("unmapped"))
+    tab1 = floor_note(data) + unmapped_banner(data.get("unmapped"))
     for cat, cat_data in categories.items():
         emoji = cat_data.get("emoji", "")
         top_ads = cat_data.get("top_ads", [])
@@ -136,7 +136,7 @@ def build(data, cfg):
         safe = cat.replace("'", "\\'")
         filter_btns += f'<button class="filter-btn" onclick="filterCat(this,\'{safe}\')">{cat}</button>'
 
-    tab2 = f'<div class="filter-bar">{filter_btns}</div>'
+    tab2 = floor_note(data) + f'<div class="filter-bar">{filter_btns}</div>'
     for cat, cat_data in categories.items():
         top_ads = cat_data.get("top_ads", [])
         if not top_ads:
@@ -158,6 +158,18 @@ def build(data, cfg):
           </div>
           <div class="cgrid">{cards}</div>
         </div>'''
+
+    # Winter Overview (any group flagged `group_summary` in config.yaml) gets its own tab after Overview.
+    ov_group = (overview_groups(categories) or [None])[0]
+    ov_html = overview_tab_html(categories, ov_group, lambda ad, kind: video_card(ad, cfg, is_best=(kind == "best")),
+                                2, cfg, data.get("card_min_spend")) if ov_group else ""
+    tab_labels = ["📊 Overview"]
+    if ov_html:
+        tab_labels.append(f"{group_rollup(categories)[ov_group]['emoji']} {ov_group}")
+    tab_labels += ["🎬 All Videos"]
+    tabs_html = "".join(f'<div class="tab{" active" if i == 0 else ""}" onclick="switchTab({i})">{lbl}</div>'
+                        for i, lbl in enumerate(tab_labels))
+    winter_pane = f'<div class="tab-content" id="tabOverviewGroup">{ov_html}</div>' if ov_html else ""
 
     html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -225,10 +237,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
       <a class="nav-link" href="monthly/">📅 Monthly</a>
     </div>
   </div>
-  <div class="tabs">
-    <div class="tab active" onclick="switchTab(0)">📊 Overview</div>
-    <div class="tab" onclick="switchTab(1)">🎬 All Videos</div>
-  </div>
+  <div class="tabs">{tabs_html}</div>
 </div>
 <div class="stats">
   <div><div class="stat-l">Total Spend</div><div class="stat-v">{fmt(total_spend)}</div></div>
@@ -237,6 +246,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
   <div><div class="stat-l">Ranked by</div><div class="stat-v" style="font-size:13px;padding-top:3px">Spend · 1D Click ROAS</div></div>
 </div>
 <div class="tab-content active" id="tab0">{tab1}</div>
+{winter_pane}
 <div class="tab-content" id="tab1">{tab2}</div>
 <script>
 function switchTab(i){{document.querySelectorAll(".tab").forEach((t,j)=>t.classList.toggle("active",i===j));document.querySelectorAll(".tab-content").forEach((t,j)=>t.classList.toggle("active",i===j));}}

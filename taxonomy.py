@@ -135,6 +135,196 @@ class GroupHeaders:
         )
 
 
+# ── static vs video ──────────────────────────────────────────────────────────
+
+VIDEO_NAME_TOKENS = ("-video-", "_video_", "ugc-pa", "ugc-diy", "ugc-dark")
+STATIC_NAME_TOKENS = ("dpa", "carousel", "static", "image", "catalog", "collection")
+
+
+def ad_format(ad):
+    """
+    "video" or "static". EVERY ad gets exactly one.
+
+    The old pair of tests (is_static / is_video) could reject the same ad from BOTH dashboards:
+    a static / DPA / carousel creative sitting in an ad set whose name contains "Video" failed
+    is_static (video ad set) and failed is_video (static-type name), so it simply vanished.
+
+      1. name carries a static-type marker (static, image, carousel, dpa, catalog, collection) -> static
+      2. ad set name says "video", or the name carries a video marker                          -> video
+      3. everything else                                                                        -> static
+    """
+    adset = (ad.get("adset_name") or "").lower()
+    name = (ad.get("ad_name") or "").lower()
+    if any(t in name for t in STATIC_NAME_TOKENS):
+        return "static"
+    if "video" in adset or any(t in name for t in VIDEO_NAME_TOKENS):
+        return "video"
+    return "static"
+
+
+# ── spend-floor note ─────────────────────────────────────────────────────────
+
+def floor_note(data):
+    """Says why the page shows fewer ads than the totals count, so a filtered page is never
+    mistaken for missing data. Empty when nothing is hidden."""
+    floor = data.get("card_min_spend")
+    hidden = data.get("hidden_by_card_floor") or {}
+    if not floor or not hidden.get("ads"):
+        return ""
+    return (
+        '<div style="margin:0 0 18px;padding:10px 14px;border:1px solid #252525;background:#121212;'
+        'border-radius:8px;font-size:12px;color:#9a9a9a;line-height:1.6;">'
+        f'Showing ads with <b style="color:#ddd;">\u20b9{floor:,.0f}+ spend</b>. '
+        f'{hidden["ads"]} smaller ads ({fmt_inr(hidden["spend"])} combined) are hidden here but are still '
+        'counted in every category total, group rollup and Slack line.</div>'
+    )
+
+
+# ── overview tab (e.g. Winter Overview) ──────────────────────────────────────
+
+def overview_groups(categories):
+    """Groups flagged `group_summary` in config (Winter Overview). Each gets its own dashboard tab."""
+    return [g for g, r in group_rollup(categories).items() if r["summary"]]
+
+
+def _roas_color(roas, cfg):
+    t = (cfg or {}).get("roas_thresholds") or {"good": 2.5, "ok": 2.0, "warn": 1.5}
+    if roas >= t["good"]:
+        return "#22c55e"
+    if roas >= t["ok"]:
+        return "#86efac"
+    if roas >= t["warn"]:
+        return "#f59e0b"
+    return "#ef4444"
+
+
+def overview_tab_html(categories, group, card_fn, min_purchases, cfg, card_floor=None):
+    """
+    Body of the "<group>" tab: the launch at a glance, then the best creative of each category.
+
+      1. tiles       - spend, share of all spend, blended ROAS, units sold, ads, categories
+      2. scoreboard  - EVERY category of the group (even ones with no ad above the card floor)
+      3. top 10      - best creatives across the whole group, by ROAS
+      4. per category- best-ROAS creative + top spender, as the usual ad cards
+
+    card_fn(ad, kind) returns one ad card; kind is "best" or "top".
+    "Best" = highest ROAS among ads with at least `min_purchases` purchases.
+    """
+    roll = group_rollup(categories).get(group)
+    if not roll:
+        return ""
+    cats = [(n, c) for n, c in ordered_categories(categories).items() if c.get("group") == group]
+    by_spend = sorted(cats, key=lambda x: -(x[1].get("total_spend") or 0))
+    grand = sum((c.get("total_spend") or 0) for c in categories.values()) or 1
+
+    def tile(label, value):
+        return (f'<div style="flex:1;min-width:120px;"><div style="font-size:10px;color:#777;text-transform:uppercase;'
+                f'letter-spacing:.6px;">{label}</div><div style="font-size:21px;font-weight:700;color:#e8e8e8;'
+                f'margin-top:3px;font-variant-numeric:tabular-nums;">{value}</div></div>')
+
+    tiles = (
+        '<div style="display:flex;gap:18px;flex-wrap:wrap;background:#121212;border:1px solid #252525;'
+        'border-radius:10px;padding:16px 18px;margin-bottom:22px;">'
+        + tile("Spend", fmt_inr(roll["spend"]))
+        + tile("Share of all spend", f'{roll["spend"] / grand * 100:.0f}%')
+        + tile("Blended ROAS", f'<span style="color:{_roas_color(roll["roas"], cfg)};">{roll["roas"]:.2f}x</span>')
+        + tile("Units sold", f'{roll["units"]:,}' if roll["has_units"] else "\u2014")
+        + tile("Ads counted", roll["ads"])
+        + tile("Categories", roll["cats"])
+        + "</div>"
+    )
+
+    # scoreboard
+    th = 'style="text-align:left;font-weight:600;color:#777;padding:8px 12px;font-size:10px;text-transform:uppercase;letter-spacing:.5px;"'
+    rows = ""
+    for n, c in by_spend:
+        spend = c.get("total_spend") or 0
+        pct = spend / roll["spend"] * 100 if roll["spend"] else 0
+        shown = len(c.get("top_ads", []))
+        units = c.get("total_purchases")
+        shown_txt = f"{shown}" if shown else '<span style="color:#666;">none above floor</span>'
+        rows += (
+            '<tr style="border-top:1px solid #1d1d1d;">'
+            f'<td style="padding:9px 12px;color:#e8e8e8;font-weight:600;">{c.get("emoji", "")} {escape(n)}</td>'
+            f'<td style="padding:9px 12px;color:#ddd;font-variant-numeric:tabular-nums;">{fmt_inr(spend)}</td>'
+            '<td style="padding:9px 12px;min-width:130px;"><div style="display:flex;align-items:center;gap:8px;">'
+            '<div style="flex:1;background:#1f1f1f;border-radius:4px;height:7px;">'
+            f'<div style="background:#3b82f6;height:7px;border-radius:4px;width:{pct:.0f}%;"></div></div>'
+            f'<span style="color:#888;font-size:11px;width:30px;text-align:right;">{pct:.0f}%</span></div></td>'
+            f'<td style="padding:9px 12px;font-weight:700;color:{_roas_color(c.get("blended_roas", 0), cfg)};">{c.get("blended_roas", 0):.2f}x</td>'
+            f'<td style="padding:9px 12px;color:#ddd;font-variant-numeric:tabular-nums;">{f"{units:,}" if units is not None else chr(8212)}</td>'
+            f'<td style="padding:9px 12px;color:#aaa;">{c.get("total_ads", 0)}</td>'
+            f'<td style="padding:9px 12px;color:#aaa;">{shown_txt}</td></tr>'
+        )
+    scoreboard = (
+        '<div style="background:#121212;border:1px solid #252525;border-radius:10px;margin-bottom:26px;overflow-x:auto;">'
+        '<table style="width:100%;border-collapse:collapse;font-size:12.5px;"><thead><tr>'
+        f'<th {th}>Category</th><th {th}>Spend</th><th {th}>Share of {escape(group)}</th><th {th}>Blended ROAS</th>'
+        f'<th {th}>Units sold</th><th {th}>Ads counted</th><th {th}>Cards shown</th></tr></thead><tbody>{rows}</tbody></table></div>'
+    )
+
+    # best creatives across the whole group
+    pool = [(n, a) for n, c in cats for a in c.get("top_ads", []) if a.get("purchases", 0) >= min_purchases]
+    pool.sort(key=lambda x: -x[1].get("roas", 0))
+    seen, top_rows = set(), ""
+    for n, a in pool:
+        if a["ad_name"] in seen:
+            continue
+        seen.add(a["ad_name"])
+        nm = a["ad_name"] if len(a["ad_name"]) <= 78 else a["ad_name"][:77] + "\u2026"
+        top_rows += (
+            '<tr style="border-top:1px solid #1d1d1d;">'
+            f'<td style="padding:8px 12px;color:#777;">{len(seen)}</td>'
+            f'<td style="padding:8px 12px;color:#ddd;white-space:nowrap;">{escape(n)}</td>'
+            f'<td style="padding:8px 12px;color:#ccc;">{escape(nm)}</td>'
+            f'<td style="padding:8px 12px;color:#ddd;font-variant-numeric:tabular-nums;">{fmt_inr(a["spend"])}</td>'
+            f'<td style="padding:8px 12px;font-weight:700;color:{_roas_color(a["roas"], cfg)};">{a["roas"]:.2f}x</td>'
+            f'<td style="padding:8px 12px;color:#ddd;">{a["purchases"]:,}</td></tr>'
+        )
+        if len(seen) >= 10:
+            break
+    top10 = ""
+    if top_rows:
+        top10 = (
+            f'<div style="font-size:13px;font-weight:700;color:#e8e8e8;margin:0 0 4px;">Best of {escape(group)} \u2014 top creatives by ROAS</div>'
+            f'<div style="font-size:11px;color:#777;margin-bottom:10px;">Across all categories \u00b7 at least {min_purchases} purchases'
+            + (f' \u00b7 ads with \u20b9{card_floor:,.0f}+ spend' if card_floor else "") + '</div>'
+            '<div style="background:#121212;border:1px solid #252525;border-radius:10px;margin-bottom:28px;overflow-x:auto;">'
+            '<table style="width:100%;border-collapse:collapse;font-size:12.5px;"><thead><tr>'
+            f'<th {th}>#</th><th {th}>Category</th><th {th}>Creative</th><th {th}>Spend</th><th {th}>ROAS</th><th {th}>Units</th>'
+            f'</tr></thead><tbody>{top_rows}</tbody></table></div>'
+        )
+
+    # best of each category, as cards
+    blocks = ""
+    for n, c in by_spend:
+        top = c.get("top_ads", [])
+        if not top:
+            continue
+        qual = [a for a in top if a.get("purchases", 0) >= min_purchases]
+        best = max(qual, key=lambda a: a["roas"]) if qual else None
+        picks = []
+        if best:
+            picks.append((best, "best"))
+        if not best or top[0]["ad_name"] != best["ad_name"]:
+            picks.append((top[0], "top"))
+        units = c.get("total_purchases")
+        note = "" if best else f' \u00b7 <span style="color:#777;">no ad has {min_purchases}+ purchases yet \u2014 showing top spender</span>'
+        blocks += (
+            '<div class="sec"><div class="sec-hdr"><div>'
+            f'<div class="sec-t">{c.get("emoji", "")} {escape(n)}</div>'
+            f'<div class="sec-s">{c.get("total_ads", 0)} ads \u00b7 {fmt_inr(c.get("total_spend", 0))} \u00b7 '
+            f'{c.get("blended_roas", 0):.2f}x blended ROAS'
+            + (f' \u00b7 {units:,} units sold' if units is not None else "") + f'{note}</div></div></div>'
+            f'<div class="cgrid">{"".join(card_fn(a, k) for a, k in picks)}</div></div>'
+        )
+    if blocks:
+        blocks = ('<div style="font-size:13px;font-weight:700;color:#e8e8e8;margin:4px 0 4px;">Best creative per category</div>'
+                  '<div style="font-size:11px;color:#777;margin-bottom:12px;">\u2605 Best ROAS first, then the top spender</div>') + blocks
+
+    return tiles + scoreboard + top10 + blocks
+
+
 # ── Slack ────────────────────────────────────────────────────────────────────
 
 def slack_group_lines(categories, limit=5):

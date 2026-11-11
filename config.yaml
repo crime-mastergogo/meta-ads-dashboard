@@ -7,7 +7,10 @@ attribution:
 
 daily_lookback_days: 7
 top_n_per_category: 10
-min_spend: 500
+min_spend: 500          # ads below this are ignored completely (not counted anywhere)
+card_min_spend: 5000    # ad CARDS only show for ads at/above this. Category totals, group rollups and
+                        # Slack still count every ad >= min_spend, so no spend goes missing.
+                        # Set this equal to min_spend to apply a single floor to everything.
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CATEGORY TAXONOMY  (one list, shared by Statics and Videos via the YAML anchor)
@@ -67,20 +70,10 @@ statics_categories: &taxonomy
     adset_contains: ["Sweatpant", "Trackpant", "Track-Pant", "MB18"]
     ad_contains: ["Sweatpant", "Trackpant"]
     emoji: "🧘"
-  "Puffer Jackets":
-    group: "Winter Overview"
-    adset_contains: ["Puffer"]
-    ad_contains: ["Puffer"]
-    emoji: "🧥"
-  "Denim Jackets":                # launching this week - appears automatically once it has spend
-    group: "Winter Overview"
-    adset_contains: ["Denim-Jacket"]
-    ad_contains: ["Denim-Jacket"]
-    emoji: "🧥"
-  "Canvas Jackets":               # launching this week - appears automatically once it has spend
-    group: "Winter Overview"
-    adset_contains: ["Canvas"]
-    ad_contains: ["Canvas"]
+  "Jackets":                      # ALL jackets: Puffer, Denim, Canvas, Polar Fleece and any other.
+    group: "Winter Overview"      # Denim / Canvas Jackets (launching this week) land here automatically.
+    adset_contains: ["Jacket", "Puffer"]
+    ad_contains: ["Jacket", "Puffer", "Polar-Fleece"]
     emoji: "🧥"
   "Flannel Shirt":
     group: "Winter Overview"
@@ -107,11 +100,10 @@ statics_categories: &taxonomy
     adset_contains: ["Sweater", "Pullover", "Cardigan"]
     ad_contains: ["Sweater", "Pullover", "Cardigan"]
     emoji: "🧣"
-  "Other Winter":                 # winter spend that names none of the products above (fleece
-    group: "Winter Overview"     # jackets, the all-winterwear catalog carousel). Counted here so
-    fallback: true               # the overview total is complete.
-    adset_contains: ["Winter", "Jacket", "Fleece"]
-    ad_contains: ["Jacket", "Fleece"]
+  "Other Winter":                 # winter spend that names none of the products above (e.g. the
+    group: "Winter Overview"     # all-winterwear catalog carousel). Counted here so the overview
+    fallback: true               # total is complete.
+    adset_contains: ["Winter"]
     emoji: "❄️"
 
   # ── 5@999 ────────────────────────────────────────────────────────────────

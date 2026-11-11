@@ -8,7 +8,7 @@ import os
 import yaml
 from datetime import datetime
 
-from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner, drop_ignored
+from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner, floor_note, overview_groups, overview_tab_html, group_rollup, drop_ignored
 
 BASE_DIR = os.path.dirname(__file__)
 INPUT_PATH = os.path.join(BASE_DIR, "data", "statics_daily.json")
@@ -81,7 +81,7 @@ def build(data, cfg):
     total_ads = sum(c["total_ads"] for c in categories.values())
 
     # Tab 1: Category overview (top 3 + best ROAS + worst per category)
-    tab1 = unmapped_banner(data.get("unmapped"))
+    tab1 = floor_note(data) + unmapped_banner(data.get("unmapped"))
     for cat, cat_data in categories.items():
         emoji = cat_data.get("emoji", "")
         top_ads = cat_data.get("top_ads", [])
@@ -142,7 +142,7 @@ def build(data, cfg):
         safe = cat.replace("'", "\\'")
         filter_btns += f'<button class="filter-btn" onclick="filterCat(this,\'{safe}\')">{cat}</button>'
 
-    tab2 = f'<div class="filter-bar">{filter_btns}</div>'
+    tab2 = floor_note(data) + f'<div class="filter-bar">{filter_btns}</div>'
     for cat, cat_data in categories.items():
         top_ads = cat_data.get("top_ads", [])
         if not top_ads:
@@ -170,6 +170,25 @@ def build(data, cfg):
                 "purchases": ad["purchases"],
             })
     ad_data_json = json.dumps(ad_data_for_ai)
+
+    # Winter Overview (any group flagged `group_summary` in config.yaml) gets its own tab after Overview.
+    def _ov_card(ad, kind):
+        card = ad_card(ad, cfg, True)
+        prefix = "<div class='mc'>"
+        if kind == "best":
+            return (f'<div class="mc" style="border:1px solid rgba(34,197,94,0.35);background:#0f1a0f;">'
+                    f'<div class="badge sbadge">★ Best ROAS</div>{card[len(prefix):]}')
+        return card
+
+    ov_group = (overview_groups(categories) or [None])[0]
+    ov_html = overview_tab_html(categories, ov_group, _ov_card, 3, cfg, data.get("card_min_spend")) if ov_group else ""
+    tab_labels = ["📊 Overview"]
+    if ov_html:
+        tab_labels.append(f"{group_rollup(categories)[ov_group]['emoji']} {ov_group}")
+    tab_labels += ["🎨 All Ads", "🧠 Analysis"]
+    tabs_html = "".join(f'<div class="tab{" active" if i == 0 else ""}" onclick="switchTab({i})">{lbl}</div>'
+                        for i, lbl in enumerate(tab_labels))
+    winter_pane = f'<div class="tab-content" id="tabOverviewGroup">{ov_html}</div>' if ov_html else ""
 
     html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -242,11 +261,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
       <a class="nav-link" href="weekly/">📊 Weekly Reports</a>
     </div>
   </div>
-  <div class="tabs">
-    <div class="tab active" onclick="switchTab(0)">📊 Overview</div>
-    <div class="tab" onclick="switchTab(1)">🎨 All Ads</div>
-    <div class="tab" onclick="switchTab(2)">🧠 Analysis</div>
-  </div>
+  <div class="tabs">{tabs_html}</div>
 </div>
 <div class="stats">
   <div><div class="stat-l">Total Spend</div><div class="stat-v">{fmt(total_spend)}</div></div>
@@ -256,6 +271,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
   <div><div class="stat-l">Period</div><div class="stat-v" style="font-size:14px;padding-top:2px">Last {lookback}d</div></div>
 </div>
 <div class="tab-content active" id="tab0">{tab1}</div>
+{winter_pane}
 <div class="tab-content" id="tab1">{tab2}</div>
 <div class="tab-content" id="tab2">
   <button class="run-btn" id="runBtn" onclick="runAnalysis()">Run Creative Analysis</button>
