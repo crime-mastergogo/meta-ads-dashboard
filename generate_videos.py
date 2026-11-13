@@ -14,6 +14,8 @@ import os
 import yaml
 import re
 from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner, floor_note, overview_groups, overview_tab_html, group_rollup
+from monthview import (vintage_chip, category_month_strip, month_best_card, month_tab_html, wrap_card,
+                       load_month_data, TIER_BADGES)
 
 BASE_DIR = os.path.dirname(__file__)
 INPUT_PATH = os.path.join(BASE_DIR, "data", "videos_daily.json")
@@ -71,6 +73,7 @@ def video_card(ad, cfg, is_best=False, is_worst=False):
 
     return f'''<div class="mc" style="{style}">
       {badge}
+      {vintage_chip(ad["ad_name"])}
       {preview_html}
       <div class="mm">
         <div class="mn">{sn}</div>
@@ -119,6 +122,13 @@ def build(data, cfg):
         if worst and worst["ad_name"] not in shown:
             cards += video_card(worst, cfg, is_best=False, is_worst=True)
 
+        # this month's best creative for the category (new ads are small, so it may not be in the top 3)
+        month_card = ""
+        _bm = (cat_data.get("month") or {}).get("best")
+        if _bm and _bm["ad_name"] not in shown:
+            month_card = month_best_card(video_card(_bm, cfg))
+        strip = category_month_strip(cat_data)
+
         tab1 += gh_overview.before(cat_data)
         tab1 += f'''<div class="sec">
           <div class="sec-hdr">
@@ -127,7 +137,7 @@ def build(data, cfg):
               <div class="sec-s">{cat_data["total_ads"]} ads · {fmt(cat_data["total_spend"])} · {cat_data["blended_roas"]:.2f}x blended ROAS · best {cat_data["best_roas"]:.2f}x</div>
             </div>
           </div>
-          <div class="cgrid">{cards}</div>
+          {strip}<div class="cgrid">{cards}{month_card}</div>
         </div>'''
 
     # Tab 2: All top-10 per category
@@ -166,6 +176,14 @@ def build(data, cfg):
     tab_labels = ["📊 Overview"]
     if ov_html:
         tab_labels.append(f"{group_rollup(categories)[ov_group]['emoji']} {ov_group}")
+    # Current-month tab. Its name comes from the run date ("November", then "December", ...) and it
+    # appears once data/month_videos.json exists (written by main_month.py).
+    month_data = load_month_data("videos", BASE_DIR)
+    month_html = month_tab_html(month_data, lambda ad, tier: wrap_card(video_card(ad, cfg), TIER_BADGES[tier][0],
+                                                                       TIER_BADGES[tier][1], TIER_BADGES[tier][2]), cfg) if month_data else ""
+    if month_html:
+        tab_labels.append(f"📅 {month_data['views']['current']['name']}")
+    month_pane = f'<div class="tab-content" id="tabMonth">{month_html}</div>' if month_html else ""
     tab_labels += ["🎬 All Videos"]
     tabs_html = "".join(f'<div class="tab{" active" if i == 0 else ""}" onclick="switchTab({i})">{lbl}</div>'
                         for i, lbl in enumerate(tab_labels))
@@ -247,6 +265,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
 </div>
 <div class="tab-content active" id="tab0">{tab1}</div>
 {winter_pane}
+{month_pane}
 <div class="tab-content" id="tab1">{tab2}</div>
 <script>
 function switchTab(i){{document.querySelectorAll(".tab").forEach((t,j)=>t.classList.toggle("active",i===j));document.querySelectorAll(".tab-content").forEach((t,j)=>t.classList.toggle("active",i===j));}}

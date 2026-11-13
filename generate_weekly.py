@@ -14,6 +14,7 @@ import yaml
 import requests
 from datetime import datetime, date
 from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner
+from monthview import vintage_chip, weekly_month_block
 
 BASE_DIR = os.path.dirname(__file__)
 CONFIG_PATH = os.path.join(BASE_DIR, "config.yaml")
@@ -76,6 +77,7 @@ def ad_card(ad, cfg, is_best=False, is_worst=False):
 
     return f'''<div class="mc" style="{style}">
       {badge}
+      {vintage_chip(ad["ad_name"])}
       {preview_html}
       <div class="mm">
         <div class="mn">{sn}</div>
@@ -182,6 +184,9 @@ def build():
 
     s_overview, s_all = build_tab(s_cats, cfg, min_purchases=3)
     v_overview, v_all = build_tab(v_cats, cfg, min_purchases=2)
+    # "Best of this month" block on top of each format's Overview (same week window as the rest of the report)
+    s_overview = weekly_month_block(statics_data, cfg) + s_overview
+    v_overview = weekly_month_block(videos_data, cfg) + v_overview
 
     # Best performers for Slack
     all_s_ads = [a for c in s_cats.values() for a in c.get("top_ads",[])]

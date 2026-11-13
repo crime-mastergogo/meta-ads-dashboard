@@ -9,6 +9,8 @@ import yaml
 from datetime import datetime
 
 from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner, floor_note, overview_groups, overview_tab_html, group_rollup, drop_ignored
+from monthview import (vintage_chip, category_month_strip, month_best_card, month_tab_html, wrap_card,
+                       load_month_data, TIER_BADGES)
 
 BASE_DIR = os.path.dirname(__file__)
 INPUT_PATH = os.path.join(BASE_DIR, "data", "statics_daily.json")
@@ -57,6 +59,7 @@ def ad_card(ad, cfg, show_preview=True):
         preview_html = '<div class="mpw no-prev">Preview loads on open</div>'
 
     return f'''<div class="mc">
+      {vintage_chip(ad["ad_name"])}
       {preview_html}
       <div class="mm">
         <div class="mn">{sn}</div>
@@ -125,6 +128,13 @@ def build(data, cfg):
             prefix = "<div class='mc'>"
             cards_html += f'<div class="mc" style="border:1px solid rgba(239,68,68,0.4);background:#180f0f;"><div class="badge wbadge">⚠ Lowest</div>{card[len(prefix):]}'
 
+        # this month's best creative for the category (new ads are small, so it may not be in the top 3)
+        month_card = ""
+        _bm = (cat_data.get("month") or {}).get("best")
+        if _bm and _bm["ad_name"] not in shown_names:
+            month_card = month_best_card(ad_card(_bm, cfg, True))
+        strip = category_month_strip(cat_data)
+
         tab1 += gh_overview.before(cat_data)
         tab1 += f'''<div class="sec">
           <div class="sec-hdr">
@@ -133,7 +143,7 @@ def build(data, cfg):
               <div class="sec-s">{cat_data["total_ads"]} ads · {fmt(cat_data["total_spend"])} · {cat_data["blended_roas"]:.2f}x blended ROAS</div>
             </div>
           </div>
-          <div class="cgrid">{cards_html}</div>
+          {strip}<div class="cgrid">{cards_html}{month_card}</div>
         </div>'''
 
     # Tab 2: All top-10 per category with filter
@@ -185,6 +195,18 @@ def build(data, cfg):
     tab_labels = ["📊 Overview"]
     if ov_html:
         tab_labels.append(f"{group_rollup(categories)[ov_group]['emoji']} {ov_group}")
+    # Current-month tab. Its name comes from the run date ("November", then "December", ...) and it
+    # appears once data/month_statics.json exists (written by main_month.py).
+    month_data = load_month_data("statics", BASE_DIR)
+
+    def _month_card(ad, tier):
+        label, bg, fg = TIER_BADGES[tier]
+        return wrap_card(ad_card(ad, cfg, True), label, bg, fg)
+
+    month_html = month_tab_html(month_data, _month_card, cfg) if month_data else ""
+    if month_html:
+        tab_labels.append(f"📅 {month_data['views']['current']['name']}")
+    month_pane = f'<div class="tab-content" id="tabMonth">{month_html}</div>' if month_html else ""
     tab_labels += ["🎨 All Ads", "🧠 Analysis"]
     tabs_html = "".join(f'<div class="tab{" active" if i == 0 else ""}" onclick="switchTab({i})">{lbl}</div>'
                         for i, lbl in enumerate(tab_labels))
@@ -272,6 +294,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
 </div>
 <div class="tab-content active" id="tab0">{tab1}</div>
 {winter_pane}
+{month_pane}
 <div class="tab-content" id="tab1">{tab2}</div>
 <div class="tab-content" id="tab2">
   <button class="run-btn" id="runBtn" onclick="runAnalysis()">Run Creative Analysis</button>

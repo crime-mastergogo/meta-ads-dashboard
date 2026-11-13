@@ -12,6 +12,23 @@ card_min_spend: 5000    # ad CARDS only show for ads at/above this. Category tot
                         # Slack still count every ad >= min_spend, so no spend goes missing.
                         # Set this equal to min_spend to apply a single floor to everything.
 
+# Current-month tab (every key optional; these are the defaults). New ads are small, so this tab uses
+# its own, lower floor than card_min_spend. The month itself is never configured: it is read from the
+# run date, so December follows November and January follows December automatically.
+month_tab:
+  card_min_spend: 1000          # month-tab cards need this much spend
+  min_purchases: 2              # purchases needed before a creative is ranked by ROAS
+  scaling_spend: 10000          # Scaling      = this much spend AND ROAS >= scaling_roas
+  scaling_roas: 2.0
+  early_spend: 1000             # Early winner = this much spend, early_purchases+ purchases, ROAS >= early_roas
+  early_purchases: 2
+  early_roas: 2.0
+  notworking_spend: 3000        # Not working  = this much spend AND (ROAS < notworking_roas OR no purchases)
+  notworking_roas: 1.5          # everything else with spend is "Still proving"
+  best_overall_min_spend: 5000  # "best overall" is compared against ads at least this big
+  max_cards: 6                  # cards shown under "Best of <month>"
+  max_decisions: 10             # rows under "Needs a decision"
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CATEGORY TAXONOMY  (one list, shared by Statics and Videos via the YAML anchor)
 #

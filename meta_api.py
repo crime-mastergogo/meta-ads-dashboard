@@ -133,6 +133,85 @@ def fetch_ad_insights(lookback_days=7, ad_name_prefix=None, extra_fields=None):
     return results
 
 
+def fetch_ad_insights_monthly(since, until):
+    """
+    Ad-level insights for [since, until] split by calendar month (time_increment=monthly): one row per
+    ad per month, each carrying "month": "YYYY-MM". One call serves both the current-month and the
+    previous-month views. Same fields and parsing rules as fetch_ad_insights (ROAS straight from Meta).
+    """
+    params = {
+        "level": "ad",
+        "fields": "ad_id,ad_name,adset_name,spend,website_purchase_roas,omni_purchase_values,omni_purchase,actions",
+        "limit": 500,
+        "time_increment": "monthly",
+        "time_range": '{"since":"' + since + '","until":"' + until + '"}',
+    }
+    results, url = [], f"/{ACCOUNT_ID}/insights"
+    while True:
+        data = _get(url, params)
+        for row in data.get("data", []):
+            spend = float(row.get("spend", 0))
+            if spend < 1:
+                continue
+            roas_list = row.get("website_purchase_roas", [])
+            roas = float(roas_list[0]["value"]) if roas_list else 0.0
+            purchases = 0
+            actions = row.get("actions", [])
+            for action in actions:
+                if action.get("action_type") == "omni_purchase":
+                    purchases = int(float(action.get("value", 0)))
+                    break
+            if purchases == 0:
+                for action in actions:
+                    if action.get("action_type") == "purchase":
+                        purchases = int(float(action.get("value", 0)))
+                        break
+            results.append({
+                "ad_id": row.get("ad_id", ""), "ad_name": row.get("ad_name", ""),
+                "adset_name": row.get("adset_name", ""), "spend": spend, "roas": roas,
+                "conv_value": round(spend * roas, 2), "purchases": purchases,
+                "month": (row.get("date_start") or "")[:7],
+            })
+        paging = data.get("paging", {})
+        next_cursor = paging.get("cursors", {}).get("after")
+        if not next_cursor or not paging.get("next"):
+            break
+        params["after"] = next_cursor
+    print(f"  Monthly insight rows fetched: {len(results)}")
+    return results
+
+
+def fetch_ads_by_name_prefix(prefixes, limit=500):
+    """
+    Every ad (spending or not) whose name contains one of `prefixes`, e.g. ["November2026", "Nov2026"].
+    Ads that were uploaded but never delivered have no insights rows, so this is the only way to count them.
+    Returns [{"ad_id", "ad_name", "adset_name", "created_time", "status"}].
+    """
+    found = {}
+    for pfx in prefixes:
+        params = {
+            "fields": "id,name,adset{name},created_time,effective_status",
+            "limit": limit,
+            "filtering": json.dumps([{"field": "name", "operator": "CONTAIN", "value": pfx}]),
+        }
+        url = f"/{ACCOUNT_ID}/ads"
+        while True:
+            data = _get(url, params)
+            for row in data.get("data", []):
+                found[row["id"]] = {
+                    "ad_id": row["id"], "ad_name": row.get("name", ""),
+                    "adset_name": (row.get("adset") or {}).get("name", ""),
+                    "created_time": row.get("created_time", ""), "status": row.get("effective_status", ""),
+                }
+            paging = data.get("paging", {})
+            next_cursor = paging.get("cursors", {}).get("after")
+            if not next_cursor or not paging.get("next"):
+                break
+            params["after"] = next_cursor
+    print(f"  Ads found by name prefix {prefixes}: {len(found)}")
+    return list(found.values())
+
+
 def fetch_preview_url(ad_id, ad_format="MOBILE_FEED_STANDARD"):
     try:
         data  = _get(f"/{ad_id}/previews", {"ad_format": ad_format})

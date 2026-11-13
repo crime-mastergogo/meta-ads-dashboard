@@ -43,6 +43,13 @@ jobs:
           META_ACCOUNT_ID: ${{ secrets.META_ACCOUNT_ID }}
         run: python main_videos.py
 
+      - name: Pull current-month data (this month and last month's uploads)
+        continue-on-error: true
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_ACCOUNT_ID: ${{ secrets.META_ACCOUNT_ID }}
+        run: python main_month.py
+
       - name: Refresh current weekly report previews
         env:
           SKIP_WEEKLY_SLACK: "1"

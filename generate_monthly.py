@@ -16,6 +16,7 @@ import yaml
 import requests
 from datetime import datetime, date, timedelta
 from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner
+from monthview import vintage_chip
 
 BASE_DIR     = os.path.dirname(__file__)
 CONFIG_PATH  = os.path.join(BASE_DIR, "config.yaml")
@@ -85,6 +86,7 @@ def ad_card(ad, cfg, is_best=False, is_worst_roas=False, is_bottom=False):
 
     return f'''<div class="mc" style="{style}">
       {badge}
+      {vintage_chip(ad["ad_name"])}
       {preview_html}
       <div class="mm">
         <div class="mn">{sn}</div>

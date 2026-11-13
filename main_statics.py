@@ -12,6 +12,7 @@ import yaml
 from datetime import datetime
 from meta_api import fetch_ad_insights, fetch_previews_bulk, categorise_ads, consolidate_by_creative
 from taxonomy import summarise_unmapped, category_orders, drop_ignored, ad_format
+import monthview as mv
 
 BASE_DIR = os.path.dirname(__file__)
 CONFIG_PATH = os.path.join(BASE_DIR, "config.yaml")
@@ -93,6 +94,18 @@ def run():
         all_top_ids.extend([a["ad_id"] for a in ranked if a["ad_id"]])
 
     # Fetch fresh preview URLs for all top ads
+    # This month's numbers per category (best this month, share of spend) for the Overview strip, the
+    # "best this month" card and the weekly report. Taken from ALL counted ads, not only the cards above
+    # the spend floor, because new ads are small. The month is worked out from today's date.
+    cfgm = mv.month_cfg(cfg)
+    today = mv.today_ist()
+    ym = (today.year, today.month)
+    month_info = {cat: mv.category_month_info(ads, ym, cfgm, today) for cat, ads in by_cat.items() if cat != "Other"}
+    for info in month_info.values():
+        if info["best"] and info["best"].get("ad_id"):
+            all_top_ids.append(info["best"]["ad_id"])
+    all_top_ids = list(dict.fromkeys(all_top_ids))
+
     print(f"[Statics] Fetching preview URLs for {len(all_top_ids)} ads...")
     preview_map = fetch_previews_bulk(all_top_ids)
 
@@ -100,6 +113,9 @@ def run():
     for cat, ads in top_ads.items():
         for ad in ads:
             ad["preview_url"] = preview_map.get(ad["ad_id"], "")
+    for info in month_info.values():
+        if info["best"]:
+            info["best"]["preview_url"] = preview_map.get(info["best"].get("ad_id"), "")
 
     # Category summary stats
     summary = {}
@@ -121,13 +137,19 @@ def run():
                 if sum(a["spend"] for a in all_cat_ads) > 0 else 0
             ),
             "top_ads": ads,
+            "month": month_info.get(cat),
         }
+
+    snap = mv.analyse(by_cat, ym, cfgm, {}, today)
+    month_snapshot = {"name": mv.month_name(ym), "ym": f"{ym[0]}-{ym[1]:02d}",
+                      "summary": snap["summary"], "tiers": snap["tiers"]}
 
     output = {
         "generated_at": datetime.utcnow().isoformat(),
         "lookback_days": lookback,
         "categories": summary,
         "unmapped": unmapped,
+        "month_snapshot": month_snapshot,
         "min_spend": min_spend,
         "card_min_spend": card_min,
         "hidden_by_card_floor": {"ads": hidden["ads"], "spend": round(hidden["spend"], 2)},
