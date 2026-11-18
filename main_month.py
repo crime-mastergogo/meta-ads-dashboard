@@ -16,6 +16,8 @@ Writes data/month_statics.json and data/month_videos.json.
 """
 import json
 import os
+import sys
+import traceback
 from collections import defaultdict
 from datetime import datetime
 
@@ -31,6 +33,13 @@ CONFIG_PATH = os.path.join(BASE_DIR, "config.yaml")
 OUTPUT_DIR = os.path.join(BASE_DIR, "data")
 
 CATALOG_MARKERS = ("dpa", "carousel", "catalog", "collection")   # evergreen ads: no month prefix by design
+
+
+def write_status(ok, error=None):
+    """data/month_status.json: lets the dashboard show WHY the month tab is empty, not just the Actions log."""
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    with open(os.path.join(OUTPUT_DIR, "month_status.json"), "w", encoding="utf-8") as f:
+        json.dump({"ok": ok, "error": error, "at": datetime.utcnow().isoformat()}, f)
 
 
 def load_config():
@@ -110,8 +119,9 @@ def run():
 
     rows = fetch_ad_insights_monthly(prev["since"].isoformat(), prev["until"].isoformat())
     if not rows:
-        print("[Month] No insight rows returned. Keeping the existing data files untouched.")
-        return
+        # Fail loudly (red step, reason shown on the dashboard) instead of ending quietly with a green tick.
+        # The existing data files are left untouched, so the tab keeps showing the last good data.
+        raise RuntimeError(f"Meta returned no insight rows for {prev['since']} to {prev['until']}")
 
     uploads = None
     try:
@@ -157,7 +167,20 @@ def run():
             else:
                 print(f"[Month/{kind}] {key:8s} {v['name']:10s} no data yet")
         print(f"[Month/{kind}] Saved to {path}")
+    write_status(True)
+
+
+def main():
+    """Run, and on ANY failure record the reason where the dashboard can show it. Exits 1 so the Actions
+    step is marked failed (it is continue-on-error, so the rest of the daily run still happens)."""
+    try:
+        run()
+        return 0
+    except Exception as e:                                   # noqa: BLE001 - we want every failure recorded
+        traceback.print_exc()
+        write_status(False, f"{type(e).__name__}: {e}"[:600])
+        return 1
 
 
 if __name__ == "__main__":
-    run()
+    sys.exit(main())

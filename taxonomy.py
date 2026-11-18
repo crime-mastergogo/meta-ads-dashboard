@@ -171,12 +171,15 @@ def floor_note(data):
     hidden = data.get("hidden_by_card_floor") or {}
     if not floor or not hidden.get("ads"):
         return ""
+    min_cards = data.get("card_min_cards") or 0
+    extra = (f' A category with fewer than {min_cards} ads above the floor still shows its {min_cards} biggest, '
+             f'marked <b style="color:#fcd34d;">BELOW \u20b9{floor:,.0f}</b>.') if min_cards else ""
     return (
         '<div style="margin:0 0 18px;padding:10px 14px;border:1px solid #252525;background:#121212;'
         'border-radius:8px;font-size:12px;color:#9a9a9a;line-height:1.6;">'
         f'Showing ads with <b style="color:#ddd;">\u20b9{floor:,.0f}+ spend</b>. '
         f'{hidden["ads"]} smaller ads ({fmt_inr(hidden["spend"])} combined) are hidden here but are still '
-        'counted in every category total, group rollup and Slack line.</div>'
+        f'counted in every category total, group rollup and Slack line.{extra}</div>'
     )
 
 
@@ -240,9 +243,16 @@ def overview_tab_html(categories, group, card_fn, min_purchases, cfg, card_floor
     for n, c in by_spend:
         spend = c.get("total_spend") or 0
         pct = spend / roll["spend"] * 100 if roll["spend"] else 0
-        shown = len(c.get("top_ads", []))
+        cards_all = c.get("top_ads", [])
+        shown = len([a for a in cards_all if not a.get("below_floor")])
+        below = len(cards_all) - shown
         units = c.get("total_purchases")
-        shown_txt = f"{shown}" if shown else '<span style="color:#666;">none above floor</span>'
+        if shown:
+            shown_txt = f"{shown}" + (f' <span style="color:#fcd34d;">+ {below} below floor</span>' if below else "")
+        elif below:
+            shown_txt = f'<span style="color:#fcd34d;">{below} below floor</span>'
+        else:
+            shown_txt = '<span style="color:#666;">none</span>'
         rows += (
             '<tr style="border-top:1px solid #1d1d1d;">'
             f'<td style="padding:9px 12px;color:#e8e8e8;font-weight:600;">{c.get("emoji", "")} {escape(n)}</td>'
@@ -264,7 +274,8 @@ def overview_tab_html(categories, group, card_fn, min_purchases, cfg, card_floor
     )
 
     # best creatives across the whole group
-    pool = [(n, a) for n, c in cats for a in c.get("top_ads", []) if a.get("purchases", 0) >= min_purchases]
+    pool = [(n, a) for n, c in cats for a in c.get("top_ads", [])
+            if a.get("purchases", 0) >= min_purchases and not a.get("below_floor")]
     pool.sort(key=lambda x: -x[1].get("roas", 0))
     seen, top_rows = set(), ""
     for n, a in pool:
@@ -301,7 +312,7 @@ def overview_tab_html(categories, group, card_fn, min_purchases, cfg, card_floor
         top = c.get("top_ads", [])
         if not top:
             continue
-        qual = [a for a in top if a.get("purchases", 0) >= min_purchases]
+        qual = [a for a in top if a.get("purchases", 0) >= min_purchases and not a.get("below_floor")]
         best = max(qual, key=lambda a: a["roas"]) if qual else None
         picks = []
         if best:
@@ -322,7 +333,30 @@ def overview_tab_html(categories, group, card_fn, min_purchases, cfg, card_floor
         blocks = ('<div style="font-size:13px;font-weight:700;color:#e8e8e8;margin:4px 0 4px;">Best creative per category</div>'
                   '<div style="font-size:11px;color:#777;margin-bottom:12px;">\u2605 Best ROAS first, then the top spender</div>') + blocks
 
-    return tiles + scoreboard + top10 + blocks
+    # every ad of this group still hidden by the card floor, so nothing is invisible
+    hid = [(n, h) for n, c in cats for h in c.get("hidden_ads", [])]
+    hid.sort(key=lambda x: -x[1]["spend"])
+    hidden_html = ""
+    if hid:
+        total = sum(h["spend"] for _n, h in hid)
+        rows_h = "".join(
+            '<tr style="border-top:1px solid #1d1d1d;">'
+            f'<td style="padding:8px 12px;color:#ddd;white-space:nowrap;">{escape(n)}</td>'
+            f'<td style="padding:8px 12px;color:#ccc;">{escape(h["ad_name"][:84])}</td>'
+            f'<td style="padding:8px 12px;color:#ddd;">{fmt_inr(h["spend"])}</td>'
+            f'<td style="padding:8px 12px;font-weight:700;color:{_roas_color(h["roas"], cfg)};">{h["roas"]:.2f}x</td>'
+            f'<td style="padding:8px 12px;color:#ddd;">{h["purchases"]:,}</td></tr>'
+            for n, h in hid[:40])
+        floor_txt = f"\u20b9{card_floor:,.0f}" if card_floor else "the card floor"
+        hidden_html = (
+            '<details style="margin-top:8px;"><summary style="cursor:pointer;font-size:13px;font-weight:700;color:#e8e8e8;padding:10px 0;">'
+            f'{len(hid)} more {escape(group)} ads below {floor_txt} ({fmt_inr(total)} combined): hidden from the cards above</summary>'
+            '<div style="background:#121212;border:1px solid #252525;border-radius:10px;overflow-x:auto;margin-top:6px;">'
+            '<table style="width:100%;border-collapse:collapse;font-size:12.5px;"><thead><tr>'
+            f'<th {th}>Category</th><th {th}>Creative</th><th {th}>Spend</th><th {th}>ROAS</th><th {th}>Units</th>'
+            f'</tr></thead><tbody>{rows_h}</tbody></table></div></details>')
+
+    return tiles + scoreboard + top10 + blocks + hidden_html
 
 
 # ── Slack ────────────────────────────────────────────────────────────────────

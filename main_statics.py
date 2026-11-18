@@ -81,15 +81,27 @@ def run():
     # Top N per category by spend
     top_ads = {}
     all_top_ids = []
+    min_cards = cfg.get("card_min_cards", 0)
     hidden = {"ads": 0, "spend": 0.0}      # counted in totals, but too small to get a card
+    hidden_ads = {}                        # per category: the biggest ads still hidden (so nothing is invisible)
     for cat, ads in by_cat.items():
         if cat == "Other":
             continue
-        small = [a for a in ads if a["spend"] < card_min]
-        hidden["ads"] += len(small)
-        hidden["spend"] += sum(a["spend"] for a in small)
-        eligible = [a for a in ads if a["spend"] >= card_min]
-        ranked = sorted(eligible, key=lambda x: x["spend"], reverse=True)[:top_n]
+        eligible = sorted([a for a in ads if a["spend"] >= card_min], key=lambda x: x["spend"], reverse=True)
+        small = sorted([a for a in ads if a["spend"] < card_min], key=lambda x: x["spend"], reverse=True)
+        ranked = eligible[:top_n]
+        # A category with few big ads still shows its biggest ones, marked BELOW <floor>, so a new
+        # launch (a handful of ads that have only spent Rs 2-4K) cannot vanish from the dashboard.
+        for a in small:
+            if len(ranked) >= min_cards:
+                break
+            a["below_floor"] = card_min
+            ranked.append(a)
+        left = [a for a in small if not a.get("below_floor")]
+        hidden["ads"] += len(left)
+        hidden["spend"] += sum(a["spend"] for a in left)
+        hidden_ads[cat] = [{"ad_name": a["ad_name"], "adset_name": a["adset_name"], "spend": round(a["spend"], 2),
+                            "roas": round(a["roas"], 4), "purchases": a["purchases"]} for a in left[:15]]
         top_ads[cat] = ranked
         all_top_ids.extend([a["ad_id"] for a in ranked if a["ad_id"]])
 
@@ -138,6 +150,7 @@ def run():
             ),
             "top_ads": ads,
             "month": month_info.get(cat),
+            "hidden_ads": hidden_ads.get(cat, []),
         }
 
     snap = mv.analyse(by_cat, ym, cfgm, {}, today)
@@ -152,6 +165,7 @@ def run():
         "month_snapshot": month_snapshot,
         "min_spend": min_spend,
         "card_min_spend": card_min,
+        "card_min_cards": min_cards,
         "hidden_by_card_floor": {"ads": hidden["ads"], "spend": round(hidden["spend"], 2)},
         # Where every ad row went, so a "missing ad" can be traced instead of guessed at.
         "audit": {

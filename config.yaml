@@ -11,6 +11,9 @@ min_spend: 500          # ads below this are ignored completely (not counted any
 card_min_spend: 5000    # ad CARDS only show for ads at/above this. Category totals, group rollups and
                         # Slack still count every ad >= min_spend, so no spend goes missing.
                         # Set this equal to min_spend to apply a single floor to everything.
+card_min_cards: 3       # a category with fewer than this many ads above the floor still shows its biggest
+                        # ones up to this number, marked BELOW <floor>, so a new launch (e.g. a few ads
+                        # that have only spent ₹2-4K) never disappears. 0 = strict floor, nothing extra.
 
 # Current-month tab (every key optional; these are the defaults). New ads are small, so this tab uses
 # its own, lower floor than card_min_spend. The month itself is never configured: it is read from the
@@ -38,12 +41,16 @@ month_tab:
 #   group_summary:   put on the FIRST category of an overview group: its header also lists every
 #                    child category by spend (Winter Overview uses this).
 #   adset_contains:  case-insensitive substrings matched against the AD SET name.
+#   sku_codes:       product codes (e.g. ["MB48"]) matched as whole tokens in the ad set OR ad name. The
+#                    product code is the most precise signal, so it is checked FIRST and beats the ad set
+#                    name: an MB48 creative in a generic "Jackets" ad set still lands in Sweaters.
 #   ad_contains:     case-insensitive substrings matched against the AD (creative) name.
 #                    Splits generic ad sets (e.g. "Pros-Outerwear-Bottomwear") by creative.
 #   fallback: true   only considered if NOTHING else matched (last resort bucket).
 #   ignore: true     matching ads are dropped on purpose (not shown, not flagged as unmapped).
 #
 # HOW AN AD GETS ITS CATEGORY  (first match wins inside each step)
+#   0. SKU code     vs sku_codes        (ad set or ad name, whole token)
 #   1. ad SET name  vs adset_contains   (normal categories, top to bottom)
 #   2. AD name      vs ad_contains      (normal categories, top to bottom)
 #   3. fallback / ignore categories     (adset_contains or ad_contains)
@@ -94,11 +101,13 @@ statics_categories: &taxonomy
     emoji: "🧥"
   "Flannel Shirt":
     group: "Winter Overview"
+    sku_codes: ["MB46"]
     adset_contains: ["Flannel"]
     ad_contains: ["Flannel"]
     emoji: "🟥"
   "Overshirt":
     group: "Winter Overview"
+    sku_codes: ["MB49"]
     adset_contains: ["Overshirt"]
     ad_contains: ["Overshirt"]
     emoji: "👔"
@@ -114,6 +123,7 @@ statics_categories: &taxonomy
     emoji: "👕"
   "Sweaters":
     group: "Winter Overview"
+    sku_codes: ["MB48", "MB51"]    # MB48 half-zip sweater, MB51 crewneck sweater
     adset_contains: ["Sweater", "Pullover", "Cardigan"]
     ad_contains: ["Sweater", "Pullover", "Cardigan"]
     emoji: "🧣"

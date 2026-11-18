@@ -133,50 +133,79 @@ def fetch_ad_insights(lookback_days=7, ad_name_prefix=None, extra_fields=None):
     return results
 
 
+def _get_adaptive(path, params):
+    """_get that survives Meta's 'reduce the amount of data' error: halve the page size and retry."""
+    params = dict(params)
+    for attempt in range(4):
+        try:
+            return _get(path, params)
+        except requests.exceptions.HTTPError as e:
+            body = ((e.response.text if e.response is not None else "") or "").lower().replace(" ", "")
+            too_big = "reducetheamountofdata" in body or '"code":1,' in body
+            if too_big and int(params.get("limit", 500)) > 100 and attempt < 3:
+                params["limit"] = max(100, int(params["limit"]) // 2)
+                print(f"  Meta asked for less data per call; retrying with limit={params['limit']}")
+                continue
+            raise
+
+
+def _month_segments(since, until):
+    """[(\"YYYY-MM\", first_day, last_day)] covering [since, until], clipped to the window."""
+    s = datetime.strptime(since, "%Y-%m-%d").date()
+    u = datetime.strptime(until, "%Y-%m-%d").date()
+    segs, cur = [], s.replace(day=1)
+    while cur <= u:
+        nxt = (cur.replace(day=28) + timedelta(days=4)).replace(day=1)
+        segs.append((f"{cur.year}-{cur.month:02d}", max(s, cur), min(u, nxt - timedelta(days=1))))
+        cur = nxt
+    return segs
+
+
 def fetch_ad_insights_monthly(since, until):
     """
-    Ad-level insights for [since, until] split by calendar month (time_increment=monthly): one row per
-    ad per month, each carrying "month": "YYYY-MM". One call serves both the current-month and the
-    previous-month views. Same fields and parsing rules as fetch_ad_insights (ROAS straight from Meta).
+    Ad-level insights for [since, until], pulled ONE CALENDAR MONTH PER CALL (smaller calls are far less
+    likely to be refused by Meta than one big multi-month call). Every row carries "month": "YYYY-MM".
+    Same fields and parsing rules as fetch_ad_insights (ROAS straight from Meta).
     """
-    params = {
-        "level": "ad",
-        "fields": "ad_id,ad_name,adset_name,spend,website_purchase_roas,omni_purchase_values,omni_purchase,actions",
-        "limit": 500,
-        "time_increment": "monthly",
-        "time_range": '{"since":"' + since + '","until":"' + until + '"}',
-    }
-    results, url = [], f"/{ACCOUNT_ID}/insights"
-    while True:
-        data = _get(url, params)
-        for row in data.get("data", []):
-            spend = float(row.get("spend", 0))
-            if spend < 1:
-                continue
-            roas_list = row.get("website_purchase_roas", [])
-            roas = float(roas_list[0]["value"]) if roas_list else 0.0
-            purchases = 0
-            actions = row.get("actions", [])
-            for action in actions:
-                if action.get("action_type") == "omni_purchase":
-                    purchases = int(float(action.get("value", 0)))
-                    break
-            if purchases == 0:
+    results = []
+    for month, start, end in _month_segments(since, until):
+        params = {
+            "level": "ad",
+            "fields": "ad_id,ad_name,adset_name,spend,website_purchase_roas,omni_purchase_values,omni_purchase,actions",
+            "limit": 500,
+            "time_range": '{"since":"' + start.isoformat() + '","until":"' + end.isoformat() + '"}',
+        }
+        url, n_before = f"/{ACCOUNT_ID}/insights", len(results)
+        while True:
+            data = _get_adaptive(url, params)
+            for row in data.get("data", []):
+                spend = float(row.get("spend", 0))
+                if spend < 1:
+                    continue
+                roas_list = row.get("website_purchase_roas", [])
+                roas = float(roas_list[0]["value"]) if roas_list else 0.0
+                purchases = 0
+                actions = row.get("actions", [])
                 for action in actions:
-                    if action.get("action_type") == "purchase":
+                    if action.get("action_type") == "omni_purchase":
                         purchases = int(float(action.get("value", 0)))
                         break
-            results.append({
-                "ad_id": row.get("ad_id", ""), "ad_name": row.get("ad_name", ""),
-                "adset_name": row.get("adset_name", ""), "spend": spend, "roas": roas,
-                "conv_value": round(spend * roas, 2), "purchases": purchases,
-                "month": (row.get("date_start") or "")[:7],
-            })
-        paging = data.get("paging", {})
-        next_cursor = paging.get("cursors", {}).get("after")
-        if not next_cursor or not paging.get("next"):
-            break
-        params["after"] = next_cursor
+                if purchases == 0:
+                    for action in actions:
+                        if action.get("action_type") == "purchase":
+                            purchases = int(float(action.get("value", 0)))
+                            break
+                results.append({
+                    "ad_id": row.get("ad_id", ""), "ad_name": row.get("ad_name", ""),
+                    "adset_name": row.get("adset_name", ""), "spend": spend, "roas": roas,
+                    "conv_value": round(spend * roas, 2), "purchases": purchases, "month": month,
+                })
+            paging = data.get("paging", {})
+            next_cursor = paging.get("cursors", {}).get("after")
+            if not next_cursor or not paging.get("next"):
+                break
+            params["after"] = next_cursor
+        print(f"  {month} ({start} to {end}): {len(results) - n_before} ad rows")
     print(f"  Monthly insight rows fetched: {len(results)}")
     return results
 
@@ -242,29 +271,42 @@ def categorise_ads(ads, categories):
     """
     Assign every ad to a category from config.yaml. First match wins inside each step:
 
+      0. SKU code in the ad set OR ad name vs `sku_codes`   (e.g. MB48 -> Sweaters; the product code is
+         the most precise signal, so it beats the ad set name: an MB48 sweater creative sitting in a
+         generic "Jackets" or "Sweatshirt" ad set still lands in Sweaters)
       1. ad SET name vs `adset_contains`          (normal categories, config order)
       2. AD (creative) name vs `ad_contains`      (normal categories, config order)
          -> splits generic ad sets such as "Pros-Outerwear-Bottomwear" by creative name
       3. categories marked `fallback: true` or `ignore: true` (adset_contains / ad_contains)
       4. nothing matched -> "Other" (the dashboards show it as an unmapped warning)
 
-    A config with only `adset_contains` behaves exactly as before.
+    A config with only `adset_contains` behaves exactly as before. A code matches as a whole token:
+    MB48 matches "...-MB48-Static" but not "MB480" or "XMB48".
     """
     def hit(keywords, text):
         return any(kw.lower() in text for kw in (keywords or []))
 
     primary  = [(n, c) for n, c in categories.items() if not c.get("fallback") and not c.get("ignore")]
     fallback = [(n, c) for n, c in categories.items() if c.get("fallback") or c.get("ignore")]
+    coded = [(n, [re.compile(r"(?<![A-Za-z0-9])" + re.escape(code) + r"(?![0-9])", re.I) for code in c["sku_codes"]])
+             for n, c in primary if c.get("sku_codes")]
 
     by_cat = defaultdict(list)
     for ad in ads:
         adset = ad["adset_name"].lower()
         name  = (ad.get("ad_name") or "").lower()
         target = None
-        for n, c in primary:                                   # 1. ad set name
-            if hit(c.get("adset_contains"), adset):
-                target = n
-                break
+        if coded:
+            both = f'{ad["adset_name"]} {ad.get("ad_name") or ""}'
+            for n, pats in coded:                              # 0. SKU code
+                if any(p.search(both) for p in pats):
+                    target = n
+                    break
+        if target is None:
+            for n, c in primary:                               # 1. ad set name
+                if hit(c.get("adset_contains"), adset):
+                    target = n
+                    break
         if target is None:
             for n, c in primary:                               # 2. creative name
                 if hit(c.get("ad_contains"), name):

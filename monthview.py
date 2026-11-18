@@ -81,6 +81,11 @@ def month_name(ym):
     return calendar.month_name[ym[1]]
 
 
+def month_name_now():
+    t = today_ist()
+    return calendar.month_name[t.month]
+
+
 def month_first(ym):
     return date(ym[0], ym[1], 1)
 
@@ -133,6 +138,22 @@ def vintage_chip(ad_name, today=None):
     return (f'<div title="Uploaded {month_name(v)} {v[0]}" style="position:absolute;top:7px;right:7px;z-index:10;'
             f'padding:2px 6px;border-radius:3px;font-size:9px;font-weight:700;background:{bg};color:{fg};">'
             f'{vintage_label(v, today)}</div>')
+
+
+def floor_chip(ad):
+    """Marks a card that is shown although it spends less than the card floor (a small launch)."""
+    floor = ad.get("below_floor")
+    if not floor:
+        return ""
+    return ('<div title="Spends less than the card floor. Shown because this category has few ads above it." '
+            'style="position:absolute;top:28px;right:7px;z-index:10;padding:2px 6px;border-radius:3px;font-size:9px;'
+            'font-weight:700;background:#3f2d0a;color:#fcd34d;border:1px solid #6b5a14;">'
+            f'BELOW \u20b9{floor:,.0f}</div>')
+
+
+def card_chips(ad, today=None):
+    """Everything that goes in the top-right corner of an ad card."""
+    return vintage_chip(ad.get("ad_name", ""), today) + floor_chip(ad)
 
 
 # ── tiers ────────────────────────────────────────────────────────────────────
@@ -275,6 +296,8 @@ def category_month_info(ads, ym, cfgm, today=None):
     spend = sum(a["spend"] for a in cur)
     q = [a for a in cur if a["spend"] >= cfgm["card_min_spend"] and a["purchases"] >= cfgm["min_purchases"]]
     best = max(q, key=lambda a: a["roas"]) if q else None
+    if best:
+        best = {k: v for k, v in best.items() if k != "below_floor"}     # a copy, without the floor flag
     allq = [a for a in ads if parse_vintage(a["ad_name"]) and a["spend"] >= cfgm["best_overall_min_spend"]
             and a["purchases"] >= cfgm["min_purchases"]]
     ba = max(allq, key=lambda a: a["roas"]) if allq else None
@@ -300,6 +323,29 @@ def load_month_data(kind, base_dir):
         return data if data.get("views") else None
     except (OSError, ValueError):
         return None
+
+
+def load_month_status(base_dir):
+    """data/month_status.json written by main_month.py ({"ok": bool, "error": str, "at": iso}), or None."""
+    path = os.path.join(base_dir, "data", "month_status.json")
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return None
+
+
+def month_error_html(status):
+    """Shown in place of the month tab when the pull failed and there is no data yet, so the failure is
+    visible on the dashboard itself instead of only in the Actions log."""
+    return ('<div style="padding:26px 22px;border:1px solid #6b5a14;background:#1c1706;border-radius:10px;'
+            'font-size:13px;color:#e8d9a0;line-height:1.7;">'
+            '<b style="font-size:15px;color:#fcd34d;">The current-month data could not be pulled</b><br>'
+            'The tab will fill in as soon as the "Pull current-month data" step of the Daily workflow succeeds.<br>'
+            f'<span style="color:#b8a96a;">Last error ({escape(str(status.get("at", ""))[:16])} UTC): '
+            f'{escape(str(status.get("error", "unknown")))}</span></div>')
 
 
 # ── rendering helpers ────────────────────────────────────────────────────────
@@ -473,7 +519,7 @@ def view_html(v, card_fn, cfg):
     return note + tiles + funnel + score + best + decide + warn
 
 
-def month_tab_html(month_data, card_fn, cfg):
+def month_tab_html(month_data, card_fn, cfg, status=None):
     """The whole tab: a Current / Previous switch and both views. Falls back to the previous
     view on the 1st of the month, when the new month has no data yet."""
     views = month_data["views"]
@@ -483,6 +529,10 @@ def month_tab_html(month_data, card_fn, cfg):
                                  f'onclick="mvShow(\'{which}\')">{escape(v["name"])} ({tag})</button>')
     switch = f'<div class="filter-bar" style="margin-bottom:18px;">{btn("cur", cur, "this month")}{btn("prev", prev, "last month")}</div>'
     stamp = (f'<div style="font-size:11px;color:#9a9a9a;margin:-6px 0 16px;">Updated {escape(str(month_data.get("generated_at", ""))[:10])}</div>')
+    if status and not status.get("ok"):
+        stamp = ('<div style="margin:0 0 14px;padding:9px 14px;border:1px solid #6b5a14;background:#1c1706;border-radius:8px;font-size:12px;color:#e8d9a0;">'
+                 f'The latest refresh failed, so this is data from {escape(str(month_data.get("generated_at", ""))[:10])}. '
+                 f'Error: {escape(str(status.get("error", "unknown")))}</div>')
     script = ('<script>function mvShow(w){document.getElementById("mv-cur").style.display=w==="cur"?"block":"none";'
               'document.getElementById("mv-prev").style.display=w==="prev"?"block":"none";'
               'document.getElementById("mvb-cur").classList.toggle("active",w==="cur");'

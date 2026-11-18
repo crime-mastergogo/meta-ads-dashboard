@@ -9,7 +9,7 @@ import yaml
 from datetime import datetime
 
 from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner, floor_note, overview_groups, overview_tab_html, group_rollup, drop_ignored
-from monthview import (vintage_chip, category_month_strip, month_best_card, month_tab_html, wrap_card,
+from monthview import (card_chips, load_month_status, month_error_html, month_name_now, category_month_strip, month_best_card, month_tab_html, wrap_card,
                        load_month_data, TIER_BADGES)
 
 BASE_DIR = os.path.dirname(__file__)
@@ -59,7 +59,7 @@ def ad_card(ad, cfg, show_preview=True):
         preview_html = '<div class="mpw no-prev">Preview loads on open</div>'
 
     return f'''<div class="mc">
-      {vintage_chip(ad["ad_name"])}
+      {card_chips(ad)}
       {preview_html}
       <div class="mm">
         <div class="mn">{sn}</div>
@@ -92,7 +92,7 @@ def build(data, cfg):
             continue
 
         # Best ROAS card (with min 3 purchases)
-        qualified = [a for a in top_ads if a["purchases"] >= 3]
+        qualified = [a for a in top_ads if a["purchases"] >= 3 and not a.get("below_floor")]
         best_roas_ad = max(qualified, key=lambda x: x["roas"]) if qualified else None
         worst_roas_ad = min(qualified, key=lambda x: x["roas"]) if qualified else None
 
@@ -198,14 +198,18 @@ def build(data, cfg):
     # Current-month tab. Its name comes from the run date ("November", then "December", ...) and it
     # appears once data/month_statics.json exists (written by main_month.py).
     month_data = load_month_data("statics", BASE_DIR)
+    month_status = load_month_status(BASE_DIR)
 
     def _month_card(ad, tier):
         label, bg, fg = TIER_BADGES[tier]
         return wrap_card(ad_card(ad, cfg, True), label, bg, fg)
 
-    month_html = month_tab_html(month_data, _month_card, cfg) if month_data else ""
+    month_html = month_tab_html(month_data, _month_card, cfg, month_status) if month_data else ""
     if month_html:
         tab_labels.append(f"📅 {month_data['views']['current']['name']}")
+    elif month_status and not month_status.get("ok"):      # no data yet and the pull failed: say so on the page
+        month_html = month_error_html(month_status)
+        tab_labels.append(f"📅 {month_name_now()}")
     month_pane = f'<div class="tab-content" id="tabMonth">{month_html}</div>' if month_html else ""
     tab_labels += ["🎨 All Ads", "🧠 Analysis"]
     tabs_html = "".join(f'<div class="tab{" active" if i == 0 else ""}" onclick="switchTab({i})">{lbl}</div>'

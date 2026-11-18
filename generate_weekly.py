@@ -14,7 +14,7 @@ import yaml
 import requests
 from datetime import datetime, date
 from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner
-from monthview import vintage_chip, weekly_month_block
+from monthview import card_chips, weekly_month_block
 
 BASE_DIR = os.path.dirname(__file__)
 CONFIG_PATH = os.path.join(BASE_DIR, "config.yaml")
@@ -77,7 +77,7 @@ def ad_card(ad, cfg, is_best=False, is_worst=False):
 
     return f'''<div class="mc" style="{style}">
       {badge}
-      {vintage_chip(ad["ad_name"])}
+      {card_chips(ad)}
       {preview_html}
       <div class="mm">
         <div class="mn">{sn}</div>
@@ -102,7 +102,7 @@ def build_tab(categories, cfg, min_purchases=2):
         top_ads = cat_data.get("top_ads", [])
         if not top_ads:
             continue
-        qualified = [a for a in top_ads if a["purchases"] >= min_purchases]
+        qualified = [a for a in top_ads if a["purchases"] >= min_purchases and not a.get("below_floor")]
         best  = max(qualified, key=lambda x: x["roas"]) if qualified else None
         worst = min(qualified, key=lambda x: x["roas"]) if qualified else None
 
@@ -141,7 +141,7 @@ def build_tab(categories, cfg, min_purchases=2):
     for cat, cat_data in categories.items():
         top_ads = cat_data.get("top_ads", [])
         if not top_ads: continue
-        qualified = [a for a in top_ads if a["purchases"] >= min_purchases]
+        qualified = [a for a in top_ads if a["purchases"] >= min_purchases and not a.get("below_floor")]
         best  = max(qualified, key=lambda x: x["roas"]) if qualified else None
         worst = min(qualified, key=lambda x: x["roas"]) if qualified else None
         cards = ""
