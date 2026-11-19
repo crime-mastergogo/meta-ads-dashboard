@@ -1,0 +1,1243 @@
+{
+  "generated_at": "2026-11-19T12:12:21.970045",
+  "today": "2026-11-19",
+  "views": {
+    "current": {
+      "key": "current",
+      "ym": "2026-11",
+      "name": "November",
+      "since": "2026-11-01",
+      "until": "2026-11-18",
+      "example_prefix": "November2026",
+      "has_data": true,
+      "uploaded": {
+        "count": 439,
+        "no_spend": 25
+      },
+      "analysis": {
+        "summary": {
+          "spending": 419,
+          "spend": 1742989.85,
+          "share": 16.7,
+          "roas": 2.3167,
+          "older_roas": 2.5345,
+          "units": 2994
+        },
+        "tiers": {
+          "scaling": {
+            "count": 28,
+            "spend": 850595.9
+          },
+          "early": {
+            "count": 43,
+            "spend": 120125.37
+          },
+          "proving": {
+            "count": 336,
+            "spend": 668777.75
+          },
+          "notworking": {
+            "count": 12,
+            "spend": 103490.83
+          }
+        },
+        "categories": [
+          {
+            "category": "Jackets",
+            "group": "Winter Overview",
+            "emoji": "\ud83e\udde5",
+            "order": 2004,
+            "uploaded": 101,
+            "spending": 99,
+            "spend": 449462.47,
+            "roas": 1.8828,
+            "older_roas": 1.9615,
+            "best": {
+              "roas": 9.8746,
+              "ad_name": "November2026-You-Can-Never-Go-AI-Denim-Jackets-MB44-Static-Creative-Flatlay-Internal-13.11.2026",
+              "spend": 1277.07
+            },
+            "best_all": {
+              "roas": 4.3963,
+              "label": "NOV",
+              "is_view": true,
+              "ad_name": "November2026-Built-For-The-Freeze-AI-Puffer-Jackets-MB53-Static-Product-Romance-Internal-06.11.2026"
+            }
+          },
+          {
+            "category": "5@999 Cotton UW",
+            "group": "5@999 Cotton UW",
+            "emoji": "\ud83e\ude72",
+            "order": 11,
+            "uploaded": 22,
+            "spending": 27,
+            "spend": 359695.24,
+            "roas": 2.1938,
+            "older_roas": 2.5296,
+            "best": {
+              "roas": 4.1568,
+              "ad_name": "November2026-Dont-Let-A-Deal-AI-Cotton-Underwear-Static-Creative-Flatlay-Internal-06.11.2026",
+              "spend": 1260.2
+            },
+            "best_all": {
+              "roas": 3.8061,
+              "label": "OCT",
+              "is_view": false,
+              "ad_name": "October2026-The-Drawer-Restock-AI-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-05.10.2026"
+            }
+          },
+          {
+            "category": "Modal / Tactel UW",
+            "group": "Innerwear",
+            "emoji": "\ud83e\uddf4",
+            "order": 1013,
+            "uploaded": 25,
+            "spending": 25,
+            "spend": 238513.57,
+            "roas": 4.1297,
+            "older_roas": 3.3862,
+            "best": {
+              "roas": 7.6257,
+              "ad_name": "November2026-Your-Mornings-Just-AI-Modal-Underwear-R8-Static-Product-Romance-Internal-17.11.2026",
+              "spend": 1044.68
+            },
+            "best_all": {
+              "roas": 6.2959,
+              "label": "NOV",
+              "is_view": true,
+              "ad_name": "November2026-Dont-Be-The-AI-Modal-Underwear-R8-Static-Product-Romance-Internal-03.11.2026"
+            }
+          },
+          {
+            "category": "Henley",
+            "group": "Winter Overview",
+            "emoji": "\ud83d\udc55",
+            "order": 2008,
+            "uploaded": 14,
+            "spending": 14,
+            "spend": 217718.41,
+            "roas": 1.8348,
+            "older_roas": 2.7114,
+            "best": {
+              "roas": 2.7785,
+              "ad_name": "November2026-Biscuit-Brown-AI-Henley-Tee-MB47-Static-Model-Internal-03.11.2026",
+              "spend": 1649.1
+            },
+            "best_all": {
+              "roas": 3.5082,
+              "label": "OCT",
+              "is_view": false,
+              "ad_name": "October2026-The-Only-Waffle-AI-Henley-Tee-MB47-Static-Creative-Flatlay-Internal-26.10.2026"
+            }
+          },
+          {
+            "category": "Thermals",
+            "group": "Winter Overview",
+            "emoji": "\ud83c\udf21\ufe0f",
+            "order": 2002,
+            "uploaded": 15,
+            "spending": 15,
+            "spend": 99474.3,
+            "roas": 1.9771,
+            "older_roas": 2.1773,
+            "best": {
+              "roas": 2.3837,
+              "ad_name": "November2026-Since-Release-AI-Thermal-R68-Static-Product-Romance-Internal-02.11.2026",
+              "spend": 20692.8
+            },
+            "best_all": {
+              "roas": 4.3611,
+              "label": "OCT",
+              "is_view": false,
+              "ad_name": "October2026-Since-Release-AI-Thermal-R68-Static-Model-Internal-21.10.2026"
+            }
+          },
+          {
+            "category": "Sweaters",
+            "group": "Winter Overview",
+            "emoji": "\ud83e\udde3",
+            "order": 2009,
+            "uploaded": 60,
+            "spending": 55,
+            "spend": 88124.37,
+            "roas": 2.3672,
+            "older_roas": 1.7617,
+            "best": {
+              "roas": 3.3015,
+              "ad_name": "November2026-Sweater-Season-AI-Crewneck-Sweater-MB51-Static-Creative-Flatlay-Internal-02.11.2026",
+              "spend": 1415.41
+            },
+            "best_all": {
+              "roas": 2.9984,
+              "label": "NOV",
+              "is_view": true,
+              "ad_name": "November2026-Winter-Knits-AI-Half-Zip-Sweater-MB48-Static-Creative-Flatlay-Internal-02.11.2026"
+            }
+          },
+          {
+            "category": "Polos",
+            "group": "Outerwear \u00b7 Topwear",
+            "emoji": "\ud83d\udc55",
+            "order": 3015,
+            "uploaded": 28,
+            "spending": 27,
+            "spend": 80665.05,
+            "roas": 1.4581,
+            "older_roas": 2.8648,
+            "best": {
+              "roas": 2.0972,
+              "ad_name": "November2026-Dont-Let-This-AI-Nova-Polo-CR14-Static-Creative-Flatlay-Internal-03.11.2026",
+              "spend": 1012.47
+            },
+            "best_all": {
+              "roas": 6.307,
+              "label": "MAY",
+              "is_view": false,
+              "ad_name": "May2026-Your-Wardrobes-Safest-Bet-Nova-Polo-CR14-2-at-1049-Static-Creative-Flatlay-Internal-18.05.2026"
+            }
+          },
+          {
+            "category": "Flannel Shirt",
+            "group": "Winter Overview",
+            "emoji": "\ud83d\udfe5",
+            "order": 2005,
+            "uploaded": 11,
+            "spending": 11,
+            "spend": 55043.12,
+            "roas": 2.0081,
+            "older_roas": 0.0,
+            "best": {
+              "roas": 3.437,
+              "ad_name": "November2026-Soft-Hand-Feel-AI-Flannel-Shirt-MB46-Static-Creative-Flatlay-Internal-06.11.2026",
+              "spend": 10920.51
+            },
+            "best_all": {
+              "roas": 3.437,
+              "label": "NOV",
+              "is_view": true,
+              "ad_name": "November2026-Soft-Hand-Feel-AI-Flannel-Shirt-MB46-Static-Creative-Flatlay-Internal-06.11.2026"
+            }
+          },
+          {
+            "category": "Overshirt",
+            "group": "Winter Overview",
+            "emoji": "\ud83d\udc54",
+            "order": 2006,
+            "uploaded": 20,
+            "spending": 20,
+            "spend": 42947.94,
+            "roas": 2.7675,
+            "older_roas": null,
+            "best": {
+              "roas": 4.2956,
+              "ad_name": "November2026-Overshirt-AI-Overshirt-MB49-Static-Creative-Flatlay-Internal-05.11.2026",
+              "spend": 2040.6
+            },
+            "best_all": {
+              "roas": 2.6306,
+              "label": "NOV",
+              "is_view": true,
+              "ad_name": "November2026-Jackets-Are-Loud-AI-Overshirt-MB49-Static-Creative-Flatlay-Internal-02.11.2026"
+            }
+          },
+          {
+            "category": "Barrel Pants",
+            "group": "Winter Overview",
+            "emoji": "\ud83d\udee2\ufe0f",
+            "order": 2000,
+            "uploaded": 10,
+            "spending": 10,
+            "spend": 40812.76,
+            "roas": 2.6821,
+            "older_roas": null,
+            "best": {
+              "roas": 4.0653,
+              "ad_name": "November2026-The-Barrel-Pants-AI-Barrel-Pants-MB39-Static-Creative-Flatlay-Internal-09.11.2026",
+              "spend": 10460.45
+            },
+            "best_all": {
+              "roas": 4.0653,
+              "label": "NOV",
+              "is_view": true,
+              "ad_name": "November2026-The-Barrel-Pants-AI-Barrel-Pants-MB39-Static-Creative-Flatlay-Internal-09.11.2026"
+            }
+          },
+          {
+            "category": "Denim Pants",
+            "group": "Winter Overview",
+            "emoji": "\ud83d\udc56",
+            "order": 2001,
+            "uploaded": 11,
+            "spending": 11,
+            "spend": 36676.92,
+            "roas": 2.4955,
+            "older_roas": 3.7855,
+            "best": {
+              "roas": 3.3295,
+              "ad_name": "November2026-Good-Jeans-AI-Denim-Pants-MB37-Static-Creative-Flatlay-Internal-02.11.2026",
+              "spend": 12080.3
+            },
+            "best_all": {
+              "roas": 4.0992,
+              "label": "OCT",
+              "is_view": false,
+              "ad_name": "October2026-Everyone-Needs-AI-Denim-Pants-MB37-Static-Creative-Flatlay-Internal-26.10.2026"
+            }
+          },
+          {
+            "category": "Hoodies",
+            "group": "Winter Overview",
+            "emoji": "\ud83e\uddf6",
+            "order": 2007,
+            "uploaded": 29,
+            "spending": 29,
+            "spend": 16455.06,
+            "roas": 1.7611,
+            "older_roas": 1.6777,
+            "best": {
+              "roas": 3.9467,
+              "ad_name": "November2026-Zip-Up-AI-Hoodie-Jacket-CRW4-Static-Model-Internal-04.11.2026",
+              "spend": 1800.9
+            },
+            "best_all": {
+              "roas": 2.182,
+              "label": "OCT",
+              "is_view": false,
+              "ad_name": "October2026-Zip-It-Layer-AI-Hoodie-Jacket-CRW4-Static-Model-Internal-26.10.2026"
+            }
+          },
+          {
+            "category": "Sweatpants",
+            "group": "Winter Overview",
+            "emoji": "\ud83e\uddd8",
+            "order": 2003,
+            "uploaded": 42,
+            "spending": 33,
+            "spend": 8652.76,
+            "roas": 2.8138,
+            "older_roas": 3.3818,
+            "best": {
+              "roas": 2.1137,
+              "ad_name": "November2026-Zero-Bad-Choices-AI-Sweatpants-MB18-Static-Creative-Flatlay-Internal-04.11.2026",
+              "spend": 1679.76
+            },
+            "best_all": {
+              "roas": 4.6646,
+              "label": "OCT",
+              "is_view": false,
+              "ad_name": "October2026-All-Day-AI-All-Season-Sweatpants-MB42-Static-Model-Internal-06.10.2026"
+            }
+          },
+          {
+            "category": "Shapewear & Vest",
+            "group": "Innerwear",
+            "emoji": "\ud83e\uddba",
+            "order": 1012,
+            "uploaded": 30,
+            "spending": 30,
+            "spend": 6096.85,
+            "roas": 1.7348,
+            "older_roas": 2.4148,
+            "best": {
+              "roas": 3.0869,
+              "ad_name": "November2026-Kurta-You-Own-AI-Shapewear-Vest-SW01-Static-Model-Internal-05.11.2026",
+              "spend": 1233.37
+            },
+            "best_all": {
+              "roas": 3.2483,
+              "label": "AUG",
+              "is_view": false,
+              "ad_name": "August2026-The-Difference-Is-Right-There-Shapewear-Vest-SW01-Static-Model-Internal-10.08.2026"
+            }
+          },
+          {
+            "category": "Pants & Cargos",
+            "group": "Outerwear \u00b7 Bottomwear",
+            "emoji": "\ud83d\udc56",
+            "order": 4020,
+            "uploaded": 9,
+            "spending": 5,
+            "spend": 1872.82,
+            "roas": 0.5116,
+            "older_roas": 2.4569,
+            "best": null,
+            "best_all": {
+              "roas": 4.5012,
+              "label": "JUN",
+              "is_view": false,
+              "ad_name": "June2026-Made-For-Men-Zero-Pants-MB20-Carousel-29.06.2026"
+            }
+          },
+          {
+            "category": "Tees",
+            "group": "Outerwear \u00b7 Topwear",
+            "emoji": "\ud83c\udfbd",
+            "order": 3017,
+            "uploaded": 8,
+            "spending": 8,
+            "spend": 677.5,
+            "roas": 0.0,
+            "older_roas": 2.4433,
+            "best": null,
+            "best_all": {
+              "roas": 3.0849,
+              "label": "APR",
+              "is_view": false,
+              "ad_name": "Apr2026_Offer-Ends-Soon_Tshirt_CR15_3-at-1099_Static_Model_Internal_14.04.2026"
+            }
+          },
+          {
+            "category": "Pyjamas & Easy Pants",
+            "group": "Outerwear \u00b7 Bottomwear",
+            "emoji": "\ud83d\ude34",
+            "order": 4019,
+            "uploaded": 4,
+            "spending": 4,
+            "spend": 74.33,
+            "roas": 0.0,
+            "older_roas": 2.6217,
+            "best": null,
+            "best_all": {
+              "roas": 5.2145,
+              "label": "APR",
+              "is_view": false,
+              "ad_name": "Apr2026_Imagine-Summers_Easy-Pants_CR27_Static_Creative-Flatlay_Internal_05.06.2026"
+            }
+          },
+          {
+            "category": "Active Tees",
+            "group": "Outerwear \u00b7 Topwear",
+            "emoji": "\ud83c\udfc3",
+            "order": 3016,
+            "uploaded": 5,
+            "spending": 3,
+            "spend": 26.38,
+            "roas": 0.0,
+            "older_roas": 2.2236,
+            "best": null,
+            "best_all": {
+              "roas": 2.1638,
+              "label": "OCT",
+              "is_view": false,
+              "ad_name": "October2026-Arm-Day-AI-Active-Coolmax-Tank-Top-AT03-Static-Model-Internal-19.10.2026"
+            }
+          }
+        ],
+        "cards": [
+          {
+            "ad_id": "120250464773020298",
+            "ad_name": "November2026-You-Can-Never-Go-AI-Denim-Jackets-MB44-Static-Creative-Flatlay-Internal-13.11.2026",
+            "adset_name": "Pros-Denim-Jacket-TSQ-Broad-Statics-13.11.2026",
+            "spend": 1277.07,
+            "roas": 9.8746,
+            "conv_value": 12610.54,
+            "purchases": 5,
+            "category": "Jackets",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQK-kq3cZ4FXUeMXqnC5PLlvhAIavyC3F3J5BitiOyqzcIBtPqp_PsOpaF4O6mtblivJ9dNgnm8T0_A3wfcUrXN7Yp_fHgcI-HLZiyE7XYOY7exQ8luRHIZfr1CvDJzvh7QqGPlDa6MndVftjagGKhf8dKlqKeakUa2Q9olV5BMGd6v4BirXy7Y09_MpjIoBoBVtc5qj49mv1uvpTnG_6ix0T36B4SM5fjJ6tKC0shhXzbL0HGcMdZhwjQa1fp5uaj9lQFCDgm7dDZycqeADzrFkXeIj5hdGonvMqwddZ34RmbT-jHhif-Ap7o03UxyufV74wLLmcr3ZHMC_kmiLyVxs4ZoiJ9J84cUEsRrhjGFHBHpobG8jqRE2X_q6FQ6rZpc510TUmUiY4lxUBH_5r60A8iSanDh2_f3lq6Ixyf-FV2Y47aQg5KDj6AoU7vNaG6Q&t=AQIDbFLnbh6jG8d3AYw"
+          },
+          {
+            "ad_id": "120250526178970298",
+            "ad_name": "November2026-Your-Mornings-Just-AI-Modal-Underwear-R8-Static-Product-Romance-Internal-17.11.2026",
+            "adset_name": "Pros-Innerwear-Buy-3-at-15p-Off-TSQ-Broad-Statics-09.03.2026",
+            "spend": 1044.68,
+            "roas": 7.6257,
+            "conv_value": 7966.38,
+            "purchases": 7,
+            "category": "Modal / Tactel UW",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLLZ1X8o0-D0v_FIWKPM7Hu2FZeEy6oqOY_W0Gbi5IeuFvt4XXFhyjb4i1Cie70Ls9fjrA8ohnmiCOSePmWBozi6zvGf3QKrOCe5lXNvoxog9dHuoImc_GL536K1lS_RRRWdEj0L9Rddkr1lnKd2vS9rxRHFkE4nYyWha0GlBKQgQNS6ZUDLYN9BUhNMKOyMoWfChvWqyLJ_c_IdvvBDccG_DEg2CX3Ljw_IJYorZoEdkUGHIJTKAGPbyxJsr3vtR6zaUZKu8jDfRPR2IlbjTMAih2o7HFOwZCjUDgbEA-ADg9I5nLJblMzI8yMGZ-8R_tIRzV7fPwUfs4wA-eUz9_--sWef8zVb6nRoDq2XmhyDS5F4AwxIQH4wtiH92-S6pkEYDcUfwDwXXxQ-N_vOx8pTEhpqktHxkZ7p5p8gTnkdyjp7C5VVugFYGj0mZMOBx4&t=AQLltJFCopdIGdm9LIU"
+          },
+          {
+            "ad_id": "120250297063020298",
+            "ad_name": "November2026-984-Pieces-Gone-AI-Puffer-Jackets-MB52-Static-Creative-Flatlay-Internal-04.11.2026",
+            "adset_name": "Pros-Puffer-Jacket-TSQ-Broad-Statics-04.11.2026",
+            "spend": 1407.71,
+            "roas": 7.1937,
+            "conv_value": 10126.64,
+            "purchases": 3,
+            "category": "Jackets",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJFGoOmdT6qdCvlxfHe4O_KGY3xzQrQ_PPF-s224mw7m5QaiF3xShQ00zz62LZiIJe789GOP1Y6p5aHMgZ-HvDPIsqcXFUnrSM6vTUZeIYV5kaGIuORegliInKzNlfko3cOEGjz7SnU4jdym1MwhlV_uqedXkn6MfMVSjpPrb-TPxFCcoqiugdY0jkDvIqAu6VwHm7a5wPoWoRwCCyTky_UqSCg7h4Qi3TFlGnGGJvRJD4DPrl_s18So6ZGOBj6iNR0EZOHuHt3sBCP-H3I_F2PCPg5Nl39iJ-qhUBqOzAhIj6jEnKXe7YGKurKXeKzaEmskriAHYLDqiBn4h94fWWKT6N0Mu5y9_CU7L1HEedVPnllq2IToglbJYe-jc1Q3vzDKexf3ViuyOtFTsKgHgprDYEzwV0XcAmuvhERRdHNNAMLur7Tjh4m0DEglGh3dVA&t=AQKH8EYhxh-TSgGpzZs"
+          },
+          {
+            "ad_id": "120250269457910298",
+            "ad_name": "November2026-Dont-Be-The-AI-Modal-Underwear-R8-Static-Product-Romance-Internal-03.11.2026",
+            "adset_name": "Pros-Innerwear-Buy-3-at-15p-Off-TSQ-Broad-Statics-09.03.2026",
+            "spend": 7267.27,
+            "roas": 6.2959,
+            "conv_value": 45754.16,
+            "purchases": 41,
+            "category": "Modal / Tactel UW",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLQw_4kbwVeiHQKdNIBfQoKrwPXNaHBn_Zuzyq1Xu_lP24V1NjJ7zgOT0Izo1d8uZP83XoUsUmCQKSjvOYuU4i8s-J9cTBTrITV3bGcRZ8g4mbtJvGHyGlaAjltoApLaeRMYM5GCdFrNHkETGVtl1eIa3CxHn8jngiIMlFbNQI1aCBNch7HCDcQSzo1yzVVJeMlR25694FVOOTt8rgJOjhHN5znm64pyz1mIG7UT8eHILirC7mg-biEOcVWoF1Zmnlugvs6yW1vZt4ku02a6d0cI1iQuNpUZ2rxClgqDX3r-e1RFQQDqcetdAZtPYf_X97kcSBPwNYHGwJXsRn4_s5X74fmNzavAFZSl1VoyhEeVD_k2-WSm75hDUNgTB_2i8b2h3Pton6oGRLVO07yRrFdJDSoDfmfYCYViiWnR8y2r_TN-aE33DKa7YJJvSydK7Y&t=AQJ0pLnjioyU_3HYp94"
+          },
+          {
+            "ad_id": "120250464650330298",
+            "ad_name": "November2026-New-In-Denim-Jacket-AI-Denim-Jackets-MB44-Static-Creative-Flatlay-Internal-13.11.2026",
+            "adset_name": "Pros-Denim-Jacket-TSQ-Broad-Statics-13.11.2026",
+            "spend": 3533.57,
+            "roas": 5.8231,
+            "conv_value": 20576.33,
+            "purchases": 5,
+            "category": "Jackets",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQImHoSp_WWH4hqtFrItJ_UHvUouWWBQtsxDAKlhTB8v3TOqMXJPeV7CIu23LEqJb-Dff00aLXBS2WS_vmy0yAT4ZCNQC4a3nA0PRS3QQfJVAdh0jOaz1wr8Fc4iN6E-OzhajWp8ElXdYDwH5bRXVD1AGGfb6fbHl2pLNMtUiG-K-QdroPNt0HSFkJreNRQchLeS6wr7g2RT7ehII7eaui6waV-WBPXTi1C1WsFiWXOTcofvB0r3RPNtUeKD1HoTsnzcJypJGqIes1rTnT_DLF7zEVaCVE9ZjqM1ebcjXQvL8fQ4lmgA3S5Ln7sZPnZG-gwrBGiYwPW8PWOqX9jkUNayLzWxnOfnPm8YTWmgDIG9E3yExD-lAIxz1tNcAcUmxwZXJ13vYjsCUiqBIg0Vq252OMMKyEFmgoCZ5wHAG0Y7uPrRI3hLxixYZayrkzwH3Zw&t=AQIN5MJDG5u4bh4OOus"
+          },
+          {
+            "ad_id": "120250269430980298",
+            "ad_name": "November2026-Start-Your-Day-AI-Modal-Underwear-R7-Static-Creative-Flatlay-Internal-03.11.2026",
+            "adset_name": "Pros-Innerwear-Buy-3-at-15p-Off-TSQ-Broad-Statics-09.03.2026",
+            "spend": 23117.87,
+            "roas": 4.4692,
+            "conv_value": 103318.45,
+            "purchases": 118,
+            "category": "Modal / Tactel UW",
+            "tier": "scaling",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKt76k2g4P665ldA77o0IDc2GndxervVdIaUPmo1Ye49W4XQlRCzAnH7xGT9GCcHsqsQkh0HOIMkTOdQBZOqk1P6IEXVcX6hrFb5H5osHBfdxueoFANoJJD5ATHpX39e9xClS0o2Wt4AOULS82UFV23l483cOelXxXoCnGIMmV4DsEsbCCp0C6YhhG7dtO1z_7cU25VA7Oa2-rB0P_kt0djJ9zqfKgELNd7BPsRopRNm9VCZHk6OuWEL16Rdxm8LDl_bCx0MsqL3ztEyE2DO6z6kzNQq1ZOBlXp_UsUReC02Jj4nYGVr2jmDr5V4ZoUPpmah9zaqfqnvSIqhbzdZLdcCLR9miCaalFfaF4Cj5TJ_7Rt77lEDhgwPA_ej_mCNx2Vkrz-qM79HZLH-B3AKqPPKTH45BDLK_qBROhHSJf-xn3P-9UmIEBFr6QBBk_5W2Y&t=AQIhNrQjWEqbnUwwh2Q"
+          }
+        ],
+        "decisions": [
+          {
+            "ad_id": "120250337186970298",
+            "ad_name": "November2026-Sub-Zero-Thermals-AI-Thermal-R68-Static-Creative-Flatlay-Internal-06.11.2026",
+            "adset_name": "Pros-Thermals-TSQ-Broad-Statics-21.10.2026",
+            "spend": 22166.08,
+            "roas": 1.4625,
+            "conv_value": 32417.2,
+            "purchases": 17,
+            "category": "Thermals",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250265995140298",
+            "ad_name": "November2026-A-Brief-That-You-AI-Cotton-Underwear-Static-Creative-Flatlay-Internal-03.11.2026",
+            "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
+            "spend": 15874.65,
+            "roas": 1.4496,
+            "conv_value": 23012.43,
+            "purchases": 25,
+            "category": "5@999 Cotton UW",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250248923570298",
+            "ad_name": "November2026-The-Product-The-AI-Rugby-Polo-TShirt-CRW12-Static-Model-Internal-02.11.2026",
+            "adset_name": "Pros-Rugby-Polo-TSQ-Broad-Statics-02.11.2026",
+            "spend": 13167.09,
+            "roas": 1.2017,
+            "conv_value": 15822.54,
+            "purchases": 8,
+            "category": "Polos",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250337900070298",
+            "ad_name": "November2026-New-The-Flannel-AI-Flannel-Shirt-MB46-Static-Creative-Flatlay-Internal-06.11.2026",
+            "adset_name": "Pros-Flannel-Shirt-TSQ-Broad-Statics-06.11.2026",
+            "spend": 10424.39,
+            "roas": 0.79,
+            "conv_value": 8235.7,
+            "purchases": 5,
+            "category": "Flannel Shirt",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250339921010298",
+            "ad_name": "November2026-Its-A-Good-Day-AI-Cotton-Underwear-Static-Creative-Flatlay-Internal-06.11.2026",
+            "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
+            "spend": 9344.19,
+            "roas": 1.1206,
+            "conv_value": 10471.37,
+            "purchases": 14,
+            "category": "5@999 Cotton UW",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250272218480298",
+            "ad_name": "November2026-Two-Button-Energy-AI-Henley-Tee-MB47-Static-Creative-Flatlay-Internal-03.11.2026",
+            "adset_name": "Pros-Henley-Tshirt-TSQ-Broad-Statics-26.10.2026",
+            "spend": 6697.47,
+            "roas": 0.2634,
+            "conv_value": 1763.78,
+            "purchases": 1,
+            "category": "Henley",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250319576100298",
+            "ad_name": "November2026-Everyday-Jeans-AI-Denim-Pants-MB37-Static-Creative-Flatlay-Internal-05.11.2026",
+            "adset_name": "Pros-Outerwear-Denim-Pants-TSQ-Broad-Statics-26.10.2026",
+            "spend": 5715.04,
+            "roas": 1.4823,
+            "conv_value": 8471.53,
+            "purchases": 11,
+            "category": "Denim Pants",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250248482180298",
+            "ad_name": "November2026-Every-Guy-Needs-AI-Henley-Tee-MB47-Static-Creative-Flatlay-Internal-02.11.2026",
+            "adset_name": "Pros-Henley-Tshirt-TSQ-Broad-Statics-26.10.2026",
+            "spend": 4368.64,
+            "roas": 0.7722,
+            "conv_value": 3373.32,
+            "purchases": 2,
+            "category": "Henley",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250246951510298",
+            "ad_name": "November2026-Retro-Never-Looked-AI-Rugby-Polo-TShirt-CRW12-Static-Creative-Flatlay-Internal-02.11.2026",
+            "adset_name": "Pros-Rugby-Polo-TSQ-Broad-Statics-02.11.2026",
+            "spend": 4307.82,
+            "roas": 0.4325,
+            "conv_value": 1862.98,
+            "purchases": 1,
+            "category": "Polos",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250247236760298",
+            "ad_name": "November2026-Style-Score-AI-Rugby-Polo-TShirt-CRW12-Static-Creative-Flatlay-Internal-02.11.2026 - Copy",
+            "adset_name": "Pros-Rugby-Polo-TSQ-Broad-Statics-02.11.2026",
+            "spend": 4122.43,
+            "roas": 0.8875,
+            "conv_value": 3658.51,
+            "purchases": 2,
+            "category": "Polos",
+            "tier": "notworking"
+          }
+        ],
+        "all_spend": 10450111.65
+      },
+      "no_prefix": {
+        "ads": 11,
+        "spend": 47499.21,
+        "examples": [
+          "Pros-MB23-Invisible-Vest-Creative-Flatlay-Under-Everything-Static-18.03.2026",
+          "Pros-MB23-Invisible-Vest-Creative-Flatlay-Invisible-Mode-Static-18.03.2026",
+          "Pros-MB23-Invisible-Vest-Barely-There-Model-Static-27.03.2026"
+        ]
+      }
+    },
+    "previous": {
+      "key": "previous",
+      "ym": "2026-10",
+      "name": "October",
+      "since": "2026-10-01",
+      "until": "2026-11-18",
+      "example_prefix": "October2026",
+      "has_data": true,
+      "uploaded": {
+        "count": 424,
+        "no_spend": 13
+      },
+      "analysis": {
+        "summary": {
+          "spending": 427,
+          "spend": 5072708.56,
+          "share": 19.1,
+          "roas": 2.3526,
+          "older_roas": 2.5783,
+          "units": 11159
+        },
+        "tiers": {
+          "scaling": {
+            "count": 34,
+            "spend": 4236820.9
+          },
+          "early": {
+            "count": 75,
+            "spend": 286308.62
+          },
+          "proving": {
+            "count": 305,
+            "spend": 454292.38
+          },
+          "notworking": {
+            "count": 13,
+            "spend": 95286.66
+          }
+        },
+        "categories": [
+          {
+            "category": "5@999 Cotton UW",
+            "group": "5@999 Cotton UW",
+            "emoji": "\ud83e\ude72",
+            "order": 11,
+            "uploaded": 41,
+            "spending": 54,
+            "spend": 3680977.85,
+            "roas": 2.2925,
+            "older_roas": 2.4749,
+            "best": {
+              "roas": 4.0944,
+              "ad_name": "October2026-If-You-Needed-AI-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-09.10.2026",
+              "spend": 1622.48
+            },
+            "best_all": {
+              "roas": 4.6549,
+              "label": "AUG",
+              "is_view": false,
+              "ad_name": "August2026-Watch-Coffee-Phone-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-18.08.2026"
+            }
+          },
+          {
+            "category": "Thermals",
+            "group": "Winter Overview",
+            "emoji": "\ud83c\udf21\ufe0f",
+            "order": 2002,
+            "uploaded": 11,
+            "spending": 11,
+            "spend": 228950.69,
+            "roas": 2.2539,
+            "older_roas": null,
+            "best": {
+              "roas": 4.4663,
+              "ad_name": "October2026-HeatTech-AI-VO-Thermal-R68-Static-Model-Internal-21.10.2026",
+              "spend": 1463.63
+            },
+            "best_all": {
+              "roas": 4.3611,
+              "label": "OCT",
+              "is_view": true,
+              "ad_name": "October2026-Since-Release-AI-Thermal-R68-Static-Model-Internal-21.10.2026"
+            }
+          },
+          {
+            "category": "Hoodies",
+            "group": "Winter Overview",
+            "emoji": "\ud83e\uddf6",
+            "order": 2007,
+            "uploaded": 15,
+            "spending": 15,
+            "spend": 216205.52,
+            "roas": 1.726,
+            "older_roas": null,
+            "best": {
+              "roas": 2.1711,
+              "ad_name": "October2026-Pitch-Black-AI-Half-Zip-Sweatshirt-MB39-Static-Model-Internal-19.10.2026",
+              "spend": 18943.59
+            },
+            "best_all": {
+              "roas": 2.1711,
+              "label": "OCT",
+              "is_view": true,
+              "ad_name": "October2026-Pitch-Black-AI-Half-Zip-Sweatshirt-MB39-Static-Model-Internal-19.10.2026"
+            }
+          },
+          {
+            "category": "Sweatpants",
+            "group": "Winter Overview",
+            "emoji": "\ud83e\uddd8",
+            "order": 2003,
+            "uploaded": 58,
+            "spending": 57,
+            "spend": 190130.67,
+            "roas": 3.6019,
+            "older_roas": 3.2233,
+            "best": {
+              "roas": 7.7406,
+              "ad_name": "October2026-Sweatpants-But-AI-Sweatpants-MB18-Static-Model-Internal-09.10.2026",
+              "spend": 1009.92
+            },
+            "best_all": {
+              "roas": 7.056,
+              "label": "OCT",
+              "is_view": true,
+              "ad_name": "October2026-Fit-Check-AI-Sweatpants-CRW11-Static-Model-Internal-15.10.2026"
+            }
+          },
+          {
+            "category": "Active Tees",
+            "group": "Outerwear \u00b7 Topwear",
+            "emoji": "\ud83c\udfc3",
+            "order": 3016,
+            "uploaded": 41,
+            "spending": 39,
+            "spend": 171546.81,
+            "roas": 2.6468,
+            "older_roas": 2.9417,
+            "best": {
+              "roas": 8.5762,
+              "ad_name": "October2026-Ready-When-You-Are-AI-Active-Coolmax-Tshirt-AT02-Static-Model-Internal-13.10.2026",
+              "spend": 1144.49
+            },
+            "best_all": {
+              "roas": 5.3453,
+              "label": "OCT",
+              "is_view": true,
+              "ad_name": "October2026-Lab-Tested-AI-Active-Coolmax-Tank-Top-AT03-Static-Model-Internal-12.10.2026"
+            }
+          },
+          {
+            "category": "Shapewear & Vest",
+            "group": "Innerwear",
+            "emoji": "\ud83e\uddba",
+            "order": 1012,
+            "uploaded": 89,
+            "spending": 90,
+            "spend": 145789.81,
+            "roas": 2.1978,
+            "older_roas": 2.4946,
+            "best": {
+              "roas": 4.81,
+              "ad_name": "October2026-Theyd-Wear-It-AI-Shapewear-Vest-SW01-Static-Product-Romance-Internal-26.10.2026",
+              "spend": 1062.68
+            },
+            "best_all": {
+              "roas": 3.1731,
+              "label": "AUG",
+              "is_view": false,
+              "ad_name": "August2026-Zero-Seams-Invisible-Vest-MB23-Static-Creative-Flatlay-Internal-06.08.2026"
+            }
+          },
+          {
+            "category": "Jackets",
+            "group": "Winter Overview",
+            "emoji": "\ud83e\udde5",
+            "order": 2004,
+            "uploaded": 10,
+            "spending": 10,
+            "spend": 132511.74,
+            "roas": 1.8395,
+            "older_roas": null,
+            "best": {
+              "roas": 3.0322,
+              "ad_name": "October2026-Hood-Up-Warmth-AI-Puffer-Jackets-MB53-Static-Model-Internal-19.10.2026",
+              "spend": 5386.87
+            },
+            "best_all": {
+              "roas": 4.3963,
+              "label": "NOV",
+              "is_view": false,
+              "ad_name": "November2026-Built-For-The-Freeze-AI-Puffer-Jackets-MB53-Static-Product-Romance-Internal-06.11.2026"
+            }
+          },
+          {
+            "category": "Modal / Tactel UW",
+            "group": "Innerwear",
+            "emoji": "\ud83e\uddf4",
+            "order": 1013,
+            "uploaded": 20,
+            "spending": 21,
+            "spend": 105292.75,
+            "roas": 3.1828,
+            "older_roas": 3.1143,
+            "best": {
+              "roas": 4.8338,
+              "ad_name": "October2026-Softest-Way-AI-Modal-Underwear-R1-Static-Creative-Flatlay-Internal-01.10.2026",
+              "spend": 1864.88
+            },
+            "best_all": {
+              "roas": 6.2959,
+              "label": "NOV",
+              "is_view": false,
+              "ad_name": "November2026-Dont-Be-The-AI-Modal-Underwear-R8-Static-Product-Romance-Internal-03.11.2026"
+            }
+          },
+          {
+            "category": "Denim Pants",
+            "group": "Winter Overview",
+            "emoji": "\ud83d\udc56",
+            "order": 2001,
+            "uploaded": 10,
+            "spending": 10,
+            "spend": 76217.37,
+            "roas": 3.1596,
+            "older_roas": null,
+            "best": {
+              "roas": 3.7236,
+              "ad_name": "October2026-Denim-With-AI-Denim-Pants-MB37-Static-Creative-Flatlay-Internal-26.10.2026",
+              "spend": 11442.14
+            },
+            "best_all": {
+              "roas": 3.7236,
+              "label": "OCT",
+              "is_view": true,
+              "ad_name": "October2026-Denim-With-AI-Denim-Pants-MB37-Static-Creative-Flatlay-Internal-26.10.2026"
+            }
+          },
+          {
+            "category": "Henley",
+            "group": "Winter Overview",
+            "emoji": "\ud83d\udc55",
+            "order": 2008,
+            "uploaded": 9,
+            "spending": 9,
+            "spend": 56866.11,
+            "roas": 2.5576,
+            "older_roas": null,
+            "best": {
+              "roas": 3.2809,
+              "ad_name": "October2026-The-Only-Waffle-AI-Henley-Tee-MB47-Static-Creative-Flatlay-Internal-26.10.2026",
+              "spend": 32403.27
+            },
+            "best_all": {
+              "roas": 3.2809,
+              "label": "OCT",
+              "is_view": true,
+              "ad_name": "October2026-The-Only-Waffle-AI-Henley-Tee-MB47-Static-Creative-Flatlay-Internal-26.10.2026"
+            }
+          },
+          {
+            "category": "Pyjamas & Easy Pants",
+            "group": "Outerwear \u00b7 Bottomwear",
+            "emoji": "\ud83d\ude34",
+            "order": 4019,
+            "uploaded": 37,
+            "spending": 36,
+            "spend": 38073.46,
+            "roas": 3.048,
+            "older_roas": 2.7744,
+            "best": {
+              "roas": 6.3292,
+              "ad_name": "October2026-A-Little-Too-Good-AI-Chambray-Pyjama-CR46-Static-Model-Internal-26.10.2026",
+              "spend": 4201.19
+            },
+            "best_all": {
+              "roas": 4.2568,
+              "label": "SEP",
+              "is_view": false,
+              "ad_name": "September2026-Tick-Tock-AI-Pyjama-Flat-50-Off-Weekend-Sale-GIF-Plain-Text-Only-V1-Internal-18.09.2026"
+            }
+          },
+          {
+            "category": "Sweaters",
+            "group": "Winter Overview",
+            "emoji": "\ud83e\udde3",
+            "order": 2009,
+            "uploaded": 5,
+            "spending": 5,
+            "spend": 10170.95,
+            "roas": 1.754,
+            "older_roas": null,
+            "best": {
+              "roas": 2.0716,
+              "ad_name": "October2026-Half-Zip-AI-Half-Zip-Sweater-MB48-Static-Model-Internal-16.10.2026",
+              "spend": 8570.79
+            },
+            "best_all": {
+              "roas": 2.9984,
+              "label": "NOV",
+              "is_view": false,
+              "ad_name": "November2026-Winter-Knits-AI-Half-Zip-Sweater-MB48-Static-Creative-Flatlay-Internal-02.11.2026"
+            }
+          },
+          {
+            "category": "Polos",
+            "group": "Outerwear \u00b7 Topwear",
+            "emoji": "\ud83d\udc55",
+            "order": 3015,
+            "uploaded": 13,
+            "spending": 12,
+            "spend": 9557.55,
+            "roas": 1.0114,
+            "older_roas": 2.9376,
+            "best": {
+              "roas": 0.873,
+              "ad_name": "October2026-A-Classic-That-AI-Rugby-Polo-TShirt-CRW12-Static-Creative-Flatlay-Internal-02.11.2026",
+              "spend": 6191.22
+            },
+            "best_all": {
+              "roas": 4.4709,
+              "label": "AUG",
+              "is_view": false,
+              "ad_name": "August2026-The-Cheat-Code-Nova-Polo-CR14-2-at-1049-Static-Creative-Flatlay-Internal-19.08.2026"
+            }
+          },
+          {
+            "category": "Pants & Cargos",
+            "group": "Outerwear \u00b7 Bottomwear",
+            "emoji": "\ud83d\udc56",
+            "order": 4020,
+            "uploaded": 17,
+            "spending": 16,
+            "spend": 4839.68,
+            "roas": 2.595,
+            "older_roas": 3.322,
+            "best": {
+              "roas": 3.2234,
+              "ad_name": "October2026-Youll-Find-AI-Cotton-Cargo-Pants-CR41-Static-Creative-Flatlay-Internal-09.10.2026",
+              "spend": 3896.2
+            },
+            "best_all": {
+              "roas": 4.3451,
+              "label": "APR",
+              "is_view": false,
+              "ad_name": "Apr2026-Go-Wide-Go-Home-Ripstop-Cargo-Pants-CR32-Static-Model-Internal-28.04.2026"
+            }
+          },
+          {
+            "category": "Boxers",
+            "group": "Innerwear",
+            "emoji": "\ud83e\udd4a",
+            "order": 1014,
+            "uploaded": 9,
+            "spending": 9,
+            "spend": 3033.43,
+            "roas": 3.9108,
+            "older_roas": 3.0616,
+            "best": {
+              "roas": 1.2516,
+              "ad_name": "October2026-Boxers-Worries-AI-Boxer-Flat-40-Off-Static-Creative-Flatlay-Internal-09.10.2026",
+              "spend": 1099.43
+            },
+            "best_all": {
+              "roas": 4.2865,
+              "label": "SEP",
+              "is_view": false,
+              "ad_name": "September2026-Half-Price-AI-Boxer-Flat-50-Off-Weekend-Sale-Static-Plain-Text-Only-V2-Internal-18.09.2026"
+            }
+          },
+          {
+            "category": "Tees",
+            "group": "Outerwear \u00b7 Topwear",
+            "emoji": "\ud83c\udfbd",
+            "order": 3017,
+            "uploaded": 39,
+            "spending": 33,
+            "spend": 1647.15,
+            "roas": 0.6603,
+            "older_roas": 3.6018,
+            "best": null,
+            "best_all": {
+              "roas": 6.4744,
+              "label": "SEP",
+              "is_view": false,
+              "ad_name": "September2026-Your-Style-AI-Pace-TShirt-CR15-3-at-1049-Static-Creative-Flatlay-Internal-10.09.2026"
+            }
+          },
+          {
+            "category": "Other Winter",
+            "group": "Winter Overview",
+            "emoji": "\u2744\ufe0f",
+            "order": 2010,
+            "uploaded": 1,
+            "spending": 1,
+            "spend": 468.21,
+            "roas": 27.183,
+            "older_roas": null,
+            "best": null,
+            "best_all": null
+          },
+          {
+            "category": "Flannel Shirt",
+            "group": "Winter Overview",
+            "emoji": "\ud83d\udfe5",
+            "order": 2005,
+            "uploaded": 3,
+            "spending": 3,
+            "spend": 428.81,
+            "roas": 0.0,
+            "older_roas": null,
+            "best": null,
+            "best_all": {
+              "roas": 3.437,
+              "label": "NOV",
+              "is_view": false,
+              "ad_name": "November2026-Soft-Hand-Feel-AI-Flannel-Shirt-MB46-Static-Creative-Flatlay-Internal-06.11.2026"
+            }
+          }
+        ],
+        "cards": [
+          {
+            "ad_id": "120249920325960298",
+            "ad_name": "October2026-Ready-When-You-Are-AI-Active-Coolmax-Tshirt-AT02-Static-Model-Internal-13.10.2026",
+            "adset_name": "Pros-Outerwear-Active-Tshirt-TSQ-Broad-Statics-08.09.2026",
+            "spend": 1144.49,
+            "roas": 8.5762,
+            "conv_value": 9815.41,
+            "purchases": 3,
+            "category": "Active Tees",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLMCmXiZRV54_femASWwg5cr2xgj1wsPbrv-AiqIm0eDM1osxENA0JZubhZLKIEKeKWitYJQ1-ePIEFBYq8Xl-y8Hi59wwugdWle6q6x2lhI_4WQhd0Gu4b6jd7mPPn-BUgQzyrft4b2BzTJqJbsCjV93YmJCiGn1lTzJQhy8BuyZOzIMvF6AK9e-k5YjT48jUBm30ttCJRMV_qOf_JsED3jWbVbG26mrpYeAWizfjMVOxyrtVjg3Yxeh2-Pt_jZts7uzc_XFefhxPMSDCETABYcCRlw-tPEwhfAJsTx-KuZRUkyypez9YrLCUtChJSc5douN3J9LjUBTbBgXchqJLjK5M90v3vT3qsenXBqgUjkYpJnwcMv3fAcAIl5l6Czmm4gE13NSBKF8KLOJJqcmaODS11ZjW7tWq7QxJWV1JRJbFU-6DQg7EXOgDeqbwS5-U&t=AQLz2p9wJH4zvpZj2LE"
+          },
+          {
+            "ad_id": "120250044621460298",
+            "ad_name": "October2026-Sweatpants-But-AI-Sweatpants-MB18-Static-Model-Internal-09.10.2026",
+            "adset_name": "Pros-Outerwear-Sweatpants-TSQ-Broad-Statics-06.10.2026",
+            "spend": 1009.92,
+            "roas": 7.7406,
+            "conv_value": 7817.37,
+            "purchases": 7,
+            "category": "Sweatpants",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLHoa5CsRIRenMXTU0hK-f4gsQrMaeNlhGrLSYvpkfKLQKRf_RWTTVz_O4yEkMIcH3vqdihjJLJ1x3IkXEkfB5Tr0VYcqPgPQJOukc4TvNE1Bp4jlAsNetTuDHe4wwm4nAAhREeWtQrpjw4VfITmLj60SLPmfDhnl8NNTPRXohpbGsMbjjk65RjNfBsp9IXAZg2pZKsy4IODsesjw-pbr8sGHNsCCUHBUa61LWUc-4JbcdD5S6o2DV_Wrad4vmmudwrckEGxDqh1u-HnPu3ilg2vtBBBBRUCYaVF_l1wZfbP2kY9s65P0DCunBq0gT24otVoaFT-wyprUezgcw6giyK-2oukxYVCJ-Iaw_Bwi7cGw7nAMGR0ileLTWCJTbxYdNs9e0MdUSbVtTytE_sKBh40BHp0Yl_-7vDdZnIG2W79UpbrDkC1FFIPVcS0XN2TpY&t=AQLBb7cnD4KE1Ke3K8Q"
+          },
+          {
+            "ad_id": "120249954598990298",
+            "ad_name": "October2026-Fit-Check-AI-Sweatpants-CRW11-Static-Model-Internal-15.10.2026",
+            "adset_name": "Pros-Outerwear-MB18-Sweatpants-TSQ-Broad-Statics-06.10.2026",
+            "spend": 5992.0,
+            "roas": 7.056,
+            "conv_value": 42279.4,
+            "purchases": 25,
+            "category": "Sweatpants",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKhDbC-iM32WgR5ausbHgpPtmtocwr-HdlUlf8JyvfeWphZ8j3PTyCSmP94bm6hSsx1BWbRnr9bT3gnJpMryY4STP08Q_nTh2YBQ2oVmSinc6TgXXZXC91iuJkEJ0eDXEkpkCJ13ErMErQ34mEsJuXr8MZ_8kcHITqh-zoIy_TpyP_k5tVncUBfqdOLW-hCto5F2FPJmn8hNiZmBdyQflD93Wbj4Nu4yPRgLWymn2MOW9RrvqHyhB-MqJSfo71MeKqt59-gcFDRjgoJbZc_xBmslzN8nEQ462v3wYyiLHheamPB3Xtqt8QrMzWd_EWUc4HTB0dnqmqbZRU1Tr0DE_E5Rt03EU8T_XRqW4tk09SKWmwyHz4nc6ZsCzxMFLuGNQEJdAnDoKIA_eClyKj8CWhWI622SK8bS_ZpZKMevo2MtLhMAuKLmjUkP2y8yH3I7HA&t=AQLzX1vMjdJGrWBWj9Q"
+          },
+          {
+            "ad_id": "120249954293740298",
+            "ad_name": "October2026-Now-Playing-AI-Sweatpants-CRW11-Static-Model-Internal-15.10.2026",
+            "adset_name": "Pros-Outerwear-MB18-Sweatpants-TSQ-Broad-Statics-06.10.2026",
+            "spend": 2870.1,
+            "roas": 6.5991,
+            "conv_value": 18940.12,
+            "purchases": 9,
+            "category": "Sweatpants",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIE6uDU56LEIn2JjybwxHAje0-XqMRc6svCKcSlgYeHbuqtT_sKaJ-VtjBU-PtAWrWLbEjMoKQ54VdQYjQfWHKRYSBqi2m2CRWwVEQm_YeYNokbfjWD69usKWAdRxJ5kWldcqKc_pHKUD5UJXGnpe4AH5_7KW7vLzRpKx2MfCOaYaNlLfkGNZgrU4AJjYxLe5kI8nYi-kfyprrjI9FLkYXwWYQIjCVaxx6Lde5Q9DR963IxFs7jMCb4NmJHOCxSFfAzMpjDzCXzt14d6ktdiaqq8mA_zvBPBlOXpIjOjVsFFsRxgf_DNbpJ-07x4xRWY1rLMv7rCbXPA1PDJZoJKRwbzGqkEelam8xy4_fAoQECyuqfB94AgSqaNs6kCqjfkgCLJ6SfUATOPcvZOMvF5Yw4I7b7v2A-80Sp8J7nSw79GZlc4GdDw8apSriTElha0-s&t=AQLPshb88h3l7kfl2kg"
+          },
+          {
+            "ad_id": "120250123582150298",
+            "ad_name": "October2026-A-Little-Too-Good-AI-Chambray-Pyjama-CR46-Static-Model-Internal-26.10.2026",
+            "adset_name": "Pros-Outerwear-Pyjama-TSQ-Broad-Statics-09.03.2026",
+            "spend": 4201.19,
+            "roas": 6.3292,
+            "conv_value": 26590.37,
+            "purchases": 14,
+            "category": "Pyjamas & Easy Pants",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLA7rznUjrasp-7u1TpyTsMeaCafpbDaV2mXpBBwQ1S03MsqU4nzNbhW1uzy3epTUjKfG9vbHI52a3Okb1ElRPHNy7GoVJ38eGHaxT57bFL3SHX173DhEX97q5mnCAV2l_M2loH9Qugum39k0BY7hkQdFm46hUN11IHREJQZzMwIoMYGhfw02bX4loJJp7V35EFI9qxpGrFk4ixPhQdkITf-vDqJLouyeOYjcVvsPl3muTXlb3nyHRdJi402Fgkin-c7SUb1TX8fpsfQyyBht_-sGUdI8d3XNXn2fm-m_OHo-2NacZrwd1Z11Q31gFchgHokgMhbZCJDIU-_8U4uzh15ixUjclBvmLL9BjYZPJ845xhCOZIx0600lqWHiwD9gLBFXbBmYUAKs5N7UpwPnqF4s_2u4zqs3UUPCiH5QBs_JlRVOv6IoqJgYTBs_1QLNY&t=AQIyLfpQKZOLavCqG3E"
+          },
+          {
+            "ad_id": "120250123222170298",
+            "ad_name": "October2026-Track-Record-AI-Track-Pants-CRW11-Static-Model-Internal-26.10.2026",
+            "adset_name": "Pros-Outerwear-Sweatpants-TSQ-Broad-Statics-06.10.2026",
+            "spend": 2998.29,
+            "roas": 5.4221,
+            "conv_value": 16257.1,
+            "purchases": 11,
+            "category": "Sweatpants",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJSRemAno5qGEow0kKdfCyTLoKE99TDJPuXSv-uU_a_2YkRVYHMkvBLfQxpYUNV02uwSXCOw6XGsIc-Yf63q3v6fpotVvJMRugRySPuhG4zBOuQHFnNTNe5UgcAaNi7zzLIJGxY7B2LHeEk_3NzEEk0H824Evso9mHLc2qW0k9s2Rdyss20E0u1Sdw4sZNcWhlHigOvv5SsYR8E4xfG_5gcjvsPHY8i75_bw8Zdt_-009VJ545IGFwPnCJZZV9fGSlwZbz-iEpN4d4MOrscfohnsa9lAwwdB42lJ5gsd-8I9C0mNYzxJ6oFy9D9dmnMa6ZvU5KDoPOLm9uU78ZSvua9IdEDtLyKO5Ql70UncQ3Vdei-ueVSdByH6WoG-oBAh5VjAY9dkEkOlcwPPFltKN7zTYOqnJc1leXPozsHMwHpHZvtp1Q-bB0y6_FkAnRRe5E&t=AQLUf6OAoACJ6DAqZzM"
+          }
+        ],
+        "decisions": [
+          {
+            "ad_id": "120250123324490298",
+            "ad_name": "October2026-Varsity-Never-AI-Hoodie-Jacket-CRW4-Static-Creative-Flatlay-Internal-26.10.2026",
+            "adset_name": "Pros-Outerwear-Hoodies-TSQ-Broad-Statics-15.10.2026",
+            "spend": 18224.99,
+            "roas": 1.3374,
+            "conv_value": 24374.37,
+            "purchases": 14,
+            "category": "Hoodies",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250064666220298",
+            "ad_name": "October2026-Selling-Out-AI-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-22.10.2026",
+            "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
+            "spend": 12040.83,
+            "roas": 1.4005,
+            "conv_value": 16863.55,
+            "purchases": 16,
+            "category": "5@999 Cotton UW",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250012834210298",
+            "ad_name": "October2026-New-Day-AI-Cotton-Underwear-Static-Creative-Flatlay-Internal-19.10.2026",
+            "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
+            "spend": 10983.4,
+            "roas": 1.2201,
+            "conv_value": 13401.37,
+            "purchases": 17,
+            "category": "5@999 Cotton UW",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250206171670298",
+            "ad_name": "October2026-This-Ones-Breaking-AI-Henley-Tee-MB47-Static-Model-Internal-30.10.2026",
+            "adset_name": "Pros-Henley-Tshirt-TSQ-Broad-Statics-26.10.2026",
+            "spend": 8508.52,
+            "roas": 0.6161,
+            "conv_value": 5242.03,
+            "purchases": 3,
+            "category": "Henley",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250065455890298",
+            "ad_name": "October2026-The-Grown-Up-AI-Cotton-Underwear-5-at-999-Static-Creative-Flatlay-Internal-22.10.2026",
+            "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
+            "spend": 7886.48,
+            "roas": 1.3265,
+            "conv_value": 10461.06,
+            "purchases": 10,
+            "category": "5@999 Cotton UW",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250065523610298",
+            "ad_name": "October2026-Just-Vibing-AI-Oversized-Hoodie-MB16-Static-Model-Internal-22.10.2026",
+            "adset_name": "Pros-Outerwear-Hoodies-TSQ-Broad-Statics-15.10.2026",
+            "spend": 6334.8,
+            "roas": 0.7538,
+            "conv_value": 4775.16,
+            "purchases": 4,
+            "category": "Hoodies",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250246707750298",
+            "ad_name": "October2026-A-Classic-That-AI-Rugby-Polo-TShirt-CRW12-Static-Creative-Flatlay-Internal-02.11.2026",
+            "adset_name": "Pros-Rugby-Polo-TSQ-Broad-Statics-02.11.2026",
+            "spend": 6191.22,
+            "roas": 0.873,
+            "conv_value": 5404.99,
+            "purchases": 3,
+            "category": "Polos",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250044621450298",
+            "ad_name": "October2026-Made-For-Those-AI-Half-Zip-Pullover-MB40-Static-Model-Internal-19.10.2026",
+            "adset_name": "Pros-Outerwear-Jackets-TSQ-Broad-Statics-19.10.2026",
+            "spend": 5834.99,
+            "roas": 1.0096,
+            "conv_value": 5890.79,
+            "purchases": 4,
+            "category": "Jackets",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120249977135880298",
+            "ad_name": "October2026-Your-Most-Comfortable-AI-Cotton-Vest-CR18-5-at-999-Static-Creative-Flatlay-Internal-16.10.2026",
+            "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Statics-09.03.2026",
+            "spend": 5053.54,
+            "roas": 1.4829,
+            "conv_value": 7494.01,
+            "purchases": 7,
+            "category": "5@999 Cotton UW",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250044621600298",
+            "ad_name": "October2026-Light-Layerable-AI-Half-Zip-Pullover-MB40-Static-Model-Internal-19.10.2026",
+            "adset_name": "Pros-Outerwear-Jackets-TSQ-Broad-Statics-19.10.2026",
+            "spend": 4344.0,
+            "roas": 1.0417,
+            "conv_value": 4525.32,
+            "purchases": 3,
+            "category": "Jackets",
+            "tier": "notworking"
+          }
+        ],
+        "all_spend": 26504817.04
+      },
+      "no_prefix": {
+        "ads": 26,
+        "spend": 207448.6,
+        "examples": [
+          "Pros-MB23-Invisible-Vest-Creative-Flatlay-Under-Everything-Static-18.03.2026",
+          "Pros-MB23-Invisible-Vest-Creative-Flatlay-Invisible-Mode-Static-18.03.2026",
+          "Pros-MB23-Invisible-Vest-Barely-There-Model-Static-27.03.2026"
+        ]
+      }
+    }
+  }
+}
