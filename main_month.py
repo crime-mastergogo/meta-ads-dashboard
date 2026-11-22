@@ -79,20 +79,26 @@ def build_view(key, windows, fmt, fmt_rows, uploads, categories, cat_meta, cfgm,
         ups = [u for u in ups if ad_format(u) == fmt]
         names = {u["ad_name"] for u in ups}
         spending = {a["ad_name"] for ads in by_cat.values() for a in ads if mv.parse_vintage(a["ad_name"]) == ym}
-        view["uploaded"] = {"count": len(names), "no_spend": len(names - spending)}
-        up_by_cat, _ig = drop_ignored(categorise_ads(ups, categories), categories)
-        counts = {cat: len({u["ad_name"] for u in lst}) for cat, lst in up_by_cat.items() if cat != "Other"}
-        seen = set()
-        for r in analysis["categories"]:
-            r["uploaded"] = counts.get(r["category"], 0)
-            seen.add(r["category"])
-        for cat, n in counts.items():             # categories with uploads but no spend at all
-            if cat not in seen:
-                meta = cat_meta.get(cat, {})
-                analysis["categories"].append({
-                    "category": cat, "group": meta.get("group", ""), "emoji": meta.get("emoji", ""),
-                    "order": meta.get("order", 10 ** 6), "uploaded": n, "spending": 0, "spend": 0, "roas": 0,
-                    "older_roas": None, "best": None, "best_all": None})
+        if len(names) < len(spending):
+            # Every spending creative was uploaded, so the upload count can never be below the spending count.
+            # If it is, the name search came back incomplete: show no upload numbers rather than wrong ones.
+            print(f"[Month] WARNING upload list looks incomplete for {view['name']} ({len(names)} found, "
+                  f"{len(spending)} are spending). Hiding the 'uploaded' / 'no spend yet' numbers.")
+        else:
+            view["uploaded"] = {"count": len(names), "no_spend": len(names - spending)}
+            up_by_cat, _ig = drop_ignored(categorise_ads(ups, categories), categories)
+            counts = {cat: len({u["ad_name"] for u in lst}) for cat, lst in up_by_cat.items() if cat != "Other"}
+            seen = set()
+            for r in analysis["categories"]:
+                r["uploaded"] = counts.get(r["category"], 0)
+                seen.add(r["category"])
+            for cat, n in counts.items():             # categories with uploads but no spend at all
+                if cat not in seen:
+                    meta = cat_meta.get(cat, {})
+                    analysis["categories"].append({
+                        "category": cat, "group": meta.get("group", ""), "emoji": meta.get("emoji", ""),
+                        "order": meta.get("order", 10 ** 6), "uploaded": n, "spending": 0, "spend": 0, "roas": 0,
+                        "older_roas": None, "best": None, "best_all": None})
     view["analysis"] = analysis
 
     # ads without a month prefix are not counted in the tab; say so instead of hiding it

@@ -12,6 +12,8 @@ from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_
 from monthview import (card_chips, load_month_status, month_error_html, month_name_now, category_month_strip, month_best_card, month_tab_html, wrap_card,
                        load_month_data, TIER_BADGES)
 
+from uikit import UI_CSS, UI_JS, share_button
+
 BASE_DIR = os.path.dirname(__file__)
 INPUT_PATH = os.path.join(BASE_DIR, "data", "statics_daily.json")
 OUTPUT_PATH = os.path.join(BASE_DIR, "docs", "index.html")
@@ -62,6 +64,7 @@ def ad_card(ad, cfg, show_preview=True):
       {card_chips(ad)}
       {preview_html}
       <div class="mm">
+        {share_button(ad)}
         <div class="mn">{sn}</div>
         <div class="mmet">
           <span><b>Amount Spent</b><strong>{fmt(ad["spend"])}</strong></span>
@@ -273,6 +276,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
 .nav-links{{display:flex;gap:12px;align-items:center;}}
 .nav-link{{font-size:11px;color:#555;text-decoration:none;padding:4px 10px;border:1px solid #2a2a2a;border-radius:5px;}}
 .nav-link:hover{{color:#aaa;border-color:#555;}}
+{UI_CSS}
 </style>
 </head>
 <body>
@@ -326,6 +330,7 @@ async function runAnalysis(){{
   btn.disabled=false;btn.textContent="Run Creative Analysis";
 }}
 </script>
+<script>{UI_JS}</script>
 </body></html>'''
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)

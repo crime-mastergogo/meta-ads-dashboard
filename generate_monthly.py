@@ -89,6 +89,7 @@ def ad_card(ad, cfg, is_best=False, is_worst_roas=False, is_bottom=False):
       {card_chips(ad)}
       {preview_html}
       <div class="mm">
+        {share_button(ad)}
         <div class="mn">{sn}</div>
         <div class="mmet">
           <span>{fmt(ad["spend"])}</span>
@@ -275,6 +276,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
 .mn{{font-size:11px;font-weight:600;color:#e0e0e0;line-height:1.3;margin-bottom:5px;}}
 .mmet{{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:3px;padding-top:6px;border-top:1px solid #1e1e1e;font-family:"JetBrains Mono",monospace;font-size:9.5px;color:#888;}}
 .footer{{padding:18px 32px;border-top:1px solid #1a1a1a;font-size:10px;color:#333;font-family:"JetBrains Mono",monospace;}}
+{UI_CSS}
 </style>
 </head>
 <body>
@@ -318,6 +320,7 @@ function switchFormat(i){{
   document.querySelectorAll(".tab-pane").forEach((t,j)=>t.classList.toggle("active",i===j));
 }}
 </script>
+<script>{UI_JS}</script>
 </body></html>'''
 
     os.makedirs(DOCS_DIR, exist_ok=True)
@@ -396,3 +399,5 @@ def send_slack(month_label, statics_spend, videos_spend,
 
 if __name__ == "__main__":
     build()
+
+from uikit import UI_CSS, UI_JS, share_button

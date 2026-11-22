@@ -80,6 +80,7 @@ def ad_card(ad, cfg, is_best=False, is_worst=False):
       {card_chips(ad)}
       {preview_html}
       <div class="mm">
+        {share_button(ad)}
         <div class="mn">{sn}</div>
         <div class="mmet">
           <span>{fmt(ad["spend"])}</span>
@@ -255,6 +256,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
 .filter-btn{{padding:5px 12px;border-radius:16px;border:1px solid #2a2a2a;background:transparent;color:#666;font-size:11px;cursor:pointer;font-family:"Inter",sans-serif;transition:all 0.15s;}}
 .filter-btn.active{{background:#3b82f6;border-color:#3b82f6;color:#fff;}}
 .footer{{padding:18px 32px;border-top:1px solid #1a1a1a;font-size:10px;color:#333;font-family:"JetBrains Mono",monospace;}}
+{UI_CSS}
 </style>
 </head>
 <body>
@@ -319,6 +321,7 @@ function filterCat(btn,cat,pane){{
   }});
 }}
 </script>
+<script>{UI_JS}</script>
 </body></html>'''
 
     os.makedirs(DOCS_DIR, exist_ok=True)
@@ -395,3 +398,5 @@ def send_slack(cfg, week_str, statics_spend, videos_spend,
 
 if __name__ == "__main__":
     build()
+
+from uikit import UI_CSS, UI_JS, share_button

@@ -17,6 +17,8 @@ from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_
 from monthview import (card_chips, load_month_status, month_error_html, month_name_now, category_month_strip, month_best_card, month_tab_html, wrap_card,
                        load_month_data, TIER_BADGES)
 
+from uikit import UI_CSS, UI_JS, share_button
+
 BASE_DIR = os.path.dirname(__file__)
 INPUT_PATH = os.path.join(BASE_DIR, "data", "videos_daily.json")
 OUTPUT_PATH = os.path.join(BASE_DIR, "docs", "videos.html")
@@ -76,6 +78,7 @@ def video_card(ad, cfg, is_best=False, is_worst=False):
       {card_chips(ad)}
       {preview_html}
       <div class="mm">
+        {share_button(ad)}
         <div class="mn">{sn}</div>
         <div class="mmet">
           <span><b>Amount Spent</b><strong>{fmt(ad["spend"])}</strong></span>
@@ -244,6 +247,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
 .nav-links{{display:flex;gap:10px;}}
 .nav-link{{font-size:11px;color:#555;text-decoration:none;padding:4px 10px;border:1px solid #2a2a2a;border-radius:5px;}}
 .nav-link:hover{{color:#aaa;border-color:#555;}}
+{UI_CSS}
 </style>
 </head>
 <body>
@@ -275,6 +279,7 @@ body{{background:#0c0c0c;color:#e8e8e8;font-family:"Inter",sans-serif;}}
 function switchTab(i){{document.querySelectorAll(".tab").forEach((t,j)=>t.classList.toggle("active",i===j));document.querySelectorAll(".tab-content").forEach((t,j)=>t.classList.toggle("active",i===j));}}
 function filterCat(btn,cat){{document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));btn.classList.add("active");document.querySelectorAll("#tab1 .sec").forEach(s=>{{s.style.display=(cat==="all"||s.dataset.cat===cat)?"block":"none";}});}}
 </script>
+<script>{UI_JS}</script>
 </body></html>'''
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
