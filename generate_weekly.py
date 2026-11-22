@@ -15,6 +15,7 @@ import requests
 from datetime import datetime, date
 from taxonomy import ordered_categories, GroupHeaders, slack_group_lines, slack_group_lines_from_ads, unmapped_banner
 from monthview import card_chips, weekly_month_block
+from uikit import UI_CSS, UI_JS, share_button
 
 BASE_DIR = os.path.dirname(__file__)
 CONFIG_PATH = os.path.join(BASE_DIR, "config.yaml")
@@ -398,5 +399,3 @@ def send_slack(cfg, week_str, statics_spend, videos_spend,
 
 if __name__ == "__main__":
     build()
-
-from uikit import UI_CSS, UI_JS, share_button
