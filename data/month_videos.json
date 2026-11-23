@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T07:11:47.114409",
+  "generated_at": "2026-11-23T13:44:58.803621",
   "today": "2026-11-23",
   "views": {
     "current": {
@@ -10,35 +10,32 @@
       "until": "2026-11-22",
       "example_prefix": "November2026",
       "has_data": true,
-      "uploaded": {
-        "count": 663,
-        "no_spend": 16
-      },
+      "uploaded": null,
       "analysis": {
         "summary": {
           "spending": 654,
-          "spend": 4814040.61,
+          "spend": 4814225.73,
           "share": 27.0,
-          "roas": 2.5271,
-          "older_roas": 2.6594,
+          "roas": 2.527,
+          "older_roas": 2.6593,
           "units": 9668
         },
         "tiers": {
           "scaling": {
             "count": 61,
-            "spend": 3387278.61
+            "spend": 3387394.12
           },
           "early": {
             "count": 100,
-            "spend": 332041.27
+            "spend": 332055.67
           },
           "proving": {
             "count": 473,
-            "spend": 838773.58
+            "spend": 838826.35
           },
           "notworking": {
             "count": 20,
-            "spend": 255947.15
+            "spend": 255949.59
           }
         },
         "categories": [
@@ -47,10 +44,10 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddd8",
             "order": 2003,
-            "uploaded": 139,
+            "uploaded": null,
             "spending": 142,
-            "spend": 1077856.79,
-            "roas": 2.3726,
+            "spend": 1077877.66,
+            "roas": 2.3725,
             "older_roas": 2.9443,
             "best": {
               "roas": 9.2154,
@@ -58,7 +55,7 @@
               "spend": 1054.14
             },
             "best_all": {
-              "roas": 5.1773,
+              "roas": 5.1772,
               "label": "APR",
               "is_view": false,
               "ad_name": "Apr2026_Flirty-Neighbour_Track-Pants_MB42_Video_Lofi_Marty-Martin_24s_15.04.2026"
@@ -69,18 +66,18 @@
             "group": "5@999 Cotton UW",
             "emoji": "\ud83e\ude72",
             "order": 11,
-            "uploaded": 61,
+            "uploaded": null,
             "spending": 65,
-            "spend": 818308.24,
+            "spend": 818321.27,
             "roas": 2.0902,
-            "older_roas": 2.562,
+            "older_roas": 2.5619,
             "best": {
               "roas": 5.2801,
               "ad_name": "November2026-Steal-And-Run-No-Hook-Cotton-Underwear-5-at-999-Video-Lofi-V1-MMM-09.11.2026",
               "spend": 1640.95
             },
             "best_all": {
-              "roas": 5.0259,
+              "roas": 5.0258,
               "label": "JUN",
               "is_view": false,
               "ad_name": "June2026-Accidental-Shreyas-Cotton-Underwear-5-at-999-Video-UGC-PA-Barter-16.06.2026"
@@ -91,18 +88,18 @@
             "group": "Innerwear",
             "emoji": "\ud83e\uddba",
             "order": 1012,
-            "uploaded": 57,
+            "uploaded": null,
             "spending": 55,
-            "spend": 699778.57,
+            "spend": 699778.6,
             "roas": 2.6066,
-            "older_roas": 2.6877,
+            "older_roas": 2.6876,
             "best": {
               "roas": 6.765,
               "ad_name": "November2026-Sumant-Shapewear-Vest-SW01-Video-UGC-PA-Closer-01.11.2026",
               "spend": 1157.51
             },
             "best_all": {
-              "roas": 5.0057,
+              "roas": 5.0056,
               "label": "OCT",
               "is_view": false,
               "ad_name": "October2026-Vansh-Invisible-Vest-MB23-Video-UGC-PA-Atom-30.10.2026"
@@ -113,15 +110,15 @@
             "group": "Winter Overview",
             "emoji": "\ud83c\udf21\ufe0f",
             "order": 2002,
-            "uploaded": 16,
+            "uploaded": null,
             "spending": 16,
-            "spend": 561541.82,
-            "roas": 2.1259,
-            "older_roas": 2.7987,
+            "spend": 561589.8,
+            "roas": 2.1257,
+            "older_roas": 2.7986,
             "best": {
-              "roas": 8.2634,
+              "roas": 8.2629,
               "ad_name": "November2026-AI-Layer-2-Thermal-R68-Video-AI-PLV-Goldmine-17.11.2026",
-              "spend": 1411.64
+              "spend": 1411.73
             },
             "best_all": {
               "roas": 4.4952,
@@ -135,10 +132,10 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\udde5",
             "order": 2004,
-            "uploaded": 51,
+            "uploaded": null,
             "spending": 51,
-            "spend": 275894.96,
-            "roas": 3.0325,
+            "spend": 275922.26,
+            "roas": 3.0322,
             "older_roas": 2.7135,
             "best": {
               "roas": 8.0309,
@@ -146,7 +143,7 @@
               "spend": 1769.23
             },
             "best_all": {
-              "roas": 5.9596,
+              "roas": 5.959,
               "label": "OCT",
               "is_view": false,
               "ad_name": "October2026-Kanishk-Polar-Fleece-Jacket-MB13-Video-UGC-Dark-Post-Kofluence-14.10.2026"
@@ -157,15 +154,15 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddf6",
             "order": 2007,
-            "uploaded": 47,
+            "uploaded": null,
             "spending": 46,
-            "spend": 271264.5,
-            "roas": 2.141,
-            "older_roas": 2.3373,
+            "spend": 271283.11,
+            "roas": 2.1408,
+            "older_roas": 2.3369,
             "best": {
               "roas": 3.8836,
               "ad_name": "November2026-Unstoppable-Zip-Up-Hoodie-Jacket-CRW4-Video-UGC-Dark-Post-Goldmine-05.11.2026",
-              "spend": 1753.81
+              "spend": 1753.82
             },
             "best_all": {
               "roas": 4.3374,
@@ -179,18 +176,18 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\udde3",
             "order": 2009,
-            "uploaded": 39,
+            "uploaded": null,
             "spending": 35,
-            "spend": 185032.98,
-            "roas": 2.969,
+            "spend": 185039.87,
+            "roas": 2.9688,
             "older_roas": 2.3413,
             "best": {
-              "roas": 7.3119,
+              "roas": 7.311,
               "ad_name": "November2026-Jacob-Elordi-Crewneck-Sweater-MB51-Video-PLV-Abhay-18.11.2026",
-              "spend": 2039.32
+              "spend": 2039.56
             },
             "best_all": {
-              "roas": 5.0754,
+              "roas": 5.0741,
               "label": "NOV",
               "is_view": true,
               "ad_name": "November2026-Sweater-Weather-In-XYXX-Half-Zip-Sweater-MB48-Video-PLV-Abhay-16.11.2026"
@@ -201,10 +198,10 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc54",
             "order": 2006,
-            "uploaded": 25,
+            "uploaded": null,
             "spending": 25,
-            "spend": 172159.76,
-            "roas": 2.7465,
+            "spend": 172189.75,
+            "roas": 2.746,
             "older_roas": null,
             "best": {
               "roas": 7.0372,
@@ -212,7 +209,7 @@
               "spend": 1305.29
             },
             "best_all": {
-              "roas": 2.8211,
+              "roas": 2.821,
               "label": "NOV",
               "is_view": true,
               "ad_name": "November2026-Harsh-Gulati-Overshirt-MB49-Video-UGC-PA-V1-Closer-06.11.2026"
@@ -223,15 +220,15 @@
             "group": "Innerwear",
             "emoji": "\ud83e\uddf4",
             "order": 1013,
-            "uploaded": 33,
+            "uploaded": null,
             "spending": 33,
-            "spend": 167793.7,
+            "spend": 167794.16,
             "roas": 2.9806,
             "older_roas": 3.8812,
             "best": {
               "roas": 3.3211,
               "ad_name": "November2026-Prajam-Malayalam-Regional-Modal-Underwear-Video-UGC-Dark-Post-After8_Media-04.11.2026",
-              "spend": 100287.97
+              "spend": 100288.16
             },
             "best_all": {
               "roas": 6.0793,
@@ -245,10 +242,10 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc55",
             "order": 2008,
-            "uploaded": 38,
+            "uploaded": null,
             "spending": 34,
-            "spend": 127889.07,
-            "roas": 2.6937,
+            "spend": 127893.8,
+            "roas": 2.6936,
             "older_roas": 2.1443,
             "best": {
               "roas": 7.2552,
@@ -267,18 +264,18 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83d\udc55",
             "order": 3015,
-            "uploaded": 31,
+            "uploaded": null,
             "spending": 30,
-            "spend": 114788.93,
-            "roas": 3.0697,
+            "spend": 114797.02,
+            "roas": 3.0695,
             "older_roas": 2.6407,
             "best": {
-              "roas": 6.5985,
+              "roas": 6.5981,
               "ad_name": "November2026-Aditya-Tiwari-Nova-Polo-CR14-2-at-1049-Video-UGC-PA-Barter-17.11.2026",
-              "spend": 5908.73
+              "spend": 5909.06
             },
             "best_all": {
-              "roas": 6.5985,
+              "roas": 6.5981,
               "label": "NOV",
               "is_view": true,
               "ad_name": "November2026-Aditya-Tiwari-Nova-Polo-CR14-2-at-1049-Video-UGC-PA-Barter-17.11.2026"
@@ -289,15 +286,15 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udee2\ufe0f",
             "order": 2000,
-            "uploaded": 19,
+            "uploaded": null,
             "spending": 19,
-            "spend": 105107.0,
+            "spend": 105107.58,
             "roas": 3.8829,
             "older_roas": null,
             "best": {
-              "roas": 9.0115,
+              "roas": 9.0114,
               "ad_name": "November2026-Praveen-Barrel-Pants-MB39-Video-UGC-PA-Direct-16.11.2026",
-              "spend": 2406.07
+              "spend": 2406.1
             },
             "best_all": {
               "roas": 4.0314,
@@ -311,15 +308,15 @@
             "group": "Outerwear \u00b7 Bottomwear",
             "emoji": "\ud83d\ude34",
             "order": 4019,
-            "uploaded": 15,
+            "uploaded": null,
             "spending": 15,
-            "spend": 102204.53,
-            "roas": 2.5054,
-            "older_roas": 2.5911,
+            "spend": 102210.67,
+            "roas": 2.5052,
+            "older_roas": 2.591,
             "best": {
               "roas": 3.8749,
               "ad_name": "November2026-Lakshay-Easy-Pants-CR44-Video-UGC-PA-Direct-03.11.2026",
-              "spend": 9198.48
+              "spend": 9198.64
             },
             "best_all": {
               "roas": 3.8749,
@@ -333,15 +330,15 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83c\udfc3",
             "order": 3016,
-            "uploaded": 22,
+            "uploaded": null,
             "spending": 22,
-            "spend": 55239.58,
+            "spend": 55239.66,
             "roas": 4.4584,
-            "older_roas": 3.3013,
+            "older_roas": 3.3012,
             "best": {
               "roas": 4.7655,
               "ad_name": "November2026-Ritik-Active-Coolmax-Tshirt-AT02-Video-UGC-PA-Direct-03.11.2026",
-              "spend": 46526.23
+              "spend": 46526.31
             },
             "best_all": {
               "roas": 4.7655,
@@ -355,9 +352,9 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udfe5",
             "order": 2005,
-            "uploaded": 35,
+            "uploaded": null,
             "spending": 32,
-            "spend": 42580.88,
+            "spend": 42581.04,
             "roas": 4.0547,
             "older_roas": 2.0033,
             "best": {
@@ -377,9 +374,9 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc56",
             "order": 2001,
-            "uploaded": 10,
+            "uploaded": null,
             "spending": 10,
-            "spend": 25116.29,
+            "spend": 25116.47,
             "roas": 4.4544,
             "older_roas": 4.4036,
             "best": {
@@ -399,7 +396,7 @@
             "group": "Outerwear \u00b7 Bottomwear",
             "emoji": "\ud83d\udc56",
             "order": 4020,
-            "uploaded": 15,
+            "uploaded": null,
             "spending": 15,
             "spend": 5867.0,
             "roas": 4.9829,
@@ -421,7 +418,7 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83c\udfbd",
             "order": 3017,
-            "uploaded": 12,
+            "uploaded": null,
             "spending": 12,
             "spend": 5616.01,
             "roas": 3.4262,
@@ -450,31 +447,31 @@
             "purchases": 2,
             "category": "Sweatpants",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIZ5JwlcruX6G70B2i6QX-zBJfyEMPhnHR2N1gi294OFIZhuwJSRgNtTS2bNq6od_4c3tjHf1HRAlK0UP6FmIXegUAFk-QROmvMThCBT5BEYYF5Ks1Nf7HjG1mvmdoO_VkjRGdTZHSQjgLv57XVSEN2dgCAljqf6M78f-0R4qlzK1KH4F9zZuwvv9cM_LTdonU8qNrbszxtAoMrbr7-YfKeKreWc1mbBMB_eFdW2kqI1sgKP9Mi-BsYQGTK8KySP3VRttzl_OEsSk7B7k6ctALgHVibw3C4E14p6aCLtREFgfAORaM6LppP1HNnDKUCcGkGWW-b_8SoXXQGxmCWzJD8VAX6eVugRghYHF4aTo6kjVSpX543bUWo6Akx94LHuBEE1j_eE-uCw8hXCQxpAdg6CKJRgAfZGcXR3wufnZpJ9WQrT0pDCtA-7IF-M-i-8kU&t=AQKDfrLFEWuR8TCin_g"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLX3soBGVX6Cags9UrQQ3QuGmBrsfqyldK_r7KNnHUk5A7pvjTmm4juAj910aakOoArSj0iY4HyuyY7fqk6G7xX4zHK6wJVdZjFvTA_x76gkJfYezf0S2dZCRQYxTpN1eeydjdR3Aoy6J6-FFyFNMqkmXxKZQFZGjieCLb2XV21PfOokiunrWClaujYZHRu58_LaIcVzh5UH6m7Ew4JgJC9yARgHIF4N69Dtfr51ohRzY7tRVuj6jGifQafFQn6b9SeK3R2eodjyybeDHkFBsyvcUq8jlr2PB8PiSVv_dFogEVRpHX4a9fbzOnk7bC7cCdwrCK2RkJqKpP1sPQCSbz0bvgdSBpSv6-uyZTQ4Yqbpw9qkGLYY2M6wlI2jzosiU1f6Jv7AcbAL3eERoDRDppDfNvpu5f50u7tAOLESYf5qrIjUfgb5fV7Oztml4yGZCI&t=AQLsxZaU8UgcqXe8dVc"
           },
           {
             "ad_id": "120250507748830298",
             "ad_name": "November2026-Praveen-Barrel-Pants-MB39-Video-UGC-PA-Direct-16.11.2026",
             "adset_name": "Pros-Outerwear-Barrel-Pants-TSQ-Broad-Videos-03.11.2026",
-            "spend": 2406.07,
-            "roas": 9.0115,
+            "spend": 2406.1,
+            "roas": 9.0114,
             "conv_value": 21682.4,
             "purchases": 14,
             "category": "Barrel Pants",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJeVaM3L38UDsVAzuZwWrNJgLjEPlUWtwc_v9A1rRAfOK0rQ4TiOFXZ7lape3ynfdwc-67ROyOaVXEasDmmNesKZC2mKaoFpVkuYPghMiL8ZnQEO94h7a_9hzqRXlnfnI-1KNY3uqZbVCrcWY-vxQYwW746VcM8hFJlFO33g7thWLTHM4UtpZKcEwaV7hwnkQmNKeAMRvjfCHZFK9TPo_kdzJlk5_Y8WZ9B1ATbIdgx85N-JyHYl-qF85YRLl7vEa27v_IByoX1SVuLPv6xXG0e4UGfwrDvJEUr9N8LV-VDHfvvnKhlZ_hHWuIcWkCRdP9r7qNAQEzBiAXFHJ3ymW_Wkve9lYykmq1gq9FzsYhgMChr2O6NR_btiH3j3B0CxIPAIol4R6L6Gjr7S-u1fG-Yw20TpNvEn8-zoBWjBRw7kGXYVmkgKyYH0yzna5qnsjo&t=AQIteQ_rtYckdTHF5tA"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLKOO00-YO-3BYCB_9W_OVIfEo0v1L0rK75jAYUvM7K-d3xVxIq1lRm6UuIbNMuOiFIVuyqP1xLZ5qRE4Ucn10pMvze5XXjHE_0AgjNfs1DI0QpHh7_VaXMcTOOD9CzboRBeULIbv9SUpwFLQMKYHnOlmXkTku5PIU0NobIUxwB_nDpMm6ehYG0_75FomTGCwXwf39eYvl8Zk82dWxAabiQV-jhzMRvGmOUoqpWGdQIJOP03iwDnQWe8yRPuYxQ2zrHhlBFAFzkkSARSPVgHN872lY3DZ2bHMTdXJTmPMS3gPKLh2BfBUOYu3NbkON_m_vGL_xTf4VMppbytIp_IX4785s062vxCZq8Vk5pW8AzFrUA0c7pwBMJe2-wfguDo1UIN9C-vZp8fYAtQ7GT3lux6fzb7QjMWk_0i-f47q8Ync4uy6ywzQEMGdaCM_YwP1E&t=AQLZbx568clhJufH2_U"
           },
           {
             "ad_id": "120250526281520298",
             "ad_name": "November2026-AI-Layer-2-Thermal-R68-Video-AI-PLV-Goldmine-17.11.2026",
             "adset_name": "Pros-Thermal-TSQ-Broad-Videos-16.10.2026",
-            "spend": 1411.64,
-            "roas": 8.2634,
+            "spend": 1411.73,
+            "roas": 8.2629,
             "conv_value": 11665.01,
             "purchases": 4,
             "category": "Thermals",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJHucWPqKgQ4hxoqR_5iVZHsRCzAAqGApSWroLMWZlGG4tFQUKBf6BW72GsOjWUsowqzQ8oW2wgj-ZEO6mly20Lyfz4gl4I2_CoqNeRfgsBLuGA0v7yFXINvMnD-dcvW8XqZ6Y2R9WblbLMVWaN4Z1JkxVxX9RSUO5ceo6KXK3qQuLWniBlfpN4riBBrFE8ylPTpbNIemowN_dx3q3j5TL8KGDOYEcBRWUJD04vSPCa959eQ3_2TAj654Sx1BZqT6lakzD6QSULPnMn_enrDxsy0Sh_ZjRof7wqeSlMnbvsFMHFybcas-VzpqPG49u410QuigwsfT68nnsPFAD1ojBQN89IZElT07wPxEzitnl_UxZINTAnmaX3QnbPeTlF4aGtiG3epomolh4jyeVuE1SpGhahUkmZjEhYA_Kluc8QfdDRb4xIMjq9QTQn2V9HYVE&t=AQJI-TqpxqY1N2pLum4"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQICFeu1yImr3BsXCtPYQKDjzclRZT_KQSpNDueUWXe2Oh77O1qngvS6Tj2UjBaiEu0RYmjDJXDhtzcGCXWeX4iynxEVL0_NghjUU0pAIryobTFthJ4PaIFBDsPUdXJhevcv_BEcjk1BFaQTAXebaJOtN1NTI_X7d3ZNXxlU0Z__4uyj2HasALukB5L1NDLrN2fGDHNyIWR6mQ_WLOCjezcvQjbsv0ZOpdpBpihlbTKP--okBsgRpV10YXEKztoaXrjkB7Y764Ktv1Z_81WxVSYTl5QM8EQD30jWQ5shLphfvAwcTGN1DtkU8eqyFS-XGUJjPXzFonA-j0v5isa2TYldYNjvKRoJU6p5ZrPumoOKOCoNpdYvSW_lvWFCjY3yI6N6zB5rMgSLsVzFG3WDaSsSll7I0imCU4gVE_-vgrE6s4ZVABMhyMCuuhnS3p_glIM&t=AQKW1pq455u_g4yX1JQ"
           },
           {
             "ad_id": "120250477492050298",
@@ -486,19 +483,19 @@
             "purchases": 6,
             "category": "Jackets",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJNHgH_kbM6SSy5OQRfNH7g4HSGSjOgnTaoCT-L5kXInrmd6J8mP3azixD8ccBeU8mtrZy1dyKAGFhhQpnhd_8BOXGPGl3G4dZ7OELLpHm3hhjGlUrtUyi4JrFEZbeXu89kP7LDvFJTInNcr5dNwnVgj6fn9FHFmVBUR9ausQP7uD9S4MgPXlfA6JcOEnAX8LzIGt8prgJEee1g3kHS0b1Aqi3CJax9-ffLkuZRCNvcLrsoDSHMPE77EwuY_nTJwtTKNI1NmXUQGRYMZPmT8ufpmnVlX3pZraIUfwnIrBhFki36ehypmBR9bzGq79dX4hn7UcI8HcRwMdN-DmOxA_eJZ_sOu_-xVwu7SqEjd3St3oIYWMCXsR_ti3Lnrb34b3_RFX-WugnkV_I3i2PFIgdFMa-nBVHrTyTVeWxsHKt0CE-qxDv1Z21UB0ABqlKnyQY&t=AQI9Dm99TQ5BzrPlqGY"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJSWy28pN-Jc72z4NVnCWl5n0gk-vjmWi4HEmJXbEdyRSE-auedDx3ezs7SCubX9CSiyKULXr7FsSDodtXBB0W3iPXtG51eBANNOgA2HJ2Sfop-_C-FIXgQnurZid-Yo9PI8WGYDOSd3fXLHxIk0BFDVjzUWt3fSwan8Al5OsO5rWqRyNep7dOIHOxLqppovs_SlM7lp7yF5hPdIExqlvP3gBJ73FRbS2AgpBTA2YB_X-Ns7qxe7x31A8Wd1uQNjlpbczdm8A5a3Oc9H0YY3rl6MBGZqlXadisqRX9ogeSHSyLITvRwZxBvR2dxv_WLk-NRxGG-tdKWvXtJmwAk4qZuClGENTR8BI-Ef-SS4C1nX6Ze0FJrXR0vGj62gY8u3TkpwcutKcQF0-0iyeG4BPa0S2GcRjmKruFGIyVqBoGPVWdbC5VDiCIPu60eIbFVw-s&t=AQISU72CP6g3FC6LsYo"
           },
           {
             "ad_id": "120250540930770298",
             "ad_name": "November2026-Jacob-Elordi-Crewneck-Sweater-MB51-Video-PLV-Abhay-18.11.2026",
             "adset_name": "Pros-Sweaters-TSQ-Broad-Videos-02.11.2026",
-            "spend": 2039.32,
-            "roas": 7.3119,
+            "spend": 2039.56,
+            "roas": 7.311,
             "conv_value": 14911.32,
             "purchases": 9,
             "category": "Sweaters",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLD1-W_AiMFWrTSrrU89eWypxLOEaEp8E9FlSWlDKdLDAry40Jjz6LSZodClVezbctGmiyD-5mHJV7KrmENpYVBDxRMAKxI_D1VCYKlC1osNOzcwK6-BZ4dbQLbKufPuhzLlKUjqtasj0I9ORMlGFRETGkXHNZqSX8G9B_KIR_SRi0eoH6oNdlrR22p66nQKorUTbZB6eDxxoWk9mhjWje8HRK1_IXEJB-rUulSqSPnI2Gtsrs9gNPKZrwjkXy2iBkYwdM15QG4HgOuPj796qRcJzVKM3i5nRlVe3Gw_9gacUaIIhlDtYZbzUgk5yWEx7QL1L2NzRuJ_KNtUOE4geoFXcWib99kUm519i1C2iP36jNSWRfU3FmRtzPga1Ox-aFdxdx0qW7Ok_N3ENYUVdDQ5D1ovueiB_GhSxXtxJJO_3b58IGi8YrC-2_HahRFxHE&t=AQKPpYxGZoCIdaez7pI"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQK98M5Cvdh-bV1oWwjv2S7UQqedru1fxZeIuqwKACEadLeFA635NyMf4VXW628KblJt2sDpGd--0AOJWNR93lad8C20sFGHQoBjn9WsWM__awLTLfaS_VQyCCXPxAim2G7daPmlWn-U_m0TtRL5eRonNt0kDAbiSIpukJNgkogUfB_KTIdOXBdNV69GchqQSqu-uy2og2ZPNX3UN5YyMZsg6z1vdVAQJw6HPChWfyY5d8mY7OFnldBbph1VYwM5oow_f6H5NVs0CPBL2nUZtTGvBcD2xufKQJQOa8dJZ52ESwIb7iI2mJ4N9ocCbwaILvfx8xagoD8XUuJIrSdJcfxYrYkb80rzMX7zUDONAKZVn7C8K6uECZZyeBhdB4Cztjl-v8hX8bZUvvQkpKOutbQRWpf9UaO9xZjTVc6oFRDElbfdQmxZbMJC24sjfChDBoo&t=AQKSSvdHKO9sRnez_7I"
           },
           {
             "ad_id": "120250444043330298",
@@ -510,7 +507,7 @@
             "purchases": 4,
             "category": "Henley",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJXFGHlcbPVHaeY8GjShT8aMknsmN96SQXIlzIjOpjm2K3hpcNKEJkgVdpI1PIxaPJGahxoC4LbDaEroMgRfhxV1ybBAaUw7OoMpndDz8bRHagzpguFgJI0oI6w3sBS4LeTAyWSEUq3EhkRpAl1lgq0G__DMMDf6qfkn6v90HQ_MTRKaGAvAu9iS4wJHHIlBWAfAyneavFB6szUFeJRG8yaKBvYy8k7q0K5_uyaHN_1mUMMoqvK13vF0qu7yesFRFoRSSwkqrRXVk42ZwBRnFyE8E-aiQwNtlm2a-_IJSWW2I_ZmNJrKuTY0Bx2KjNO9hbMk9LpAyX3R7BDHPEh7qbVaXRFnPDJH7HjjKpEfzqr2l0mEOYJgz5-m4t3gdqPwIDbHCVFLEWIXhQhx4z6GJxahAyJx3C4nusYXd7y3q0f0yHie5lMOBucA227-t_ZN9U&t=AQJNHatTwtcZlLrWoDk"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJGS_RLdO1QL-gnSe1YxnjlCJiY6n7xCo-l-FkwYjvj1-KiOXZ7bpgR836SvizDfwZNw8v7hoZNjSVS7oOw5JUvzsR1m3rvfBQgJ7Tm7WLR3IUH_OdDhEO2h-qEC9d6_pl4a34tS2wepxZ1RnBRTrzVMp9XJQfAlCrKmMO3CYmEjdd3brmb7CbFaskccShlL2Lhf2p7ngSHJeXR3g2BBpHEGDmoVNhpzRB6JTE228-nbwzfZDg9piH3r5C3us9eLgBOfDZk8yZzxJrBF-9_YA9q14_4T0fe2uWnclQeX5gFTBoAeBzB3mTSh5E1Mr3R-W4jV4Lubb7h6eoWt46EZ0dZaI8yro4ldkRxLNm6heIvw0Ej-YFitMhyCAQAaSVWPoaaT7IRhYDsMO4rcKM5C9rd-ERcldW1t0nzUWgTnlM0UA4SkCgSVIrY4UwpDt_ucTo&t=AQLQXHIg4lVBbU3aEt8"
           }
         ],
         "decisions": [
@@ -529,9 +526,9 @@
             "ad_id": "120250561398360298",
             "ad_name": "November2026-thetrendmaniac-Half-Zip-Pullover-MB40-Video-UGC-Dark-Post-Direct-19.11.2026",
             "adset_name": "Pros-Outerwear-Jackets-TSQ-Broad-Videos-14.10.2026",
-            "spend": 18542.85,
-            "roas": 1.3665,
-            "conv_value": 25338.75,
+            "spend": 18544.52,
+            "roas": 1.3664,
+            "conv_value": 25338.73,
             "purchases": 19,
             "category": "Jackets",
             "tier": "notworking"
@@ -540,8 +537,8 @@
             "ad_id": "120250335924500298",
             "ad_name": "November2026-Comfort-Secret-Zip-Up-Hoodie-Jacket-CRW4-Video-UGC-Dark-Post-Goldmine-05.11.2026",
             "adset_name": "Pros-Outerwear-Hoodies-TSQ-Broad-Videos-09.10.2026",
-            "spend": 9038.03,
-            "roas": 1.275,
+            "spend": 9038.16,
+            "roas": 1.2749,
             "conv_value": 11523.09,
             "purchases": 12,
             "category": "Hoodies",
@@ -617,7 +614,7 @@
             "ad_id": "120250270542380298",
             "ad_name": "November2026-Warren-Hoodie-Video-UGC-PA-Direct-03.11.2026",
             "adset_name": "Pros-Outerwear-Hoodies-TSQ-Broad-Videos-09.10.2026",
-            "spend": 5108.93,
+            "spend": 5108.97,
             "roas": 1.4565,
             "conv_value": 7441.28,
             "purchases": 10,
@@ -625,7 +622,7 @@
             "tier": "notworking"
           }
         ],
-        "all_spend": 17850360.89,
+        "all_spend": 17850864.37,
         "tier_ads": {
           "scaling": [
             {
@@ -644,7 +641,7 @@
             {
               "n": "November2026-HeatTech-AI-VO-3-Thermal-R68-Video-AI-PLV-Goldmine-09.11.2026",
               "c": "Thermals",
-              "s": 232279,
+              "s": 232291,
               "r": 2.02,
               "u": 451,
               "t": [
@@ -657,7 +654,7 @@
             {
               "n": "November2026-Avish-Rajput-Sweatpants-MB18-Video-UGC-Dark-Post-Direct-05.11.2026",
               "c": "Sweatpants",
-              "s": 196680,
+              "s": 196682,
               "r": 2.84,
               "u": 338,
               "t": [
@@ -670,7 +667,7 @@
             {
               "n": "November2026-Detailing-vs-Fit-Fleece-Sweatpants-MB18-Video-PLV-Niti-04.11.2026",
               "c": "Sweatpants",
-              "s": 178962,
+              "s": 178963,
               "r": 2.06,
               "u": 216,
               "t": [
@@ -683,7 +680,7 @@
             {
               "n": "November2026-No-More-Fleece-Sweatpants-MB18-Video-PLV-Niti-04.11.2026",
               "c": "Sweatpants",
-              "s": 143456,
+              "s": 143463,
               "r": 2.4,
               "u": 194,
               "t": [
@@ -709,7 +706,7 @@
             {
               "n": "November2026-HeatTech-AI-VO-4-Thermal-R68-Video-AI-PLV-Goldmine-09.11.2026",
               "c": "Thermals",
-              "s": 118085,
+              "s": 118090,
               "r": 2.08,
               "u": 233,
               "t": [
@@ -722,7 +719,7 @@
             {
               "n": "November2026-Piyush-Gada-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-09.11.2026",
               "c": "5@999 Cotton UW",
-              "s": 117278,
+              "s": 117279,
               "r": 2.29,
               "u": 279,
               "t": [
@@ -761,7 +758,7 @@
             {
               "n": "November2026-Ultimate-Comfort-New-Hook-Easy-Pants-CR44-Video-UGC-Dark-Post-Goldmine-05.11.2026",
               "c": "Pyjamas & Easy Pants",
-              "s": 92065,
+              "s": 92071,
               "r": 2.37,
               "u": 232,
               "t": [
@@ -774,7 +771,7 @@
             {
               "n": "November2026-Rajat-Nagpal-Half-Zip-Pullover-MB17-Video-UGC-PA-Barter-16.11.2026",
               "c": "Jackets",
-              "s": 89519,
+              "s": 89528,
               "r": 2.84,
               "u": 150,
               "t": [
@@ -787,7 +784,7 @@
             {
               "n": "November2026-Utkarsh-Uppal-DP1-Sweatpants-MB18-Video-UGC-Dark-Post-Direct-05.11.2026",
               "c": "Sweatpants",
-              "s": 83137,
+              "s": 83139,
               "r": 2.56,
               "u": 127,
               "t": [
@@ -800,7 +797,7 @@
             {
               "n": "November2026-Lakshay-Tailor-Cotton-Underwear-Video-UGC-PA-V2-Direct-03.11.2026",
               "c": "5@999 Cotton UW",
-              "s": 79082,
+              "s": 79083,
               "r": 2.59,
               "u": 183,
               "t": [
@@ -813,7 +810,7 @@
             {
               "n": "November2026-Swarnav-Dey-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-04.11.2026",
               "c": "5@999 Cotton UW",
-              "s": 73836,
+              "s": 73838,
               "r": 2.77,
               "u": 202,
               "t": [
@@ -852,7 +849,7 @@
             {
               "n": "November2026-Harsh-Gulati-Overshirt-MB49-Video-UGC-PA-V1-Closer-06.11.2026",
               "c": "Overshirt",
-              "s": 58199,
+              "s": 58202,
               "r": 2.82,
               "u": 158,
               "t": [
@@ -898,7 +895,7 @@
             {
               "n": "November2026-Ishan-Kumar-Oversized-Hoodie-CRW4-Video-UGC-PA-Direct-16.11.2026",
               "c": "Hoodies",
-              "s": 48329,
+              "s": 48331,
               "r": 2.52,
               "u": 78,
               "t": [
@@ -924,7 +921,7 @@
             {
               "n": "November2026-Perfect-Layer-Overshirt-MB49-Video-AI-PLV-Goldmine-18.11.2026",
               "c": "Overshirt",
-              "s": 47181,
+              "s": 47207,
               "r": 2.43,
               "u": 66,
               "t": [
@@ -963,7 +960,7 @@
             {
               "n": "November2026-The-OG-Fabric-Cotton-Underwear-Video-AI-PLV-Cinqa-06.11.2026",
               "c": "5@999 Cotton UW",
-              "s": 40618,
+              "s": 40619,
               "r": 2.39,
               "u": 95,
               "t": [
@@ -989,7 +986,7 @@
             {
               "n": "November2026-Jeb-Mei-Sirf-Cotton-Underwear-5-at-999-Video-Lofi-MMM-13.11.2026",
               "c": "5@999 Cotton UW",
-              "s": 36551,
+              "s": 36552,
               "r": 2.08,
               "u": 70,
               "t": [
@@ -1041,7 +1038,7 @@
             {
               "n": "November2026-Devang-Sweatpants-MB18-Video-UGC-Dark-Post-Intern-18.11.2026",
               "c": "Sweatpants",
-              "s": 31985,
+              "s": 31987,
               "r": 3.12,
               "u": 59,
               "t": [
@@ -1119,7 +1116,7 @@
             {
               "n": "November2026-Meet-The-Henley-Henley-Tee-MB47-Video-PLV-Internal-05.11.2026",
               "c": "Henley",
-              "s": 26715,
+              "s": 26719,
               "r": 2.5,
               "u": 41,
               "t": [
@@ -1145,7 +1142,7 @@
             {
               "n": "November2026-Running-Late-Layer-Overshirt-MB49-Video-PLV-Abhinab-17.11.2026",
               "c": "Overshirt",
-              "s": 25254,
+              "s": 25255,
               "r": 2.61,
               "u": 43,
               "t": [
@@ -1158,7 +1155,7 @@
             {
               "n": "November2026-My-New-Outfit-Crush-Canvas-Jackets-MB43-Video-PLV-Internal-17.11.2026",
               "c": "Jackets",
-              "s": 23435,
+              "s": 23436,
               "r": 4.28,
               "u": 53,
               "t": [
@@ -1184,8 +1181,8 @@
             {
               "n": "November2026-Sweater-Weather-In-XYXX-Half-Zip-Sweater-MB48-Video-PLV-Abhay-16.11.2026",
               "c": "Sweaters",
-              "s": 22061,
-              "r": 5.08,
+              "s": 22067,
+              "r": 5.07,
               "u": 52,
               "t": [
                 "PLV",
@@ -1223,7 +1220,7 @@
             {
               "n": "November2026-My-Winters-Plus-One-Puffer-Jackets-MB50-Video-PLV-Internal-17.11.2026",
               "c": "Jackets",
-              "s": 20946,
+              "s": 20956,
               "r": 4.72,
               "u": 41,
               "t": [
@@ -1275,7 +1272,7 @@
             {
               "n": "November2026-Rishabh-Virmani-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-03.11.2026",
               "c": "5@999 Cotton UW",
-              "s": 17810,
+              "s": 17813,
               "r": 2.58,
               "u": 42,
               "t": [
@@ -1301,7 +1298,7 @@
             {
               "n": "November2026-Current-Mood-This-Jacket-Zip-Up-Hoodie-Jacket-CRW4-Video-PLV-Internal-17.11.2026",
               "c": "Hoodies",
-              "s": 16104,
+              "s": 16106,
               "r": 2.35,
               "u": 23,
               "t": [
@@ -1353,7 +1350,7 @@
             {
               "n": "November2026-Use-Case-Rugby-Polo-TShirt-CRW12-Video-AI-PLV-Goldmine-17.11.2026",
               "c": "Polos",
-              "s": 13346,
+              "s": 13348,
               "r": 2.28,
               "u": 14,
               "t": [
@@ -1405,7 +1402,7 @@
             {
               "n": "November2026-Offer-First-Cotton-Underwear-5-at-999-Video-PLV-V2-Internal-17.11.2026",
               "c": "5@999 Cotton UW",
-              "s": 10011,
+              "s": 10013,
               "r": 2.46,
               "u": 23,
               "t": [
@@ -1433,7 +1430,7 @@
             {
               "n": "November2026-Lakshay-Easy-Pants-CR44-Video-UGC-PA-Direct-03.11.2026",
               "c": "Pyjamas & Easy Pants",
-              "s": 9198,
+              "s": 9199,
               "r": 3.87,
               "u": 34,
               "t": [
@@ -1446,7 +1443,7 @@
             {
               "n": "November2026-Akshay-Nagori-Polar-Fleece-Jacket-MB13-Video-UGC-Dark-Post-Direct-18.11.2026",
               "c": "Jackets",
-              "s": 8677,
+              "s": 8679,
               "r": 2.96,
               "u": 28,
               "t": [
@@ -1459,7 +1456,7 @@
             {
               "n": "November2026-The-Kind-Of-Shirt-Flannel-Shirt-MB46-Video-PLV-Internal-05.11.2026",
               "c": "Flannel Shirt",
-              "s": 8275,
+              "s": 8276,
               "r": 4.72,
               "u": 23,
               "t": [
@@ -1511,7 +1508,7 @@
             {
               "n": "November2026-This-Is-What-Good-Denim-Jackets-MB44-Video-PLV-Internal-17.11.2026",
               "c": "Jackets",
-              "s": 7233,
+              "s": 7235,
               "r": 3.49,
               "u": 12,
               "t": [
@@ -1524,7 +1521,7 @@
             {
               "n": "November2026-Avish-Rajput-DP2-Sweatpants-CRW6-Video-UGC-Dark-Post-Direct-06.11.2026",
               "c": "Sweatpants",
-              "s": 7115,
+              "s": 7116,
               "r": 5.11,
               "u": 13,
               "t": [
@@ -1589,7 +1586,7 @@
             {
               "n": "November2026-My-Kind-Of-Retail-Therapy-Cotton-Underwear-5-at-999-Video-PLV-V1-Internal-17.11.2026",
               "c": "5@999 Cotton UW",
-              "s": 6602,
+              "s": 6603,
               "r": 3.26,
               "u": 22,
               "t": [
@@ -1862,7 +1859,7 @@
             {
               "n": "November2026-Jay-Verse-Sweatpants-MB18-Video-UGC-PA-Direct-03.11.2026",
               "c": "Sweatpants",
-              "s": 3683,
+              "s": 3684,
               "r": 2.11,
               "u": 7,
               "t": [
@@ -2161,7 +2158,7 @@
             {
               "n": "November2026-Jacob-Elordi-Crewneck-Sweater-MB51-Video-PLV-Abhay-18.11.2026",
               "c": "Sweaters",
-              "s": 2039,
+              "s": 2040,
               "r": 7.31,
               "u": 9,
               "t": [
@@ -2213,8 +2210,8 @@
             {
               "n": "November2026-Product-Romance-2-Oversized-Hoodie-MB16-Video-AI-PLV-Goldmine-06.11.2026",
               "c": "Hoodies",
-              "s": 1953,
-              "r": 2.69,
+              "s": 1958,
+              "r": 2.68,
               "u": 5,
               "t": [
                 "PLV",
@@ -2380,6 +2377,19 @@
               ]
             },
             {
+              "n": "November2026-Tarun-Khurana-Puffer-Jackets-MB52-Video-UGC-PA-V1-Closer-18.11.2026",
+              "c": "Jackets",
+              "s": 1440,
+              "r": 4.34,
+              "u": 2,
+              "t": [
+                "UGC",
+                "Testimonial",
+                "Problem & Solution",
+                "Curiosity"
+              ]
+            },
+            {
               "n": "November2026-Why-Is-This-Crewneck-Sweater-MB51-Video-PLV-Internal-05.11.2026",
               "c": "Sweaters",
               "s": 1440,
@@ -2390,19 +2400,6 @@
                 "Product Detail",
                 "Product + Trendy Music",
                 "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-Tarun-Khurana-Puffer-Jackets-MB52-Video-UGC-PA-V1-Closer-18.11.2026",
-              "c": "Jackets",
-              "s": 1439,
-              "r": 4.35,
-              "u": 2,
-              "t": [
-                "UGC",
-                "Testimonial",
-                "Problem & Solution",
-                "Curiosity"
               ]
             },
             {
@@ -2564,7 +2561,7 @@
             {
               "n": "November2026-Ice-Breaking-Puffer-Jackets-MB53-Video-AI-PLV-Internal-16.11.2026",
               "c": "Jackets",
-              "s": 1127,
+              "s": 1128,
               "r": 6.5,
               "u": 2
             },
@@ -2623,7 +2620,7 @@
             {
               "n": "November2026-Heth-Khania-Denim-Jackets-MB32-Video-UGC-PA-Direct-16.11.2026",
               "c": "Jackets",
-              "s": 1049,
+              "s": 1050,
               "r": 5.16,
               "u": 4,
               "t": [
@@ -2716,7 +2713,7 @@
             {
               "n": "November2026-Add-Some-Colour-Cotton-Underwear-5-at-999-Video-Lofi-V1-MMM-13.11.2026",
               "c": "5@999 Cotton UW",
-              "s": 151299,
+              "s": 151300,
               "r": 1.98,
               "u": 294,
               "t": [
@@ -2729,7 +2726,7 @@
             {
               "n": "November2026-HeatTech-AI-VO-Thermal-R68-Video-AI-PLV-Goldmine-09.11.2026",
               "c": "Thermals",
-              "s": 146075,
+              "s": 146105,
               "r": 1.95,
               "u": 271,
               "t": [
@@ -2755,7 +2752,7 @@
             {
               "n": "November2026-Rohan-Fleece-Sweatpants-MB18-Video-UGC-Dark-Post-MMM-04.11.2026",
               "c": "Sweatpants",
-              "s": 70520,
+              "s": 70521,
               "r": 1.67,
               "u": 64,
               "t": [
@@ -2768,7 +2765,7 @@
             {
               "n": "November2026-Toxic-Trait-Zip-Up-Hoodie-Jacket-CRW5-Video-PLV-Abhay-16.11.2026",
               "c": "Hoodies",
-              "s": 38632,
+              "s": 38634,
               "r": 1.94,
               "u": 66,
               "t": [
@@ -2794,7 +2791,7 @@
             {
               "n": "November2026-Nirvan-Oversized-Hoodie-CRW1-Video-UGC-Dark-Post-Direct-19.11.2026",
               "c": "Hoodies",
-              "s": 23834,
+              "s": 23839,
               "r": 1.71,
               "u": 36,
               "t": [
@@ -2820,7 +2817,7 @@
             {
               "n": "November2026-Krizy-Kid-Denim-Jackets-MB32-Video-UGC-Dark-Post-Closer-15.11.2026",
               "c": "Jackets",
-              "s": 20758,
+              "s": 20759,
               "r": 1.77,
               "u": 21,
               "t": [
@@ -2860,7 +2857,7 @@
             {
               "n": "November2026-Put-Together-Winter-Fleece-Hoodie-MB16-Video-PLV-Niti-04.11.2026",
               "c": "Hoodies",
-              "s": 7914,
+              "s": 7915,
               "r": 1.83,
               "u": 11,
               "t": [
@@ -2925,7 +2922,7 @@
             {
               "n": "November2026-Bhabik-Revised-Cotton-Underwear-5-at-999-Video-UGC-Dark-Post-Internal-04.11.2026",
               "c": "5@999 Cotton UW",
-              "s": 4905,
+              "s": 4906,
               "r": 1.89,
               "u": 8,
               "t": [
@@ -2951,7 +2948,7 @@
             {
               "n": "November2026-To-Hard-To-Just-Pick-Rugby-Polo-TShirt-MB12-Video-PLV-Internal-05.11.2026",
               "c": "Polos",
-              "s": 4876,
+              "s": 4880,
               "r": 1.93,
               "u": 10,
               "t": [
@@ -3146,7 +3143,7 @@
             {
               "n": "November2026-Anwar-Rey-Outfit-Of-Day-Sweatpants-CRW11-Video-UGC-Dark-Post-Direct-09.11.2026",
               "c": "Sweatpants",
-              "s": 2086,
+              "s": 2089,
               "r": 1.29,
               "u": 2,
               "t": [
@@ -3432,7 +3429,7 @@
             {
               "n": "November2026-Adrain-Rugby-Polo-TShirt-CRW12-Video-UGC-Dark-Post-Direct-19.11.2026",
               "c": "Polos",
-              "s": 994,
+              "s": 995,
               "r": 3.51,
               "u": 4,
               "t": [
@@ -3731,7 +3728,7 @@
             {
               "n": "November2026-Not-Me-Obsessing-Full-Sleeve-Polo-TShirt-MB28-Video-PLV-Internal-13.11.2026",
               "c": "Polos",
-              "s": 659,
+              "s": 660,
               "r": 2.39,
               "u": 1,
               "t": [
@@ -3848,7 +3845,7 @@
             {
               "n": "November2026-GF-Approved-Fleece-Hoodie-MB16-Video-PLV-Niti-04.11.2026",
               "c": "Hoodies",
-              "s": 602,
+              "s": 603,
               "r": 2.23,
               "u": 1,
               "t": [
@@ -4002,6 +3999,19 @@
               ]
             },
             {
+              "n": "November2026-Hey-Leo-Cotton-Underwear-5-at-999-Video-Lofi-MMM-13.11.2026",
+              "c": "5@999 Cotton UW",
+              "s": 526,
+              "r": 7.89,
+              "u": 4,
+              "t": [
+                "LoFi",
+                "Trend",
+                "Value Deal",
+                "Offer Reveal"
+              ]
+            },
+            {
               "n": "November2026-Anwar-Fast-Paced-Sweatpants-MB18-Video-UGC-Dark-Post-V1-Direct-12.11.2026",
               "c": "Sweatpants",
               "s": 526,
@@ -4012,19 +4022,6 @@
                 "GRWM",
                 "Product + Trendy Music",
                 "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-Hey-Leo-Cotton-Underwear-5-at-999-Video-Lofi-MMM-13.11.2026",
-              "c": "5@999 Cotton UW",
-              "s": 525,
-              "r": 7.9,
-              "u": 4,
-              "t": [
-                "LoFi",
-                "Trend",
-                "Value Deal",
-                "Offer Reveal"
               ]
             },
             {
@@ -7895,7 +7892,7 @@
             {
               "n": "November2026-thetrendmaniac-Half-Zip-Pullover-MB40-Video-UGC-Dark-Post-Direct-19.11.2026",
               "c": "Jackets",
-              "s": 18543,
+              "s": 18545,
               "r": 1.37,
               "u": 19,
               "t": [
@@ -8139,168 +8136,6 @@
                 "Unlabelled"
               ]
             }
-          ],
-          "nospend": [
-            {
-              "n": "November2026-Before-vs-After-Shapewear-Vest-SW01-Video-AI-PLV-ARM-17.11.2026",
-              "c": "Shapewear & Vest",
-              "t": [
-                "AI PLV",
-                "Testimonial",
-                "Use Case Scenario",
-                "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-Deepanshu-Hanger-Drop-1-Flannel-Shirt-MB46-Video-PLV-Direct-23.11.2026",
-              "c": "Flannel Shirt",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Product + Trendy Music",
-                "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-Deepanshu-Hanger-Drop-2-Rugby-Polo-TShirt-CRW12-Video-PLV-Direct-23.11.2026",
-              "c": "Polos",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Product + Trendy Music",
-                "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-Deepanshu-Hanger-Drop-3-Hoodie-Video-PLV-Direct-23.11.2026",
-              "c": "Hoodies",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Product + Trendy Music",
-                "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-Deepanshu-Hanger-Drop-4-Henley-Tee-MB47-Video-PLV-Direct-23.11.2026",
-              "c": "Henley",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Product + Trendy Music",
-                "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-Deepanshu-Hanger-Drop-5-Flannel-Shirt-MB46-Video-PLV-Direct-23.11.2026",
-              "c": "Flannel Shirt",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Product + Trendy Music",
-                "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-Deepanshu-Hanger-Drop-6-Flannel-Shirt-MB46-Video-PLV-Direct-23.11.2026",
-              "c": "Flannel Shirt",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Product + Trendy Music",
-                "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-Deepanshu-Hanger-Drop-8-Henley-Tee-MB47-Video-PLV-Direct-23.11.2026",
-              "c": "Henley",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Product + Trendy Music",
-                "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-Fit-vs-Details-Crewneck-Sweater-MB51-Video-PLV-Abhay-16.11.2026",
-              "c": "Sweaters",
-              "t": [
-                "PLV",
-                "GRWM",
-                "Product + Trendy Music",
-                "Trust Signal"
-              ]
-            },
-            {
-              "n": "November2026-Found-The-Sweater-Crewneck-Sweater-MB51-Video-PLV-Internal-20.11.2026",
-              "c": "Sweaters",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Product + Trendy Music",
-                "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-GF-Approved-Sweatpants-CRW6-Video-PLV-Abhay-16.11.2026",
-              "c": "Sweatpants",
-              "t": [
-                "PLV",
-                "GRWM",
-                "Product + Trendy Music",
-                "Trust Signal"
-              ]
-            },
-            {
-              "n": "November2026-Heth-Khania-Half-Zip-Sweater-MB48-Video-PLV-Internal-09.11.2026",
-              "c": "Sweaters",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Product + Trendy Music",
-                "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-No-BS-Winter-Henley-Tee-MB47-Video-PLV-Abhay-23.11.2026",
-              "c": "Henley",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Use Case Scenario",
-                "Bold Claim"
-              ]
-            },
-            {
-              "n": "November2026-Winter-Layering-Henley-Tee-MB47-Video-PLV-Abhay-23.11.2026",
-              "c": "Henley",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Use Case Scenario",
-                "Trust Signal"
-              ]
-            },
-            {
-              "n": "November2026-Zero-Regrets-Crewneck-Sweater-MB51-Video-PLV-Abhay-18.11.2026",
-              "c": "Sweaters",
-              "t": [
-                "PLV",
-                "Product Detail",
-                "Product + Trendy Music",
-                "Unlabelled"
-              ]
-            },
-            {
-              "n": "November2026-kurta-problem-2-Shapewear-Vest-SW01-Video-UGC-Dark-Post-Goldmine-10.11.2026",
-              "c": "Shapewear & Vest",
-              "t": [
-                "UGC",
-                "Testimonial",
-                "Upgrade Mentality",
-                "Curiosity"
-              ]
-            }
           ]
         },
         "tier_mix": [
@@ -8309,13 +8144,12 @@
             "group": "Innerwear",
             "emoji": "\ud83e\uddba",
             "order": 1012,
-            "spend": 699530.25,
+            "spend": 699530.28,
             "counts": {
               "scaling": 9,
               "early": 6,
               "proving": 37,
-              "notworking": 1,
-              "nospend": 2
+              "notworking": 1
             }
           },
           {
@@ -8323,7 +8157,7 @@
             "group": "Outerwear \u00b7 Bottomwear",
             "emoji": "\ud83d\ude34",
             "order": 4019,
-            "spend": 102452.85,
+            "spend": 102458.99,
             "counts": {
               "scaling": 1,
               "early": 1,
@@ -8349,7 +8183,7 @@
             "group": "Innerwear",
             "emoji": "\ud83e\uddf4",
             "order": 1013,
-            "spend": 167793.7,
+            "spend": 167794.16,
             "counts": {
               "scaling": 2,
               "early": 2,
@@ -8362,7 +8196,7 @@
             "group": "5@999 Cotton UW",
             "emoji": "\ud83e\ude72",
             "order": 11,
-            "spend": 818308.24,
+            "spend": 818321.27,
             "counts": {
               "scaling": 9,
               "early": 12,
@@ -8388,7 +8222,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\udde5",
             "order": 2004,
-            "spend": 275894.96,
+            "spend": 275922.26,
             "counts": {
               "scaling": 4,
               "early": 17,
@@ -8401,13 +8235,12 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddd8",
             "order": 2003,
-            "spend": 1077820.29,
+            "spend": 1077841.16,
             "counts": {
               "scaling": 10,
               "early": 11,
               "proving": 115,
-              "notworking": 5,
-              "nospend": 1
+              "notworking": 5
             }
           },
           {
@@ -8415,13 +8248,12 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddf6",
             "order": 2007,
-            "spend": 271301.0,
+            "spend": 271319.61,
             "counts": {
               "scaling": 3,
               "early": 5,
               "proving": 35,
-              "notworking": 3,
-              "nospend": 1
+              "notworking": 3
             }
           },
           {
@@ -8429,13 +8261,12 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83d\udc55",
             "order": 3015,
-            "spend": 114788.93,
+            "spend": 114797.02,
             "counts": {
               "scaling": 4,
               "early": 4,
               "proving": 21,
-              "notworking": 1,
-              "nospend": 1
+              "notworking": 1
             }
           },
           {
@@ -8443,7 +8274,7 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83c\udfc3",
             "order": 3016,
-            "spend": 55239.58,
+            "spend": 55239.66,
             "counts": {
               "scaling": 1,
               "early": 1,
@@ -8456,7 +8287,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83c\udf21\ufe0f",
             "order": 2002,
-            "spend": 561541.82,
+            "spend": 561589.8,
             "counts": {
               "scaling": 3,
               "early": 3,
@@ -8469,13 +8300,12 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc55",
             "order": 2008,
-            "spend": 127889.07,
+            "spend": 127893.8,
             "counts": {
               "scaling": 4,
               "early": 5,
               "proving": 25,
-              "notworking": 0,
-              "nospend": 4
+              "notworking": 0
             }
           },
           {
@@ -8483,7 +8313,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc56",
             "order": 2001,
-            "spend": 25116.29,
+            "spend": 25116.47,
             "counts": {
               "scaling": 1,
               "early": 3,
@@ -8496,13 +8326,12 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\udde3",
             "order": 2009,
-            "spend": 185032.98,
+            "spend": 185039.87,
             "counts": {
               "scaling": 4,
               "early": 4,
               "proving": 27,
-              "notworking": 0,
-              "nospend": 4
+              "notworking": 0
             }
           },
           {
@@ -8510,7 +8339,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udee2\ufe0f",
             "order": 2000,
-            "spend": 105107.0,
+            "spend": 105107.58,
             "counts": {
               "scaling": 2,
               "early": 6,
@@ -8523,13 +8352,12 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udfe5",
             "order": 2005,
-            "spend": 42580.88,
+            "spend": 42581.04,
             "counts": {
               "scaling": 1,
               "early": 7,
               "proving": 24,
-              "notworking": 0,
-              "nospend": 3
+              "notworking": 0
             }
           },
           {
@@ -8537,7 +8365,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc54",
             "order": 2006,
-            "spend": 172159.76,
+            "spend": 172189.75,
             "counts": {
               "scaling": 3,
               "early": 11,
@@ -8562,8 +8390,8 @@
           "totals": {
             "ads": 2265,
             "winners": 238,
-            "spend": 17850360.89,
-            "roas": 2.6264,
+            "spend": 17850864.37,
+            "roas": 2.6263,
             "win_rate": 0.1051,
             "matched_ads": 1707,
             "matched_winners": 189,
@@ -8577,7 +8405,7 @@
                 "ads": 1127,
                 "winners": 137,
                 "win_rate": 0.1216,
-                "spend": 10478246.69,
+                "spend": 10478502.73,
                 "roas": 2.6613,
                 "share_winners": 0.5756
               },
@@ -8586,7 +8414,7 @@
                 "ads": 360,
                 "winners": 36,
                 "win_rate": 0.1,
-                "spend": 2541980.2,
+                "spend": 2542059.67,
                 "roas": 2.4293,
                 "share_winners": 0.1513
               },
@@ -8595,8 +8423,8 @@
                 "ads": 103,
                 "winners": 8,
                 "win_rate": 0.0777,
-                "spend": 756892.37,
-                "roas": 2.2008,
+                "spend": 756970.77,
+                "roas": 2.2005,
                 "share_winners": 0.0336
               },
               {
@@ -8604,7 +8432,7 @@
                 "ads": 77,
                 "winners": 8,
                 "win_rate": 0.1039,
-                "spend": 453421.38,
+                "spend": 453425.17,
                 "roas": 2.4009,
                 "share_winners": 0.0336
               },
@@ -8649,7 +8477,7 @@
                 "ads": 19,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 13478.04,
+                "spend": 13478.31,
                 "roas": 3.4637,
                 "share_winners": 0.0
               },
@@ -8658,7 +8486,7 @@
                 "ads": 558,
                 "winners": 49,
                 "win_rate": 0.0878,
-                "spend": 3591714.44,
+                "spend": 3591799.95,
                 "roas": 2.7833,
                 "share_winners": 0.2059
               }
@@ -8669,7 +8497,7 @@
                 "ads": 687,
                 "winners": 80,
                 "win_rate": 0.1164,
-                "spend": 7542501.97,
+                "spend": 7542590.21,
                 "roas": 2.6504,
                 "share_winners": 0.3361
               },
@@ -8678,8 +8506,8 @@
                 "ads": 443,
                 "winners": 51,
                 "win_rate": 0.1151,
-                "spend": 2741546.69,
-                "roas": 2.6468,
+                "spend": 2741712.52,
+                "roas": 2.6466,
                 "share_winners": 0.2143
               },
               {
@@ -8687,8 +8515,8 @@
                 "ads": 401,
                 "winners": 41,
                 "win_rate": 0.1022,
-                "spend": 3023612.75,
-                "roas": 2.3975,
+                "spend": 3023758.95,
+                "roas": 2.3974,
                 "share_winners": 0.1723
               },
               {
@@ -8696,8 +8524,8 @@
                 "ads": 41,
                 "winners": 5,
                 "win_rate": 0.122,
-                "spend": 330270.36,
-                "roas": 2.228,
+                "spend": 330273.95,
+                "roas": 2.2279,
                 "share_winners": 0.021
               },
               {
@@ -8705,8 +8533,8 @@
                 "ads": 26,
                 "winners": 5,
                 "win_rate": 0.1923,
-                "spend": 219081.22,
-                "roas": 2.6992,
+                "spend": 219089.21,
+                "roas": 2.6991,
                 "share_winners": 0.021
               },
               {
@@ -8714,7 +8542,7 @@
                 "ads": 23,
                 "winners": 3,
                 "win_rate": 0.1304,
-                "spend": 179491.22,
+                "spend": 179491.54,
                 "roas": 2.6373,
                 "share_winners": 0.0126
               },
@@ -8732,7 +8560,7 @@
                 "ads": 43,
                 "winners": 1,
                 "win_rate": 0.0233,
-                "spend": 57962.46,
+                "spend": 57963.2,
                 "roas": 3.2648,
                 "share_winners": 0.0042
               },
@@ -8741,8 +8569,8 @@
                 "ads": 4,
                 "winners": 1,
                 "win_rate": 0.25,
-                "spend": 23847.51,
-                "roas": 1.706,
+                "spend": 23851.8,
+                "roas": 1.7057,
                 "share_winners": 0.0042
               },
               {
@@ -8750,8 +8578,8 @@
                 "ads": 6,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 2918.26,
-                "roas": 4.8064,
+                "spend": 2918.76,
+                "roas": 4.8056,
                 "share_winners": 0.0
               },
               {
@@ -8768,8 +8596,8 @@
                 "ads": 23,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 14311.29,
-                "roas": 3.5202,
+                "spend": 14311.56,
+                "roas": 3.5201,
                 "share_winners": 0.0
               },
               {
@@ -8777,7 +8605,7 @@
                 "ads": 558,
                 "winners": 49,
                 "win_rate": 0.0878,
-                "spend": 3591714.44,
+                "spend": 3591799.95,
                 "roas": 2.7833,
                 "share_winners": 0.2059
               }
@@ -8788,8 +8616,8 @@
                 "ads": 594,
                 "winners": 57,
                 "win_rate": 0.096,
-                "spend": 3449366.05,
-                "roas": 2.6965,
+                "spend": 3449608.73,
+                "roas": 2.6963,
                 "share_winners": 0.2395
               },
               {
@@ -8797,7 +8625,7 @@
                 "ads": 181,
                 "winners": 42,
                 "win_rate": 0.232,
-                "spend": 5324205.85,
+                "spend": 5324274.15,
                 "roas": 2.4318,
                 "share_winners": 0.1765
               },
@@ -8806,7 +8634,7 @@
                 "ads": 248,
                 "winners": 24,
                 "win_rate": 0.0968,
-                "spend": 1458414.93,
+                "spend": 1458449.14,
                 "roas": 2.8517,
                 "share_winners": 0.1008
               },
@@ -8815,7 +8643,7 @@
                 "ads": 217,
                 "winners": 18,
                 "win_rate": 0.0829,
-                "spend": 943855.74,
+                "spend": 943864.41,
                 "roas": 2.9038,
                 "share_winners": 0.0756
               },
@@ -8824,7 +8652,7 @@
                 "ads": 143,
                 "winners": 15,
                 "win_rate": 0.1049,
-                "spend": 648607.09,
+                "spend": 648618.27,
                 "roas": 2.6949,
                 "share_winners": 0.063
               },
@@ -8833,7 +8661,7 @@
                 "ads": 148,
                 "winners": 12,
                 "win_rate": 0.0811,
-                "spend": 741442.7,
+                "spend": 741444.14,
                 "roas": 2.7644,
                 "share_winners": 0.0504
               },
@@ -8842,7 +8670,7 @@
                 "ads": 50,
                 "winners": 10,
                 "win_rate": 0.2,
-                "spend": 763326.09,
+                "spend": 763328.14,
                 "roas": 2.4451,
                 "share_winners": 0.042
               },
@@ -8851,8 +8679,8 @@
                 "ads": 37,
                 "winners": 7,
                 "win_rate": 0.1892,
-                "spend": 714471.12,
-                "roas": 2.0288,
+                "spend": 714520.06,
+                "roas": 2.0287,
                 "share_winners": 0.0294
               },
               {
@@ -8860,7 +8688,7 @@
                 "ads": 59,
                 "winners": 4,
                 "win_rate": 0.0678,
-                "spend": 192901.46,
+                "spend": 192901.69,
                 "roas": 2.895,
                 "share_winners": 0.0168
               },
@@ -8878,8 +8706,8 @@
                 "ads": 28,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 17522.43,
-                "roas": 3.1109,
+                "spend": 17522.7,
+                "roas": 3.1108,
                 "share_winners": 0.0
               },
               {
@@ -8887,7 +8715,7 @@
                 "ads": 558,
                 "winners": 49,
                 "win_rate": 0.0878,
-                "spend": 3591714.44,
+                "spend": 3591799.95,
                 "roas": 2.7833,
                 "share_winners": 0.2059
               }
@@ -8898,8 +8726,8 @@
                 "ads": 212,
                 "winners": 45,
                 "win_rate": 0.2123,
-                "spend": 5536454.13,
-                "roas": 2.4378,
+                "spend": 5536527.87,
+                "roas": 2.4377,
                 "share_winners": 0.1891
               },
               {
@@ -8907,7 +8735,7 @@
                 "ads": 233,
                 "winners": 27,
                 "win_rate": 0.1159,
-                "spend": 1622568.42,
+                "spend": 1622594.79,
                 "roas": 2.6706,
                 "share_winners": 0.1134
               },
@@ -8916,7 +8744,7 @@
                 "ads": 87,
                 "winners": 12,
                 "win_rate": 0.1379,
-                "spend": 708893.37,
+                "spend": 708896.23,
                 "roas": 2.9777,
                 "share_winners": 0.0504
               },
@@ -8925,7 +8753,7 @@
                 "ads": 157,
                 "winners": 11,
                 "win_rate": 0.0701,
-                "spend": 529286.53,
+                "spend": 529290.7,
                 "roas": 2.8669,
                 "share_winners": 0.0462
               },
@@ -8934,8 +8762,8 @@
                 "ads": 56,
                 "winners": 6,
                 "win_rate": 0.1071,
-                "spend": 579848.06,
-                "roas": 2.6469,
+                "spend": 579884.67,
+                "roas": 2.6467,
                 "share_winners": 0.0252
               },
               {
@@ -8943,8 +8771,8 @@
                 "ads": 88,
                 "winners": 5,
                 "win_rate": 0.0568,
-                "spend": 504161.86,
-                "roas": 2.4856,
+                "spend": 504212.39,
+                "roas": 2.4853,
                 "share_winners": 0.021
               },
               {
@@ -8952,7 +8780,7 @@
                 "ads": 22,
                 "winners": 3,
                 "win_rate": 0.1364,
-                "spend": 129979.02,
+                "spend": 129979.35,
                 "roas": 3.2776,
                 "share_winners": 0.0126
               },
@@ -8961,7 +8789,7 @@
                 "ads": 37,
                 "winners": 2,
                 "win_rate": 0.0541,
-                "spend": 112828.27,
+                "spend": 112829.27,
                 "roas": 2.3373,
                 "share_winners": 0.0084
               },
@@ -8970,8 +8798,8 @@
                 "ads": 8,
                 "winners": 2,
                 "win_rate": 0.25,
-                "spend": 86769.45,
-                "roas": 2.6818,
+                "spend": 86771.76,
+                "roas": 2.6817,
                 "share_winners": 0.0084
               },
               {
@@ -8988,8 +8816,8 @@
                 "ads": 806,
                 "winners": 76,
                 "win_rate": 0.0943,
-                "spend": 4446760.28,
-                "roas": 2.6342,
+                "spend": 4446980.33,
+                "roas": 2.6341,
                 "share_winners": 0.3193
               },
               {
@@ -8997,7 +8825,7 @@
                 "ads": 558,
                 "winners": 49,
                 "win_rate": 0.0878,
-                "spend": 3591714.44,
+                "spend": 3591799.95,
                 "roas": 2.7833,
                 "share_winners": 0.2059
               }
@@ -9006,42 +8834,42 @@
           "unmatched": [
             {
               "ad_name": "July2026-Sameer-Sharma-Cotton-Underwear-5-at-999-Video-UGC-Dark-Post-DIY-09.07.2026",
-              "spend": 411598.36,
+              "spend": 411604.51,
               "roas": 2.42
             },
             {
               "ad_name": "June2026-Unboxing-2-Cotton-Underwear-5-at-999-Video-PLV-Adley-25.06.2026",
-              "spend": 328337.61,
+              "spend": 328337.89,
               "roas": 2.75
             },
             {
               "ad_name": "July2026-Vansh-Mehra-Cotton-Underwear-5-at-999-Video-UGC-PA-Barter-14.07.2026",
-              "spend": 285839.31,
+              "spend": 285844.98,
               "roas": 2.75
             },
             {
               "ad_name": "July2026-Akshar-Mevawala-Cotton-Underwear-5-at-999-Video-UGC-PA-Barter-14.07.2026",
-              "spend": 242326.34,
+              "spend": 242340.46,
               "roas": 2.84
             },
             {
               "ad_name": "July2026-Mittal-Sab-Invisible-Vest-MB23-Video-UGC-PA-Direct-24.07.2026",
-              "spend": 214924.68,
+              "spend": 214930.48,
               "roas": 2.21
             },
             {
               "ad_name": "Apr2026-Two-Way-Loop-Cotton-Underwear-5-at-999-Video-Lofi-MMM-23s-28.04.2026",
-              "spend": 172974.14,
+              "spend": 172978.09,
               "roas": 2.6
             },
             {
               "ad_name": "June2026-Heth-K-Chambray-Pyjama-CR46-Video-UGC-Dark-Post-DIY-29.06.2026",
-              "spend": 152882.9,
+              "spend": 152894.43,
               "roas": 2.27
             },
             {
               "ad_name": "Apr2026-Bhabik-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-25.04.2026",
-              "spend": 150627.01,
+              "spend": 150629.28,
               "roas": 3.12
             }
           ],
@@ -9052,8 +8880,8 @@
           "totals": {
             "ads": 654,
             "winners": 75,
-            "spend": 4814040.61,
-            "roas": 2.5271,
+            "spend": 4814225.73,
+            "roas": 2.527,
             "win_rate": 0.1147,
             "matched_ads": 645,
             "matched_winners": 72,
@@ -9067,7 +8895,7 @@
                 "ads": 400,
                 "winners": 48,
                 "win_rate": 0.12,
-                "spend": 2895629.63,
+                "spend": 2895679.89,
                 "roas": 2.6949,
                 "share_winners": 0.64
               },
@@ -9076,8 +8904,8 @@
                 "ads": 178,
                 "winners": 15,
                 "win_rate": 0.0843,
-                "spend": 955855.65,
-                "roas": 2.4768,
+                "spend": 955909.22,
+                "roas": 2.4766,
                 "share_winners": 0.2
               },
               {
@@ -9085,8 +8913,8 @@
                 "ads": 36,
                 "winners": 6,
                 "win_rate": 0.1667,
-                "spend": 624352.39,
-                "roas": 2.0987,
+                "spend": 624429.76,
+                "roas": 2.0984,
                 "share_winners": 0.08
               },
               {
@@ -9094,7 +8922,7 @@
                 "ads": 16,
                 "winners": 3,
                 "win_rate": 0.1875,
-                "spend": 224985.06,
+                "spend": 224988.45,
                 "roas": 2.0322,
                 "share_winners": 0.04
               },
@@ -9112,7 +8940,7 @@
                 "ads": 11,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 12114.46,
+                "spend": 12114.73,
                 "roas": 3.0717,
                 "share_winners": 0.0
               },
@@ -9121,7 +8949,7 @@
                 "ads": 9,
                 "winners": 3,
                 "win_rate": 0.3333,
-                "spend": 89375.33,
+                "spend": 89375.59,
                 "roas": 1.9814,
                 "share_winners": 0.04
               }
@@ -9132,7 +8960,7 @@
                 "ads": 204,
                 "winners": 27,
                 "win_rate": 0.1324,
-                "spend": 1642104.49,
+                "spend": 1642120.05,
                 "roas": 2.7649,
                 "share_winners": 0.36
               },
@@ -9141,8 +8969,8 @@
                 "ads": 206,
                 "winners": 22,
                 "win_rate": 0.1068,
-                "spend": 1321847.96,
-                "roas": 2.6253,
+                "spend": 1321886.24,
+                "roas": 2.6252,
                 "share_winners": 0.2933
               },
               {
@@ -9150,8 +8978,8 @@
                 "ads": 182,
                 "winners": 18,
                 "win_rate": 0.0989,
-                "spend": 1462875.52,
-                "roas": 2.2848,
+                "spend": 1462998.32,
+                "roas": 2.2846,
                 "share_winners": 0.24
               },
               {
@@ -9159,8 +8987,8 @@
                 "ads": 29,
                 "winners": 3,
                 "win_rate": 0.1034,
-                "spend": 233904.68,
-                "roas": 1.9994,
+                "spend": 233908.07,
+                "roas": 1.9993,
                 "share_winners": 0.04
               },
               {
@@ -9168,8 +8996,8 @@
                 "ads": 1,
                 "winners": 1,
                 "win_rate": 1.0,
-                "spend": 23834.28,
-                "roas": 1.7069,
+                "spend": 23838.57,
+                "roas": 1.7066,
                 "share_winners": 0.0133
               },
               {
@@ -9186,7 +9014,7 @@
                 "ads": 5,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 13367.02,
+                "spend": 13367.29,
                 "roas": 2.248,
                 "share_winners": 0.0
               },
@@ -9213,7 +9041,7 @@
                 "ads": 11,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 12114.46,
+                "spend": 12114.73,
                 "roas": 3.0717,
                 "share_winners": 0.0
               },
@@ -9222,7 +9050,7 @@
                 "ads": 9,
                 "winners": 3,
                 "win_rate": 0.3333,
-                "spend": 89375.33,
+                "spend": 89375.59,
                 "roas": 1.9814,
                 "share_winners": 0.04
               }
@@ -9233,8 +9061,8 @@
                 "ads": 325,
                 "winners": 29,
                 "win_rate": 0.0892,
-                "spend": 1436754.53,
-                "roas": 2.8364,
+                "spend": 1436848.61,
+                "roas": 2.8362,
                 "share_winners": 0.3867
               },
               {
@@ -9242,8 +9070,8 @@
                 "ads": 44,
                 "winners": 9,
                 "win_rate": 0.2045,
-                "spend": 664730.35,
-                "roas": 2.0232,
+                "spend": 664740.0,
+                "roas": 2.0231,
                 "share_winners": 0.12
               },
               {
@@ -9251,7 +9079,7 @@
                 "ads": 35,
                 "winners": 9,
                 "win_rate": 0.2571,
-                "spend": 664423.17,
+                "spend": 664424.84,
                 "roas": 2.5405,
                 "share_winners": 0.12
               },
@@ -9260,8 +9088,8 @@
                 "ads": 79,
                 "winners": 7,
                 "win_rate": 0.0886,
-                "spend": 587497.4,
-                "roas": 2.5921,
+                "spend": 587511.93,
+                "roas": 2.592,
                 "share_winners": 0.0933
               },
               {
@@ -9269,8 +9097,8 @@
                 "ads": 44,
                 "winners": 5,
                 "win_rate": 0.1136,
-                "spend": 327571.15,
-                "roas": 2.4866,
+                "spend": 327581.85,
+                "roas": 2.4865,
                 "share_winners": 0.0667
               },
               {
@@ -9278,8 +9106,8 @@
                 "ads": 7,
                 "winners": 4,
                 "win_rate": 0.5714,
-                "spend": 590433.3,
-                "roas": 1.9811,
+                "spend": 590481.21,
+                "roas": 1.9809,
                 "share_winners": 0.0533
               },
               {
@@ -9287,8 +9115,8 @@
                 "ads": 59,
                 "winners": 4,
                 "win_rate": 0.0678,
-                "spend": 247716.7,
-                "roas": 3.0033,
+                "spend": 247721.98,
+                "roas": 3.0032,
                 "share_winners": 0.0533
               },
               {
@@ -9296,7 +9124,7 @@
                 "ads": 24,
                 "winners": 3,
                 "win_rate": 0.125,
-                "spend": 57402.67,
+                "spend": 57402.8,
                 "roas": 3.1705,
                 "share_winners": 0.04
               },
@@ -9305,7 +9133,7 @@
                 "ads": 13,
                 "winners": 2,
                 "win_rate": 0.1538,
-                "spend": 131292.58,
+                "spend": 131293.22,
                 "roas": 3.0837,
                 "share_winners": 0.0267
               },
@@ -9323,7 +9151,7 @@
                 "ads": 14,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 15318.65,
+                "spend": 15318.92,
                 "roas": 2.6989,
                 "share_winners": 0.0
               },
@@ -9332,7 +9160,7 @@
                 "ads": 9,
                 "winners": 3,
                 "win_rate": 0.3333,
-                "spend": 89375.33,
+                "spend": 89375.59,
                 "roas": 1.9814,
                 "share_winners": 0.04
               }
@@ -9343,7 +9171,7 @@
                 "ads": 68,
                 "winners": 13,
                 "win_rate": 0.1912,
-                "spend": 653277.64,
+                "spend": 653286.02,
                 "roas": 2.7196,
                 "share_winners": 0.1733
               },
@@ -9352,7 +9180,7 @@
                 "ads": 58,
                 "winners": 10,
                 "win_rate": 0.1724,
-                "spend": 721056.4,
+                "spend": 721069.57,
                 "roas": 2.0703,
                 "share_winners": 0.1333
               },
@@ -9361,8 +9189,8 @@
                 "ads": 23,
                 "winners": 6,
                 "win_rate": 0.2609,
-                "spend": 507030.64,
-                "roas": 2.8354,
+                "spend": 507033.33,
+                "roas": 2.8353,
                 "share_winners": 0.08
               },
               {
@@ -9370,8 +9198,8 @@
                 "ads": 49,
                 "winners": 4,
                 "win_rate": 0.0816,
-                "spend": 428188.35,
-                "roas": 2.3962,
+                "spend": 428238.88,
+                "roas": 2.396,
                 "share_winners": 0.0533
               },
               {
@@ -9379,8 +9207,8 @@
                 "ads": 28,
                 "winners": 4,
                 "win_rate": 0.1429,
-                "spend": 338399.01,
-                "roas": 2.0917,
+                "spend": 338434.65,
+                "roas": 2.0914,
                 "share_winners": 0.0533
               },
               {
@@ -9388,7 +9216,7 @@
                 "ads": 35,
                 "winners": 4,
                 "win_rate": 0.1143,
-                "spend": 148442.66,
+                "spend": 148443.81,
                 "roas": 3.2137,
                 "share_winners": 0.0533
               },
@@ -9397,7 +9225,7 @@
                 "ads": 5,
                 "winners": 1,
                 "win_rate": 0.2,
-                "spend": 90299.47,
+                "spend": 90299.97,
                 "roas": 1.9025,
                 "share_winners": 0.0133
               },
@@ -9406,8 +9234,8 @@
                 "ads": 3,
                 "winners": 1,
                 "win_rate": 0.3333,
-                "spend": 44101.1,
-                "roas": 2.1457,
+                "spend": 44103.41,
+                "roas": 2.1456,
                 "share_winners": 0.0133
               },
               {
@@ -9415,8 +9243,8 @@
                 "ads": 2,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 1500.56,
-                "roas": 1.4701,
+                "spend": 1500.68,
+                "roas": 1.47,
                 "share_winners": 0.0
               },
               {
@@ -9424,8 +9252,8 @@
                 "ads": 374,
                 "winners": 29,
                 "win_rate": 0.0775,
-                "spend": 1792369.45,
-                "roas": 2.6791,
+                "spend": 1792439.82,
+                "roas": 2.679,
                 "share_winners": 0.3867
               },
               {
@@ -9433,7 +9261,7 @@
                 "ads": 9,
                 "winners": 3,
                 "win_rate": 0.3333,
-                "spend": 89375.33,
+                "spend": 89375.59,
                 "roas": 1.9814,
                 "share_winners": 0.04
               }
@@ -9475,7 +9303,7 @@
       "analysis": {
         "summary": {
           "spending": 629,
-          "spend": 8808830.12,
+          "spend": 8808989.52,
           "share": 23.4,
           "roas": 2.664,
           "older_roas": 2.6183,
@@ -9484,15 +9312,15 @@
         "tiers": {
           "scaling": {
             "count": 92,
-            "spend": 7150392.2
+            "spend": 7150541.93
           },
           "early": {
             "count": 109,
-            "spend": 454169.11
+            "spend": 454172.1
           },
           "proving": {
             "count": 414,
-            "spend": 1034769.12
+            "spend": 1034775.8
           },
           "notworking": {
             "count": 14,
@@ -9507,7 +9335,7 @@
             "order": 11,
             "uploaded": null,
             "spending": 96,
-            "spend": 2619234.79,
+            "spend": 2619248.19,
             "roas": 2.4314,
             "older_roas": 2.4553,
             "best": {
@@ -9529,9 +9357,9 @@
             "order": 1012,
             "uploaded": null,
             "spending": 99,
-            "spend": 1485310.18,
+            "spend": 1485310.76,
             "roas": 2.7112,
-            "older_roas": 2.919,
+            "older_roas": 2.9189,
             "best": {
               "roas": 6.9621,
               "ad_name": "October2026-Chandrashekhar-Rajput-Dussera-Hindi-Regional-Invisible-Vest-MB23-Video-UGC-PA-Direct-06.10.2026",
@@ -9551,8 +9379,8 @@
             "order": 2007,
             "uploaded": null,
             "spending": 52,
-            "spend": 1326366.89,
-            "roas": 2.3889,
+            "spend": 1326491.8,
+            "roas": 2.3887,
             "older_roas": null,
             "best": {
               "roas": 7.2282,
@@ -9573,7 +9401,7 @@
             "order": 2003,
             "uploaded": null,
             "spending": 81,
-            "spend": 946416.93,
+            "spend": 946417.82,
             "roas": 2.6304,
             "older_roas": 4.4727,
             "best": {
@@ -9595,16 +9423,16 @@
             "order": 2004,
             "uploaded": null,
             "spending": 22,
-            "spend": 507510.79,
+            "spend": 507512.91,
             "roas": 2.5894,
             "older_roas": 4.0372,
             "best": {
-              "roas": 5.0643,
+              "roas": 5.064,
               "ad_name": "October2026-Kanishk-Polar-Fleece-Jacket-MB13-Video-UGC-Dark-Post-Kofluence-14.10.2026",
-              "spend": 17570.11
+              "spend": 17570.96
             },
             "best_all": {
-              "roas": 5.0643,
+              "roas": 5.064,
               "label": "OCT",
               "is_view": true,
               "ad_name": "October2026-Kanishk-Polar-Fleece-Jacket-MB13-Video-UGC-Dark-Post-Kofluence-14.10.2026"
@@ -9617,8 +9445,8 @@
             "order": 3015,
             "uploaded": null,
             "spending": 45,
-            "spend": 416377.78,
-            "roas": 2.6944,
+            "spend": 416385.08,
+            "roas": 2.6943,
             "older_roas": 3.1638,
             "best": {
               "roas": 6.2085,
@@ -9639,7 +9467,7 @@
             "order": 1013,
             "uploaded": null,
             "spending": 22,
-            "spend": 299362.94,
+            "spend": 299363.91,
             "roas": 3.6255,
             "older_roas": 3.7289,
             "best": {
@@ -9661,7 +9489,7 @@
             "order": 2002,
             "uploaded": null,
             "spending": 13,
-            "spend": 258528.91,
+            "spend": 258534.5,
             "roas": 2.5908,
             "older_roas": null,
             "best": {
@@ -9670,7 +9498,7 @@
               "spend": 11835.47
             },
             "best_all": {
-              "roas": 4.4028,
+              "roas": 4.4027,
               "label": "NOV",
               "is_view": false,
               "ad_name": "November2026-Shubhajeet-Thermal-R68-Video-UGC-PA-V1-CoreSmart-11.11.2026"
@@ -9705,9 +9533,9 @@
             "order": 3016,
             "uploaded": null,
             "spending": 48,
-            "spend": 214323.51,
-            "roas": 3.7915,
-            "older_roas": 3.2379,
+            "spend": 214326.91,
+            "roas": 3.7914,
+            "older_roas": 3.2378,
             "best": {
               "roas": 10.2354,
               "ad_name": "October2026-Piyush-G-Women-Dress-Trend-Active-Raglan-Tshirt-AT01-Video-UGC-PA-Direct-23.10.2026",
@@ -9727,7 +9555,7 @@
             "order": 4020,
             "uploaded": null,
             "spending": 20,
-            "spend": 181739.13,
+            "spend": 181739.2,
             "roas": 4.2543,
             "older_roas": 3.7432,
             "best": {
@@ -9749,7 +9577,7 @@
             "order": 4019,
             "uploaded": null,
             "spending": 54,
-            "spend": 165772.49,
+            "spend": 165772.63,
             "roas": 3.8585,
             "older_roas": 2.6357,
             "best": {
@@ -9758,7 +9586,7 @@
               "spend": 1420.07
             },
             "best_all": {
-              "roas": 5.7062,
+              "roas": 5.7061,
               "label": "OCT",
               "is_view": true,
               "ad_name": "October2026-Anwar-Chambray-Pyjama-CR46-Video-UGC-PA-Direct-07.10.2026"
@@ -9771,7 +9599,7 @@
             "order": 3017,
             "uploaded": null,
             "spending": 48,
-            "spend": 99624.69,
+            "spend": 99624.72,
             "roas": 3.1976,
             "older_roas": 3.3221,
             "best": {
@@ -9802,7 +9630,7 @@
               "spend": 8815.39
             },
             "best_all": {
-              "roas": 4.5271,
+              "roas": 4.527,
               "label": "NOV",
               "is_view": false,
               "ad_name": "November2026-Vishal-Hakki-Denim-Pants-MB37-Video-UGC-PA-Direct-04.11.2026"
@@ -9824,7 +9652,7 @@
               "spend": 16111.74
             },
             "best_all": {
-              "roas": 5.0754,
+              "roas": 5.0741,
               "label": "NOV",
               "is_view": false,
               "ad_name": "November2026-Sweater-Weather-In-XYXX-Half-Zip-Sweater-MB48-Video-PLV-Abhay-16.11.2026"
@@ -9882,7 +9710,7 @@
             "purchases": 16,
             "category": "Pyjamas & Easy Pants",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIL7g76AEYlAgW82USUH-atoZ1p52SzNwmaOHoqy3Ob7v4GhcrIxg3qV4LXjxPqSr2Ry6wt3BKVdT2kTw3WLhG7jfCPkHpg-DC916UyEkdWDvmVQExqmO3jO7hR2BfR3Vv1jwvLsfgsf3NtevZVPjaP3eaLXlFbCHkGdK8l4JtszkSH4AJsFifaFW6k1CqzWskT9SNBuNxJ4MYML9vVIvqt2pNxBpFi-ZGZsug3aLvWEJUYHVXrTg2CMikRNZb7lPPlV11iCm2V9lTtdLdHz38QjKJPlAG8SR7tbTQ2oUgFStuFGPBXbcNfsUMCrq0Yo3d0Kb0ASx0IgkJVtZZr_l7uvtDlFiQ7-oHGDtlOS6n1nADwXxU8b9jckyFcUZEMJMWZlT8NYYtZhMwqR6b0_9eq26mEfxcyppFzbY_LD8cGVJwGk7UV8ybplmgLbz0jZuM&t=AQIeh27LtIv7EgSQ_B0"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLcSIVF1IWV7a5bW5HUYgBmdMl6a1oMgMlrlEStWsFlwBj3wJk9a6I3yIgZ_T8HyMOdeuzlMdLLk_cX3FUMTOQcQwdnUnuGFfhsfiw6NVS2rMEjwyqYvQWxt96L3EygX79-3n4vvVWh6TlB1d__dU0U4MZpx96seZkLO5q_R8U63Jqu955Y_Udo_QdB2jGjTwWwfRFkCsFLA-HDcEw9LzvU4n_4A7wfm0VopzrupwlxQ1GK3geyYv_uMwe4MMX5zHICWQcvJ7cyp3WYcfhUMgOYxcyuOm9yp2XAj5xVMG0LY09aNhnMtLhT0M3qJsW8mL0PdhdEbwG_ejZD8iS3uyuzoH90T1uTizypNF5BN9h9hqDbjjZ_oqCs1KqK4YaLt306NFXHcL4ZkioVaMtMTLECfKgcY7PYx5-t3vQRS_cATvG1jDlub5p5yZX2KsEI2JE&t=AQKcJ3i2WmSt64uP81g"
           },
           {
             "ad_id": "120250085081180298",
@@ -9894,7 +9722,7 @@
             "purchases": 10,
             "category": "Active Tees",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIBBY2yCAiWlhsKjhxMcSQPulUrb1sP0s8-2zFTVLl6ROi3lst_7nKOT3pXdu8PW7NLhpZb4GXQBKtxVmdjR10VCCmdeKt08zEzX13eGR99aeoTvVTajTKJ73bbvwOxrHMIM6DP6jTkpB7rFThlJEuaXu_hW9lsAvwX1MTbGyJGH9OcHiLbPzo9puuyG0-DnY42ziYJzICzTkYvqEtPt3e53W71n2hupRyzHzR9SFxP6NQwfUr2wuahzJz5JVPapHGDZSX-mF9PFcVVkkm8oQsHjLdFy8aXeib7Rf153iIPRMl3--KQqFILBjlaiqOUUI4uCW_eqm4s0bZmwiUKbARzdhuJJIaRzFV1PKuBoOEOKZu6kXpyl3zIMwyJdHDNXdsVaiHLeJTKe_aao5qw4_N6-CCzObWrBB1vQf8HoivNYsPhB4Qmgxofjuxd_A9JqI8&t=AQI2btkCTH369A5J_Qo"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLdwAfEPQ_X0ztYIIU3EOcUbcJUUkbCat5iGhyNx5DLFELWFSUdXkNcb1PcZU1gIA6ynT27Saun4WxGe-3jvAGOL4C-MlEPd2Ai0s2TZObw7VpQ-qNMu25cZ6N3UKfNNmcjzGDhgKT8IV5Tn8YVZWN7nEHukSIUON66eXa7TR8dyGVIJYOv2O3ila8vKgFoTWz46M1Nxt8eaPYFzsvS9BoCbngUDdUb-dd2K9SnU0oDItUo1B8GOyYLhJc7Q_MmQGLS8Vn4TuOaZmtrXroTEqp7pSI9TVzCVYgR35ktHxy4JoeQ0F1FmSjhWpB9l_bY2Jplj-FUuWRsQdcujGhqKBrrYBTxIiCG1bedqeeJulBlOTV5RMlk07rItvd3ZwmuVhVCKlL8nAMBjtTXKCDtWZURajGH2k3XYljbHy8YzP7DdXfhrwIWkpnlxEK9k3zSl8M&t=AQLcW_1swQfJZmKlMc4"
           },
           {
             "ad_id": "120249903466670298",
@@ -9906,7 +9734,7 @@
             "purchases": 2,
             "category": "5@999 Cotton UW",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJw6gMEPaIzY6Jb3M18neXz2CO7KFtrzhItH6TUa3AGV7zEXJQNmP69p2iLggHzL5Lz_ssCtFPiQNth-RcxsXS6pa0dLlzAdrLnfLrtqD2HZQEh1xPVEZikrISPRaF2WlbqDaNlknYUpkuX1PQ7sIhy5dzB3sckFBZVSDM41olTNVNxXSxlgjtir5XFczlJ1fb4FUn2EV2elbl_CgRPFeFoFc0_e6dIIU-UCYCaKFjZryfeYPP6UMrwC_pYR_jK6N77psFVtI11LAh1PJLuPlD8mXKgiyqJmryYCgmMwNfH-pc0BYMLGRY5MjItXzJdh8H_rNkDxlXU4nkzyWjNWu5RaVaVSw2-KBKTJNYcyp03Mayxfe2lddtxeDst-9_sIm0rjBDDvj-ZGhDeHSr7JO7HcmSpK7LHIyYwwokIhiUlhdQISJhjjDTC9EX57YJmpWo&t=AQJ6v4fswsx6HT62XO8"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIYkobrMuDiKB1--uP8J5V2rmzom0OTaOK5dQyq-1-YYwEmrnysxX07UyMyHJgzivH1jAHcpVRWWpSw5LHsVflyQ-JepGRmlQClki1D_1e4CMOrbvo45GRWXfGO-WU95c4QIV6Vcv2bPpftasHXtVGu_HhYlW7ktEeCx0clMkIlx2T0K93aDJItEVliEphV2Kq_57tDtvReuFjy1j8nHN1C22LgkG25jj8-raCZBssdnLezAB0H_m1BBpvBNqZoRuvajJFoJYoJygO6tekhrhz72PV79QspwLGrl9VhmWupEiKLl4sPVOtetbfmnR6qBP9AXl1LOzTbYSZ9_vBcwLXSD0xWW2-s_JJWz8zD6wfF-Kr2PrPfRXuNIY9dcq6z6m4uJSngEhYerDzmfuOyU2RA2g0qY0Pm_WGFAIIUealX9YlCFV95XglMvqOrDTmFVpc&t=AQKzNkus_HdstV80MbE"
           },
           {
             "ad_id": "120249956376290298",
@@ -9918,7 +9746,7 @@
             "purchases": 10,
             "category": "Hoodies",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLyPHPyoDG3IGm7WjYcx3Fl5LMWO40FQ6YsSrT5MNz8l-sOKqXPB0CoedIDfvIMz6bVMnPe1Asw7YLuwiQvDIosHxgsrhdOk5svUjxqZpfB6c980ghgSiz7pT95zNQGZrH14PabRpKGjwoDtauiJbG3b8NCXY65jDg0i-BKIzx-E22dKFuR0sQfertMBlFYNOfRvtbfsXG-cc7agOln_k3LDr6D_nyebvamzYGKGCqo18gOUSR_IUhZCwTymNPwuCXKy1__RMJksFaNYnJXojHYLDoYY0hlaLi-XdHEp1K8ZK28S2LpUqRBWjtdrBzAxQvalAerJh6WTUfmN7QkIvtERQqj9PNUDhORWgMSEZYLJM0arMeemOkbbeyN3v088JDaHahLqirw-U0dIpjG0OoTotFyJKlfdTNYWr1LxFR6yJuX1YVmKeLMETMjj89QTfE&t=AQI_juDcBPSwnQihWDw"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJMTRVwV_pYROkLw3TixWufHa7T35xsYtzDAokWSAGH9G5LUINnZst3DbTsQLByKUxHNkVVuQ9gy-TTZkfhK95ab53pPqb5eWfUKMGzimUk_ZXqSWMDn_TTsDi-qwy_95u1TlJ_zKV-bfvjkZudUbwIVuKJS7wjIzKuDx8uzQGzPnAht1-9og2t6oxsMfHVENerK0wCFlqo7HfCriNZcI6GC-rk_4sqTR7SEBKX1yQFC1O5q6TEmRsdrpjISavNlUnOf_lBAeoYppPAY_rLrhhyDzPvc8EV5x59RbUyLkQhSuWzfdfNm3EX2NMZB0EIBEGVMlI1a3u7sVRpQt9DHk0Ax_tf1FI0sdwW6QDty5h_KjOT0D4LzfdwV2Aft4huQAekIBdJnuQxr5xbh4LYoBooUSB4-Ze3aZUHWnFoiCdvPYAmyOG7JzdqCNV3_K4cQd8&t=AQLESg4WVAE2j5ERVa0"
           },
           {
             "ad_id": "120249920289200298",
@@ -9930,7 +9758,7 @@
             "purchases": 23,
             "category": "Active Tees",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ1ceywmkE-eeseUIyvAp--VSFqEpP6bD3jBOCCBIwwyccZyJjL_gUoRHv3z-5upjG8XLQkpts-WcqRnqTus4aRVjTymnw81z9h791Bs6ZhlIy12L4h2Lbr58-jOrPjoYTvU2iySH7aXf44_PX61f-UF8mgRR6UT-cpAltP2mu_xLlNDwvOpdxJqfRbioJ4UJa9eZHuXispy6lkQSImPnn5yt8RsWBlAtjVAtRA86jaBQDZh8WSmXi4xras4yZVTamPSAC1rjasCowQDhmaivqkZhCuhFV7TBsyhdIO7UnijCWtZOycq4SY_BaiZ9JRBHVDYSlHMsgHbEld7Nq7fgTd0F1D3vSpIfs-SexCfONUHULvuR23vcFGB9Dc-dc-1VD0L1mKdIEQOkCTdIIDCkgvg-DC7zT3s9ohSm089MmZcKD9R2bgoLIXMSKrSq6rYfU&t=AQIkn8Bfx-N9PtlSTh4"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLPBmLu03DX4Fo7klmTWD87Kg2SQVtdFocnSrnUGoWjG-X9yR0WBDHygfDlg8qsm43uLciN1q1KJbrxugP9RQ10NEthSaFFyZw6xOBYMAuK8OUGRS46YKO3XqKHI2IVTn3DDJwQaDEZoRldC9cjLyujdZqtySSQ4S2YAPZVJpixwS2jJHt4l6v0ovk1F8-TRG_UD5j5_3SxKeuvhatt9spLU352LYm5Sm3pV4o-4syPUNruvVptgeFJY9PbiPFvYiSdSKWYSlj5fpomcxoui-YwWP7qMUi5vTZVUE5J8eAUYmCFc7UqkY_zHqPCF0vk0-rEbR26mforPeM5yBxNPWuJomaYsP1lglQy5pX4REJHklx6HJJPTxbjNWQuMVVvZgt74cCMKmfIKzkS1rIFv22vMR4FQvmScXccvqi9KH6ruRdNM_6H-37Z9ETwDGEXVro&t=AQI3PBZYnzNcWmbWsWM"
           },
           {
             "ad_id": "120249815693600298",
@@ -9942,7 +9770,7 @@
             "purchases": 15,
             "category": "Shapewear & Vest",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLbLSYsqgDYqLvfc3riqcNKbQOeapgmYi2yoIRWRUM-b7_2ExPyGITu4yCpnSx2NqAV3g-xWlIIpcvkF6870WqcJSAVxexl3NcbJGEXtg6MBjiWm6tHFqoJQuMttyB6vTGx49GwZvG2-____VuIFPzRUvos9XBW4vjnmzz50FSZCCq7xtxsSpMpQUBtbl1mcaHcHiq8I1SWl5soBRnFwHB3EyTfr7p5Ic8HStdr5SPFbq0fBGMQPH7kwYFuR2Ejl5SAl00jQO2gLP6Z4BUy1cZX6yCFZwNq3abHVGHxzxXtyRuIeI_3jDa2gY20IffsaBDIpcPlFk4dyGWRdkHHamo08XINlOcXQW-3C096RzjFbNim-U8794yJZJglpqmZlKPX8vOq01riFKvaylZPJo3iqJ43JcNZEDwBhwmU-TRagEQVCVgR8d9zQXLQXb5Eyzg&t=AQJyYpBPlkRaRlO2myo"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIVGSOJA3lCIa6Kg7GVxJBFjUOlLipoXPgntTOLalZ59zd-m2QH1oAgGCn58jMbT9rKFS7vG129zV6Kb3yjRud0m6Zf3NkTf4ZuI02xQRlRuDPZDkxMYzSl7SuQslj08G0pFxP5NN_-V_EeeiLzpxBDnDTA33Tov7ja0dUakaVcdC2tFHDBM4wElWIJjV5Ae1JRU51gXO8kPPw8j0xTIiBJG0zwgoOFmJqdZ2EN8TNtESWcYbGiqhNr63D1qaJ59IM1tUwROZa0RqUQhnPOlzpFPPVRkCDFcAZpgQH4LUT4LQqxkc35Pjk2ujxHpgIvcsvXd0HqhxQwHs7BZ7B9260wWtKfgIhZ2SZs0yMldHbqwmyBiOKIRxkTU_F75Y0xkqQHU7MygJjwb-ki3whOrbPWjh22TpExMlwvQTZmds9jKAiekgkCFHr5ySq5Mp8YSQY&t=AQLbjOiiYGkImRacaS0"
           }
         ],
         "decisions": [
@@ -10057,13 +9885,13 @@
             "tier": "notworking"
           }
         ],
-        "all_spend": 37591579.28,
+        "all_spend": 37592082.76,
         "tier_ads": {
           "scaling": [
             {
               "n": "October2026-Chandrashekar-Rajput-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-08.10.2026",
               "c": "5@999 Cotton UW",
-              "s": 803139,
+              "s": 803144,
               "r": 2.78,
               "u": 2219,
               "t": [
@@ -10115,7 +9943,7 @@
             {
               "n": "October2026-Kunal-Kenn-Supreme-Luxary-Modal-Underwear-Video-UGC-PA-Direct-12.10.2026",
               "c": "Modal / Tactel UW",
-              "s": 284731,
+              "s": 284732,
               "r": 3.65,
               "u": 1055,
               "t": [
@@ -10128,7 +9956,7 @@
             {
               "n": "October2026-Dilshad-Hoodie-CRW4-Video-UGC-Dark-Post-Projekt-vibe-16.10.2026",
               "c": "Hoodies",
-              "s": 234463,
+              "s": 234584,
               "r": 2.7,
               "u": 315,
               "t": [
@@ -10141,7 +9969,7 @@
             {
               "n": "October2026-In-Office-Shoot-No-Copy-Rugby-Polo-TShirt-CRW12-Video-PLV-V2-Internal-14.10.2026",
               "c": "Polos",
-              "s": 190960,
+              "s": 190966,
               "r": 2.41,
               "u": 287,
               "t": [
@@ -10154,7 +9982,7 @@
             {
               "n": "October2026-Survive-10-Degrees-Like-A-Pro-Thermal-Video-PLV-Internal-21.10.2026",
               "c": "Thermals",
-              "s": 190447,
+              "s": 190453,
               "r": 2.48,
               "u": 261,
               "t": [
@@ -10206,7 +10034,7 @@
             {
               "n": "October2026-Adil-Malayalam-Regional-Cotton-Underwear-5-at-999-Video-UGC-Dark-Post-The-Brand-Unbox-12.10.2026",
               "c": "5@999 Cotton UW",
-              "s": 147318,
+              "s": 147319,
               "r": 2.3,
               "u": 346,
               "t": [
@@ -10245,7 +10073,7 @@
             {
               "n": "October2026-Ketan-Jadhav-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-13.10.2026",
               "c": "5@999 Cotton UW",
-              "s": 124711,
+              "s": 124712,
               "r": 2.27,
               "u": 310,
               "t": [
@@ -10271,7 +10099,7 @@
             {
               "n": "October2026-Dries-In-4.8Mins-Active-Raglan-Tshirt-AT01-Video-PLV-Internal-14.10.2026",
               "c": "Active Tees",
-              "s": 121194,
+              "s": 121197,
               "r": 3.26,
               "u": 248,
               "t": [
@@ -10284,7 +10112,7 @@
             {
               "n": "October2026-Dev-Sharma-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-13.10.2026",
               "c": "5@999 Cotton UW",
-              "s": 120535,
+              "s": 120538,
               "r": 2.66,
               "u": 295,
               "t": [
@@ -10661,7 +10489,7 @@
             {
               "n": "October2026-Money-in-box-2-Cotton-Underwear-5-at-999-Video-PLV-V2-Direct-16.10.2026",
               "c": "5@999 Cotton UW",
-              "s": 34348,
+              "s": 34349,
               "r": 2.17,
               "u": 69,
               "t": [
@@ -10928,7 +10756,7 @@
             {
               "n": "October2026-Kanishk-Polar-Fleece-Jacket-MB13-Video-UGC-Dark-Post-Kofluence-14.10.2026",
               "c": "Jackets",
-              "s": 17570,
+              "s": 17571,
               "r": 5.06,
               "u": 99,
               "t": [
@@ -11465,7 +11293,7 @@
             {
               "n": "October2026-GRWM-Hardik-Rugby-Polo-TShirt-CRW12-Video-PLV-Internal-15.10.2026",
               "c": "Polos",
-              "s": 7149,
+              "s": 7151,
               "r": 2.37,
               "u": 9,
               "t": [
@@ -12207,7 +12035,7 @@
             {
               "n": "October2026-Sidharth-Kahaanibaaz-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-19.10.2026",
               "c": "5@999 Cotton UW",
-              "s": 2045,
+              "s": 2046,
               "r": 3.81,
               "u": 6,
               "t": [
@@ -12638,7 +12466,7 @@
             {
               "n": "October2026-Kumud-Half-Zip-Sweatshirt-CRW8-Video-UGC-Dark-Post-Projekt-vibe-19.10.2026",
               "c": "Hoodies",
-              "s": 158628,
+              "s": 158629,
               "r": 1.91,
               "u": 236,
               "t": [
@@ -12651,7 +12479,7 @@
             {
               "n": "October2026-CREW-Repurposed-Oversized-Hoodie-CRW2-Video-PLV-Internal-14.10.2026",
               "c": "Hoodies",
-              "s": 133480,
+              "s": 133482,
               "r": 1.94,
               "u": 146,
               "t": [
@@ -12677,7 +12505,7 @@
             {
               "n": "October2026-Utkarsh-Uppal-Oversized-Hoodie-MB16-Video-UGC-PA-Direct-21.10.2026",
               "c": "Hoodies",
-              "s": 77740,
+              "s": 77741,
               "r": 1.98,
               "u": 123,
               "t": [
@@ -12729,7 +12557,7 @@
             {
               "n": "October2026-Shayyi-Tamil-Regional-Cotton-Underwear-Video-UGC-Dark-Post-After8_Media-29.10.2026",
               "c": "5@999 Cotton UW",
-              "s": 18865,
+              "s": 18867,
               "r": 1.88,
               "u": 43,
               "t": [
@@ -18003,7 +17831,7 @@
             "group": "Innerwear",
             "emoji": "\ud83e\uddba",
             "order": 1012,
-            "spend": 1485310.18,
+            "spend": 1485310.76,
             "counts": {
               "scaling": 16,
               "early": 12,
@@ -18016,7 +17844,7 @@
             "group": "Innerwear",
             "emoji": "\ud83e\uddf4",
             "order": 1013,
-            "spend": 299303.6,
+            "spend": 299304.57,
             "counts": {
               "scaling": 1,
               "early": 3,
@@ -18029,7 +17857,7 @@
             "group": "5@999 Cotton UW",
             "emoji": "\ud83e\ude72",
             "order": 11,
-            "spend": 2619294.13,
+            "spend": 2619307.53,
             "counts": {
               "scaling": 18,
               "early": 23,
@@ -18055,7 +17883,7 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83c\udfbd",
             "order": 3017,
-            "spend": 99624.69,
+            "spend": 99624.72,
             "counts": {
               "scaling": 2,
               "early": 7,
@@ -18068,7 +17896,7 @@
             "group": "Outerwear \u00b7 Bottomwear",
             "emoji": "\ud83d\ude34",
             "order": 4019,
-            "spend": 165772.49,
+            "spend": 165772.63,
             "counts": {
               "scaling": 2,
               "early": 7,
@@ -18081,7 +17909,7 @@
             "group": "Outerwear \u00b7 Bottomwear",
             "emoji": "\ud83d\udc56",
             "order": 4020,
-            "spend": 181739.13,
+            "spend": 181739.2,
             "counts": {
               "scaling": 1,
               "early": 4,
@@ -18094,7 +17922,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\udde5",
             "order": 2004,
-            "spend": 521389.39,
+            "spend": 521391.51,
             "counts": {
               "scaling": 6,
               "early": 4,
@@ -18107,7 +17935,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddf6",
             "order": 2007,
-            "spend": 1333701.02,
+            "spend": 1333825.93,
             "counts": {
               "scaling": 12,
               "early": 16,
@@ -18120,7 +17948,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddd8",
             "order": 2003,
-            "spend": 946416.93,
+            "spend": 946417.82,
             "counts": {
               "scaling": 17,
               "early": 13,
@@ -18133,7 +17961,7 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83d\udc55",
             "order": 3015,
-            "spend": 416377.78,
+            "spend": 416385.08,
             "counts": {
               "scaling": 5,
               "early": 5,
@@ -18146,7 +17974,7 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83c\udfc3",
             "order": 3016,
-            "spend": 214323.51,
+            "spend": 214326.91,
             "counts": {
               "scaling": 5,
               "early": 3,
@@ -18159,7 +17987,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83c\udf21\ufe0f",
             "order": 2002,
-            "spend": 258528.91,
+            "spend": 258534.5,
             "counts": {
               "scaling": 3,
               "early": 6,
@@ -18236,8 +18064,8 @@
           "totals": {
             "ads": 2670,
             "winners": 354,
-            "spend": 37591579.28,
-            "roas": 2.6197,
+            "spend": 37592082.76,
+            "roas": 2.6196,
             "win_rate": 0.1326,
             "matched_ads": 1947,
             "matched_winners": 269,
@@ -18251,7 +18079,7 @@
                 "ads": 1294,
                 "winners": 191,
                 "win_rate": 0.1476,
-                "spend": 21925901.07,
+                "spend": 21926157.11,
                 "roas": 2.636,
                 "share_winners": 0.5395
               },
@@ -18260,8 +18088,8 @@
                 "ads": 388,
                 "winners": 54,
                 "win_rate": 0.1392,
-                "spend": 4525207.37,
-                "roas": 2.3774,
+                "spend": 4525286.84,
+                "roas": 2.3773,
                 "share_winners": 0.1525
               },
               {
@@ -18269,7 +18097,7 @@
                 "ads": 90,
                 "winners": 14,
                 "win_rate": 0.1556,
-                "spend": 863926.43,
+                "spend": 863930.22,
                 "roas": 2.4478,
                 "share_winners": 0.0395
               },
@@ -18278,8 +18106,8 @@
                 "ads": 124,
                 "winners": 10,
                 "win_rate": 0.0806,
-                "spend": 966491.44,
-                "roas": 2.2511,
+                "spend": 966569.84,
+                "roas": 2.2509,
                 "share_winners": 0.0282
               },
               {
@@ -18323,7 +18151,7 @@
                 "ads": 22,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 21322.29,
+                "spend": 21322.56,
                 "roas": 2.8797,
                 "share_winners": 0.0
               },
@@ -18332,7 +18160,7 @@
                 "ads": 723,
                 "winners": 85,
                 "win_rate": 0.1176,
-                "spend": 9266712.34,
+                "spend": 9266797.85,
                 "roas": 2.7543,
                 "share_winners": 0.2401
               }
@@ -18343,7 +18171,7 @@
                 "ads": 811,
                 "winners": 119,
                 "win_rate": 0.1467,
-                "spend": 16811992.39,
+                "spend": 16812080.63,
                 "roas": 2.5972,
                 "share_winners": 0.3362
               },
@@ -18352,8 +18180,8 @@
                 "ads": 477,
                 "winners": 65,
                 "win_rate": 0.1363,
-                "spend": 4101968.93,
-                "roas": 2.7663,
+                "spend": 4102134.76,
+                "roas": 2.7662,
                 "share_winners": 0.1836
               },
               {
@@ -18361,7 +18189,7 @@
                 "ads": 450,
                 "winners": 60,
                 "win_rate": 0.1333,
-                "spend": 5201298.89,
+                "spend": 5201445.09,
                 "roas": 2.3706,
                 "share_winners": 0.1695
               },
@@ -18370,8 +18198,8 @@
                 "ads": 34,
                 "winners": 8,
                 "win_rate": 0.2353,
-                "spend": 616231.86,
-                "roas": 2.5301,
+                "spend": 616239.85,
+                "roas": 2.53,
                 "share_winners": 0.0226
               },
               {
@@ -18379,7 +18207,7 @@
                 "ads": 45,
                 "winners": 6,
                 "win_rate": 0.1333,
-                "spend": 506005.28,
+                "spend": 506008.87,
                 "roas": 2.3675,
                 "share_winners": 0.0169
               },
@@ -18388,7 +18216,7 @@
                 "ads": 27,
                 "winners": 5,
                 "win_rate": 0.1852,
-                "spend": 748799.99,
+                "spend": 748800.31,
                 "roas": 2.6331,
                 "share_winners": 0.0141
               },
@@ -18397,7 +18225,7 @@
                 "ads": 47,
                 "winners": 3,
                 "win_rate": 0.0638,
-                "spend": 119846.02,
+                "spend": 119846.76,
                 "roas": 2.8665,
                 "share_winners": 0.0085
               },
@@ -18415,8 +18243,8 @@
                 "ads": 8,
                 "winners": 1,
                 "win_rate": 0.125,
-                "spend": 29161.22,
-                "roas": 1.8899,
+                "spend": 29165.51,
+                "roas": 1.8897,
                 "share_winners": 0.0028
               },
               {
@@ -18424,8 +18252,8 @@
                 "ads": 9,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 6479.93,
-                "roas": 4.7733,
+                "spend": 6480.43,
+                "roas": 4.7729,
                 "share_winners": 0.0
               },
               {
@@ -18451,7 +18279,7 @@
                 "ads": 27,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 28070.74,
+                "spend": 28071.01,
                 "roas": 2.8921,
                 "share_winners": 0.0
               },
@@ -18460,7 +18288,7 @@
                 "ads": 723,
                 "winners": 85,
                 "win_rate": 0.1176,
-                "spend": 9266712.34,
+                "spend": 9266797.85,
                 "roas": 2.7543,
                 "share_winners": 0.2401
               }
@@ -18471,8 +18299,8 @@
                 "ads": 647,
                 "winners": 76,
                 "win_rate": 0.1175,
-                "spend": 5772849.25,
-                "roas": 2.6143,
+                "spend": 5773091.93,
+                "roas": 2.6142,
                 "share_winners": 0.2147
               },
               {
@@ -18480,7 +18308,7 @@
                 "ads": 237,
                 "winners": 66,
                 "win_rate": 0.2785,
-                "spend": 12369559.46,
+                "spend": 12369627.76,
                 "roas": 2.3659,
                 "share_winners": 0.1864
               },
@@ -18489,7 +18317,7 @@
                 "ads": 279,
                 "winners": 36,
                 "win_rate": 0.129,
-                "spend": 2651910.44,
+                "spend": 2651944.65,
                 "roas": 3.1511,
                 "share_winners": 0.1017
               },
@@ -18498,7 +18326,7 @@
                 "ads": 243,
                 "winners": 25,
                 "win_rate": 0.1029,
-                "spend": 2520253.7,
+                "spend": 2520262.37,
                 "roas": 2.7937,
                 "share_winners": 0.0706
               },
@@ -18507,8 +18335,8 @@
                 "ads": 150,
                 "winners": 23,
                 "win_rate": 0.1533,
-                "spend": 1029399.02,
-                "roas": 2.8723,
+                "spend": 1029410.2,
+                "roas": 2.8722,
                 "share_winners": 0.065
               },
               {
@@ -18516,8 +18344,8 @@
                 "ads": 192,
                 "winners": 15,
                 "win_rate": 0.0781,
-                "spend": 1519740.32,
-                "roas": 2.8912,
+                "spend": 1519741.76,
+                "roas": 2.8911,
                 "share_winners": 0.0424
               },
               {
@@ -18525,8 +18353,8 @@
                 "ads": 44,
                 "winners": 11,
                 "win_rate": 0.25,
-                "spend": 971352.64,
-                "roas": 2.0669,
+                "spend": 971401.58,
+                "roas": 2.0668,
                 "share_winners": 0.0311
               },
               {
@@ -18534,7 +18362,7 @@
                 "ads": 56,
                 "winners": 10,
                 "win_rate": 0.1786,
-                "spend": 851823.35,
+                "spend": 851825.4,
                 "roas": 2.4327,
                 "share_winners": 0.0282
               },
@@ -18543,7 +18371,7 @@
                 "ads": 65,
                 "winners": 7,
                 "win_rate": 0.1077,
-                "spend": 601636.78,
+                "spend": 601637.01,
                 "roas": 2.7826,
                 "share_winners": 0.0198
               },
@@ -18561,7 +18389,7 @@
                 "ads": 32,
                 "winners": 0,
                 "win_rate": 0.0,
-                "spend": 31286.15,
+                "spend": 31286.42,
                 "roas": 2.7269,
                 "share_winners": 0.0
               },
@@ -18570,7 +18398,7 @@
                 "ads": 723,
                 "winners": 85,
                 "win_rate": 0.1176,
-                "spend": 9266712.34,
+                "spend": 9266797.85,
                 "roas": 2.7543,
                 "share_winners": 0.2401
               }
@@ -18581,7 +18409,7 @@
                 "ads": 269,
                 "winners": 70,
                 "win_rate": 0.2602,
-                "spend": 12959889.28,
+                "spend": 12959963.02,
                 "roas": 2.3829,
                 "share_winners": 0.1977
               },
@@ -18590,7 +18418,7 @@
                 "ads": 279,
                 "winners": 34,
                 "win_rate": 0.1219,
-                "spend": 3772599.03,
+                "spend": 3772625.4,
                 "roas": 2.7095,
                 "share_winners": 0.096
               },
@@ -18599,7 +18427,7 @@
                 "ads": 188,
                 "winners": 17,
                 "win_rate": 0.0904,
-                "spend": 1235360.62,
+                "spend": 1235364.79,
                 "roas": 2.7411,
                 "share_winners": 0.048
               },
@@ -18608,7 +18436,7 @@
                 "ads": 99,
                 "winners": 16,
                 "win_rate": 0.1616,
-                "spend": 1011458.08,
+                "spend": 1011460.94,
                 "roas": 3.316,
                 "share_winners": 0.0452
               },
@@ -18617,8 +18445,8 @@
                 "ads": 62,
                 "winners": 9,
                 "win_rate": 0.1452,
-                "spend": 936331.54,
-                "roas": 2.9067,
+                "spend": 936368.15,
+                "roas": 2.9066,
                 "share_winners": 0.0254
               },
               {
@@ -18626,8 +18454,8 @@
                 "ads": 96,
                 "winners": 8,
                 "win_rate": 0.0833,
-                "spend": 581352.35,
-                "roas": 2.5346,
+                "spend": 581402.88,
+                "roas": 2.5344,
                 "share_winners": 0.0226
               },
               {
@@ -18635,7 +18463,7 @@
                 "ads": 25,
                 "winners": 4,
                 "win_rate": 0.16,
-                "spend": 316343.53,
+                "spend": 316343.86,
                 "roas": 3.0318,
                 "share_winners": 0.0113
               },
@@ -18644,7 +18472,7 @@
                 "ads": 41,
                 "winners": 3,
                 "win_rate": 0.0732,
-                "spend": 203959.19,
+                "spend": 203960.19,
                 "roas": 2.8157,
                 "share_winners": 0.0085
               },
@@ -18653,8 +18481,8 @@
                 "ads": 8,
                 "winners": 2,
                 "win_rate": 0.25,
-                "spend": 89323.74,
-                "roas": 2.6514,
+                "spend": 89326.05,
+                "roas": 2.6513,
                 "share_winners": 0.0056
               },
               {
@@ -18671,8 +18499,8 @@
                 "ads": 876,
                 "winners": 105,
                 "win_rate": 0.1199,
-                "spend": 7179435.12,
-                "roas": 2.6542,
+                "spend": 7179655.17,
+                "roas": 2.6541,
                 "share_winners": 0.2966
               },
               {
@@ -18680,7 +18508,7 @@
                 "ads": 723,
                 "winners": 85,
                 "win_rate": 0.1176,
-                "spend": 9266712.34,
+                "spend": 9266797.85,
                 "roas": 2.7543,
                 "share_winners": 0.2401
               }
@@ -18689,42 +18517,42 @@
           "unmatched": [
             {
               "ad_name": "June2026-Unboxing-2-Cotton-Underwear-5-at-999-Video-PLV-Adley-25.06.2026",
-              "spend": 1046758.05,
+              "spend": 1046758.33,
               "roas": 2.53
             },
             {
               "ad_name": "July2026-Sameer-Sharma-Cotton-Underwear-5-at-999-Video-UGC-Dark-Post-DIY-09.07.2026",
-              "spend": 825302.27,
+              "spend": 825308.42,
               "roas": 2.39
             },
             {
               "ad_name": "July2026-Vansh-Mehra-Cotton-Underwear-5-at-999-Video-UGC-PA-Barter-14.07.2026",
-              "spend": 580773.42,
+              "spend": 580779.09,
               "roas": 2.67
             },
             {
               "ad_name": "June2026-Heth-K-Chambray-Pyjama-CR46-Video-UGC-Dark-Post-DIY-29.06.2026",
-              "spend": 434297.81,
+              "spend": 434309.34,
               "roas": 2.33
             },
             {
               "ad_name": "July2026-Akshar-Mevawala-Cotton-Underwear-5-at-999-Video-UGC-PA-Barter-14.07.2026",
-              "spend": 431068.32,
+              "spend": 431082.44,
               "roas": 2.69
             },
             {
               "ad_name": "Apr2026-Two-Way-Loop-Cotton-Underwear-5-at-999-Video-Lofi-MMM-23s-28.04.2026",
-              "spend": 402504.66,
+              "spend": 402508.61,
               "roas": 2.34
             },
             {
               "ad_name": "Apr2026-Bhabik-Cotton-Underwear-5-at-999-Video-UGC-PA-Direct-25.04.2026",
-              "spend": 389048.84,
+              "spend": 389051.11,
               "roas": 3.11
             },
             {
               "ad_name": "Apr2026-Verun-Cotton-Underwear-5-at-999-Video-UGC-Dark-Post-V1-Fables-24.04.2026",
-              "spend": 335362.32,
+              "spend": 335366.55,
               "roas": 2.08
             }
           ],
@@ -18735,7 +18563,7 @@
           "totals": {
             "ads": 629,
             "winners": 119,
-            "spend": 8808830.12,
+            "spend": 8808989.52,
             "roas": 2.664,
             "win_rate": 0.1892,
             "matched_ads": 617,
@@ -18750,7 +18578,7 @@
                 "ads": 392,
                 "winners": 78,
                 "win_rate": 0.199,
-                "spend": 6075676.76,
+                "spend": 6075815.26,
                 "roas": 2.7931,
                 "share_winners": 0.6555
               },
@@ -18759,7 +18587,7 @@
                 "ads": 138,
                 "winners": 31,
                 "win_rate": 0.2246,
-                "spend": 2151149.2,
+                "spend": 2151169.65,
                 "roas": 2.3146,
                 "share_winners": 0.2605
               },
@@ -18768,8 +18596,8 @@
                 "ads": 37,
                 "winners": 6,
                 "win_rate": 0.1622,
-                "spend": 419987.39,
-                "roas": 2.686,
+                "spend": 419987.79,
+                "roas": 2.6859,
                 "share_winners": 0.0504
               },
               {
@@ -18813,7 +18641,7 @@
                 "ads": 12,
                 "winners": 3,
                 "win_rate": 0.25,
-                "spend": 75450.54,
+                "spend": 75450.59,
                 "roas": 2.2363,
                 "share_winners": 0.0252
               }
@@ -18824,7 +18652,7 @@
                 "ads": 248,
                 "winners": 48,
                 "win_rate": 0.1935,
-                "spend": 4098507.74,
+                "spend": 4098522.24,
                 "roas": 2.7927,
                 "share_winners": 0.4034
               },
@@ -18833,8 +18661,8 @@
                 "ads": 153,
                 "winners": 30,
                 "win_rate": 0.1961,
-                "spend": 1993239.21,
-                "roas": 2.6679,
+                "spend": 1993366.14,
+                "roas": 2.6677,
                 "share_winners": 0.2521
               },
               {
@@ -18842,7 +18670,7 @@
                 "ads": 137,
                 "winners": 29,
                 "win_rate": 0.2117,
-                "spend": 1930801.78,
+                "spend": 1930818.6,
                 "roas": 2.3604,
                 "share_winners": 0.2437
               },
@@ -18851,7 +18679,7 @@
                 "ads": 38,
                 "winners": 3,
                 "win_rate": 0.0789,
-                "spend": 111683.9,
+                "spend": 111684.64,
                 "roas": 2.9149,
                 "share_winners": 0.0252
               },
@@ -18860,7 +18688,7 @@
                 "ads": 6,
                 "winners": 2,
                 "win_rate": 0.3333,
-                "spend": 170626.47,
+                "spend": 170626.63,
                 "roas": 2.7554,
                 "share_winners": 0.0168
               },
@@ -18878,7 +18706,7 @@
                 "ads": 3,
                 "winners": 1,
                 "win_rate": 0.3333,
-                "spend": 168558.94,
+                "spend": 168559.14,
                 "roas": 2.6194,
                 "share_winners": 0.0084
               },
@@ -18923,7 +18751,7 @@
                 "ads": 12,
                 "winners": 3,
                 "win_rate": 0.25,
-                "spend": 75450.54,
+                "spend": 75450.59,
                 "roas": 2.2363,
                 "share_winners": 0.0252
               }
@@ -18934,8 +18762,8 @@
                 "ads": 171,
                 "winners": 36,
                 "win_rate": 0.2105,
-                "spend": 2632710.96,
-                "roas": 2.5674,
+                "spend": 2632854.01,
+                "roas": 2.5672,
                 "share_winners": 0.3025
               },
               {
@@ -18943,7 +18771,7 @@
                 "ads": 75,
                 "winners": 24,
                 "win_rate": 0.32,
-                "spend": 2651279.89,
+                "spend": 2651291.22,
                 "roas": 2.5081,
                 "share_winners": 0.2017
               },
@@ -18952,7 +18780,7 @@
                 "ads": 68,
                 "winners": 15,
                 "win_rate": 0.2206,
-                "spend": 759183.35,
+                "spend": 759184.99,
                 "roas": 3.3785,
                 "share_winners": 0.1261
               },
@@ -18961,7 +18789,7 @@
                 "ads": 70,
                 "winners": 14,
                 "win_rate": 0.2,
-                "spend": 550702.84,
+                "spend": 550703.28,
                 "roas": 2.9203,
                 "share_winners": 0.1176
               },
@@ -18970,7 +18798,7 @@
                 "ads": 94,
                 "winners": 13,
                 "win_rate": 0.1383,
-                "spend": 992134.26,
+                "spend": 992136.67,
                 "roas": 2.8966,
                 "share_winners": 0.1092
               },
@@ -18988,7 +18816,7 @@
                 "ads": 26,
                 "winners": 4,
                 "win_rate": 0.1538,
-                "spend": 538631.75,
+                "spend": 538631.85,
                 "roas": 2.7388,
                 "share_winners": 0.0336
               },
@@ -19006,7 +18834,7 @@
                 "ads": 10,
                 "winners": 1,
                 "win_rate": 0.1,
-                "spend": 175710.47,
+                "spend": 175710.85,
                 "roas": 2.0484,
                 "share_winners": 0.0084
               },
@@ -19033,7 +18861,7 @@
                 "ads": 12,
                 "winners": 3,
                 "win_rate": 0.25,
-                "spend": 75450.54,
+                "spend": 75450.59,
                 "roas": 2.2363,
                 "share_winners": 0.0252
               }
@@ -19044,7 +18872,7 @@
                 "ads": 76,
                 "winners": 25,
                 "win_rate": 0.3289,
-                "spend": 2543357.35,
+                "spend": 2543369.24,
                 "roas": 2.4819,
                 "share_winners": 0.2101
               },
@@ -19053,7 +18881,7 @@
                 "ads": 94,
                 "winners": 12,
                 "win_rate": 0.1277,
-                "spend": 1101061.96,
+                "spend": 1101063.69,
                 "roas": 2.8008,
                 "share_winners": 0.1008
               },
@@ -19062,7 +18890,7 @@
                 "ads": 58,
                 "winners": 6,
                 "win_rate": 0.1034,
-                "spend": 591742.55,
+                "spend": 591743.1,
                 "roas": 2.6844,
                 "share_winners": 0.0504
               },
@@ -19071,7 +18899,7 @@
                 "ads": 19,
                 "winners": 6,
                 "win_rate": 0.3158,
-                "spend": 266011.27,
+                "spend": 266011.34,
                 "roas": 3.9508,
                 "share_winners": 0.0504
               },
@@ -19080,7 +18908,7 @@
                 "ads": 12,
                 "winners": 3,
                 "win_rate": 0.25,
-                "spend": 325744.65,
+                "spend": 325745.62,
                 "roas": 3.5952,
                 "share_winners": 0.0252
               },
@@ -19098,7 +18926,7 @@
                 "ads": 12,
                 "winners": 2,
                 "win_rate": 0.1667,
-                "spend": 120188.76,
+                "spend": 120188.92,
                 "roas": 2.7194,
                 "share_winners": 0.0168
               },
@@ -19125,8 +18953,8 @@
                 "ads": 307,
                 "winners": 57,
                 "win_rate": 0.1857,
-                "spend": 3597567.76,
-                "roas": 2.564,
+                "spend": 3597711.74,
+                "roas": 2.5639,
                 "share_winners": 0.479
               },
               {
@@ -19134,7 +18962,7 @@
                 "ads": 12,
                 "winners": 3,
                 "win_rate": 0.25,
-                "spend": 75450.54,
+                "spend": 75450.59,
                 "roas": 2.2363,
                 "share_winners": 0.0252
               }
@@ -19172,7 +19000,10 @@
       "until": "2026-10-31",
       "example_prefix": "October2026",
       "has_data": true,
-      "uploaded": null,
+      "uploaded": {
+        "count": 596,
+        "no_spend": 43
+      },
       "analysis": {
         "summary": {
           "spending": 592,
@@ -19206,7 +19037,7 @@
             "group": "5@999 Cotton UW",
             "emoji": "\ud83e\ude72",
             "order": 11,
-            "uploaded": null,
+            "uploaded": 85,
             "spending": 96,
             "spend": 1126718.76,
             "roas": 2.2579,
@@ -19228,7 +19059,7 @@
             "group": "Innerwear",
             "emoji": "\ud83e\uddba",
             "order": 1012,
-            "uploaded": null,
+            "uploaded": 90,
             "spending": 99,
             "spend": 869824.28,
             "roas": 2.687,
@@ -19250,7 +19081,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddf6",
             "order": 2007,
-            "uploaded": null,
+            "uploaded": 51,
             "spending": 52,
             "spend": 487461.71,
             "roas": 2.4777,
@@ -19272,7 +19103,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddd8",
             "order": 2003,
-            "uploaded": null,
+            "uploaded": 63,
             "spending": 77,
             "spend": 465800.48,
             "roas": 2.4868,
@@ -19294,7 +19125,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\udde5",
             "order": 2004,
-            "uploaded": null,
+            "uploaded": 22,
             "spending": 18,
             "spend": 243345.32,
             "roas": 2.4693,
@@ -19316,7 +19147,7 @@
             "group": "Innerwear",
             "emoji": "\ud83e\uddf4",
             "order": 1013,
-            "uploaded": null,
+            "uploaded": 23,
             "spending": 21,
             "spend": 170364.47,
             "roas": 3.4862,
@@ -19338,7 +19169,7 @@
             "group": "Outerwear \u00b7 Bottomwear",
             "emoji": "\ud83d\ude34",
             "order": 4019,
-            "uploaded": null,
+            "uploaded": 52,
             "spending": 53,
             "spend": 118066.72,
             "roas": 4.0501,
@@ -19360,7 +19191,7 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83d\udc55",
             "order": 3015,
-            "uploaded": null,
+            "uploaded": 45,
             "spending": 30,
             "spend": 113460.28,
             "roas": 3.4849,
@@ -19382,7 +19213,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc55",
             "order": 2008,
-            "uploaded": null,
+            "uploaded": 25,
             "spending": 21,
             "spend": 108359.07,
             "roas": 2.2943,
@@ -19404,7 +19235,7 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83c\udfc3",
             "order": 3016,
-            "uploaded": null,
+            "uploaded": 48,
             "spending": 48,
             "spend": 102906.68,
             "roas": 4.0974,
@@ -19426,7 +19257,7 @@
             "group": "Outerwear \u00b7 Bottomwear",
             "emoji": "\ud83d\udc56",
             "order": 4020,
-            "uploaded": null,
+            "uploaded": 21,
             "spending": 20,
             "spend": 96495.4,
             "roas": 4.5285,
@@ -19448,7 +19279,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83c\udf21\ufe0f",
             "order": 2002,
-            "uploaded": null,
+            "uploaded": 13,
             "spending": 12,
             "spend": 80951.36,
             "roas": 2.1349,
@@ -19470,7 +19301,7 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83c\udfbd",
             "order": 3017,
-            "uploaded": null,
+            "uploaded": 48,
             "spending": 44,
             "spend": 36419.18,
             "roas": 3.1638,
@@ -19492,7 +19323,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc56",
             "order": 2001,
-            "uploaded": null,
+            "uploaded": 4,
             "spending": 4,
             "spend": 13155.0,
             "roas": 2.7829,
@@ -19514,7 +19345,7 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\udde3",
             "order": 2009,
-            "uploaded": null,
+            "uploaded": 6,
             "spending": 3,
             "spend": 3705.24,
             "roas": 3.055,
@@ -19531,7 +19362,7 @@
             "group": "Innerwear",
             "emoji": "\ud83e\udd4a",
             "order": 1014,
-            "uploaded": null,
+            "uploaded": 2,
             "spending": 2,
             "spend": 81.07,
             "roas": 0.0,
@@ -19543,6 +19374,19 @@
               "is_view": false,
               "ad_name": "June2026-AI-Girl-Soumya-ConRant-Boxer-2-at-699-Video-UGC-Dark-Post-Direct-02.06.2026"
             }
+          },
+          {
+            "category": "Flannel Shirt",
+            "group": "Winter Overview",
+            "emoji": "\ud83d\udfe5",
+            "order": 2005,
+            "uploaded": 1,
+            "spending": 0,
+            "spend": 0,
+            "roas": 0,
+            "older_roas": null,
+            "best": null,
+            "best_all": null
           }
         ],
         "cards": [
@@ -19556,7 +19400,7 @@
             "purchases": 7,
             "category": "Hoodies",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKIFFu6oTK9W78PbKgeX412BKWelxZT4VS9szEpdOGIEMPOljMSo9aJAeoY_AK1wNADDWvSrTHiyyUcz9fMBBiuhxnWtd2Sjh_ecalnD21_QpmQB2I43EOpguC9PUZKgG6mrKV1PsQqFor1LjqSK0DXqbe7KqRC6cpiv0f8sPPkgR2-YyPkP7QLBlm9rszBffLNutz0BwrsQehIQgNJ9YyERCRGxxubA33sl0tU17UyzWimrzpchoMKN6ig6cBIybMBBMspQYWMLqLIfZTLELgDfZCR_xJ_DhDsBdn2Ms9KeT0D3Cb2613avtxEr6n9YpKVUuGrFoDrgBa1rBsHjRrNNNgkQ0z1Hf32jH0wR87aL2c92F8W2uZEmSE2JrY5kdg-qwldwPp-NmucmJNtGtvtS6wLMrp_JDg2zaS_siWJYJBzdQhAXvtfIKK4RifmQpY&t=AQL8Yvy2Zqxv0S8HADU"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL0-gzSt0zLZ-kw_U23loKHBnpX5HRrUc5edEWjZeKK0yqUDucz1Qxb6s-x8CgJHF2BCvvC3yCUjOgpIrZjDLXPpkt1BkSLd0nXi-GpA5MPJdwQd8MS-40YG4GQ48rc0SAJ2ZHlbohrJPTLYj24d6q7K7jCLH0Mzx4Ke72yv0dotfyiDHQeDqdXEmlD7CLJlvDns109wzIY4Qq_fmr84ZNNPcd7cRwGgj5UoVIRhCSfq4KOZrjv06YwhlhxsguhSTBZx5JjNGHHbZ_X8PzXKLxxv_x05ES0T0SStZ4KisiB8uB0xH8Pp6GCjn39J-SqL6NZrg1WYAn5HfUzwPAGfw6iZfPhJDR0FjKc9J_PPwjfnMVJcP3dNzT5UF-KzmdcITiCefxVIGeiDcLrETukA3E2p3DrVUfTAQy7hjs0s3DTH7BDXZI1cP6pM80RSXTFAxI&t=AQJSs6tcm2XQ-m1YHHQ"
           },
           {
             "ad_id": "120249799400830298",
@@ -19568,7 +19412,7 @@
             "purchases": 16,
             "category": "Active Tees",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQL7n0YOAhLj8OVPTEVGWuhzFMs4M0wwToGz_JrTEXn7SznD4AbwOGasZEDXg2FKvlWxX64UuxHbXcVFY4_dnL0Te1dZibMA2ylN7ehVEg9vpAJc2qLRYNLiBC6tPTW5wnIg9nfpLQtw5jrRqYP6cttH6gpVld9S8BE7eNr17R3jRtlhD1JEho5GEkmkNMuBXUGna58dqJCYWhbjWMrdl7Gx1Y8RojRghU8xa7zAHm3mYNMZgzFZEHHQMUMH5Nadx2iRGBMgSw1DoUHU9A5TqWjvuYEx0scgjLNt5ZCG5-w4n6IgF4VyPilOduVadHGzSeT9leJ0OZW6BguLv-_3lu5onX2NHFPvZN-DqpBRzZuiTZfUOjlfEt1R2l0aVOGJKjLqmc6-mf9nyxh28kksRSIHbvSWLuF7Eo5AnJgJKfiLDvSSbPoZdzLxgGWL3rCl6AI&t=AQIalrUAK5KDRN6wviU"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLfzi03roKCY9vBckq5zMC63eKA0xmULBVXXEtbGI4Hvbx_weRwiml42JiqAPYhxAKgt3V6bTKd8YEK1i6hEg5fvMa8JupQQYkc0WLIimkhzXVxP26erBAzBXWZQElBvUIaj8XLewMLRjg5uT3d-CK42XRZRG05OjaZOjtCjQaqwHgjkuSheWEt1yhY53AQeBG0NHQ1ZyTHNbdaxCV_wV7ZoTrK-VAORf8ipFbmqVNH3ogILih2d6scavt01rzyj2N_kdsRUreTxnem7a9ByK9s9MbV-FpgUgc6DZNUZ_jTS99tmHoLviB7wbYjyvAv9EMZYPx5fGe2H70qKL_dvct8f5XeW0jEHb21ZoEkqq0wmd-_Z2WJRaij9ligGmyhYijOqqRZ0BDEjcphesKpcUUNHxQvbmkHkghunv7E7D3_TNF9mbIZLLF_WxSvIsDYCJU&t=AQI0lAGsgI3NNULZtNI"
           },
           {
             "ad_id": "120249815693600298",
@@ -19580,7 +19424,7 @@
             "purchases": 15,
             "category": "Shapewear & Vest",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLbLSYsqgDYqLvfc3riqcNKbQOeapgmYi2yoIRWRUM-b7_2ExPyGITu4yCpnSx2NqAV3g-xWlIIpcvkF6870WqcJSAVxexl3NcbJGEXtg6MBjiWm6tHFqoJQuMttyB6vTGx49GwZvG2-____VuIFPzRUvos9XBW4vjnmzz50FSZCCq7xtxsSpMpQUBtbl1mcaHcHiq8I1SWl5soBRnFwHB3EyTfr7p5Ic8HStdr5SPFbq0fBGMQPH7kwYFuR2Ejl5SAl00jQO2gLP6Z4BUy1cZX6yCFZwNq3abHVGHxzxXtyRuIeI_3jDa2gY20IffsaBDIpcPlFk4dyGWRdkHHamo08XINlOcXQW-3C096RzjFbNim-U8794yJZJglpqmZlKPX8vOq01riFKvaylZPJo3iqJ43JcNZEDwBhwmU-TRagEQVCVgR8d9zQXLQXb5Eyzg&t=AQJyYpBPlkRaRlO2myo"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIVGSOJA3lCIa6Kg7GVxJBFjUOlLipoXPgntTOLalZ59zd-m2QH1oAgGCn58jMbT9rKFS7vG129zV6Kb3yjRud0m6Zf3NkTf4ZuI02xQRlRuDPZDkxMYzSl7SuQslj08G0pFxP5NN_-V_EeeiLzpxBDnDTA33Tov7ja0dUakaVcdC2tFHDBM4wElWIJjV5Ae1JRU51gXO8kPPw8j0xTIiBJG0zwgoOFmJqdZ2EN8TNtESWcYbGiqhNr63D1qaJ59IM1tUwROZa0RqUQhnPOlzpFPPVRkCDFcAZpgQH4LUT4LQqxkc35Pjk2ujxHpgIvcsvXd0HqhxQwHs7BZ7B9260wWtKfgIhZ2SZs0yMldHbqwmyBiOKIRxkTU_F75Y0xkqQHU7MygJjwb-ki3whOrbPWjh22TpExMlwvQTZmds9jKAiekgkCFHr5ySq5Mp8YSQY&t=AQLbjOiiYGkImRacaS0"
           },
           {
             "ad_id": "120249920389590298",
@@ -19592,7 +19436,7 @@
             "purchases": 11,
             "category": "Tees",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJUfsoWxSFZedZuEAm6KP_LCWHXgMQPDl68NAq5bexWXETOl63RfvUgOlFSoivCpaX25ZhS7tcLjxPeioNYp5tKC1XaWZEyFxYNj42zR8nlSSrfvBAommcfdzkhAcYqeQXGtwyKiQUgDmen4vzkJULqPXeNQQVswiEl1sdiqxIpvQEv4LJf1AFd5TupP7Mrp67xMQFDXyvAEMb4sywdEqxDbC2RZvpa8bhgsKoPHlXh9HmTkf3JRq-AiJbxnKYvTe-0nUxBgtuAVja6AwWVztZ2vkHYccBNdJWK3C9NPkNlTQ7ekbXdX8pKTkOXA22mfsKKdN3ot9lzZFGQs6kHjZAv3d7uSaCZxuhgGfhEMFretPWCJpeKVJdSujGdeyQNB70bu1P8aK_wamBIZ7ay0bOYtZg-jFZchdCOdkvn3HyD69-hExTbRr0L661RYr57bgs&t=AQI2AoNF-MK4xroN2IQ"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQK0M2zt4JeBjzR62h77SctOgjhXYeltTnazR5xQhkWsrX8rsas5mTlYFpqsxZ4RufOzsCctJviPM5Buh6BDpr0BPMeSSgDYUqoi0I2DLJBXx1NaK3UkGzJqCtW8Jk4_MCrEuOhUy2pR_CRhB9cNUV_vtScOkChjAqrKu0_Am4Wr5X8lkjCrS17iCr-PAd6XvBAK6EonKoZljZI5H98WwMeMd5Xafqgs1K5zudLLTvqHsXv7zi-X4IBuJbZTfHCi9dwkX9B5WNqQjdGc91Be7wFonoomUhhtsVZ7KRh_jGWf4QIcPuaYTQ1YQ9-j1mwKwZbcSOHK6DX4nAWnSfr6dl6WdeyJ84hwvchpPqLWafzEGNGjd6R8k7u2u9AdKUo5cRGd0Ht1Zne87jCPLAr6gA34TTrLbKomcARslWiIiWxdw15wczAz60ftUeaErvNVxuE&t=AQLOH236YatdeCBLgO4"
           },
           {
             "ad_id": "120250068808640298",
@@ -19604,7 +19448,7 @@
             "purchases": 12,
             "category": "Hoodies",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJUKdNbLDWeDSRrw5viq8bREN9R-GXz6F-zsRKTGR-xo7e2GNom8HMtmT-una5BXbdhP5FRZByvllVD08xZU0EUh-HNBfR0ypmsUqtoO0Zxr2sfmct8Cw5FwI5Qe-WDOnSvti34Sr2da-PU1rTCq7CJ-W2Cp8-2RIr6GwBHu7IjbUSoyBDDj7WCJ2vhnoNgfgJ0ppvOMy3LhZH2bqOa4eg40m7dgYzzz8LndRdA_4X-sU88uNff04jsTs6GJbrok-TeESKoCbBBp9ZCrDOqMmLCqfa6f5VsT_O8n7XMkkJUm2wmxkD9DABKpiax-xZAframOPDk4TgbArHWDqqHgfb7rCMkjvlth8dK4SAhz4Jm7G1eVwf8gCwzj5LP3fdZ6Z17go8OzB1QAGMN1DT3CwhmjGRIp761aA0_aiShvQEkNJMzOBV3Hk1M--rO5LSglOI&t=AQIu__JOBkRWl64B2P4"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLmxlmhdCTnOmCVrToavIcg8xy_K1Vwu7J8EuQs_GAFF64H2PEyqiNIRl61NXIFm-rVvx87sC5IpzUah7YcNholN3L19_wldyTaQmizLLLCEmeOHoUvQjkHTaSsCOpxF51_Wx80CTHPE2eyi8Dq8eILYbHKPwtpBTM7e1yzR24CzUqb6LjCJA6VFwcpltwmIrV-PwBY4I6p0yDSjp1xwRpjRmKG0IcyZUx4p9SwFKhJP_o5JiYe3U0n7EelvqBiemypZJgvWymTqGQJPKe8w6kntrDyi8R02ZqVQ3-S4ahPJEKRfSraaMn5N5qbzf-Rpm3lW9FrZlpsie1deU_Ss07XPrd3Wfvx_xRi29E6AvGM2O8Os470bmp06q8_CvsJqqoFvqXJ0HIFmi-PMCQ2Ni3ssvsnM85KtfpCMt8DwufkmXtvsto7moFtwAg6Zp0Dpu0&t=AQKx-OOI4Np0IK3NyxE"
           },
           {
             "ad_id": "120249831785930298",
@@ -19616,7 +19460,7 @@
             "purchases": 39,
             "category": "Pyjamas & Easy Pants",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKNQPusmqH-rmya9Kxhe0PhthQfusNMnAEnt-iQoNy2uDLyraoUojSv1tiZ35pQOp_gRPhrk3tEuMkzgLHXGMrIYCz5Pz7pom6tdPydqtGBIyADbDARxx6gIWKVMXRHjfhiU0yQjZ4YBm_66rP6UKHlaMS9u6ZbSb0PJF2K-JqdCeZ76CmtZmYXmXhzFCJr8JBSRznkZMQ9e5KjXH1NSDW8YnblXpj4oFbAkqLmSwMLr9FhIhOofQrYuFf0O-PajUVxd0g6j6D8mo1mbcmNqdk3csNWj4SY-TNr57HQFm5SJN2Km7AFRP4YrCrLyfvvgOzjJQ287gPXEAa6wAFHK6SxojoUxOD9Abk6sTe8YsgTqseZ8DWPiiIggdjW8AuVaLie0B_nuUscqsvdaydn0B1c5BKaTHTsqoLQPWBhDb6Dy-IIUVmNWSoTZ3mv1JVRMT0&t=AQJXMO2btNavI1uWGwE"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKcUPSZjzzpF11VTjrWSxb9T303KfJKXny8Kvqb2fbLXTsZyXTVCeTbSnxja-PwjgonwYKwkNWbfdKjRjedtb8kpbImdd2orfDy3qwz5APuzjQrPY7XvsF77trdRpFrSrDZky2HiCZZ60LmpPVf0fKoRFPasYRZyynqicfoUM_IMh8OEPuyVnXqRY2PMePUJPtpAJ9rj4uitLb-EYb2qtvy-51xgwZHxhHWmqgTsmJ5MgjXv52p-HJ0kmSXPpddE08TDsm3nn9BVEIBqlNHnnE0KU7vRIC2mJHpCQwsJUySF49YlQzXwj0tNEiqf1y4ZOjjVEOxlfhvyLJlfr_wOeuTbK7ReqYQl6DFP-25I31tjK-z5LZR5KqA9uJOw_UlocPnL1bslzCM3VCbPyDp-C2_rRAuIRI7zaII6h4uKJjzc8ZTlAxda6v3yxxvWev1lgQ&t=AQJk4iur-dx6B5rZD10"
           }
         ],
         "decisions": [
@@ -26833,6 +26677,390 @@
                 "Unlabelled"
               ]
             }
+          ],
+          "nospend": [
+            {
+              "n": "October2026-Aditya-Raut-Swim-Shorts-MB36-Video-UGC-PA-Direct-15.10.2026",
+              "c": "Unmapped",
+              "t": [
+                "UGC",
+                "GRWM",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Ankit-Gupta-Sweatpants-MB18-Video-UGC-Dark-Post-Direct-25.10.2026",
+              "c": "Sweatpants"
+            },
+            {
+              "n": "October2026-Ayush-Arora-Henley-Tee-MB47-Video-UGC-Dark-Post-Direct-29.10.2026",
+              "c": "Henley"
+            },
+            {
+              "n": "October2026-Boardroom-H1-Canvas-Jackets-MB33-Video-Lofi-Brand-Brew-15.10.2026",
+              "c": "Jackets",
+              "t": [
+                "LoFi",
+                "Skit",
+                "Upgrade Mentality",
+                "Thumbstopper"
+              ]
+            },
+            {
+              "n": "October2026-Boardroom-H2-Canvas-Jackets-MB33-Video-Lofi-Brand-Brew-15.10.2026",
+              "c": "Jackets",
+              "t": [
+                "LoFi",
+                "Skit",
+                "Upgrade Mentality",
+                "Thumbstopper"
+              ]
+            },
+            {
+              "n": "October2026-Bringing-Back-The-Vintage-Mayank-Rugby-Polo-TShirt-CRW12-Video-PLV-V2-Internal-14.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "Product Detail",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Bringing-It-Back-On-Popular-Demand-Rugby-Polo-TShirt-CRW12-Video-PLV-V1-Internal-14.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "Product Detail",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Cant-See-Clearly--Canvas-Jackets-MB33-Video-Lofi-Direct-16.10.2026",
+              "c": "Jackets",
+              "t": [
+                "LoFi",
+                "Skit",
+                "Product + Trendy Music",
+                "Curiosity"
+              ]
+            },
+            {
+              "n": "October2026-Chandrashekhar-Rajput-Thermal-R68-Video-UGC-Dark-Post-Direct-29.10.2026",
+              "c": "Thermals"
+            },
+            {
+              "n": "October2026-Clapboard-Pictures-Edit-1-Rugby-Polo-TShirt-CRW12-Video-PLV-Internal-29.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "GRWM",
+                "Upgrade Mentality",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Clapboard-Pictures-Edit-2-Rugby-Polo-TShirt-CRW12-Video-PLV-Internal-29.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "GRWM",
+                "Upgrade Mentality",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Clapboard-Pictures-Edit-3-Rugby-Polo-TShirt-CRW12-Video-PLV-Internal-29.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "GRWM",
+                "Upgrade Mentality",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Clapboard-Repurposed-Sweat-Shorts-CRW7-Video-PLV-Internal-20.10.2026",
+              "c": "Unmapped",
+              "t": [
+                "PLV",
+                "Product Detail",
+                "Upgrade Mentality",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Crew-Trap-Pool-Table-Rugby-Polo-TShirt-CRW12-Video-PLV-V3-Internal-16.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "GRWM",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Finally-A-Sweater-That-Crewneck-Sweater-MB51-Video-PLV-Internal-27.10.2026",
+              "c": "Sweaters",
+              "t": [
+                "PLV",
+                "Product Detail",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Fit-Check-Repurposed-Rugby-Polo-TShirt-CRW12-Video-PLV-Internal-14.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "GRWM",
+                "Styling Multiple Looks",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-GRWM-Hardik-Rugby-Polo-TShirt-CRW12-Video-PLV-Internal-15.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "GRWM",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Girish-Full-Sleeve-Polo-TShirt-MB27-Video-UGC-Dark-Post-Direct-27.10.2026",
+              "c": "Tees"
+            },
+            {
+              "n": "October2026-Hook-1-Video-1-Rugby-Polo-TShirt-CRW12-Video-PLV-Abhay-14.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "GRWM",
+                "Styling Multiple Looks",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Hook-1-Video-2-Rugby-Polo-TShirt-CRW12-Video-PLV-Abhay-14.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "GRWM",
+                "Styling Multiple Looks",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-In-Office-Shoot-No-Copy-Rugby-Polo-TShirt-CRW12-Video-PLV-V2-Internal-14.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "Product Detail",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Ishan-Kumar-Crewneck-Sweater-MB46-Video-UGC-Dark-Post-Direct-29.10.2026",
+              "c": "Flannel Shirt"
+            },
+            {
+              "n": "October2026-Laziest-Shorts-Repurposed-Easy-Shorts-CR26-Video-PLV-Abhay-20.10.2026",
+              "c": "Unmapped",
+              "t": [
+                "PLV",
+                "Product Detail",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Match-Cut-Repurposed-Rugby-Polo-TShirt-CRW12-Video-PLV-Internal-14.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "GRWM",
+                "Styling Multiple Looks",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Mayank-No-Copy-Lifestyle-Rugby-Polo-TShirt-CRW12-Video-PLV-V1-Internal-14.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "Product Detail",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Obaid-Chambray-Pyjama-CR46-Video-UGC-PA-Genii-30.10.2026",
+              "c": "Pyjamas & Easy Pants",
+              "t": [
+                "UGC",
+                "Conversational",
+                "Upgrade Mentality",
+                "Curiosity"
+              ]
+            },
+            {
+              "n": "October2026-Once-A-Favourite-Premium-Oversized-MB30-Video-AI-PLV-Cinqa-30.10.2026",
+              "c": "Tees",
+              "t": [
+                "AI PLV",
+                "Product Detail",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Padel-Repurposed-Rugby-Polo-TShirt-CRW12-Video-PLV-Internal-14.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "Product Detail",
+                "Styling Multiple Looks",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Phone-Snatch-Canvas-Jackets-MB33-Video-Lofi-Direct-16.10.2026",
+              "c": "Jackets",
+              "t": [
+                "LoFi",
+                "Skit",
+                "Product + Trendy Music",
+                "Curiosity"
+              ]
+            },
+            {
+              "n": "October2026-Pool-Table-Repurposed-Rugby-Polo-TShirt-CRW12-Video-PLV-V2-Internal-14.10.2026",
+              "c": "Polos",
+              "t": [
+                "PLV",
+                "GRWM",
+                "Styling Multiple Looks",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Pratham-V2-Sweatpants-MB18-Video-UGC-Dark-Post-Direct-25.10.2026",
+              "c": "Sweatpants"
+            },
+            {
+              "n": "October2026-Product-GRWM-1-Cotton-Cargo-Pants-CR41-Video-PLV-Niti-21.10.2026",
+              "c": "Pants & Cargos",
+              "t": [
+                "PLV",
+                "GRWM",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Rajdeep-Pal-Regional-Bengali-Modal-Underwear-R7-Video-UGC-Dark-Post-MMM-17.10.2026",
+              "c": "Modal / Tactel UW",
+              "t": [
+                "UGC",
+                "Testimonial",
+                "Use Case Scenario",
+                "Question"
+              ]
+            },
+            {
+              "n": "October2026-Sweater-Weather-Is-Back-Crewneck-Sweater-MB51-Video-PLV-Internal-30.10.2026",
+              "c": "Sweaters",
+              "t": [
+                "PLV",
+                "Product Detail",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-The-Perfect-Premium-Oversized-MB30-Video-AI-PLV-Cinqa-30.10.2026",
+              "c": "Tees",
+              "t": [
+                "AI PLV",
+                "Product Detail",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Utkarsh-Uppal-DP1-Sweatpants-MB18-Video-UGC-Dark-Post-Direct-25.10.2026",
+              "c": "Sweatpants"
+            },
+            {
+              "n": "October2026-Utkarsh-Uppal-DP3-Sweatpants-MB18-Video-UGC-Dark-Post-Direct-25.10.2026",
+              "c": "Sweatpants"
+            },
+            {
+              "n": "October2026-Vansh-Hemnani-Half-Zip-Sweater-MB48-Video-UGC-PA-V1-Direct-31.10.2026",
+              "c": "Sweaters",
+              "t": [
+                "UGC",
+                "Testimonial",
+                "Use Case Scenario",
+                "Confession"
+              ]
+            },
+            {
+              "n": "October2026-White-BG-Repurposed-Easy-Shorts-CR26-Video-PLV-Abhay-20.10.2026",
+              "c": "Unmapped",
+              "t": [
+                "PLV",
+                "Product Detail",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Yash-Prakash-Henley-Tee-MB47-Video-UGC-PA-Direct-30.10.2026",
+              "c": "Henley",
+              "t": [
+                "UGC",
+                "GRWM",
+                "Styling Multiple Looks",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Yavistha-Upadhyay-Henley-Tee-MB47-Video-UGC-Dark-Post-V2-Direct-31.10.2026",
+              "c": "Henley",
+              "t": [
+                "UGC",
+                "GRWM",
+                "Styling Multiple Looks",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-Yavistha-Upadhyay-Henley-Tee-MB47-Video-UGC-Dark-Post-V3-Direct-31.10.2026",
+              "c": "Henley",
+              "t": [
+                "UGC",
+                "GRWM",
+                "Styling Multiple Looks",
+                "Unlabelled"
+              ]
+            },
+            {
+              "n": "October2026-You-Need-This-Premium-Oversized-MB30-Video-AI-PLV-Cinqa-30.10.2026",
+              "c": "Tees",
+              "t": [
+                "AI PLV",
+                "Product Detail",
+                "Product + Trendy Music",
+                "Unlabelled"
+              ]
+            }
           ]
         },
         "tier_mix": [
@@ -26859,7 +27087,8 @@
               "scaling": 1,
               "early": 1,
               "proving": 18,
-              "notworking": 1
+              "notworking": 1,
+              "nospend": 1
             }
           },
           {
@@ -26898,7 +27127,8 @@
               "scaling": 0,
               "early": 5,
               "proving": 39,
-              "notworking": 0
+              "notworking": 0,
+              "nospend": 4
             }
           },
           {
@@ -26911,7 +27141,8 @@
               "scaling": 2,
               "early": 5,
               "proving": 46,
-              "notworking": 0
+              "notworking": 0,
+              "nospend": 1
             }
           },
           {
@@ -26924,7 +27155,8 @@
               "scaling": 1,
               "early": 1,
               "proving": 18,
-              "notworking": 0
+              "notworking": 0,
+              "nospend": 1
             }
           },
           {
@@ -26937,7 +27169,8 @@
               "scaling": 4,
               "early": 1,
               "proving": 8,
-              "notworking": 2
+              "notworking": 2,
+              "nospend": 4
             }
           },
           {
@@ -26963,7 +27196,8 @@
               "scaling": 14,
               "early": 9,
               "proving": 53,
-              "notworking": 1
+              "notworking": 1,
+              "nospend": 4
             }
           },
           {
@@ -26976,7 +27210,8 @@
               "scaling": 2,
               "early": 2,
               "proving": 26,
-              "notworking": 0
+              "notworking": 0,
+              "nospend": 15
             }
           },
           {
@@ -27002,7 +27237,8 @@
               "scaling": 1,
               "early": 3,
               "proving": 8,
-              "notworking": 0
+              "notworking": 0,
+              "nospend": 1
             }
           },
           {
@@ -27015,7 +27251,8 @@
               "scaling": 1,
               "early": 2,
               "proving": 17,
-              "notworking": 1
+              "notworking": 1,
+              "nospend": 4
             }
           },
           {
@@ -27029,6 +27266,48 @@
               "early": 2,
               "proving": 2,
               "notworking": 0
+            }
+          },
+          {
+            "category": "Unmapped",
+            "group": "",
+            "emoji": "",
+            "order": 1000000,
+            "spend": 0,
+            "counts": {
+              "scaling": 0,
+              "early": 0,
+              "proving": 0,
+              "notworking": 0,
+              "nospend": 4
+            }
+          },
+          {
+            "category": "Sweaters",
+            "group": "Winter Overview",
+            "emoji": "\ud83e\udde3",
+            "order": 2009,
+            "spend": 0,
+            "counts": {
+              "scaling": 0,
+              "early": 0,
+              "proving": 0,
+              "notworking": 0,
+              "nospend": 3
+            }
+          },
+          {
+            "category": "Flannel Shirt",
+            "group": "Winter Overview",
+            "emoji": "\ud83d\udfe5",
+            "order": 2005,
+            "spend": 0,
+            "counts": {
+              "scaling": 0,
+              "early": 0,
+              "proving": 0,
+              "notworking": 0,
+              "nospend": 1
             }
           }
         ]
