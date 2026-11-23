@@ -1,44 +1,41 @@
 {
-  "generated_at": "2026-11-19T12:12:28.082715",
-  "today": "2026-11-19",
+  "generated_at": "2026-11-22T12:45:17.159321",
+  "today": "2026-11-22",
   "views": {
     "current": {
       "key": "current",
       "ym": "2026-11",
       "name": "November",
       "since": "2026-11-01",
-      "until": "2026-11-18",
+      "until": "2026-11-21",
       "example_prefix": "November2026",
       "has_data": true,
-      "uploaded": {
-        "count": 614,
-        "no_spend": 51
-      },
+      "uploaded": null,
       "analysis": {
         "summary": {
-          "spending": 569,
-          "spend": 3337844.06,
-          "share": 22.7,
-          "roas": 2.3959,
-          "older_roas": 2.601,
-          "units": 6595
+          "spending": 653,
+          "spend": 4450329.3,
+          "share": 26.1,
+          "roas": 2.4983,
+          "older_roas": 2.6528,
+          "units": 8914
         },
         "tiers": {
           "scaling": {
-            "count": 41,
-            "spend": 2077529.29
+            "count": 59,
+            "spend": 3090042.06
           },
           "early": {
-            "count": 77,
-            "spend": 255281.85
+            "count": 87,
+            "spend": 290451.49
           },
           "proving": {
-            "count": 434,
-            "spend": 732254.6
+            "count": 488,
+            "spend": 818811.24
           },
           "notworking": {
-            "count": 17,
-            "spend": 272778.32
+            "count": 19,
+            "spend": 251024.51
           }
         },
         "categories": [
@@ -47,43 +44,21 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddd8",
             "order": 2003,
-            "uploaded": 127,
-            "spending": 118,
-            "spend": 723522.16,
-            "roas": 2.143,
-            "older_roas": 2.8798,
+            "uploaded": null,
+            "spending": 142,
+            "spend": 997298.99,
+            "roas": 2.2872,
+            "older_roas": 2.8957,
             "best": {
-              "roas": 5.0815,
-              "ad_name": "November2026-Girish-Meshram-Sweatpants-MB18-Video-UGC-PA-Direct-09.11.2026",
-              "spend": 1765.56
+              "roas": 5.3499,
+              "ad_name": "November2026-Avish-Rajput-DP2-Sweatpants-CRW6-Video-UGC-Dark-Post-Direct-06.11.2026",
+              "spend": 3754.88
             },
             "best_all": {
-              "roas": 5.1404,
+              "roas": 5.3334,
               "label": "APR",
               "is_view": false,
               "ad_name": "Apr2026_Flirty-Neighbour_Track-Pants_MB42_Video_Lofi_Marty-Martin_24s_15.04.2026"
-            }
-          },
-          {
-            "category": "Shapewear & Vest",
-            "group": "Innerwear",
-            "emoji": "\ud83e\uddba",
-            "order": 1012,
-            "uploaded": 56,
-            "spending": 53,
-            "spend": 698760.73,
-            "roas": 2.5986,
-            "older_roas": 2.6742,
-            "best": {
-              "roas": 6.765,
-              "ad_name": "November2026-Sumant-Shapewear-Vest-SW01-Video-UGC-PA-Closer-01.11.2026",
-              "spend": 1157.51
-            },
-            "best_all": {
-              "roas": 4.131,
-              "label": "OCT",
-              "is_view": false,
-              "ad_name": "October2026-Vansh-Invisible-Vest-MB23-Video-UGC-PA-Atom-30.10.2026"
             }
           },
           {
@@ -91,21 +66,43 @@
             "group": "5@999 Cotton UW",
             "emoji": "\ud83e\ude72",
             "order": 11,
-            "uploaded": 61,
+            "uploaded": null,
             "spending": 65,
-            "spend": 641412.11,
-            "roas": 1.8909,
-            "older_roas": 2.486,
+            "spend": 781326.73,
+            "roas": 2.0677,
+            "older_roas": 2.5528,
             "best": {
-              "roas": 6.7482,
+              "roas": 5.3492,
               "ad_name": "November2026-Steal-And-Run-No-Hook-Cotton-Underwear-5-at-999-Video-Lofi-V1-MMM-09.11.2026",
-              "spend": 1283.95
+              "spend": 1619.75
             },
             "best_all": {
-              "roas": 4.9742,
+              "roas": 4.9642,
               "label": "JUN",
               "is_view": false,
               "ad_name": "June2026-Accidental-Shreyas-Cotton-Underwear-5-at-999-Video-UGC-PA-Barter-16.06.2026"
+            }
+          },
+          {
+            "category": "Shapewear & Vest",
+            "group": "Innerwear",
+            "emoji": "\ud83e\uddba",
+            "order": 1012,
+            "uploaded": null,
+            "spending": 55,
+            "spend": 699540.79,
+            "roas": 2.603,
+            "older_roas": 2.6965,
+            "best": {
+              "roas": 6.765,
+              "ad_name": "November2026-Sumant-Shapewear-Vest-SW01-Video-UGC-PA-Closer-01.11.2026",
+              "spend": 1157.51
+            },
+            "best_all": {
+              "roas": 4.9298,
+              "label": "OCT",
+              "is_view": false,
+              "ad_name": "October2026-Vansh-Invisible-Vest-MB23-Video-UGC-PA-Atom-30.10.2026"
             }
           },
           {
@@ -113,43 +110,21 @@
             "group": "Winter Overview",
             "emoji": "\ud83c\udf21\ufe0f",
             "order": 2002,
-            "uploaded": 15,
-            "spending": 13,
-            "spend": 289756.85,
-            "roas": 1.9725,
-            "older_roas": 2.8034,
+            "uploaded": null,
+            "spending": 16,
+            "spend": 491326.88,
+            "roas": 2.1111,
+            "older_roas": 2.7716,
             "best": {
-              "roas": 7.5341,
+              "roas": 5.4842,
               "ad_name": "November2026-Shubhajeet-Thermal-R68-Video-UGC-PA-V1-CoreSmart-11.11.2026",
-              "spend": 2284.11
+              "spend": 4287.51
             },
             "best_all": {
-              "roas": 4.5471,
+              "roas": 4.4964,
               "label": "OCT",
               "is_view": false,
-              "ad_name": "October2026-Qadeer-Thermal-R68-Video-UGC-Dark-Post-V1-Qoruz-19.10.2026"
-            }
-          },
-          {
-            "category": "Modal / Tactel UW",
-            "group": "Innerwear",
-            "emoji": "\ud83e\uddf4",
-            "order": 1013,
-            "uploaded": 33,
-            "spending": 32,
-            "spend": 142562.21,
-            "roas": 3.0396,
-            "older_roas": 3.7668,
-            "best": {
-              "roas": 3.4481,
-              "ad_name": "November2026-Brijesh-Modal-Underwear-Video-UGC-PA-Direct-12.11.2026",
-              "spend": 12405.72
-            },
-            "best_all": {
-              "roas": 5.9994,
-              "label": "JUN",
-              "is_view": false,
-              "ad_name": "June2026-Tejas-Aher-Modal-Underwear-Video-UGC-PA-Direct-20.06.2026"
+              "ad_name": "October2026-Cold-Proof-Thermal-Video-PLV-Internal-21.10.2026"
             }
           },
           {
@@ -157,21 +132,43 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddf6",
             "order": 2007,
-            "uploaded": 42,
-            "spending": 36,
-            "spend": 142286.53,
-            "roas": 2.0858,
-            "older_roas": 2.3062,
+            "uploaded": null,
+            "spending": 46,
+            "spend": 244449.82,
+            "roas": 2.1909,
+            "older_roas": 2.3315,
             "best": {
-              "roas": 4.9426,
+              "roas": 4.0376,
               "ad_name": "November2026-Unstoppable-Zip-Up-Hoodie-Jacket-CRW4-Video-UGC-Dark-Post-Goldmine-05.11.2026",
-              "spend": 1378.04
+              "spend": 1686.91
             },
             "best_all": {
-              "roas": 4.4335,
+              "roas": 4.1783,
               "label": "OCT",
               "is_view": false,
               "ad_name": "October2026-Hoodies-That-Your-Girl-Hoodie-CRW4-Video-PLV-Internal-14.10.2026"
+            }
+          },
+          {
+            "category": "Jackets",
+            "group": "Winter Overview",
+            "emoji": "\ud83e\udde5",
+            "order": 2004,
+            "uploaded": null,
+            "spending": 51,
+            "spend": 215689.87,
+            "roas": 3.0861,
+            "older_roas": 2.7103,
+            "best": {
+              "roas": 8.2376,
+              "ad_name": "November2026-Divyansh-Tank-Canvas-Jackets-MB43-Video-UGC-Dark-Post-Qoruz-14.11.2026",
+              "spend": 1724.84
+            },
+            "best_all": {
+              "roas": 7.0041,
+              "label": "OCT",
+              "is_view": false,
+              "ad_name": "October2026-Kanishk-Polar-Fleece-Jacket-MB13-Video-UGC-Dark-Post-Kofluence-14.10.2026"
             }
           },
           {
@@ -179,21 +176,43 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\udde3",
             "order": 2009,
-            "uploaded": 33,
-            "spending": 26,
-            "spend": 140109.74,
-            "roas": 2.6076,
-            "older_roas": 2.3555,
+            "uploaded": null,
+            "spending": 34,
+            "spend": 172386.27,
+            "roas": 2.8096,
+            "older_roas": 2.3419,
             "best": {
-              "roas": 4.9509,
-              "ad_name": "November2026-Why-Is-This-Crewneck-Sweater-MB51-Video-PLV-Internal-05.11.2026",
-              "spend": 1390.04
+              "roas": 9.3323,
+              "ad_name": "November2026-Jacob-Elordi-Crewneck-Sweater-MB51-Video-PLV-Abhay-18.11.2026",
+              "spend": 1218.67
             },
             "best_all": {
-              "roas": 3.7081,
+              "roas": 5.1314,
               "label": "NOV",
               "is_view": true,
-              "ad_name": "November2026-Ishan-Kumar-Crewneck-Sweater-MB51-Video-UGC-PA-Direct-02.11.2026"
+              "ad_name": "November2026-Sweater-Weather-In-XYXX-Half-Zip-Sweater-MB48-Video-PLV-Abhay-16.11.2026"
+            }
+          },
+          {
+            "category": "Modal / Tactel UW",
+            "group": "Innerwear",
+            "emoji": "\ud83e\uddf4",
+            "order": 1013,
+            "uploaded": null,
+            "spending": 33,
+            "spend": 160341.48,
+            "roas": 2.9692,
+            "older_roas": 3.853,
+            "best": {
+              "roas": 3.3023,
+              "ad_name": "November2026-Prajam-Malayalam-Regional-Modal-Underwear-Video-UGC-Dark-Post-After8_Media-04.11.2026",
+              "spend": 99090.45
+            },
+            "best_all": {
+              "roas": 6.1349,
+              "label": "JUN",
+              "is_view": false,
+              "ad_name": "June2026-Tejas-Aher-Modal-Underwear-Video-UGC-PA-Direct-20.06.2026"
             }
           },
           {
@@ -201,18 +220,18 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc54",
             "order": 2006,
-            "uploaded": 24,
-            "spending": 24,
-            "spend": 100252.52,
-            "roas": 2.7282,
+            "uploaded": null,
+            "spending": 25,
+            "spend": 148436.85,
+            "roas": 2.8239,
             "older_roas": null,
             "best": {
-              "roas": 5.5484,
-              "ad_name": "November2026-Looking-Good-Is-A-Side-Overshirt-MB49-Video-PLV-Internal-05.11.2026",
-              "spend": 1381.81
+              "roas": 8.2186,
+              "ad_name": "November2026-Meet-Mathre-Overshirt-MB49-Video-UGC-PA-Direct-17.11.2026",
+              "spend": 1117.65
             },
             "best_all": {
-              "roas": 2.578,
+              "roas": 2.8679,
               "label": "NOV",
               "is_view": true,
               "ad_name": "November2026-Harsh-Gulati-Overshirt-MB49-Video-UGC-PA-V1-Closer-06.11.2026"
@@ -223,43 +242,21 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc55",
             "order": 2008,
-            "uploaded": 33,
-            "spending": 25,
-            "spend": 85768.53,
-            "roas": 2.7899,
-            "older_roas": 2.1189,
+            "uploaded": null,
+            "spending": 34,
+            "spend": 118800.68,
+            "roas": 2.7742,
+            "older_roas": 2.141,
             "best": {
-              "roas": 7.7637,
+              "roas": 7.3906,
               "ad_name": "November2026-Sunny-Henley-Tee-MB47-Video-UGC-PA-Atom-12.11.2026",
-              "spend": 1868.93
+              "spend": 1963.27
             },
             "best_all": {
-              "roas": 3.1823,
+              "roas": 3.0153,
               "label": "NOV",
               "is_view": true,
               "ad_name": "November2026-Ayush-Arora-Henley-Tee-MB47-Video-UGC-PA-Direct-04.11.2026"
-            }
-          },
-          {
-            "category": "Jackets",
-            "group": "Winter Overview",
-            "emoji": "\ud83e\udde5",
-            "order": 2004,
-            "uploaded": 46,
-            "spending": 43,
-            "spend": 74420.77,
-            "roas": 2.7598,
-            "older_roas": 2.4297,
-            "best": {
-              "roas": 8.5953,
-              "ad_name": "November2026-Divyansh-Tank-Canvas-Jackets-MB43-Video-UGC-Dark-Post-Qoruz-14.11.2026",
-              "spend": 1653.07
-            },
-            "best_all": {
-              "roas": 4.2032,
-              "label": "OCT",
-              "is_view": false,
-              "ad_name": "October2026-Rahul-Banerjee-Half-Zip-Sweatshirt-MB17-Video-UGC-Dark-Post-Kofluence-14.10.2026"
             }
           },
           {
@@ -267,21 +264,21 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83d\udc55",
             "order": 3015,
-            "uploaded": 29,
-            "spending": 23,
-            "spend": 73180.74,
-            "roas": 2.6539,
-            "older_roas": 2.5968,
+            "uploaded": null,
+            "spending": 30,
+            "spend": 107383.47,
+            "roas": 2.8524,
+            "older_roas": 2.6257,
             "best": {
-              "roas": 3.216,
-              "ad_name": "November2026-Nitin-Sharma-Nova-Polo-CR14-2-at-1049-Video-UGC-PA-Barter-04.11.2026",
-              "spend": 16196.35
+              "roas": 6.3552,
+              "ad_name": "November2026-Aditya-Tiwari-Nova-Polo-CR14-2-at-1049-Video-UGC-PA-Barter-17.11.2026",
+              "spend": 5036.73
             },
             "best_all": {
-              "roas": 5.1266,
-              "label": "JUN",
-              "is_view": false,
-              "ad_name": "June2026-Kick-It-Nova-Polo-2-at-1049-Video-Lofi-V2-MMM-02.06.2026"
+              "roas": 6.3552,
+              "label": "NOV",
+              "is_view": true,
+              "ad_name": "November2026-Aditya-Tiwari-Nova-Polo-CR14-2-at-1049-Video-UGC-PA-Barter-17.11.2026"
             }
           },
           {
@@ -289,18 +286,18 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udee2\ufe0f",
             "order": 2000,
-            "uploaded": 18,
-            "spending": 18,
-            "spend": 66604.69,
-            "roas": 3.9591,
+            "uploaded": null,
+            "spending": 19,
+            "spend": 94586.66,
+            "roas": 3.9948,
             "older_roas": null,
             "best": {
-              "roas": 5.2171,
-              "ad_name": "November2026-Pants-That-Make-The-Whole-Barrel-Pants-MB39-Video-PLV-Internal-05.11.2026",
-              "spend": 2158.02
+              "roas": 10.8858,
+              "ad_name": "November2026-Praveen-Barrel-Pants-MB39-Video-UGC-PA-Direct-16.11.2026",
+              "spend": 1852.82
             },
             "best_all": {
-              "roas": 4.2473,
+              "roas": 4.0962,
               "label": "NOV",
               "is_view": true,
               "ad_name": "November2026-Ayush-Jaghnta-Barrel-Pants-MB39-Video-UGC-PA-Direct-03.11.2026"
@@ -311,18 +308,18 @@
             "group": "Outerwear \u00b7 Bottomwear",
             "emoji": "\ud83d\ude34",
             "order": 4019,
-            "uploaded": 14,
-            "spending": 12,
-            "spend": 54551.09,
-            "roas": 2.4374,
-            "older_roas": 2.6274,
+            "uploaded": null,
+            "spending": 15,
+            "spend": 91441.98,
+            "roas": 2.4955,
+            "older_roas": 2.6029,
             "best": {
-              "roas": 4.005,
+              "roas": 4.0506,
               "ad_name": "November2026-Lakshay-Easy-Pants-CR44-Video-UGC-PA-Direct-03.11.2026",
-              "spend": 8268.74
+              "spend": 8799.61
             },
             "best_all": {
-              "roas": 4.005,
+              "roas": 4.0506,
               "label": "NOV",
               "is_view": true,
               "ad_name": "November2026-Lakshay-Easy-Pants-CR44-Video-UGC-PA-Direct-03.11.2026"
@@ -333,18 +330,18 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83c\udfc3",
             "order": 3016,
-            "uploaded": 22,
+            "uploaded": null,
             "spending": 22,
-            "spend": 48601.62,
-            "roas": 4.0304,
-            "older_roas": 3.3594,
+            "spend": 53634.19,
+            "roas": 4.29,
+            "older_roas": 3.3425,
             "best": {
-              "roas": 4.2904,
+              "roas": 4.6364,
               "ad_name": "November2026-Ritik-Active-Coolmax-Tshirt-AT02-Video-UGC-PA-Direct-03.11.2026",
-              "spend": 40663.4
+              "spend": 45007.0
             },
             "best_all": {
-              "roas": 4.2904,
+              "roas": 4.6364,
               "label": "NOV",
               "is_view": true,
               "ad_name": "November2026-Ritik-Active-Coolmax-Tshirt-AT02-Video-UGC-PA-Direct-03.11.2026"
@@ -355,18 +352,18 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udfe5",
             "order": 2005,
-            "uploaded": 27,
-            "spending": 25,
-            "spend": 23005.73,
-            "roas": 4.5072,
-            "older_roas": 3.1704,
+            "uploaded": null,
+            "spending": 32,
+            "spend": 37555.38,
+            "roas": 4.0265,
+            "older_roas": 2.3018,
             "best": {
-              "roas": 5.8648,
+              "roas": 5.0539,
               "ad_name": "November2026-The-Kind-Of-Shirt-Flannel-Shirt-MB46-Video-PLV-Internal-05.11.2026",
-              "spend": 6466.51
+              "spend": 7723.34
             },
             "best_all": {
-              "roas": 5.8648,
+              "roas": 5.0539,
               "label": "NOV",
               "is_view": true,
               "ad_name": "November2026-The-Kind-Of-Shirt-Flannel-Shirt-MB46-Video-PLV-Internal-05.11.2026"
@@ -377,43 +374,21 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc56",
             "order": 2001,
-            "uploaded": 10,
+            "uploaded": null,
             "spending": 10,
-            "spend": 22724.53,
-            "roas": 4.534,
-            "older_roas": 4.1099,
+            "spend": 24813.57,
+            "roas": 4.4665,
+            "older_roas": 4.4209,
             "best": {
-              "roas": 5.1235,
+              "roas": 4.9557,
               "ad_name": "November2026-Taksh-Denim-Pants-MB37-Video-UGC-PA-Direct-03.11.2026",
-              "spend": 2528.51
+              "spend": 2614.12
             },
             "best_all": {
-              "roas": 4.5766,
-              "label": "NOV",
-              "is_view": true,
-              "ad_name": "November2026-Vishal-Hakki-Denim-Pants-MB37-Video-UGC-PA-Direct-04.11.2026"
-            }
-          },
-          {
-            "category": "Tees",
-            "group": "Outerwear \u00b7 Topwear",
-            "emoji": "\ud83c\udfbd",
-            "order": 3017,
-            "uploaded": 11,
-            "spending": 11,
-            "spend": 5377.17,
-            "roas": 2.9895,
-            "older_roas": 3.1843,
-            "best": {
-              "roas": 3.3409,
-              "ad_name": "November2026-The-Cult-Favourite-Oversized-Tshirt-MB30-Video-AI-PLV-Cinqa-06.11.2026",
-              "spend": 4318.15
-            },
-            "best_all": {
-              "roas": 5.9665,
-              "label": "JUL",
+              "roas": 4.5906,
+              "label": "OCT",
               "is_view": false,
-              "ad_name": "July2026-Anwar-Rey-Pace-TShirt-CR15-3-at-1049-Video-UGC-PA-Direct-10.07.2026"
+              "ad_name": "October2026-Vishal-Sharma-Denim-Pants-MB37-Video-UGC-PA-Direct-30.10.2026"
             }
           },
           {
@@ -421,60 +396,106 @@
             "group": "Outerwear \u00b7 Bottomwear",
             "emoji": "\ud83d\udc56",
             "order": 4020,
-            "uploaded": 15,
+            "uploaded": null,
             "spending": 15,
-            "spend": 4946.34,
-            "roas": 4.7221,
-            "older_roas": 3.6067,
+            "spend": 5771.78,
+            "roas": 5.0651,
+            "older_roas": 3.6318,
             "best": {
-              "roas": 2.7775,
+              "roas": 2.3593,
               "ad_name": "November2026-Ankit-Gupta-Cotton-Cargo-Pants-CR41-Video-UGC-PA-Direct-07.11.2026",
-              "spend": 1420.49
+              "spend": 1672.28
             },
             "best_all": {
-              "roas": 5.2461,
+              "roas": 5.0511,
               "label": "AUG",
               "is_view": false,
               "ad_name": "August2026-Siaa-Talking-Head-Ripstop-Cargo-Pants-Video-UGC-PA-Direct-11.08.2026"
+            }
+          },
+          {
+            "category": "Tees",
+            "group": "Outerwear \u00b7 Topwear",
+            "emoji": "\ud83c\udfbd",
+            "order": 3017,
+            "uploaded": null,
+            "spending": 12,
+            "spend": 5543.91,
+            "roas": 3.4707,
+            "older_roas": 3.246,
+            "best": {
+              "roas": 3.7082,
+              "ad_name": "November2026-The-Cult-Favourite-Oversized-Tshirt-MB30-Video-AI-PLV-Cinqa-06.11.2026",
+              "spend": 4323.23
+            },
+            "best_all": {
+              "roas": 6.548,
+              "label": "JUL",
+              "is_view": false,
+              "ad_name": "July2026-Anwar-Rey-Pace-TShirt-CR15-3-at-1049-Video-UGC-PA-Direct-10.07.2026"
             }
           }
         ],
         "cards": [
           {
+            "ad_id": "120250507748830298",
+            "ad_name": "November2026-Praveen-Barrel-Pants-MB39-Video-UGC-PA-Direct-16.11.2026",
+            "adset_name": "Pros-Outerwear-Barrel-Pants-TSQ-Broad-Videos-03.11.2026",
+            "spend": 1852.82,
+            "roas": 10.8858,
+            "conv_value": 20169.39,
+            "purchases": 13,
+            "category": "Barrel Pants",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKa4LXkQVKzpScvOor3KH89X7MnCSOxBVTYPrDankr2sMnB7BCeRJ7uAT-0rk76lVLBnYS0dpWaoDu1s5BmR023M6vXBl42uFJUZI7zMWT4a-l0x5aT8onmvJqrYVT6YwEgjk7Jg67gIq-mD-u0XKl4Qrqz10cRQkIWs8yiIpQD1WwSWNpFsEaOdskLMJD8rA8y4dJSvGbTQ9C5CcyzTOBQhqAjat0KeuIvlBSD73EkXYqlIfYie52oAuGdbv6bvQc7JNt_2YTx1ueT-RwLM5uyCLrW-6Z4cdtxu7vhBEPi9s9XgZBWHMbBB-SFEWDSg9GWOcSvXc6c7BSbwHn5yBzknT3HMwvISza-23OxBa4ZXOPqWgFcVo_62jdNDyG0xbDRX-NCTyuCeDQFqdU8ygtH7ia1ionILkojSZ9iYh4K01rzu8TOw4ICxxLK8PbkruY&t=AQIrtpnyYxjePsWKQhQ"
+          },
+          {
+            "ad_id": "120250540930770298",
+            "ad_name": "November2026-Jacob-Elordi-Crewneck-Sweater-MB51-Video-PLV-Abhay-18.11.2026",
+            "adset_name": "Pros-Sweaters-TSQ-Broad-Videos-02.11.2026",
+            "spend": 1218.67,
+            "roas": 9.3323,
+            "conv_value": 11373.01,
+            "purchases": 7,
+            "category": "Sweaters",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJKEfqM_Ca1XftI4VbMyqdGsQYoNZhRkc3xsjBaehUvGDgYOXW2Bb1yjxTdQcBs-bdW190iSFROARlc5mdIy3qSJ6mDWEYnRz_ySDoeDJKV4ZrgG8TzlFPkuDM7WilhdyW3Z8gmxUWfoPY2bxy6vcvdVN28W9sHl3C8AcRbIv1MoBwDUzR2CWa09yPB_uYP6XMJUESVIsWNewGluCkNIvFmRkhTIMaJ5cGeCiJliopli2E0Dd5p8Iyingpq2mz4OHfi71R1TGRItmOKjb0PDMo2r4o8oTOANi4diB1a9rr-FUGtXaDZbLZOMXMLQI-wI8HYNbdjuwOJktNgHKYoALDHqpByETHRD2Pqs3y13I2b9YXICMknAkg-ohQ4R62WNg0xdbzhkW7F5WANGioUP6TOwPEFv2525kqZtX5klEEvwzar7qOIslpCUhpXEDHQEnU&t=AQKJNWRU2ErxnwRYkbU"
+          },
+          {
             "ad_id": "120250477492050298",
             "ad_name": "November2026-Divyansh-Tank-Canvas-Jackets-MB43-Video-UGC-Dark-Post-Qoruz-14.11.2026",
             "adset_name": "Pros-Outerwear-Canvas-Jackets-TSQ-Broad-Videos-14.11.2026",
-            "spend": 1653.07,
-            "roas": 8.5953,
+            "spend": 1724.84,
+            "roas": 8.2376,
             "conv_value": 14208.55,
             "purchases": 6,
             "category": "Jackets",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQK0ZRu9ucEEdnxXmWiKPQQ1a0PJMu3jn4Eryn4KkPhrlrmpk4Zctbyo90GymjnyVNCsz-GKtIsej01Y6USo4NtdDp82G8CU8B6NQeHdvWt2vhKcxroh_LQvsqC3qk-w7FBeljp3Tu5sgcQKxSOQxQazfQkCPxiFi4FkGu8qcgW2o-bb4vW6uK6JVaBEYeRccx23lJt86KALLFi2hYSxpiSQqtXGgeQoM3Ns4stTVYCUpJoVY-Hjl4wCbbs7oUEGO3_Is44H9CE2NWDZeyJdjER5E3aPsOKBvnFrIQuRFp87CbyJVFAIFR5SMbIYW8_D7ec5TAwYqJvuOJvpJSGIqZxUWEzlnuKAZriWFMbEzTAUSCqI_k48lv_HLwXtF-20NnEcLs7ZykmXvvy3mm0NYzX7WPtzbbeX_K28nucElkHxaPJdy5THVczDFCwObP3lG-M&t=AQJtH5yzS6Ns8ozlwvE"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKABKhB1SFJArHCtlxHidoemk5VXcQ3IUDBKmgODAXvW0K2JpKwz9f5cg2HSe4-RpRMMqsEZYvBnWuibC4k35LA_HjMzLlXGCaJS50AizPvYcR0Q_vxfirGI3wH4rdA0JGeMO6ftyE78CE5xv5-IKu5kx8JCxcojCQKRIDuNaW_owhYSa6uyQJfcH7_TWewxW0AxNZGHQuAGcIJwCBYDiHwpgAaAKYBuShYsM63n5b0yys06sbdZcJLtV7916Tdnm77Z5SSp_YXs_BsuyA_3NGI-AhWa1acHwwwr1c7hQfA-1NTBa8r6L-U43NmLpZ6rXy6EAL9OCw4qMbhS8FVPAToa7a1BsQUxyo6hMV9cyPumvQCIimI9HLCMT7psglA3bC3dmmc9GT9gVN2CRaNjPpc33pHIdMtceUf2lp8p93x7mCfwU59eK8FrcyCaSbn-74&t=AQKwSkJ4FcsKTHm3jyM"
+          },
+          {
+            "ad_id": "120250523414760298",
+            "ad_name": "November2026-Meet-Mathre-Overshirt-MB49-Video-UGC-PA-Direct-17.11.2026",
+            "adset_name": "Pros-Overshirt-MB49-TSQ-Broad-Videos-05.11.2026",
+            "spend": 1117.65,
+            "roas": 8.2186,
+            "conv_value": 9185.53,
+            "purchases": 6,
+            "category": "Overshirt",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ6YuB1XH5T_Qap0MW6Z7-EVrHOeV7CZKyOH2hw3YhrVeN2cdJYD4aLkvZs9XQMA1edtEVdMOvvG8MUR5R0lJzb2vnyeXvYAvHoiA8odnVgaS1DzrXxg2_kf7aUUeFNNjUUdkcv9c0wDUVmqRUsYz7JJSDa1Z-dlAzvmmPiOQiRUGdobKcVRAH4JK-uj0yRiX4X55Nf3BHzTIuvmx7N3WOFTV6TEi-po4nx-WyKoEuA8PllXlTDYh7KEZoeChvlHFLmnd-m1Y9Ac6Y-x9Ll96k4URWkRtKnKowqW4PU-8geprMxSzCV8-qRd0_wnuRpDRKv9EjbKikIa9HO4Hpxm7SbE6Kk8r_TLMc3w1msap_wgUvw9VMIBCaCJqj_R5FMNZswLazt1A34itFuzj8-EdLuxleJ9tFGiGZ3uAystJ7aeUit5zeSzaqcIGIZ1eRq8bU&t=AQKrB2SfTV1j5Yo-rts"
           },
           {
             "ad_id": "120250444043330298",
             "ad_name": "November2026-Sunny-Henley-Tee-MB47-Video-UGC-PA-Atom-12.11.2026",
             "adset_name": "Pros-Henley-TSQ-Broad-Videos-22.10.2026",
-            "spend": 1868.93,
-            "roas": 7.7637,
+            "spend": 1963.27,
+            "roas": 7.3906,
             "conv_value": 14509.83,
             "purchases": 4,
             "category": "Henley",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKLI1EaWWq71gRQ6-wXJMxEedaIiVvGXKoL3dBoMbiYlC7VoSQTGeWymrYkwQswvP8s8ljEIKMFZgcFU-10daar856yIlxsdX7n8sUA58aMdQ14VFW5eJ5VYlhK4-HMsuBJiIkfRlZ4bRKMp4GTq_1RI0Kxj_rdIjs2dHd33GyoMST67MT1hznTX92fYkiE92LbdfyFcIETJQsPlLbxmK_fVRWA-30t1uOst8a9SUoaS4vfVwia7cUHTFvvfxWg874QI5IIQ4M0ezhJWGjTmiKchT9yb9ReXa7uYd346HiAn07oDyec1jHfFsdk6VT8mB_CaY9pb8bUbZW74VAsvrz6pQGvj_TEX--82YXG04sZv3IOypIuPxMIjVu0jXGXJ-Qp3FsLbw-bnXJT156tgcFa1Q-SorjCn7S4XxZAqJ7SGtfR6cJiaGJ66BBFgNd2NQw&t=AQLE-2XLbeMaqjKhdrM"
-          },
-          {
-            "ad_id": "120250443765710298",
-            "ad_name": "November2026-Shubhajeet-Thermal-R68-Video-UGC-PA-V1-CoreSmart-11.11.2026",
-            "adset_name": "Pros-Thermal-TSQ-Broad-Videos-16.10.2026",
-            "spend": 2284.11,
-            "roas": 7.5341,
-            "conv_value": 17208.61,
-            "purchases": 8,
-            "category": "Thermals",
-            "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIY7HsCHja2yoSMTwdYOIw-m3zBJI5bu13wlWgKD7YGxZvVa9ufwD1HZnFM39CedooSHYofrvqvGZNp3tCTUTgtVFackV_WZnaDc5j3k1MAQz1Rfec10XesFEIc_RNsDKoX62E4CW4hVjNScTULfCYrNN0R1xWN0KtP3BZZ2iUaweZvTUn3cqbShM09yE7TefJ0FlgjrJhdJM9NCDU_068bQRHpPy_9SnxJO_4k6c2DkJkNg0i3G_I3Rdw95fWSX6NuF0AehELuagTYkfYqkecyCh79j2UAnBX0q1G1zP5630-mB3d0_ZfxoFx0VRUkZykDIzTqscd1hGjwN_v0_orBeem78yrwEesrQfVmXhDg4xSx03pvlhhrC6iH_KRW5LRqkVU4m3mFxpq5i--NkuJYYHoYqX5kCQtHAuDP96TiJPe7IYENg-l3VGfgDaXq2MA&t=AQIwe9KRj2RjKGevqZQ"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQK1BcX_j5ZW-HD5poZ6yckqFDrSbuCBLhRoxge_mdPqE1xVRAExTx1uImp5b9Dh_n4rQ5AUEkEHhgnKRkJvuXlRPCle7wiKuEykXQcuSEf6-zWUbT0sBzkotfn0HOyIfLlp8wgiunF0unkpeuEt60zy-b9dwyki-8U57gs170xN_D3wEIu3XGf9UQZpRDf177yqolDCv7OrIkWq58RTzGQ-UMhSiTswjrrWlump8k32_dyq1ldfjkzJ01rUO2NVQKDh_-o9_iYRONYd9Smtw9VtBvO2fctWPx0WiyQO-3VieFU_5rg1JkqyEXUb6oK7h9ohet29IEqM81EPapDew605plou-LWqkCazCJiZfzOraTEpviW5PJ0Tf0q33-o8_v3CvUUkUmDPtS7FFWQU_apNd4GOjRCD9ByEpFSTngPNca_z0Es0thh90nc0GGOUQ-w&t=AQIWDpcrRR8YksgvF4I"
           },
           {
             "ad_id": "120250235866800298",
@@ -486,31 +507,7 @@
             "purchases": 7,
             "category": "Shapewear & Vest",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKeA9-I3m8O4ZoBIqbBo67v01RWnjYjyvNgOL9vrpsE334YwXVi_VgeoLIJU-uzXoX8kTruEyM_RVFogZOVNhgp9QSjVWjrYnMUq4UXgkgZ3t1xwTWEW-zPeZjWDpshMCKZrug1ya_yacWrTavpEFcQBmzeMQgN4tlYQo6BpSLDKzmHmkwlTq-V2fkzsghmNSf1XuvRHj15qnFLPZCYXux5cZrJsHyI6tUQiox3O6_LPeEGYgjjuX0XWHz_-dwZd05YX7K-2TrjqjVkCt6XEnsBPDSH5hmhnsx0NrsKP1t7PO8ycusSBJTPzFgSmeaF58DWmvyj8UMtRTphHKxJbfRyNS-c0rX1paaJxs1hiWh_c-sPwVx8BPpKIlyKjVO4XSMw1V1TPpxj9KdJOPI55_mn_mdeOYLJBGnzERVjNUtfVMf2jdOOX5B1sW8CCjg_XPg&t=AQKUymCIgVEtyJkFL1o"
-          },
-          {
-            "ad_id": "120250391348900298",
-            "ad_name": "November2026-Steal-And-Run-No-Hook-Cotton-Underwear-5-at-999-Video-Lofi-V1-MMM-09.11.2026",
-            "adset_name": "Pros-Cost-Cap-Innerwear-Buy-5-at-999-TSQ-Videos-30.06.2026",
-            "spend": 1283.95,
-            "roas": 6.7482,
-            "conv_value": 8664.41,
-            "purchases": 7,
-            "category": "5@999 Cotton UW",
-            "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJG-NwUk5NmbNUF0maRKecDOI11F-4oJwBIg3AxMygU-INFHGgxtuMXavu9LTCnK3yWqomEIEcFUFPJwKJmHExHH-9PxtlKoxcTokXRl6tlwHDJs1-cdMx3oakpebhB9NddHv6Jw798y8Fc6rf018reIKYRu71niRdPVbeFXCv3Kof7LeUF6_S6J4bAfauTsUwbd39fWY4ua2BXZan2MVz9HdaN3k0gAmi_hMZIW_Y68pgSK71hwDej5zRVcT8w1xLkfY0BKNwKQdR59P8Y1Q2GQC9-zFtMSEk1GIMzmHg8JmS5QqvO-KhGrPbpYB7fzWdeH7deAXEdQ3DxWDVcIzs77NAkExywhRLRsk7qxbwm2pxmoBH7IiRLnRKbpuZ3PyV7q8I25AygW9MFSz6CkBiXctchegAZF71PL-i-_KPD2x3THI6GiGFQCvZNDsKdjZM&t=AQJNgSjUmIs8w9mXMz8"
-          },
-          {
-            "ad_id": "120250321815710298",
-            "ad_name": "November2026-The-Kind-Of-Shirt-Flannel-Shirt-MB46-Video-PLV-Internal-05.11.2026",
-            "adset_name": "Pros-Outerwear-Flannel-Shirt-TSQ-Broad-Videos-04.11.2026",
-            "spend": 6466.51,
-            "roas": 5.8648,
-            "conv_value": 37924.92,
-            "purchases": 22,
-            "category": "Flannel Shirt",
-            "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJw_XGn-HbV9pcgqZ6_oJvLMDWoIfV0Nve0u2fsOADh2v8Re_AeS_t7quf2rNtkW82QAbO-C3xOGQXFaAuG9NjAYqD9cJ8q7kRD6iiczoPMDnl5BU-cqNNiVCRqPCgeZwup_mw_HsUYmIurLmNdHTeuztWDRs01pG1Tw77CEEWNx7Aj-WmFAviIRJtz8ESDD8ce6Lj3g1bjfquUynrQlyE6qAKf0ApY9w9ZkTdvWT188uq25_YGJoQkQwH8zRc1F52x92mKuZ1QgurzEpjCULR7CIfvL-CP1iX7rhXD1_hJT7YP7Rejqya82wdcTZIQNcqipRCSdJR67JqBpV6-5llHNeJlJ-ZgkIGgvzh9P5nQ4VgwrRJnVetQZU0ouE6HQvL1EPrGRMy_7NfCWcYMadk5qWUvQ7o5LCVgXkz1tLkPdr42gOQ2-9gBbuhgCLcSrt4&t=AQI3Mk9bIdsg0ugSM1I"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKcsNsd_jUXGOho4plNes8GCqzJiep0iXf4e9STondc-Ms7ZYxiOnZu3PB62ZzTDDqytM8UlQ6_gc7JRPxd0ZkCC-lNC2rt7-XAHArFAGqruJjj_AJAjAPlS6DL58TwKsWCL_BlDCkDcqwwQ_EXI_G48kgKh5XJbSVpAHJfFHYKQk5186QTQr9QS6RGCMf6MqDsBtOeuPDN7t50DoVjq5TWIElpuv2AV53AUtgDA3dIg6ihjOKqLbc8eD-8V4RbNhq0FsIy0TY90V0BZTF9uUSezLJs-BguvNOmeX1mMM8AuEPSfENtz0IKbNgujg1Cc5wMRNsbCep1tHj8DoXLmMmorKrkVacruXEHhb3p53rQpjFz4pUG4VFGC3LXd848rLBI8J_f3_bzYIQpWh7HZ5SlJ6Z5rnjDOs4e5_k9E71uZypSzDutXHr06kAosa2BTIM&t=AQI_eH6YmLSp3qrMDPE"
           }
         ],
         "decisions": [
@@ -526,14 +523,25 @@
             "tier": "notworking"
           },
           {
-            "ad_id": "120250296337070298",
-            "ad_name": "November2026-Rohan-Fleece-Sweatpants-MB18-Video-UGC-Dark-Post-MMM-04.11.2026",
-            "adset_name": "Pros-Winter-Master-TSQ-30.10.2026",
-            "spend": 58364.33,
-            "roas": 1.4342,
-            "conv_value": 83705.95,
-            "purchases": 47,
-            "category": "Sweatpants",
+            "ad_id": "120250561398360298",
+            "ad_name": "November2026-thetrendmaniac-Half-Zip-Pullover-MB40-Video-UGC-Dark-Post-Direct-19.11.2026",
+            "adset_name": "Pros-Outerwear-Jackets-TSQ-Broad-Videos-14.10.2026",
+            "spend": 15945.39,
+            "roas": 1.4724,
+            "conv_value": 23477.91,
+            "purchases": 17,
+            "category": "Jackets",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250525758330298",
+            "ad_name": "November2026-Use-Case-Rugby-Polo-TShirt-CRW12-Video-AI-PLV-Goldmine-17.11.2026",
+            "adset_name": "Pros-Rugby-Polo-TSQ-Broad-Videos-28.10.2026",
+            "spend": 12262.75,
+            "roas": 1.2564,
+            "conv_value": 15407.12,
+            "purchases": 10,
+            "category": "Polos",
             "tier": "notworking"
           },
           {
@@ -551,43 +559,21 @@
             "ad_id": "120250335924500298",
             "ad_name": "November2026-Comfort-Secret-Zip-Up-Hoodie-Jacket-CRW4-Video-UGC-Dark-Post-Goldmine-05.11.2026",
             "adset_name": "Pros-Outerwear-Hoodies-TSQ-Broad-Videos-09.10.2026",
-            "spend": 6971.5,
-            "roas": 1.1837,
-            "conv_value": 8252.13,
-            "purchases": 8,
+            "spend": 8576.81,
+            "roas": 1.3435,
+            "conv_value": 11523.09,
+            "purchases": 12,
             "category": "Hoodies",
-            "tier": "notworking"
-          },
-          {
-            "ad_id": "120250477841810298",
-            "ad_name": "November2026-Sahil-Patel-Puffer-Jackets-MB52-Video-UGC-PA-Direct-14.11.2026",
-            "adset_name": "Pros-Outerwear-Puffer-Jacket-TSQ-Broad-Videos-15.10.2026",
-            "spend": 5702.05,
-            "roas": 0.9463,
-            "conv_value": 5395.58,
-            "purchases": 8,
-            "category": "Jackets",
-            "tier": "notworking"
-          },
-          {
-            "ad_id": "120250299408850298",
-            "ad_name": "November2026-Dhiren-Anand-Modal-Underwear-R8-Video-UGC-PA-Closer-04.11.2026",
-            "adset_name": "Pros-Innerwear-Buy-3-at-15p-Off-TSQ-Broad-Videos-09.03.2026",
-            "spend": 5226.2,
-            "roas": 1.0893,
-            "conv_value": 5692.98,
-            "purchases": 8,
-            "category": "Modal / Tactel UW",
             "tier": "notworking"
           },
           {
             "ad_id": "120250504297750298",
             "ad_name": "November2026-Utkarsh-Uppal-Canvas-Jackets-MB43-Video-UGC-PA-Direct-16.11.2026",
             "adset_name": "Pros-Outerwear-Canvas-Jackets-TSQ-Broad-Videos-14.11.2026",
-            "spend": 5006.14,
-            "roas": 0.0,
-            "conv_value": 0.0,
-            "purchases": 0,
+            "spend": 6708.89,
+            "roas": 1.278,
+            "conv_value": 8574.0,
+            "purchases": 4,
             "category": "Jackets",
             "tier": "notworking"
           },
@@ -595,41 +581,52 @@
             "ad_id": "120250388470880298",
             "ad_name": "November2026-Unboxing-1-Fleece-Sweatpants-MB18-Video-AI-PLV-Goldmine-09.11.2026",
             "adset_name": "Pros-Outerwear-Fleece-Sweatpant-TSQ-Broad-Videos-09.10.2026",
-            "spend": 4807.87,
-            "roas": 0.5297,
-            "conv_value": 2546.91,
-            "purchases": 2,
+            "spend": 5765.3,
+            "roas": 1.1498,
+            "conv_value": 6628.95,
+            "purchases": 4,
             "category": "Sweatpants",
             "tier": "notworking"
           },
           {
-            "ad_id": "120250386178920298",
-            "ad_name": "November2026-Yogesh-Sweatpants-CRW11-Video-UGC-PA-Barter-09.11.2026",
+            "ad_id": "120250575554830298",
+            "ad_name": "November2026-Shivansh-Sweatpants-MB18-Video-UGC-PA-Intern-20.11.2026",
             "adset_name": "Pros-Outerwear-Fleece-Sweatpant-TSQ-Broad-Videos-09.10.2026",
-            "spend": 4201.95,
-            "roas": 1.1709,
-            "conv_value": 4920.22,
-            "purchases": 6,
+            "spend": 5272.21,
+            "roas": 1.2163,
+            "conv_value": 6412.51,
+            "purchases": 5,
             "category": "Sweatpants",
             "tier": "notworking"
           },
           {
-            "ad_id": "120250269975310298",
-            "ad_name": "November2026-Warren-Thermal-R68-Video-UGC-PA-Direct-03.11.2026",
-            "adset_name": "Pros-Thermal-TSQ-Broad-Videos-16.10.2026",
-            "spend": 4095.86,
-            "roas": 1.4621,
-            "conv_value": 5988.75,
-            "purchases": 6,
-            "category": "Thermals",
+            "ad_id": "120250299408850298",
+            "ad_name": "November2026-Dhiren-Anand-Modal-Underwear-R8-Video-UGC-PA-Closer-04.11.2026",
+            "adset_name": "Pros-Innerwear-Buy-3-at-15p-Off-TSQ-Broad-Videos-09.03.2026",
+            "spend": 5247.22,
+            "roas": 1.085,
+            "conv_value": 5692.98,
+            "purchases": 8,
+            "category": "Modal / Tactel UW",
+            "tier": "notworking"
+          },
+          {
+            "ad_id": "120250508884670298",
+            "ad_name": "November2026-NO-TEXT-Sweatpants-CRW11-Video-PLV-Abhay-16.11.2026",
+            "adset_name": "Pros-Outerwear-Fleece-Sweatpant-TSQ-Broad-Videos-09.10.2026",
+            "spend": 4327.71,
+            "roas": 0.248,
+            "conv_value": 1073.3,
+            "purchases": 1,
+            "category": "Sweatpants",
             "tier": "notworking"
           }
         ],
-        "all_spend": 14725805.21
+        "all_spend": 17028726.69
       },
       "no_prefix": {
         "ads": 5,
-        "spend": 60016.07,
+        "spend": 63056.02,
         "examples": [
           "Pros-Undies-5-at-999-54321-V1-MMM-Lofi-Video-02.03.2026",
           "Pros-MB23-Vest-Sahil-H2-UGC-Video-29.12.2025",
@@ -642,38 +639,35 @@
       "ym": "2026-10",
       "name": "October",
       "since": "2026-10-01",
-      "until": "2026-11-18",
+      "until": "2026-11-21",
       "example_prefix": "October2026",
       "has_data": true,
-      "uploaded": {
-        "count": 608,
-        "no_spend": 6
-      },
+      "uploaded": null,
       "analysis": {
         "summary": {
           "spending": 629,
-          "spend": 8139906.04,
-          "share": 23.6,
-          "roas": 2.6254,
-          "older_roas": 2.6014,
-          "units": 18322
+          "spend": 8614824.42,
+          "share": 23.4,
+          "roas": 2.6566,
+          "older_roas": 2.6171,
+          "units": 19452
         },
         "tiers": {
           "scaling": {
-            "count": 89,
-            "spend": 6648021.5
+            "count": 90,
+            "spend": 6959928.5
           },
           "early": {
             "count": 110,
-            "spend": 434476.42
+            "spend": 455113.47
           },
           "proving": {
-            "count": 412,
-            "spend": 864397.97
+            "count": 413,
+            "spend": 1014484.09
           },
           "notworking": {
-            "count": 18,
-            "spend": 193010.15
+            "count": 16,
+            "spend": 185298.36
           }
         },
         "categories": [
@@ -682,15 +676,15 @@
             "group": "5@999 Cotton UW",
             "emoji": "\ud83e\ude72",
             "order": 11,
-            "uploaded": 85,
+            "uploaded": null,
             "spending": 96,
-            "spend": 2443880.95,
-            "roas": 2.3622,
-            "older_roas": 2.4297,
+            "spend": 2569192.7,
+            "roas": 2.4213,
+            "older_roas": 2.4515,
             "best": {
-              "roas": 9.4557,
+              "roas": 9.0503,
               "ad_name": "October2026-Rajdeep-Pal-Regional-Bengali-Cotton-Underwear-5-at-999-Video-UGC-PA-MMM-12.10.2026",
-              "spend": 1001.71
+              "spend": 1046.58
             },
             "best_all": {
               "roas": 6.6025,
@@ -704,11 +698,11 @@
             "group": "Innerwear",
             "emoji": "\ud83e\uddba",
             "order": 1012,
-            "uploaded": 94,
+            "uploaded": null,
             "spending": 99,
-            "spend": 1470111.48,
-            "roas": 2.6794,
-            "older_roas": 2.9458,
+            "spend": 1481053.64,
+            "roas": 2.7078,
+            "older_roas": 2.9311,
             "best": {
               "roas": 6.9621,
               "ad_name": "October2026-Chandrashekhar-Rajput-Dussera-Hindi-Regional-Invisible-Vest-MB23-Video-UGC-PA-Direct-06.10.2026",
@@ -726,18 +720,18 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddf6",
             "order": 2007,
-            "uploaded": 51,
+            "uploaded": null,
             "spending": 52,
-            "spend": 1114662.23,
-            "roas": 2.3812,
+            "spend": 1253992.15,
+            "roas": 2.3883,
             "older_roas": null,
             "best": {
-              "roas": 7.5548,
+              "roas": 7.3486,
               "ad_name": "October2026-RV-STUDIO-GRWM-Oversized-Hoodie-CRW2-Video-PLV-V1-Internal-15.10.2026",
-              "spend": 1296.47
+              "spend": 1332.84
             },
             "best_all": {
-              "roas": 4.6153,
+              "roas": 4.7025,
               "label": "OCT",
               "is_view": true,
               "ad_name": "October2026-Yash-Acharya-Hoodie-MB16-Video-UGC-Dark-Post-MMM-08.10.2026"
@@ -748,15 +742,15 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\uddd8",
             "order": 2003,
-            "uploaded": 71,
+            "uploaded": null,
             "spending": 81,
-            "spend": 874065.81,
-            "roas": 2.5945,
-            "older_roas": 4.4299,
+            "spend": 932080.55,
+            "roas": 2.5982,
+            "older_roas": 4.5086,
             "best": {
-              "roas": 5.2889,
+              "roas": 5.2473,
               "ad_name": "October2026-Subojeet-Sweatpants-MB18-Video-UGC-Dark-Post-Kofluence-13.10.2026",
-              "spend": 1351.19
+              "spend": 1361.9
             },
             "best_all": {
               "roas": 6.2969,
@@ -770,18 +764,18 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\udde5",
             "order": 2004,
-            "uploaded": 22,
+            "uploaded": null,
             "spending": 22,
-            "spend": 467684.9,
-            "roas": 2.4402,
-            "older_roas": 4.219,
+            "spend": 497458.8,
+            "roas": 2.5847,
+            "older_roas": 4.0969,
             "best": {
-              "roas": 5.3029,
+              "roas": 5.4097,
               "ad_name": "October2026-Kanishk-Polar-Fleece-Jacket-MB13-Video-UGC-Dark-Post-Kofluence-14.10.2026",
-              "spend": 12384.93
+              "spend": 15575.78
             },
             "best_all": {
-              "roas": 5.3029,
+              "roas": 5.4097,
               "label": "OCT",
               "is_view": true,
               "ad_name": "October2026-Kanishk-Polar-Fleece-Jacket-MB13-Video-UGC-Dark-Post-Kofluence-14.10.2026"
@@ -792,18 +786,18 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83d\udc55",
             "order": 3015,
-            "uploaded": 45,
+            "uploaded": null,
             "spending": 45,
-            "spend": 368989.07,
-            "roas": 2.6811,
-            "older_roas": 3.1629,
+            "spend": 407095.12,
+            "roas": 2.6794,
+            "older_roas": 3.1714,
             "best": {
-              "roas": 4.973,
-              "ad_name": "October2026-Abhinav-Nova-Polo-CR14-2-at-1049-Video-UGC-PA-Barter-07.10.2026",
-              "spend": 2150.74
+              "roas": 5.5193,
+              "ad_name": "October2026-Hook-1-Video-1-Rugby-Polo-TShirt-CRW12-Video-PLV-Abhay-14.10.2026",
+              "spend": 1019.16
             },
             "best_all": {
-              "roas": 6.6724,
+              "roas": 6.6606,
               "label": "JUL",
               "is_view": false,
               "ad_name": "July2026-The-New-Standard-Of-Sharp-Nova-Polo-2-at-1049-Video-PLV-Studio_11-03.07.2026"
@@ -814,18 +808,18 @@
             "group": "Innerwear",
             "emoji": "\ud83e\uddf4",
             "order": 1013,
-            "uploaded": 23,
+            "uploaded": null,
             "spending": 22,
-            "spend": 287803.43,
-            "roas": 3.5299,
-            "older_roas": 3.7311,
+            "spend": 297416.05,
+            "roas": 3.5976,
+            "older_roas": 3.7321,
             "best": {
-              "roas": 5.5432,
+              "roas": 5.4366,
               "ad_name": "October2026-Ravi-Modal-Underwear-R8-Video-UGC-Dark-Post-Direct-16.10.2026",
-              "spend": 1438.89
+              "spend": 1467.11
             },
             "best_all": {
-              "roas": 8.0123,
+              "roas": 7.9961,
               "label": "JUL",
               "is_view": false,
               "ad_name": "July2026-Tanmay-Modal-Underwear-Video-UGC-PA-Direct-15.07.2026"
@@ -836,18 +830,18 @@
             "group": "Winter Overview",
             "emoji": "\ud83c\udf21\ufe0f",
             "order": 2002,
-            "uploaded": 13,
+            "uploaded": null,
             "spending": 13,
-            "spend": 221405.73,
-            "roas": 2.559,
+            "spend": 245061.56,
+            "roas": 2.5613,
             "older_roas": null,
             "best": {
-              "roas": 3.8512,
+              "roas": 3.8402,
               "ad_name": "October2026-Cold-Proof-Thermal-Video-PLV-Internal-21.10.2026",
-              "spend": 11799.47
+              "spend": 11833.29
             },
             "best_all": {
-              "roas": 3.8512,
+              "roas": 3.8402,
               "label": "OCT",
               "is_view": true,
               "ad_name": "October2026-Cold-Proof-Thermal-Video-PLV-Internal-21.10.2026"
@@ -858,21 +852,21 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc55",
             "order": 2008,
-            "uploaded": 25,
+            "uploaded": null,
             "spending": 25,
-            "spend": 218989.79,
-            "roas": 2.2057,
+            "spend": 226198.38,
+            "roas": 2.2145,
             "older_roas": null,
             "best": {
-              "roas": 5.001,
+              "roas": 4.648,
               "ad_name": "October2026-Saugat-Henley-Tee-MB47-Video-UGC-PA-Direct-23.10.2026",
-              "spend": 1622.88
+              "spend": 1746.14
             },
             "best_all": {
-              "roas": 3.1823,
+              "roas": 3.3651,
               "label": "NOV",
               "is_view": false,
-              "ad_name": "November2026-Ayush-Arora-Henley-Tee-MB47-Video-UGC-PA-Direct-04.11.2026"
+              "ad_name": "November2026-Parth-Henley-Tee-MB47-Video-UGC-PA-V1-CoreSmart-29.10.2026"
             }
           },
           {
@@ -880,18 +874,18 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83c\udfc3",
             "order": 3016,
-            "uploaded": 48,
+            "uploaded": null,
             "spending": 48,
-            "spend": 203049.72,
-            "roas": 3.8327,
-            "older_roas": 3.2653,
+            "spend": 211427.52,
+            "roas": 3.7966,
+            "older_roas": 3.272,
             "best": {
-              "roas": 9.303,
+              "roas": 10.2428,
               "ad_name": "October2026-Piyush-G-Women-Dress-Trend-Active-Raglan-Tshirt-AT01-Video-UGC-PA-Direct-23.10.2026",
-              "spend": 1290.43
+              "spend": 1417.17
             },
             "best_all": {
-              "roas": 6.4937,
+              "roas": 6.8129,
               "label": "OCT",
               "is_view": true,
               "ad_name": "October2026-Manish-Bhadauriya-Active-Raglan-Tshirt-AT01-Video-UGC-PA-Closer-05.10.2026"
@@ -902,21 +896,21 @@
             "group": "Outerwear \u00b7 Bottomwear",
             "emoji": "\ud83d\udc56",
             "order": 4020,
-            "uploaded": 21,
+            "uploaded": null,
             "spending": 20,
-            "spend": 166573.43,
-            "roas": 4.205,
-            "older_roas": 3.7413,
+            "spend": 176173.34,
+            "roas": 4.2097,
+            "older_roas": 3.738,
             "best": {
-              "roas": 7.2373,
+              "roas": 6.9237,
               "ad_name": "October2026-Product-GRWM-2-Cotton-Cargo-Pants-CR41-Video-PLV-Niti-21.10.2026",
-              "spend": 1100.56
+              "spend": 1150.42
             },
             "best_all": {
-              "roas": 5.0998,
-              "label": "AUG",
+              "roas": 4.9806,
+              "label": "APR",
               "is_view": false,
-              "ad_name": "August2026-Siaa-Talking-Head-Ripstop-Cargo-Pants-Video-UGC-PA-Direct-11.08.2026"
+              "ad_name": "Apr2026_bheirojit_Ripstop-Cargo-Pants_CR32_Video_UGC-PA_Creative-Cult_16.04.2026"
             }
           },
           {
@@ -924,18 +918,18 @@
             "group": "Outerwear \u00b7 Bottomwear",
             "emoji": "\ud83d\ude34",
             "order": 4019,
-            "uploaded": 52,
+            "uploaded": null,
             "spending": 54,
-            "spend": 160784.98,
-            "roas": 3.9072,
-            "older_roas": 2.6477,
+            "spend": 163927.55,
+            "roas": 3.8823,
+            "older_roas": 2.6391,
             "best": {
-              "roas": 10.6961,
+              "roas": 10.6655,
               "ad_name": "October2026-Anwar-Chambray-Pyjama-CR46-Video-UGC-Dark-Post-V2-Direct-08.10.2026",
-              "spend": 1415.72
+              "spend": 1419.78
             },
             "best_all": {
-              "roas": 5.8738,
+              "roas": 5.7562,
               "label": "OCT",
               "is_view": true,
               "ad_name": "October2026-Anwar-Chambray-Pyjama-CR46-Video-UGC-PA-Direct-07.10.2026"
@@ -946,21 +940,21 @@
             "group": "Outerwear \u00b7 Topwear",
             "emoji": "\ud83c\udfbd",
             "order": 3017,
-            "uploaded": 48,
+            "uploaded": null,
             "spending": 48,
-            "spend": 91451.57,
-            "roas": 3.086,
-            "older_roas": 3.3334,
+            "spend": 97125.85,
+            "roas": 3.2344,
+            "older_roas": 3.3264,
             "best": {
-              "roas": 6.7517,
+              "roas": 6.7093,
               "ad_name": "October2026-warren-Premium-Oversized-MB30-Video-UGC-PA-Direct-16.10.2026",
-              "spend": 1540.43
+              "spend": 1550.16
             },
             "best_all": {
-              "roas": 5.524,
-              "label": "JUL",
+              "roas": 6.6036,
+              "label": "SEP",
               "is_view": false,
-              "ad_name": "July2026-Anwar-Rey-Pace-TShirt-CR15-3-at-1049-Video-UGC-PA-Direct-10.07.2026"
+              "ad_name": "September2026-Abhijeet-Singh-Oversized-Tshirt-CP1-Video-UGC-PA-Direct-01.09.2026"
             }
           },
           {
@@ -968,18 +962,18 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udc56",
             "order": 2001,
-            "uploaded": 4,
+            "uploaded": null,
             "spending": 4,
-            "spend": 26632.58,
-            "roas": 3.4545,
+            "spend": 26814.96,
+            "roas": 3.6173,
             "older_roas": null,
             "best": {
-              "roas": 4.2475,
-              "ad_name": "October2026-Hriday-Gupta-Denim-Pants-MB37-Video-UGC-PA-Direct-27.10.2026",
-              "spend": 7106.79
+              "roas": 4.5004,
+              "ad_name": "October2026-Vishal-Sharma-Denim-Pants-MB37-Video-UGC-PA-Direct-30.10.2026",
+              "spend": 8815.25
             },
             "best_all": {
-              "roas": 4.5766,
+              "roas": 4.5476,
               "label": "NOV",
               "is_view": false,
               "ad_name": "November2026-Vishal-Hakki-Denim-Pants-MB37-Video-UGC-PA-Direct-04.11.2026"
@@ -990,10 +984,10 @@
             "group": "Winter Overview",
             "emoji": "\ud83e\udde3",
             "order": 2009,
-            "uploaded": 6,
+            "uploaded": null,
             "spending": 6,
-            "spend": 21573.03,
-            "roas": 2.4757,
+            "spend": 21676.91,
+            "roas": 2.4638,
             "older_roas": null,
             "best": {
               "roas": 2.6563,
@@ -1001,10 +995,10 @@
               "spend": 16111.74
             },
             "best_all": {
-              "roas": 3.7081,
+              "roas": 5.1314,
               "label": "NOV",
               "is_view": false,
-              "ad_name": "November2026-Ishan-Kumar-Crewneck-Sweater-MB51-Video-UGC-PA-Direct-02.11.2026"
+              "ad_name": "November2026-Sweater-Weather-In-XYXX-Half-Zip-Sweater-MB48-Video-PLV-Abhay-16.11.2026"
             }
           },
           {
@@ -1012,18 +1006,18 @@
             "group": "Winter Overview",
             "emoji": "\ud83d\udfe5",
             "order": 2005,
-            "uploaded": 1,
+            "uploaded": null,
             "spending": 1,
-            "spend": 1855.42,
-            "roas": 3.1704,
+            "spend": 7737.42,
+            "roas": 2.3018,
             "older_roas": null,
             "best": {
-              "roas": 3.1704,
+              "roas": 2.3018,
               "ad_name": "October2026-Ishan-Kumar-Crewneck-Sweater-MB46-Video-UGC-Dark-Post-Direct-29.10.2026",
-              "spend": 1855.42
+              "spend": 7737.42
             },
             "best_all": {
-              "roas": 5.8648,
+              "roas": 5.0539,
               "label": "NOV",
               "is_view": false,
               "ad_name": "November2026-The-Kind-Of-Shirt-Flannel-Shirt-MB46-Video-PLV-Internal-05.11.2026"
@@ -1034,11 +1028,11 @@
             "group": "Innerwear",
             "emoji": "\ud83e\udd4a",
             "order": 1014,
-            "uploaded": 2,
+            "uploaded": null,
             "spending": 2,
             "spend": 391.92,
             "roas": 0.0,
-            "older_roas": 2.484,
+            "older_roas": 2.5034,
             "best": null,
             "best_all": {
               "roas": 6.8985,
@@ -1053,73 +1047,73 @@
             "ad_id": "120249844292750298",
             "ad_name": "October2026-Anwar-Chambray-Pyjama-CR46-Video-UGC-Dark-Post-V2-Direct-08.10.2026",
             "adset_name": "Pros-Outerwear-All-Pyjama-TSQ-Broad-Videos-08.05.2026",
-            "spend": 1415.72,
-            "roas": 10.6961,
+            "spend": 1419.78,
+            "roas": 10.6655,
             "conv_value": 15142.7,
             "purchases": 16,
             "category": "Pyjamas & Easy Pants",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKs6d8c91L5S9zSt__kytvH9cWPcKrjzSa7-hskD0u0jkLhN_4Ap9tFfIY2Kn4fRIQRyvWnqVqiG4NBpoFEQ9x4K1AAyRagfo3A3cdqrkGkVn3Y4ZrskORIh7JHdOWjjK0yf_DJUPzJamSgPAtksYp1WEkyNE_ZEKIbKCbbDiGhJJdAY0h64-i1jSrPfC8ZZjoSNzoxfPwKP5XtzE0TOBhCRAmOsbyetl9UwIVj6xppyBLZNWg7ve2tATQS8eh1-bKxXNMskUkgx1TCTCu-XUSJZK3Pj9AC1aB6mwhkBcK-1F86XCa96dnqha1hihsnAdE-OosI6fMXWDrS0YNSMIl-TaWI14osdnlYEEIEd6EAWSvOW5FI4pMkP737LcCS-2_l_PQ6DbzIXZXpWIZ2Z-X2YXpwaO7vulnC_DBeYsjWhsb0gyDX4gMURonq1wSk-aw&t=AQLCKDlEqeCkMSukEGc"
-          },
-          {
-            "ad_id": "120249903067100298",
-            "ad_name": "October2026-Rajdeep-Pal-Regional-Bengali-Cotton-Underwear-5-at-999-Video-UGC-PA-MMM-12.10.2026",
-            "adset_name": "Pros-Cost-Cap-Innerwear-Buy-5-at-999-TSQ-Videos-30.06.2026",
-            "spend": 1001.71,
-            "roas": 9.4557,
-            "conv_value": 9471.91,
-            "purchases": 2,
-            "category": "5@999 Cotton UW",
-            "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLa9DPdholuwmykapusd7XulkaKw8dDiokwKgu1BJa84b39gqRu0-SINnapSTGKyCFAxNJGo2fIfq_rsvYzGqejwjPCIRbprA5-GeWWi1bvb82wwx343wj__Fiun-ubePM5H-b7dwwQXftIIOui5KGFcMx9R2rGPKHUu7YM3iONhlbXH0-qiWNLwyAEDQDDtG0Df_PIQDoYq5Y_C7rbapRMMo1qkZsmFqaYWTiify1DzAwUOIthV6i1C-HvELqIrPa9p4B9BWOgD1ok25rtoNw8m0H_0auUyBGRpYm5_PHYFZRRDvV3S5OcT-qj-fGRYA4gB_FueIPBENnEkp535DyqKcgInD6tL2_PToSse_erF02CSbU_yO4QB1esR9U6s6XABF6JxiI7PAxwaejnGfjXa616mPrVQW6gx_b3uuih1IaRLczZSmtGd7CKpED7ULY&t=AQLqqdA_y9Och1rCZR0"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLK705aeJlF-lIHr84mUPkVGD7HW8ryKpvlArPGdasVuwB51dcf5DXEbrVGp_8eTlOt2Ntpi5Wl8sJg5ZQRoiM220qGHZT_nSUH-q7YL4i_Lbrig1_ZBodhIRH9K7kt8Cw_hYDuIz4atr3xoeg9xdypd_ou5wWYvWTBiix858x_7er1L2zsa6jqT8gBbMfoTN_HzDBKFueKufblMGMPuTMrNY1WiOUhjFA_mApeH1O1Sw4aFLRmdSZzydGEMXoX-Q2Nc4FHIiCfIPp10-9LBH3883bMdHYWw8Lk1b66EDBfXG88yTgkSpz7bWNK8wvI_YI3vG1pyHX0C-9cn1tcfEPUqgPeCN4MwqvkqEwgz2UawpRhzqjeDsTkgMKkE6KCawrSVURCmBqdm_efYiMW5KL6AjHicHw-O8jA4C_CqSXCJqgeRKL5DGuxl-SLMAV9hz0&t=AQLpnxDnTvdDpwy30dk"
           },
           {
             "ad_id": "120250085081180298",
             "ad_name": "October2026-Piyush-G-Women-Dress-Trend-Active-Raglan-Tshirt-AT01-Video-UGC-PA-Direct-23.10.2026",
             "adset_name": "Pros-Outerwear-Active-TSQ-Broad-Videos-14.09.2026",
-            "spend": 1290.43,
-            "roas": 9.303,
-            "conv_value": 12004.82,
-            "purchases": 8,
+            "spend": 1417.17,
+            "roas": 10.2428,
+            "conv_value": 14515.75,
+            "purchases": 10,
             "category": "Active Tees",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKtJClCPIQndrLsnU1HJDG-sacO7oKCydV6VF_BTU7aUmB5dWLMrwepGM7tYHFhpXyIzgwCxm77JX-4KBdun_Jp8Dn0bobVjcYcq_1IpVwxeT4_heN39XXxVHSmhBb0Jh2nFdIHVNXw-6ZRp1on26Rig6ZPAGNheOjiNXcaUzWcAYXmkLNEYOChgo0qVT9i0zoekCz-46W0SNkHr0qoZnS79W2cHJ7q3gQ5sJhTlC6VY93qE0Yor0nIRzGA-IL180k7dsUEA8oyUteUuW2nwvUVvtDnm82OTeqSpWEbjdPAD5A5rujJ7U0KXVN7daeItlc4jtq-J5A0_twXR8Z9MBOCEIBd3v2SS2lafJbqZMuam6PmmHTpTT6NFHRZgffSUF1uAY0Mu42Bwj9Pve5W7CKAhgZt-V5yOkwZ8V8w2QLCwLE3xSxIOhqhsZCPBtSZuAU&t=AQLTg77YKDEfd7MFwFQ"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIJNtZPOwnQtwJDVKiE_55hxUScoNjQbEu0G6iq8ClCd3yU0FeJk030QrDzXUBxxBY9-tsCB3kZP0dMwhHQVHhDTkjbzwmwGZYvnmx7OYCkn42zXUl0yj0I-h2NG58T_RCN3-dOHUGLoGOwTjZXrEGKb6v8yeKRiXv2wO94fsyIrbrGsb1ThOnSzciymAk0FsIOVxNG_R3Sb_IyyK-8HinMXhVm7d_eScwF-Q5koC0xlrKNYWzGZbzdddfQtgM8RqysiH4kAao2RDmgu6QlX0UhxvU9otsZKO9yzdlX5xLuCSUTo1zA5rmt9hM5e5C_A-SJfn4FoiklZ3lXYlzBApGbft63gUiHd80QQ1G5dl4-XlmgpM0syDdvuNNmz5ERiS9KC5EmtKom5guuCIpCppKRm5vfbYoShg7IILml5zADZBD82hzhpEyvFjMorOIDcTE&t=AQJSX_1oGmOpGdjD9Ws"
           },
           {
-            "ad_id": "120249956376290298",
-            "ad_name": "October2026-RV-STUDIO-GRWM-Oversized-Hoodie-CRW2-Video-PLV-V1-Internal-15.10.2026",
-            "adset_name": "Pros-Outerwear-Hoodies-TSQ-Broad-Videos-09.10.2026",
-            "spend": 1296.47,
-            "roas": 7.5548,
-            "conv_value": 9794.56,
-            "purchases": 10,
-            "category": "Hoodies",
+            "ad_id": "120249903067100298",
+            "ad_name": "October2026-Rajdeep-Pal-Regional-Bengali-Cotton-Underwear-5-at-999-Video-UGC-PA-MMM-12.10.2026",
+            "adset_name": "Pros-Cost-Cap-Innerwear-Buy-5-at-999-TSQ-Videos-30.06.2026",
+            "spend": 1046.58,
+            "roas": 9.0503,
+            "conv_value": 9471.91,
+            "purchases": 2,
+            "category": "5@999 Cotton UW",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJ3Mv3RPIzHPFLOXHs0uIUTBYCEyNT1i9Hr-hXPT1_I4j9C17OxMtvKiDajK8I1FYry_VaQde23H57cSyP1L_S6XixG6jX1hEGgyH6iZKJQEAmVN4wtWhmahME3S_fjVHQ4kmllr099TWjYeReLSHdFSvw-6ztPeUjt04KxTpmCP9oSI65RhDYM6sl0vu59T-YBYlpcpOVLNJhtultNbJVh6fVhuti7XblKFlpkgnMxxYiotnpPD3lCzFJlVXNYN-hFwJ-8JhWtdCGG_-zBkb2X0ZvvTpmMT-qxSvnGCArRaujGae0kPw3YZhIgmHm8Mkx_Xh9uGvJflXedCCqWiOlvrjiwMT1ZR2Q2HNVFSsc2caIiXyX2wZnBH1g5xkJ8JNOdSei3Z6Qg5KBpNDGRwjiTSEoeYtc11Gy190G8aatoSrkJyyngkZyUgYea7YlRor8&t=AQKEtr1s8MMq3YYH1lw"
-          },
-          {
-            "ad_id": "120250046194850298",
-            "ad_name": "October2026-Product-GRWM-2-Cotton-Cargo-Pants-CR41-Video-PLV-Niti-21.10.2026",
-            "adset_name": "Pros-Outerwear-Ripstop-Cargo-CR32-TSQ-Broad-Videos-08.05.2026 - Copy",
-            "spend": 1100.56,
-            "roas": 7.2373,
-            "conv_value": 7965.11,
-            "purchases": 6,
-            "category": "Pants & Cargos",
-            "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJnqYarBcsrJzln0JU0lezQQ04ZiG9OyX5rdww2Q9_Mc7SXCIpZgpSjFi91B-xyKtUGPYYy_ARsg9YWRAtp2PgTuO-jqz-4iPOiXC2Y7cgfDL_ysBBST31UpQx2mxt2UwORk_50L0FbcW0zxB-XlFk_A_2SDgFLllbkSkOhB7xj0oHc7wzYwJD1vJnYVdw6mbm_CQdk-Ju5a-KqZyvFyJec9XxtLny3duZHbx7oEElARL5abF6w7YiBg4gOavun7p0X9csqJBTtB0SRdzSRgq5ltrjNeSrH1MSZ3pWSZShBxGMLnC4UMF52zltRO61Uak6Sm-y89no9EDW-p0LqXWNEeJHybrb2_B-dP7TSALjqVANAk9koJUtaAxAbEkTWhrnXruDPNk1RvHawhiPqjsBUytfuVDHZQrqNH-JlBq_o6ryp8GlwX5PI7F0YErlx2eM&t=AQKtrIdyjFWGyGmYpvQ"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJH9VlQxgyMVmP9Xkislk0-olW3F3wUXlIx6C1mfEv7sFs_IPscVPNuHcLyonH18kPZW1q89FW69_qRWHay76wCWlzjzZCNwqSqg51EUazAv36Jhw6RwzcDrlYJdcKk_vgHV183vueuyJY6G1P61KpdDqFek9kUn6jpFWFaK8qe3zx39xylnXkjlvHZDJe-iA5JbNyALJTvvdZwJ9C79Szn0t5gQpYf-GhdGaHsHpfhoY1KKqxeWBXFlLXOfXErpstSUvQVGmTQJbirC64onrq4Niv8lfKwMIlu-4MZJGKaMLYXCT0ITWM4VeGChN7F6bixMa1G07XhKgbDZSb_iEesjc8eI6McWHfGbYEicxBDmBn5anqsUH4IOR-YYEJjLfwaAfzc1p4NYvdK1ujjwLyQhpRiAq-iAFh68_5bie3Qs7uysQHU1gGDWk43x1a4WGw&t=AQJ0sPr5bIKAGkkewl4"
           },
           {
             "ad_id": "120249920289200298",
             "ad_name": "October2026-Tanish-trc-Active-Coolmax-Tank-Top-AT02-Video-UGC-PA-Direct-13.10.2026",
             "adset_name": "Pros-Outerwear-Active-TSQ-Broad-Videos-14.09.2026",
-            "spend": 2553.77,
-            "roas": 7.2296,
-            "conv_value": 18462.64,
-            "purchases": 22,
+            "spend": 2620.7,
+            "roas": 7.5057,
+            "conv_value": 19670.14,
+            "purchases": 23,
             "category": "Active Tees",
             "tier": "early",
-            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQJkb5tSxy68N7foFoUvquJ8ZvCzTXCX2CMvLEZQiKf35yTwcufDxRXBLE066OLHrdtIkLRSovMZaOXOYAfiXliq7O_r5VDc4698D6m01EWdQpdpHnvFoo-XBcSkuXQQKychsE6a3B4zXyn8I5pAfy5AoU3W4I2BclB0-LJQslrCgVPkc2wmfRZHXeFkNfUT6YI1sidPw9_dKfTvA8GXqPUVEDqQRernSInqP16Y09oXthUovYRXtRDrWLNjqK3gVyRZ4zcw1j8fEIix4rANn919o9-b8vLoSYRMe5Z6Z8a_d3nOpD9yrfkTjmEc_lQ_r4ls4t2iroRvWRrkYtV8VCNLxbiNMXujGcNqECTjSCCnuVU6QkS723a1HSDRaoTDYMRuPdKv8rrpEwqdqdQ8Ma2q3AacyJQi5H44ImO-IWgBDSg3yGKkf8xcbK56DlbXS9Y&t=AQJNhfC8cItr8Le3Ip8"
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQKZ9PM8OnAaQRX-AS5NPFL5kdlqHslQSfAtPPbCDkGW4dHtU1LLw5phOTCds0-50OUzGLBfxtNM9JeeKL-tL5VS2spVcAPAQbCUzkgEiufMoPnuqZffsmVlGvKFBMFaOfIFkGReXDGf9IERDxFfm_WYhl-4eKXLTt6RXuLBv6VYQd-I2DlEGARarh0KumiiUlTmZ22WX03v16XkysAL5d-V-EkXCyDL2R6Lq-dLxVzx1zZpAKkCfy2Vj08j4ebFChuHBZU2o99Ht-zMZcYDck3jNuy6NpTDEekVh-G_AnQ1xYYO7QTeirEZodyVvLYZ3AFVNqI9auJUU7LBR2hMMlLjVefueKW8zFjxaNO1MkIuygAwwcxuJHNsR6Sgg0rs_vFhXiDAXuo7j7X7HDhxq-IF7OixgXOUPP-gmf8ZY2WbH22BYOf6pZvRqctNBhPa_b8&t=AQLiij6tsyX8U6akcUM"
+          },
+          {
+            "ad_id": "120249956376290298",
+            "ad_name": "October2026-RV-STUDIO-GRWM-Oversized-Hoodie-CRW2-Video-PLV-V1-Internal-15.10.2026",
+            "adset_name": "Pros-Outerwear-Hoodies-TSQ-Broad-Videos-09.10.2026",
+            "spend": 1332.84,
+            "roas": 7.3486,
+            "conv_value": 9794.56,
+            "purchases": 10,
+            "category": "Hoodies",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQLDC8P9wWjiWb-0_dgPw39_8Fff_lV1eR1on1LwFDzZgWeA00yCqxkyzE83EZQQkOxPxChHH2sIl6B1UoDRiEAIL7lNSTlp_uQF7cTM3jQvNTfCSpSqpgO346E55R9nkQpCekRLayKTHDD5XhoF_pqvSy4PeFPrZ_-mKaZeqjMrznlKihzERJNqX31uYv7tvbLpQLrKoMYSRUyuAwvrdhXLiJykQZA7j3huxr6SZF3PtfOgF5oNnHal5PHuMcAHXrZPg27FF2Gi9uArVdReAo8mHUiBmxcIVICwFy_WoU131xy-5IIW0rdpeVav18WvdNbgJo0vxMZ3zeiRrtT8nY3_c9feWuTjgwt1Pe6X5OZnJKWmXgWWEFC1HiS4oxD-QZ9rcShJ2qjUayOL-o0BUMM6kGFEi2biO2tznRFfD_C-zx1-mqjwnZ1wtSWM7_w6izQ&t=AQJsUXPytmnEiCfSt4Q"
+          },
+          {
+            "ad_id": "120249815693600298",
+            "ad_name": "October2026-Chandrashekhar-Rajput-Dussera-Hindi-Regional-Invisible-Vest-MB23-Video-UGC-PA-Direct-06.10.2026",
+            "adset_name": "Pros-Innerwear-MB23-Invisble-Vest-TSQ-Broad-Videos-09.03.2026",
+            "spend": 2940.73,
+            "roas": 6.9621,
+            "conv_value": 20473.75,
+            "purchases": 15,
+            "category": "Shapewear & Vest",
+            "tier": "early",
+            "preview_url": "https://business.facebook.com/ads/api/preview_iframe.php?d=AQIkyc1Ab_Z1dlj1KH3v1hYhX4Vbdfi1GGyKY3E9lt8H8piL7L88N0XudIh1oI1eufapVlROWGd74JKqtvVni2V_7aLuTt5SIdNUgMjp-Pyibt4iDvh-7jUJ3QGhPI405O2RVZ9qJwmdZ_7gmQEdkvunWAEWIIs2caIPw6CiU7unXkEYEBu8CLlcMDgrEnRXcU8cl_25Fza0WJmFzOchTMCk3wXbeOrXv3V503FAoTvlLIUuz1qb9_6x2S2mkBS_34cSMMRHqS_3Kp7btEPZ-fh6or1fx5oyErIQHW6JpgkFdvP0bPrHDHHhySQPU9R9dK_SFES1djYZ9M7pfCGxUnZSfFQjqQd7uzLY90gWZYDAeIaqjvU26dMmC-i_9nn6tMqdtVgQTRfJiL5E84TPHDWa1zeRGBnp-5bHxxgLG_S_zx7ogQJ0o-u3J5pomaN9tvI&t=AQIswSIvmQopdvatgKs"
           }
         ],
         "decisions": [
@@ -1127,10 +1121,10 @@
             "ad_id": "120250087532380298",
             "ad_name": "October2026-The-Hoodie-That-Gets-Oversized-Hoodie-MB16-Video-PLV-Internal-23.10.2026",
             "adset_name": "Pros-Outerwear-Hoodies-TSQ-Broad-Videos-09.10.2026",
-            "spend": 44934.19,
-            "roas": 1.4772,
-            "conv_value": 66374.96,
-            "purchases": 46,
+            "spend": 45666.62,
+            "roas": 1.4758,
+            "conv_value": 67392.76,
+            "purchases": 47,
             "category": "Hoodies",
             "tier": "notworking"
           },
@@ -1179,14 +1173,14 @@
             "tier": "notworking"
           },
           {
-            "ad_id": "120250189270090298",
-            "ad_name": "October2026-Shayyi-Tamil-Regional-Cotton-Underwear-Video-UGC-Dark-Post-After8_Media-29.10.2026",
-            "adset_name": "Pros-Innerwear-Buy-5-at-999-TSQ-Broad-Videos-09.03.2026 - Copy",
-            "spend": 11729.03,
-            "roas": 1.4146,
-            "conv_value": 16591.65,
-            "purchases": 21,
-            "category": "5@999 Cotton UW",
+            "ad_id": "120250463133290298",
+            "ad_name": "October2026-Pratham-V2-Sweatpants-MB18-Video-UGC-Dark-Post-Direct-25.10.2026",
+            "adset_name": "Pros-Winter-Master-TSQ-30.10.2026",
+            "spend": 10210.57,
+            "roas": 1.4023,
+            "conv_value": 14318.37,
+            "purchases": 9,
+            "category": "Sweatpants",
             "tier": "notworking"
           },
           {
@@ -1212,33 +1206,33 @@
             "tier": "notworking"
           },
           {
-            "ad_id": "120250046193040298",
-            "ad_name": "October2026-Akshar-Mevawala-Cotton-Underwear-Video-UGC-PA-Direct-21.10.2026",
-            "adset_name": "Pros-Cost-Cap-Innerwear-Buy-5-at-999-TSQ-Videos-30.06.2026",
-            "spend": 5432.02,
-            "roas": 0.9083,
-            "conv_value": 4934.04,
-            "purchases": 6,
-            "category": "5@999 Cotton UW",
+            "ad_id": "120250166586330298",
+            "ad_name": "October2026-Bringing-Back-The-Vintage-Mayank-Rugby-Polo-TShirt-CRW12-Video-PLV-V2-Internal-14.10.2026",
+            "adset_name": "Pros-Rugby-Polo-TSQ-Broad-Videos-28.10.2026",
+            "spend": 5861.15,
+            "roas": 1.2663,
+            "conv_value": 7422.03,
+            "purchases": 7,
+            "category": "Polos",
             "tier": "notworking"
           },
           {
             "ad_id": "120249940268090298",
             "ad_name": "October2026-The-Hoodie-Of-The-Season-Hoodie-CRW4-Video-PLV-Internal-14.10.2026",
             "adset_name": "Pros-Outerwear-Hoodies-TSQ-Broad-Videos-09.10.2026",
-            "spend": 4997.3,
-            "roas": 0.8145,
-            "conv_value": 4070.11,
-            "purchases": 3,
+            "spend": 5546.9,
+            "roas": 1.218,
+            "conv_value": 6756.11,
+            "purchases": 5,
             "category": "Hoodies",
             "tier": "notworking"
           }
         ],
-        "all_spend": 34467023.6
+        "all_spend": 36769945.08
       },
       "no_prefix": {
         "ads": 17,
-        "spend": 250901.37,
+        "spend": 254172.52,
         "examples": [
           "Pros-Undies-5-at-999-Comfort-Specialist-Genii-Lofi-Video-27.02.2026",
           "Pros-Undies-5-at-999-54321-V1-MMM-Lofi-Video-02.03.2026",
