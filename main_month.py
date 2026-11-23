@@ -23,6 +23,7 @@ from datetime import datetime
 
 import yaml
 
+import contentmap as cm
 import monthview as mv
 from meta_api import (fetch_ad_insights_monthly, fetch_ads_by_name_prefix, fetch_previews_bulk,
                       categorise_ads, consolidate_by_creative)
@@ -51,7 +52,7 @@ def ym_key(ym):
     return f"{ym[0]}-{ym[1]:02d}"
 
 
-def build_view(key, windows, fmt, fmt_rows, uploads, categories, cat_meta, cfgm, today):
+def build_view(key, windows, fmt, fmt_rows, uploads, categories, cat_meta, cfgm, today, ctx=None):
     win = windows[key]
     ym = win["ym"]
     cur_has_data = windows["current"]["until"] is not None
@@ -101,6 +102,18 @@ def build_view(key, windows, fmt, fmt_rows, uploads, categories, cat_meta, cfgm,
                         "older_roas": None, "best": None, "best_all": None})
     view["analysis"] = analysis
 
+    # Concept tags (Type / Theme / Messaging / Hook) from the Google Sheet, for videos: winners by concept,
+    # for ALL ads with spend in the window and for the ones uploaded in this month.
+    ctx = ctx or {}
+    if fmt == "video" and ctx.get("tags"):
+        winner = ctx["winner_spend"]
+        view["content"] = {
+            "all": cm.breakdown(cm.aggregate_creatives(by_cat), ctx["tags"], winner),
+            "new": cm.breakdown(cm.aggregate_creatives(by_cat, ym, mv.parse_vintage), ctx["tags"], winner),
+        }
+    elif fmt == "video" and ctx.get("error"):
+        view["content_error"] = ctx["error"]
+
     # ads without a month prefix are not counted in the tab; say so instead of hiding it
     npx = defaultdict(float)
     for r in rows:
@@ -143,6 +156,13 @@ def run():
         print(f"[Month] WARNING upload counts unavailable ({e}). The tab will not show 'uploaded' / 'no spend yet'.")
         uploads = None
 
+    tags_doc = cm.load_json(os.path.join(OUTPUT_DIR, "ad_tags.json"))
+    tag_status = cm.load_json(os.path.join(OUTPUT_DIR, "tags_status.json"))
+    ct = cfg.get("content_tags") or {}
+    ctx = {"tags": (tags_doc or {}).get("tags") or None, "winner_spend": float(ct.get("winner_spend", 10000)),
+           "error": (tag_status or {}).get("error") if tag_status and not tag_status.get("ok") else None}
+    print("[Month] Concept tags: " + (str(len(ctx["tags"])) + " ads from the sheet" if ctx["tags"] else "none available"))
+
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     for fmt, kind, cats_key in (("static", "statics", "statics_categories"), ("video", "videos", "videos_categories")):
         categories = cfg[cats_key]
@@ -150,7 +170,7 @@ def run():
         cat_meta = {n: {"group": c.get("group", ""), "emoji": c.get("emoji", ""), "order": order_of.get(n, 10 ** 6)}
                     for n, c in categories.items()}
         fmt_rows = [r for r in rows if ad_format(r) == fmt]
-        views = {key: build_view(key, windows, fmt, fmt_rows, uploads, categories, cat_meta, cfgm, today)
+        views = {key: build_view(key, windows, fmt, fmt_rows, uploads, categories, cat_meta, cfgm, today, ctx)
                  for key in ("current", "previous")}
 
         cards = [c for v in views.values() if v.get("analysis") for c in v["analysis"]["cards"]]

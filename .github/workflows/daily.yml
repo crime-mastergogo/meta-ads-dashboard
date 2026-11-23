@@ -43,6 +43,10 @@ jobs:
           META_ACCOUNT_ID: ${{ secrets.META_ACCOUNT_ID }}
         run: python main_videos.py
 
+      - name: Pull ad concept tags from the Google Sheet
+        continue-on-error: true
+        run: python main_tags.py
+
       - name: Pull current-month data (this month and last month's uploads)
         continue-on-error: true
         env:

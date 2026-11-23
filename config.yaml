@@ -18,6 +18,16 @@ card_min_cards: 3       # a category with fewer than this many ads above the flo
 # Current-month tab (every key optional; these are the defaults). New ads are small, so this tab uses
 # its own, lower floor than card_min_spend. The month itself is never configured: it is read from the
 # run date, so December follows November and January follows December automatically.
+# Concept tags: Type / Theme / Messaging / Hook per video, read daily from the team's Google Sheet
+# (shared as "anyone with the link can view") and matched to Meta ads by ad name, cut at the date.
+content_tags:
+  sheet_id: "1iAtSrtv4MfNrXDakKu7fzPV90lRW_1hfwKhcHdoEAMI"   # "Videos - Ad copy"
+  gid: 0                        # the "2026" tab
+  winner_spend: 10000           # a "winner" = an ad with at least this much spend in the window
+  keep_months: 4                # only ads from the last N months are stored in data/ad_tags.json
+  aliases:                      # optional label cleanup: lower-case spelling in the sheet -> label shown
+    type: {lowfi: "LoFi"}       # (typos such as "Problem & Solutiom" are already handled)
+
 month_tab:
   card_min_spend: 1000          # month-tab cards need this much spend
   min_purchases: 2              # purchases needed before a creative is ranked by ROAS

@@ -18,6 +18,7 @@ from datetime import date, datetime, timedelta
 from html import escape
 
 from taxonomy import fmt_inr, ordered_categories
+from contentmap import content_html, CT_JS
 
 TODAY = None          # tests pin the date here; None = the real date in IST
 
@@ -459,6 +460,8 @@ def view_html(v, card_fn, cfg):
               f'<div style="display:flex;height:30px;border-radius:6px;overflow:hidden;gap:2px;margin-bottom:14px;">{bar}</div>'
               f'<div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px;">{legend}</div>')
 
+    concepts = content_html(v.get("content"), v["key"], v["name"], lambda r: _roas_color(r, cfg), v.get("content_error"))
+
     # scoreboard
     body = ""
     for r in a["categories"]:
@@ -516,7 +519,7 @@ def view_html(v, card_fn, cfg):
     if npx.get("ads"):
         warn = (f'<div style="font-size:11px;color:#9a9a9a;margin-top:8px;">{npx["ads"]} ads ({fmt_inr(npx["spend"])}) have no month prefix in their name '
                 f'and are not counted here, e.g. {escape(", ".join(npx.get("examples", [])[:2]))}</div>')
-    return note + tiles + funnel + score + best + decide + warn
+    return note + tiles + funnel + concepts + score + best + decide + warn
 
 
 def month_tab_html(month_data, card_fn, cfg, status=None):
@@ -536,7 +539,7 @@ def month_tab_html(month_data, card_fn, cfg, status=None):
     script = ('<script>function mvShow(w){document.getElementById("mv-cur").style.display=w==="cur"?"block":"none";'
               'document.getElementById("mv-prev").style.display=w==="prev"?"block":"none";'
               'document.getElementById("mvb-cur").classList.toggle("active",w==="cur");'
-              'document.getElementById("mvb-prev").classList.toggle("active",w==="prev");}</script>')
+              'document.getElementById("mvb-prev").classList.toggle("active",w==="prev");}' + CT_JS + '</script>')
     return (switch + stamp
             + f'<div id="mv-cur" style="display:{"block" if show == "cur" else "none"};">{view_html(cur, card_fn, cfg)}</div>'
             + f'<div id="mv-prev" style="display:{"block" if show == "prev" else "none"};">{view_html(prev, card_fn, cfg)}</div>'
