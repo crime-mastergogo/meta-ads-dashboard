@@ -20,20 +20,102 @@ import json
 from datetime import datetime, timedelta
 from collections import defaultdict
 
+from taxonomy import redact
+
 TOKEN     = os.environ["META_ACCESS_TOKEN"]
 ACCOUNT_ID = os.environ.get("META_ACCOUNT_ID", "act_1857340177852371")
 API_VERSION = "v26.0"
 BASE      = f"https://graph.facebook.com/{API_VERSION}"
 
 
+class MetaAPIError(requests.exceptions.HTTPError):
+    """An error from the Meta API whose text has the secrets removed. (The access token travels in the URL and
+    the default requests error message repeats that URL, which once put the token on the dashboard.)"""
+
+    def __init__(self, message, response=None, code=None):
+        super().__init__(message, response=response)
+        self.code = code
+
+
+RETRY_STATUS = {429, 500, 502, 503, 504}
+RATE_LIMIT_CODES = {4, 17, 32, 341, 613, 80000, 80001, 80002, 80003, 80004, 80005, 80006, 80008, 80014}
+RETRY_WAITS = [20, 60, 120, 240]         # seconds before retry 1..4 (at most ~7 minutes in total)
+MAX_REGAIN_MINUTES = 10                  # if Meta says "come back in longer than this", stop and report it
+
+
+def _clean(text):
+    s = redact(text)
+    if len(TOKEN) >= 20:
+        s = s.replace(TOKEN, "***")
+    return s
+
+
+def _error_info(r):
+    try:
+        e = (r.json() or {}).get("error") or {}
+    except ValueError:
+        e = {}
+    return e.get("code"), e.get("error_subcode"), _clean(e.get("message") or (r.text or "")[:300])
+
+
+def _regain_minutes(r):
+    """Longest 'estimated_time_to_regain_access' (minutes) found in Meta's usage headers."""
+    best = 0
+    for h in ("x-business-use-case-usage", "x-ad-account-usage", "x-app-usage"):
+        raw = r.headers.get(h)
+        if not raw:
+            continue
+        try:
+            stack = [json.loads(raw)]
+        except ValueError:
+            continue
+        while stack:
+            x = stack.pop()
+            if isinstance(x, dict):
+                v = x.get("estimated_time_to_regain_access")
+                if isinstance(v, (int, float)):
+                    best = max(best, v)
+                stack.extend(x.values())
+            elif isinstance(x, list):
+                stack.extend(x)
+    return best
+
+
 def _get(path, params):
     params = dict(params)
     params["access_token"] = TOKEN
-    r = requests.get(f"{BASE}{path}", params=params, timeout=60)
-    if not r.ok:
-        print(f"API Error {r.status_code}: {r.text}")
-    r.raise_for_status()
-    return r.json()
+    for attempt in range(len(RETRY_WAITS) + 1):
+        try:
+            r = requests.get(f"{BASE}{path}", params=params, timeout=60)
+        except requests.exceptions.RequestException as e:
+            if attempt < len(RETRY_WAITS):
+                print(f"  Network error talking to Meta ({type(e).__name__}); retrying in {RETRY_WAITS[attempt]}s")
+                time.sleep(RETRY_WAITS[attempt])
+                continue
+            raise MetaAPIError(f"Network error talking to Meta ({type(e).__name__}); details withheld because they contain the request URL") from None
+        if r.ok:
+            return r.json()
+        code, sub, msg = _error_info(r)
+        low = msg.lower()
+        reduce_data = "reduce the amount of data" in low        # _get_adaptive answers this with smaller pages: never retried here
+        rate = code in RATE_LIMIT_CODES or "rate limit" in low or "too many calls" in low or "request limit" in low
+        transient = r.status_code in RETRY_STATUS
+        label = f"Meta API {r.status_code} (code {code}{'/' + str(sub) if sub else ''}): {msg[:300]}"
+        print("  " + label)
+        if (rate or transient) and not reduce_data and attempt < len(RETRY_WAITS):
+            regain = _regain_minutes(r)
+            if regain > MAX_REGAIN_MINUTES:
+                raise MetaAPIError(label + f" | rate limited for about {int(regain)} more minutes, giving up for this run", response=r, code=code)
+            print(f"  waiting {RETRY_WAITS[attempt]}s before retry {attempt + 1} of {len(RETRY_WAITS)}")
+            time.sleep(RETRY_WAITS[attempt])
+            continue
+        hint = ""
+        if r.status_code == 401 or code == 190:
+            hint = " | the access token is invalid or expired: create a new one and update the META_ACCESS_TOKEN secret"
+        elif rate:
+            hint = " | rate limited by Meta, the next daily run will try again"
+        raise MetaAPIError(label + hint, response=r, code=code)
+    raise MetaAPIError("Meta API: retries exhausted")
 
 
 def date_range(lookback_days):

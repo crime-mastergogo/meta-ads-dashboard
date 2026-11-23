@@ -7,10 +7,22 @@ Backward compatible by design: data written before groups existed has no "group"
 keys, and every helper here then behaves like the old flat layout (insertion order,
 no group headers, per-category Slack lines).
 """
+import re
 from collections import defaultdict
 from html import escape
 
 LEGACY_ORDER = 10 ** 6
+
+_SECRET_PARAM = re.compile(r"((?:access_token|app_secret|appsecret_proof|client_secret|token)=)[^&\s'\"<>]+", re.I)
+_FB_TOKEN = re.compile(r"\bEAA[A-Za-z0-9_\-]{20,}")
+
+
+def redact(text):
+    """Remove secrets from any text that might be stored or shown. Meta's API takes the access token in the
+    URL (?access_token=...) and the default error message of the requests library repeats that whole URL,
+    so an error string must never be saved or displayed without passing through here."""
+    s = _SECRET_PARAM.sub(lambda m: m.group(1) + "***", str(text))
+    return _FB_TOKEN.sub("***", s)
 
 
 def category_orders(categories_cfg, group_order=None):

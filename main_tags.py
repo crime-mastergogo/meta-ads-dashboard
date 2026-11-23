@@ -20,6 +20,7 @@ import yaml
 
 import contentmap as cm
 import monthview as mv
+from taxonomy import redact
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH = os.path.join(BASE_DIR, "config.yaml")
@@ -87,8 +88,8 @@ def main():
         run()
         return 0
     except Exception as e:                                   # noqa: BLE001 - record every failure where the dashboard can show it
-        traceback.print_exc()
-        write_json("tags_status.json", {"ok": False, "error": (type(e).__name__ + ": " + str(e))[:600], "at": datetime.utcnow().isoformat()})
+        print(redact(traceback.format_exc()))
+        write_json("tags_status.json", {"ok": False, "error": redact(type(e).__name__ + ": " + str(e))[:600], "at": datetime.utcnow().isoformat()})
         return 1
 
 

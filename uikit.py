@@ -48,6 +48,7 @@ UI_CSS = """
   border-radius:8px;font:600 12.5px Inter,sans-serif;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:1000;max-width:90vw;text-align:center;}
 #uk-toast.on{opacity:1;transform:translate(-50%,0);}
 .uk-shield,.uk-count,#uk-chips{display:none;}
+.uk-phone{display:none;}
 
 /* ── uikit: phone layout ── */
 @media (max-width:700px){
@@ -77,6 +78,8 @@ UI_CSS = """
   .cgrid>*{flex:0 0 86%;max-width:86%;min-width:0;scroll-snap-align:center;scroll-snap-stop:always;}
   .mpw,.static-preview,.video-preview,.no-prev{height:var(--uk-prev-h);position:relative;}
   .mpw iframe,.static-preview iframe,.video-preview iframe{height:100%;}
+  .uk-phone{display:block;}
+  .uk-desk{display:none;}
   .uk-count{display:block;text-align:center;font:600 11px "JetBrains Mono",monospace;color:#8a8a8a;margin:0 0 16px;}
 
   /* iframes swallow touches: the shield lets a swipe that starts on the preview move the row */
@@ -128,7 +131,7 @@ UI_JS = r"""
   }
 
   /* ---------- share a card ---------- */
-  function paneOf(el) { var p = el.closest('.tab-content, .inner-content, .tab-pane'); return p ? p.id : ''; }
+  function paneOf(el) { var p = el.closest('#mv-cur, #mv-prev, #mv-only, .tab-content, .inner-content, .tab-pane'); return p ? p.id : ''; }
   function cardLink(id, pane) {
     return location.href.split('#')[0] + '#ad=' + encodeURIComponent(id) + (pane ? '&p=' + encodeURIComponent(pane) : '');
   }
@@ -165,8 +168,8 @@ UI_JS = r"""
     if (tp && typeof switchFormat === 'function') { var m = /^fmt(\d+)$/.exec(tp.id || ''); if (m) switchFormat(+m[1]); }
     var ic = el.closest('.inner-content');
     if (ic && typeof switchInner === 'function') { var q = /^([sv])-inner(\d+)$/.exec(ic.id || ''); if (q) switchInner(q[1] === 's' ? 0 : 1, +q[2]); }
-    var mv = el.closest('#mv-cur, #mv-prev');
-    if (mv && typeof mvShow === 'function') mvShow(mv.id === 'mv-cur' ? 'cur' : 'prev');
+    var mv = el.closest('#mv-cur, #mv-prev, #mv-only');
+    if (mv && typeof mvShow === 'function') mvShow(mv.id.replace('mv-', ''));
     var sec = el.closest('.sec');
     if (sec && sec.style.display === 'none') { var all = $('.filter-btn', tc || tp || document); if (all) all.click(); }
   }

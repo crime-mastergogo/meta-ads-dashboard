@@ -17,7 +17,7 @@ import re
 from datetime import date, datetime, timedelta
 from html import escape
 
-from taxonomy import fmt_inr, ordered_categories
+from taxonomy import fmt_inr, ordered_categories, redact
 from contentmap import content_html, CT_JS
 
 TODAY = None          # tests pin the date here; None = the real date in IST
@@ -43,6 +43,7 @@ DEFAULTS = {
     "best_overall_min_spend": 5000,  # "best overall" compares against ads at least this big
     "max_cards": 6,
     "max_decisions": 10,
+    "tier_list_max": 400,           # ads listed per tier when you click a tier
 }
 
 
@@ -110,6 +111,7 @@ def month_windows(today):
       current  : this month, from the 1st to yesterday. Has no data on the 1st (until is None).
       previous : last month's uploads, counted from the 1st of last month to yesterday, so it shows
                  how they are doing NOW, including this month's spend.
+      previous_only : the same last-month view, but counting only spend made inside last month.
     """
     until = today - timedelta(days=1)
     cur = (today.year, today.month)
@@ -118,6 +120,8 @@ def month_windows(today):
     return {
         "current": {"ym": cur, "since": month_first(cur), "until": until if cur_has_data else None},
         "previous": {"ym": prev, "since": month_first(prev), "until": until},
+        # last month on its own: only spend from last month itself, nothing from this month
+        "previous_only": {"ym": prev, "since": month_first(prev), "until": month_first(cur) - timedelta(days=1)},
     }
 
 
@@ -242,11 +246,19 @@ def analyse(by_cat, ym, cfgm, cat_meta=None, today=None):
 
     tiers = {k: {"count": 0, "spend": 0.0} for k in TIER_KEYS}
     cards, decisions = [], []
+    tier_rows = {k: [] for k in TIER_KEYS}      # every creative of each tier (the "click a tier" lists)
+    mix = {}                                    # tier counts per category
+    tier_of = {}                                # name -> (tier, category, spend, roas), used for movement
     for name, c in creatives.items():
         roas = c["cv"] / c["spend"] if c["spend"] else 0.0
         tier = classify(c["spend"], roas, c["purchases"], cfgm)
         tiers[tier]["count"] += 1
         tiers[tier]["spend"] += c["spend"]
+        tier_of[name] = (tier, c["cat"], c["spend"], roas)
+        tier_rows[tier].append({"n": name, "c": c["cat"], "s": int(round(c["spend"])), "r": round(roas, 2), "u": c["purchases"]})
+        m = mix.setdefault(c["cat"], {"scaling": 0, "early": 0, "proving": 0, "notworking": 0, "spend": 0.0})
+        m[tier] += 1
+        m["spend"] += c["spend"]
         card = {"ad_id": c["top"].get("ad_id", ""), "ad_name": name, "adset_name": c["top"].get("adset_name", ""),
                 "spend": round(c["spend"], 2), "roas": round(roas, 4), "conv_value": round(c["cv"], 2),
                 "purchases": c["purchases"], "category": c["cat"], "tier": tier}
@@ -256,6 +268,15 @@ def analyse(by_cat, ym, cfgm, cat_meta=None, today=None):
             decisions.append(card)
     cards.sort(key=lambda x: -x["roas"])
     decisions.sort(key=lambda x: -x["spend"])
+    for k in tier_rows:
+        tier_rows[k].sort(key=lambda x: -x["s"])
+        del tier_rows[k][cfgm["tier_list_max"]:]
+    mix_rows = []
+    for cat, m in mix.items():
+        meta = cat_meta.get(cat, {})
+        mix_rows.append({"category": "Unmapped" if cat == "Other" else cat, "group": meta.get("group", ""), "emoji": meta.get("emoji", ""),
+                         "order": meta.get("order", 10 ** 6), "spend": round(m["spend"], 2),
+                         "counts": {k: m[k] for k in TIER_KEYS}})
 
     spend = sum(c["spend"] for c in creatives.values())
     cv = sum(c["cv"] for c in creatives.values())
@@ -286,6 +307,9 @@ def analyse(by_cat, ym, cfgm, cat_meta=None, today=None):
         "cards": cards[:cfgm["max_cards"]],
         "decisions": decisions[:cfgm["max_decisions"]],
         "all_spend": round(all_spend, 2),
+        "tier_ads": tier_rows,
+        "tier_mix": mix_rows,
+        "tier_of": tier_of,          # working data for movement; removed before the file is written
     }
 
 
@@ -346,7 +370,7 @@ def month_error_html(status):
             '<b style="font-size:15px;color:#fcd34d;">The current-month data could not be pulled</b><br>'
             'The tab will fill in as soon as the "Pull current-month data" step of the Daily workflow succeeds.<br>'
             f'<span style="color:#b8a96a;">Last error ({escape(str(status.get("at", ""))[:16])} UTC): '
-            f'{escape(str(status.get("error", "unknown")))}</span></div>')
+            f'{escape(redact(str(status.get("error", "unknown"))))}</span></div>')
 
 
 # ── rendering helpers ────────────────────────────────────────────────────────
@@ -406,6 +430,231 @@ def _fmt_day(d):
     return f'{d.day} {calendar.month_abbr[d.month]}' if isinstance(d, date) else str(d)
 
 
+
+_MOVES = [
+    ("newly_scaling", "Newly scaling", "#22c55e", "\u2191"),
+    ("newly_early", "New early winners", "#86efac", "\u2191"),
+    ("recovered", "Recovered from Not working", "#94a3b8", "\u2191"),
+    ("cooled", "Cooled from Scaling", "#fcd34d", "\u2193"),
+    ("slipped", "Slipped to Not working", "#ef4444", "\u2193"),
+    ("started", "Started spending", "#60a5fa", "+"),
+]
+
+
+def movement_html(v):
+    """'Movement since yesterday': who changed tier since the previous daily snapshot."""
+    m = v.get("movement")
+    if m is None:
+        return ""
+    head = '<div style="font-size:15px;font-weight:600;">Movement since yesterday</div>'
+    if not m.get("since"):
+        return (head + '<div style="margin:8px 0 34px;padding:12px 16px;border:1px solid #252525;background:#121212;border-radius:8px;'
+                'font-size:12px;color:#9a9a9a;line-height:1.6;">Movement appears after the next daily refresh. It compares each creative\'s tier '
+                'with the snapshot saved the day before, and there is none yet.</div>')
+    since = _fmt_day(date.fromisoformat(m["since"]))
+    counts, lists = m.get("counts", {}), m.get("lists", {})
+    tiles = '<div style="display:flex;gap:12px;flex-wrap:wrap;margin:10px 0 12px;">'
+    for key, label, color, arrow in _MOVES:
+        n = counts.get(key, 0)
+        tiles += _tile(label, '<span style="color:' + (color if n else "#e8e8e8") + ';">' + arrow + " " + str(n) + "</span>", "since " + since)
+    tiles += "</div>"
+    det = ""
+    for key, label, color, arrow in _MOVES:
+        items = lists.get(key) or []
+        if not items:
+            continue
+        rows, plist = "", ""
+        for i in items[:15]:
+            was = TIERS.get(i.get("from") or "", {}).get("name", "new")
+            plist += ('<div style="padding:9px 14px;border-top:1px solid #1d1d1d;"><div style="color:#e0e0e0;font-size:12px;word-break:break-word;line-height:1.4;">' + escape(i["n"][:90]) + "</div>"
+                      '<div style="display:flex;gap:4px 12px;flex-wrap:wrap;margin-top:4px;font-size:11.5px;color:#bbb;"><span>' + escape(i["c"]) + "</span><span>" + escape(was) + " \u2192 " + escape(TIERS[i["to"]]["name"])
+                      + '</span><b style="color:#ddd;">' + fmt_inr(i["s"]) + '</b><b style="color:#ddd;">' + ("%.2fx" % i["r"]) + "</b></div></div>")
+            rows += ('<tr style="border-top:1px solid #1d1d1d;"><td style="padding:7px 10px;color:#e0e0e0;word-break:break-word;">' + escape(i["n"][:90]) + "</td>"
+                     '<td style="padding:7px 10px;color:#bbb;white-space:nowrap;">' + escape(i["c"]) + "</td>"
+                     '<td style="padding:7px 10px;color:#9a9a9a;white-space:nowrap;">' + escape(was) + " \u2192 " + escape(TIERS[i["to"]]["name"]) + "</td>"
+                     '<td style="padding:7px 10px;color:#ddd;white-space:nowrap;">' + fmt_inr(i["s"]) + "</td>"
+                     '<td style="padding:7px 10px;font-weight:700;color:#ddd;white-space:nowrap;">' + ("%.2fx" % i["r"]) + "</td></tr>")
+        more = counts.get(key, 0) - min(len(items), 15)
+        det += ('<details style="margin:6px 0;"><summary style="cursor:pointer;font-size:12.5px;font-weight:600;padding:6px 0;color:' + color + ';">'
+                + arrow + " " + label + " (" + str(counts.get(key, 0)) + ")</summary>"
+                '<div class="uk-phone" style="background:#121212;border:1px solid #252525;border-radius:10px;overflow:hidden;">' + plist + "</div>"
+                '<div class="uk-desk" style="background:#121212;border:1px solid #252525;border-radius:10px;overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:12px;min-width:560px;"><tbody>'
+                + rows + "</tbody></table></div>"
+                + ('<div style="font-size:11px;color:#777;margin:4px 0 0 2px;">+ ' + str(more) + " more</div>" if more > 0 else "") + "</details>")
+    return (head + '<div style="font-size:11px;color:#9a9a9a;margin:3px 0 0;">Compared with the snapshot from ' + since
+            + ". A creative moves when its tier changes as spend and purchases build up.</div>" + tiles + det + '<div style="height:34px;"></div>')
+
+
+def mix_html(a):
+    """'Tier mix by category': which categories are producing winners."""
+    rows = a.get("tier_mix") or []
+    if not rows:
+        return ""
+    ks = TIER_KEYS + ["nospend"]
+    rows = sorted(rows, key=lambda r: (-(r["counts"]["scaling"] + r["counts"]["early"]), -r["spend"]))
+    body, plist, shown = "", "", 0
+    for r in rows:
+        c = r["counts"]
+        if not sum(c.get(k, 0) for k in ks):
+            continue
+        if shown >= 25:
+            break
+        shown += 1
+        bar = "".join('<div style="flex:' + str(c.get(k, 0)) + ' 1 0;background:' + TIERS[k]["color"] + ';"></div>' for k in ks if c.get(k, 0))
+        judged = sum(c.get(k, 0) for k in TIER_KEYS)
+        hit = ("%.0f%%" % ((c["scaling"] + c["early"]) / judged * 100)) if judged else "\u2014"
+        cells = "".join('<td style="padding:9px 8px;text-align:center;font-weight:700;color:' + (TIERS[k]["color"] if c.get(k, 0) else "#4a4a4a") + ';">' + str(c.get(k, 0)) + "</td>" for k in ks)
+        parts = [TIERS[k]["name"] + " " + str(c[k]) for k in ks if c.get(k, 0)]
+        plist += ('<div style="padding:10px 14px;border-top:1px solid #1d1d1d;"><div style="display:flex;justify-content:space-between;gap:10px;font-weight:600;font-size:13px;">'
+                  '<span>' + r.get("emoji", "") + " " + escape(r["category"]) + '</span><span style="color:#ddd;white-space:nowrap;">' + hit + ' hit rate</span></div>'
+                  '<div style="display:flex;height:8px;border-radius:4px;overflow:hidden;gap:1px;margin:8px 0 6px;">' + bar + '</div>'
+                  '<div style="font-size:11px;color:#9a9a9a;line-height:1.5;">' + " \u00b7 ".join(parts) + "</div></div>")
+        body += ('<tr style="border-top:1px solid #1d1d1d;"><td style="padding:9px 12px;font-weight:600;white-space:nowrap;">' + r.get("emoji", "") + " " + escape(r["category"]) + "</td>"
+                 '<td style="padding:9px 10px;min-width:140px;"><div style="display:flex;height:10px;border-radius:5px;overflow:hidden;gap:1px;">' + bar + "</div></td>"
+                 + cells + '<td style="padding:9px 12px;text-align:right;font-weight:700;color:#ddd;">' + hit + "</td></tr>")
+    if not body:
+        return ""
+    th = 'style="padding:9px 8px;font-weight:600;text-align:center;"'
+    short = {"scaling": "Scaling", "early": "Early", "proving": "Proving", "notworking": "Not working", "nospend": "No spend"}
+    heads = "".join("<th " + th + ' title="' + TIERS[k]["name"] + '"><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:' + TIERS[k]["color"] + ';margin-right:5px;"></span>' + short[k] + "</th>" for k in ks)
+    return ('<div style="font-size:15px;font-weight:600;">Tier mix by category</div>'
+            '<div style="font-size:11px;color:#9a9a9a;margin:3px 0 12px;">Which categories are producing winners: creatives per tier. Hit rate = (Scaling + Early winners) \u00f7 creatives that have spent.</div>'
+            '<div class="uk-phone" style="background:#121212;border:1px solid #252525;border-radius:10px;overflow:hidden;margin-bottom:34px;">' + plist + "</div>"
+            '<div class="uk-desk" style="background:#121212;border:1px solid #252525;border-radius:10px;overflow-x:auto;margin-bottom:34px;">'
+            '<table style="width:100%;border-collapse:collapse;font-size:12.5px;min-width:760px;"><thead><tr style="color:#9a9a9a;font-size:10px;text-transform:uppercase;letter-spacing:.05em;">'
+            '<th style="padding:9px 12px;text-align:left;font-weight:600;">Category</th><th style="padding:9px 10px;text-align:left;font-weight:600;">Mix</th>'
+            + heads + '<th style="padding:9px 12px;text-align:right;font-weight:600;">Hit rate</th></tr></thead><tbody>' + body + "</tbody></table></div>")
+
+
+TIER_JS = r"""
+(function () {
+  var COL = {scaling: "#22c55e", early: "#86efac", proving: "#94a3b8", notworking: "#ef4444", nospend: "#3f3f46"};
+  var NAME = {scaling: "Scaling", early: "Early winner", proving: "Still proving", notworking: "Not working", nospend: "No spend yet"};
+  var state = {};
+  function inr(v) { return v >= 100000 ? "\u20b9" + (v / 100000).toFixed(1) + "L" : v >= 1000 ? "\u20b9" + Math.round(v / 1000) + "K" : "\u20b9" + Math.round(v); }
+  function el(tag, css, text) { var e = document.createElement(tag); if (css) e.style.cssText = css; if (text != null) e.textContent = text; return e; }
+  function mark(key, tier) {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-tier-btn="' + key + '"]'), function (b) {
+      var on = b.getAttribute("data-tier") === tier;
+      b.style.borderColor = on ? COL[tier] : "#252525"; b.style.background = on ? "#161616" : "#121212";
+    });
+  }
+  function roasColor(thr, r) { return r >= thr.good ? "#22c55e" : r >= thr.ok ? "#86efac" : r >= thr.warn ? "#f59e0b" : "#ef4444"; }
+  function concept(t) {
+    if (!t) return "\u2014";
+    var p = [t[0], t[1], t[3]].filter(function (x) { return x && x !== "Unlabelled"; });
+    return p.length ? p.join(" \u00b7 ") : "\u2014";
+  }
+  function fill(key) {
+    var st = state[key], all = st.data.tiers[st.tier] || [];
+    var rows = all.filter(function (r) { return !st.q || (r.n + " " + r.c).toLowerCase().indexOf(st.q) >= 0; });
+    var k = st.sort, d = st.dir;
+    rows.sort(function (a, b) {
+      var x = a[k], y = b[k];
+      if (typeof x === "string") return d * x.localeCompare(y);
+      return d * ((x || 0) - (y || 0));
+    });
+    var tb = st.refs.tbody; tb.textContent = "";
+    rows.slice(0, st.shown).forEach(function (r) {
+      if (st.phone) {
+        var row = el("div", "padding:10px 14px;border-top:1px solid #1d1d1d;"); row.setAttribute("data-row", "1");
+        row.appendChild(el("div", "color:#e0e0e0;font-size:12px;word-break:break-word;line-height:1.4;", r.n));
+        var meta = el("div", "display:flex;gap:6px 12px;flex-wrap:wrap;align-items:baseline;margin-top:5px;font-size:11.5px;");
+        meta.appendChild(el("span", "color:#bbb;", r.c));
+        if (st.tier !== "nospend") {
+          meta.appendChild(el("b", "color:#ddd;", inr(r.s)));
+          meta.appendChild(el("b", "color:" + roasColor(st.data.thr, r.r), r.r.toFixed(2) + "x"));
+          meta.appendChild(el("span", "color:#9a9a9a;", r.u + " units"));
+        }
+        row.appendChild(meta);
+        if (st.hasTags && st.tier !== "nospend" && concept(r.t) !== "\u2014") row.appendChild(el("div", "color:#8a8a8a;font-size:11px;margin-top:3px;", concept(r.t)));
+        tb.appendChild(row);
+        return;
+      }
+      var tr = el("tr", "border-top:1px solid #1d1d1d;"); tr.setAttribute("data-row", "1");
+      tr.appendChild(el("td", "padding:8px 12px;color:#e0e0e0;max-width:420px;word-break:break-word;", r.n));
+      tr.appendChild(el("td", "padding:8px 12px;color:#bbb;white-space:nowrap;", r.c));
+      if (st.tier !== "nospend") {
+        tr.appendChild(el("td", "padding:8px 12px;color:#ddd;white-space:nowrap;font-variant-numeric:tabular-nums;", inr(r.s)));
+        tr.appendChild(el("td", "padding:8px 12px;font-weight:700;white-space:nowrap;color:" + roasColor(st.data.thr, r.r), r.r.toFixed(2) + "x"));
+        tr.appendChild(el("td", "padding:8px 12px;color:#ddd;", String(r.u)));
+        if (st.hasTags) tr.appendChild(el("td", "padding:8px 12px;color:#9a9a9a;", concept(r.t)));
+      }
+      tb.appendChild(tr);
+    });
+    var total = st.data.counts[st.tier] || all.length;
+    st.refs.note.textContent = "Showing " + Math.min(st.shown, rows.length) + " of " + rows.length + (st.q ? " matching" : "") +
+      (all.length < total && !st.q ? " (the largest " + all.length + " of " + total + " are listed)" : "");
+    st.refs.more.textContent = "";
+    if (rows.length > st.shown) {
+      var b = el("button", "background:#1a1a1a;border:1px solid #2a2a2a;border-radius:6px;color:#ddd;padding:9px 14px;font-size:12px;cursor:pointer;min-height:36px;", "Show 50 more");
+      b.type = "button"; b.addEventListener("click", function () { st.shown += 50; fill(key); });
+      st.refs.more.appendChild(b);
+    }
+  }
+  function build(key) {
+    var st = state[key], panel = document.getElementById("tp-" + key); panel.textContent = "";
+    var box = el("div", "background:#121212;border:1px solid " + COL[st.tier] + ";border-radius:10px;overflow:hidden;");
+    var head = el("div", "display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 14px;border-bottom:1px solid #1d1d1d;");
+    head.appendChild(el("span", "width:10px;height:10px;border-radius:2px;background:" + COL[st.tier] + ";display:inline-block;"));
+    head.appendChild(el("div", "font-size:13px;font-weight:700;", NAME[st.tier] + " \u00b7 " + (st.data.counts[st.tier] || 0).toLocaleString("en-IN") + " ads"));
+    var q = el("input", "flex:1 1 180px;min-width:140px;background:#0c0c0c;border:1px solid #2a2a2a;border-radius:6px;color:#e8e8e8;padding:9px 10px;font-size:12px;min-height:36px;");
+    q.type = "search"; q.placeholder = "Search name or category"; q.setAttribute("aria-label", "Search ads in this tier");
+    q.addEventListener("input", function () { st.q = q.value.toLowerCase(); st.shown = 50; fill(key); });
+    var close = el("button", "background:#1a1a1a;border:1px solid #2a2a2a;border-radius:6px;color:#bbb;padding:9px 12px;font-size:12px;cursor:pointer;min-height:36px;", "Close");
+    close.type = "button";
+    close.addEventListener("click", function () { panel.style.display = "none"; st.tier = null; mark(key, null); });
+    head.appendChild(q); head.appendChild(close); box.appendChild(head);
+    st.phone = window.matchMedia("(max-width: 700px)").matches;
+    if (st.phone) {
+      if (st.tier !== "nospend") {
+        var sel = el("select", "display:block;width:calc(100% - 28px);margin:10px 14px 4px;background:#0c0c0c;border:1px solid #2a2a2a;border-radius:6px;color:#e8e8e8;padding:9px 10px;font-size:12px;min-height:36px;");
+        sel.setAttribute("aria-label", "Sort the list");
+        [["s", -1, "Sort: biggest spend"], ["r", -1, "Sort: best ROAS"], ["u", -1, "Sort: most units"], ["n", 1, "Sort: name A-Z"], ["c", 1, "Sort: category A-Z"]].forEach(function (o) {
+          var op = el("option", null, o[2]); op.value = o[0] + ":" + o[1]; if (st.sort === o[0] && st.dir === o[1]) op.selected = true; sel.appendChild(op);
+        });
+        sel.addEventListener("change", function () { var p = sel.value.split(":"); st.sort = p[0]; st.dir = +p[1]; fill(key); });
+        box.appendChild(sel);
+      }
+      st.refs = {tbody: el("div"), more: el("div", "padding:6px 14px 12px;"), note: el("div", "padding:8px 14px;font-size:11px;color:#777;")};
+      box.appendChild(st.refs.tbody); box.appendChild(st.refs.note); box.appendChild(st.refs.more);
+      panel.appendChild(box);
+    } else {
+      var cols = st.tier === "nospend" ? [["Creative", "n"], ["Category", "c"]] : [["Creative", "n"], ["Category", "c"], ["Spend", "s"], ["ROAS", "r"], ["Units", "u"]];
+      if (st.tier !== "nospend" && st.hasTags) cols.push(["Concept", "t"]);
+      var wrap = el("div", "overflow-x:auto;"), tbl = el("table", "width:100%;border-collapse:collapse;font-size:12px;min-width:" + (st.tier === "nospend" ? 360 : 640) + "px;");
+      var thead = el("thead"), tr = el("tr", "color:#9a9a9a;font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;");
+      cols.forEach(function (c) {
+        var th = el("th", "padding:8px 12px;text-align:left;font-weight:600;" + (c[1] !== "t" ? "cursor:pointer;" : ""), c[0] + (st.sort === c[1] ? (st.dir > 0 ? " \u25b2" : " \u25bc") : ""));
+        if (c[1] !== "t") th.addEventListener("click", function () {
+          if (st.sort === c[1]) st.dir = -st.dir; else { st.sort = c[1]; st.dir = (c[1] === "n" || c[1] === "c") ? 1 : -1; }
+          build(key); fill(key);
+        });
+        tr.appendChild(th);
+      });
+      thead.appendChild(tr); tbl.appendChild(thead);
+      st.refs = {tbody: el("tbody"), more: el("div", "padding:6px 14px 12px;"), note: el("div", "padding:8px 14px;font-size:11px;color:#777;")};
+      tbl.appendChild(st.refs.tbody); wrap.appendChild(tbl); box.appendChild(wrap); box.appendChild(st.refs.note); box.appendChild(st.refs.more);
+      panel.appendChild(box);
+    }
+    q.value = st.q || "";
+  }
+  window.tierShow = function (key, tier) {
+    var panel = document.getElementById("tp-" + key), src = document.getElementById("tj-" + key);
+    if (!panel || !src) return;
+    var st = state[key] = state[key] || {};
+    if (st.tier === tier && panel.style.display === "block") { panel.style.display = "none"; st.tier = null; mark(key, null); return; }
+    st.data = st.data || JSON.parse(src.textContent);
+    st.hasTags = Object.keys(st.data.tiers).some(function (t) { return (st.data.tiers[t] || []).some(function (r) { return r.t; }); });
+    st.tier = tier; st.shown = 50; st.q = ""; st.sort = "s"; st.dir = -1;
+    if (tier === "nospend") { st.sort = "n"; st.dir = 1; }
+    mark(key, tier); build(key); fill(key); panel.style.display = "block";
+    if (panel.scrollIntoView) panel.scrollIntoView({behavior: "smooth", block: "nearest"});
+  };
+})();
+"""
+
+
 def view_html(v, card_fn, cfg):
     """One view (current or previous month)."""
     name = escape(v["name"])
@@ -420,6 +669,9 @@ def view_html(v, card_fn, cfg):
     since = date.fromisoformat(v["since"]); until = date.fromisoformat(v["until"])
     if v["key"] == "current":
         scope = f'<b style="color:#ddd;">Month to date: {_fmt_day(since)} \u2013 {_fmt_day(until)}.</b> '
+    elif v["key"] == "previous_only":
+        scope = (f'<b style="color:#ddd;">{name} only:</b> spend counted from {_fmt_day(since)} to {_fmt_day(until)}, '
+                 f'nothing from later months. ')
     else:
         scope = (f'<b style="color:#ddd;">How {name} uploads are doing now:</b> spend counted from {_fmt_day(since)} '
                  f'to {_fmt_day(until)}, including this month. ')
@@ -449,16 +701,32 @@ def view_html(v, card_fn, cfg):
         segs.append(("nospend", up["no_spend"], 0.0))
     rules = tier_rules(c)
     bar = "".join(f'<div style="flex:{max(n, 0)} 1 0;background:{TIERS[k]["color"]};"></div>' for k, n, _ in segs if n > 0)
-    legend = "".join(
-        f'<div style="flex:1 1 180px;background:#121212;border:1px solid #252525;border-radius:8px;padding:12px 14px;">'
-        f'<div style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;"><span style="width:10px;height:10px;border-radius:2px;background:{TIERS[k]["color"]};display:inline-block;"></span>{TIERS[k]["name"]}</div>'
-        f'<div style="font-size:20px;font-weight:700;margin-top:6px;">{n:,} <span style="font-size:12px;font-weight:500;color:#9a9a9a;">\u00b7 {fmt_inr(sp)}</span></div>'
-        f'<div style="font-size:11px;color:#9a9a9a;margin-top:4px;line-height:1.5;">{rules[k]}</div></div>'
-        for k, n, sp in segs)
-    funnel = (f'<div style="font-size:15px;font-weight:600;">Are they working?</div>'
-              f'<div style="font-size:11px;color:#9a9a9a;margin:3px 0 12px;">Every {name} upload, sorted by how it is doing so far</div>'
-              f'<div style="display:flex;height:30px;border-radius:6px;overflow:hidden;gap:2px;margin-bottom:14px;">{bar}</div>'
-              f'<div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px;">{legend}</div>')
+    clickable = bool(a.get("tier_ads"))
+    legend = ""
+    for k, n, sp in segs:
+        inner = ('<div style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;"><span style="width:10px;height:10px;border-radius:2px;background:'
+                 + TIERS[k]["color"] + ';display:inline-block;"></span>' + TIERS[k]["name"] + "</div>"
+                 '<div style="font-size:20px;font-weight:700;margin-top:6px;">' + format(n, ",") + ' <span style="font-size:12px;font-weight:500;color:#9a9a9a;">\u00b7 ' + fmt_inr(sp) + "</span></div>"
+                 '<div style="font-size:11px;color:#9a9a9a;margin-top:4px;line-height:1.5;">' + rules[k] + "</div>")
+        if clickable and n > 0 and (k != "nospend" or a["tier_ads"].get("nospend")):
+            legend += ('<button type="button" data-tier-btn="' + v["key"] + '" data-tier="' + k + '" onclick="tierShow(\'' + v["key"] + "','" + k + '\')" '
+                       'style="flex:1 1 180px;text-align:left;font:inherit;color:inherit;cursor:pointer;background:#121212;border:1px solid #252525;border-radius:8px;padding:12px 14px;">'
+                       + inner + '<div style="font-size:11px;color:#8ab4f8;margin-top:8px;">View all ' + format(n, ",") + " \u203a</div></button>")
+        else:
+            legend += '<div style="flex:1 1 180px;background:#121212;border:1px solid #252525;border-radius:8px;padding:12px 14px;">' + inner + "</div>"
+    tier_json = ""
+    if clickable:
+        payload = {"tiers": a["tier_ads"], "counts": {k: n for k, n, _sp in segs}, "thr": (cfg or {}).get("roas_thresholds") or {"good": 2.5, "ok": 2.0, "warn": 1.5}}
+        tier_json = ('<script type="application/json" id="tj-' + v["key"] + '">'
+                     + json.dumps(payload, ensure_ascii=True, separators=(",", ":")).replace("<", "\\u003c") + "</script>")
+    funnel = ('<div style="font-size:15px;font-weight:600;">Are they working?</div>'
+              '<div style="font-size:11px;color:#9a9a9a;margin:3px 0 12px;">Every ' + name + " upload, sorted by how it is doing so far"
+              + ("; click a tier to see all of its ads" if clickable else "") + "</div>"
+              '<div style="display:flex;height:30px;border-radius:6px;overflow:hidden;gap:2px;margin-bottom:14px;">' + bar + "</div>"
+              '<div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:14px;">' + legend + "</div>"
+              '<div id="tp-' + v["key"] + '" style="display:none;margin-bottom:6px;"></div>' + tier_json + '<div style="height:20px;"></div>')
+    movement = movement_html(v)
+    mix = mix_html(a)
 
     concepts = content_html(v.get("content"), v["key"], v["name"], lambda r: _roas_color(r, cfg), v.get("content_error"))
 
@@ -519,31 +787,41 @@ def view_html(v, card_fn, cfg):
     if npx.get("ads"):
         warn = (f'<div style="font-size:11px;color:#9a9a9a;margin-top:8px;">{npx["ads"]} ads ({fmt_inr(npx["spend"])}) have no month prefix in their name '
                 f'and are not counted here, e.g. {escape(", ".join(npx.get("examples", [])[:2]))}</div>')
-    return note + tiles + funnel + concepts + score + best + decide + warn
+    return note + tiles + funnel + movement + mix + concepts + score + best + decide + warn
 
 
 def month_tab_html(month_data, card_fn, cfg, status=None):
-    """The whole tab: a Current / Previous switch and both views. Falls back to the previous
-    view on the 1st of the month, when the new month has no data yet."""
+    """
+    The whole tab. A three-way switch:
+        <This month> (to date)  |  <Last month> (to date)  |  <Last month> (only)
+    "to date" counts spend from the 1st of the month up to yesterday (last month's view runs from the 1st of
+    last month, so it includes this month's spend). "only" counts spend made inside last month alone.
+    Falls back to last month's view on the 1st of a month, when the new month has no data yet.
+    """
     views = month_data["views"]
     cur, prev = views["current"], views["previous"]
+    only = views.get("previous_only")             # absent in month files written before this view existed
     show = "cur" if cur.get("has_data") else "prev"
-    btn = lambda which, v, tag: (f'<button class="filter-btn{" active" if show == which else ""}" id="mvb-{which}" '
-                                 f'onclick="mvShow(\'{which}\')">{escape(v["name"])} ({tag})</button>')
-    switch = f'<div class="filter-bar" style="margin-bottom:18px;">{btn("cur", cur, "this month")}{btn("prev", prev, "last month")}</div>'
-    stamp = (f'<div style="font-size:11px;color:#9a9a9a;margin:-6px 0 16px;">Updated {escape(str(month_data.get("generated_at", ""))[:10])}</div>')
+    order = [("cur", cur, "to date"), ("prev", prev, "to date")]
+    if only:
+        order.append(("only", only, "only"))
+    btns = "".join(
+        '<button class="filter-btn' + (" active" if show == w else "") + '" id="mvb-' + w + '" onclick="mvShow(\'' + w + '\')">'
+        + escape(v["name"]) + " (" + tag + ")</button>" for w, v, tag in order)
+    switch = '<div class="filter-bar" style="margin-bottom:18px;">' + btns + "</div>"
+    stamp = ('<div style="font-size:11px;color:#9a9a9a;margin:-6px 0 16px;">Updated '
+             + escape(str(month_data.get("generated_at", ""))[:10]) + "</div>")
     if status and not status.get("ok"):
         stamp = ('<div style="margin:0 0 14px;padding:9px 14px;border:1px solid #6b5a14;background:#1c1706;border-radius:8px;font-size:12px;color:#e8d9a0;">'
-                 f'The latest refresh failed, so this is data from {escape(str(month_data.get("generated_at", ""))[:10])}. '
-                 f'Error: {escape(str(status.get("error", "unknown")))}</div>')
-    script = ('<script>function mvShow(w){document.getElementById("mv-cur").style.display=w==="cur"?"block":"none";'
-              'document.getElementById("mv-prev").style.display=w==="prev"?"block":"none";'
-              'document.getElementById("mvb-cur").classList.toggle("active",w==="cur");'
-              'document.getElementById("mvb-prev").classList.toggle("active",w==="prev");}' + CT_JS + '</script>')
-    return (switch + stamp
-            + f'<div id="mv-cur" style="display:{"block" if show == "cur" else "none"};">{view_html(cur, card_fn, cfg)}</div>'
-            + f'<div id="mv-prev" style="display:{"block" if show == "prev" else "none"};">{view_html(prev, card_fn, cfg)}</div>'
-            + script)
+                 "The latest refresh failed, so this is data from " + escape(str(month_data.get("generated_at", ""))[:10]) + ". "
+                 "Error: " + escape(redact(str(status.get("error", "unknown")))) + "</div>")
+    ids = [w for w, _v, _t in order]
+    script = ('<script>function mvShow(w){var ids=' + json.dumps(ids) + ';ids.forEach(function(i){'
+              'document.getElementById("mv-"+i).style.display=i===w?"block":"none";'
+              'document.getElementById("mvb-"+i).classList.toggle("active",i===w);});}' + CT_JS + TIER_JS + "</script>")
+    panes = "".join('<div id="mv-' + w + '" style="display:' + ("block" if show == w else "none") + ';">'
+                    + view_html(v, card_fn, cfg) + "</div>" for w, v, _t in order)
+    return switch + stamp + panes + script
 
 
 # ── weekly report block ──────────────────────────────────────────────────────

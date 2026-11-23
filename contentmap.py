@@ -20,7 +20,7 @@ import re
 from collections import Counter, defaultdict
 from html import escape
 
-from taxonomy import fmt_inr
+from taxonomy import fmt_inr, redact
 
 FIELDS = [("type", "Type"), ("theme", "Theme"), ("messaging", "Messaging"), ("hook", "Hook")]
 UNLABELLED = "Unlabelled"          # in the sheet, but the cell is blank / NA / "-"
@@ -302,7 +302,7 @@ def content_html(content, key, month_name, roas_color, error=None):
         if error:
             return ('<div style="margin:0 0 28px;padding:12px 16px;border:1px solid #6b5a14;background:#1c1706;border-radius:8px;'
                     'font-size:12px;color:#e8d9a0;line-height:1.6;"><b>Concept tags are unavailable.</b> The Google Sheet could not be read: '
-                    + escape(str(error)) + '</div>')
+                    + escape(redact(str(error))) + '</div>')
         return ""
     allb, newb = content["all"], content["new"]
     on = ' active'
