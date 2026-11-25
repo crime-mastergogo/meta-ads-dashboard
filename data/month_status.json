@@ -1,1 +1,1 @@
-{"ok": true, "error": null, "at": "2026-11-24T14:24:03.481124"}
+{"ok": false, "error": "MetaAPIError: Meta API 400 (code 2/1504044): Service temporarily unavailable", "at": "2026-11-25T13:31:20.382533"}
